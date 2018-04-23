@@ -33,16 +33,16 @@
         ]
       },
       "ECMA2Yaml": {
-        "SourceXmlFolder": "dotnet/xml",
-        "OutputYamlFolder": "dotnet/api",
+        "SourceXmlFolder": "officedocs-dev-infopath-form/xml",
+        "OutputYamlFolder": "officedocs-dev-infopath-form/api",
         "Flatten": true,
-        "id": "dotnet-template"
+        "id": "officedocs-dev-infopath-form"
       },
       "SplitTOC": [
-        "dotnet/api/dotnet-template/toc.yml"
+        "officedocs-dev-infopath-form/api/officedocs-dev-infopath-form/toc.yml"
       ],
       "DiffFolder": [
-        "dotnet/api"
+        "officedocs-dev-infopath-form/api"
       ]
     }
   ],
