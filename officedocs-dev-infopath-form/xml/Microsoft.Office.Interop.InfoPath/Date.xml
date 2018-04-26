@@ -1,0 +1,78 @@
+﻿<Type Name="Date" FullName="Microsoft.Office.Interop.InfoPath.Date">
+  <TypeSignature Language="C#" Value="public interface Date" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Date" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Date" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Date" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Date" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("096CD6A3-0786-11D1-95FA-0080C78EE3BB")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Now">
+      <MemberSignature Language="C#" Value="public object Now ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Now() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Date.Now" />
+      <MemberSignature Language="VB.NET" Value="Public Function Now () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Now();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Today">
+      <MemberSignature Language="C#" Value="public object Today ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Today() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Date.Today" />
+      <MemberSignature Language="VB.NET" Value="Public Function Today () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Today();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

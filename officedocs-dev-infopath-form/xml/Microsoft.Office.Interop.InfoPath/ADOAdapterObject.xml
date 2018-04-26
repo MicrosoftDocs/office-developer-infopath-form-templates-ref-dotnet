@@ -1,0 +1,29 @@
+﻿<Type Name="ADOAdapterObject" FullName="Microsoft.Office.Interop.InfoPath.ADOAdapterObject">
+  <TypeSignature Language="C#" Value="public interface ADOAdapterObject : Microsoft.Office.Interop.InfoPath.ADOAdapter2" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ADOAdapterObject implements class Microsoft.Office.Interop.InfoPath.ADOAdapter2" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ADOAdapterObject" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ADOAdapterObject&#xA;Implements ADOAdapter2" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ADOAdapterObject : Microsoft::Office::Interop::InfoPath::ADOAdapter2" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.ADOAdapter2</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.InfoPath.ADOAdapterObjectClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("096CD5D3-0786-11D1-95FA-0080C78EE3BB")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

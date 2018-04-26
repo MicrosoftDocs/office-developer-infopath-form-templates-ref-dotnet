@@ -1,0 +1,33 @@
+<Type Name="_DataDOMEventSink_OnAfterChangeEventHandler" FullName="Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void _DataDOMEventSink_OnAfterChangeEventHandler(DataDOMEventObject pDataDOMEvent);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed _DataDOMEventSink_OnAfterChangeEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub _DataDOMEventSink_OnAfterChangeEventHandler(pDataDOMEvent As DataDOMEventObject)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void _DataDOMEventSink_OnAfterChangeEventHandler(DataDOMEventObject ^ pDataDOMEvent);" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="pDataDOMEvent" Type="Microsoft.Office.Interop.InfoPath.DataDOMEventObject" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="pDataDOMEvent">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,33 @@
+<Type Name="_XDocumentEventSink2_OnSwitchViewEventHandler" FullName="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void _XDocumentEventSink2_OnSwitchViewEventHandler(DocEvent pEvent);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed _XDocumentEventSink2_OnSwitchViewEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub _XDocumentEventSink2_OnSwitchViewEventHandler(pEvent As DocEvent)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void _XDocumentEventSink2_OnSwitchViewEventHandler(DocEvent ^ pEvent);" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="pEvent" Type="Microsoft.Office.Interop.InfoPath.DocEvent" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="pEvent">To be added.</param>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

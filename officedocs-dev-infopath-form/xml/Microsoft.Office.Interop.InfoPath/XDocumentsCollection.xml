@@ -1,0 +1,29 @@
+﻿<Type Name="XDocumentsCollection" FullName="Microsoft.Office.Interop.InfoPath.XDocumentsCollection">
+  <TypeSignature Language="C#" Value="public interface XDocumentsCollection : Microsoft.Office.Interop.InfoPath.XDocuments2" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XDocumentsCollection implements class Microsoft.Office.Interop.InfoPath.XDocuments2" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XDocumentsCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Interface XDocumentsCollection&#xA;Implements XDocuments2" />
+  <TypeSignature Language="C++ CLI" Value="public interface class XDocumentsCollection : Microsoft::Office::Interop::InfoPath::XDocuments2" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.XDocuments2</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("096CD647-0786-11D1-95FA-0080C78EE3BB")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

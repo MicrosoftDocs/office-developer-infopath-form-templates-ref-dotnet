@@ -1,0 +1,30 @@
+<Type Name="_ApplicationEvents_XDocumentChangeEventHandler" FullName="Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void _ApplicationEvents_XDocumentChangeEventHandler();" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed _ApplicationEvents_XDocumentChangeEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub _ApplicationEvents_XDocumentChangeEventHandler()" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void _ApplicationEvents_XDocumentChangeEventHandler();" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters />
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

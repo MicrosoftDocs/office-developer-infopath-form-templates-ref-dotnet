@@ -1,0 +1,29 @@
+﻿<Type Name="DAVAdapterObject" FullName="Microsoft.Office.Interop.InfoPath.DAVAdapterObject">
+  <TypeSignature Language="C#" Value="public interface DAVAdapterObject : Microsoft.Office.Interop.InfoPath.DAVAdapter" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DAVAdapterObject implements class Microsoft.Office.Interop.InfoPath.DAVAdapter" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DAVAdapterObject" />
+  <TypeSignature Language="VB.NET" Value="Public Interface DAVAdapterObject&#xA;Implements DAVAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public interface class DAVAdapterObject : Microsoft::Office::Interop::InfoPath::DAVAdapter" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.DAVAdapter</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.InfoPath.DAVAdapterObjectClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("096CD5D6-0786-11D1-95FA-0080C78EE3BB")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>
