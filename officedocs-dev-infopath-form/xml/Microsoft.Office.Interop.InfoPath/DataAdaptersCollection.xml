@@ -1,0 +1,29 @@
+﻿<Type Name="DataAdaptersCollection" FullName="Microsoft.Office.Interop.InfoPath.DataAdaptersCollection">
+  <TypeSignature Language="C#" Value="public interface DataAdaptersCollection : Microsoft.Office.Interop.InfoPath.DataAdapters" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DataAdaptersCollection implements class Microsoft.Office.Interop.InfoPath.DataAdapters" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DataAdaptersCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Interface DataAdaptersCollection&#xA;Implements DataAdapters" />
+  <TypeSignature Language="C++ CLI" Value="public interface class DataAdaptersCollection : Microsoft::Office::Interop::InfoPath::DataAdapters" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.DataAdapters</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.InfoPath.DataAdaptersCollectionClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("096CD692-0786-11D1-95FA-0080C78EE3BB")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

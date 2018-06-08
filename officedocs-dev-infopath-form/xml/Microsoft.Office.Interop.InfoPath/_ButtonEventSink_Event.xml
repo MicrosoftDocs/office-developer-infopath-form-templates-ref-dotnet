@@ -1,0 +1,48 @@
+<Type Name="_ButtonEventSink_Event" FullName="Microsoft.Office.Interop.InfoPath._ButtonEventSink_Event">
+  <TypeSignature Language="C#" Value="public interface _ButtonEventSink_Event" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _ButtonEventSink_Event" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._ButtonEventSink_Event" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _ButtonEventSink_Event" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _ButtonEventSink_Event" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComEventInterface(typeof(Microsoft.Office.Interop.InfoPath._ButtonEventSink), typeof(Microsoft.Office.Interop.InfoPath._ButtonEventSink_EventProvider))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OnClick">
+      <MemberSignature Language="C#" Value="event Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler OnClick;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler OnClick" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.Interop.InfoPath._ButtonEventSink_Event.OnClick" />
+      <MemberSignature Language="VB.NET" Value="Event OnClick As _ButtonEventSink_OnClickEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::Interop::InfoPath::_ButtonEventSink_OnClickEventHandler ^ OnClick;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
