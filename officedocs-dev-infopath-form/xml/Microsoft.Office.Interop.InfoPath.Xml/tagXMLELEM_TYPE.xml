@@ -1,0 +1,161 @@
+﻿<Type Name="tagXMLELEM_TYPE" FullName="Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE">
+  <TypeSignature Language="C#" Value="public enum tagXMLELEM_TYPE" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed tagXMLELEM_TYPE extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE" />
+  <TypeSignature Language="VB.NET" Value="Public Enum tagXMLELEM_TYPE" />
+  <TypeSignature Language="C++ CLI" Value="public enum class tagXMLELEM_TYPE" />
+  <TypeSignature Language="F#" Value="type tagXMLELEM_TYPE = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="XMLELEMTYPE_COMMENT">
+      <MemberSignature Language="C#" Value="XMLELEMTYPE_COMMENT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE XMLELEMTYPE_COMMENT = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE.XMLELEMTYPE_COMMENT" />
+      <MemberSignature Language="VB.NET" Value="XMLELEMTYPE_COMMENT" />
+      <MemberSignature Language="C++ CLI" Value="XMLELEMTYPE_COMMENT" />
+      <MemberSignature Language="F#" Value="XMLELEMTYPE_COMMENT = 2" Usage="Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE.XMLELEMTYPE_COMMENT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="XMLELEMTYPE_DOCUMENT">
+      <MemberSignature Language="C#" Value="XMLELEMTYPE_DOCUMENT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE XMLELEMTYPE_DOCUMENT = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE.XMLELEMTYPE_DOCUMENT" />
+      <MemberSignature Language="VB.NET" Value="XMLELEMTYPE_DOCUMENT" />
+      <MemberSignature Language="C++ CLI" Value="XMLELEMTYPE_DOCUMENT" />
+      <MemberSignature Language="F#" Value="XMLELEMTYPE_DOCUMENT = 3" Usage="Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE.XMLELEMTYPE_DOCUMENT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="XMLELEMTYPE_DTD">
+      <MemberSignature Language="C#" Value="XMLELEMTYPE_DTD" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE XMLELEMTYPE_DTD = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE.XMLELEMTYPE_DTD" />
+      <MemberSignature Language="VB.NET" Value="XMLELEMTYPE_DTD" />
+      <MemberSignature Language="C++ CLI" Value="XMLELEMTYPE_DTD" />
+      <MemberSignature Language="F#" Value="XMLELEMTYPE_DTD = 4" Usage="Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE.XMLELEMTYPE_DTD" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="XMLELEMTYPE_ELEMENT">
+      <MemberSignature Language="C#" Value="XMLELEMTYPE_ELEMENT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE XMLELEMTYPE_ELEMENT = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE.XMLELEMTYPE_ELEMENT" />
+      <MemberSignature Language="VB.NET" Value="XMLELEMTYPE_ELEMENT" />
+      <MemberSignature Language="C++ CLI" Value="XMLELEMTYPE_ELEMENT" />
+      <MemberSignature Language="F#" Value="XMLELEMTYPE_ELEMENT = 0" Usage="Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE.XMLELEMTYPE_ELEMENT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="XMLELEMTYPE_OTHER">
+      <MemberSignature Language="C#" Value="XMLELEMTYPE_OTHER" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE XMLELEMTYPE_OTHER = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE.XMLELEMTYPE_OTHER" />
+      <MemberSignature Language="VB.NET" Value="XMLELEMTYPE_OTHER" />
+      <MemberSignature Language="C++ CLI" Value="XMLELEMTYPE_OTHER" />
+      <MemberSignature Language="F#" Value="XMLELEMTYPE_OTHER = 6" Usage="Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE.XMLELEMTYPE_OTHER" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="XMLELEMTYPE_PI">
+      <MemberSignature Language="C#" Value="XMLELEMTYPE_PI" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE XMLELEMTYPE_PI = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE.XMLELEMTYPE_PI" />
+      <MemberSignature Language="VB.NET" Value="XMLELEMTYPE_PI" />
+      <MemberSignature Language="C++ CLI" Value="XMLELEMTYPE_PI" />
+      <MemberSignature Language="F#" Value="XMLELEMTYPE_PI = 5" Usage="Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE.XMLELEMTYPE_PI" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="XMLELEMTYPE_TEXT">
+      <MemberSignature Language="C#" Value="XMLELEMTYPE_TEXT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE XMLELEMTYPE_TEXT = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE.XMLELEMTYPE_TEXT" />
+      <MemberSignature Language="VB.NET" Value="XMLELEMTYPE_TEXT" />
+      <MemberSignature Language="C++ CLI" Value="XMLELEMTYPE_TEXT" />
+      <MemberSignature Language="F#" Value="XMLELEMTYPE_TEXT = 1" Usage="Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE.XMLELEMTYPE_TEXT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.tagXMLELEM_TYPE</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

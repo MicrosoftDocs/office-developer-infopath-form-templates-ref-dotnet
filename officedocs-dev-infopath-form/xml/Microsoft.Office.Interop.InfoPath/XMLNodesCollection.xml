@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XMLNodesCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLNodesCollection&#xA;Implements XMLNodes" />
   <TypeSignature Language="C++ CLI" Value="public interface class XMLNodesCollection : Microsoft::Office::Interop::InfoPath::XMLNodes" />
+  <TypeSignature Language="F#" Value="type XMLNodesCollection = interface&#xA;    interface XMLNodes" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

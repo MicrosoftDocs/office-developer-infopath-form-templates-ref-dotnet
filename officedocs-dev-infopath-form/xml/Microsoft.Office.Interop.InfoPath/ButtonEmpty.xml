@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ButtonEmpty" />
   <TypeSignature Language="VB.NET" Value="Public Interface ButtonEmpty" />
   <TypeSignature Language="C++ CLI" Value="public interface class ButtonEmpty" />
+  <TypeSignature Language="F#" Value="type ButtonEmpty = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

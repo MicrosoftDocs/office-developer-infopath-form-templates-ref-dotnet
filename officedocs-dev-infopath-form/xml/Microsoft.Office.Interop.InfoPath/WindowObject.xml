@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.WindowObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface WindowObject&#xA;Implements Window2" />
   <TypeSignature Language="C++ CLI" Value="public interface class WindowObject : Microsoft::Office::Interop::InfoPath::Window2" />
+  <TypeSignature Language="F#" Value="type WindowObject = interface&#xA;    interface Window2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

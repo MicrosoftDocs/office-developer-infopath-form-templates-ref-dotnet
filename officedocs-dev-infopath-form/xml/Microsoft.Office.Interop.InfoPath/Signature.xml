@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Signature" />
   <TypeSignature Language="VB.NET" Value="Public Interface Signature" />
   <TypeSignature Language="C++ CLI" Value="public interface class Signature" />
+  <TypeSignature Language="F#" Value="type Signature = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Signature.Certificate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Certificate As CertificateObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::CertificateObject ^ Certificate { Microsoft::Office::Interop::InfoPath::CertificateObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Certificate : Microsoft.Office.Interop.InfoPath.CertificateObject" Usage="Microsoft.Office.Interop.InfoPath.Signature.Certificate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Signature.Comment" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Comment As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Comment { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Comment : string" Usage="Microsoft.Office.Interop.InfoPath.Signature.Comment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Signature.Sign" />
       <MemberSignature Language="VB.NET" Value="Public Sub Sign ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sign();" />
+      <MemberSignature Language="F#" Value="abstract member Sign : unit -&gt; unit" Usage="signature.Sign " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Signature.SignatureBlockXmlNode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignatureBlockXmlNode As IXMLDOMNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ SignatureBlockXmlNode { Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SignatureBlockXmlNode : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="Microsoft.Office.Interop.InfoPath.Signature.SignatureBlockXmlNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -137,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Signature.Status" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As XdSignatureStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::XdSignatureStatus Status { Microsoft::Office::Interop::InfoPath::XdSignatureStatus get(); };" />
+      <MemberSignature Language="F#" Value="member this.Status : Microsoft.Office.Interop.InfoPath.XdSignatureStatus" Usage="Microsoft.Office.Interop.InfoPath.Signature.Status" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

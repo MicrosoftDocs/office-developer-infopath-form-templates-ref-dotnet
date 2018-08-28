@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass" />
   <TypeSignature Language="VB.NET" Value="Public Class XDocumentsCollectionClass&#xA;Implements XDocuments3, XDocumentsCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class XDocumentsCollectionClass : Microsoft::Office::Interop::InfoPath::XDocuments3, Microsoft::Office::Interop::InfoPath::XDocumentsCollection" />
+  <TypeSignature Language="F#" Value="type XDocumentsCollectionClass = class&#xA;    interface XDocuments2&#xA;    interface XDocumentsCollection&#xA;    interface XDocuments3&#xA;    interface XDocuments" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.Close(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close (varIndex As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close(System::Object ^ varIndex) = Microsoft::Office::Interop::InfoPath::XDocuments2::Close;" />
+      <MemberSignature Language="F#" Value="abstract member Close : obj -&gt; unit&#xA;override this.Close : obj -&gt; unit" Usage="xDocumentsCollectionClass.Close varIndex" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.XDocuments2.Close(System.Object)</InterfaceMember>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.XDocuments2.Count</InterfaceMember>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator() = Microsoft::Office::Interop::InfoPath::XDocuments2::GetEnumerator;" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="xDocumentsCollectionClass.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.XDocuments2.GetEnumerator</InterfaceMember>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(varIndex As Object) As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XDocument ^ default[System::Object ^] { Microsoft::Office::Interop::InfoPath::XDocument ^ get(System::Object ^ varIndex); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.InfoPath.XDocument" Usage="Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.XDocuments2.Item(System.Object)</InterfaceMember>
@@ -166,6 +171,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.XDocument New([in]object varURI, [in]int32 dwBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.New(System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function New (varURI As Object, Optional dwBehavior As Integer = 1) As XDocument" />
+      <MemberSignature Language="F#" Value="abstract member New : obj * int -&gt; Microsoft.Office.Interop.InfoPath.XDocument&#xA;override this.New : obj * int -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="xDocumentsCollectionClass.New (varURI, dwBehavior)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.XDocuments2.New(System.Object,System.Int32)</InterfaceMember>
@@ -200,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.NewFromSolution(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function NewFromSolution (varURI As Object) As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::XDocument ^ NewFromSolution(System::Object ^ varURI) = Microsoft::Office::Interop::InfoPath::XDocuments2::NewFromSolution;" />
+      <MemberSignature Language="F#" Value="abstract member NewFromSolution : obj -&gt; Microsoft.Office.Interop.InfoPath.XDocument&#xA;override this.NewFromSolution : obj -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="xDocumentsCollectionClass.NewFromSolution varURI" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.XDocuments2.NewFromSolution(System.Object)</InterfaceMember>
@@ -231,6 +238,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.XDocument NewFromSolutionWithData([in]object varXMLData, [in]object varSolutionURI, [in]int32 dwBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.NewFromSolutionWithData(System.Object,System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function NewFromSolutionWithData (varXMLData As Object, varSolutionURI As Object, Optional dwBehavior As Integer = 1) As XDocument" />
+      <MemberSignature Language="F#" Value="abstract member NewFromSolutionWithData : obj * obj * int -&gt; Microsoft.Office.Interop.InfoPath.XDocument&#xA;override this.NewFromSolutionWithData : obj * obj * int -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="xDocumentsCollectionClass.NewFromSolutionWithData (varXMLData, varSolutionURI, dwBehavior)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.XDocuments2.NewFromSolutionWithData(System.Object,System.Object,System.Int32)</InterfaceMember>
@@ -267,6 +275,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.NewFromSolutionWithInputParameters(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function NewFromSolutionWithInputParameters (varSolutionURI As Object, varInputParams As Object) As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::XDocument ^ NewFromSolutionWithInputParameters(System::Object ^ varSolutionURI, System::Object ^ varInputParams) = Microsoft::Office::Interop::InfoPath::XDocuments3::NewFromSolutionWithInputParameters;" />
+      <MemberSignature Language="F#" Value="abstract member NewFromSolutionWithInputParameters : obj * obj -&gt; Microsoft.Office.Interop.InfoPath.XDocument&#xA;override this.NewFromSolutionWithInputParameters : obj * obj -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="xDocumentsCollectionClass.NewFromSolutionWithInputParameters (varSolutionURI, varInputParams)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.XDocuments3.NewFromSolutionWithInputParameters(System.Object,System.Object)</InterfaceMember>
@@ -295,6 +304,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.XDocument Open([in]object varURI, [in]int32 dwBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.Open(System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Open (varURI As Object, Optional dwBehavior As Integer = 1) As XDocument" />
+      <MemberSignature Language="F#" Value="abstract member Open : obj * int -&gt; Microsoft.Office.Interop.InfoPath.XDocument&#xA;override this.Open : obj * int -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="xDocumentsCollectionClass.Open (varURI, dwBehavior)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.XDocuments2.Open(System.Object,System.Int32)</InterfaceMember>
@@ -329,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.XDocuments_Close(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub XDocuments_Close (varIndex As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void XDocuments_Close(System::Object ^ varIndex) = Microsoft::Office::Interop::InfoPath::XDocuments::Close;" />
+      <MemberSignature Language="F#" Value="abstract member XDocuments_Close : obj -&gt; unit&#xA;override this.XDocuments_Close : obj -&gt; unit" Usage="xDocumentsCollectionClass.XDocuments_Close varIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -352,6 +363,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.XDocuments_Count" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property XDocuments_Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int XDocuments_Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.XDocuments_Count : int" Usage="XDocuments_Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -372,6 +384,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.XDocuments_get_Count" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function XDocuments_get_Count () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int XDocuments_get_Count() = Microsoft::Office::Interop::InfoPath::XDocuments::get_Count;" />
+      <MemberSignature Language="F#" Value="abstract member XDocuments_get_Count : unit -&gt; int&#xA;override this.XDocuments_get_Count : unit -&gt; int" Usage="xDocumentsCollectionClass.XDocuments_get_Count " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -393,6 +406,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.XDocuments_get_Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function XDocuments_get_Item (varIndex As Object) As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::XDocument ^ XDocuments_get_Item(System::Object ^ varIndex) = Microsoft::Office::Interop::InfoPath::XDocuments::get_Item;" />
+      <MemberSignature Language="F#" Value="abstract member XDocuments_get_Item : obj -&gt; Microsoft.Office.Interop.InfoPath.XDocument&#xA;override this.XDocuments_get_Item : obj -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="xDocumentsCollectionClass.XDocuments_get_Item varIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -417,6 +431,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.XDocuments_GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function XDocuments_GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ XDocuments_GetEnumerator() = Microsoft::Office::Interop::InfoPath::XDocuments::GetEnumerator;" />
+      <MemberSignature Language="F#" Value="abstract member XDocuments_GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.XDocuments_GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="xDocumentsCollectionClass.XDocuments_GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -443,6 +458,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.XDocuments_Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property XDocuments_Item(varIndex As Object) As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XDocument ^ XDocuments_Item[System::Object ^] { Microsoft::Office::Interop::InfoPath::XDocument ^ get(System::Object ^ varIndex); };" />
+      <MemberSignature Language="F#" Value="member this.XDocuments_Item(obj) : Microsoft.Office.Interop.InfoPath.XDocument" Usage="XDocuments_Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -466,6 +482,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.XDocument XDocuments_New([in]object varURI, [in]int32 dwBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.XDocuments_New(System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function XDocuments_New (varURI As Object, Optional dwBehavior As Integer = 1) As XDocument" />
+      <MemberSignature Language="F#" Value="abstract member XDocuments_New : obj * int -&gt; Microsoft.Office.Interop.InfoPath.XDocument&#xA;override this.XDocuments_New : obj * int -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="xDocumentsCollectionClass.XDocuments_New (varURI, dwBehavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -492,6 +509,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.XDocuments_NewFromSolution(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function XDocuments_NewFromSolution (varURI As Object) As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::XDocument ^ XDocuments_NewFromSolution(System::Object ^ varURI) = Microsoft::Office::Interop::InfoPath::XDocuments::NewFromSolution;" />
+      <MemberSignature Language="F#" Value="abstract member XDocuments_NewFromSolution : obj -&gt; Microsoft.Office.Interop.InfoPath.XDocument&#xA;override this.XDocuments_NewFromSolution : obj -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="xDocumentsCollectionClass.XDocuments_NewFromSolution varURI" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -515,6 +533,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.XDocument XDocuments_Open([in]object varURI, [in]int32 dwBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.XDocuments_Open(System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function XDocuments_Open (varURI As Object, Optional dwBehavior As Integer = 1) As XDocument" />
+      <MemberSignature Language="F#" Value="abstract member XDocuments_Open : obj * int -&gt; Microsoft.Office.Interop.InfoPath.XDocument&#xA;override this.XDocuments_Open : obj * int -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="xDocumentsCollectionClass.XDocuments_Open (varURI, dwBehavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -541,6 +560,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.XDocuments3_Close(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub XDocuments3_Close (varIndex As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void XDocuments3_Close(System::Object ^ varIndex) = Microsoft::Office::Interop::InfoPath::XDocuments3::Close;" />
+      <MemberSignature Language="F#" Value="abstract member XDocuments3_Close : obj -&gt; unit&#xA;override this.XDocuments3_Close : obj -&gt; unit" Usage="xDocumentsCollectionClass.XDocuments3_Close varIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -564,6 +584,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.XDocuments3_Count" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property XDocuments3_Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int XDocuments3_Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.XDocuments3_Count : int" Usage="XDocuments3_Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -584,6 +605,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.XDocuments3_get_Count" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function XDocuments3_get_Count () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int XDocuments3_get_Count() = Microsoft::Office::Interop::InfoPath::XDocuments3::get_Count;" />
+      <MemberSignature Language="F#" Value="abstract member XDocuments3_get_Count : unit -&gt; int&#xA;override this.XDocuments3_get_Count : unit -&gt; int" Usage="xDocumentsCollectionClass.XDocuments3_get_Count " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -605,6 +627,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.XDocuments3_get_Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function XDocuments3_get_Item (varIndex As Object) As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::XDocument ^ XDocuments3_get_Item(System::Object ^ varIndex) = Microsoft::Office::Interop::InfoPath::XDocuments3::get_Item;" />
+      <MemberSignature Language="F#" Value="abstract member XDocuments3_get_Item : obj -&gt; Microsoft.Office.Interop.InfoPath.XDocument&#xA;override this.XDocuments3_get_Item : obj -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="xDocumentsCollectionClass.XDocuments3_get_Item varIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -629,6 +652,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.XDocuments3_GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function XDocuments3_GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ XDocuments3_GetEnumerator() = Microsoft::Office::Interop::InfoPath::XDocuments3::GetEnumerator;" />
+      <MemberSignature Language="F#" Value="abstract member XDocuments3_GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.XDocuments3_GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="xDocumentsCollectionClass.XDocuments3_GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -655,6 +679,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.XDocuments3_Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property XDocuments3_Item(varIndex As Object) As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XDocument ^ XDocuments3_Item[System::Object ^] { Microsoft::Office::Interop::InfoPath::XDocument ^ get(System::Object ^ varIndex); };" />
+      <MemberSignature Language="F#" Value="member this.XDocuments3_Item(obj) : Microsoft.Office.Interop.InfoPath.XDocument" Usage="XDocuments3_Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -678,6 +703,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.XDocument XDocuments3_New([in]object varURI, [in]int32 dwBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.XDocuments3_New(System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function XDocuments3_New (varURI As Object, Optional dwBehavior As Integer = 1) As XDocument" />
+      <MemberSignature Language="F#" Value="abstract member XDocuments3_New : obj * int -&gt; Microsoft.Office.Interop.InfoPath.XDocument&#xA;override this.XDocuments3_New : obj * int -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="xDocumentsCollectionClass.XDocuments3_New (varURI, dwBehavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -704,6 +730,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.XDocuments3_NewFromSolution(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function XDocuments3_NewFromSolution (varURI As Object) As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::XDocument ^ XDocuments3_NewFromSolution(System::Object ^ varURI) = Microsoft::Office::Interop::InfoPath::XDocuments3::NewFromSolution;" />
+      <MemberSignature Language="F#" Value="abstract member XDocuments3_NewFromSolution : obj -&gt; Microsoft.Office.Interop.InfoPath.XDocument&#xA;override this.XDocuments3_NewFromSolution : obj -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="xDocumentsCollectionClass.XDocuments3_NewFromSolution varURI" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -727,6 +754,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.XDocument XDocuments3_NewFromSolutionWithData([in]object varXMLData, [in]object varSolutionURI, [in]int32 dwBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.XDocuments3_NewFromSolutionWithData(System.Object,System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function XDocuments3_NewFromSolutionWithData (varXMLData As Object, varSolutionURI As Object, Optional dwBehavior As Integer = 1) As XDocument" />
+      <MemberSignature Language="F#" Value="abstract member XDocuments3_NewFromSolutionWithData : obj * obj * int -&gt; Microsoft.Office.Interop.InfoPath.XDocument&#xA;override this.XDocuments3_NewFromSolutionWithData : obj * obj * int -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="xDocumentsCollectionClass.XDocuments3_NewFromSolutionWithData (varXMLData, varSolutionURI, dwBehavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -754,6 +782,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.XDocument XDocuments3_Open([in]object varURI, [in]int32 dwBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentsCollectionClass.XDocuments3_Open(System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function XDocuments3_Open (varURI As Object, Optional dwBehavior As Integer = 1) As XDocument" />
+      <MemberSignature Language="F#" Value="abstract member XDocuments3_Open : obj * int -&gt; Microsoft.Office.Interop.InfoPath.XDocument&#xA;override this.XDocuments3_Open : obj * int -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="xDocumentsCollectionClass.XDocuments3_Open (varURI, dwBehavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

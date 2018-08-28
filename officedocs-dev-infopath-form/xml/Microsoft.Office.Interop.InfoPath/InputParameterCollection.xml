@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.InputParameterCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface InputParameterCollection&#xA;Implements InputParameters" />
   <TypeSignature Language="C++ CLI" Value="public interface class InputParameterCollection : Microsoft::Office::Interop::InfoPath::InputParameters" />
+  <TypeSignature Language="F#" Value="type InputParameterCollection = interface&#xA;    interface InputParameters" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

@@ -1,0 +1,82 @@
+﻿<Type Name="XMLDOMDocumentEvents" FullName="Microsoft.Office.Interop.InfoPath.Xml.XMLDOMDocumentEvents">
+  <TypeSignature Language="C#" Value="public interface XMLDOMDocumentEvents" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLDOMDocumentEvents" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Xml.XMLDOMDocumentEvents" />
+  <TypeSignature Language="VB.NET" Value="Public Interface XMLDOMDocumentEvents" />
+  <TypeSignature Language="C++ CLI" Value="public interface class XMLDOMDocumentEvents" />
+  <TypeSignature Language="F#" Value="type XMLDOMDocumentEvents = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("3EFAA427-272F-11D2-836F-0000F87A7782")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ondataavailable">
+      <MemberSignature Language="C#" Value="public void ondataavailable ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ondataavailable() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Xml.XMLDOMDocumentEvents.ondataavailable" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ondataavailable ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ondataavailable();" />
+      <MemberSignature Language="F#" Value="abstract member ondataavailable : unit -&gt; unit" Usage="xMLDOMDocumentEvents.ondataavailable " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(198)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="onreadystatechange">
+      <MemberSignature Language="C#" Value="public void onreadystatechange ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void onreadystatechange() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Xml.XMLDOMDocumentEvents.onreadystatechange" />
+      <MemberSignature Language="VB.NET" Value="Public Sub onreadystatechange ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void onreadystatechange();" />
+      <MemberSignature Language="F#" Value="abstract member onreadystatechange : unit -&gt; unit" Usage="xMLDOMDocumentEvents.onreadystatechange " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-609)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

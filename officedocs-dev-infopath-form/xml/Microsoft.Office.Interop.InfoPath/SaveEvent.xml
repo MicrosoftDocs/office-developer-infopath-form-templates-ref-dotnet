@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SaveEvent" />
   <TypeSignature Language="VB.NET" Value="Public Interface SaveEvent&#xA;Implements DocReturnEvent" />
   <TypeSignature Language="C++ CLI" Value="public interface class SaveEvent : Microsoft::Office::Interop::InfoPath::DocReturnEvent" />
+  <TypeSignature Language="F#" Value="type SaveEvent = interface&#xA;    interface DocReturnEvent" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SaveEvent.FileName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileName : string" Usage="Microsoft.Office.Interop.InfoPath.SaveEvent.FileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SaveEvent.IsCancelled" />
       <MemberSignature Language="VB.NET" Value="Public Property IsCancelled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCancelled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsCancelled : bool with get, set" Usage="Microsoft.Office.Interop.InfoPath.SaveEvent.IsCancelled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SaveEvent.IsSaveAs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSaveAs As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSaveAs { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSaveAs : bool" Usage="Microsoft.Office.Interop.InfoPath.SaveEvent.IsSaveAs" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.SaveEvent.PerformSaveOperation" />
       <MemberSignature Language="VB.NET" Value="Public Function PerformSaveOperation () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool PerformSaveOperation();" />
+      <MemberSignature Language="F#" Value="abstract member PerformSaveOperation : unit -&gt; bool" Usage="saveEvent.PerformSaveOperation " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SaveEvent.ReturnStatus" />
       <MemberSignature Language="VB.NET" Value="Public Property ReturnStatus As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReturnStatus { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnStatus : bool with get, set" Usage="Microsoft.Office.Interop.InfoPath.SaveEvent.ReturnStatus" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DocReturnEvent.ReturnStatus</InterfaceMember>
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SaveEvent.XDocument" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XDocument As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::XDocument ^ XDocument { Microsoft::Office::Interop::InfoPath::XDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XDocument : Microsoft.Office.Interop.InfoPath.XDocument" Usage="Microsoft.Office.Interop.InfoPath.SaveEvent.XDocument" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DocReturnEvent.XDocument</InterfaceMember>

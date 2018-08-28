@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ViewObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class ViewObjectClass&#xA;Implements View3, ViewObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class ViewObjectClass : Microsoft::Office::Interop::InfoPath::View3, Microsoft::Office::Interop::InfoPath::ViewObject" />
+  <TypeSignature Language="F#" Value="type ViewObjectClass = class&#xA;    interface View&#xA;    interface ViewObject&#xA;    interface View3&#xA;    interface View2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.DisableAutoUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub DisableAutoUpdate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DisableAutoUpdate() = Microsoft::Office::Interop::InfoPath::View::DisableAutoUpdate;" />
+      <MemberSignature Language="F#" Value="abstract member DisableAutoUpdate : unit -&gt; unit&#xA;override this.DisableAutoUpdate : unit -&gt; unit" Usage="viewObjectClass.DisableAutoUpdate " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.View.DisableAutoUpdate</InterfaceMember>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.EnableAutoUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub EnableAutoUpdate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EnableAutoUpdate() = Microsoft::Office::Interop::InfoPath::View::EnableAutoUpdate;" />
+      <MemberSignature Language="F#" Value="abstract member EnableAutoUpdate : unit -&gt; unit&#xA;override this.EnableAutoUpdate : unit -&gt; unit" Usage="viewObjectClass.EnableAutoUpdate " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.View.EnableAutoUpdate</InterfaceMember>
@@ -93,6 +96,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExecuteAction([in]string bstrAction, [in]object varXmlToEdit) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.ExecuteAction(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ExecuteAction (bstrAction As String, Optional varXmlToEdit As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteAction : string * obj -&gt; unit&#xA;override this.ExecuteAction : string * obj -&gt; unit" Usage="viewObjectClass.ExecuteAction (bstrAction, varXmlToEdit)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.View.ExecuteAction(System.String,System.Object)</InterfaceMember>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.Export(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Export (bstrURL As String, bstrFormat As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Export(System::String ^ bstrURL, System::String ^ bstrFormat) = Microsoft::Office::Interop::InfoPath::View::Export;" />
+      <MemberSignature Language="F#" Value="abstract member Export : string * string -&gt; unit&#xA;override this.Export : string * string -&gt; unit" Usage="viewObjectClass.Export (bstrURL, bstrFormat)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.View.Export(System.String,System.String)</InterfaceMember>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.ExportAsFixedFormat(System.String,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ExportAsFixedFormat (bstrURL As String, bstrFormat As String, varExporter As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ExportAsFixedFormat(System::String ^ bstrURL, System::String ^ bstrFormat, System::Object ^ varExporter) = Microsoft::Office::Interop::InfoPath::View3::ExportAsFixedFormat;" />
+      <MemberSignature Language="F#" Value="abstract member ExportAsFixedFormat : string * string * obj -&gt; unit&#xA;override this.ExportAsFixedFormat : string * string * obj -&gt; unit" Usage="viewObjectClass.ExportAsFixedFormat (bstrURL, bstrFormat, varExporter)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.View3.ExportAsFixedFormat(System.String,System.String,System.Object)</InterfaceMember>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.ForceUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ForceUpdate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ForceUpdate() = Microsoft::Office::Interop::InfoPath::View::ForceUpdate;" />
+      <MemberSignature Language="F#" Value="abstract member ForceUpdate : unit -&gt; unit&#xA;override this.ForceUpdate : unit -&gt; unit" Usage="viewObjectClass.ForceUpdate " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.View.ForceUpdate</InterfaceMember>
@@ -216,6 +223,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.XMLNodesCollection GetContextNodes([in]object varNode, [in]object varViewContext) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.GetContextNodes(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetContextNodes (Optional varNode As Object, Optional varViewContext As Object) As XMLNodesCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetContextNodes : obj * obj -&gt; Microsoft.Office.Interop.InfoPath.XMLNodesCollection&#xA;override this.GetContextNodes : obj * obj -&gt; Microsoft.Office.Interop.InfoPath.XMLNodesCollection" Usage="viewObjectClass.GetContextNodes (varNode, varViewContext)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.View.GetContextNodes(System.Object,System.Object)</InterfaceMember>
@@ -250,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.GetSelectedNodes" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSelectedNodes () As XMLNodesCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::XMLNodesCollection ^ GetSelectedNodes() = Microsoft::Office::Interop::InfoPath::View::GetSelectedNodes;" />
+      <MemberSignature Language="F#" Value="abstract member GetSelectedNodes : unit -&gt; Microsoft.Office.Interop.InfoPath.XMLNodesCollection&#xA;override this.GetSelectedNodes : unit -&gt; Microsoft.Office.Interop.InfoPath.XMLNodesCollection" Usage="viewObjectClass.GetSelectedNodes " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.View.GetSelectedNodes</InterfaceMember>
@@ -279,6 +288,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ViewObjectClass.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Name" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.View.Name</InterfaceMember>
@@ -309,6 +319,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SelectNodes([in]class Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode pxnStartNode, [in]object varEndNode, [in]object varViewContext) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.SelectNodes(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SelectNodes (pxnStartNode As IXMLDOMNode, Optional varEndNode As Object, Optional varViewContext As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SelectNodes : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode * obj * obj -&gt; unit&#xA;override this.SelectNodes : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode * obj * obj -&gt; unit" Usage="viewObjectClass.SelectNodes (pxnStartNode, varEndNode, varViewContext)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.View.SelectNodes(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode,System.Object,System.Object)</InterfaceMember>
@@ -343,6 +354,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SelectText([in]class Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode pxnField, [in]object varViewContext) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.SelectText(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SelectText (pxnField As IXMLDOMNode, Optional varViewContext As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SelectText : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode * obj -&gt; unit&#xA;override this.SelectText : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode * obj -&gt; unit" Usage="viewObjectClass.SelectText (pxnField, varViewContext)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.View.SelectText(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode,System.Object)</InterfaceMember>
@@ -376,6 +388,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ViewObjectClass.SignatureLines" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SignatureLines As SignatureLinesCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::SignatureLinesCollection ^ SignatureLines { Microsoft::Office::Interop::InfoPath::SignatureLinesCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SignatureLines : Microsoft.Office.Interop.InfoPath.SignatureLinesCollection" Usage="SignatureLines" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.View3.SignatureLines</InterfaceMember>
@@ -399,6 +412,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.SwitchView(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SwitchView (bstrName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SwitchView(System::String ^ bstrName) = Microsoft::Office::Interop::InfoPath::View::SwitchView;" />
+      <MemberSignature Language="F#" Value="abstract member SwitchView : string -&gt; unit&#xA;override this.SwitchView : string -&gt; unit" Usage="viewObjectClass.SwitchView bstrName" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.View.SwitchView(System.String)</InterfaceMember>
@@ -430,6 +444,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View2_DisableAutoUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub View2_DisableAutoUpdate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void View2_DisableAutoUpdate() = Microsoft::Office::Interop::InfoPath::View2::DisableAutoUpdate;" />
+      <MemberSignature Language="F#" Value="abstract member View2_DisableAutoUpdate : unit -&gt; unit&#xA;override this.View2_DisableAutoUpdate : unit -&gt; unit" Usage="viewObjectClass.View2_DisableAutoUpdate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -450,6 +465,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View2_EnableAutoUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub View2_EnableAutoUpdate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void View2_EnableAutoUpdate() = Microsoft::Office::Interop::InfoPath::View2::EnableAutoUpdate;" />
+      <MemberSignature Language="F#" Value="abstract member View2_EnableAutoUpdate : unit -&gt; unit&#xA;override this.View2_EnableAutoUpdate : unit -&gt; unit" Usage="viewObjectClass.View2_EnableAutoUpdate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -469,6 +485,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void View2_ExecuteAction([in]string bstrAction, [in]object varXmlToEdit) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View2_ExecuteAction(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub View2_ExecuteAction (bstrAction As String, Optional varXmlToEdit As Object)" />
+      <MemberSignature Language="F#" Value="abstract member View2_ExecuteAction : string * obj -&gt; unit&#xA;override this.View2_ExecuteAction : string * obj -&gt; unit" Usage="viewObjectClass.View2_ExecuteAction (bstrAction, varXmlToEdit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -494,6 +511,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View2_Export(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub View2_Export (bstrURL As String, bstrFormat As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void View2_Export(System::String ^ bstrURL, System::String ^ bstrFormat) = Microsoft::Office::Interop::InfoPath::View2::Export;" />
+      <MemberSignature Language="F#" Value="abstract member View2_Export : string * string -&gt; unit&#xA;override this.View2_Export : string * string -&gt; unit" Usage="viewObjectClass.View2_Export (bstrURL, bstrFormat)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -519,6 +537,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View2_ExportAsFixedFormat(System.String,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub View2_ExportAsFixedFormat (bstrURL As String, bstrFormat As String, varExporter As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void View2_ExportAsFixedFormat(System::String ^ bstrURL, System::String ^ bstrFormat, System::Object ^ varExporter) = Microsoft::Office::Interop::InfoPath::View2::ExportAsFixedFormat;" />
+      <MemberSignature Language="F#" Value="abstract member View2_ExportAsFixedFormat : string * string * obj -&gt; unit&#xA;override this.View2_ExportAsFixedFormat : string * string * obj -&gt; unit" Usage="viewObjectClass.View2_ExportAsFixedFormat (bstrURL, bstrFormat, varExporter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -546,6 +565,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View2_ForceUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub View2_ForceUpdate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void View2_ForceUpdate() = Microsoft::Office::Interop::InfoPath::View2::ForceUpdate;" />
+      <MemberSignature Language="F#" Value="abstract member View2_ForceUpdate : unit -&gt; unit&#xA;override this.View2_ForceUpdate : unit -&gt; unit" Usage="viewObjectClass.View2_ForceUpdate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -566,6 +586,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View2_get_Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function View2_get_Name () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ View2_get_Name() = Microsoft::Office::Interop::InfoPath::View2::get_Name;" />
+      <MemberSignature Language="F#" Value="abstract member View2_get_Name : unit -&gt; string&#xA;override this.View2_get_Name : unit -&gt; string" Usage="viewObjectClass.View2_get_Name " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -587,6 +608,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View2_get_Window" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function View2_get_Window () As WindowObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::WindowObject ^ View2_get_Window() = Microsoft::Office::Interop::InfoPath::View2::get_Window;" />
+      <MemberSignature Language="F#" Value="abstract member View2_get_Window : unit -&gt; Microsoft.Office.Interop.InfoPath.WindowObject&#xA;override this.View2_get_Window : unit -&gt; Microsoft.Office.Interop.InfoPath.WindowObject" Usage="viewObjectClass.View2_get_Window " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -607,6 +629,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.XMLNodesCollection View2_GetContextNodes([in]object varNode, [in]object varViewContext) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View2_GetContextNodes(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function View2_GetContextNodes (Optional varNode As Object, Optional varViewContext As Object) As XMLNodesCollection" />
+      <MemberSignature Language="F#" Value="abstract member View2_GetContextNodes : obj * obj -&gt; Microsoft.Office.Interop.InfoPath.XMLNodesCollection&#xA;override this.View2_GetContextNodes : obj * obj -&gt; Microsoft.Office.Interop.InfoPath.XMLNodesCollection" Usage="viewObjectClass.View2_GetContextNodes (varNode, varViewContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -633,6 +656,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View2_GetSelectedNodes" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function View2_GetSelectedNodes () As XMLNodesCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::XMLNodesCollection ^ View2_GetSelectedNodes() = Microsoft::Office::Interop::InfoPath::View2::GetSelectedNodes;" />
+      <MemberSignature Language="F#" Value="abstract member View2_GetSelectedNodes : unit -&gt; Microsoft.Office.Interop.InfoPath.XMLNodesCollection&#xA;override this.View2_GetSelectedNodes : unit -&gt; Microsoft.Office.Interop.InfoPath.XMLNodesCollection" Usage="viewObjectClass.View2_GetSelectedNodes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -654,6 +678,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View2_Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property View2_Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ View2_Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.View2_Name : string" Usage="View2_Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -673,6 +698,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void View2_SelectNodes([in]class Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode pxnStartNode, [in]object varEndNode, [in]object varViewContext) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View2_SelectNodes(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub View2_SelectNodes (pxnStartNode As IXMLDOMNode, Optional varEndNode As Object, Optional varViewContext As Object)" />
+      <MemberSignature Language="F#" Value="abstract member View2_SelectNodes : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode * obj * obj -&gt; unit&#xA;override this.View2_SelectNodes : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode * obj * obj -&gt; unit" Usage="viewObjectClass.View2_SelectNodes (pxnStartNode, varEndNode, varViewContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -699,6 +725,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void View2_SelectText([in]class Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode pxnField, [in]object varViewContext) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View2_SelectText(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub View2_SelectText (pxnField As IXMLDOMNode, Optional varViewContext As Object)" />
+      <MemberSignature Language="F#" Value="abstract member View2_SelectText : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode * obj -&gt; unit&#xA;override this.View2_SelectText : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode * obj -&gt; unit" Usage="viewObjectClass.View2_SelectText (pxnField, varViewContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -724,6 +751,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View2_SwitchView(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub View2_SwitchView (bstrName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void View2_SwitchView(System::String ^ bstrName) = Microsoft::Office::Interop::InfoPath::View2::SwitchView;" />
+      <MemberSignature Language="F#" Value="abstract member View2_SwitchView : string -&gt; unit&#xA;override this.View2_SwitchView : string -&gt; unit" Usage="viewObjectClass.View2_SwitchView bstrName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -747,6 +775,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View2_Window" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property View2_Window As WindowObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::WindowObject ^ View2_Window { Microsoft::Office::Interop::InfoPath::WindowObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.View2_Window : Microsoft.Office.Interop.InfoPath.WindowObject" Usage="View2_Window" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -767,6 +796,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View3_DisableAutoUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub View3_DisableAutoUpdate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void View3_DisableAutoUpdate() = Microsoft::Office::Interop::InfoPath::View3::DisableAutoUpdate;" />
+      <MemberSignature Language="F#" Value="abstract member View3_DisableAutoUpdate : unit -&gt; unit&#xA;override this.View3_DisableAutoUpdate : unit -&gt; unit" Usage="viewObjectClass.View3_DisableAutoUpdate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -787,6 +817,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View3_EnableAutoUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub View3_EnableAutoUpdate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void View3_EnableAutoUpdate() = Microsoft::Office::Interop::InfoPath::View3::EnableAutoUpdate;" />
+      <MemberSignature Language="F#" Value="abstract member View3_EnableAutoUpdate : unit -&gt; unit&#xA;override this.View3_EnableAutoUpdate : unit -&gt; unit" Usage="viewObjectClass.View3_EnableAutoUpdate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -806,6 +837,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void View3_ExecuteAction([in]string bstrAction, [in]object varXmlToEdit) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View3_ExecuteAction(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub View3_ExecuteAction (bstrAction As String, Optional varXmlToEdit As Object)" />
+      <MemberSignature Language="F#" Value="abstract member View3_ExecuteAction : string * obj -&gt; unit&#xA;override this.View3_ExecuteAction : string * obj -&gt; unit" Usage="viewObjectClass.View3_ExecuteAction (bstrAction, varXmlToEdit)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -831,6 +863,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View3_Export(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub View3_Export (bstrURL As String, bstrFormat As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void View3_Export(System::String ^ bstrURL, System::String ^ bstrFormat) = Microsoft::Office::Interop::InfoPath::View3::Export;" />
+      <MemberSignature Language="F#" Value="abstract member View3_Export : string * string -&gt; unit&#xA;override this.View3_Export : string * string -&gt; unit" Usage="viewObjectClass.View3_Export (bstrURL, bstrFormat)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -856,6 +889,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View3_ForceUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub View3_ForceUpdate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void View3_ForceUpdate() = Microsoft::Office::Interop::InfoPath::View3::ForceUpdate;" />
+      <MemberSignature Language="F#" Value="abstract member View3_ForceUpdate : unit -&gt; unit&#xA;override this.View3_ForceUpdate : unit -&gt; unit" Usage="viewObjectClass.View3_ForceUpdate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -876,6 +910,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View3_get_Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function View3_get_Name () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ View3_get_Name() = Microsoft::Office::Interop::InfoPath::View3::get_Name;" />
+      <MemberSignature Language="F#" Value="abstract member View3_get_Name : unit -&gt; string&#xA;override this.View3_get_Name : unit -&gt; string" Usage="viewObjectClass.View3_get_Name " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -897,6 +932,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View3_get_Window" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function View3_get_Window () As WindowObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::WindowObject ^ View3_get_Window() = Microsoft::Office::Interop::InfoPath::View3::get_Window;" />
+      <MemberSignature Language="F#" Value="abstract member View3_get_Window : unit -&gt; Microsoft.Office.Interop.InfoPath.WindowObject&#xA;override this.View3_get_Window : unit -&gt; Microsoft.Office.Interop.InfoPath.WindowObject" Usage="viewObjectClass.View3_get_Window " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -917,6 +953,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.XMLNodesCollection View3_GetContextNodes([in]object varNode, [in]object varViewContext) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View3_GetContextNodes(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function View3_GetContextNodes (Optional varNode As Object, Optional varViewContext As Object) As XMLNodesCollection" />
+      <MemberSignature Language="F#" Value="abstract member View3_GetContextNodes : obj * obj -&gt; Microsoft.Office.Interop.InfoPath.XMLNodesCollection&#xA;override this.View3_GetContextNodes : obj * obj -&gt; Microsoft.Office.Interop.InfoPath.XMLNodesCollection" Usage="viewObjectClass.View3_GetContextNodes (varNode, varViewContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -943,6 +980,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View3_GetSelectedNodes" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function View3_GetSelectedNodes () As XMLNodesCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::XMLNodesCollection ^ View3_GetSelectedNodes() = Microsoft::Office::Interop::InfoPath::View3::GetSelectedNodes;" />
+      <MemberSignature Language="F#" Value="abstract member View3_GetSelectedNodes : unit -&gt; Microsoft.Office.Interop.InfoPath.XMLNodesCollection&#xA;override this.View3_GetSelectedNodes : unit -&gt; Microsoft.Office.Interop.InfoPath.XMLNodesCollection" Usage="viewObjectClass.View3_GetSelectedNodes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -964,6 +1002,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View3_Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property View3_Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ View3_Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.View3_Name : string" Usage="View3_Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -983,6 +1022,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void View3_SelectNodes([in]class Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode pxnStartNode, [in]object varEndNode, [in]object varViewContext) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View3_SelectNodes(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub View3_SelectNodes (pxnStartNode As IXMLDOMNode, Optional varEndNode As Object, Optional varViewContext As Object)" />
+      <MemberSignature Language="F#" Value="abstract member View3_SelectNodes : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode * obj * obj -&gt; unit&#xA;override this.View3_SelectNodes : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode * obj * obj -&gt; unit" Usage="viewObjectClass.View3_SelectNodes (pxnStartNode, varEndNode, varViewContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1009,6 +1049,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void View3_SelectText([in]class Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode pxnField, [in]object varViewContext) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View3_SelectText(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub View3_SelectText (pxnField As IXMLDOMNode, Optional varViewContext As Object)" />
+      <MemberSignature Language="F#" Value="abstract member View3_SelectText : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode * obj -&gt; unit&#xA;override this.View3_SelectText : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode * obj -&gt; unit" Usage="viewObjectClass.View3_SelectText (pxnField, varViewContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1034,6 +1075,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View3_SwitchView(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub View3_SwitchView (bstrName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void View3_SwitchView(System::String ^ bstrName) = Microsoft::Office::Interop::InfoPath::View3::SwitchView;" />
+      <MemberSignature Language="F#" Value="abstract member View3_SwitchView : string -&gt; unit&#xA;override this.View3_SwitchView : string -&gt; unit" Usage="viewObjectClass.View3_SwitchView bstrName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1057,6 +1099,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ViewObjectClass.View3_Window" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property View3_Window As WindowObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::WindowObject ^ View3_Window { Microsoft::Office::Interop::InfoPath::WindowObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.View3_Window : Microsoft.Office.Interop.InfoPath.WindowObject" Usage="View3_Window" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1077,6 +1120,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ViewObjectClass.Window" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Window As WindowObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::WindowObject ^ Window { Microsoft::Office::Interop::InfoPath::WindowObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Window : Microsoft.Office.Interop.InfoPath.WindowObject" Usage="Window" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.View.Window</InterfaceMember>

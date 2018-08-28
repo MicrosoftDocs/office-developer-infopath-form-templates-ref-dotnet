@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Application" />
   <TypeSignature Language="VB.NET" Value="Public Interface Application&#xA;Implements _Application2" />
   <TypeSignature Language="C++ CLI" Value="public interface class Application : Microsoft::Office::Interop::InfoPath::_Application2" />
+  <TypeSignature Language="F#" Value="type Application = interface&#xA;    interface _Application2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

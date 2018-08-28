@@ -1,0 +1,33 @@
+﻿<Type Name="DOMDocument50" FullName="Microsoft.Office.Interop.InfoPath.Xml.DOMDocument50">
+  <TypeSignature Language="C#" Value="public interface DOMDocument50 : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMDocument3, Microsoft.Office.Interop.InfoPath.Xml.XMLDOMDocumentEvents_Event" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DOMDocument50 implements class Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMDocument3, class Microsoft.Office.Interop.InfoPath.Xml.XMLDOMDocumentEvents_Event" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Xml.DOMDocument50" />
+  <TypeSignature Language="VB.NET" Value="Public Interface DOMDocument50&#xA;Implements IXMLDOMDocument3, XMLDOMDocumentEvents_Event" />
+  <TypeSignature Language="C++ CLI" Value="public interface class DOMDocument50 : Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMDocument3, Microsoft::Office::Interop::InfoPath::Xml::XMLDOMDocumentEvents_Event" />
+  <TypeSignature Language="F#" Value="type DOMDocument50 = interface&#xA;    interface IXMLDOMDocument3&#xA;    interface XMLDOMDocumentEvents_Event" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMDocument3</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.Xml.XMLDOMDocumentEvents_Event</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.InfoPath.Xml.DOMDocument50Class))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("2933BF96-7B36-11D2-B20E-00C04F983E60")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

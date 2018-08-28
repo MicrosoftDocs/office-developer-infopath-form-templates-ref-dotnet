@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLFileAdapterObject&#xA;Implements XMLFileAdapter2" />
   <TypeSignature Language="C++ CLI" Value="public interface class XMLFileAdapterObject : Microsoft::Office::Interop::InfoPath::XMLFileAdapter2" />
+  <TypeSignature Language="F#" Value="type XMLFileAdapterObject = interface&#xA;    interface XMLFileAdapter2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

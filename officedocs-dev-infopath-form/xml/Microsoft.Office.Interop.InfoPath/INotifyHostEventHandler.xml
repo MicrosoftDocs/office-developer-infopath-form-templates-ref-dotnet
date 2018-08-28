@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Interface INotifyHostEventHandler" />
   <TypeSignature Language="C++ CLI" Value="public interface class INotifyHostEventHandler" />
+  <TypeSignature Language="F#" Value="type INotifyHostEventHandler = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler.NotifyHostEventHandler(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub NotifyHostEventHandler (sender As Object, notification As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void NotifyHostEventHandler(System::Object ^ sender, System::String ^ notification);" />
+      <MemberSignature Language="F#" Value="abstract member NotifyHostEventHandler : obj * string -&gt; unit" Usage="iNotifyHostEventHandler.NotifyHostEventHandler (sender, notification)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

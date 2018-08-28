@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.BDCAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Interface BDCAdapter" />
   <TypeSignature Language="C++ CLI" Value="public interface class BDCAdapter" />
+  <TypeSignature Language="F#" Value="type BDCAdapter = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.BDCAdapter.EntityName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EntityName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EntityName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EntityName : string" Usage="Microsoft.Office.Interop.InfoPath.BDCAdapter.EntityName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.BDCAdapter.EntityNamespace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EntityNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EntityNamespace { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EntityNamespace : string" Usage="Microsoft.Office.Interop.InfoPath.BDCAdapter.EntityNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.BDCAdapter.LOBSystemInstance" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LOBSystemInstance As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LOBSystemInstance { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LOBSystemInstance : string" Usage="Microsoft.Office.Interop.InfoPath.BDCAdapter.LOBSystemInstance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.BDCAdapter.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.InfoPath.BDCAdapter.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.BDCAdapter.Query" />
       <MemberSignature Language="VB.NET" Value="Public Sub Query ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Query();" />
+      <MemberSignature Language="F#" Value="abstract member Query : unit -&gt; unit" Usage="bDCAdapter.Query " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -165,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.BDCAdapter.QueryAllowed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueryAllowed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool QueryAllowed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueryAllowed : bool" Usage="Microsoft.Office.Interop.InfoPath.BDCAdapter.QueryAllowed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -193,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.BDCAdapter.SpecificFinder" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SpecificFinder As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SpecificFinder { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SpecificFinder : string" Usage="Microsoft.Office.Interop.InfoPath.BDCAdapter.SpecificFinder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -221,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.BDCAdapter.Submit" />
       <MemberSignature Language="VB.NET" Value="Public Sub Submit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Submit();" />
+      <MemberSignature Language="F#" Value="abstract member Submit : unit -&gt; unit" Usage="bDCAdapter.Submit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -246,6 +255,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.BDCAdapter.SubmitAdapterName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubmitAdapterName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SubmitAdapterName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubmitAdapterName : string" Usage="Microsoft.Office.Interop.InfoPath.BDCAdapter.SubmitAdapterName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -274,6 +284,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.BDCAdapter.SubmitAllowed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubmitAllowed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SubmitAllowed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubmitAllowed : bool" Usage="Microsoft.Office.Interop.InfoPath.BDCAdapter.SubmitAllowed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

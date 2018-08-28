@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ServerInfoObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class ServerInfoObjectClass&#xA;Implements ServerInfoObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServerInfoObjectClass : Microsoft::Office::Interop::InfoPath::ServerInfoObject" />
+  <TypeSignature Language="F#" Value="type ServerInfoObjectClass = class&#xA;    interface ServerInfo&#xA;    interface ServerInfoObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ServerInfoObjectClass.SharePointListUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SharePointListUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SharePointListUrl { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SharePointListUrl : string" Usage="SharePointListUrl" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.ServerInfo.SharePointListUrl</InterfaceMember>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ServerInfoObjectClass.SharePointServerRootUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SharePointServerRootUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SharePointServerRootUrl { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SharePointServerRootUrl : string" Usage="SharePointServerRootUrl" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.ServerInfo.SharePointServerRootUrl</InterfaceMember>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ServerInfoObjectClass.SharePointSiteCollectionUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SharePointSiteCollectionUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SharePointSiteCollectionUrl { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SharePointSiteCollectionUrl : string" Usage="SharePointSiteCollectionUrl" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.ServerInfo.SharePointSiteCollectionUrl</InterfaceMember>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ServerInfoObjectClass.SharePointSiteUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SharePointSiteUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SharePointSiteUrl { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SharePointSiteUrl : string" Usage="SharePointSiteUrl" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.ServerInfo.SharePointSiteUrl</InterfaceMember>

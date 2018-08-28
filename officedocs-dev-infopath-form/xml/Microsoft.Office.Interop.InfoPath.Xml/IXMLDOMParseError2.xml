@@ -1,0 +1,372 @@
+﻿<Type Name="IXMLDOMParseError2" FullName="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError2">
+  <TypeSignature Language="C#" Value="public interface IXMLDOMParseError2 : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXMLDOMParseError2 implements class Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError2" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IXMLDOMParseError2&#xA;Implements IXMLDOMParseError" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IXMLDOMParseError2 : Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMParseError" />
+  <TypeSignature Language="F#" Value="type IXMLDOMParseError2 = interface&#xA;    interface IXMLDOMParseError" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("3EFAA428-272F-11D2-836F-0000F87A7782")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="allErrors">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseErrorCollection allErrors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseErrorCollection allErrors" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError2.allErrors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property allErrors As IXMLDOMParseErrorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMParseErrorCollection ^ allErrors { Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMParseErrorCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.allErrors : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseErrorCollection" Usage="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError2.allErrors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(187)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(187)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseErrorCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="errorCode">
+      <MemberSignature Language="C#" Value="public int this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 errorCode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError2.errorCode" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property errorCode As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int default { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.errorCode : int" Usage="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError2.errorCode" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError.errorCode</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="errorParameters">
+      <MemberSignature Language="C#" Value="public string errorParameters (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string errorParameters([in]int32 index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError2.errorParameters(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function errorParameters (index As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ errorParameters(int index);" />
+      <MemberSignature Language="F#" Value="abstract member errorParameters : int -&gt; string" Usage="iXMLDOMParseError2.errorParameters index" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(188)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="errorParametersCount">
+      <MemberSignature Language="C#" Value="public int errorParametersCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 errorParametersCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError2.errorParametersCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property errorParametersCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int errorParametersCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.errorParametersCount : int" Usage="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError2.errorParametersCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(189)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(189)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="errorXPath">
+      <MemberSignature Language="C#" Value="public string errorXPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string errorXPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError2.errorXPath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property errorXPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ errorXPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.errorXPath : string" Usage="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError2.errorXPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(190)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(190)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="filepos">
+      <MemberSignature Language="C#" Value="public int filepos { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 filepos" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError2.filepos" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property filepos As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int filepos { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.filepos : int" Usage="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError2.filepos" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError.filepos</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(184)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(184)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="line">
+      <MemberSignature Language="C#" Value="public int line { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 line" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError2.line" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property line As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int line { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.line : int" Usage="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError2.line" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError.line</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(182)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(182)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="linepos">
+      <MemberSignature Language="C#" Value="public int linepos { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 linepos" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError2.linepos" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property linepos As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int linepos { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.linepos : int" Usage="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError2.linepos" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError.linepos</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(183)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(183)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="reason">
+      <MemberSignature Language="C#" Value="public string reason { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string reason" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError2.reason" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property reason As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ reason { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.reason : string" Usage="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError2.reason" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError.reason</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(180)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(180)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="srcText">
+      <MemberSignature Language="C#" Value="public string srcText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string srcText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError2.srcText" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property srcText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ srcText { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.srcText : string" Usage="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError2.srcText" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError.srcText</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(181)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(181)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="url">
+      <MemberSignature Language="C#" Value="public string url { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string url" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError2.url" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property url As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ url { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.url : string" Usage="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError2.url" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMParseError.url</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(179)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(179)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

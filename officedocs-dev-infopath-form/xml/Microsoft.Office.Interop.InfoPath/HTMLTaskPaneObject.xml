@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface HTMLTaskPaneObject&#xA;Implements HTMLTaskPane" />
   <TypeSignature Language="C++ CLI" Value="public interface class HTMLTaskPaneObject : Microsoft::Office::Interop::InfoPath::HTMLTaskPane" />
+  <TypeSignature Language="F#" Value="type HTMLTaskPaneObject = interface&#xA;    interface HTMLTaskPane" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

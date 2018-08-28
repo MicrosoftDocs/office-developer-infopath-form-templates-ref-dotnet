@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._XDocument" />
   <TypeSignature Language="VB.NET" Value="Public Interface _XDocument" />
   <TypeSignature Language="C++ CLI" Value="public interface class _XDocument" />
+  <TypeSignature Language="F#" Value="type _XDocument = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath._XDocument.DataObjects" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataObjects As DataObjectsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::DataObjectsCollection ^ DataObjects { Microsoft::Office::Interop::InfoPath::DataObjectsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataObjects : Microsoft.Office.Interop.InfoPath.DataObjectsCollection" Usage="Microsoft.Office.Interop.InfoPath._XDocument.DataObjects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath._XDocument.DOM" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DOM As IXMLDOMDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMDocument ^ DOM { Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DOM : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMDocument" Usage="Microsoft.Office.Interop.InfoPath._XDocument.DOM" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath._XDocument.Errors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Errors As ErrorsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::ErrorsCollection ^ Errors { Microsoft::Office::Interop::InfoPath::ErrorsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Errors : Microsoft.Office.Interop.InfoPath.ErrorsCollection" Usage="Microsoft.Office.Interop.InfoPath._XDocument.Errors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath._XDocument.Extension" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extension As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Extension { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Extension : obj" Usage="Microsoft.Office.Interop.InfoPath._XDocument.Extension" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocument.GetDataVariable(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDataVariable (lVariableNumber As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetDataVariable(int lVariableNumber);" />
+      <MemberSignature Language="F#" Value="abstract member GetDataVariable : int -&gt; string" Usage="_XDocument.GetDataVariable lVariableNumber" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -169,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocument.GetDOM(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDOM (bstrName As String) As IXMLDOMDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMDocument ^ GetDOM(System::String ^ bstrName);" />
+      <MemberSignature Language="F#" Value="abstract member GetDOM : string -&gt; Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMDocument" Usage="_XDocument.GetDOM bstrName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -198,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocument.ImportFile(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ImportFile (bstrFileURI As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ImportFile(System::String ^ bstrFileURI);" />
+      <MemberSignature Language="F#" Value="abstract member ImportFile : string -&gt; unit" Usage="_XDocument.ImportFile bstrFileURI" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -226,6 +234,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath._XDocument.IsDirty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDirty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDirty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDirty : bool" Usage="Microsoft.Office.Interop.InfoPath._XDocument.IsDirty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -254,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath._XDocument.IsDOMReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDOMReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDOMReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDOMReadOnly : bool" Usage="Microsoft.Office.Interop.InfoPath._XDocument.IsDOMReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -282,6 +292,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath._XDocument.IsNew" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNew As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNew { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNew : bool" Usage="Microsoft.Office.Interop.InfoPath._XDocument.IsNew" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -310,6 +321,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath._XDocument.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="Microsoft.Office.Interop.InfoPath._XDocument.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -338,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath._XDocument.IsSigned" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSigned As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSigned { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSigned : bool" Usage="Microsoft.Office.Interop.InfoPath._XDocument.IsSigned" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -366,6 +379,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath._XDocument.Language" />
       <MemberSignature Language="VB.NET" Value="Public Property Language As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Language { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Language : string with get, set" Usage="Microsoft.Office.Interop.InfoPath._XDocument.Language" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -397,6 +411,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocument.PrintOut" />
       <MemberSignature Language="VB.NET" Value="Public Sub PrintOut ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PrintOut();" />
+      <MemberSignature Language="F#" Value="abstract member PrintOut : unit -&gt; unit" Usage="_XDocument.PrintOut " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -422,6 +437,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocument.Query" />
       <MemberSignature Language="VB.NET" Value="Public Sub Query ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Query();" />
+      <MemberSignature Language="F#" Value="abstract member Query : unit -&gt; unit" Usage="_XDocument.Query " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -447,6 +463,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath._XDocument.QueryAdapter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueryAdapter As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ QueryAdapter { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueryAdapter : obj" Usage="Microsoft.Office.Interop.InfoPath._XDocument.QueryAdapter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -475,6 +492,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocument.Save" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save();" />
+      <MemberSignature Language="F#" Value="abstract member Save : unit -&gt; unit" Usage="_XDocument.Save " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -500,6 +518,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocument.SaveAs(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveAs (bstrFileUrl As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveAs(System::String ^ bstrFileUrl);" />
+      <MemberSignature Language="F#" Value="abstract member SaveAs : string -&gt; unit" Usage="_XDocument.SaveAs bstrFileUrl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -528,6 +547,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocument.SetDataVariable(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetDataVariable (lVariableNumber As Integer, bstrVariableValue As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDataVariable(int lVariableNumber, System::String ^ bstrVariableValue);" />
+      <MemberSignature Language="F#" Value="abstract member SetDataVariable : int * string -&gt; unit" Usage="_XDocument.SetDataVariable (lVariableNumber, bstrVariableValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -558,6 +578,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath._XDocument.Solution" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Solution As SolutionObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::SolutionObject ^ Solution { Microsoft::Office::Interop::InfoPath::SolutionObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Solution : Microsoft.Office.Interop.InfoPath.SolutionObject" Usage="Microsoft.Office.Interop.InfoPath._XDocument.Solution" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -586,6 +607,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocument.Submit" />
       <MemberSignature Language="VB.NET" Value="Public Sub Submit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Submit();" />
+      <MemberSignature Language="F#" Value="abstract member Submit : unit -&gt; unit" Usage="_XDocument.Submit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -611,6 +633,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath._XDocument.UI" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UI As UIObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::UIObject ^ UI { Microsoft::Office::Interop::InfoPath::UIObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UI : Microsoft.Office.Interop.InfoPath.UIObject" Usage="Microsoft.Office.Interop.InfoPath._XDocument.UI" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -639,6 +662,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath._XDocument.URI" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property URI As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ URI { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.URI : string" Usage="Microsoft.Office.Interop.InfoPath._XDocument.URI" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -667,6 +691,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath._XDocument.View" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property View As ViewObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::ViewObject ^ View { Microsoft::Office::Interop::InfoPath::ViewObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.View : Microsoft.Office.Interop.InfoPath.ViewObject" Usage="Microsoft.Office.Interop.InfoPath._XDocument.View" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -695,6 +720,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath._XDocument.ViewInfos" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewInfos As ViewInfosCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::ViewInfosCollection ^ ViewInfos { Microsoft::Office::Interop::InfoPath::ViewInfosCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ViewInfos : Microsoft.Office.Interop.InfoPath.ViewInfosCollection" Usage="Microsoft.Office.Interop.InfoPath._XDocument.ViewInfos" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

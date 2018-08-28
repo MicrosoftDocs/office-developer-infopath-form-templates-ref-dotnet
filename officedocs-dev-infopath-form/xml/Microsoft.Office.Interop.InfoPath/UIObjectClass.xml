@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.UIObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class UIObjectClass&#xA;Implements UIObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class UIObjectClass : Microsoft::Office::Interop::InfoPath::UIObject" />
+  <TypeSignature Language="F#" Value="type UIObjectClass = class&#xA;    interface UI2&#xA;    interface UIObject&#xA;    interface UI" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UIObjectClass.Alert(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Alert (bstrAlertString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Alert(System::String ^ bstrAlertString) = Microsoft::Office::Interop::InfoPath::UI2::Alert;" />
+      <MemberSignature Language="F#" Value="abstract member Alert : string -&gt; unit&#xA;override this.Alert : string -&gt; unit" Usage="uIObjectClass.Alert bstrAlertString" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.UI2.Alert(System.String)</InterfaceMember>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UIObjectClass.Confirm(System.String,Microsoft.Office.Interop.InfoPath.XdConfirmButtons)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Confirm (bstrPrompt As String, lButtons As XdConfirmButtons) As XdConfirmChoice" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::XdConfirmChoice Confirm(System::String ^ bstrPrompt, Microsoft::Office::Interop::InfoPath::XdConfirmButtons lButtons) = Microsoft::Office::Interop::InfoPath::UI2::Confirm;" />
+      <MemberSignature Language="F#" Value="abstract member Confirm : string * Microsoft.Office.Interop.InfoPath.XdConfirmButtons -&gt; Microsoft.Office.Interop.InfoPath.XdConfirmChoice&#xA;override this.Confirm : string * Microsoft.Office.Interop.InfoPath.XdConfirmButtons -&gt; Microsoft.Office.Interop.InfoPath.XdConfirmChoice" Usage="uIObjectClass.Confirm (bstrPrompt, lButtons)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.UI2.Confirm(System.String,Microsoft.Office.Interop.InfoPath.XdConfirmButtons)</InterfaceMember>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UIObjectClass.SetSaveAsDialogFileName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSaveAsDialogFileName (bstrFileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSaveAsDialogFileName(System::String ^ bstrFileName) = Microsoft::Office::Interop::InfoPath::UI2::SetSaveAsDialogFileName;" />
+      <MemberSignature Language="F#" Value="abstract member SetSaveAsDialogFileName : string -&gt; unit&#xA;override this.SetSaveAsDialogFileName : string -&gt; unit" Usage="uIObjectClass.SetSaveAsDialogFileName bstrFileName" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.UI2.SetSaveAsDialogFileName(System.String)</InterfaceMember>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UIObjectClass.SetSaveAsDialogLocation(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSaveAsDialogLocation (bstrLocation As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSaveAsDialogLocation(System::String ^ bstrLocation) = Microsoft::Office::Interop::InfoPath::UI2::SetSaveAsDialogLocation;" />
+      <MemberSignature Language="F#" Value="abstract member SetSaveAsDialogLocation : string -&gt; unit&#xA;override this.SetSaveAsDialogLocation : string -&gt; unit" Usage="uIObjectClass.SetSaveAsDialogLocation bstrLocation" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.UI2.SetSaveAsDialogLocation(System.String)</InterfaceMember>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UIObjectClass.ShowMailItem(System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ShowMailItem (bstrTo As String, bstrCC As String, bstrBCC As String, bstrSubject As String, bstrBody As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ShowMailItem(System::String ^ bstrTo, System::String ^ bstrCC, System::String ^ bstrBCC, System::String ^ bstrSubject, System::String ^ bstrBody) = Microsoft::Office::Interop::InfoPath::UI2::ShowMailItem;" />
+      <MemberSignature Language="F#" Value="abstract member ShowMailItem : string * string * string * string * string -&gt; unit&#xA;override this.ShowMailItem : string * string * string * string * string -&gt; unit" Usage="uIObjectClass.ShowMailItem (bstrTo, bstrCC, bstrBCC, bstrSubject, bstrBody)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.UI2.ShowMailItem(System.String,System.String,System.String,System.String,System.String)</InterfaceMember>
@@ -200,6 +206,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ShowModalDialog([in]string bstrName, [in]object varArguments, [in]object varHeight, [in]object varWidth, [in]object varTop, [in]object varLeft) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UIObjectClass.ShowModalDialog(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ShowModalDialog (bstrName As String, Optional varArguments As Object, Optional varHeight As Object, Optional varWidth As Object, Optional varTop As Object, Optional varLeft As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member ShowModalDialog : string * obj * obj * obj * obj * obj -&gt; obj&#xA;override this.ShowModalDialog : string * obj * obj * obj * obj * obj -&gt; obj" Usage="uIObjectClass.ShowModalDialog (bstrName, varArguments, varHeight, varWidth, varTop, varLeft)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.UI2.ShowModalDialog(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)</InterfaceMember>
@@ -242,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UIObjectClass.ShowSignatureDialog" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ShowSignatureDialog ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ShowSignatureDialog() = Microsoft::Office::Interop::InfoPath::UI2::ShowSignatureDialog;" />
+      <MemberSignature Language="F#" Value="abstract member ShowSignatureDialog : unit -&gt; unit&#xA;override this.ShowSignatureDialog : unit -&gt; unit" Usage="uIObjectClass.ShowSignatureDialog " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.UI2.ShowSignatureDialog</InterfaceMember>
@@ -270,6 +278,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UIObjectClass.UI_Alert(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub UI_Alert (bstrAlertString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UI_Alert(System::String ^ bstrAlertString) = Microsoft::Office::Interop::InfoPath::UI::Alert;" />
+      <MemberSignature Language="F#" Value="abstract member UI_Alert : string -&gt; unit&#xA;override this.UI_Alert : string -&gt; unit" Usage="uIObjectClass.UI_Alert bstrAlertString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -293,6 +302,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UIObjectClass.UI_ShowMailItem(System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub UI_ShowMailItem (bstrTo As String, bstrCC As String, bstrBCC As String, bstrSubject As String, bstrBody As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UI_ShowMailItem(System::String ^ bstrTo, System::String ^ bstrCC, System::String ^ bstrBCC, System::String ^ bstrSubject, System::String ^ bstrBody) = Microsoft::Office::Interop::InfoPath::UI::ShowMailItem;" />
+      <MemberSignature Language="F#" Value="abstract member UI_ShowMailItem : string * string * string * string * string -&gt; unit&#xA;override this.UI_ShowMailItem : string * string * string * string * string -&gt; unit" Usage="uIObjectClass.UI_ShowMailItem (bstrTo, bstrCC, bstrBCC, bstrSubject, bstrBody)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -323,6 +333,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object UI_ShowModalDialog([in]string bstrName, [in]object varArguments, [in]object varHeight, [in]object varWidth, [in]object varTop, [in]object varLeft) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UIObjectClass.UI_ShowModalDialog(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function UI_ShowModalDialog (bstrName As String, Optional varArguments As Object, Optional varHeight As Object, Optional varWidth As Object, Optional varTop As Object, Optional varLeft As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member UI_ShowModalDialog : string * obj * obj * obj * obj * obj -&gt; obj&#xA;override this.UI_ShowModalDialog : string * obj * obj * obj * obj * obj -&gt; obj" Usage="uIObjectClass.UI_ShowModalDialog (bstrName, varArguments, varHeight, varWidth, varTop, varLeft)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -357,6 +368,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UIObjectClass.UI_ShowSignatureDialog" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub UI_ShowSignatureDialog ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UI_ShowSignatureDialog() = Microsoft::Office::Interop::InfoPath::UI::ShowSignatureDialog;" />
+      <MemberSignature Language="F#" Value="abstract member UI_ShowSignatureDialog : unit -&gt; unit&#xA;override this.UI_ShowSignatureDialog : unit -&gt; unit" Usage="uIObjectClass.UI_ShowSignatureDialog " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

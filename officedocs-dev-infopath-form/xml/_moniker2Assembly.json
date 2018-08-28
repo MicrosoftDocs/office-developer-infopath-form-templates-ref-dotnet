@@ -1,5 +1,7 @@
 {
   "infopath-form": [
-    "Microsoft.Office.Interop.InfoPath"
+    "Microsoft.Office.InfoPath.FormControl",
+    "Microsoft.Office.Interop.InfoPath",
+    "Microsoft.Office.Interop.InfoPath.Xml"
   ]
 }

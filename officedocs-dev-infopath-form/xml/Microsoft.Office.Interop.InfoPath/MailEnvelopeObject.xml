@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.MailEnvelopeObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailEnvelopeObject&#xA;Implements MailEnvelope" />
   <TypeSignature Language="C++ CLI" Value="public interface class MailEnvelopeObject : Microsoft::Office::Interop::InfoPath::MailEnvelope" />
+  <TypeSignature Language="F#" Value="type MailEnvelopeObject = interface&#xA;    interface MailEnvelope" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

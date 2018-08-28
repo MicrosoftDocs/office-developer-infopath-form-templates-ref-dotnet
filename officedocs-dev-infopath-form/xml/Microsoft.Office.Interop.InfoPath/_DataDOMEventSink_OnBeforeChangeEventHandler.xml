@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub _DataDOMEventSink_OnBeforeChangeEventHandler(pDataDOMEvent As DataDOMEventObject)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void _DataDOMEventSink_OnBeforeChangeEventHandler(DataDOMEventObject ^ pDataDOMEvent);" />
+  <TypeSignature Language="F#" Value="type _DataDOMEventSink_OnBeforeChangeEventHandler = delegate of DataDOMEventObject -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

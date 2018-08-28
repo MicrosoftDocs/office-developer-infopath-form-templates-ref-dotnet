@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataAdapterMOM" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDataAdapterMOM" />
+  <TypeSignature Language="F#" Value="type IDataAdapterMOM = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.GenerateDataSetDiffGramInXml" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateDataSetDiffGramInXml () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GenerateDataSetDiffGramInXml();" />
+      <MemberSignature Language="F#" Value="abstract member GenerateDataSetDiffGramInXml : unit -&gt; string" Usage="iDataAdapterMOM.GenerateDataSetDiffGramInXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -52,6 +54,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.GetAdoSubmitName" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAdoSubmitName () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetAdoSubmitName();" />
+      <MemberSignature Language="F#" Value="abstract member GetAdoSubmitName : unit -&gt; string" Usage="iDataAdapterMOM.GetAdoSubmitName " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.GetErrorXMLForMOM" />
       <MemberSignature Language="VB.NET" Value="Public Function GetErrorXMLForMOM () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetErrorXMLForMOM();" />
+      <MemberSignature Language="F#" Value="abstract member GetErrorXMLForMOM : unit -&gt; string" Usage="iDataAdapterMOM.GetErrorXMLForMOM " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -94,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.QueryOrSubmitWithInputOutput(System.Boolean,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function QueryOrSubmitWithInputOutput (fInputIsNull As Boolean, bstrInputXML As String, fOutputIsNull As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ QueryOrSubmitWithInputOutput(bool fInputIsNull, System::String ^ bstrInputXML, bool fOutputIsNull);" />
+      <MemberSignature Language="F#" Value="abstract member QueryOrSubmitWithInputOutput : bool * string * bool -&gt; string" Usage="iDataAdapterMOM.QueryOrSubmitWithInputOutput (fInputIsNull, bstrInputXML, fOutputIsNull)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -122,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.QueryWithOutput" />
       <MemberSignature Language="VB.NET" Value="Public Function QueryWithOutput () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ QueryWithOutput();" />
+      <MemberSignature Language="F#" Value="abstract member QueryWithOutput : unit -&gt; string" Usage="iDataAdapterMOM.QueryWithOutput " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -143,6 +149,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.SubmitWithInput(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SubmitWithInput (bstrInputXML As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SubmitWithInput(System::String ^ bstrInputXML);" />
+      <MemberSignature Language="F#" Value="abstract member SubmitWithInput : string -&gt; unit" Usage="iDataAdapterMOM.SubmitWithInput bstrInputXML" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

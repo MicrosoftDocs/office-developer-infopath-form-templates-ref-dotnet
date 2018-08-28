@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.TaskPanesCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface TaskPanesCollection&#xA;Implements TaskPanes" />
   <TypeSignature Language="C++ CLI" Value="public interface class TaskPanesCollection : Microsoft::Office::Interop::InfoPath::TaskPanes" />
+  <TypeSignature Language="F#" Value="type TaskPanesCollection = interface&#xA;    interface TaskPanes" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

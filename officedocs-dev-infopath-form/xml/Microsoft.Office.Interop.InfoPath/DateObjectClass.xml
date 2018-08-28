@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DateObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class DateObjectClass&#xA;Implements DateObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class DateObjectClass : Microsoft::Office::Interop::InfoPath::DateObject" />
+  <TypeSignature Language="F#" Value="type DateObjectClass = class&#xA;    interface Date&#xA;    interface DateObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.DateObjectClass.Now" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Now () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Now() = Microsoft::Office::Interop::InfoPath::Date::Now;" />
+      <MemberSignature Language="F#" Value="abstract member Now : unit -&gt; obj&#xA;override this.Now : unit -&gt; obj" Usage="dateObjectClass.Now " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.Date.Now</InterfaceMember>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.DateObjectClass.Today" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Today () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Today() = Microsoft::Office::Interop::InfoPath::Date::Today;" />
+      <MemberSignature Language="F#" Value="abstract member Today : unit -&gt; obj&#xA;override this.Today : unit -&gt; obj" Usage="dateObjectClass.Today " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.Date.Today</InterfaceMember>

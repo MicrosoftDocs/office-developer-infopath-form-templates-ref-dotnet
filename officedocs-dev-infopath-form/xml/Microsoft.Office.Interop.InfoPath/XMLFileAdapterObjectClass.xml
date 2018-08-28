@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class XMLFileAdapterObjectClass&#xA;Implements IDataAdapterMOM, XMLFileAdapterObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class XMLFileAdapterObjectClass : Microsoft::Office::Interop::InfoPath::IDataAdapterMOM, Microsoft::Office::Interop::InfoPath::XMLFileAdapterObject" />
+  <TypeSignature Language="F#" Value="type XMLFileAdapterObjectClass = class&#xA;    interface XMLFileAdapter2&#xA;    interface XMLFileAdapterObject&#xA;    interface XMLFileAdapter&#xA;    interface IDataAdapterMOM" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObjectClass.FileURL" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property FileURL As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FileURL { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FileURL : string with get, set" Usage="FileURL" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.XMLFileAdapter2.FileURL</InterfaceMember>
@@ -72,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObjectClass.GenerateDataSetDiffGramInXml" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GenerateDataSetDiffGramInXml () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GenerateDataSetDiffGramInXml() = Microsoft::Office::Interop::InfoPath::IDataAdapterMOM::GenerateDataSetDiffGramInXml;" />
+      <MemberSignature Language="F#" Value="abstract member GenerateDataSetDiffGramInXml : unit -&gt; string&#xA;override this.GenerateDataSetDiffGramInXml : unit -&gt; string" Usage="xMLFileAdapterObjectClass.GenerateDataSetDiffGramInXml " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.GenerateDataSetDiffGramInXml</InterfaceMember>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObjectClass.GetAdoSubmitName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAdoSubmitName () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetAdoSubmitName() = Microsoft::Office::Interop::InfoPath::IDataAdapterMOM::GetAdoSubmitName;" />
+      <MemberSignature Language="F#" Value="abstract member GetAdoSubmitName : unit -&gt; string&#xA;override this.GetAdoSubmitName : unit -&gt; string" Usage="xMLFileAdapterObjectClass.GetAdoSubmitName " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.GetAdoSubmitName</InterfaceMember>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObjectClass.GetErrorXMLForMOM" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetErrorXMLForMOM () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetErrorXMLForMOM() = Microsoft::Office::Interop::InfoPath::IDataAdapterMOM::GetErrorXMLForMOM;" />
+      <MemberSignature Language="F#" Value="abstract member GetErrorXMLForMOM : unit -&gt; string&#xA;override this.GetErrorXMLForMOM : unit -&gt; string" Usage="xMLFileAdapterObjectClass.GetErrorXMLForMOM " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.GetErrorXMLForMOM</InterfaceMember>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObjectClass.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Name" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.XMLFileAdapter2.Name</InterfaceMember>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObjectClass.Query" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Query ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Query() = Microsoft::Office::Interop::InfoPath::XMLFileAdapter2::Query;" />
+      <MemberSignature Language="F#" Value="abstract member Query : unit -&gt; unit&#xA;override this.Query : unit -&gt; unit" Usage="xMLFileAdapterObjectClass.Query " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.XMLFileAdapter2.Query</InterfaceMember>
@@ -203,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObjectClass.QueryAllowed" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property QueryAllowed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool QueryAllowed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueryAllowed : bool" Usage="QueryAllowed" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.XMLFileAdapter2.QueryAllowed</InterfaceMember>
@@ -234,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObjectClass.QueryOrSubmitWithInputOutput(System.Boolean,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function QueryOrSubmitWithInputOutput (fInputIsNull As Boolean, bstrInputXML As String, fOutputIsNull As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ QueryOrSubmitWithInputOutput(bool fInputIsNull, System::String ^ bstrInputXML, bool fOutputIsNull) = Microsoft::Office::Interop::InfoPath::IDataAdapterMOM::QueryOrSubmitWithInputOutput;" />
+      <MemberSignature Language="F#" Value="abstract member QueryOrSubmitWithInputOutput : bool * string * bool -&gt; string&#xA;override this.QueryOrSubmitWithInputOutput : bool * string * bool -&gt; string" Usage="xMLFileAdapterObjectClass.QueryOrSubmitWithInputOutput (fInputIsNull, bstrInputXML, fOutputIsNull)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.QueryOrSubmitWithInputOutput(System.Boolean,System.String,System.Boolean)</InterfaceMember>
@@ -265,6 +274,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObjectClass.QueryWithOutput" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function QueryWithOutput () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ QueryWithOutput() = Microsoft::Office::Interop::InfoPath::IDataAdapterMOM::QueryWithOutput;" />
+      <MemberSignature Language="F#" Value="abstract member QueryWithOutput : unit -&gt; string&#xA;override this.QueryWithOutput : unit -&gt; string" Usage="xMLFileAdapterObjectClass.QueryWithOutput " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.QueryWithOutput</InterfaceMember>
@@ -289,6 +299,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObjectClass.Submit" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Submit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Submit() = Microsoft::Office::Interop::InfoPath::XMLFileAdapter2::Submit;" />
+      <MemberSignature Language="F#" Value="abstract member Submit : unit -&gt; unit&#xA;override this.Submit : unit -&gt; unit" Usage="xMLFileAdapterObjectClass.Submit " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.XMLFileAdapter2.Submit</InterfaceMember>
@@ -317,6 +328,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObjectClass.SubmitAllowed" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SubmitAllowed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SubmitAllowed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubmitAllowed : bool" Usage="SubmitAllowed" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.XMLFileAdapter2.SubmitAllowed</InterfaceMember>
@@ -348,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObjectClass.SubmitWithInput(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SubmitWithInput (bstrInputXML As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SubmitWithInput(System::String ^ bstrInputXML) = Microsoft::Office::Interop::InfoPath::IDataAdapterMOM::SubmitWithInput;" />
+      <MemberSignature Language="F#" Value="abstract member SubmitWithInput : string -&gt; unit&#xA;override this.SubmitWithInput : string -&gt; unit" Usage="xMLFileAdapterObjectClass.SubmitWithInput bstrInputXML" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.SubmitWithInput(System.String)</InterfaceMember>
@@ -374,6 +387,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObjectClass.XMLFileAdapter_FileURL" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property XMLFileAdapter_FileURL As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ XMLFileAdapter_FileURL { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.XMLFileAdapter_FileURL : string with get, set" Usage="XMLFileAdapter_FileURL" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -394,6 +408,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObjectClass.XMLFileAdapter_get_FileURL" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function XMLFileAdapter_get_FileURL () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ XMLFileAdapter_get_FileURL() = Microsoft::Office::Interop::InfoPath::XMLFileAdapter::get_FileURL;" />
+      <MemberSignature Language="F#" Value="abstract member XMLFileAdapter_get_FileURL : unit -&gt; string&#xA;override this.XMLFileAdapter_get_FileURL : unit -&gt; string" Usage="xMLFileAdapterObjectClass.XMLFileAdapter_get_FileURL " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -415,6 +430,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObjectClass.XMLFileAdapter_set_FileURL(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub XMLFileAdapter_set_FileURL (pbstrFileURL As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void XMLFileAdapter_set_FileURL(System::String ^ pbstrFileURL) = Microsoft::Office::Interop::InfoPath::XMLFileAdapter::set_FileURL;" />
+      <MemberSignature Language="F#" Value="abstract member XMLFileAdapter_set_FileURL : string -&gt; unit&#xA;override this.XMLFileAdapter_set_FileURL : string -&gt; unit" Usage="xMLFileAdapterObjectClass.XMLFileAdapter_set_FileURL pbstrFileURL" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

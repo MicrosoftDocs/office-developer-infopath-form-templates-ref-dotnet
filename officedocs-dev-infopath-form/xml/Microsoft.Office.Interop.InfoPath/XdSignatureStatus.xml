@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XdSignatureStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum XdSignatureStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class XdSignatureStatus" />
+  <TypeSignature Language="F#" Value="type XdSignatureStatus = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdSignatureStatus.xdSignatureStatusError" />
       <MemberSignature Language="VB.NET" Value="xdSignatureStatusError" />
       <MemberSignature Language="C++ CLI" Value="xdSignatureStatusError" />
+      <MemberSignature Language="F#" Value="xdSignatureStatusError = 0" Usage="Microsoft.Office.Interop.InfoPath.XdSignatureStatus.xdSignatureStatusError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdSignatureStatus.xdSignatureStatusInvalid" />
       <MemberSignature Language="VB.NET" Value="xdSignatureStatusInvalid" />
       <MemberSignature Language="C++ CLI" Value="xdSignatureStatusInvalid" />
+      <MemberSignature Language="F#" Value="xdSignatureStatusInvalid = 2" Usage="Microsoft.Office.Interop.InfoPath.XdSignatureStatus.xdSignatureStatusInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdSignatureStatus.xdSignatureStatusUnsupported" />
       <MemberSignature Language="VB.NET" Value="xdSignatureStatusUnsupported" />
       <MemberSignature Language="C++ CLI" Value="xdSignatureStatusUnsupported" />
+      <MemberSignature Language="F#" Value="xdSignatureStatusUnsupported = 3" Usage="Microsoft.Office.Interop.InfoPath.XdSignatureStatus.xdSignatureStatusUnsupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdSignatureStatus.xdSignatureStatusValid" />
       <MemberSignature Language="VB.NET" Value="xdSignatureStatusValid" />
       <MemberSignature Language="C++ CLI" Value="xdSignatureStatusValid" />
+      <MemberSignature Language="F#" Value="xdSignatureStatusValid = 1" Usage="Microsoft.Office.Interop.InfoPath.XdSignatureStatus.xdSignatureStatusValid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum XdDocumentVersionMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class XdDocumentVersionMode" />
+  <TypeSignature Language="F#" Value="type XdDocumentVersionMode = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdCanOpenInReadOnlyMode" />
       <MemberSignature Language="VB.NET" Value="xdCanOpenInReadOnlyMode" />
       <MemberSignature Language="C++ CLI" Value="xdCanOpenInReadOnlyMode" />
+      <MemberSignature Language="F#" Value="xdCanOpenInReadOnlyMode = 8" Usage="Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdCanOpenInReadOnlyMode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdCanTransformSigned" />
       <MemberSignature Language="VB.NET" Value="xdCanTransformSigned" />
       <MemberSignature Language="C++ CLI" Value="xdCanTransformSigned" />
+      <MemberSignature Language="F#" Value="xdCanTransformSigned = 16" Usage="Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdCanTransformSigned" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdDoNotInstallActiveXCabs" />
       <MemberSignature Language="VB.NET" Value="xdDoNotInstallActiveXCabs" />
       <MemberSignature Language="C++ CLI" Value="xdDoNotInstallActiveXCabs" />
+      <MemberSignature Language="F#" Value="xdDoNotInstallActiveXCabs = 128" Usage="Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdDoNotInstallActiveXCabs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdFailOnVersionMismatch" />
       <MemberSignature Language="VB.NET" Value="xdFailOnVersionMismatch" />
       <MemberSignature Language="C++ CLI" Value="xdFailOnVersionMismatch" />
+      <MemberSignature Language="F#" Value="xdFailOnVersionMismatch = 0" Usage="Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdFailOnVersionMismatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdFailOnVersionOlder" />
       <MemberSignature Language="VB.NET" Value="xdFailOnVersionOlder" />
       <MemberSignature Language="C++ CLI" Value="xdFailOnVersionOlder" />
+      <MemberSignature Language="F#" Value="xdFailOnVersionOlder = 1" Usage="Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdFailOnVersionOlder" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -122,6 +128,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdIgnoreDataAdaptersQueryFailure" />
       <MemberSignature Language="VB.NET" Value="xdIgnoreDataAdaptersQueryFailure" />
       <MemberSignature Language="C++ CLI" Value="xdIgnoreDataAdaptersQueryFailure" />
+      <MemberSignature Language="F#" Value="xdIgnoreDataAdaptersQueryFailure = 64" Usage="Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdIgnoreDataAdaptersQueryFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -141,6 +148,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdPromptTransformSigned" />
       <MemberSignature Language="VB.NET" Value="xdPromptTransformSigned" />
       <MemberSignature Language="C++ CLI" Value="xdPromptTransformSigned" />
+      <MemberSignature Language="F#" Value="xdPromptTransformSigned = 32" Usage="Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdPromptTransformSigned" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -160,6 +168,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdUseExistingVersion" />
       <MemberSignature Language="VB.NET" Value="xdUseExistingVersion" />
       <MemberSignature Language="C++ CLI" Value="xdUseExistingVersion" />
+      <MemberSignature Language="F#" Value="xdUseExistingVersion = 2" Usage="Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdUseExistingVersion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

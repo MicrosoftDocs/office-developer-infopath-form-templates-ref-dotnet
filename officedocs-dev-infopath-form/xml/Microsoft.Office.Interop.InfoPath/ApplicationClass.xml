@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ApplicationClass" />
   <TypeSignature Language="VB.NET" Value="Public Class ApplicationClass&#xA;Implements _Application3, Application" />
   <TypeSignature Language="C++ CLI" Value="public ref class ApplicationClass : Microsoft::Office::Interop::InfoPath::_Application3, Microsoft::Office::Interop::InfoPath::Application" />
+  <TypeSignature Language="F#" Value="type ApplicationClass = class&#xA;    interface _Application2&#xA;    interface Application&#xA;    interface _Application3&#xA;    interface _Application" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application_ActiveWindow" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property _Application_ActiveWindow As WindowObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::WindowObject ^ _Application_ActiveWindow { Microsoft::Office::Interop::InfoPath::WindowObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this._Application_ActiveWindow : Microsoft.Office.Interop.InfoPath.WindowObject" Usage="_Application_ActiveWindow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -78,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application_FormatString(System.Object,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function _Application_FormatString (varInput As Object, bstrCategory As String, bstrOptions As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ _Application_FormatString(System::Object ^ varInput, System::String ^ bstrCategory, System::String ^ bstrOptions) = Microsoft::Office::Interop::InfoPath::_Application::FormatString;" />
+      <MemberSignature Language="F#" Value="abstract member _Application_FormatString : obj * string * string -&gt; string&#xA;override this._Application_FormatString : obj * string * string -&gt; string" Usage="applicationClass._Application_FormatString (varInput, bstrCategory, bstrOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -106,6 +109,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application_get_ActiveWindow" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function _Application_get_ActiveWindow () As WindowObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::WindowObject ^ _Application_get_ActiveWindow() = Microsoft::Office::Interop::InfoPath::_Application::get_ActiveWindow;" />
+      <MemberSignature Language="F#" Value="abstract member _Application_get_ActiveWindow : unit -&gt; Microsoft.Office.Interop.InfoPath.WindowObject&#xA;override this._Application_get_ActiveWindow : unit -&gt; Microsoft.Office.Interop.InfoPath.WindowObject" Usage="applicationClass._Application_get_ActiveWindow " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application_get_LanguageSettings" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function _Application_get_LanguageSettings () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ _Application_get_LanguageSettings() = Microsoft::Office::Interop::InfoPath::_Application::get_LanguageSettings;" />
+      <MemberSignature Language="F#" Value="abstract member _Application_get_LanguageSettings : unit -&gt; obj&#xA;override this._Application_get_LanguageSettings : unit -&gt; obj" Usage="applicationClass._Application_get_LanguageSettings " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application_get_Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function _Application_get_Name () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ _Application_get_Name() = Microsoft::Office::Interop::InfoPath::_Application::get_Name;" />
+      <MemberSignature Language="F#" Value="abstract member _Application_get_Name : unit -&gt; string&#xA;override this._Application_get_Name : unit -&gt; string" Usage="applicationClass._Application_get_Name " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -169,6 +175,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application_get_Version" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function _Application_get_Version () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ _Application_get_Version() = Microsoft::Office::Interop::InfoPath::_Application::get_Version;" />
+      <MemberSignature Language="F#" Value="abstract member _Application_get_Version : unit -&gt; string&#xA;override this._Application_get_Version : unit -&gt; string" Usage="applicationClass._Application_get_Version " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -190,6 +197,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application_get_Windows" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function _Application_get_Windows () As WindowsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::WindowsCollection ^ _Application_get_Windows() = Microsoft::Office::Interop::InfoPath::_Application::get_Windows;" />
+      <MemberSignature Language="F#" Value="abstract member _Application_get_Windows : unit -&gt; Microsoft.Office.Interop.InfoPath.WindowsCollection&#xA;override this._Application_get_Windows : unit -&gt; Microsoft.Office.Interop.InfoPath.WindowsCollection" Usage="applicationClass._Application_get_Windows " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -211,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application_get_XDocuments" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function _Application_get_XDocuments () As XDocumentsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::XDocumentsCollection ^ _Application_get_XDocuments() = Microsoft::Office::Interop::InfoPath::_Application::get_XDocuments;" />
+      <MemberSignature Language="F#" Value="abstract member _Application_get_XDocuments : unit -&gt; Microsoft.Office.Interop.InfoPath.XDocumentsCollection&#xA;override this._Application_get_XDocuments : unit -&gt; Microsoft.Office.Interop.InfoPath.XDocumentsCollection" Usage="applicationClass._Application_get_XDocuments " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -232,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application_LanguageSettings" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property _Application_LanguageSettings As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ _Application_LanguageSettings { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this._Application_LanguageSettings : obj" Usage="_Application_LanguageSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -252,6 +262,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application_Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property _Application_Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ _Application_Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this._Application_Name : string" Usage="_Application_Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -272,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application_NewADODBConnection" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function _Application_NewADODBConnection () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ _Application_NewADODBConnection() = Microsoft::Office::Interop::InfoPath::_Application::NewADODBConnection;" />
+      <MemberSignature Language="F#" Value="abstract member _Application_NewADODBConnection : unit -&gt; obj&#xA;override this._Application_NewADODBConnection : unit -&gt; obj" Usage="applicationClass._Application_NewADODBConnection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -293,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application_NewADODBRecordset" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function _Application_NewADODBRecordset () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ _Application_NewADODBRecordset() = Microsoft::Office::Interop::InfoPath::_Application::NewADODBRecordset;" />
+      <MemberSignature Language="F#" Value="abstract member _Application_NewADODBRecordset : unit -&gt; obj&#xA;override this._Application_NewADODBRecordset : unit -&gt; obj" Usage="applicationClass._Application_NewADODBRecordset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -313,6 +326,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void _Application_Quit([in]bool bForce) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application_Quit(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub _Application_Quit (Optional bForce As Boolean = false)" />
+      <MemberSignature Language="F#" Value="abstract member _Application_Quit : bool -&gt; unit&#xA;override this._Application_Quit : bool -&gt; unit" Usage="applicationClass._Application_Quit bForce" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -336,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application_Version" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property _Application_Version As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ _Application_Version { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this._Application_Version : string" Usage="_Application_Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -356,6 +371,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application_Windows" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property _Application_Windows As WindowsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::WindowsCollection ^ _Application_Windows { Microsoft::Office::Interop::InfoPath::WindowsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this._Application_Windows : Microsoft.Office.Interop.InfoPath.WindowsCollection" Usage="_Application_Windows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -376,6 +392,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application_XDocuments" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property _Application_XDocuments As XDocumentsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XDocumentsCollection ^ _Application_XDocuments { Microsoft::Office::Interop::InfoPath::XDocumentsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this._Application_XDocuments : Microsoft.Office.Interop.InfoPath.XDocumentsCollection" Usage="_Application_XDocuments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -396,6 +413,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_ActiveWindow" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property _Application3_ActiveWindow As WindowObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::WindowObject ^ _Application3_ActiveWindow { Microsoft::Office::Interop::InfoPath::WindowObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this._Application3_ActiveWindow : Microsoft.Office.Interop.InfoPath.WindowObject" Usage="_Application3_ActiveWindow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -416,6 +434,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_CacheSolution(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub _Application3_CacheSolution (bstrSolutionURI As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void _Application3_CacheSolution(System::String ^ bstrSolutionURI) = Microsoft::Office::Interop::InfoPath::_Application3::CacheSolution;" />
+      <MemberSignature Language="F#" Value="abstract member _Application3_CacheSolution : string -&gt; unit&#xA;override this._Application3_CacheSolution : string -&gt; unit" Usage="applicationClass._Application3_CacheSolution bstrSolutionURI" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -439,6 +458,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_FormatString(System.Object,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function _Application3_FormatString (varInput As Object, bstrCategory As String, bstrOptions As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ _Application3_FormatString(System::Object ^ varInput, System::String ^ bstrCategory, System::String ^ bstrOptions) = Microsoft::Office::Interop::InfoPath::_Application3::FormatString;" />
+      <MemberSignature Language="F#" Value="abstract member _Application3_FormatString : obj * string * string -&gt; string&#xA;override this._Application3_FormatString : obj * string * string -&gt; string" Usage="applicationClass._Application3_FormatString (varInput, bstrCategory, bstrOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -467,6 +487,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_get_ActiveWindow" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function _Application3_get_ActiveWindow () As WindowObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::WindowObject ^ _Application3_get_ActiveWindow() = Microsoft::Office::Interop::InfoPath::_Application3::get_ActiveWindow;" />
+      <MemberSignature Language="F#" Value="abstract member _Application3_get_ActiveWindow : unit -&gt; Microsoft.Office.Interop.InfoPath.WindowObject&#xA;override this._Application3_get_ActiveWindow : unit -&gt; Microsoft.Office.Interop.InfoPath.WindowObject" Usage="applicationClass._Application3_get_ActiveWindow " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -488,6 +509,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_get_LanguageSettings" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function _Application3_get_LanguageSettings () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ _Application3_get_LanguageSettings() = Microsoft::Office::Interop::InfoPath::_Application3::get_LanguageSettings;" />
+      <MemberSignature Language="F#" Value="abstract member _Application3_get_LanguageSettings : unit -&gt; obj&#xA;override this._Application3_get_LanguageSettings : unit -&gt; obj" Usage="applicationClass._Application3_get_LanguageSettings " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -509,6 +531,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_get_MachineOnlineState" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function _Application3_get_MachineOnlineState () As XdMachineOnlineState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::XdMachineOnlineState _Application3_get_MachineOnlineState() = Microsoft::Office::Interop::InfoPath::_Application3::get_MachineOnlineState;" />
+      <MemberSignature Language="F#" Value="abstract member _Application3_get_MachineOnlineState : unit -&gt; Microsoft.Office.Interop.InfoPath.XdMachineOnlineState&#xA;override this._Application3_get_MachineOnlineState : unit -&gt; Microsoft.Office.Interop.InfoPath.XdMachineOnlineState" Usage="applicationClass._Application3_get_MachineOnlineState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -530,6 +553,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_get_Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function _Application3_get_Name () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ _Application3_get_Name() = Microsoft::Office::Interop::InfoPath::_Application3::get_Name;" />
+      <MemberSignature Language="F#" Value="abstract member _Application3_get_Name : unit -&gt; string&#xA;override this._Application3_get_Name : unit -&gt; string" Usage="applicationClass._Application3_get_Name " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -551,6 +575,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_get_UsableHeight" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function _Application3_get_UsableHeight () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int _Application3_get_UsableHeight() = Microsoft::Office::Interop::InfoPath::_Application3::get_UsableHeight;" />
+      <MemberSignature Language="F#" Value="abstract member _Application3_get_UsableHeight : unit -&gt; int&#xA;override this._Application3_get_UsableHeight : unit -&gt; int" Usage="applicationClass._Application3_get_UsableHeight " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -572,6 +597,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_get_UsableWidth" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function _Application3_get_UsableWidth () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int _Application3_get_UsableWidth() = Microsoft::Office::Interop::InfoPath::_Application3::get_UsableWidth;" />
+      <MemberSignature Language="F#" Value="abstract member _Application3_get_UsableWidth : unit -&gt; int&#xA;override this._Application3_get_UsableWidth : unit -&gt; int" Usage="applicationClass._Application3_get_UsableWidth " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -593,6 +619,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_get_User" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function _Application3_get_User () As UserObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::UserObject ^ _Application3_get_User() = Microsoft::Office::Interop::InfoPath::_Application3::get_User;" />
+      <MemberSignature Language="F#" Value="abstract member _Application3_get_User : unit -&gt; Microsoft.Office.Interop.InfoPath.UserObject&#xA;override this._Application3_get_User : unit -&gt; Microsoft.Office.Interop.InfoPath.UserObject" Usage="applicationClass._Application3_get_User " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -614,6 +641,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_get_Version" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function _Application3_get_Version () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ _Application3_get_Version() = Microsoft::Office::Interop::InfoPath::_Application3::get_Version;" />
+      <MemberSignature Language="F#" Value="abstract member _Application3_get_Version : unit -&gt; string&#xA;override this._Application3_get_Version : unit -&gt; string" Usage="applicationClass._Application3_get_Version " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -635,6 +663,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_get_Windows" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function _Application3_get_Windows () As WindowsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::WindowsCollection ^ _Application3_get_Windows() = Microsoft::Office::Interop::InfoPath::_Application3::get_Windows;" />
+      <MemberSignature Language="F#" Value="abstract member _Application3_get_Windows : unit -&gt; Microsoft.Office.Interop.InfoPath.WindowsCollection&#xA;override this._Application3_get_Windows : unit -&gt; Microsoft.Office.Interop.InfoPath.WindowsCollection" Usage="applicationClass._Application3_get_Windows " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -656,6 +685,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_get_XDocuments" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function _Application3_get_XDocuments () As XDocumentsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::XDocumentsCollection ^ _Application3_get_XDocuments() = Microsoft::Office::Interop::InfoPath::_Application3::get_XDocuments;" />
+      <MemberSignature Language="F#" Value="abstract member _Application3_get_XDocuments : unit -&gt; Microsoft.Office.Interop.InfoPath.XDocumentsCollection&#xA;override this._Application3_get_XDocuments : unit -&gt; Microsoft.Office.Interop.InfoPath.XDocumentsCollection" Usage="applicationClass._Application3_get_XDocuments " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -677,6 +707,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_IsDestinationReachable(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function _Application3_IsDestinationReachable (bstrDestination As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool _Application3_IsDestinationReachable(System::String ^ bstrDestination) = Microsoft::Office::Interop::InfoPath::_Application3::IsDestinationReachable;" />
+      <MemberSignature Language="F#" Value="abstract member _Application3_IsDestinationReachable : string -&gt; bool&#xA;override this._Application3_IsDestinationReachable : string -&gt; bool" Usage="applicationClass._Application3_IsDestinationReachable bstrDestination" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -701,6 +732,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_LanguageSettings" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property _Application3_LanguageSettings As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ _Application3_LanguageSettings { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this._Application3_LanguageSettings : obj" Usage="_Application3_LanguageSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -721,6 +753,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_MachineOnlineState" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property _Application3_MachineOnlineState As XdMachineOnlineState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XdMachineOnlineState _Application3_MachineOnlineState { Microsoft::Office::Interop::InfoPath::XdMachineOnlineState get(); };" />
+      <MemberSignature Language="F#" Value="member this._Application3_MachineOnlineState : Microsoft.Office.Interop.InfoPath.XdMachineOnlineState" Usage="_Application3_MachineOnlineState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -741,6 +774,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property _Application3_Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ _Application3_Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this._Application3_Name : string" Usage="_Application3_Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -761,6 +795,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_NewADODBConnection" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function _Application3_NewADODBConnection () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ _Application3_NewADODBConnection() = Microsoft::Office::Interop::InfoPath::_Application3::NewADODBConnection;" />
+      <MemberSignature Language="F#" Value="abstract member _Application3_NewADODBConnection : unit -&gt; obj&#xA;override this._Application3_NewADODBConnection : unit -&gt; obj" Usage="applicationClass._Application3_NewADODBConnection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -782,6 +817,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_NewADODBRecordset" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function _Application3_NewADODBRecordset () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ _Application3_NewADODBRecordset() = Microsoft::Office::Interop::InfoPath::_Application3::NewADODBRecordset;" />
+      <MemberSignature Language="F#" Value="abstract member _Application3_NewADODBRecordset : unit -&gt; obj&#xA;override this._Application3_NewADODBRecordset : unit -&gt; obj" Usage="applicationClass._Application3_NewADODBRecordset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -802,6 +838,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void _Application3_Quit([in]bool bForce) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_Quit(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub _Application3_Quit (Optional bForce As Boolean = false)" />
+      <MemberSignature Language="F#" Value="abstract member _Application3_Quit : bool -&gt; unit&#xA;override this._Application3_Quit : bool -&gt; unit" Usage="applicationClass._Application3_Quit bForce" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -824,6 +861,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void _Application3_RegisterSolution([in]string bstrSolutionURL, [in]string bstrBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_RegisterSolution(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub _Application3_RegisterSolution (bstrSolutionURL As String, Optional bstrBehavior As String = &quot;overwrite&quot;)" />
+      <MemberSignature Language="F#" Value="abstract member _Application3_RegisterSolution : string * string -&gt; unit&#xA;override this._Application3_RegisterSolution : string * string -&gt; unit" Usage="applicationClass._Application3_RegisterSolution (bstrSolutionURL, bstrBehavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -849,6 +887,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_UnregisterSolution(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub _Application3_UnregisterSolution (bstrSolutionURI As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void _Application3_UnregisterSolution(System::String ^ bstrSolutionURI) = Microsoft::Office::Interop::InfoPath::_Application3::UnregisterSolution;" />
+      <MemberSignature Language="F#" Value="abstract member _Application3_UnregisterSolution : string -&gt; unit&#xA;override this._Application3_UnregisterSolution : string -&gt; unit" Usage="applicationClass._Application3_UnregisterSolution bstrSolutionURI" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -872,6 +911,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_UsableHeight" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property _Application3_UsableHeight As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int _Application3_UsableHeight { int get(); };" />
+      <MemberSignature Language="F#" Value="member this._Application3_UsableHeight : int" Usage="_Application3_UsableHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -892,6 +932,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_UsableWidth" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property _Application3_UsableWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int _Application3_UsableWidth { int get(); };" />
+      <MemberSignature Language="F#" Value="member this._Application3_UsableWidth : int" Usage="_Application3_UsableWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -912,6 +953,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_User" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property _Application3_User As UserObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::UserObject ^ _Application3_User { Microsoft::Office::Interop::InfoPath::UserObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this._Application3_User : Microsoft.Office.Interop.InfoPath.UserObject" Usage="_Application3_User" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -932,6 +974,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_Version" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property _Application3_Version As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ _Application3_Version { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this._Application3_Version : string" Usage="_Application3_Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -952,6 +995,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_Windows" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property _Application3_Windows As WindowsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::WindowsCollection ^ _Application3_Windows { Microsoft::Office::Interop::InfoPath::WindowsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this._Application3_Windows : Microsoft.Office.Interop.InfoPath.WindowsCollection" Usage="_Application3_Windows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -972,6 +1016,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass._Application3_XDocuments" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property _Application3_XDocuments As XDocumentsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XDocumentsCollection ^ _Application3_XDocuments { Microsoft::Office::Interop::InfoPath::XDocumentsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this._Application3_XDocuments : Microsoft.Office.Interop.InfoPath.XDocumentsCollection" Usage="_Application3_XDocuments" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -992,6 +1037,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass.ActiveWindow" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ActiveWindow As WindowObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::WindowObject ^ ActiveWindow { Microsoft::Office::Interop::InfoPath::WindowObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveWindow : Microsoft.Office.Interop.InfoPath.WindowObject" Usage="ActiveWindow" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath._Application2.ActiveWindow</InterfaceMember>
@@ -1023,6 +1069,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass.CacheSolution(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub CacheSolution (bstrSolutionURI As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CacheSolution(System::String ^ bstrSolutionURI) = Microsoft::Office::Interop::InfoPath::_Application2::CacheSolution;" />
+      <MemberSignature Language="F#" Value="abstract member CacheSolution : string -&gt; unit&#xA;override this.CacheSolution : string -&gt; unit" Usage="applicationClass.CacheSolution bstrSolutionURI" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._Application2.CacheSolution(System.String)</InterfaceMember>
@@ -1054,6 +1101,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass.COMAddIns" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property COMAddIns As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ COMAddIns { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.COMAddIns : obj" Usage="COMAddIns" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath._Application3.COMAddIns</InterfaceMember>
@@ -1077,6 +1125,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass.Events" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Events As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Events { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Events : obj" Usage="Events" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath._Application3.Events</InterfaceMember>
@@ -1100,6 +1149,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass.FormatString(System.Object,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function FormatString (varInput As Object, bstrCategory As String, bstrOptions As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ FormatString(System::Object ^ varInput, System::String ^ bstrCategory, System::String ^ bstrOptions) = Microsoft::Office::Interop::InfoPath::_Application2::FormatString;" />
+      <MemberSignature Language="F#" Value="abstract member FormatString : obj * string * string -&gt; string&#xA;override this.FormatString : obj * string * string -&gt; string" Usage="applicationClass.FormatString (varInput, bstrCategory, bstrOptions)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._Application2.FormatString(System.Object,System.String,System.String)</InterfaceMember>
@@ -1136,6 +1186,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass.GetSolutionURI(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSolutionURI (bstrCacheID As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetSolutionURI(System::String ^ bstrCacheID) = Microsoft::Office::Interop::InfoPath::_Application3::GetSolutionURI;" />
+      <MemberSignature Language="F#" Value="abstract member GetSolutionURI : string -&gt; string&#xA;override this.GetSolutionURI : string -&gt; string" Usage="applicationClass.GetSolutionURI bstrCacheID" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._Application3.GetSolutionURI(System.String)</InterfaceMember>
@@ -1163,6 +1214,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass.IsDestinationReachable(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsDestinationReachable (bstrDestination As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsDestinationReachable(System::String ^ bstrDestination) = Microsoft::Office::Interop::InfoPath::_Application2::IsDestinationReachable;" />
+      <MemberSignature Language="F#" Value="abstract member IsDestinationReachable : string -&gt; bool&#xA;override this.IsDestinationReachable : string -&gt; bool" Usage="applicationClass.IsDestinationReachable bstrDestination" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._Application2.IsDestinationReachable(System.String)</InterfaceMember>
@@ -1195,6 +1247,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass.LanguageSettings" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LanguageSettings As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ LanguageSettings { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LanguageSettings : obj" Usage="LanguageSettings" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath._Application2.LanguageSettings</InterfaceMember>
@@ -1226,6 +1279,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass.MachineOnlineState" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MachineOnlineState As XdMachineOnlineState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XdMachineOnlineState MachineOnlineState { Microsoft::Office::Interop::InfoPath::XdMachineOnlineState get(); };" />
+      <MemberSignature Language="F#" Value="member this.MachineOnlineState : Microsoft.Office.Interop.InfoPath.XdMachineOnlineState" Usage="MachineOnlineState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath._Application2.MachineOnlineState</InterfaceMember>
@@ -1257,6 +1311,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Name" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath._Application2.Name</InterfaceMember>
@@ -1288,6 +1343,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass.NewADODBConnection" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function NewADODBConnection () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ NewADODBConnection() = Microsoft::Office::Interop::InfoPath::_Application2::NewADODBConnection;" />
+      <MemberSignature Language="F#" Value="abstract member NewADODBConnection : unit -&gt; obj&#xA;override this.NewADODBConnection : unit -&gt; obj" Usage="applicationClass.NewADODBConnection " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._Application2.NewADODBConnection</InterfaceMember>
@@ -1317,6 +1373,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass.NewADODBRecordset" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function NewADODBRecordset () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ NewADODBRecordset() = Microsoft::Office::Interop::InfoPath::_Application2::NewADODBRecordset;" />
+      <MemberSignature Language="F#" Value="abstract member NewADODBRecordset : unit -&gt; obj&#xA;override this.NewADODBRecordset : unit -&gt; obj" Usage="applicationClass.NewADODBRecordset " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._Application2.NewADODBRecordset</InterfaceMember>
@@ -1345,6 +1402,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Quit([in]bool bForce) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass.Quit(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Quit (Optional bForce As Boolean = false)" />
+      <MemberSignature Language="F#" Value="abstract member Quit : bool -&gt; unit&#xA;override this.Quit : bool -&gt; unit" Usage="applicationClass.Quit bForce" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._Application2.Quit(System.Boolean)</InterfaceMember>
@@ -1375,6 +1433,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterSolution([in]string bstrSolutionURL, [in]string bstrBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass.RegisterSolution(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RegisterSolution (bstrSolutionURL As String, Optional bstrBehavior As String = &quot;overwrite&quot;)" />
+      <MemberSignature Language="F#" Value="abstract member RegisterSolution : string * string -&gt; unit&#xA;override this.RegisterSolution : string * string -&gt; unit" Usage="applicationClass.RegisterSolution (bstrSolutionURL, bstrBehavior)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._Application2.RegisterSolution(System.String,System.String)</InterfaceMember>
@@ -1408,6 +1467,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationClass.UnregisterSolution(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub UnregisterSolution (bstrSolutionURI As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UnregisterSolution(System::String ^ bstrSolutionURI) = Microsoft::Office::Interop::InfoPath::_Application2::UnregisterSolution;" />
+      <MemberSignature Language="F#" Value="abstract member UnregisterSolution : string -&gt; unit&#xA;override this.UnregisterSolution : string -&gt; unit" Usage="applicationClass.UnregisterSolution bstrSolutionURI" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._Application2.UnregisterSolution(System.String)</InterfaceMember>
@@ -1439,6 +1499,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass.UsableHeight" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UsableHeight As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int UsableHeight { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.UsableHeight : int" Usage="UsableHeight" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath._Application2.UsableHeight</InterfaceMember>
@@ -1470,6 +1531,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass.UsableWidth" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UsableWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int UsableWidth { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.UsableWidth : int" Usage="UsableWidth" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath._Application2.UsableWidth</InterfaceMember>
@@ -1501,6 +1563,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass.User" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property User As UserObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::UserObject ^ User { Microsoft::Office::Interop::InfoPath::UserObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.User : Microsoft.Office.Interop.InfoPath.UserObject" Usage="User" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath._Application2.User</InterfaceMember>
@@ -1532,6 +1595,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass.Version" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Version As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Version { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : string" Usage="Version" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath._Application2.Version</InterfaceMember>
@@ -1563,6 +1627,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass.Windows" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Windows As WindowsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::WindowsCollection ^ Windows { Microsoft::Office::Interop::InfoPath::WindowsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Windows : Microsoft.Office.Interop.InfoPath.WindowsCollection" Usage="Windows" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath._Application2.Windows</InterfaceMember>
@@ -1594,6 +1659,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ApplicationClass.XDocuments" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property XDocuments As XDocumentsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XDocumentsCollection ^ XDocuments { Microsoft::Office::Interop::InfoPath::XDocumentsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XDocuments : Microsoft.Office.Interop.InfoPath.XDocumentsCollection" Usage="XDocuments" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath._Application2.XDocuments</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISubmitToHostEventHandler" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISubmitToHostEventHandler" />
+  <TypeSignature Language="F#" Value="type ISubmitToHostEventHandler = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler.SubmitToHostEventHandler(System.Object,System.String,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Function SubmitToHostEventHandler (sender As Object, adapterName As String, ByRef errorMessage As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int SubmitToHostEventHandler(System::Object ^ sender, System::String ^ adapterName, [Runtime::InteropServices::Out] System::String ^ % errorMessage);" />
+      <MemberSignature Language="F#" Value="abstract member SubmitToHostEventHandler : obj * string *  -&gt; int" Usage="iSubmitToHostEventHandler.SubmitToHostEventHandler (sender, adapterName, errorMessage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -39,7 +41,7 @@
       <Parameters>
         <Parameter Name="sender" Type="System.Object" />
         <Parameter Name="adapterName" Type="System.String" />
-        <Parameter Name="errorMessage" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="errorMessage" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="sender">To be added.</param>

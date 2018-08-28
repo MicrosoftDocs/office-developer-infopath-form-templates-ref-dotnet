@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.MathObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class MathObjectClass&#xA;Implements MathObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class MathObjectClass : Microsoft::Office::Interop::InfoPath::MathObject" />
+  <TypeSignature Language="F#" Value="type MathObjectClass = class&#xA;    interface IPMath&#xA;    interface MathObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.MathObjectClass.Avg(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Avg (pxmllistInput As IXMLDOMNodeList) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Avg(Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNodeList ^ pxmllistInput) = Microsoft::Office::Interop::InfoPath::IPMath::Avg;" />
+      <MemberSignature Language="F#" Value="abstract member Avg : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList -&gt; obj&#xA;override this.Avg : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList -&gt; obj" Usage="mathObjectClass.Avg pxmllistInput" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.IPMath.Avg(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList)</InterfaceMember>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.MathObjectClass.Eval(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Eval (pxmllistContext As IXMLDOMNodeList, bstrExpression As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Eval(Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNodeList ^ pxmllistContext, System::String ^ bstrExpression) = Microsoft::Office::Interop::InfoPath::IPMath::Eval;" />
+      <MemberSignature Language="F#" Value="abstract member Eval : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList * string -&gt; obj&#xA;override this.Eval : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList * string -&gt; obj" Usage="mathObjectClass.Eval (pxmllistContext, bstrExpression)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.IPMath.Eval(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList,System.String)</InterfaceMember>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.MathObjectClass.Max(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Max (pxmllistInput As IXMLDOMNodeList) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Max(Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNodeList ^ pxmllistInput) = Microsoft::Office::Interop::InfoPath::IPMath::Max;" />
+      <MemberSignature Language="F#" Value="abstract member Max : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList -&gt; obj&#xA;override this.Max : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList -&gt; obj" Usage="mathObjectClass.Max pxmllistInput" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.IPMath.Max(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList)</InterfaceMember>
@@ -133,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.MathObjectClass.Min(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Min (pxmllistInput As IXMLDOMNodeList) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Min(Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNodeList ^ pxmllistInput) = Microsoft::Office::Interop::InfoPath::IPMath::Min;" />
+      <MemberSignature Language="F#" Value="abstract member Min : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList -&gt; obj&#xA;override this.Min : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList -&gt; obj" Usage="mathObjectClass.Min pxmllistInput" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.IPMath.Min(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList)</InterfaceMember>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.MathObjectClass.Nz(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Nz (pxmllistInput As IXMLDOMNodeList) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Nz(Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNodeList ^ pxmllistInput) = Microsoft::Office::Interop::InfoPath::IPMath::Nz;" />
+      <MemberSignature Language="F#" Value="abstract member Nz : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList -&gt; obj&#xA;override this.Nz : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList -&gt; obj" Usage="mathObjectClass.Nz pxmllistInput" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.IPMath.Nz(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList)</InterfaceMember>

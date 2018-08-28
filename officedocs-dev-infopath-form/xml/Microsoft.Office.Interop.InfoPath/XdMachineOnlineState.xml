@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XdMachineOnlineState" />
   <TypeSignature Language="VB.NET" Value="Public Enum XdMachineOnlineState" />
   <TypeSignature Language="C++ CLI" Value="public enum class XdMachineOnlineState" />
+  <TypeSignature Language="F#" Value="type XdMachineOnlineState = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdMachineOnlineState.xdIEIsInOfflineMode" />
       <MemberSignature Language="VB.NET" Value="xdIEIsInOfflineMode" />
       <MemberSignature Language="C++ CLI" Value="xdIEIsInOfflineMode" />
+      <MemberSignature Language="F#" Value="xdIEIsInOfflineMode = 2" Usage="Microsoft.Office.Interop.InfoPath.XdMachineOnlineState.xdIEIsInOfflineMode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdMachineOnlineState.xdOffline" />
       <MemberSignature Language="VB.NET" Value="xdOffline" />
       <MemberSignature Language="C++ CLI" Value="xdOffline" />
+      <MemberSignature Language="F#" Value="xdOffline = 0" Usage="Microsoft.Office.Interop.InfoPath.XdMachineOnlineState.xdOffline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdMachineOnlineState.xdOnline" />
       <MemberSignature Language="VB.NET" Value="xdOnline" />
       <MemberSignature Language="C++ CLI" Value="xdOnline" />
+      <MemberSignature Language="F#" Value="xdOnline = 1" Usage="Microsoft.Office.Interop.InfoPath.XdMachineOnlineState.xdOnline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

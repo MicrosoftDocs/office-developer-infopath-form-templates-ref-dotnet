@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.MathObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface MathObject&#xA;Implements IPMath" />
   <TypeSignature Language="C++ CLI" Value="public interface class MathObject : Microsoft::Office::Interop::InfoPath::IPMath" />
+  <TypeSignature Language="F#" Value="type MathObject = interface&#xA;    interface IPMath" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

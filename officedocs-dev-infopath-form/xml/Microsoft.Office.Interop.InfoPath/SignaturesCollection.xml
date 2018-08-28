@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SignaturesCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface SignaturesCollection&#xA;Implements Signatures" />
   <TypeSignature Language="C++ CLI" Value="public interface class SignaturesCollection : Microsoft::Office::Interop::InfoPath::Signatures" />
+  <TypeSignature Language="F#" Value="type SignaturesCollection = interface&#xA;    interface Signatures" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

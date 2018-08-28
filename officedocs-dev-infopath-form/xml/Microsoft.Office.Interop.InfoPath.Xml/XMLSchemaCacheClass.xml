@@ -1,0 +1,289 @@
+﻿<Type Name="XMLSchemaCacheClass" FullName="Microsoft.Office.Interop.InfoPath.Xml.XMLSchemaCacheClass">
+  <TypeSignature Language="C#" Value="public class XMLSchemaCacheClass : Microsoft.Office.Interop.InfoPath.Xml.XMLSchemaCache, System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi XMLSchemaCacheClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMSchemaCollection, class Microsoft.Office.Interop.InfoPath.Xml.XMLSchemaCache, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Xml.XMLSchemaCacheClass" />
+  <TypeSignature Language="VB.NET" Value="Public Class XMLSchemaCacheClass&#xA;Implements IEnumerable, XMLSchemaCache" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XMLSchemaCacheClass : Microsoft::Office::Interop::InfoPath::Xml::XMLSchemaCache, System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type XMLSchemaCacheClass = class&#xA;    interface IXMLDOMSchemaCollection&#xA;    interface XMLSchemaCache&#xA;    interface IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.Xml.XMLSchemaCache</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("373984C9-B845-449B-91E7-45AC83036ADE")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XMLSchemaCacheClass ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Xml.XMLSchemaCacheClass.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XMLSchemaCacheClass();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="add">
+      <MemberSignature Language="C#" Value="public virtual void add (string namespaceURI, object var);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add([in]string namespaceURI, [in]object var) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Xml.XMLSchemaCacheClass.add(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add (namespaceURI As String, var As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add(System::String ^ namespaceURI, System::Object ^ var) = Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMSchemaCollection::add;" />
+      <MemberSignature Language="F#" Value="abstract member add : string * obj -&gt; unit&#xA;override this.add : string * obj -&gt; unit" Usage="xMLSchemaCacheClass.add (namespaceURI, var)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMSchemaCollection.add(System.String,System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="namespaceURI" Type="System.String" />
+        <Parameter Name="var" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="namespaceURI">To be added.</param>
+        <param name="var">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="addCollection">
+      <MemberSignature Language="C#" Value="public virtual void addCollection (Microsoft.Office.Interop.InfoPath.Xml.XMLSchemaCache otherCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void addCollection([in]class Microsoft.Office.Interop.InfoPath.Xml.XMLSchemaCache otherCollection) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Xml.XMLSchemaCacheClass.addCollection(Microsoft.Office.Interop.InfoPath.Xml.XMLSchemaCache)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub addCollection (otherCollection As XMLSchemaCache)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void addCollection(Microsoft::Office::Interop::InfoPath::Xml::XMLSchemaCache ^ otherCollection) = Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMSchemaCollection::addCollection;" />
+      <MemberSignature Language="F#" Value="abstract member addCollection : Microsoft.Office.Interop.InfoPath.Xml.XMLSchemaCache -&gt; unit&#xA;override this.addCollection : Microsoft.Office.Interop.InfoPath.Xml.XMLSchemaCache -&gt; unit" Usage="xMLSchemaCacheClass.addCollection otherCollection" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMSchemaCollection.addCollection(Microsoft.Office.Interop.InfoPath.Xml.XMLSchemaCache)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="otherCollection" Type="Microsoft.Office.Interop.InfoPath.Xml.XMLSchemaCache" />
+      </Parameters>
+      <Docs>
+        <param name="otherCollection">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="get">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode get (string namespaceURI);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode get([in]string namespaceURI) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Xml.XMLSchemaCacheClass.get(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function get (namespaceURI As String) As IXMLDOMNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ get(System::String ^ namespaceURI) = Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMSchemaCollection::get;" />
+      <MemberSignature Language="F#" Value="abstract member get : string -&gt; Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode&#xA;override this.get : string -&gt; Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="xMLSchemaCacheClass.get namespaceURI" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMSchemaCollection.get(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="namespaceURI" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="namespaceURI">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Xml.XMLSchemaCacheClass.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator() = Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMSchemaCollection::GetEnumerator;" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="xMLSchemaCacheClass.GetEnumerator " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMSchemaCollection.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="length">
+      <MemberSignature Language="C#" Value="public virtual int length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 length" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Xml.XMLSchemaCacheClass.length" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property length As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.length : int" Usage="length" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMSchemaCollection.length</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="namespaceURI">
+      <MemberSignature Language="C#" Value="public virtual string this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string namespaceURI(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Xml.XMLSchemaCacheClass.namespaceURI(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property namespaceURI(index As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ default[int] { System::String ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.namespaceURI(int) : string" Usage="namespaceURI" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMSchemaCollection.namespaceURI(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="remove">
+      <MemberSignature Language="C#" Value="public virtual void remove (string namespaceURI);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove([in]string namespaceURI) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Xml.XMLSchemaCacheClass.remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove (namespaceURI As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove(System::String ^ namespaceURI) = Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMSchemaCollection::remove;" />
+      <MemberSignature Language="F#" Value="abstract member remove : string -&gt; unit&#xA;override this.remove : string -&gt; unit" Usage="xMLSchemaCacheClass.remove namespaceURI" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMSchemaCollection.remove(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="namespaceURI" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="namespaceURI">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

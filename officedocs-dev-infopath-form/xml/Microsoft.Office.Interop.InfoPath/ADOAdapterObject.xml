@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ADOAdapterObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface ADOAdapterObject&#xA;Implements ADOAdapter2" />
   <TypeSignature Language="C++ CLI" Value="public interface class ADOAdapterObject : Microsoft::Office::Interop::InfoPath::ADOAdapter2" />
+  <TypeSignature Language="F#" Value="type ADOAdapterObject = interface&#xA;    interface ADOAdapter2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

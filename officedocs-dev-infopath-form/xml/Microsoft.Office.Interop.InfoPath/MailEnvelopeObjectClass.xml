@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class MailEnvelopeObjectClass&#xA;Implements MailEnvelope2, MailEnvelopeObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class MailEnvelopeObjectClass : Microsoft::Office::Interop::InfoPath::MailEnvelope2, Microsoft::Office::Interop::InfoPath::MailEnvelopeObject" />
+  <TypeSignature Language="F#" Value="type MailEnvelopeObjectClass = class&#xA;    interface MailEnvelope&#xA;    interface MailEnvelopeObject&#xA;    interface MailEnvelope2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass.AttachmentType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property AttachmentType As XdAttachmentType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XdAttachmentType AttachmentType { Microsoft::Office::Interop::InfoPath::XdAttachmentType get(); void set(Microsoft::Office::Interop::InfoPath::XdAttachmentType value); };" />
+      <MemberSignature Language="F#" Value="member this.AttachmentType : Microsoft.Office.Interop.InfoPath.XdAttachmentType with get, set" Usage="AttachmentType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.MailEnvelope2.AttachmentType</InterfaceMember>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass.Available" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Available As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Available { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Available : bool" Usage="Available" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.MailEnvelope2.Available</InterfaceMember>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass.BCC" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property BCC As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ BCC { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BCC : string with get, set" Usage="BCC" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.MailEnvelope.BCC</InterfaceMember>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass.CC" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CC As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CC { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CC : string with get, set" Usage="CC" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.MailEnvelope.CC</InterfaceMember>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass.Intro" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Intro As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Intro { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Intro : string with get, set" Usage="Intro" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.MailEnvelope2.Intro</InterfaceMember>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass.MailEnvelope2_BCC" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property MailEnvelope2_BCC As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MailEnvelope2_BCC { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MailEnvelope2_BCC : string with get, set" Usage="MailEnvelope2_BCC" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -195,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass.MailEnvelope2_CC" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property MailEnvelope2_CC As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MailEnvelope2_CC { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MailEnvelope2_CC : string with get, set" Usage="MailEnvelope2_CC" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -215,6 +223,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass.MailEnvelope2_get_BCC" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function MailEnvelope2_get_BCC () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ MailEnvelope2_get_BCC() = Microsoft::Office::Interop::InfoPath::MailEnvelope2::get_BCC;" />
+      <MemberSignature Language="F#" Value="abstract member MailEnvelope2_get_BCC : unit -&gt; string&#xA;override this.MailEnvelope2_get_BCC : unit -&gt; string" Usage="mailEnvelopeObjectClass.MailEnvelope2_get_BCC " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -236,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass.MailEnvelope2_get_CC" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function MailEnvelope2_get_CC () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ MailEnvelope2_get_CC() = Microsoft::Office::Interop::InfoPath::MailEnvelope2::get_CC;" />
+      <MemberSignature Language="F#" Value="abstract member MailEnvelope2_get_CC : unit -&gt; string&#xA;override this.MailEnvelope2_get_CC : unit -&gt; string" Usage="mailEnvelopeObjectClass.MailEnvelope2_get_CC " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -257,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass.MailEnvelope2_get_Subject" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function MailEnvelope2_get_Subject () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ MailEnvelope2_get_Subject() = Microsoft::Office::Interop::InfoPath::MailEnvelope2::get_Subject;" />
+      <MemberSignature Language="F#" Value="abstract member MailEnvelope2_get_Subject : unit -&gt; string&#xA;override this.MailEnvelope2_get_Subject : unit -&gt; string" Usage="mailEnvelopeObjectClass.MailEnvelope2_get_Subject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -278,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass.MailEnvelope2_get_To" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function MailEnvelope2_get_To () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ MailEnvelope2_get_To() = Microsoft::Office::Interop::InfoPath::MailEnvelope2::get_To;" />
+      <MemberSignature Language="F#" Value="abstract member MailEnvelope2_get_To : unit -&gt; string&#xA;override this.MailEnvelope2_get_To : unit -&gt; string" Usage="mailEnvelopeObjectClass.MailEnvelope2_get_To " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -299,6 +311,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass.MailEnvelope2_get_Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function MailEnvelope2_get_Visible () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MailEnvelope2_get_Visible() = Microsoft::Office::Interop::InfoPath::MailEnvelope2::get_Visible;" />
+      <MemberSignature Language="F#" Value="abstract member MailEnvelope2_get_Visible : unit -&gt; bool&#xA;override this.MailEnvelope2_get_Visible : unit -&gt; bool" Usage="mailEnvelopeObjectClass.MailEnvelope2_get_Visible " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -320,6 +333,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass.MailEnvelope2_set_BCC(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub MailEnvelope2_set_BCC (pbstrBCC As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MailEnvelope2_set_BCC(System::String ^ pbstrBCC) = Microsoft::Office::Interop::InfoPath::MailEnvelope2::set_BCC;" />
+      <MemberSignature Language="F#" Value="abstract member MailEnvelope2_set_BCC : string -&gt; unit&#xA;override this.MailEnvelope2_set_BCC : string -&gt; unit" Usage="mailEnvelopeObjectClass.MailEnvelope2_set_BCC pbstrBCC" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -343,6 +357,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass.MailEnvelope2_set_CC(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub MailEnvelope2_set_CC (pbstrCC As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MailEnvelope2_set_CC(System::String ^ pbstrCC) = Microsoft::Office::Interop::InfoPath::MailEnvelope2::set_CC;" />
+      <MemberSignature Language="F#" Value="abstract member MailEnvelope2_set_CC : string -&gt; unit&#xA;override this.MailEnvelope2_set_CC : string -&gt; unit" Usage="mailEnvelopeObjectClass.MailEnvelope2_set_CC pbstrCC" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -366,6 +381,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass.MailEnvelope2_set_Subject(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub MailEnvelope2_set_Subject (pbstrSubject As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MailEnvelope2_set_Subject(System::String ^ pbstrSubject) = Microsoft::Office::Interop::InfoPath::MailEnvelope2::set_Subject;" />
+      <MemberSignature Language="F#" Value="abstract member MailEnvelope2_set_Subject : string -&gt; unit&#xA;override this.MailEnvelope2_set_Subject : string -&gt; unit" Usage="mailEnvelopeObjectClass.MailEnvelope2_set_Subject pbstrSubject" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -389,6 +405,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass.MailEnvelope2_set_To(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub MailEnvelope2_set_To (pbstrTo As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MailEnvelope2_set_To(System::String ^ pbstrTo) = Microsoft::Office::Interop::InfoPath::MailEnvelope2::set_To;" />
+      <MemberSignature Language="F#" Value="abstract member MailEnvelope2_set_To : string -&gt; unit&#xA;override this.MailEnvelope2_set_To : string -&gt; unit" Usage="mailEnvelopeObjectClass.MailEnvelope2_set_To pbstrTo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -412,6 +429,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass.MailEnvelope2_set_Visible(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub MailEnvelope2_set_Visible (pvfVisible As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MailEnvelope2_set_Visible(bool pvfVisible) = Microsoft::Office::Interop::InfoPath::MailEnvelope2::set_Visible;" />
+      <MemberSignature Language="F#" Value="abstract member MailEnvelope2_set_Visible : bool -&gt; unit&#xA;override this.MailEnvelope2_set_Visible : bool -&gt; unit" Usage="mailEnvelopeObjectClass.MailEnvelope2_set_Visible pvfVisible" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -435,6 +453,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass.MailEnvelope2_Subject" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property MailEnvelope2_Subject As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MailEnvelope2_Subject { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MailEnvelope2_Subject : string with get, set" Usage="MailEnvelope2_Subject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -455,6 +474,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass.MailEnvelope2_To" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property MailEnvelope2_To As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MailEnvelope2_To { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MailEnvelope2_To : string with get, set" Usage="MailEnvelope2_To" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -475,6 +495,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass.MailEnvelope2_Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property MailEnvelope2_Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool MailEnvelope2_Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MailEnvelope2_Visible : bool with get, set" Usage="MailEnvelope2_Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -495,6 +516,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass.Subject" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Subject As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Subject { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Subject : string with get, set" Usage="Subject" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.MailEnvelope.Subject</InterfaceMember>
@@ -529,6 +551,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass.To" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property To As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ To { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.To : string with get, set" Usage="To" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.MailEnvelope.To</InterfaceMember>
@@ -563,6 +586,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MailEnvelopeObjectClass.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="Visible" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.MailEnvelope.Visible</InterfaceMember>

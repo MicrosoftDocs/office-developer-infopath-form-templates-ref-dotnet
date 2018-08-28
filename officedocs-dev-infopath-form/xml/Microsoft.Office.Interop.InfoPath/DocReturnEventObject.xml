@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DocReturnEventObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface DocReturnEventObject&#xA;Implements DocReturnEvent" />
   <TypeSignature Language="C++ CLI" Value="public interface class DocReturnEventObject : Microsoft::Office::Interop::InfoPath::DocReturnEvent" />
+  <TypeSignature Language="F#" Value="type DocReturnEventObject = interface&#xA;    interface DocReturnEvent" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

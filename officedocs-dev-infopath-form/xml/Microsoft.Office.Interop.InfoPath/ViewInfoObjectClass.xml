@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ViewInfoObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class ViewInfoObjectClass&#xA;Implements ViewInfo2, ViewInfoObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class ViewInfoObjectClass : Microsoft::Office::Interop::InfoPath::ViewInfo2, Microsoft::Office::Interop::InfoPath::ViewInfoObject" />
+  <TypeSignature Language="F#" Value="type ViewInfoObjectClass = class&#xA;    interface ViewInfo&#xA;    interface ViewInfoObject&#xA;    interface ViewInfo2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ViewInfoObjectClass.Caption" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Caption As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Caption { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Caption : string" Usage="Caption" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.ViewInfo2.Caption</InterfaceMember>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ViewInfoObjectClass.HideName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HideName As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HideName { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HideName : bool" Usage="HideName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.ViewInfo2.HideName</InterfaceMember>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ViewInfoObjectClass.IsDefault" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property IsDefault As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsDefault { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsDefault : bool with get, set" Usage="IsDefault" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.ViewInfo.IsDefault</InterfaceMember>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ViewInfoObjectClass.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Name" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.ViewInfo.Name</InterfaceMember>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewInfoObjectClass.ViewInfo2_get_IsDefault" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ViewInfo2_get_IsDefault () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ViewInfo2_get_IsDefault() = Microsoft::Office::Interop::InfoPath::ViewInfo2::get_IsDefault;" />
+      <MemberSignature Language="F#" Value="abstract member ViewInfo2_get_IsDefault : unit -&gt; bool&#xA;override this.ViewInfo2_get_IsDefault : unit -&gt; bool" Usage="viewInfoObjectClass.ViewInfo2_get_IsDefault " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -170,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewInfoObjectClass.ViewInfo2_get_Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ViewInfo2_get_Name () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ViewInfo2_get_Name() = Microsoft::Office::Interop::InfoPath::ViewInfo2::get_Name;" />
+      <MemberSignature Language="F#" Value="abstract member ViewInfo2_get_Name : unit -&gt; string&#xA;override this.ViewInfo2_get_Name : unit -&gt; string" Usage="viewInfoObjectClass.ViewInfo2_get_Name " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -191,6 +198,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ViewInfoObjectClass.ViewInfo2_IsDefault" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ViewInfo2_IsDefault As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ViewInfo2_IsDefault { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ViewInfo2_IsDefault : bool with get, set" Usage="ViewInfo2_IsDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -211,6 +219,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ViewInfoObjectClass.ViewInfo2_Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ViewInfo2_Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ViewInfo2_Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ViewInfo2_Name : string" Usage="ViewInfo2_Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -231,6 +240,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ViewInfoObjectClass.ViewInfo2_set_IsDefault(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ViewInfo2_set_IsDefault (pvfValue As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ViewInfo2_set_IsDefault(bool pvfValue) = Microsoft::Office::Interop::InfoPath::ViewInfo2::set_IsDefault;" />
+      <MemberSignature Language="F#" Value="abstract member ViewInfo2_set_IsDefault : bool -&gt; unit&#xA;override this.ViewInfo2_set_IsDefault : bool -&gt; unit" Usage="viewInfoObjectClass.ViewInfo2_set_IsDefault pvfValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

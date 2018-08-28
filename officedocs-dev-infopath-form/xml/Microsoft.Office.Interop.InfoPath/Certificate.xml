@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Certificate" />
   <TypeSignature Language="VB.NET" Value="Public Interface Certificate" />
   <TypeSignature Language="C++ CLI" Value="public interface class Certificate" />
+  <TypeSignature Language="F#" Value="type Certificate = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Certificate.ExpirationDate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpirationDate As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExpirationDate { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExpirationDate : string" Usage="Microsoft.Office.Interop.InfoPath.Certificate.ExpirationDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Certificate.IssuedBy" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IssuedBy As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IssuedBy { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IssuedBy : string" Usage="Microsoft.Office.Interop.InfoPath.Certificate.IssuedBy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Certificate.IssuedTo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IssuedTo As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IssuedTo { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.IssuedTo : string" Usage="Microsoft.Office.Interop.InfoPath.Certificate.IssuedTo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Certificate.Status" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As XdCertificateStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::XdCertificateStatus Status { Microsoft::Office::Interop::InfoPath::XdCertificateStatus get(); };" />
+      <MemberSignature Language="F#" Value="member this.Status : Microsoft.Office.Interop.InfoPath.XdCertificateStatus" Usage="Microsoft.Office.Interop.InfoPath.Certificate.Status" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

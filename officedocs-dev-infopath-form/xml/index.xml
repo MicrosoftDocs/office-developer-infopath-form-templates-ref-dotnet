@@ -1,5 +1,49 @@
 <Overview>
   <Assemblies>
+    <Assembly Name="Microsoft.Office.InfoPath.FormControl" Version="15.0.0.0">
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 af d4 a0 e7 72 41 51 d5 dd 52 cb 23 a3 0d ed 7c 00 91 cc 01 cf e9 4b 2b cd 85 b3 f4 ee e3 c4 d8 f6 41 7b ff 76 37 63 a9 96 d6 b2 df c1 e7 c2 9b cf b8 29 97 79 df 87 85 cd e2 c1 68 ce ee 48 0e 57 07 25 f2 46 8e 78 2a 9c 24 01 30 2c f6 dc 17 e1 19 11 8e d2 01 19 37 ba e9 69 83 57 ad 21 e8 b6 df b4 04 75 d1 6e 87 eb 03 c7 44 a5 d3 28 99 a0 db c5 96 a6 b2 cf a1 e5 09 be 5f bd 09 fa cf ]</AssemblyPublicKey>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCompany("Microsoft Corporation")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyConfiguration("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCopyright("© 2012 Microsoft Corporation.  All rights reserved.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyDescription("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyFileVersion("15.0.3605.1000")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyProduct("Microsoft Office InfoPath")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTitle("Microsoft.Office.InfoPath.FormControl")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTrademark("Microsoft® is a registered trademark of Microsoft Corporation. Windows® is a registered trademark of Microsoft Corporation.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Assembly>
     <Assembly Name="Microsoft.Office.Interop.InfoPath" Version="15.0.0.0">
       <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 af d4 a0 e7 72 41 51 d5 dd 52 cb 23 a3 0d ed 7c 00 91 cc 01 cf e9 4b 2b cd 85 b3 f4 ee e3 c4 d8 f6 41 7b ff 76 37 63 a9 96 d6 b2 df c1 e7 c2 9b cf b8 29 97 79 df 87 85 cd e2 c1 68 ce ee 48 0e 57 07 25 f2 46 8e 78 2a 9c 24 01 30 2c f6 dc 17 e1 19 11 8e d2 01 19 37 ba e9 69 83 57 ad 21 e8 b6 df b4 04 75 d1 6e 87 eb 03 c7 44 a5 d3 28 99 a0 db c5 96 a6 b2 cf a1 e5 09 be 5f bd 09 fa cf ]</AssemblyPublicKey>
       <Attributes>
@@ -16,11 +60,36 @@
           <AttributeName>System.Runtime.InteropServices.TypeLibVersion(4, 0)</AttributeName>
         </Attribute>
       </Attributes>
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 af d4 a0 e7 72 41 51 d5 dd 52 cb 23 a3 0d ed 7c 00 91 cc 01 cf e9 4b 2b cd 85 b3 f4 ee e3 c4 d8 f6 41 7b ff 76 37 63 a9 96 d6 b2 df c1 e7 c2 9b cf b8 29 97 79 df 87 85 cd e2 c1 68 ce ee 48 0e 57 07 25 f2 46 8e 78 2a 9c 24 01 30 2c f6 dc 17 e1 19 11 8e d2 01 19 37 ba e9 69 83 57 ad 21 e8 b6 df b4 04 75 d1 6e 87 eb 03 c7 44 a5 d3 28 99 a0 db c5 96 a6 b2 cf a1 e5 09 be 5f bd 09 fa cf ]</AssemblyPublicKey>
+    </Assembly>
+    <Assembly Name="Microsoft.Office.Interop.InfoPath.Xml" Version="15.0.0.0">
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 af d4 a0 e7 72 41 51 d5 dd 52 cb 23 a3 0d ed 7c 00 91 cc 01 cf e9 4b 2b cd 85 b3 f4 ee e3 c4 d8 f6 41 7b ff 76 37 63 a9 96 d6 b2 df c1 e7 c2 9b cf b8 29 97 79 df 87 85 cd e2 c1 68 ce ee 48 0e 57 07 25 f2 46 8e 78 2a 9c 24 01 30 2c f6 dc 17 e1 19 11 8e d2 01 19 37 ba e9 69 83 57 ad 21 e8 b6 df b4 04 75 d1 6e 87 eb 03 c7 44 a5 d3 28 99 a0 db c5 96 a6 b2 cf a1 e5 09 be 5f bd 09 fa cf ]</AssemblyPublicKey>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.Guid("F5078F18-C551-11D3-89B9-0000F81FE221")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ImportedFromTypeLib("MSXML2")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.PrimaryInteropAssembly(5, 0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibVersion(5, 0)</AttributeName>
+        </Attribute>
+      </Attributes>
     </Assembly>
   </Assemblies>
   <Remarks>To be added.</Remarks>
   <Copyright>To be added.</Copyright>
   <Types>
+    <Namespace Name="Microsoft.Office.InfoPath">
+      <Type Name="FormControl" Kind="Class" />
+      <Type Name="FormControl+EventHandler`1" DisplayName="FormControl+EventHandler&lt;EventArgs&gt;" Kind="Delegate" />
+      <Type Name="FormControlCommandIds" Kind="Class" />
+      <Type Name="FormControlCommandIds+CommandIds" Kind="Enumeration" />
+      <Type Name="IInitEventHandler" Kind="Interface" />
+    </Namespace>
     <Namespace Name="Microsoft.Office.Interop.InfoPath">
       <Type Name="_Application" Kind="Interface" />
       <Type Name="_Application2" Kind="Interface" />
@@ -293,6 +362,50 @@
       <Type Name="XMLNodes" Kind="Interface" />
       <Type Name="XMLNodesCollection" Kind="Interface" />
       <Type Name="XMLNodesCollectionClass" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Office.Interop.InfoPath.Xml">
+      <Type Name="DOMDocument50" Kind="Interface" />
+      <Type Name="DOMDocument50Class" Kind="Class" />
+      <Type Name="DOMNodeType" Kind="Enumeration" />
+      <Type Name="IXMLDOMAttribute" Kind="Interface" />
+      <Type Name="IXMLDOMCDATASection" Kind="Interface" />
+      <Type Name="IXMLDOMCharacterData" Kind="Interface" />
+      <Type Name="IXMLDOMComment" Kind="Interface" />
+      <Type Name="IXMLDOMDocument" Kind="Interface" />
+      <Type Name="IXMLDOMDocument2" Kind="Interface" />
+      <Type Name="IXMLDOMDocument3" Kind="Interface" />
+      <Type Name="IXMLDOMDocumentFragment" Kind="Interface" />
+      <Type Name="IXMLDOMDocumentType" Kind="Interface" />
+      <Type Name="IXMLDOMElement" Kind="Interface" />
+      <Type Name="IXMLDOMEntity" Kind="Interface" />
+      <Type Name="IXMLDOMEntityReference" Kind="Interface" />
+      <Type Name="IXMLDOMImplementation" Kind="Interface" />
+      <Type Name="IXMLDOMNamedNodeMap" Kind="Interface" />
+      <Type Name="IXMLDOMNode" Kind="Interface" />
+      <Type Name="IXMLDOMNodeList" Kind="Interface" />
+      <Type Name="IXMLDOMNotation" Kind="Interface" />
+      <Type Name="IXMLDOMParseError" Kind="Interface" />
+      <Type Name="IXMLDOMParseError2" Kind="Interface" />
+      <Type Name="IXMLDOMParseErrorCollection" Kind="Interface" />
+      <Type Name="IXMLDOMProcessingInstruction" Kind="Interface" />
+      <Type Name="IXMLDOMSchemaCollection" Kind="Interface" />
+      <Type Name="IXMLDOMSelection" Kind="Interface" />
+      <Type Name="IXMLDOMText" Kind="Interface" />
+      <Type Name="IXSLProcessor" Kind="Interface" />
+      <Type Name="IXSLTemplate" Kind="Interface" />
+      <Type Name="IXTLRuntime" Kind="Interface" />
+      <Type Name="tagDOMNodeType" Kind="Enumeration" />
+      <Type Name="tagXMLELEM_TYPE" Kind="Enumeration" />
+      <Type Name="XMLDOMDocumentEvents" Kind="Interface" />
+      <Type Name="XMLDOMDocumentEvents_Event" Kind="Interface" />
+      <Type Name="XMLDOMDocumentEvents_ondataavailableEventHandler" Kind="Delegate" />
+      <Type Name="XMLDOMDocumentEvents_onreadystatechangeEventHandler" Kind="Delegate" />
+      <Type Name="XMLDOMDocumentEvents_SinkHelper" Kind="Class" />
+      <Type Name="XMLELEM_TYPE" Kind="Enumeration" />
+      <Type Name="XMLSchemaCache" Kind="Interface" />
+      <Type Name="XMLSchemaCacheClass" Kind="Class" />
+      <Type Name="XSLTemplate" Kind="Interface" />
+      <Type Name="XSLTemplateClass" Kind="Class" />
     </Namespace>
   </Types>
   <Title>Microsoft.Office.Interop.InfoPath</Title>

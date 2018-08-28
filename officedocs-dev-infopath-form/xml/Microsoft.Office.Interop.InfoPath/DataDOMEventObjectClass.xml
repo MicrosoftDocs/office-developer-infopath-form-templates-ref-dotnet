@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DataDOMEventObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class DataDOMEventObjectClass&#xA;Implements DataDOMEventObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataDOMEventObjectClass : Microsoft::Office::Interop::InfoPath::DataDOMEventObject" />
+  <TypeSignature Language="F#" Value="type DataDOMEventObjectClass = class&#xA;    interface DataDOMEvent&#xA;    interface DataDOMEventObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DataDOMEventObjectClass.IsUndoRedo" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsUndoRedo As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsUndoRedo { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsUndoRedo : bool" Usage="IsUndoRedo" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DataDOMEvent.IsUndoRedo</InterfaceMember>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DataDOMEventObjectClass.MatchExpression" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MatchExpression As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MatchExpression { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MatchExpression : string" Usage="MatchExpression" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DataDOMEvent.MatchExpression</InterfaceMember>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DataDOMEventObjectClass.NewValue" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property NewValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ NewValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NewValue : obj" Usage="NewValue" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DataDOMEvent.NewValue</InterfaceMember>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DataDOMEventObjectClass.OldValue" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property OldValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ OldValue { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OldValue : obj" Usage="OldValue" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DataDOMEvent.OldValue</InterfaceMember>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DataDOMEventObjectClass.Operation" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Operation As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Operation { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Operation : string" Usage="Operation" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DataDOMEvent.Operation</InterfaceMember>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DataDOMEventObjectClass.Parent" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Parent As IXMLDOMNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ Parent { Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="Parent" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DataDOMEvent.Parent</InterfaceMember>
@@ -220,6 +227,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.ErrorObject ReportError([in]object varNode, [in]string bstrShortErrorMessage, [in]bool fSiteIndependent, [in]string bstrDetailedErrorMessage, [in]int32 lErrorCode, [in]string bstrType) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.DataDOMEventObjectClass.ReportError(System.Object,System.String,System.Boolean,System.String,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReportError (varNode As Object, bstrShortErrorMessage As String, fSiteIndependent As Boolean, Optional bstrDetailedErrorMessage As String = &quot;&quot;, Optional lErrorCode As Integer = 0, Optional bstrType As String = &quot;modeless&quot;) As ErrorObject" />
+      <MemberSignature Language="F#" Value="abstract member ReportError : obj * string * bool * string * int * string -&gt; Microsoft.Office.Interop.InfoPath.ErrorObject&#xA;override this.ReportError : obj * string * bool * string * int * string -&gt; Microsoft.Office.Interop.InfoPath.ErrorObject" Usage="dataDOMEventObjectClass.ReportError (varNode, bstrShortErrorMessage, fSiteIndependent, bstrDetailedErrorMessage, lErrorCode, bstrType)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.DataDOMEvent.ReportError(System.Object,System.String,System.Boolean,System.String,System.Int32,System.String)</InterfaceMember>
@@ -262,6 +270,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DataDOMEventObjectClass.ReturnMessage" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ReturnMessage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ReturnMessage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnMessage : string with get, set" Usage="ReturnMessage" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DataDOMEvent.ReturnMessage</InterfaceMember>
@@ -296,6 +305,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DataDOMEventObjectClass.ReturnStatus" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ReturnStatus As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ReturnStatus { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnStatus : bool with get, set" Usage="ReturnStatus" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DataDOMEvent.ReturnStatus</InterfaceMember>
@@ -330,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DataDOMEventObjectClass.Site" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Site As IXMLDOMNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ Site { Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Site : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="Site" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DataDOMEvent.Site</InterfaceMember>
@@ -361,6 +372,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DataDOMEventObjectClass.Source" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Source As IXMLDOMNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ Source { Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Source : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="Source" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DataDOMEvent.Source</InterfaceMember>
@@ -392,6 +404,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DataDOMEventObjectClass.XDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property XDocument As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XDocument ^ XDocument { Microsoft::Office::Interop::InfoPath::XDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XDocument : Microsoft.Office.Interop.InfoPath.XDocument" Usage="XDocument" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DataDOMEvent.XDocument</InterfaceMember>

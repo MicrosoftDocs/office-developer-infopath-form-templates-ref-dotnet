@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XdConfirmButtons" />
   <TypeSignature Language="VB.NET" Value="Public Enum XdConfirmButtons" />
   <TypeSignature Language="C++ CLI" Value="public enum class XdConfirmButtons" />
+  <TypeSignature Language="F#" Value="type XdConfirmButtons = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdConfirmButtons.xdOKCancel" />
       <MemberSignature Language="VB.NET" Value="xdOKCancel" />
       <MemberSignature Language="C++ CLI" Value="xdOKCancel" />
+      <MemberSignature Language="F#" Value="xdOKCancel = 1" Usage="Microsoft.Office.Interop.InfoPath.XdConfirmButtons.xdOKCancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdConfirmButtons.xdYesNo" />
       <MemberSignature Language="VB.NET" Value="xdYesNo" />
       <MemberSignature Language="C++ CLI" Value="xdYesNo" />
+      <MemberSignature Language="F#" Value="xdYesNo = 4" Usage="Microsoft.Office.Interop.InfoPath.XdConfirmButtons.xdYesNo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdConfirmButtons.xdYesNoCancel" />
       <MemberSignature Language="VB.NET" Value="xdYesNoCancel" />
       <MemberSignature Language="C++ CLI" Value="xdYesNoCancel" />
+      <MemberSignature Language="F#" Value="xdYesNoCancel = 3" Usage="Microsoft.Office.Interop.InfoPath.XdConfirmButtons.xdYesNoCancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
