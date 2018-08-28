@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.User2" />
   <TypeSignature Language="VB.NET" Value="Public Interface User2&#xA;Implements User" />
   <TypeSignature Language="C++ CLI" Value="public interface class User2 : Microsoft::Office::Interop::InfoPath::User" />
+  <TypeSignature Language="F#" Value="type User2 = interface&#xA;    interface User" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.User2.IsCurrentUser(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsCurrentUser (bstrUsername As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsCurrentUser(System::String ^ bstrUsername);" />
+      <MemberSignature Language="F#" Value="abstract member IsCurrentUser : string -&gt; bool" Usage="user2.IsCurrentUser bstrUsername" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.User.IsCurrentUser(System.String)</InterfaceMember>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.User2.IsUserMemberOf(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsUserMemberOf (bstrGroupname As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsUserMemberOf(System::String ^ bstrGroupname);" />
+      <MemberSignature Language="F#" Value="abstract member IsUserMemberOf : string -&gt; bool" Usage="user2.IsUserMemberOf bstrGroupname" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.User.IsUserMemberOf(System.String)</InterfaceMember>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.User2.LoginName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LoginName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LoginName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LoginName : string" Usage="Microsoft.Office.Interop.InfoPath.User2.LoginName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.User2.UserName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserName : string" Usage="Microsoft.Office.Interop.InfoPath.User2.UserName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XDNetworkState" />
   <TypeSignature Language="VB.NET" Value="Public Interface XDNetworkState&#xA;Implements _NetworkState" />
   <TypeSignature Language="C++ CLI" Value="public interface class XDNetworkState : Microsoft::Office::Interop::InfoPath::_NetworkState" />
+  <TypeSignature Language="F#" Value="type XDNetworkState = interface&#xA;    interface _NetworkState" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

@@ -1,0 +1,333 @@
+﻿<Type Name="IXMLDOMNamedNodeMap" FullName="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNamedNodeMap">
+  <TypeSignature Language="C#" Value="public interface IXMLDOMNamedNodeMap : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXMLDOMNamedNodeMap implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNamedNodeMap" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IXMLDOMNamedNodeMap&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IXMLDOMNamedNodeMap : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type IXMLDOMNamedNodeMap = interface&#xA;    interface IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("2933BF83-7B36-11D2-B20E-00C04F983E60")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNamedNodeMap.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="iXMLDOMNamedNodeMap.GetEnumerator " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="getNamedItem">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode getNamedItem (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode getNamedItem([in]string name) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNamedNodeMap.getNamedItem(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function getNamedItem (name As String) As IXMLDOMNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ getNamedItem(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member getNamedItem : string -&gt; Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="iXMLDOMNamedNodeMap.getNamedItem name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(83)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="getQualifiedItem">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode getQualifiedItem (string baseName, string namespaceURI);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode getQualifiedItem([in]string baseName, [in]string namespaceURI) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNamedNodeMap.getQualifiedItem(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function getQualifiedItem (baseName As String, namespaceURI As String) As IXMLDOMNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ getQualifiedItem(System::String ^ baseName, System::String ^ namespaceURI);" />
+      <MemberSignature Language="F#" Value="abstract member getQualifiedItem : string * string -&gt; Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="iXMLDOMNamedNodeMap.getQualifiedItem (baseName, namespaceURI)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(87)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseName" Type="System.String" />
+        <Parameter Name="namespaceURI" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="baseName">To be added.</param>
+        <param name="namespaceURI">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNamedNodeMap.item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property item(index As Integer) As IXMLDOMNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ default[int] { Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.item(int) : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNamedNodeMap.item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="length">
+      <MemberSignature Language="C#" Value="public int length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 length" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNamedNodeMap.length" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property length As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int length { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.length : int" Usage="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNamedNodeMap.length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(74)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(74)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="nextNode">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode nextNode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode nextNode() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNamedNodeMap.nextNode" />
+      <MemberSignature Language="VB.NET" Value="Public Function nextNode () As IXMLDOMNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ nextNode();" />
+      <MemberSignature Language="F#" Value="abstract member nextNode : unit -&gt; Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="iXMLDOMNamedNodeMap.nextNode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(89)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="removeNamedItem">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode removeNamedItem (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode removeNamedItem([in]string name) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNamedNodeMap.removeNamedItem(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function removeNamedItem (name As String) As IXMLDOMNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ removeNamedItem(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member removeNamedItem : string -&gt; Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="iXMLDOMNamedNodeMap.removeNamedItem name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(85)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="removeQualifiedItem">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode removeQualifiedItem (string baseName, string namespaceURI);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode removeQualifiedItem([in]string baseName, [in]string namespaceURI) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNamedNodeMap.removeQualifiedItem(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function removeQualifiedItem (baseName As String, namespaceURI As String) As IXMLDOMNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ removeQualifiedItem(System::String ^ baseName, System::String ^ namespaceURI);" />
+      <MemberSignature Language="F#" Value="abstract member removeQualifiedItem : string * string -&gt; Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="iXMLDOMNamedNodeMap.removeQualifiedItem (baseName, namespaceURI)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(88)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseName" Type="System.String" />
+        <Parameter Name="namespaceURI" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="baseName">To be added.</param>
+        <param name="namespaceURI">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="reset">
+      <MemberSignature Language="C#" Value="public void reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void reset() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNamedNodeMap.reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub reset ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void reset();" />
+      <MemberSignature Language="F#" Value="abstract member reset : unit -&gt; unit" Usage="iXMLDOMNamedNodeMap.reset " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(90)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="setNamedItem">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode setNamedItem (Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode newItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode setNamedItem([in]class Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode newItem) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNamedNodeMap.setNamedItem(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Function setNamedItem (newItem As IXMLDOMNode) As IXMLDOMNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ setNamedItem(Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ newItem);" />
+      <MemberSignature Language="F#" Value="abstract member setNamedItem : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode -&gt; Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="iXMLDOMNamedNodeMap.setNamedItem newItem" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(84)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newItem" Type="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" />
+      </Parameters>
+      <Docs>
+        <param name="newItem">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

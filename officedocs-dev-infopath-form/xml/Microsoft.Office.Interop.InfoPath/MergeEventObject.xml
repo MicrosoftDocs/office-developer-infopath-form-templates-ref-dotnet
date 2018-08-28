@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.MergeEventObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface MergeEventObject&#xA;Implements MergeEvent" />
   <TypeSignature Language="C++ CLI" Value="public interface class MergeEventObject : Microsoft::Office::Interop::InfoPath::MergeEvent" />
+  <TypeSignature Language="F#" Value="type MergeEventObject = interface&#xA;    interface MergeEvent" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

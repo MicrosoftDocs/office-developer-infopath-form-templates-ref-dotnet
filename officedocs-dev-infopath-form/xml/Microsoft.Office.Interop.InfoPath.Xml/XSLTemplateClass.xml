@@ -1,0 +1,119 @@
+﻿<Type Name="XSLTemplateClass" FullName="Microsoft.Office.Interop.InfoPath.Xml.XSLTemplateClass">
+  <TypeSignature Language="C#" Value="public class XSLTemplateClass : Microsoft.Office.Interop.InfoPath.Xml.XSLTemplate" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi XSLTemplateClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.Xml.IXSLTemplate, class Microsoft.Office.Interop.InfoPath.Xml.XSLTemplate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Xml.XSLTemplateClass" />
+  <TypeSignature Language="VB.NET" Value="Public Class XSLTemplateClass&#xA;Implements XSLTemplate" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XSLTemplateClass : Microsoft::Office::Interop::InfoPath::Xml::XSLTemplate" />
+  <TypeSignature Language="F#" Value="type XSLTemplateClass = class&#xA;    interface IXSLTemplate&#xA;    interface XSLTemplate" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.Xml.XSLTemplate</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("2933BF94-7B36-11D2-B20E-00C04F983E60")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XSLTemplateClass ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Xml.XSLTemplateClass.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XSLTemplateClass();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="createProcessor">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Office.Interop.InfoPath.Xml.IXSLProcessor createProcessor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.Xml.IXSLProcessor createProcessor() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Xml.XSLTemplateClass.createProcessor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function createProcessor () As IXSLProcessor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::Xml::IXSLProcessor ^ createProcessor() = Microsoft::Office::Interop::InfoPath::Xml::IXSLTemplate::createProcessor;" />
+      <MemberSignature Language="F#" Value="abstract member createProcessor : unit -&gt; Microsoft.Office.Interop.InfoPath.Xml.IXSLProcessor&#xA;override this.createProcessor : unit -&gt; Microsoft.Office.Interop.InfoPath.Xml.IXSLProcessor" Usage="xSLTemplateClass.createProcessor " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.Xml.IXSLTemplate.createProcessor</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXSLProcessor</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="stylesheet">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode stylesheet { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode stylesheet" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Xml.XSLTemplateClass.stylesheet" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property stylesheet As IXMLDOMNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ stylesheet { Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ get(); void set(Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.stylesheet : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode with get, set" Usage="stylesheet" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Xml.IXSLTemplate.stylesheet</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

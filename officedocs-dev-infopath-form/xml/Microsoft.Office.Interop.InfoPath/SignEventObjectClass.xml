@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SignEventObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class SignEventObjectClass&#xA;Implements SignEventObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class SignEventObjectClass : Microsoft::Office::Interop::InfoPath::SignEventObject" />
+  <TypeSignature Language="F#" Value="type SignEventObjectClass = class&#xA;    interface SignEvent&#xA;    interface SignEventObject&#xA;    interface DocEvent&#xA;    interface DocReturnEvent" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.SignEventObjectClass.DocEvent_get_XDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function DocEvent_get_XDocument () As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::XDocument ^ DocEvent_get_XDocument() = Microsoft::Office::Interop::InfoPath::DocEvent::get_XDocument;" />
+      <MemberSignature Language="F#" Value="abstract member DocEvent_get_XDocument : unit -&gt; Microsoft.Office.Interop.InfoPath.XDocument&#xA;override this.DocEvent_get_XDocument : unit -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="signEventObjectClass.DocEvent_get_XDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignEventObjectClass.DocEvent_XDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DocEvent_XDocument As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XDocument ^ DocEvent_XDocument { Microsoft::Office::Interop::InfoPath::XDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DocEvent_XDocument : Microsoft.Office.Interop.InfoPath.XDocument" Usage="DocEvent_XDocument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.SignEventObjectClass.DocReturnEvent_get_ReturnStatus" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function DocReturnEvent_get_ReturnStatus () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool DocReturnEvent_get_ReturnStatus() = Microsoft::Office::Interop::InfoPath::DocReturnEvent::get_ReturnStatus;" />
+      <MemberSignature Language="F#" Value="abstract member DocReturnEvent_get_ReturnStatus : unit -&gt; bool&#xA;override this.DocReturnEvent_get_ReturnStatus : unit -&gt; bool" Usage="signEventObjectClass.DocReturnEvent_get_ReturnStatus " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.SignEventObjectClass.DocReturnEvent_get_XDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function DocReturnEvent_get_XDocument () As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::XDocument ^ DocReturnEvent_get_XDocument() = Microsoft::Office::Interop::InfoPath::DocReturnEvent::get_XDocument;" />
+      <MemberSignature Language="F#" Value="abstract member DocReturnEvent_get_XDocument : unit -&gt; Microsoft.Office.Interop.InfoPath.XDocument&#xA;override this.DocReturnEvent_get_XDocument : unit -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="signEventObjectClass.DocReturnEvent_get_XDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignEventObjectClass.DocReturnEvent_ReturnStatus" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DocReturnEvent_ReturnStatus As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool DocReturnEvent_ReturnStatus { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DocReturnEvent_ReturnStatus : bool with get, set" Usage="DocReturnEvent_ReturnStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -138,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.SignEventObjectClass.DocReturnEvent_set_ReturnStatus(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub DocReturnEvent_set_ReturnStatus (pfReturnStatus As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DocReturnEvent_set_ReturnStatus(bool pfReturnStatus) = Microsoft::Office::Interop::InfoPath::DocReturnEvent::set_ReturnStatus;" />
+      <MemberSignature Language="F#" Value="abstract member DocReturnEvent_set_ReturnStatus : bool -&gt; unit&#xA;override this.DocReturnEvent_set_ReturnStatus : bool -&gt; unit" Usage="signEventObjectClass.DocReturnEvent_set_ReturnStatus pfReturnStatus" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -161,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignEventObjectClass.DocReturnEvent_XDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DocReturnEvent_XDocument As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XDocument ^ DocReturnEvent_XDocument { Microsoft::Office::Interop::InfoPath::XDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DocReturnEvent_XDocument : Microsoft.Office.Interop.InfoPath.XDocument" Usage="DocReturnEvent_XDocument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -181,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignEventObjectClass.ReturnStatus" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ReturnStatus As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ReturnStatus { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnStatus : bool with get, set" Usage="ReturnStatus" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.SignEvent.ReturnStatus</InterfaceMember>
@@ -215,6 +224,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignEventObjectClass.SignedDataBlock" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SignedDataBlock As SignedDataBlockObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::SignedDataBlockObject ^ SignedDataBlock { Microsoft::Office::Interop::InfoPath::SignedDataBlockObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SignedDataBlock : Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" Usage="SignedDataBlock" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.SignEvent.SignedDataBlock</InterfaceMember>
@@ -246,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignEventObjectClass.XDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property XDocument As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XDocument ^ XDocument { Microsoft::Office::Interop::InfoPath::XDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XDocument : Microsoft.Office.Interop.InfoPath.XDocument" Usage="XDocument" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.SignEvent.XDocument</InterfaceMember>

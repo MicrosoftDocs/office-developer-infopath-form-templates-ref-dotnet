@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub _ApplicationEvents_NewXDocumentEventHandler(pDocument As _XDocument)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void _ApplicationEvents_NewXDocumentEventHandler(_XDocument ^ pDocument);" />
+  <TypeSignature Language="F#" Value="type _ApplicationEvents_NewXDocumentEventHandler = delegate of _XDocument -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

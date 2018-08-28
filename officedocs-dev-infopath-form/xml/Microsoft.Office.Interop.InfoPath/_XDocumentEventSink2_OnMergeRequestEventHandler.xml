@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub _XDocumentEventSink2_OnMergeRequestEventHandler(pEvent As MergeEventObject)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void _XDocumentEventSink2_OnMergeRequestEventHandler(MergeEventObject ^ pEvent);" />
+  <TypeSignature Language="F#" Value="type _XDocumentEventSink2_OnMergeRequestEventHandler = delegate of MergeEventObject -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

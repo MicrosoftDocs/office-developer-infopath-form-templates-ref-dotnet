@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ErrorsCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface ErrorsCollection&#xA;Implements Errors" />
   <TypeSignature Language="C++ CLI" Value="public interface class ErrorsCollection : Microsoft::Office::Interop::InfoPath::Errors" />
+  <TypeSignature Language="F#" Value="type ErrorsCollection = interface&#xA;    interface Errors" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

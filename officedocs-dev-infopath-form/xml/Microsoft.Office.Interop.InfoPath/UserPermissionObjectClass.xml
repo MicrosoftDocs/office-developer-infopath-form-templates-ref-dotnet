@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.UserPermissionObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class UserPermissionObjectClass&#xA;Implements UserPermissionObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class UserPermissionObjectClass : Microsoft::Office::Interop::InfoPath::UserPermissionObject" />
+  <TypeSignature Language="F#" Value="type UserPermissionObjectClass = class&#xA;    interface UserPermission&#xA;    interface UserPermissionObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.UserPermissionObjectClass.ExpirationDate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ExpirationDate As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ ExpirationDate { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ExpirationDate : obj with get, set" Usage="ExpirationDate" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.UserPermission.ExpirationDate</InterfaceMember>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.UserPermissionObjectClass.Parent" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Parent" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.UserPermission.Parent</InterfaceMember>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.UserPermissionObjectClass.Permission" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Permission As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Permission { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Permission : int with get, set" Usage="Permission" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.UserPermission.Permission</InterfaceMember>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UserPermissionObjectClass.Remove" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove() = Microsoft::Office::Interop::InfoPath::UserPermission::Remove;" />
+      <MemberSignature Language="F#" Value="abstract member Remove : unit -&gt; unit&#xA;override this.Remove : unit -&gt; unit" Usage="userPermissionObjectClass.Remove " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.UserPermission.Remove</InterfaceMember>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.UserPermissionObjectClass.UserId" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property UserId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserId : string" Usage="UserId" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.UserPermission.UserId</InterfaceMember>

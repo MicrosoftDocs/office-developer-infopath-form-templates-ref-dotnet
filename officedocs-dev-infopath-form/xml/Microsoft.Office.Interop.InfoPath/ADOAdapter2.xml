@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ADOAdapter2" />
   <TypeSignature Language="VB.NET" Value="Public Interface ADOAdapter2&#xA;Implements ADOAdapter" />
   <TypeSignature Language="C++ CLI" Value="public interface class ADOAdapter2 : Microsoft::Office::Interop::InfoPath::ADOAdapter" />
+  <TypeSignature Language="F#" Value="type ADOAdapter2 = interface&#xA;    interface ADOAdapter" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ADOAdapter2.BuildSQLFromXMLNodes(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode)" />
       <MemberSignature Language="VB.NET" Value="Public Function BuildSQLFromXMLNodes (pXmlNode As IXMLDOMNode) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ BuildSQLFromXMLNodes(Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ pXmlNode);" />
+      <MemberSignature Language="F#" Value="abstract member BuildSQLFromXMLNodes : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode -&gt; string" Usage="aDOAdapter2.BuildSQLFromXMLNodes pXmlNode" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.ADOAdapter.BuildSQLFromXMLNodes(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode)</InterfaceMember>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ADOAdapter2.Command" />
       <MemberSignature Language="VB.NET" Value="Public Property Command As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Command { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Command : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.ADOAdapter2.Command" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.ADOAdapter.Command</InterfaceMember>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ADOAdapter2.Connection" />
       <MemberSignature Language="VB.NET" Value="Public Property Connection As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Connection { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Connection : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.ADOAdapter2.Connection" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.ADOAdapter.Connection</InterfaceMember>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ADOAdapter2.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.InfoPath.ADOAdapter2.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ADOAdapter2.Query" />
       <MemberSignature Language="VB.NET" Value="Public Sub Query ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Query();" />
+      <MemberSignature Language="F#" Value="abstract member Query : unit -&gt; unit" Usage="aDOAdapter2.Query " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ADOAdapter2.QueryAllowed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueryAllowed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool QueryAllowed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueryAllowed : bool" Usage="Microsoft.Office.Interop.InfoPath.ADOAdapter2.QueryAllowed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -213,6 +220,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ADOAdapter2.Submit" />
       <MemberSignature Language="VB.NET" Value="Public Sub Submit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Submit();" />
+      <MemberSignature Language="F#" Value="abstract member Submit : unit -&gt; unit" Usage="aDOAdapter2.Submit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -238,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ADOAdapter2.SubmitAllowed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubmitAllowed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SubmitAllowed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubmitAllowed : bool" Usage="Microsoft.Office.Interop.InfoPath.ADOAdapter2.SubmitAllowed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -266,6 +275,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ADOAdapter2.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Property Timeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Timeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Timeout : int with get, set" Usage="Microsoft.Office.Interop.InfoPath.ADOAdapter2.Timeout" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.ADOAdapter.Timeout</InterfaceMember>

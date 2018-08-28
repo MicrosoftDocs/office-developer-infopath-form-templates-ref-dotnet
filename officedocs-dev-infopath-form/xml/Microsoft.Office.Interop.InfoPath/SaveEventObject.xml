@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SaveEventObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface SaveEventObject&#xA;Implements SaveEvent" />
   <TypeSignature Language="C++ CLI" Value="public interface class SaveEventObject : Microsoft::Office::Interop::InfoPath::SaveEvent" />
+  <TypeSignature Language="F#" Value="type SaveEventObject = interface&#xA;    interface SaveEvent" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

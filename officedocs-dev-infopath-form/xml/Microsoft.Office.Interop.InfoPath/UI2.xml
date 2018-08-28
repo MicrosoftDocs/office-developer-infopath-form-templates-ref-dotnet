@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.UI2" />
   <TypeSignature Language="VB.NET" Value="Public Interface UI2&#xA;Implements UI" />
   <TypeSignature Language="C++ CLI" Value="public interface class UI2 : Microsoft::Office::Interop::InfoPath::UI" />
+  <TypeSignature Language="F#" Value="type UI2 = interface&#xA;    interface UI" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UI2.Alert(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Alert (bstrAlertString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Alert(System::String ^ bstrAlertString);" />
+      <MemberSignature Language="F#" Value="abstract member Alert : string -&gt; unit" Usage="uI2.Alert bstrAlertString" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.UI.Alert(System.String)</InterfaceMember>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UI2.Confirm(System.String,Microsoft.Office.Interop.InfoPath.XdConfirmButtons)" />
       <MemberSignature Language="VB.NET" Value="Public Function Confirm (bstrPrompt As String, lButtons As XdConfirmButtons) As XdConfirmChoice" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::InfoPath::XdConfirmChoice Confirm(System::String ^ bstrPrompt, Microsoft::Office::Interop::InfoPath::XdConfirmButtons lButtons);" />
+      <MemberSignature Language="F#" Value="abstract member Confirm : string * Microsoft.Office.Interop.InfoPath.XdConfirmButtons -&gt; Microsoft.Office.Interop.InfoPath.XdConfirmChoice" Usage="uI2.Confirm (bstrPrompt, lButtons)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UI2.SetSaveAsDialogFileName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSaveAsDialogFileName (bstrFileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSaveAsDialogFileName(System::String ^ bstrFileName);" />
+      <MemberSignature Language="F#" Value="abstract member SetSaveAsDialogFileName : string -&gt; unit" Usage="uI2.SetSaveAsDialogFileName bstrFileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UI2.SetSaveAsDialogLocation(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSaveAsDialogLocation (bstrLocation As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSaveAsDialogLocation(System::String ^ bstrLocation);" />
+      <MemberSignature Language="F#" Value="abstract member SetSaveAsDialogLocation : string -&gt; unit" Usage="uI2.SetSaveAsDialogLocation bstrLocation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UI2.ShowMailItem(System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowMailItem (bstrTo As String, bstrCC As String, bstrBCC As String, bstrSubject As String, bstrBody As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowMailItem(System::String ^ bstrTo, System::String ^ bstrCC, System::String ^ bstrBCC, System::String ^ bstrSubject, System::String ^ bstrBody);" />
+      <MemberSignature Language="F#" Value="abstract member ShowMailItem : string * string * string * string * string -&gt; unit" Usage="uI2.ShowMailItem (bstrTo, bstrCC, bstrBCC, bstrSubject, bstrBody)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.UI.ShowMailItem(System.String,System.String,System.String,System.String,System.String)</InterfaceMember>
@@ -188,6 +194,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ShowModalDialog([in]string bstrName, [in]object varArguments, [in]object varHeight, [in]object varWidth, [in]object varTop, [in]object varLeft) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UI2.ShowModalDialog(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShowModalDialog (bstrName As String, Optional varArguments As Object, Optional varHeight As Object, Optional varWidth As Object, Optional varTop As Object, Optional varLeft As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member ShowModalDialog : string * obj * obj * obj * obj * obj -&gt; obj" Usage="uI2.ShowModalDialog (bstrName, varArguments, varHeight, varWidth, varTop, varLeft)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.UI.ShowModalDialog(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)</InterfaceMember>
@@ -230,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UI2.ShowSignatureDialog" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowSignatureDialog ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowSignatureDialog();" />
+      <MemberSignature Language="F#" Value="abstract member ShowSignatureDialog : unit -&gt; unit" Usage="uI2.ShowSignatureDialog " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.UI.ShowSignatureDialog</InterfaceMember>

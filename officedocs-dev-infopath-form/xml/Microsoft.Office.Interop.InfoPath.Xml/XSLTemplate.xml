@@ -1,0 +1,30 @@
+﻿<Type Name="XSLTemplate" FullName="Microsoft.Office.Interop.InfoPath.Xml.XSLTemplate">
+  <TypeSignature Language="C#" Value="public interface XSLTemplate : Microsoft.Office.Interop.InfoPath.Xml.IXSLTemplate" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XSLTemplate implements class Microsoft.Office.Interop.InfoPath.Xml.IXSLTemplate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Xml.XSLTemplate" />
+  <TypeSignature Language="VB.NET" Value="Public Interface XSLTemplate&#xA;Implements IXSLTemplate" />
+  <TypeSignature Language="C++ CLI" Value="public interface class XSLTemplate : Microsoft::Office::Interop::InfoPath::Xml::IXSLTemplate" />
+  <TypeSignature Language="F#" Value="type XSLTemplate = interface&#xA;    interface IXSLTemplate" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.Xml.IXSLTemplate</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.InfoPath.Xml.XSLTemplateClass))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("2933BF93-7B36-11D2-B20E-00C04F983E60")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

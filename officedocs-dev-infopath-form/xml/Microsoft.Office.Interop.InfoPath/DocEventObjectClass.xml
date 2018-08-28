@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DocEventObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class DocEventObjectClass&#xA;Implements DocEventObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class DocEventObjectClass : Microsoft::Office::Interop::InfoPath::DocEventObject" />
+  <TypeSignature Language="F#" Value="type DocEventObjectClass = class&#xA;    interface DocEvent&#xA;    interface DocEventObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DocEventObjectClass.XDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property XDocument As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XDocument ^ XDocument { Microsoft::Office::Interop::InfoPath::XDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XDocument : Microsoft.Office.Interop.InfoPath.XDocument" Usage="XDocument" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DocEvent.XDocument</InterfaceMember>

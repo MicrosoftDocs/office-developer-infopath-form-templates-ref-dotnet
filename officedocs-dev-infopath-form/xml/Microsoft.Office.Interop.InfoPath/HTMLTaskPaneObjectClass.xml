@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class HTMLTaskPaneObjectClass&#xA;Implements HTMLTaskPaneObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class HTMLTaskPaneObjectClass : Microsoft::Office::Interop::InfoPath::HTMLTaskPaneObject" />
+  <TypeSignature Language="F#" Value="type HTMLTaskPaneObjectClass = class&#xA;    interface HTMLTaskPane&#xA;    interface HTMLTaskPaneObject&#xA;    interface TaskPane" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneObjectClass.HTMLDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HTMLDocument As IHTMLDocument2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property mshtml::IHTMLDocument2 ^ HTMLDocument { mshtml::IHTMLDocument2 ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HTMLDocument : mshtml.IHTMLDocument2" Usage="HTMLDocument" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.HTMLTaskPane.HTMLDocument</InterfaceMember>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneObjectClass.HTMLWindow" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HTMLWindow As IHTMLWindow2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property mshtml::IHTMLWindow2 ^ HTMLWindow { mshtml::IHTMLWindow2 ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HTMLWindow : mshtml.IHTMLWindow2" Usage="HTMLWindow" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.HTMLTaskPane.HTMLWindow</InterfaceMember>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneObjectClass.Navigate(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Navigate (bstrURL As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Navigate(System::String ^ bstrURL) = Microsoft::Office::Interop::InfoPath::HTMLTaskPane::Navigate;" />
+      <MemberSignature Language="F#" Value="abstract member Navigate : string -&gt; unit&#xA;override this.Navigate : string -&gt; unit" Usage="hTMLTaskPaneObjectClass.Navigate bstrURL" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.HTMLTaskPane.Navigate(System.String)</InterfaceMember>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneObjectClass.TaskPane_get_TaskPaneType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TaskPane_get_TaskPaneType () As XdTaskPaneType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::XdTaskPaneType TaskPane_get_TaskPaneType() = Microsoft::Office::Interop::InfoPath::TaskPane::get_TaskPaneType;" />
+      <MemberSignature Language="F#" Value="abstract member TaskPane_get_TaskPaneType : unit -&gt; Microsoft.Office.Interop.InfoPath.XdTaskPaneType&#xA;override this.TaskPane_get_TaskPaneType : unit -&gt; Microsoft.Office.Interop.InfoPath.XdTaskPaneType" Usage="hTMLTaskPaneObjectClass.TaskPane_get_TaskPaneType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneObjectClass.TaskPane_get_Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TaskPane_get_Visible () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TaskPane_get_Visible() = Microsoft::Office::Interop::InfoPath::TaskPane::get_Visible;" />
+      <MemberSignature Language="F#" Value="abstract member TaskPane_get_Visible : unit -&gt; bool&#xA;override this.TaskPane_get_Visible : unit -&gt; bool" Usage="hTMLTaskPaneObjectClass.TaskPane_get_Visible " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -170,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneObjectClass.TaskPane_set_Visible(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub TaskPane_set_Visible (pfVisible As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void TaskPane_set_Visible(bool pfVisible) = Microsoft::Office::Interop::InfoPath::TaskPane::set_Visible;" />
+      <MemberSignature Language="F#" Value="abstract member TaskPane_set_Visible : bool -&gt; unit&#xA;override this.TaskPane_set_Visible : bool -&gt; unit" Usage="hTMLTaskPaneObjectClass.TaskPane_set_Visible pfVisible" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -193,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneObjectClass.TaskPane_TaskPaneType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TaskPane_TaskPaneType As XdTaskPaneType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XdTaskPaneType TaskPane_TaskPaneType { Microsoft::Office::Interop::InfoPath::XdTaskPaneType get(); };" />
+      <MemberSignature Language="F#" Value="member this.TaskPane_TaskPaneType : Microsoft.Office.Interop.InfoPath.XdTaskPaneType" Usage="TaskPane_TaskPaneType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -213,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneObjectClass.TaskPane_Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property TaskPane_Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool TaskPane_Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.TaskPane_Visible : bool with get, set" Usage="TaskPane_Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -233,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneObjectClass.TaskPaneType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TaskPaneType As XdTaskPaneType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XdTaskPaneType TaskPaneType { Microsoft::Office::Interop::InfoPath::XdTaskPaneType get(); };" />
+      <MemberSignature Language="F#" Value="member this.TaskPaneType : Microsoft.Office.Interop.InfoPath.XdTaskPaneType" Usage="TaskPaneType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.HTMLTaskPane.TaskPaneType</InterfaceMember>
@@ -264,6 +274,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneObjectClass.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="Visible" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.HTMLTaskPane.Visible</InterfaceMember>

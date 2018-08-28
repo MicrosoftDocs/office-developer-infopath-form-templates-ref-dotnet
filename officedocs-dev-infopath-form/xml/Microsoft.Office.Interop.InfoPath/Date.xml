@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Date" />
   <TypeSignature Language="VB.NET" Value="Public Interface Date" />
   <TypeSignature Language="C++ CLI" Value="public interface class Date" />
+  <TypeSignature Language="F#" Value="type Date = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Date.Now" />
       <MemberSignature Language="VB.NET" Value="Public Function Now () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Now();" />
+      <MemberSignature Language="F#" Value="abstract member Now : unit -&gt; obj" Usage="date.Now " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Date.Today" />
       <MemberSignature Language="VB.NET" Value="Public Function Today () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Today();" />
+      <MemberSignature Language="F#" Value="abstract member Today : unit -&gt; obj" Usage="date.Today " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

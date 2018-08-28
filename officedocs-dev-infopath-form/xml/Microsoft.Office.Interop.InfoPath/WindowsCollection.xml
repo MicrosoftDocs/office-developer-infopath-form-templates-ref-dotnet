@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.WindowsCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface WindowsCollection&#xA;Implements Windows" />
   <TypeSignature Language="C++ CLI" Value="public interface class WindowsCollection : Microsoft::Office::Interop::InfoPath::Windows" />
+  <TypeSignature Language="F#" Value="type WindowsCollection = interface&#xA;    interface Windows" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

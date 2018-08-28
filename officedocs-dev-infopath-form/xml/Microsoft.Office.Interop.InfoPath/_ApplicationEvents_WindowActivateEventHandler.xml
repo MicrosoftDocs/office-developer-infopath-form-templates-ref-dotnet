@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub _ApplicationEvents_WindowActivateEventHandler(pDocument As _XDocument, pWindow As Window)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void _ApplicationEvents_WindowActivateEventHandler(_XDocument ^ pDocument, Window ^ pWindow);" />
+  <TypeSignature Language="F#" Value="type _ApplicationEvents_WindowActivateEventHandler = delegate of _XDocument * Window -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

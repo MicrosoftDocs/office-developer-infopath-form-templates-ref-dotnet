@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter" />
   <TypeSignature Language="VB.NET" Value="Public Interface IInfoPathDataImporter" />
   <TypeSignature Language="C++ CLI" Value="public interface class IInfoPathDataImporter" />
+  <TypeSignature Language="F#" Value="type IInfoPathDataImporter = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter.Import(Microsoft.Office.Interop.InfoPath.IPropertyBag,mshtml.IEnumUnknown)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Import (pPrintSettings As IPropertyBag, punkViewControls As IEnumUnknown)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Import(Microsoft::Office::Interop::InfoPath::IPropertyBag ^ pPrintSettings, mshtml::IEnumUnknown ^ punkViewControls);" />
+      <MemberSignature Language="F#" Value="abstract member Import : Microsoft.Office.Interop.InfoPath.IPropertyBag * mshtml.IEnumUnknown -&gt; unit" Usage="iInfoPathDataImporter.Import (pPrintSettings, punkViewControls)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter.Initialize(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize (lcid As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize(System::UInt32 lcid);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : uint32 -&gt; unit" Usage="iInfoPathDataImporter.Initialize lcid" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -79,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter.Uninitialize" />
       <MemberSignature Language="VB.NET" Value="Public Sub Uninitialize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Uninitialize();" />
+      <MemberSignature Language="F#" Value="abstract member Uninitialize : unit -&gt; unit" Usage="iInfoPathDataImporter.Uninitialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

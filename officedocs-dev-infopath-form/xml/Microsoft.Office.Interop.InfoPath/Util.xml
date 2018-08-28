@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Util" />
   <TypeSignature Language="VB.NET" Value="Public Interface Util" />
   <TypeSignature Language="C++ CLI" Value="public interface class Util" />
+  <TypeSignature Language="F#" Value="type Util = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Util.Date" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Date As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr Date { IntPtr get(); };" />
+      <MemberSignature Language="F#" Value="member this.Date : nativeint" Usage="Microsoft.Office.Interop.InfoPath.Util.Date" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Util.Match(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Match (bstrValue As String, bstrPattern As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Match(System::String ^ bstrValue, System::String ^ bstrPattern);" />
+      <MemberSignature Language="F#" Value="abstract member Match : string * string -&gt; bool" Usage="util.Match (bstrValue, bstrPattern)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Util.Math" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Math As MathObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::MathObject ^ Math { Microsoft::Office::Interop::InfoPath::MathObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Math : Microsoft.Office.Interop.InfoPath.MathObject" Usage="Microsoft.Office.Interop.InfoPath.Util.Math" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

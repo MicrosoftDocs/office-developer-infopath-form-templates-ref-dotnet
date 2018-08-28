@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DocActionEventObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface DocActionEventObject&#xA;Implements DocActionEvent" />
   <TypeSignature Language="C++ CLI" Value="public interface class DocActionEventObject : Microsoft::Office::Interop::InfoPath::DocActionEvent" />
+  <TypeSignature Language="F#" Value="type DocActionEventObject = interface&#xA;    interface DocActionEvent" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

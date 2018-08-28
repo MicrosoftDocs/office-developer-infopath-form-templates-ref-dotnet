@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.IEnumString" />
   <TypeSignature Language="VB.NET" Value="Public Interface IEnumString" />
   <TypeSignature Language="C++ CLI" Value="public interface class IEnumString" />
+  <TypeSignature Language="F#" Value="type IEnumString = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IEnumString.Clone(Microsoft.Office.Interop.InfoPath.IEnumString@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clone (ByRef ppenum As IEnumString)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clone([Runtime::InteropServices::Out] Microsoft::Office::Interop::InfoPath::IEnumString ^ % ppenum);" />
+      <MemberSignature Language="F#" Value="abstract member Clone :  -&gt; unit" Usage="iEnumString.Clone ppenum" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -37,7 +39,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppenum" Type="Microsoft.Office.Interop.InfoPath.IEnumString&amp;" RefType="out" />
+        <Parameter Name="ppenum" Type="Microsoft.Office.Interop.InfoPath.IEnumString" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppenum">To be added.</param>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IEnumString.RemoteNext(System.UInt32,System.String@,System.UInt32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoteNext (celt As UInteger, ByRef rgelt As String, ByRef pceltFetched As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoteNext(System::UInt32 celt, [Runtime::InteropServices::Out] System::String ^ % rgelt, [Runtime::InteropServices::Out] System::UInt32 % pceltFetched);" />
+      <MemberSignature Language="F#" Value="abstract member RemoteNext : uint32 *  *  -&gt; unit" Usage="iEnumString.RemoteNext (celt, rgelt, pceltFetched)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -61,8 +64,8 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="celt" Type="System.UInt32" />
-        <Parameter Name="rgelt" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="pceltFetched" Type="System.UInt32&amp;" RefType="out" />
+        <Parameter Name="rgelt" Type="System.String" RefType="out" />
+        <Parameter Name="pceltFetched" Type="System.UInt32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="celt">To be added.</param>
@@ -78,6 +81,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IEnumString.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit" Usage="iEnumString.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -98,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IEnumString.Skip(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Skip (celt As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Skip(System::UInt32 celt);" />
+      <MemberSignature Language="F#" Value="abstract member Skip : uint32 -&gt; unit" Usage="iEnumString.Skip celt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

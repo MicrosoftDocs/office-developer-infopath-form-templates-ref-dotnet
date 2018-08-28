@@ -1,0 +1,59 @@
+﻿<Type Name="IXMLDOMImplementation" FullName="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMImplementation">
+  <TypeSignature Language="C#" Value="public interface IXMLDOMImplementation" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXMLDOMImplementation" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMImplementation" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IXMLDOMImplementation" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IXMLDOMImplementation" />
+  <TypeSignature Language="F#" Value="type IXMLDOMImplementation = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("2933BF8F-7B36-11D2-B20E-00C04F983E60")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="hasFeature">
+      <MemberSignature Language="C#" Value="public bool hasFeature (string feature, string version);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool hasFeature([in]string feature, [in]string version) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMImplementation.hasFeature(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function hasFeature (feature As String, version As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool hasFeature(System::String ^ feature, System::String ^ version);" />
+      <MemberSignature Language="F#" Value="abstract member hasFeature : string * string -&gt; bool" Usage="iXMLDOMImplementation.hasFeature (feature, version)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(145)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="feature" Type="System.String" />
+        <Parameter Name="version" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="feature">To be added.</param>
+        <param name="version">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

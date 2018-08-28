@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DocContextChangeEventObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class DocContextChangeEventObjectClass&#xA;Implements DocContextChangeEventObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class DocContextChangeEventObjectClass : Microsoft::Office::Interop::InfoPath::DocContextChangeEventObject" />
+  <TypeSignature Language="F#" Value="type DocContextChangeEventObjectClass = class&#xA;    interface DocContextChangeEvent&#xA;    interface DocContextChangeEventObject&#xA;    interface DocEvent" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DocContextChangeEventObjectClass.Context" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Context As IXMLDOMNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ Context { Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="Context" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DocContextChangeEvent.Context</InterfaceMember>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.DocContextChangeEventObjectClass.DocEvent_get_XDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function DocEvent_get_XDocument () As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::XDocument ^ DocEvent_get_XDocument() = Microsoft::Office::Interop::InfoPath::DocEvent::get_XDocument;" />
+      <MemberSignature Language="F#" Value="abstract member DocEvent_get_XDocument : unit -&gt; Microsoft.Office.Interop.InfoPath.XDocument&#xA;override this.DocEvent_get_XDocument : unit -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="docContextChangeEventObjectClass.DocEvent_get_XDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DocContextChangeEventObjectClass.DocEvent_XDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DocEvent_XDocument As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XDocument ^ DocEvent_XDocument { Microsoft::Office::Interop::InfoPath::XDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DocEvent_XDocument : Microsoft.Office.Interop.InfoPath.XDocument" Usage="DocEvent_XDocument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DocContextChangeEventObjectClass.IsUndoRedo" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsUndoRedo As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsUndoRedo { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsUndoRedo : bool" Usage="IsUndoRedo" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DocContextChangeEvent.IsUndoRedo</InterfaceMember>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DocContextChangeEventObjectClass.Type" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Type As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Type { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : string" Usage="Type" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DocContextChangeEvent.Type</InterfaceMember>
@@ -169,6 +175,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DocContextChangeEventObjectClass.XDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property XDocument As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XDocument ^ XDocument { Microsoft::Office::Interop::InfoPath::XDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XDocument : Microsoft.Office.Interop.InfoPath.XDocument" Usage="XDocument" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DocContextChangeEvent.XDocument</InterfaceMember>

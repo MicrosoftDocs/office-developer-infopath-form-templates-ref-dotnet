@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface IInfoPathViewControl" />
   <TypeSignature Language="C++ CLI" Value="public interface class IInfoPathViewControl" />
+  <TypeSignature Language="F#" Value="type IInfoPathViewControl = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.ControlType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ControlType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ControlType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ControlType : string" Usage="Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.ControlType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.DataType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataType : string" Usage="Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.DataType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.Height" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Height As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Height : int" Usage="Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -109,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.InputScopes(System.IntPtr,System.UInt32@,Microsoft.Office.Interop.InfoPath.IEnumString@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InputScopes (ppInputScopes As IntPtr, ByRef pcInputScopes As UInteger, ByRef ppenumPhraseList As IEnumString, ByRef pbstrRegExp As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InputScopes(IntPtr ppInputScopes, [Runtime::InteropServices::Out] System::UInt32 % pcInputScopes, [Runtime::InteropServices::Out] Microsoft::Office::Interop::InfoPath::IEnumString ^ % ppenumPhraseList, [Runtime::InteropServices::Out] System::String ^ % pbstrRegExp);" />
+      <MemberSignature Language="F#" Value="abstract member InputScopes : nativeint *  *  *  -&gt; unit" Usage="iInfoPathViewControl.InputScopes (ppInputScopes, pcInputScopes, ppenumPhraseList, pbstrRegExp)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -119,9 +124,9 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="ppInputScopes" Type="System.IntPtr" />
-        <Parameter Name="pcInputScopes" Type="System.UInt32&amp;" RefType="out" />
-        <Parameter Name="ppenumPhraseList" Type="Microsoft.Office.Interop.InfoPath.IEnumString&amp;" RefType="out" />
-        <Parameter Name="pbstrRegExp" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="pcInputScopes" Type="System.UInt32" RefType="out" />
+        <Parameter Name="ppenumPhraseList" Type="Microsoft.Office.Interop.InfoPath.IEnumString" RefType="out" />
+        <Parameter Name="pbstrRegExp" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppInputScopes">To be added.</param>
@@ -138,6 +143,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.Left" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Left As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Left { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Left : int" Usage="Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -163,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.NodeName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NodeName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NodeName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeName : string" Usage="Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.NodeName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -188,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.Top" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Top As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Top { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Top : int" Usage="Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -213,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -238,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.Width" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Width As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Width : int" Usage="Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

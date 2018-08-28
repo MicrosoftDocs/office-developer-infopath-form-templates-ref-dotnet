@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class _XDocumentEventSink2_SinkHelper&#xA;Implements _XDocumentEventSink2" />
   <TypeSignature Language="C++ CLI" Value="public ref class _XDocumentEventSink2_SinkHelper sealed : Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2" />
+  <TypeSignature Language="F#" Value="type _XDocumentEventSink2_SinkHelper = class&#xA;    interface _XDocumentEventSink2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.m_dwCookie" />
       <MemberSignature Language="VB.NET" Value="Public m_dwCookie As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int m_dwCookie;" />
+      <MemberSignature Language="F#" Value="val mutable m_dwCookie : int" Usage="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.m_dwCookie" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.m_OnAfterImportDelegate" />
       <MemberSignature Language="VB.NET" Value="Public m_OnAfterImportDelegate As _XDocumentEventSink2_OnAfterImportEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnAfterImportEventHandler ^ m_OnAfterImportDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_OnAfterImportDelegate : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler" Usage="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.m_OnAfterImportDelegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.m_OnContextChangeDelegate" />
       <MemberSignature Language="VB.NET" Value="Public m_OnContextChangeDelegate As _XDocumentEventSink2_OnContextChangeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnContextChangeEventHandler ^ m_OnContextChangeDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_OnContextChangeDelegate : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler" Usage="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.m_OnContextChangeDelegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.m_OnLoadDelegate" />
       <MemberSignature Language="VB.NET" Value="Public m_OnLoadDelegate As _XDocumentEventSink2_OnLoadEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnLoadEventHandler ^ m_OnLoadDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_OnLoadDelegate : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler" Usage="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.m_OnLoadDelegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -111,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.m_OnMergeRequestDelegate" />
       <MemberSignature Language="VB.NET" Value="Public m_OnMergeRequestDelegate As _XDocumentEventSink2_OnMergeRequestEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnMergeRequestEventHandler ^ m_OnMergeRequestDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_OnMergeRequestDelegate : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler" Usage="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.m_OnMergeRequestDelegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -130,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.m_OnSaveRequestDelegate" />
       <MemberSignature Language="VB.NET" Value="Public m_OnSaveRequestDelegate As _XDocumentEventSink2_OnSaveRequestEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnSaveRequestEventHandler ^ m_OnSaveRequestDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_OnSaveRequestDelegate : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler" Usage="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.m_OnSaveRequestDelegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -149,6 +156,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.m_OnSignDelegate" />
       <MemberSignature Language="VB.NET" Value="Public m_OnSignDelegate As _XDocumentEventSink2_OnSignEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnSignEventHandler ^ m_OnSignDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_OnSignDelegate : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler" Usage="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.m_OnSignDelegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -168,6 +176,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.m_OnSubmitRequestDelegate" />
       <MemberSignature Language="VB.NET" Value="Public m_OnSubmitRequestDelegate As _XDocumentEventSink2_OnSubmitRequestEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnSubmitRequestEventHandler ^ m_OnSubmitRequestDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_OnSubmitRequestDelegate : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler" Usage="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.m_OnSubmitRequestDelegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -187,6 +196,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.m_OnSwitchViewDelegate" />
       <MemberSignature Language="VB.NET" Value="Public m_OnSwitchViewDelegate As _XDocumentEventSink2_OnSwitchViewEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnSwitchViewEventHandler ^ m_OnSwitchViewDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_OnSwitchViewDelegate : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler" Usage="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.m_OnSwitchViewDelegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -206,6 +216,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.m_OnVersionUpgradeDelegate" />
       <MemberSignature Language="VB.NET" Value="Public m_OnVersionUpgradeDelegate As _XDocumentEventSink2_OnVersionUpgradeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnVersionUpgradeEventHandler ^ m_OnVersionUpgradeDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_OnVersionUpgradeDelegate : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler" Usage="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.m_OnVersionUpgradeDelegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -225,6 +236,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.OnAfterImport(Microsoft.Office.Interop.InfoPath.DocEvent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnAfterImport ( As DocEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnAfterImport(Microsoft::Office::Interop::InfoPath::DocEvent ^ );" />
+      <MemberSignature Language="F#" Value="abstract member OnAfterImport : Microsoft.Office.Interop.InfoPath.DocEvent -&gt; unit&#xA;override this.OnAfterImport : Microsoft.Office.Interop.InfoPath.DocEvent -&gt; unit" Usage="_XDocumentEventSink2_SinkHelper.OnAfterImport " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2.OnAfterImport(Microsoft.Office.Interop.InfoPath.DocEvent)</InterfaceMember>
@@ -251,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.OnContextChange(Microsoft.Office.Interop.InfoPath.DocContextChangeEventObject)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnContextChange ( As DocContextChangeEventObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnContextChange(Microsoft::Office::Interop::InfoPath::DocContextChangeEventObject ^ );" />
+      <MemberSignature Language="F#" Value="abstract member OnContextChange : Microsoft.Office.Interop.InfoPath.DocContextChangeEventObject -&gt; unit&#xA;override this.OnContextChange : Microsoft.Office.Interop.InfoPath.DocContextChangeEventObject -&gt; unit" Usage="_XDocumentEventSink2_SinkHelper.OnContextChange " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2.OnContextChange(Microsoft.Office.Interop.InfoPath.DocContextChangeEventObject)</InterfaceMember>
@@ -277,6 +290,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.OnLoad(Microsoft.Office.Interop.InfoPath.DocReturnEvent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnLoad ( As DocReturnEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnLoad(Microsoft::Office::Interop::InfoPath::DocReturnEvent ^ );" />
+      <MemberSignature Language="F#" Value="abstract member OnLoad : Microsoft.Office.Interop.InfoPath.DocReturnEvent -&gt; unit&#xA;override this.OnLoad : Microsoft.Office.Interop.InfoPath.DocReturnEvent -&gt; unit" Usage="_XDocumentEventSink2_SinkHelper.OnLoad " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2.OnLoad(Microsoft.Office.Interop.InfoPath.DocReturnEvent)</InterfaceMember>
@@ -303,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.OnMergeRequest(Microsoft.Office.Interop.InfoPath.MergeEventObject)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnMergeRequest ( As MergeEventObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnMergeRequest(Microsoft::Office::Interop::InfoPath::MergeEventObject ^ );" />
+      <MemberSignature Language="F#" Value="abstract member OnMergeRequest : Microsoft.Office.Interop.InfoPath.MergeEventObject -&gt; unit&#xA;override this.OnMergeRequest : Microsoft.Office.Interop.InfoPath.MergeEventObject -&gt; unit" Usage="_XDocumentEventSink2_SinkHelper.OnMergeRequest " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2.OnMergeRequest(Microsoft.Office.Interop.InfoPath.MergeEventObject)</InterfaceMember>
@@ -329,6 +344,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.OnSaveRequest(Microsoft.Office.Interop.InfoPath.SaveEventObject)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnSaveRequest ( As SaveEventObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnSaveRequest(Microsoft::Office::Interop::InfoPath::SaveEventObject ^ );" />
+      <MemberSignature Language="F#" Value="abstract member OnSaveRequest : Microsoft.Office.Interop.InfoPath.SaveEventObject -&gt; unit&#xA;override this.OnSaveRequest : Microsoft.Office.Interop.InfoPath.SaveEventObject -&gt; unit" Usage="_XDocumentEventSink2_SinkHelper.OnSaveRequest " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2.OnSaveRequest(Microsoft.Office.Interop.InfoPath.SaveEventObject)</InterfaceMember>
@@ -355,6 +371,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.OnSign(Microsoft.Office.Interop.InfoPath.SignEventObject)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnSign ( As SignEventObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnSign(Microsoft::Office::Interop::InfoPath::SignEventObject ^ );" />
+      <MemberSignature Language="F#" Value="abstract member OnSign : Microsoft.Office.Interop.InfoPath.SignEventObject -&gt; unit&#xA;override this.OnSign : Microsoft.Office.Interop.InfoPath.SignEventObject -&gt; unit" Usage="_XDocumentEventSink2_SinkHelper.OnSign " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2.OnSign(Microsoft.Office.Interop.InfoPath.SignEventObject)</InterfaceMember>
@@ -381,6 +398,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.OnSubmitRequest(Microsoft.Office.Interop.InfoPath.DocReturnEvent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnSubmitRequest ( As DocReturnEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnSubmitRequest(Microsoft::Office::Interop::InfoPath::DocReturnEvent ^ );" />
+      <MemberSignature Language="F#" Value="abstract member OnSubmitRequest : Microsoft.Office.Interop.InfoPath.DocReturnEvent -&gt; unit&#xA;override this.OnSubmitRequest : Microsoft.Office.Interop.InfoPath.DocReturnEvent -&gt; unit" Usage="_XDocumentEventSink2_SinkHelper.OnSubmitRequest " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2.OnSubmitRequest(Microsoft.Office.Interop.InfoPath.DocReturnEvent)</InterfaceMember>
@@ -407,6 +425,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.OnSwitchView(Microsoft.Office.Interop.InfoPath.DocEvent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnSwitchView ( As DocEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnSwitchView(Microsoft::Office::Interop::InfoPath::DocEvent ^ );" />
+      <MemberSignature Language="F#" Value="abstract member OnSwitchView : Microsoft.Office.Interop.InfoPath.DocEvent -&gt; unit&#xA;override this.OnSwitchView : Microsoft.Office.Interop.InfoPath.DocEvent -&gt; unit" Usage="_XDocumentEventSink2_SinkHelper.OnSwitchView " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2.OnSwitchView(Microsoft.Office.Interop.InfoPath.DocEvent)</InterfaceMember>
@@ -433,6 +452,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_SinkHelper.OnVersionUpgrade(Microsoft.Office.Interop.InfoPath.VersionUpgradeEventObject)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnVersionUpgrade ( As VersionUpgradeEventObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnVersionUpgrade(Microsoft::Office::Interop::InfoPath::VersionUpgradeEventObject ^ );" />
+      <MemberSignature Language="F#" Value="abstract member OnVersionUpgrade : Microsoft.Office.Interop.InfoPath.VersionUpgradeEventObject -&gt; unit&#xA;override this.OnVersionUpgrade : Microsoft.Office.Interop.InfoPath.VersionUpgradeEventObject -&gt; unit" Usage="_XDocumentEventSink2_SinkHelper.OnVersionUpgrade " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2.OnVersionUpgrade(Microsoft.Office.Interop.InfoPath.VersionUpgradeEventObject)</InterfaceMember>

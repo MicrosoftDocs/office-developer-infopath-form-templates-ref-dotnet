@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.EmailAdapterObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface EmailAdapterObject&#xA;Implements EmailAdapter" />
   <TypeSignature Language="C++ CLI" Value="public interface class EmailAdapterObject : Microsoft::Office::Interop::InfoPath::EmailAdapter" />
+  <TypeSignature Language="F#" Value="type EmailAdapterObject = interface&#xA;    interface EmailAdapter" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

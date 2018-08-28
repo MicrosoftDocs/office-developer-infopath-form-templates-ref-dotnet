@@ -1,0 +1,46 @@
+﻿<Type Name="IInitEventHandler" FullName="Microsoft.Office.InfoPath.IInitEventHandler">
+  <TypeSignature Language="C#" Value="public interface IInitEventHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInitEventHandler" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.InfoPath.IInitEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IInitEventHandler" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IInitEventHandler" />
+  <TypeSignature Language="F#" Value="type IInitEventHandler = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InitEventHandler">
+      <MemberSignature Language="C#" Value="public void InitEventHandler (object sender, Microsoft.Office.InfoPath.XmlForm xmlForm, out Microsoft.Office.Interop.InfoPath.XdReadOnlyViewMode viewsReadOnlyMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitEventHandler(object sender, class Microsoft.Office.InfoPath.XmlForm xmlForm, [out] valuetype Microsoft.Office.Interop.InfoPath.XdReadOnlyViewMode&amp; viewsReadOnlyMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.IInitEventHandler.InitEventHandler(System.Object,Microsoft.Office.InfoPath.XmlForm,Microsoft.Office.Interop.InfoPath.XdReadOnlyViewMode@)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InitEventHandler(System::Object ^ sender, Microsoft::Office::InfoPath::XmlForm ^ xmlForm, [Runtime::InteropServices::Out] Microsoft::Office::Interop::InfoPath::XdReadOnlyViewMode % viewsReadOnlyMode);" />
+      <MemberSignature Language="F#" Value="abstract member InitEventHandler : obj * Microsoft.Office.InfoPath.XmlForm *  -&gt; unit" Usage="iInitEventHandler.InitEventHandler (sender, xmlForm, viewsReadOnlyMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="xmlForm" Type="Microsoft.Office.InfoPath.XmlForm" />
+        <Parameter Name="viewsReadOnlyMode" Type="Microsoft.Office.Interop.InfoPath.XdReadOnlyViewMode" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="sender">To be added.</param>
+        <param name="xmlForm">To be added.</param>
+        <param name="viewsReadOnlyMode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

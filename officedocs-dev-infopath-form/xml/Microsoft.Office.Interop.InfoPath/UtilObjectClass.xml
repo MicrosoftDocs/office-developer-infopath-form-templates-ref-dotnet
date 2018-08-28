@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.UtilObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class UtilObjectClass&#xA;Implements UtilObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class UtilObjectClass : Microsoft::Office::Interop::InfoPath::UtilObject" />
+  <TypeSignature Language="F#" Value="type UtilObjectClass = class&#xA;    interface Util&#xA;    interface UtilObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.UtilObjectClass.Date" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Date As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property IntPtr Date { IntPtr get(); };" />
+      <MemberSignature Language="F#" Value="member this.Date : nativeint" Usage="Date" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Util.Date</InterfaceMember>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UtilObjectClass.Match(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Match (bstrValue As String, bstrPattern As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Match(System::String ^ bstrValue, System::String ^ bstrPattern) = Microsoft::Office::Interop::InfoPath::Util::Match;" />
+      <MemberSignature Language="F#" Value="abstract member Match : string * string -&gt; bool&#xA;override this.Match : string * string -&gt; bool" Usage="utilObjectClass.Match (bstrValue, bstrPattern)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.Util.Match(System.String,System.String)</InterfaceMember>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.UtilObjectClass.Math" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Math As MathObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::MathObject ^ Math { Microsoft::Office::Interop::InfoPath::MathObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Math : Microsoft.Office.Interop.InfoPath.MathObject" Usage="Math" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Util.Math</InterfaceMember>

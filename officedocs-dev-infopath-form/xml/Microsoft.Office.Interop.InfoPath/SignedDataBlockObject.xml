@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface SignedDataBlockObject&#xA;Implements SignedDataBlock" />
   <TypeSignature Language="C++ CLI" Value="public interface class SignedDataBlockObject : Microsoft::Office::Interop::InfoPath::SignedDataBlock" />
+  <TypeSignature Language="F#" Value="type SignedDataBlockObject = interface&#xA;    interface SignedDataBlock" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

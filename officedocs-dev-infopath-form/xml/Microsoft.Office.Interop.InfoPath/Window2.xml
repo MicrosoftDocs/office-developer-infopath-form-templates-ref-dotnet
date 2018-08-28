@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Window2" />
   <TypeSignature Language="VB.NET" Value="Public Interface Window2&#xA;Implements Window" />
   <TypeSignature Language="C++ CLI" Value="public interface class Window2 : Microsoft::Office::Interop::InfoPath::Window" />
+  <TypeSignature Language="F#" Value="type Window2 = interface&#xA;    interface Window" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Window2.Activate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Activate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Activate();" />
+      <MemberSignature Language="F#" Value="abstract member Activate : unit -&gt; unit" Usage="window2.Activate " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.Window.Activate</InterfaceMember>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Window2.Active" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Active As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Active { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Active : bool" Usage="Microsoft.Office.Interop.InfoPath.Window2.Active" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Window.Active</InterfaceMember>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Window2.Caption" />
       <MemberSignature Language="VB.NET" Value="Public Property Caption As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Caption { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Caption : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.Window2.Caption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close([in]bool fForce) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Window2.Close(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close (Optional fForce As Boolean = false)" />
+      <MemberSignature Language="F#" Value="abstract member Close : bool -&gt; unit" Usage="window2.Close fForce" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.Window.Close(System.Boolean)</InterfaceMember>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Window2.CommandBars" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandBars As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CommandBars { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CommandBars : obj" Usage="Microsoft.Office.Interop.InfoPath.Window2.CommandBars" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Window.CommandBars</InterfaceMember>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Window2.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : int with get, set" Usage="Microsoft.Office.Interop.InfoPath.Window2.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -214,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Window2.Left" />
       <MemberSignature Language="VB.NET" Value="Public Property Left As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Left { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Left : int with get, set" Usage="Microsoft.Office.Interop.InfoPath.Window2.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -245,6 +253,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Window2.MailEnvelope" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MailEnvelope As MailEnvelopeObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::MailEnvelopeObject ^ MailEnvelope { Microsoft::Office::Interop::InfoPath::MailEnvelopeObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MailEnvelope : Microsoft.Office.Interop.InfoPath.MailEnvelopeObject" Usage="Microsoft.Office.Interop.InfoPath.Window2.MailEnvelope" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Window.MailEnvelope</InterfaceMember>
@@ -276,6 +285,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Window2.TaskPanes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TaskPanes As TaskPanesCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::TaskPanesCollection ^ TaskPanes { Microsoft::Office::Interop::InfoPath::TaskPanesCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TaskPanes : Microsoft.Office.Interop.InfoPath.TaskPanesCollection" Usage="Microsoft.Office.Interop.InfoPath.Window2.TaskPanes" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Window.TaskPanes</InterfaceMember>
@@ -307,6 +317,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Window2.Top" />
       <MemberSignature Language="VB.NET" Value="Public Property Top As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Top { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Top : int with get, set" Usage="Microsoft.Office.Interop.InfoPath.Window2.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -338,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Window2.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : int with get, set" Usage="Microsoft.Office.Interop.InfoPath.Window2.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -369,6 +381,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Window2.WindowState" />
       <MemberSignature Language="VB.NET" Value="Public Property WindowState As XdWindowState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::XdWindowState WindowState { Microsoft::Office::Interop::InfoPath::XdWindowState get(); void set(Microsoft::Office::Interop::InfoPath::XdWindowState value); };" />
+      <MemberSignature Language="F#" Value="member this.WindowState : Microsoft.Office.Interop.InfoPath.XdWindowState with get, set" Usage="Microsoft.Office.Interop.InfoPath.Window2.WindowState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -400,6 +413,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Window2.WindowType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WindowType As XdWindowType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::XdWindowType WindowType { Microsoft::Office::Interop::InfoPath::XdWindowType get(); };" />
+      <MemberSignature Language="F#" Value="member this.WindowType : Microsoft.Office.Interop.InfoPath.XdWindowType" Usage="Microsoft.Office.Interop.InfoPath.Window2.WindowType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Window.WindowType</InterfaceMember>
@@ -431,6 +445,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Window2.XDocument" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XDocument As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::XDocument ^ XDocument { Microsoft::Office::Interop::InfoPath::XDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XDocument : Microsoft.Office.Interop.InfoPath.XDocument" Usage="Microsoft.Office.Interop.InfoPath.Window2.XDocument" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Window.XDocument</InterfaceMember>

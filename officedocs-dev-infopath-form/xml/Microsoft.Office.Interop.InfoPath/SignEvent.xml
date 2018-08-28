@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SignEvent" />
   <TypeSignature Language="VB.NET" Value="Public Interface SignEvent&#xA;Implements DocReturnEvent" />
   <TypeSignature Language="C++ CLI" Value="public interface class SignEvent : Microsoft::Office::Interop::InfoPath::DocReturnEvent" />
+  <TypeSignature Language="F#" Value="type SignEvent = interface&#xA;    interface DocReturnEvent" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignEvent.ReturnStatus" />
       <MemberSignature Language="VB.NET" Value="Public Property ReturnStatus As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReturnStatus { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnStatus : bool with get, set" Usage="Microsoft.Office.Interop.InfoPath.SignEvent.ReturnStatus" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DocReturnEvent.ReturnStatus</InterfaceMember>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignEvent.SignedDataBlock" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignedDataBlock As SignedDataBlockObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::SignedDataBlockObject ^ SignedDataBlock { Microsoft::Office::Interop::InfoPath::SignedDataBlockObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SignedDataBlock : Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" Usage="Microsoft.Office.Interop.InfoPath.SignEvent.SignedDataBlock" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignEvent.XDocument" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XDocument As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::XDocument ^ XDocument { Microsoft::Office::Interop::InfoPath::XDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XDocument : Microsoft.Office.Interop.InfoPath.XDocument" Usage="Microsoft.Office.Interop.InfoPath.SignEvent.XDocument" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DocReturnEvent.XDocument</InterfaceMember>

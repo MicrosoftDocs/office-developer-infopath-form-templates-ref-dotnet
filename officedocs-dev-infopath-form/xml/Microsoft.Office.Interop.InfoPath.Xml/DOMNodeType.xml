@@ -1,0 +1,281 @@
+﻿<Type Name="DOMNodeType" FullName="Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType">
+  <TypeSignature Language="C#" Value="public enum DOMNodeType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DOMNodeType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DOMNodeType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DOMNodeType" />
+  <TypeSignature Language="F#" Value="type DOMNodeType = " />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NODE_ATTRIBUTE">
+      <MemberSignature Language="C#" Value="NODE_ATTRIBUTE" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType NODE_ATTRIBUTE = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_ATTRIBUTE" />
+      <MemberSignature Language="VB.NET" Value="NODE_ATTRIBUTE" />
+      <MemberSignature Language="C++ CLI" Value="NODE_ATTRIBUTE" />
+      <MemberSignature Language="F#" Value="NODE_ATTRIBUTE = 2" Usage="Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_ATTRIBUTE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NODE_CDATA_SECTION">
+      <MemberSignature Language="C#" Value="NODE_CDATA_SECTION" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType NODE_CDATA_SECTION = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_CDATA_SECTION" />
+      <MemberSignature Language="VB.NET" Value="NODE_CDATA_SECTION" />
+      <MemberSignature Language="C++ CLI" Value="NODE_CDATA_SECTION" />
+      <MemberSignature Language="F#" Value="NODE_CDATA_SECTION = 4" Usage="Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_CDATA_SECTION" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NODE_COMMENT">
+      <MemberSignature Language="C#" Value="NODE_COMMENT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType NODE_COMMENT = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_COMMENT" />
+      <MemberSignature Language="VB.NET" Value="NODE_COMMENT" />
+      <MemberSignature Language="C++ CLI" Value="NODE_COMMENT" />
+      <MemberSignature Language="F#" Value="NODE_COMMENT = 8" Usage="Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_COMMENT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NODE_DOCUMENT">
+      <MemberSignature Language="C#" Value="NODE_DOCUMENT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType NODE_DOCUMENT = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_DOCUMENT" />
+      <MemberSignature Language="VB.NET" Value="NODE_DOCUMENT" />
+      <MemberSignature Language="C++ CLI" Value="NODE_DOCUMENT" />
+      <MemberSignature Language="F#" Value="NODE_DOCUMENT = 9" Usage="Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_DOCUMENT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType</ReturnType>
+      </ReturnValue>
+      <MemberValue>9</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NODE_DOCUMENT_FRAGMENT">
+      <MemberSignature Language="C#" Value="NODE_DOCUMENT_FRAGMENT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType NODE_DOCUMENT_FRAGMENT = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_DOCUMENT_FRAGMENT" />
+      <MemberSignature Language="VB.NET" Value="NODE_DOCUMENT_FRAGMENT" />
+      <MemberSignature Language="C++ CLI" Value="NODE_DOCUMENT_FRAGMENT" />
+      <MemberSignature Language="F#" Value="NODE_DOCUMENT_FRAGMENT = 11" Usage="Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_DOCUMENT_FRAGMENT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType</ReturnType>
+      </ReturnValue>
+      <MemberValue>11</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NODE_DOCUMENT_TYPE">
+      <MemberSignature Language="C#" Value="NODE_DOCUMENT_TYPE" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType NODE_DOCUMENT_TYPE = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_DOCUMENT_TYPE" />
+      <MemberSignature Language="VB.NET" Value="NODE_DOCUMENT_TYPE" />
+      <MemberSignature Language="C++ CLI" Value="NODE_DOCUMENT_TYPE" />
+      <MemberSignature Language="F#" Value="NODE_DOCUMENT_TYPE = 10" Usage="Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_DOCUMENT_TYPE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType</ReturnType>
+      </ReturnValue>
+      <MemberValue>10</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NODE_ELEMENT">
+      <MemberSignature Language="C#" Value="NODE_ELEMENT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType NODE_ELEMENT = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_ELEMENT" />
+      <MemberSignature Language="VB.NET" Value="NODE_ELEMENT" />
+      <MemberSignature Language="C++ CLI" Value="NODE_ELEMENT" />
+      <MemberSignature Language="F#" Value="NODE_ELEMENT = 1" Usage="Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_ELEMENT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NODE_ENTITY">
+      <MemberSignature Language="C#" Value="NODE_ENTITY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType NODE_ENTITY = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_ENTITY" />
+      <MemberSignature Language="VB.NET" Value="NODE_ENTITY" />
+      <MemberSignature Language="C++ CLI" Value="NODE_ENTITY" />
+      <MemberSignature Language="F#" Value="NODE_ENTITY = 6" Usage="Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_ENTITY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NODE_ENTITY_REFERENCE">
+      <MemberSignature Language="C#" Value="NODE_ENTITY_REFERENCE" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType NODE_ENTITY_REFERENCE = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_ENTITY_REFERENCE" />
+      <MemberSignature Language="VB.NET" Value="NODE_ENTITY_REFERENCE" />
+      <MemberSignature Language="C++ CLI" Value="NODE_ENTITY_REFERENCE" />
+      <MemberSignature Language="F#" Value="NODE_ENTITY_REFERENCE = 5" Usage="Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_ENTITY_REFERENCE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NODE_INVALID">
+      <MemberSignature Language="C#" Value="NODE_INVALID" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType NODE_INVALID = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_INVALID" />
+      <MemberSignature Language="VB.NET" Value="NODE_INVALID" />
+      <MemberSignature Language="C++ CLI" Value="NODE_INVALID" />
+      <MemberSignature Language="F#" Value="NODE_INVALID = 0" Usage="Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_INVALID" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NODE_NOTATION">
+      <MemberSignature Language="C#" Value="NODE_NOTATION" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType NODE_NOTATION = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_NOTATION" />
+      <MemberSignature Language="VB.NET" Value="NODE_NOTATION" />
+      <MemberSignature Language="C++ CLI" Value="NODE_NOTATION" />
+      <MemberSignature Language="F#" Value="NODE_NOTATION = 12" Usage="Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_NOTATION" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType</ReturnType>
+      </ReturnValue>
+      <MemberValue>12</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NODE_PROCESSING_INSTRUCTION">
+      <MemberSignature Language="C#" Value="NODE_PROCESSING_INSTRUCTION" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType NODE_PROCESSING_INSTRUCTION = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_PROCESSING_INSTRUCTION" />
+      <MemberSignature Language="VB.NET" Value="NODE_PROCESSING_INSTRUCTION" />
+      <MemberSignature Language="C++ CLI" Value="NODE_PROCESSING_INSTRUCTION" />
+      <MemberSignature Language="F#" Value="NODE_PROCESSING_INSTRUCTION = 7" Usage="Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_PROCESSING_INSTRUCTION" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NODE_TEXT">
+      <MemberSignature Language="C#" Value="NODE_TEXT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType NODE_TEXT = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_TEXT" />
+      <MemberSignature Language="VB.NET" Value="NODE_TEXT" />
+      <MemberSignature Language="C++ CLI" Value="NODE_TEXT" />
+      <MemberSignature Language="F#" Value="NODE_TEXT = 3" Usage="Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType.NODE_TEXT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.DOMNodeType</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

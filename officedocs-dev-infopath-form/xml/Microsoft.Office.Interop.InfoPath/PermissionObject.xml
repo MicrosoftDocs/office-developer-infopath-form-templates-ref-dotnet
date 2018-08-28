@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.PermissionObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface PermissionObject&#xA;Implements Permission" />
   <TypeSignature Language="C++ CLI" Value="public interface class PermissionObject : Microsoft::Office::Interop::InfoPath::Permission" />
+  <TypeSignature Language="F#" Value="type PermissionObject = interface&#xA;    interface Permission" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

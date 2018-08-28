@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.MailEnvelope2" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailEnvelope2&#xA;Implements MailEnvelope" />
   <TypeSignature Language="C++ CLI" Value="public interface class MailEnvelope2 : Microsoft::Office::Interop::InfoPath::MailEnvelope" />
+  <TypeSignature Language="F#" Value="type MailEnvelope2 = interface&#xA;    interface MailEnvelope" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MailEnvelope2.AttachmentType" />
       <MemberSignature Language="VB.NET" Value="Public Property AttachmentType As XdAttachmentType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::XdAttachmentType AttachmentType { Microsoft::Office::Interop::InfoPath::XdAttachmentType get(); void set(Microsoft::Office::Interop::InfoPath::XdAttachmentType value); };" />
+      <MemberSignature Language="F#" Value="member this.AttachmentType : Microsoft.Office.Interop.InfoPath.XdAttachmentType with get, set" Usage="Microsoft.Office.Interop.InfoPath.MailEnvelope2.AttachmentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MailEnvelope2.Available" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Available As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Available { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Available : bool" Usage="Microsoft.Office.Interop.InfoPath.MailEnvelope2.Available" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MailEnvelope2.BCC" />
       <MemberSignature Language="VB.NET" Value="Public Property BCC As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BCC { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BCC : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.MailEnvelope2.BCC" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.MailEnvelope.BCC</InterfaceMember>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MailEnvelope2.CC" />
       <MemberSignature Language="VB.NET" Value="Public Property CC As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CC { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CC : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.MailEnvelope2.CC" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.MailEnvelope.CC</InterfaceMember>
@@ -159,6 +164,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MailEnvelope2.Intro" />
       <MemberSignature Language="VB.NET" Value="Public Property Intro As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Intro { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Intro : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.MailEnvelope2.Intro" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MailEnvelope2.Subject" />
       <MemberSignature Language="VB.NET" Value="Public Property Subject As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Subject { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Subject : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.MailEnvelope2.Subject" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.MailEnvelope.Subject</InterfaceMember>
@@ -224,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MailEnvelope2.To" />
       <MemberSignature Language="VB.NET" Value="Public Property To As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ To { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.To : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.MailEnvelope2.To" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.MailEnvelope.To</InterfaceMember>
@@ -258,6 +266,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MailEnvelope2.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="Microsoft.Office.Interop.InfoPath.MailEnvelope2.Visible" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.MailEnvelope.Visible</InterfaceMember>

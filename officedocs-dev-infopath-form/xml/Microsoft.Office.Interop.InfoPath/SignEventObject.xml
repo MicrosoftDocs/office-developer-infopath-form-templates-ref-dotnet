@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SignEventObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface SignEventObject&#xA;Implements SignEvent" />
   <TypeSignature Language="C++ CLI" Value="public interface class SignEventObject : Microsoft::Office::Interop::InfoPath::SignEvent" />
+  <TypeSignature Language="F#" Value="type SignEventObject = interface&#xA;    interface SignEvent" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

@@ -1,0 +1,31 @@
+﻿<Type Name="XMLDOMDocumentEvents_onreadystatechangeEventHandler" FullName="Microsoft.Office.Interop.InfoPath.Xml.XMLDOMDocumentEvents_onreadystatechangeEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void XMLDOMDocumentEvents_onreadystatechangeEventHandler();" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XMLDOMDocumentEvents_onreadystatechangeEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Xml.XMLDOMDocumentEvents_onreadystatechangeEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub XMLDOMDocumentEvents_onreadystatechangeEventHandler()" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void XMLDOMDocumentEvents_onreadystatechangeEventHandler();" />
+  <TypeSignature Language="F#" Value="type XMLDOMDocumentEvents_onreadystatechangeEventHandler = delegate of unit -&gt; unit" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.InfoPath.Xml</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters />
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

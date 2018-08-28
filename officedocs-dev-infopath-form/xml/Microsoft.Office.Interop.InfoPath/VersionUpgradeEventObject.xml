@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.VersionUpgradeEventObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface VersionUpgradeEventObject&#xA;Implements VersionUpgradeEvent" />
   <TypeSignature Language="C++ CLI" Value="public interface class VersionUpgradeEventObject : Microsoft::Office::Interop::InfoPath::VersionUpgradeEvent" />
+  <TypeSignature Language="F#" Value="type VersionUpgradeEventObject = interface&#xA;    interface VersionUpgradeEvent" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

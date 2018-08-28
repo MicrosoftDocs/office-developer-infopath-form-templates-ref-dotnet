@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub _ApplicationEvents_QuitEventHandler()" />
   <TypeSignature Language="C++ CLI" Value="public delegate void _ApplicationEvents_QuitEventHandler();" />
+  <TypeSignature Language="F#" Value="type _ApplicationEvents_QuitEventHandler = delegate of unit -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

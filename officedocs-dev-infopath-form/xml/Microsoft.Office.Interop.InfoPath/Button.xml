@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Button" />
   <TypeSignature Language="VB.NET" Value="Public Interface Button&#xA;Implements _ButtonEventSink_Event, ButtonEmpty" />
   <TypeSignature Language="C++ CLI" Value="public interface class Button : Microsoft::Office::Interop::InfoPath::_ButtonEventSink_Event, Microsoft::Office::Interop::InfoPath::ButtonEmpty" />
+  <TypeSignature Language="F#" Value="type Button = interface&#xA;    interface ButtonEmpty&#xA;    interface _ButtonEventSink_Event" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

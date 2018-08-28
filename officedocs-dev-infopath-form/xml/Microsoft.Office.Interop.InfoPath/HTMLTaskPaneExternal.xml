@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneExternal" />
   <TypeSignature Language="VB.NET" Value="Public Interface HTMLTaskPaneExternal" />
   <TypeSignature Language="C++ CLI" Value="public interface class HTMLTaskPaneExternal" />
+  <TypeSignature Language="F#" Value="type HTMLTaskPaneExternal = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneExternal.Window" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Window As Window" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::Window ^ Window { Microsoft::Office::Interop::InfoPath::Window ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Window : Microsoft.Office.Interop.InfoPath.Window" Usage="Microsoft.Office.Interop.InfoPath.HTMLTaskPaneExternal.Window" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneExternal.XDocument" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XDocument As _XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::_XDocument ^ XDocument { Microsoft::Office::Interop::InfoPath::_XDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XDocument : Microsoft.Office.Interop.InfoPath._XDocument" Usage="Microsoft.Office.Interop.InfoPath.HTMLTaskPaneExternal.XDocument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

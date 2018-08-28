@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class _ApplicationEvents_SinkHelper&#xA;Implements _ApplicationEvents" />
   <TypeSignature Language="C++ CLI" Value="public ref class _ApplicationEvents_SinkHelper sealed : Microsoft::Office::Interop::InfoPath::_ApplicationEvents" />
+  <TypeSignature Language="F#" Value="type _ApplicationEvents_SinkHelper = class&#xA;    interface _ApplicationEvents" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.m_dwCookie" />
       <MemberSignature Language="VB.NET" Value="Public m_dwCookie As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int m_dwCookie;" />
+      <MemberSignature Language="F#" Value="val mutable m_dwCookie : int" Usage="Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.m_dwCookie" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.m_NewXDocumentDelegate" />
       <MemberSignature Language="VB.NET" Value="Public m_NewXDocumentDelegate As _ApplicationEvents_NewXDocumentEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::Office::Interop::InfoPath::_ApplicationEvents_NewXDocumentEventHandler ^ m_NewXDocumentDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_NewXDocumentDelegate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler" Usage="Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.m_NewXDocumentDelegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.m_QuitDelegate" />
       <MemberSignature Language="VB.NET" Value="Public m_QuitDelegate As _ApplicationEvents_QuitEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::Office::Interop::InfoPath::_ApplicationEvents_QuitEventHandler ^ m_QuitDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_QuitDelegate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler" Usage="Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.m_QuitDelegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.m_WindowActivateDelegate" />
       <MemberSignature Language="VB.NET" Value="Public m_WindowActivateDelegate As _ApplicationEvents_WindowActivateEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::Office::Interop::InfoPath::_ApplicationEvents_WindowActivateEventHandler ^ m_WindowActivateDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_WindowActivateDelegate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler" Usage="Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.m_WindowActivateDelegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -111,6 +116,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.m_WindowDeactivateDelegate" />
       <MemberSignature Language="VB.NET" Value="Public m_WindowDeactivateDelegate As _ApplicationEvents_WindowDeactivateEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::Office::Interop::InfoPath::_ApplicationEvents_WindowDeactivateEventHandler ^ m_WindowDeactivateDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_WindowDeactivateDelegate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler" Usage="Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.m_WindowDeactivateDelegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -130,6 +136,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.m_WindowSizeDelegate" />
       <MemberSignature Language="VB.NET" Value="Public m_WindowSizeDelegate As _ApplicationEvents_WindowSizeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::Office::Interop::InfoPath::_ApplicationEvents_WindowSizeEventHandler ^ m_WindowSizeDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_WindowSizeDelegate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler" Usage="Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.m_WindowSizeDelegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -149,6 +156,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.m_XDocumentBeforeCloseDelegate" />
       <MemberSignature Language="VB.NET" Value="Public m_XDocumentBeforeCloseDelegate As _ApplicationEvents_XDocumentBeforeCloseEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentBeforeCloseEventHandler ^ m_XDocumentBeforeCloseDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_XDocumentBeforeCloseDelegate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler" Usage="Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.m_XDocumentBeforeCloseDelegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -168,6 +176,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.m_XDocumentBeforePrintDelegate" />
       <MemberSignature Language="VB.NET" Value="Public m_XDocumentBeforePrintDelegate As _ApplicationEvents_XDocumentBeforePrintEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentBeforePrintEventHandler ^ m_XDocumentBeforePrintDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_XDocumentBeforePrintDelegate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler" Usage="Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.m_XDocumentBeforePrintDelegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -187,6 +196,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.m_XDocumentBeforeSaveDelegate" />
       <MemberSignature Language="VB.NET" Value="Public m_XDocumentBeforeSaveDelegate As _ApplicationEvents_XDocumentBeforeSaveEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentBeforeSaveEventHandler ^ m_XDocumentBeforeSaveDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_XDocumentBeforeSaveDelegate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler" Usage="Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.m_XDocumentBeforeSaveDelegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -206,6 +216,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.m_XDocumentChangeDelegate" />
       <MemberSignature Language="VB.NET" Value="Public m_XDocumentChangeDelegate As _ApplicationEvents_XDocumentChangeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentChangeEventHandler ^ m_XDocumentChangeDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_XDocumentChangeDelegate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler" Usage="Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.m_XDocumentChangeDelegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -225,6 +236,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.m_XDocumentOpenDelegate" />
       <MemberSignature Language="VB.NET" Value="Public m_XDocumentOpenDelegate As _ApplicationEvents_XDocumentOpenEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentOpenEventHandler ^ m_XDocumentOpenDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_XDocumentOpenDelegate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler" Usage="Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.m_XDocumentOpenDelegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -244,6 +256,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.NewXDocument(Microsoft.Office.Interop.InfoPath._XDocument)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub NewXDocument ( As _XDocument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void NewXDocument(Microsoft::Office::Interop::InfoPath::_XDocument ^ );" />
+      <MemberSignature Language="F#" Value="abstract member NewXDocument : Microsoft.Office.Interop.InfoPath._XDocument -&gt; unit&#xA;override this.NewXDocument : Microsoft.Office.Interop.InfoPath._XDocument -&gt; unit" Usage="_ApplicationEvents_SinkHelper.NewXDocument " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents.NewXDocument(Microsoft.Office.Interop.InfoPath._XDocument)</InterfaceMember>
@@ -270,6 +283,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.Quit" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Quit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Quit();" />
+      <MemberSignature Language="F#" Value="abstract member Quit : unit -&gt; unit&#xA;override this.Quit : unit -&gt; unit" Usage="_ApplicationEvents_SinkHelper.Quit " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents.Quit</InterfaceMember>
@@ -293,6 +307,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.WindowActivate(Microsoft.Office.Interop.InfoPath._XDocument,Microsoft.Office.Interop.InfoPath.Window)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WindowActivate ( As _XDocument,  As Window)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WindowActivate(Microsoft::Office::Interop::InfoPath::_XDocument ^ , Microsoft::Office::Interop::InfoPath::Window ^ );" />
+      <MemberSignature Language="F#" Value="abstract member WindowActivate : Microsoft.Office.Interop.InfoPath._XDocument * Microsoft.Office.Interop.InfoPath.Window -&gt; unit&#xA;override this.WindowActivate : Microsoft.Office.Interop.InfoPath._XDocument * Microsoft.Office.Interop.InfoPath.Window -&gt; unit" Usage="_ApplicationEvents_SinkHelper.WindowActivate (, )" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents.WindowActivate(Microsoft.Office.Interop.InfoPath._XDocument,Microsoft.Office.Interop.InfoPath.Window)</InterfaceMember>
@@ -305,7 +320,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocument" />
+        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath.Window" />
         <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath.Window" />
       </Parameters>
       <Docs>
@@ -321,6 +336,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.WindowDeactivate(Microsoft.Office.Interop.InfoPath._XDocument,Microsoft.Office.Interop.InfoPath.Window)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WindowDeactivate ( As _XDocument,  As Window)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WindowDeactivate(Microsoft::Office::Interop::InfoPath::_XDocument ^ , Microsoft::Office::Interop::InfoPath::Window ^ );" />
+      <MemberSignature Language="F#" Value="abstract member WindowDeactivate : Microsoft.Office.Interop.InfoPath._XDocument * Microsoft.Office.Interop.InfoPath.Window -&gt; unit&#xA;override this.WindowDeactivate : Microsoft.Office.Interop.InfoPath._XDocument * Microsoft.Office.Interop.InfoPath.Window -&gt; unit" Usage="_ApplicationEvents_SinkHelper.WindowDeactivate (, )" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents.WindowDeactivate(Microsoft.Office.Interop.InfoPath._XDocument,Microsoft.Office.Interop.InfoPath.Window)</InterfaceMember>
@@ -333,7 +349,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocument" />
+        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath.Window" />
         <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath.Window" />
       </Parameters>
       <Docs>
@@ -349,6 +365,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.WindowSize(Microsoft.Office.Interop.InfoPath._XDocument,Microsoft.Office.Interop.InfoPath.Window)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WindowSize ( As _XDocument,  As Window)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WindowSize(Microsoft::Office::Interop::InfoPath::_XDocument ^ , Microsoft::Office::Interop::InfoPath::Window ^ );" />
+      <MemberSignature Language="F#" Value="abstract member WindowSize : Microsoft.Office.Interop.InfoPath._XDocument * Microsoft.Office.Interop.InfoPath.Window -&gt; unit&#xA;override this.WindowSize : Microsoft.Office.Interop.InfoPath._XDocument * Microsoft.Office.Interop.InfoPath.Window -&gt; unit" Usage="_ApplicationEvents_SinkHelper.WindowSize (, )" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents.WindowSize(Microsoft.Office.Interop.InfoPath._XDocument,Microsoft.Office.Interop.InfoPath.Window)</InterfaceMember>
@@ -361,7 +378,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocument" />
+        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath.Window" />
         <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath.Window" />
       </Parameters>
       <Docs>
@@ -377,9 +394,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.XDocumentBeforeClose(Microsoft.Office.Interop.InfoPath._XDocument,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub XDocumentBeforeClose ( As _XDocument, ByRef  As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void XDocumentBeforeClose(Microsoft::Office::Interop::InfoPath::_XDocument ^ , bool % );" />
+      <MemberSignature Language="F#" Value="abstract member XDocumentBeforeClose : Microsoft.Office.Interop.InfoPath._XDocument *  -&gt; unit&#xA;override this.XDocumentBeforeClose : Microsoft.Office.Interop.InfoPath._XDocument *  -&gt; unit" Usage="_ApplicationEvents_SinkHelper.XDocumentBeforeClose (, )" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents.XDocumentBeforeClose(Microsoft.Office.Interop.InfoPath._XDocument,System.Boolean@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents.XDocumentBeforeClose(Microsoft.Office.Interop.InfoPath._XDocument,System.Boolean)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -389,7 +407,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocument" />
+        <Parameter Name="" Type="System.Boolean" />
         <Parameter Name="" Type="System.Boolean&amp;" RefType="ref" />
       </Parameters>
       <Docs>
@@ -405,9 +423,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.XDocumentBeforePrint(Microsoft.Office.Interop.InfoPath._XDocument,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub XDocumentBeforePrint ( As _XDocument, ByRef  As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void XDocumentBeforePrint(Microsoft::Office::Interop::InfoPath::_XDocument ^ , bool % );" />
+      <MemberSignature Language="F#" Value="abstract member XDocumentBeforePrint : Microsoft.Office.Interop.InfoPath._XDocument *  -&gt; unit&#xA;override this.XDocumentBeforePrint : Microsoft.Office.Interop.InfoPath._XDocument *  -&gt; unit" Usage="_ApplicationEvents_SinkHelper.XDocumentBeforePrint (, )" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents.XDocumentBeforePrint(Microsoft.Office.Interop.InfoPath._XDocument,System.Boolean@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents.XDocumentBeforePrint(Microsoft.Office.Interop.InfoPath._XDocument,System.Boolean)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -417,7 +436,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocument" />
+        <Parameter Name="" Type="System.Boolean" />
         <Parameter Name="" Type="System.Boolean&amp;" RefType="ref" />
       </Parameters>
       <Docs>
@@ -433,9 +452,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.XDocumentBeforeSave(Microsoft.Office.Interop.InfoPath._XDocument,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub XDocumentBeforeSave ( As _XDocument, ByRef  As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void XDocumentBeforeSave(Microsoft::Office::Interop::InfoPath::_XDocument ^ , bool % );" />
+      <MemberSignature Language="F#" Value="abstract member XDocumentBeforeSave : Microsoft.Office.Interop.InfoPath._XDocument *  -&gt; unit&#xA;override this.XDocumentBeforeSave : Microsoft.Office.Interop.InfoPath._XDocument *  -&gt; unit" Usage="_ApplicationEvents_SinkHelper.XDocumentBeforeSave (, )" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents.XDocumentBeforeSave(Microsoft.Office.Interop.InfoPath._XDocument,System.Boolean@)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents.XDocumentBeforeSave(Microsoft.Office.Interop.InfoPath._XDocument,System.Boolean)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -445,7 +465,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocument" />
+        <Parameter Name="" Type="System.Boolean" />
         <Parameter Name="" Type="System.Boolean&amp;" RefType="ref" />
       </Parameters>
       <Docs>
@@ -461,6 +481,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.XDocumentChange" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub XDocumentChange ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void XDocumentChange();" />
+      <MemberSignature Language="F#" Value="abstract member XDocumentChange : unit -&gt; unit&#xA;override this.XDocumentChange : unit -&gt; unit" Usage="_ApplicationEvents_SinkHelper.XDocumentChange " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents.XDocumentChange</InterfaceMember>
@@ -484,6 +505,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.XDocumentOpen(Microsoft.Office.Interop.InfoPath._XDocument)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub XDocumentOpen ( As _XDocument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void XDocumentOpen(Microsoft::Office::Interop::InfoPath::_XDocument ^ );" />
+      <MemberSignature Language="F#" Value="abstract member XDocumentOpen : Microsoft.Office.Interop.InfoPath._XDocument -&gt; unit&#xA;override this.XDocumentOpen : Microsoft.Office.Interop.InfoPath._XDocument -&gt; unit" Usage="_ApplicationEvents_SinkHelper.XDocumentOpen " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents.XDocumentOpen(Microsoft.Office.Interop.InfoPath._XDocument)</InterfaceMember>
