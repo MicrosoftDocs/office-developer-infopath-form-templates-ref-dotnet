@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.InfoPathEditorObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class InfoPathEditorObjectClass&#xA;Implements IInfoPathEditorProperties, InfoPathEditorObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class InfoPathEditorObjectClass : Microsoft::Office::Interop::InfoPath::IInfoPathEditorProperties, Microsoft::Office::Interop::InfoPath::InfoPathEditorObject" />
+  <TypeSignature Language="F#" Value="type InfoPathEditorObjectClass = class&#xA;    interface InfoPathEditor&#xA;    interface InfoPathEditorObject&#xA;    interface IInfoPathEditorProperties" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -58,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditorObjectClass.CloseDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub CloseDocument ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CloseDocument() = Microsoft::Office::Interop::InfoPath::InfoPathEditor::CloseDocument;" />
+      <MemberSignature Language="F#" Value="abstract member CloseDocument : unit -&gt; unit&#xA;override this.CloseDocument : unit -&gt; unit" Usage="infoPathEditorObjectClass.CloseDocument " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.InfoPathEditor.CloseDocument</InterfaceMember>
@@ -81,6 +83,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.InfoPathEditorObjectClass.DataConnectionBaseUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DataConnectionBaseUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataConnectionBaseUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataConnectionBaseUrl : string with get, set" Usage="DataConnectionBaseUrl" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.InfoPathEditor.DataConnectionBaseUrl</InterfaceMember>
@@ -109,6 +112,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.InfoPathEditorObjectClass.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="Enabled" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.IInfoPathEditorProperties.Enabled</InterfaceMember>
@@ -140,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditorObjectClass.FlushDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub FlushDocument ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void FlushDocument() = Microsoft::Office::Interop::InfoPath::InfoPathEditor::FlushDocument;" />
+      <MemberSignature Language="F#" Value="abstract member FlushDocument : unit -&gt; unit&#xA;override this.FlushDocument : unit -&gt; unit" Usage="infoPathEditorObjectClass.FlushDocument " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.InfoPathEditor.FlushDocument</InterfaceMember>
@@ -163,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.InfoPathEditorObjectClass.Host" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Host As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Host { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Host : obj with get, set" Usage="Host" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.InfoPathEditor.Host</InterfaceMember>
@@ -191,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.InfoPathEditorObjectClass.HostName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property HostName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HostName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HostName : string with get, set" Usage="HostName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.InfoPathEditor.HostName</InterfaceMember>
@@ -219,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.InfoPathEditorObjectClass.HostTranslatesAcceleratorsFirst" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property HostTranslatesAcceleratorsFirst As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HostTranslatesAcceleratorsFirst { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HostTranslatesAcceleratorsFirst : bool with get, set" Usage="HostTranslatesAcceleratorsFirst" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.IInfoPathEditorProperties.HostTranslatesAcceleratorsFirst</InterfaceMember>
@@ -250,6 +258,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditorObjectClass.Load(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Load (bstrURL As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Load(System::String ^ bstrURL) = Microsoft::Office::Interop::InfoPath::InfoPathEditor::Load;" />
+      <MemberSignature Language="F#" Value="abstract member Load : string -&gt; unit&#xA;override this.Load : string -&gt; unit" Usage="infoPathEditorObjectClass.Load bstrURL" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.InfoPathEditor.Load(System.String)</InterfaceMember>
@@ -276,6 +285,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditorObjectClass.LoadFromStream(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub LoadFromStream (punkStream As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LoadFromStream(System::Object ^ punkStream) = Microsoft::Office::Interop::InfoPath::InfoPathEditor::LoadFromStream;" />
+      <MemberSignature Language="F#" Value="abstract member LoadFromStream : obj -&gt; unit&#xA;override this.LoadFromStream : obj -&gt; unit" Usage="infoPathEditorObjectClass.LoadFromStream punkStream" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.InfoPathEditor.LoadFromStream(System.Object)</InterfaceMember>
@@ -302,6 +312,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditorObjectClass.NewFromSolution(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub NewFromSolution (bstrSolutionURI As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void NewFromSolution(System::String ^ bstrSolutionURI) = Microsoft::Office::Interop::InfoPath::InfoPathEditor::NewFromSolution;" />
+      <MemberSignature Language="F#" Value="abstract member NewFromSolution : string -&gt; unit&#xA;override this.NewFromSolution : string -&gt; unit" Usage="infoPathEditorObjectClass.NewFromSolution bstrSolutionURI" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.InfoPathEditor.NewFromSolution(System.String)</InterfaceMember>
@@ -328,6 +339,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditorObjectClass.NewFromSolutionWithData(System.String,System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub NewFromSolutionWithData (bstrURLXSN As String, punkStream As Object, dwBehavior As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void NewFromSolutionWithData(System::String ^ bstrURLXSN, System::Object ^ punkStream, int dwBehavior) = Microsoft::Office::Interop::InfoPath::InfoPathEditor::NewFromSolutionWithData;" />
+      <MemberSignature Language="F#" Value="abstract member NewFromSolutionWithData : string * obj * int -&gt; unit&#xA;override this.NewFromSolutionWithData : string * obj * int -&gt; unit" Usage="infoPathEditorObjectClass.NewFromSolutionWithData (bstrURLXSN, punkStream, dwBehavior)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.InfoPathEditor.NewFromSolutionWithData(System.String,System.Object,System.Int32)</InterfaceMember>
@@ -358,6 +370,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditorObjectClass.SetInitEventHandler(Microsoft.Office.Interop.InfoPath._IInitEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetInitEventHandler (pHandler As _IInitEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetInitEventHandler(Microsoft::Office::Interop::InfoPath::_IInitEventHandler ^ pHandler) = Microsoft::Office::Interop::InfoPath::InfoPathEditor::SetInitEventHandler;" />
+      <MemberSignature Language="F#" Value="abstract member SetInitEventHandler : Microsoft.Office.Interop.InfoPath._IInitEventHandler -&gt; unit&#xA;override this.SetInitEventHandler : Microsoft.Office.Interop.InfoPath._IInitEventHandler -&gt; unit" Usage="infoPathEditorObjectClass.SetInitEventHandler pHandler" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.InfoPathEditor.SetInitEventHandler(Microsoft.Office.Interop.InfoPath._IInitEventHandler)</InterfaceMember>
@@ -384,6 +397,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditorObjectClass.SetNotifyHostEventHandler(Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetNotifyHostEventHandler (pHandler As INotifyHostEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetNotifyHostEventHandler(Microsoft::Office::Interop::InfoPath::INotifyHostEventHandler ^ pHandler) = Microsoft::Office::Interop::InfoPath::InfoPathEditor::SetNotifyHostEventHandler;" />
+      <MemberSignature Language="F#" Value="abstract member SetNotifyHostEventHandler : Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler -&gt; unit&#xA;override this.SetNotifyHostEventHandler : Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler -&gt; unit" Usage="infoPathEditorObjectClass.SetNotifyHostEventHandler pHandler" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.InfoPathEditor.SetNotifyHostEventHandler(Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler)</InterfaceMember>
@@ -410,6 +424,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditorObjectClass.SetSubmitToHostEventHandler(Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSubmitToHostEventHandler (pHandler As ISubmitToHostEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSubmitToHostEventHandler(Microsoft::Office::Interop::InfoPath::ISubmitToHostEventHandler ^ pHandler) = Microsoft::Office::Interop::InfoPath::InfoPathEditor::SetSubmitToHostEventHandler;" />
+      <MemberSignature Language="F#" Value="abstract member SetSubmitToHostEventHandler : Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler -&gt; unit&#xA;override this.SetSubmitToHostEventHandler : Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler -&gt; unit" Usage="infoPathEditorObjectClass.SetSubmitToHostEventHandler pHandler" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.InfoPathEditor.SetSubmitToHostEventHandler(Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler)</InterfaceMember>
@@ -436,6 +451,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.InfoPathEditorObjectClass.XDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property XDocument As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XDocument ^ XDocument { Microsoft::Office::Interop::InfoPath::XDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XDocument : Microsoft.Office.Interop.InfoPath.XDocument" Usage="XDocument" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.InfoPathEditor.XDocument</InterfaceMember>

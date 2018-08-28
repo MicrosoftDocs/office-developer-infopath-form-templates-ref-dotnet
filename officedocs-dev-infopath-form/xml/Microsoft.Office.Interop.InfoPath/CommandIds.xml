@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.CommandIds" />
   <TypeSignature Language="VB.NET" Value="Public Enum CommandIds" />
   <TypeSignature Language="C++ CLI" Value="public enum class CommandIds" />
+  <TypeSignature Language="F#" Value="type CommandIds = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.AddWordToDictionary" />
       <MemberSignature Language="VB.NET" Value="AddWordToDictionary" />
       <MemberSignature Language="C++ CLI" Value="AddWordToDictionary" />
+      <MemberSignature Language="F#" Value="AddWordToDictionary = 131" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.AddWordToDictionary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.AlignTextCenter" />
       <MemberSignature Language="VB.NET" Value="AlignTextCenter" />
       <MemberSignature Language="C++ CLI" Value="AlignTextCenter" />
+      <MemberSignature Language="F#" Value="AlignTextCenter = 33" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.AlignTextCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.AlignTextJustify" />
       <MemberSignature Language="VB.NET" Value="AlignTextJustify" />
       <MemberSignature Language="C++ CLI" Value="AlignTextJustify" />
+      <MemberSignature Language="F#" Value="AlignTextJustify = 35" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.AlignTextJustify" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.AlignTextLeft" />
       <MemberSignature Language="VB.NET" Value="AlignTextLeft" />
       <MemberSignature Language="C++ CLI" Value="AlignTextLeft" />
+      <MemberSignature Language="F#" Value="AlignTextLeft = 32" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.AlignTextLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.AlignTextRight" />
       <MemberSignature Language="VB.NET" Value="AlignTextRight" />
       <MemberSignature Language="C++ CLI" Value="AlignTextRight" />
+      <MemberSignature Language="F#" Value="AlignTextRight = 34" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.AlignTextRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -122,6 +128,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.ClearAutoSpace" />
       <MemberSignature Language="VB.NET" Value="ClearAutoSpace" />
       <MemberSignature Language="C++ CLI" Value="ClearAutoSpace" />
+      <MemberSignature Language="F#" Value="ClearAutoSpace = 85" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.ClearAutoSpace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -141,6 +148,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.ClearBulletedList" />
       <MemberSignature Language="VB.NET" Value="ClearBulletedList" />
       <MemberSignature Language="C++ CLI" Value="ClearBulletedList" />
+      <MemberSignature Language="F#" Value="ClearBulletedList = 59" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.ClearBulletedList" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -160,6 +168,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.ClearFontFormatting" />
       <MemberSignature Language="VB.NET" Value="ClearFontFormatting" />
       <MemberSignature Language="C++ CLI" Value="ClearFontFormatting" />
+      <MemberSignature Language="F#" Value="ClearFontFormatting = 109" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.ClearFontFormatting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -179,6 +188,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.ClearNumberedList" />
       <MemberSignature Language="VB.NET" Value="ClearNumberedList" />
       <MemberSignature Language="C++ CLI" Value="ClearNumberedList" />
+      <MemberSignature Language="F#" Value="ClearNumberedList = 58" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.ClearNumberedList" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -198,6 +208,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.Close" />
       <MemberSignature Language="VB.NET" Value="Close" />
       <MemberSignature Language="C++ CLI" Value="Close" />
+      <MemberSignature Language="F#" Value="Close = 4" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.Close" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -217,6 +228,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.Copy" />
       <MemberSignature Language="VB.NET" Value="Copy" />
       <MemberSignature Language="C++ CLI" Value="Copy" />
+      <MemberSignature Language="F#" Value="Copy = 53" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.Copy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -236,6 +248,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.CorrectAllOfMisspelledWord" />
       <MemberSignature Language="VB.NET" Value="CorrectAllOfMisspelledWord" />
       <MemberSignature Language="C++ CLI" Value="CorrectAllOfMisspelledWord" />
+      <MemberSignature Language="F#" Value="CorrectAllOfMisspelledWord = 134" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.CorrectAllOfMisspelledWord" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -255,6 +268,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.CorrectMisspelledWord" />
       <MemberSignature Language="VB.NET" Value="CorrectMisspelledWord" />
       <MemberSignature Language="C++ CLI" Value="CorrectMisspelledWord" />
+      <MemberSignature Language="F#" Value="CorrectMisspelledWord = 133" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.CorrectMisspelledWord" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -274,6 +288,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.Cut" />
       <MemberSignature Language="VB.NET" Value="Cut" />
       <MemberSignature Language="C++ CLI" Value="Cut" />
+      <MemberSignature Language="F#" Value="Cut = 52" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.Cut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -293,6 +308,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.DecreaseFontSizeBy2" />
       <MemberSignature Language="VB.NET" Value="DecreaseFontSizeBy2" />
       <MemberSignature Language="C++ CLI" Value="DecreaseFontSizeBy2" />
+      <MemberSignature Language="F#" Value="DecreaseFontSizeBy2 = 117" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.DecreaseFontSizeBy2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -312,6 +328,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.DecreaseIndent" />
       <MemberSignature Language="VB.NET" Value="DecreaseIndent" />
       <MemberSignature Language="C++ CLI" Value="DecreaseIndent" />
+      <MemberSignature Language="F#" Value="DecreaseIndent = 60" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.DecreaseIndent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -331,6 +348,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.DeleteMisspelledWord" />
       <MemberSignature Language="VB.NET" Value="DeleteMisspelledWord" />
       <MemberSignature Language="C++ CLI" Value="DeleteMisspelledWord" />
+      <MemberSignature Language="F#" Value="DeleteMisspelledWord = 135" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.DeleteMisspelledWord" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -350,6 +368,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.DeleteSelectedColumns" />
       <MemberSignature Language="VB.NET" Value="DeleteSelectedColumns" />
       <MemberSignature Language="C++ CLI" Value="DeleteSelectedColumns" />
+      <MemberSignature Language="F#" Value="DeleteSelectedColumns = 68" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.DeleteSelectedColumns" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -369,6 +388,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.DeleteSelectedRows" />
       <MemberSignature Language="VB.NET" Value="DeleteSelectedRows" />
       <MemberSignature Language="C++ CLI" Value="DeleteSelectedRows" />
+      <MemberSignature Language="F#" Value="DeleteSelectedRows = 67" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.DeleteSelectedRows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -388,6 +408,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.DeleteSelectedTable" />
       <MemberSignature Language="VB.NET" Value="DeleteSelectedTable" />
       <MemberSignature Language="C++ CLI" Value="DeleteSelectedTable" />
+      <MemberSignature Language="F#" Value="DeleteSelectedTable = 66" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.DeleteSelectedTable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -407,6 +428,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.DrawTable" />
       <MemberSignature Language="VB.NET" Value="DrawTable" />
       <MemberSignature Language="C++ CLI" Value="DrawTable" />
+      <MemberSignature Language="F#" Value="DrawTable = 50" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.DrawTable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -426,6 +448,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.EraseTable" />
       <MemberSignature Language="VB.NET" Value="EraseTable" />
       <MemberSignature Language="C++ CLI" Value="EraseTable" />
+      <MemberSignature Language="F#" Value="EraseTable = 51" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.EraseTable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -445,6 +468,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.FindNextMisspelledWord" />
       <MemberSignature Language="VB.NET" Value="FindNextMisspelledWord" />
       <MemberSignature Language="C++ CLI" Value="FindNextMisspelledWord" />
+      <MemberSignature Language="F#" Value="FindNextMisspelledWord = 132" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.FindNextMisspelledWord" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -464,6 +488,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.FindReplaceFindNext" />
       <MemberSignature Language="VB.NET" Value="FindReplaceFindNext" />
       <MemberSignature Language="C++ CLI" Value="FindReplaceFindNext" />
+      <MemberSignature Language="F#" Value="FindReplaceFindNext = 119" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.FindReplaceFindNext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -483,6 +508,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.FormatPainterApplyFormatting" />
       <MemberSignature Language="VB.NET" Value="FormatPainterApplyFormatting" />
       <MemberSignature Language="C++ CLI" Value="FormatPainterApplyFormatting" />
+      <MemberSignature Language="F#" Value="FormatPainterApplyFormatting = 23" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.FormatPainterApplyFormatting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -502,6 +528,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.FormatPainterApplyFormattingPersistent" />
       <MemberSignature Language="VB.NET" Value="FormatPainterApplyFormattingPersistent" />
       <MemberSignature Language="C++ CLI" Value="FormatPainterApplyFormattingPersistent" />
+      <MemberSignature Language="F#" Value="FormatPainterApplyFormattingPersistent = 25" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.FormatPainterApplyFormattingPersistent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -521,6 +548,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.FormatPainterCopyFormatting" />
       <MemberSignature Language="VB.NET" Value="FormatPainterCopyFormatting" />
       <MemberSignature Language="C++ CLI" Value="FormatPainterCopyFormatting" />
+      <MemberSignature Language="F#" Value="FormatPainterCopyFormatting = 24" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.FormatPainterCopyFormatting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -540,6 +568,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.FormatPainterCopyFormattingPersistent" />
       <MemberSignature Language="VB.NET" Value="FormatPainterCopyFormattingPersistent" />
       <MemberSignature Language="C++ CLI" Value="FormatPainterCopyFormattingPersistent" />
+      <MemberSignature Language="F#" Value="FormatPainterCopyFormattingPersistent = 172" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.FormatPainterCopyFormattingPersistent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -559,6 +588,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetCurrentMisspelledWord" />
       <MemberSignature Language="VB.NET" Value="GetCurrentMisspelledWord" />
       <MemberSignature Language="C++ CLI" Value="GetCurrentMisspelledWord" />
+      <MemberSignature Language="F#" Value="GetCurrentMisspelledWord = 139" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetCurrentMisspelledWord" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -578,6 +608,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetDefaultFontColor" />
       <MemberSignature Language="VB.NET" Value="GetDefaultFontColor" />
       <MemberSignature Language="C++ CLI" Value="GetDefaultFontColor" />
+      <MemberSignature Language="F#" Value="GetDefaultFontColor = 98" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetDefaultFontColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -597,6 +628,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetDefaultHighlightColor" />
       <MemberSignature Language="VB.NET" Value="GetDefaultHighlightColor" />
       <MemberSignature Language="C++ CLI" Value="GetDefaultHighlightColor" />
+      <MemberSignature Language="F#" Value="GetDefaultHighlightColor = 97" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetDefaultHighlightColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -616,6 +648,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetFindReplaceOptionSearchDirection" />
       <MemberSignature Language="VB.NET" Value="GetFindReplaceOptionSearchDirection" />
       <MemberSignature Language="C++ CLI" Value="GetFindReplaceOptionSearchDirection" />
+      <MemberSignature Language="F#" Value="GetFindReplaceOptionSearchDirection = 94" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetFindReplaceOptionSearchDirection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -635,6 +668,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetFindReplaceState" />
       <MemberSignature Language="VB.NET" Value="GetFindReplaceState" />
       <MemberSignature Language="C++ CLI" Value="GetFindReplaceState" />
+      <MemberSignature Language="F#" Value="GetFindReplaceState = 171" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetFindReplaceState" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -654,6 +688,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetFindString" />
       <MemberSignature Language="VB.NET" Value="GetFindString" />
       <MemberSignature Language="C++ CLI" Value="GetFindString" />
+      <MemberSignature Language="F#" Value="GetFindString = 87" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetFindString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -673,6 +708,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetFontAvailableByIndex" />
       <MemberSignature Language="VB.NET" Value="GetFontAvailableByIndex" />
       <MemberSignature Language="C++ CLI" Value="GetFontAvailableByIndex" />
+      <MemberSignature Language="F#" Value="GetFontAvailableByIndex = 102" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetFontAvailableByIndex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -692,6 +728,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetFontsAvailableCount" />
       <MemberSignature Language="VB.NET" Value="GetFontsAvailableCount" />
       <MemberSignature Language="C++ CLI" Value="GetFontsAvailableCount" />
+      <MemberSignature Language="F#" Value="GetFontsAvailableCount = 101" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetFontsAvailableCount" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -711,6 +748,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetFontSizeAvailableByIndex" />
       <MemberSignature Language="VB.NET" Value="GetFontSizeAvailableByIndex" />
       <MemberSignature Language="C++ CLI" Value="GetFontSizeAvailableByIndex" />
+      <MemberSignature Language="F#" Value="GetFontSizeAvailableByIndex = 104" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetFontSizeAvailableByIndex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -730,6 +768,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetFontSizesAvailableCount" />
       <MemberSignature Language="VB.NET" Value="GetFontSizesAvailableCount" />
       <MemberSignature Language="C++ CLI" Value="GetFontSizesAvailableCount" />
+      <MemberSignature Language="F#" Value="GetFontSizesAvailableCount = 103" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetFontSizesAvailableCount" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -749,6 +788,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetHyperlinkAddress" />
       <MemberSignature Language="VB.NET" Value="GetHyperlinkAddress" />
       <MemberSignature Language="C++ CLI" Value="GetHyperlinkAddress" />
+      <MemberSignature Language="F#" Value="GetHyperlinkAddress = 159" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetHyperlinkAddress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -768,6 +808,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetHyperlinkDisplayText" />
       <MemberSignature Language="VB.NET" Value="GetHyperlinkDisplayText" />
       <MemberSignature Language="C++ CLI" Value="GetHyperlinkDisplayText" />
+      <MemberSignature Language="F#" Value="GetHyperlinkDisplayText = 158" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetHyperlinkDisplayText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -787,6 +828,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetPictureAlternativeText" />
       <MemberSignature Language="VB.NET" Value="GetPictureAlternativeText" />
       <MemberSignature Language="C++ CLI" Value="GetPictureAlternativeText" />
+      <MemberSignature Language="F#" Value="GetPictureAlternativeText = 169" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetPictureAlternativeText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -806,6 +848,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetPictureHeight" />
       <MemberSignature Language="VB.NET" Value="GetPictureHeight" />
       <MemberSignature Language="C++ CLI" Value="GetPictureHeight" />
+      <MemberSignature Language="F#" Value="GetPictureHeight = 167" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetPictureHeight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -825,6 +868,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetPictureTextWrapping" />
       <MemberSignature Language="VB.NET" Value="GetPictureTextWrapping" />
       <MemberSignature Language="C++ CLI" Value="GetPictureTextWrapping" />
+      <MemberSignature Language="F#" Value="GetPictureTextWrapping = 170" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetPictureTextWrapping" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -844,6 +888,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetPictureWidth" />
       <MemberSignature Language="VB.NET" Value="GetPictureWidth" />
       <MemberSignature Language="C++ CLI" Value="GetPictureWidth" />
+      <MemberSignature Language="F#" Value="GetPictureWidth = 168" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetPictureWidth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -863,6 +908,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetReplaceWithString" />
       <MemberSignature Language="VB.NET" Value="GetReplaceWithString" />
       <MemberSignature Language="C++ CLI" Value="GetReplaceWithString" />
+      <MemberSignature Language="F#" Value="GetReplaceWithString = 89" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetReplaceWithString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -882,6 +928,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedCellBottomPadding" />
       <MemberSignature Language="VB.NET" Value="GetSelectedCellBottomPadding" />
       <MemberSignature Language="C++ CLI" Value="GetSelectedCellBottomPadding" />
+      <MemberSignature Language="F#" Value="GetSelectedCellBottomPadding = 151" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedCellBottomPadding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -901,6 +948,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedCellLeftPadding" />
       <MemberSignature Language="VB.NET" Value="GetSelectedCellLeftPadding" />
       <MemberSignature Language="C++ CLI" Value="GetSelectedCellLeftPadding" />
+      <MemberSignature Language="F#" Value="GetSelectedCellLeftPadding = 150" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedCellLeftPadding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -920,6 +968,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedCellRightPadding" />
       <MemberSignature Language="VB.NET" Value="GetSelectedCellRightPadding" />
       <MemberSignature Language="C++ CLI" Value="GetSelectedCellRightPadding" />
+      <MemberSignature Language="F#" Value="GetSelectedCellRightPadding = 152" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedCellRightPadding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -939,6 +988,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedCellTopPadding" />
       <MemberSignature Language="VB.NET" Value="GetSelectedCellTopPadding" />
       <MemberSignature Language="C++ CLI" Value="GetSelectedCellTopPadding" />
+      <MemberSignature Language="F#" Value="GetSelectedCellTopPadding = 149" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedCellTopPadding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -958,6 +1008,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedCellVerticalAlignment" />
       <MemberSignature Language="VB.NET" Value="GetSelectedCellVerticalAlignment" />
       <MemberSignature Language="C++ CLI" Value="GetSelectedCellVerticalAlignment" />
+      <MemberSignature Language="F#" Value="GetSelectedCellVerticalAlignment = 148" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedCellVerticalAlignment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -977,6 +1028,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedColumnWidth" />
       <MemberSignature Language="VB.NET" Value="GetSelectedColumnWidth" />
       <MemberSignature Language="C++ CLI" Value="GetSelectedColumnWidth" />
+      <MemberSignature Language="F#" Value="GetSelectedColumnWidth = 142" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedColumnWidth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -996,6 +1048,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedRowHeight" />
       <MemberSignature Language="VB.NET" Value="GetSelectedRowHeight" />
       <MemberSignature Language="C++ CLI" Value="GetSelectedRowHeight" />
+      <MemberSignature Language="F#" Value="GetSelectedRowHeight = 140" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedRowHeight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1015,6 +1068,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedTextBackgroundColor" />
       <MemberSignature Language="VB.NET" Value="GetSelectedTextBackgroundColor" />
       <MemberSignature Language="C++ CLI" Value="GetSelectedTextBackgroundColor" />
+      <MemberSignature Language="F#" Value="GetSelectedTextBackgroundColor = 127" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedTextBackgroundColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1034,6 +1088,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedTextFont" />
       <MemberSignature Language="VB.NET" Value="GetSelectedTextFont" />
       <MemberSignature Language="C++ CLI" Value="GetSelectedTextFont" />
+      <MemberSignature Language="F#" Value="GetSelectedTextFont = 124" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedTextFont" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1053,6 +1108,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedTextFontColor" />
       <MemberSignature Language="VB.NET" Value="GetSelectedTextFontColor" />
       <MemberSignature Language="C++ CLI" Value="GetSelectedTextFontColor" />
+      <MemberSignature Language="F#" Value="GetSelectedTextFontColor = 125" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedTextFontColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1072,6 +1128,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedTextFontSize" />
       <MemberSignature Language="VB.NET" Value="GetSelectedTextFontSize" />
       <MemberSignature Language="C++ CLI" Value="GetSelectedTextFontSize" />
+      <MemberSignature Language="F#" Value="GetSelectedTextFontSize = 123" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedTextFontSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1091,6 +1148,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedTextHighlightColor" />
       <MemberSignature Language="VB.NET" Value="GetSelectedTextHighlightColor" />
       <MemberSignature Language="C++ CLI" Value="GetSelectedTextHighlightColor" />
+      <MemberSignature Language="F#" Value="GetSelectedTextHighlightColor = 126" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetSelectedTextHighlightColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1110,6 +1168,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetSpellingSuggestion" />
       <MemberSignature Language="VB.NET" Value="GetSpellingSuggestion" />
       <MemberSignature Language="C++ CLI" Value="GetSpellingSuggestion" />
+      <MemberSignature Language="F#" Value="GetSpellingSuggestion = 138" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetSpellingSuggestion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1129,6 +1188,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetSpellingSuggestionsCount" />
       <MemberSignature Language="VB.NET" Value="GetSpellingSuggestionsCount" />
       <MemberSignature Language="C++ CLI" Value="GetSpellingSuggestionsCount" />
+      <MemberSignature Language="F#" Value="GetSpellingSuggestionsCount = 137" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetSpellingSuggestionsCount" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1148,6 +1208,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetSubmitButtonCaption" />
       <MemberSignature Language="VB.NET" Value="GetSubmitButtonCaption" />
       <MemberSignature Language="C++ CLI" Value="GetSubmitButtonCaption" />
+      <MemberSignature Language="F#" Value="GetSubmitButtonCaption = 9" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetSubmitButtonCaption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1167,6 +1228,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetTableDirection" />
       <MemberSignature Language="VB.NET" Value="GetTableDirection" />
       <MemberSignature Language="C++ CLI" Value="GetTableDirection" />
+      <MemberSignature Language="F#" Value="GetTableDirection = 77" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetTableDirection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1186,6 +1248,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GetTableHorizontalAlignment" />
       <MemberSignature Language="VB.NET" Value="GetTableHorizontalAlignment" />
       <MemberSignature Language="C++ CLI" Value="GetTableHorizontalAlignment" />
+      <MemberSignature Language="F#" Value="GetTableHorizontalAlignment = 75" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GetTableHorizontalAlignment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1205,6 +1268,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GotoFirstErrorOnView" />
       <MemberSignature Language="VB.NET" Value="GotoFirstErrorOnView" />
       <MemberSignature Language="C++ CLI" Value="GotoFirstErrorOnView" />
+      <MemberSignature Language="F#" Value="GotoFirstErrorOnView = 107" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GotoFirstErrorOnView" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1224,6 +1288,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.GotoNextErrorOnView" />
       <MemberSignature Language="VB.NET" Value="GotoNextErrorOnView" />
       <MemberSignature Language="C++ CLI" Value="GotoNextErrorOnView" />
+      <MemberSignature Language="F#" Value="GotoNextErrorOnView = 10" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.GotoNextErrorOnView" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1243,6 +1308,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.IgnoreAllOfMisspelledWord" />
       <MemberSignature Language="VB.NET" Value="IgnoreAllOfMisspelledWord" />
       <MemberSignature Language="C++ CLI" Value="IgnoreAllOfMisspelledWord" />
+      <MemberSignature Language="F#" Value="IgnoreAllOfMisspelledWord = 130" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.IgnoreAllOfMisspelledWord" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1262,6 +1328,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.IgnoreMisspelledWord" />
       <MemberSignature Language="VB.NET" Value="IgnoreMisspelledWord" />
       <MemberSignature Language="C++ CLI" Value="IgnoreMisspelledWord" />
+      <MemberSignature Language="F#" Value="IgnoreMisspelledWord = 129" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.IgnoreMisspelledWord" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1281,6 +1348,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.IncreaseFontSizeBy2" />
       <MemberSignature Language="VB.NET" Value="IncreaseFontSizeBy2" />
       <MemberSignature Language="C++ CLI" Value="IncreaseFontSizeBy2" />
+      <MemberSignature Language="F#" Value="IncreaseFontSizeBy2 = 118" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.IncreaseFontSizeBy2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1300,6 +1368,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.IncreaseIndent" />
       <MemberSignature Language="VB.NET" Value="IncreaseIndent" />
       <MemberSignature Language="C++ CLI" Value="IncreaseIndent" />
+      <MemberSignature Language="F#" Value="IncreaseIndent = 61" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.IncreaseIndent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1319,6 +1388,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.InsertBulletedList" />
       <MemberSignature Language="VB.NET" Value="InsertBulletedList" />
       <MemberSignature Language="C++ CLI" Value="InsertBulletedList" />
+      <MemberSignature Language="F#" Value="InsertBulletedList = 22" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.InsertBulletedList" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1338,6 +1408,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.InsertBulletedListEmptyCircle" />
       <MemberSignature Language="VB.NET" Value="InsertBulletedListEmptyCircle" />
       <MemberSignature Language="C++ CLI" Value="InsertBulletedListEmptyCircle" />
+      <MemberSignature Language="F#" Value="InsertBulletedListEmptyCircle = 48" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.InsertBulletedListEmptyCircle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1357,6 +1428,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.InsertBulletedListSolidCircle" />
       <MemberSignature Language="VB.NET" Value="InsertBulletedListSolidCircle" />
       <MemberSignature Language="C++ CLI" Value="InsertBulletedListSolidCircle" />
+      <MemberSignature Language="F#" Value="InsertBulletedListSolidCircle = 47" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.InsertBulletedListSolidCircle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1376,6 +1448,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.InsertBulletedListSolidSquare" />
       <MemberSignature Language="VB.NET" Value="InsertBulletedListSolidSquare" />
       <MemberSignature Language="C++ CLI" Value="InsertBulletedListSolidSquare" />
+      <MemberSignature Language="F#" Value="InsertBulletedListSolidSquare = 49" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.InsertBulletedListSolidSquare" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1395,6 +1468,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.InsertColumnLeft" />
       <MemberSignature Language="VB.NET" Value="InsertColumnLeft" />
       <MemberSignature Language="C++ CLI" Value="InsertColumnLeft" />
+      <MemberSignature Language="F#" Value="InsertColumnLeft = 64" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.InsertColumnLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1414,6 +1488,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.InsertColumnRight" />
       <MemberSignature Language="VB.NET" Value="InsertColumnRight" />
       <MemberSignature Language="C++ CLI" Value="InsertColumnRight" />
+      <MemberSignature Language="F#" Value="InsertColumnRight = 65" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.InsertColumnRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1433,6 +1508,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.InsertHorizontalLine" />
       <MemberSignature Language="VB.NET" Value="InsertHorizontalLine" />
       <MemberSignature Language="C++ CLI" Value="InsertHorizontalLine" />
+      <MemberSignature Language="F#" Value="InsertHorizontalLine = 78" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.InsertHorizontalLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1452,6 +1528,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.InsertHyperlink" />
       <MemberSignature Language="VB.NET" Value="InsertHyperlink" />
       <MemberSignature Language="C++ CLI" Value="InsertHyperlink" />
+      <MemberSignature Language="F#" Value="InsertHyperlink = 81" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.InsertHyperlink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1471,6 +1548,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.InsertImage" />
       <MemberSignature Language="VB.NET" Value="InsertImage" />
       <MemberSignature Language="C++ CLI" Value="InsertImage" />
+      <MemberSignature Language="F#" Value="InsertImage = 80" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.InsertImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1490,6 +1568,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.InsertNumberedList" />
       <MemberSignature Language="VB.NET" Value="InsertNumberedList" />
       <MemberSignature Language="C++ CLI" Value="InsertNumberedList" />
+      <MemberSignature Language="F#" Value="InsertNumberedList = 21" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.InsertNumberedList" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1509,6 +1588,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.InsertNumberedListAlphaLowercase" />
       <MemberSignature Language="VB.NET" Value="InsertNumberedListAlphaLowercase" />
       <MemberSignature Language="C++ CLI" Value="InsertNumberedListAlphaLowercase" />
+      <MemberSignature Language="F#" Value="InsertNumberedListAlphaLowercase = 43" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.InsertNumberedListAlphaLowercase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1528,6 +1608,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.InsertNumberedListAlphaUppercase" />
       <MemberSignature Language="VB.NET" Value="InsertNumberedListAlphaUppercase" />
       <MemberSignature Language="C++ CLI" Value="InsertNumberedListAlphaUppercase" />
+      <MemberSignature Language="F#" Value="InsertNumberedListAlphaUppercase = 44" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.InsertNumberedListAlphaUppercase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1547,6 +1628,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.InsertNumberedListDecimal" />
       <MemberSignature Language="VB.NET" Value="InsertNumberedListDecimal" />
       <MemberSignature Language="C++ CLI" Value="InsertNumberedListDecimal" />
+      <MemberSignature Language="F#" Value="InsertNumberedListDecimal = 42" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.InsertNumberedListDecimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1566,6 +1648,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.InsertNumberedListRomanLowercase" />
       <MemberSignature Language="VB.NET" Value="InsertNumberedListRomanLowercase" />
       <MemberSignature Language="C++ CLI" Value="InsertNumberedListRomanLowercase" />
+      <MemberSignature Language="F#" Value="InsertNumberedListRomanLowercase = 45" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.InsertNumberedListRomanLowercase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1585,6 +1668,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.InsertNumberedListRomanUppercase" />
       <MemberSignature Language="VB.NET" Value="InsertNumberedListRomanUppercase" />
       <MemberSignature Language="C++ CLI" Value="InsertNumberedListRomanUppercase" />
+      <MemberSignature Language="F#" Value="InsertNumberedListRomanUppercase = 46" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.InsertNumberedListRomanUppercase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1604,6 +1688,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.InsertPictureFromFile" />
       <MemberSignature Language="VB.NET" Value="InsertPictureFromFile" />
       <MemberSignature Language="C++ CLI" Value="InsertPictureFromFile" />
+      <MemberSignature Language="F#" Value="InsertPictureFromFile = 13" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.InsertPictureFromFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1623,6 +1708,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.InsertRowAbove" />
       <MemberSignature Language="VB.NET" Value="InsertRowAbove" />
       <MemberSignature Language="C++ CLI" Value="InsertRowAbove" />
+      <MemberSignature Language="F#" Value="InsertRowAbove = 62" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.InsertRowAbove" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1642,6 +1728,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.InsertRowBelow" />
       <MemberSignature Language="VB.NET" Value="InsertRowBelow" />
       <MemberSignature Language="C++ CLI" Value="InsertRowBelow" />
+      <MemberSignature Language="F#" Value="InsertRowBelow = 63" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.InsertRowBelow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1661,6 +1748,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.InsertTable" />
       <MemberSignature Language="VB.NET" Value="InsertTable" />
       <MemberSignature Language="C++ CLI" Value="InsertTable" />
+      <MemberSignature Language="F#" Value="InsertTable = 128" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.InsertTable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1680,6 +1768,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.IsFormDirectionLeftToRight" />
       <MemberSignature Language="VB.NET" Value="IsFormDirectionLeftToRight" />
       <MemberSignature Language="C++ CLI" Value="IsFormDirectionLeftToRight" />
+      <MemberSignature Language="F#" Value="IsFormDirectionLeftToRight = 175" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.IsFormDirectionLeftToRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1699,6 +1788,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.IsFormDirectionRightToLeft" />
       <MemberSignature Language="VB.NET" Value="IsFormDirectionRightToLeft" />
       <MemberSignature Language="C++ CLI" Value="IsFormDirectionRightToLeft" />
+      <MemberSignature Language="F#" Value="IsFormDirectionRightToLeft = 174" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.IsFormDirectionRightToLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1718,6 +1808,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.MergeCells" />
       <MemberSignature Language="VB.NET" Value="MergeCells" />
       <MemberSignature Language="C++ CLI" Value="MergeCells" />
+      <MemberSignature Language="F#" Value="MergeCells = 73" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.MergeCells" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1737,6 +1828,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.Paste" />
       <MemberSignature Language="VB.NET" Value="Paste" />
       <MemberSignature Language="C++ CLI" Value="Paste" />
+      <MemberSignature Language="F#" Value="Paste = 54" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.Paste" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1756,6 +1848,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.PasteAsText" />
       <MemberSignature Language="VB.NET" Value="PasteAsText" />
       <MemberSignature Language="C++ CLI" Value="PasteAsText" />
+      <MemberSignature Language="F#" Value="PasteAsText = 178" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.PasteAsText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1775,6 +1868,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.PasteKeepSourceFormatting" />
       <MemberSignature Language="VB.NET" Value="PasteKeepSourceFormatting" />
       <MemberSignature Language="C++ CLI" Value="PasteKeepSourceFormatting" />
+      <MemberSignature Language="F#" Value="PasteKeepSourceFormatting = 176" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.PasteKeepSourceFormatting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1794,6 +1888,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.PasteMatchDestination" />
       <MemberSignature Language="VB.NET" Value="PasteMatchDestination" />
       <MemberSignature Language="C++ CLI" Value="PasteMatchDestination" />
+      <MemberSignature Language="F#" Value="PasteMatchDestination = 177" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.PasteMatchDestination" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1813,6 +1908,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.Redo" />
       <MemberSignature Language="VB.NET" Value="Redo" />
       <MemberSignature Language="C++ CLI" Value="Redo" />
+      <MemberSignature Language="F#" Value="Redo = 57" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.Redo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1832,6 +1928,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.RemoveHyperlink" />
       <MemberSignature Language="VB.NET" Value="RemoveHyperlink" />
       <MemberSignature Language="C++ CLI" Value="RemoveHyperlink" />
+      <MemberSignature Language="F#" Value="RemoveHyperlink = 160" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.RemoveHyperlink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1851,6 +1948,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.Replace" />
       <MemberSignature Language="VB.NET" Value="Replace" />
       <MemberSignature Language="C++ CLI" Value="Replace" />
+      <MemberSignature Language="F#" Value="Replace = 95" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.Replace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1870,6 +1968,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.ReplaceAll" />
       <MemberSignature Language="VB.NET" Value="ReplaceAll" />
       <MemberSignature Language="C++ CLI" Value="ReplaceAll" />
+      <MemberSignature Language="F#" Value="ReplaceAll = 96" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.ReplaceAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1889,6 +1988,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.Save" />
       <MemberSignature Language="VB.NET" Value="Save" />
       <MemberSignature Language="C++ CLI" Value="Save" />
+      <MemberSignature Language="F#" Value="Save = 5" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.Save" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1908,6 +2008,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SaveAs" />
       <MemberSignature Language="VB.NET" Value="SaveAs" />
       <MemberSignature Language="C++ CLI" Value="SaveAs" />
+      <MemberSignature Language="F#" Value="SaveAs = 6" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SaveAs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1927,6 +2028,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SelectAll" />
       <MemberSignature Language="VB.NET" Value="SelectAll" />
       <MemberSignature Language="C++ CLI" Value="SelectAll" />
+      <MemberSignature Language="F#" Value="SelectAll = 55" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SelectAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1946,6 +2048,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SelectCell" />
       <MemberSignature Language="VB.NET" Value="SelectCell" />
       <MemberSignature Language="C++ CLI" Value="SelectCell" />
+      <MemberSignature Language="F#" Value="SelectCell = 72" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SelectCell" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1965,6 +2068,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SelectColumns" />
       <MemberSignature Language="VB.NET" Value="SelectColumns" />
       <MemberSignature Language="C++ CLI" Value="SelectColumns" />
+      <MemberSignature Language="F#" Value="SelectColumns = 71" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SelectColumns" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -1984,6 +2088,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SelectHyperlink" />
       <MemberSignature Language="VB.NET" Value="SelectHyperlink" />
       <MemberSignature Language="C++ CLI" Value="SelectHyperlink" />
+      <MemberSignature Language="F#" Value="SelectHyperlink = 82" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SelectHyperlink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2003,6 +2108,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SelectNextColumn" />
       <MemberSignature Language="VB.NET" Value="SelectNextColumn" />
       <MemberSignature Language="C++ CLI" Value="SelectNextColumn" />
+      <MemberSignature Language="F#" Value="SelectNextColumn = 146" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SelectNextColumn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2022,6 +2128,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SelectNextRow" />
       <MemberSignature Language="VB.NET" Value="SelectNextRow" />
       <MemberSignature Language="C++ CLI" Value="SelectNextRow" />
+      <MemberSignature Language="F#" Value="SelectNextRow = 144" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SelectNextRow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2041,6 +2148,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SelectPreviousColumn" />
       <MemberSignature Language="VB.NET" Value="SelectPreviousColumn" />
       <MemberSignature Language="C++ CLI" Value="SelectPreviousColumn" />
+      <MemberSignature Language="F#" Value="SelectPreviousColumn = 147" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SelectPreviousColumn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2060,6 +2168,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SelectPreviousRow" />
       <MemberSignature Language="VB.NET" Value="SelectPreviousRow" />
       <MemberSignature Language="C++ CLI" Value="SelectPreviousRow" />
+      <MemberSignature Language="F#" Value="SelectPreviousRow = 145" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SelectPreviousRow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2079,6 +2188,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SelectRows" />
       <MemberSignature Language="VB.NET" Value="SelectRows" />
       <MemberSignature Language="C++ CLI" Value="SelectRows" />
+      <MemberSignature Language="F#" Value="SelectRows = 70" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SelectRows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2098,6 +2208,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SelectTable" />
       <MemberSignature Language="VB.NET" Value="SelectTable" />
       <MemberSignature Language="C++ CLI" Value="SelectTable" />
+      <MemberSignature Language="F#" Value="SelectTable = 69" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SelectTable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2117,6 +2228,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.Set15LineSpacing" />
       <MemberSignature Language="VB.NET" Value="Set15LineSpacing" />
       <MemberSignature Language="C++ CLI" Value="Set15LineSpacing" />
+      <MemberSignature Language="F#" Value="Set15LineSpacing = 40" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.Set15LineSpacing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2136,6 +2248,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetAutoSpaceBetweenAsianAndLatinText" />
       <MemberSignature Language="VB.NET" Value="SetAutoSpaceBetweenAsianAndLatinText" />
       <MemberSignature Language="C++ CLI" Value="SetAutoSpaceBetweenAsianAndLatinText" />
+      <MemberSignature Language="F#" Value="SetAutoSpaceBetweenAsianAndLatinText = 83" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetAutoSpaceBetweenAsianAndLatinText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2155,6 +2268,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetAutoSpaceBetweenAsianTextAndNumbers" />
       <MemberSignature Language="VB.NET" Value="SetAutoSpaceBetweenAsianTextAndNumbers" />
       <MemberSignature Language="C++ CLI" Value="SetAutoSpaceBetweenAsianTextAndNumbers" />
+      <MemberSignature Language="F#" Value="SetAutoSpaceBetweenAsianTextAndNumbers = 84" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetAutoSpaceBetweenAsianTextAndNumbers" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2174,6 +2288,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetDoubleLineSpacing" />
       <MemberSignature Language="VB.NET" Value="SetDoubleLineSpacing" />
       <MemberSignature Language="C++ CLI" Value="SetDoubleLineSpacing" />
+      <MemberSignature Language="F#" Value="SetDoubleLineSpacing = 41" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetDoubleLineSpacing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2193,6 +2308,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetFindReplaceOptionMatchCase" />
       <MemberSignature Language="VB.NET" Value="SetFindReplaceOptionMatchCase" />
       <MemberSignature Language="C++ CLI" Value="SetFindReplaceOptionMatchCase" />
+      <MemberSignature Language="F#" Value="SetFindReplaceOptionMatchCase = 91" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetFindReplaceOptionMatchCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2212,6 +2328,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetFindReplaceOptionSearchDirection" />
       <MemberSignature Language="VB.NET" Value="SetFindReplaceOptionSearchDirection" />
       <MemberSignature Language="C++ CLI" Value="SetFindReplaceOptionSearchDirection" />
+      <MemberSignature Language="F#" Value="SetFindReplaceOptionSearchDirection = 93" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetFindReplaceOptionSearchDirection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2231,6 +2348,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetFindReplaceOptionUseWildcards" />
       <MemberSignature Language="VB.NET" Value="SetFindReplaceOptionUseWildcards" />
       <MemberSignature Language="C++ CLI" Value="SetFindReplaceOptionUseWildcards" />
+      <MemberSignature Language="F#" Value="SetFindReplaceOptionUseWildcards = 92" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetFindReplaceOptionUseWildcards" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2250,6 +2368,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetFindReplaceOptionWholeWordOnly" />
       <MemberSignature Language="VB.NET" Value="SetFindReplaceOptionWholeWordOnly" />
       <MemberSignature Language="C++ CLI" Value="SetFindReplaceOptionWholeWordOnly" />
+      <MemberSignature Language="F#" Value="SetFindReplaceOptionWholeWordOnly = 90" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetFindReplaceOptionWholeWordOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2269,6 +2388,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetFindString" />
       <MemberSignature Language="VB.NET" Value="SetFindString" />
       <MemberSignature Language="C++ CLI" Value="SetFindString" />
+      <MemberSignature Language="F#" Value="SetFindString = 86" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetFindString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2288,6 +2408,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingBold" />
       <MemberSignature Language="VB.NET" Value="SetFontFormattingBold" />
       <MemberSignature Language="C++ CLI" Value="SetFontFormattingBold" />
+      <MemberSignature Language="F#" Value="SetFontFormattingBold = 26" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingBold" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2307,6 +2428,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingHeading1" />
       <MemberSignature Language="VB.NET" Value="SetFontFormattingHeading1" />
       <MemberSignature Language="C++ CLI" Value="SetFontFormattingHeading1" />
+      <MemberSignature Language="F#" Value="SetFontFormattingHeading1 = 110" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingHeading1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2326,6 +2448,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingHeading2" />
       <MemberSignature Language="VB.NET" Value="SetFontFormattingHeading2" />
       <MemberSignature Language="C++ CLI" Value="SetFontFormattingHeading2" />
+      <MemberSignature Language="F#" Value="SetFontFormattingHeading2 = 111" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingHeading2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2345,6 +2468,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingHeading3" />
       <MemberSignature Language="VB.NET" Value="SetFontFormattingHeading3" />
       <MemberSignature Language="C++ CLI" Value="SetFontFormattingHeading3" />
+      <MemberSignature Language="F#" Value="SetFontFormattingHeading3 = 112" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingHeading3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2364,6 +2488,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingHeading4" />
       <MemberSignature Language="VB.NET" Value="SetFontFormattingHeading4" />
       <MemberSignature Language="C++ CLI" Value="SetFontFormattingHeading4" />
+      <MemberSignature Language="F#" Value="SetFontFormattingHeading4 = 113" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingHeading4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2383,6 +2508,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingHeading5" />
       <MemberSignature Language="VB.NET" Value="SetFontFormattingHeading5" />
       <MemberSignature Language="C++ CLI" Value="SetFontFormattingHeading5" />
+      <MemberSignature Language="F#" Value="SetFontFormattingHeading5 = 114" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingHeading5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2402,6 +2528,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingHeading6" />
       <MemberSignature Language="VB.NET" Value="SetFontFormattingHeading6" />
       <MemberSignature Language="C++ CLI" Value="SetFontFormattingHeading6" />
+      <MemberSignature Language="F#" Value="SetFontFormattingHeading6 = 115" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingHeading6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2421,6 +2548,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingItalic" />
       <MemberSignature Language="VB.NET" Value="SetFontFormattingItalic" />
       <MemberSignature Language="C++ CLI" Value="SetFontFormattingItalic" />
+      <MemberSignature Language="F#" Value="SetFontFormattingItalic = 27" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingItalic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2440,6 +2568,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingNormal" />
       <MemberSignature Language="VB.NET" Value="SetFontFormattingNormal" />
       <MemberSignature Language="C++ CLI" Value="SetFontFormattingNormal" />
+      <MemberSignature Language="F#" Value="SetFontFormattingNormal = 116" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2459,6 +2588,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingStrikethrough" />
       <MemberSignature Language="VB.NET" Value="SetFontFormattingStrikethrough" />
       <MemberSignature Language="C++ CLI" Value="SetFontFormattingStrikethrough" />
+      <MemberSignature Language="F#" Value="SetFontFormattingStrikethrough = 31" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingStrikethrough" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2478,6 +2608,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingSubscript" />
       <MemberSignature Language="VB.NET" Value="SetFontFormattingSubscript" />
       <MemberSignature Language="C++ CLI" Value="SetFontFormattingSubscript" />
+      <MemberSignature Language="F#" Value="SetFontFormattingSubscript = 30" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingSubscript" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2497,6 +2628,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingSuperscript" />
       <MemberSignature Language="VB.NET" Value="SetFontFormattingSuperscript" />
       <MemberSignature Language="C++ CLI" Value="SetFontFormattingSuperscript" />
+      <MemberSignature Language="F#" Value="SetFontFormattingSuperscript = 29" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingSuperscript" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2516,6 +2648,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingUnderline" />
       <MemberSignature Language="VB.NET" Value="SetFontFormattingUnderline" />
       <MemberSignature Language="C++ CLI" Value="SetFontFormattingUnderline" />
+      <MemberSignature Language="F#" Value="SetFontFormattingUnderline = 28" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetFontFormattingUnderline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2535,6 +2668,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetParaSpaceAfter" />
       <MemberSignature Language="VB.NET" Value="SetParaSpaceAfter" />
       <MemberSignature Language="C++ CLI" Value="SetParaSpaceAfter" />
+      <MemberSignature Language="F#" Value="SetParaSpaceAfter = 180" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetParaSpaceAfter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2554,6 +2688,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetParaSpaceBefore" />
       <MemberSignature Language="VB.NET" Value="SetParaSpaceBefore" />
       <MemberSignature Language="C++ CLI" Value="SetParaSpaceBefore" />
+      <MemberSignature Language="F#" Value="SetParaSpaceBefore = 179" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetParaSpaceBefore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2573,6 +2708,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetPictureAlternativeText" />
       <MemberSignature Language="VB.NET" Value="SetPictureAlternativeText" />
       <MemberSignature Language="C++ CLI" Value="SetPictureAlternativeText" />
+      <MemberSignature Language="F#" Value="SetPictureAlternativeText = 166" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetPictureAlternativeText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2592,6 +2728,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetPictureHeight" />
       <MemberSignature Language="VB.NET" Value="SetPictureHeight" />
       <MemberSignature Language="C++ CLI" Value="SetPictureHeight" />
+      <MemberSignature Language="F#" Value="SetPictureHeight = 164" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetPictureHeight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2611,6 +2748,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetPictureInlineWithText" />
       <MemberSignature Language="VB.NET" Value="SetPictureInlineWithText" />
       <MemberSignature Language="C++ CLI" Value="SetPictureInlineWithText" />
+      <MemberSignature Language="F#" Value="SetPictureInlineWithText = 161" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetPictureInlineWithText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2630,6 +2768,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetPictureToLeftOfText" />
       <MemberSignature Language="VB.NET" Value="SetPictureToLeftOfText" />
       <MemberSignature Language="C++ CLI" Value="SetPictureToLeftOfText" />
+      <MemberSignature Language="F#" Value="SetPictureToLeftOfText = 162" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetPictureToLeftOfText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2649,6 +2788,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetPictureToRightOfText" />
       <MemberSignature Language="VB.NET" Value="SetPictureToRightOfText" />
       <MemberSignature Language="C++ CLI" Value="SetPictureToRightOfText" />
+      <MemberSignature Language="F#" Value="SetPictureToRightOfText = 163" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetPictureToRightOfText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2668,6 +2808,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetPictureWidth" />
       <MemberSignature Language="VB.NET" Value="SetPictureWidth" />
       <MemberSignature Language="C++ CLI" Value="SetPictureWidth" />
+      <MemberSignature Language="F#" Value="SetPictureWidth = 165" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetPictureWidth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2687,6 +2828,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetReplaceWithString" />
       <MemberSignature Language="VB.NET" Value="SetReplaceWithString" />
       <MemberSignature Language="C++ CLI" Value="SetReplaceWithString" />
+      <MemberSignature Language="F#" Value="SetReplaceWithString = 88" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetReplaceWithString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2706,6 +2848,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetSelectedCellAlignmentBottom" />
       <MemberSignature Language="VB.NET" Value="SetSelectedCellAlignmentBottom" />
       <MemberSignature Language="C++ CLI" Value="SetSelectedCellAlignmentBottom" />
+      <MemberSignature Language="F#" Value="SetSelectedCellAlignmentBottom = 156" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetSelectedCellAlignmentBottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2725,6 +2868,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetSelectedCellAlignmentMiddle" />
       <MemberSignature Language="VB.NET" Value="SetSelectedCellAlignmentMiddle" />
       <MemberSignature Language="C++ CLI" Value="SetSelectedCellAlignmentMiddle" />
+      <MemberSignature Language="F#" Value="SetSelectedCellAlignmentMiddle = 154" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetSelectedCellAlignmentMiddle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2744,6 +2888,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetSelectedCellAlignmentTop" />
       <MemberSignature Language="VB.NET" Value="SetSelectedCellAlignmentTop" />
       <MemberSignature Language="C++ CLI" Value="SetSelectedCellAlignmentTop" />
+      <MemberSignature Language="F#" Value="SetSelectedCellAlignmentTop = 155" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetSelectedCellAlignmentTop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2763,6 +2908,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetSelectedCellPadding" />
       <MemberSignature Language="VB.NET" Value="SetSelectedCellPadding" />
       <MemberSignature Language="C++ CLI" Value="SetSelectedCellPadding" />
+      <MemberSignature Language="F#" Value="SetSelectedCellPadding = 153" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetSelectedCellPadding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2782,6 +2928,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetSelectedColumnWidth" />
       <MemberSignature Language="VB.NET" Value="SetSelectedColumnWidth" />
       <MemberSignature Language="C++ CLI" Value="SetSelectedColumnWidth" />
+      <MemberSignature Language="F#" Value="SetSelectedColumnWidth = 143" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetSelectedColumnWidth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2801,6 +2948,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetSelectedRowHeight" />
       <MemberSignature Language="VB.NET" Value="SetSelectedRowHeight" />
       <MemberSignature Language="C++ CLI" Value="SetSelectedRowHeight" />
+      <MemberSignature Language="F#" Value="SetSelectedRowHeight = 141" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetSelectedRowHeight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2820,6 +2968,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetSelectedTextBackgroundColor" />
       <MemberSignature Language="VB.NET" Value="SetSelectedTextBackgroundColor" />
       <MemberSignature Language="C++ CLI" Value="SetSelectedTextBackgroundColor" />
+      <MemberSignature Language="F#" Value="SetSelectedTextBackgroundColor = 122" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetSelectedTextBackgroundColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2839,6 +2988,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetSelectedTextFont" />
       <MemberSignature Language="VB.NET" Value="SetSelectedTextFont" />
       <MemberSignature Language="C++ CLI" Value="SetSelectedTextFont" />
+      <MemberSignature Language="F#" Value="SetSelectedTextFont = 106" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetSelectedTextFont" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2858,6 +3008,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetSelectedTextFontColor" />
       <MemberSignature Language="VB.NET" Value="SetSelectedTextFontColor" />
       <MemberSignature Language="C++ CLI" Value="SetSelectedTextFontColor" />
+      <MemberSignature Language="F#" Value="SetSelectedTextFontColor = 121" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetSelectedTextFontColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2877,6 +3028,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetSelectedTextFontSize" />
       <MemberSignature Language="VB.NET" Value="SetSelectedTextFontSize" />
       <MemberSignature Language="C++ CLI" Value="SetSelectedTextFontSize" />
+      <MemberSignature Language="F#" Value="SetSelectedTextFontSize = 105" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetSelectedTextFontSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2896,6 +3048,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetSelectedTextHighlightColor" />
       <MemberSignature Language="VB.NET" Value="SetSelectedTextHighlightColor" />
       <MemberSignature Language="C++ CLI" Value="SetSelectedTextHighlightColor" />
+      <MemberSignature Language="F#" Value="SetSelectedTextHighlightColor = 120" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetSelectedTextHighlightColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2915,6 +3068,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetSingleLineSpacing" />
       <MemberSignature Language="VB.NET" Value="SetSingleLineSpacing" />
       <MemberSignature Language="C++ CLI" Value="SetSingleLineSpacing" />
+      <MemberSignature Language="F#" Value="SetSingleLineSpacing = 39" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetSingleLineSpacing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2934,6 +3088,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetSpellingOptionCheckAsYouType" />
       <MemberSignature Language="VB.NET" Value="SetSpellingOptionCheckAsYouType" />
       <MemberSignature Language="C++ CLI" Value="SetSpellingOptionCheckAsYouType" />
+      <MemberSignature Language="F#" Value="SetSpellingOptionCheckAsYouType = 136" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetSpellingOptionCheckAsYouType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2953,6 +3108,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetTableDirection" />
       <MemberSignature Language="VB.NET" Value="SetTableDirection" />
       <MemberSignature Language="C++ CLI" Value="SetTableDirection" />
+      <MemberSignature Language="F#" Value="SetTableDirection = 76" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetTableDirection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2972,6 +3128,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetTableHorizontalAlignment" />
       <MemberSignature Language="VB.NET" Value="SetTableHorizontalAlignment" />
       <MemberSignature Language="C++ CLI" Value="SetTableHorizontalAlignment" />
+      <MemberSignature Language="F#" Value="SetTableHorizontalAlignment = 74" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetTableHorizontalAlignment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -2991,6 +3148,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetTextDirectionDefault" />
       <MemberSignature Language="VB.NET" Value="SetTextDirectionDefault" />
       <MemberSignature Language="C++ CLI" Value="SetTextDirectionDefault" />
+      <MemberSignature Language="F#" Value="SetTextDirectionDefault = 36" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetTextDirectionDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3010,6 +3168,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetTextDirectionLeftToRight" />
       <MemberSignature Language="VB.NET" Value="SetTextDirectionLeftToRight" />
       <MemberSignature Language="C++ CLI" Value="SetTextDirectionLeftToRight" />
+      <MemberSignature Language="F#" Value="SetTextDirectionLeftToRight = 37" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetTextDirectionLeftToRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3029,6 +3188,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SetTextDirectionRightToLeft" />
       <MemberSignature Language="VB.NET" Value="SetTextDirectionRightToLeft" />
       <MemberSignature Language="C++ CLI" Value="SetTextDirectionRightToLeft" />
+      <MemberSignature Language="F#" Value="SetTextDirectionRightToLeft = 38" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SetTextDirectionRightToLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3048,6 +3208,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.ShowBordersShadingDialog" />
       <MemberSignature Language="VB.NET" Value="ShowBordersShadingDialog" />
       <MemberSignature Language="C++ CLI" Value="ShowBordersShadingDialog" />
+      <MemberSignature Language="F#" Value="ShowBordersShadingDialog = 18" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.ShowBordersShadingDialog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3067,6 +3228,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.ShowCurrentErrorMessage" />
       <MemberSignature Language="VB.NET" Value="ShowCurrentErrorMessage" />
       <MemberSignature Language="C++ CLI" Value="ShowCurrentErrorMessage" />
+      <MemberSignature Language="F#" Value="ShowCurrentErrorMessage = 11" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.ShowCurrentErrorMessage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3086,6 +3248,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.ShowDigitalSignaturesDialog" />
       <MemberSignature Language="VB.NET" Value="ShowDigitalSignaturesDialog" />
       <MemberSignature Language="C++ CLI" Value="ShowDigitalSignaturesDialog" />
+      <MemberSignature Language="F#" Value="ShowDigitalSignaturesDialog = 108" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.ShowDigitalSignaturesDialog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3105,6 +3268,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.ShowEditHyperlinkDialog" />
       <MemberSignature Language="VB.NET" Value="ShowEditHyperlinkDialog" />
       <MemberSignature Language="C++ CLI" Value="ShowEditHyperlinkDialog" />
+      <MemberSignature Language="F#" Value="ShowEditHyperlinkDialog = 20" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.ShowEditHyperlinkDialog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3124,6 +3288,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.ShowExportToExcelDialog" />
       <MemberSignature Language="VB.NET" Value="ShowExportToExcelDialog" />
       <MemberSignature Language="C++ CLI" Value="ShowExportToExcelDialog" />
+      <MemberSignature Language="F#" Value="ShowExportToExcelDialog = 7" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.ShowExportToExcelDialog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3143,6 +3308,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.ShowExportToPDFXPSDialog" />
       <MemberSignature Language="VB.NET" Value="ShowExportToPDFXPSDialog" />
       <MemberSignature Language="C++ CLI" Value="ShowExportToPDFXPSDialog" />
+      <MemberSignature Language="F#" Value="ShowExportToPDFXPSDialog = 173" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.ShowExportToPDFXPSDialog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3162,6 +3328,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.ShowExportToWebDialog" />
       <MemberSignature Language="VB.NET" Value="ShowExportToWebDialog" />
       <MemberSignature Language="C++ CLI" Value="ShowExportToWebDialog" />
+      <MemberSignature Language="F#" Value="ShowExportToWebDialog = 2" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.ShowExportToWebDialog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3181,6 +3348,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.ShowFormatPictureDialog" />
       <MemberSignature Language="VB.NET" Value="ShowFormatPictureDialog" />
       <MemberSignature Language="C++ CLI" Value="ShowFormatPictureDialog" />
+      <MemberSignature Language="F#" Value="ShowFormatPictureDialog = 17" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.ShowFormatPictureDialog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3200,6 +3368,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.ShowImportFormDataDialog" />
       <MemberSignature Language="VB.NET" Value="ShowImportFormDataDialog" />
       <MemberSignature Language="C++ CLI" Value="ShowImportFormDataDialog" />
+      <MemberSignature Language="F#" Value="ShowImportFormDataDialog = 1" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.ShowImportFormDataDialog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3219,6 +3388,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.ShowInsertHyperlinkDialog" />
       <MemberSignature Language="VB.NET" Value="ShowInsertHyperlinkDialog" />
       <MemberSignature Language="C++ CLI" Value="ShowInsertHyperlinkDialog" />
+      <MemberSignature Language="F#" Value="ShowInsertHyperlinkDialog = 19" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.ShowInsertHyperlinkDialog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3238,6 +3408,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.ShowInsertSymbolDialog" />
       <MemberSignature Language="VB.NET" Value="ShowInsertSymbolDialog" />
       <MemberSignature Language="C++ CLI" Value="ShowInsertSymbolDialog" />
+      <MemberSignature Language="F#" Value="ShowInsertSymbolDialog = 79" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.ShowInsertSymbolDialog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3257,6 +3428,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.ShowInsertTableDialog" />
       <MemberSignature Language="VB.NET" Value="ShowInsertTableDialog" />
       <MemberSignature Language="C++ CLI" Value="ShowInsertTableDialog" />
+      <MemberSignature Language="F#" Value="ShowInsertTableDialog = 14" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.ShowInsertTableDialog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3276,6 +3448,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.ShowMergeFormDialog" />
       <MemberSignature Language="VB.NET" Value="ShowMergeFormDialog" />
       <MemberSignature Language="C++ CLI" Value="ShowMergeFormDialog" />
+      <MemberSignature Language="F#" Value="ShowMergeFormDialog = 0" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.ShowMergeFormDialog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3295,6 +3468,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.ShowSetLanguageDialog" />
       <MemberSignature Language="VB.NET" Value="ShowSetLanguageDialog" />
       <MemberSignature Language="C++ CLI" Value="ShowSetLanguageDialog" />
+      <MemberSignature Language="F#" Value="ShowSetLanguageDialog = 12" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.ShowSetLanguageDialog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3314,6 +3488,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.ShowSetSelectedTextFontColorDialog" />
       <MemberSignature Language="VB.NET" Value="ShowSetSelectedTextFontColorDialog" />
       <MemberSignature Language="C++ CLI" Value="ShowSetSelectedTextFontColorDialog" />
+      <MemberSignature Language="F#" Value="ShowSetSelectedTextFontColorDialog = 99" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.ShowSetSelectedTextFontColorDialog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3333,6 +3508,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.ShowSetSelectedTextHighlightColorDialog" />
       <MemberSignature Language="VB.NET" Value="ShowSetSelectedTextHighlightColorDialog" />
       <MemberSignature Language="C++ CLI" Value="ShowSetSelectedTextHighlightColorDialog" />
+      <MemberSignature Language="F#" Value="ShowSetSelectedTextHighlightColorDialog = 100" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.ShowSetSelectedTextHighlightColorDialog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3352,6 +3528,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.ShowSplitCellsDialog" />
       <MemberSignature Language="VB.NET" Value="ShowSplitCellsDialog" />
       <MemberSignature Language="C++ CLI" Value="ShowSplitCellsDialog" />
+      <MemberSignature Language="F#" Value="ShowSplitCellsDialog = 15" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.ShowSplitCellsDialog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3371,6 +3548,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.ShowTablePropertiesDialog" />
       <MemberSignature Language="VB.NET" Value="ShowTablePropertiesDialog" />
       <MemberSignature Language="C++ CLI" Value="ShowTablePropertiesDialog" />
+      <MemberSignature Language="F#" Value="ShowTablePropertiesDialog = 16" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.ShowTablePropertiesDialog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3390,6 +3568,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.SplitCells" />
       <MemberSignature Language="VB.NET" Value="SplitCells" />
       <MemberSignature Language="C++ CLI" Value="SplitCells" />
+      <MemberSignature Language="F#" Value="SplitCells = 157" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.SplitCells" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3409,6 +3588,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.Submit" />
       <MemberSignature Language="VB.NET" Value="Submit" />
       <MemberSignature Language="C++ CLI" Value="Submit" />
+      <MemberSignature Language="F#" Value="Submit = 8" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.Submit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3428,6 +3608,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.Undo" />
       <MemberSignature Language="VB.NET" Value="Undo" />
       <MemberSignature Language="C++ CLI" Value="Undo" />
+      <MemberSignature Language="F#" Value="Undo = 56" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.Undo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -3447,6 +3628,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.CommandIds.WorkOffline" />
       <MemberSignature Language="VB.NET" Value="WorkOffline" />
       <MemberSignature Language="C++ CLI" Value="WorkOffline" />
+      <MemberSignature Language="F#" Value="WorkOffline = 3" Usage="Microsoft.Office.Interop.InfoPath.CommandIds.WorkOffline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

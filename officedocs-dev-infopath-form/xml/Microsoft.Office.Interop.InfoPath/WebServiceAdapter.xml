@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.WebServiceAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Interface WebServiceAdapter" />
   <TypeSignature Language="C++ CLI" Value="public interface class WebServiceAdapter" />
+  <TypeSignature Language="F#" Value="type WebServiceAdapter = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter.Input" />
       <MemberSignature Language="VB.NET" Value="Public Property Input As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Input { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Input : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.WebServiceAdapter.Input" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter.Operation" />
       <MemberSignature Language="VB.NET" Value="Public Property Operation As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Operation { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Operation : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.WebServiceAdapter.Operation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter.WSDLURL" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WSDLURL As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WSDLURL { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WSDLURL : string" Usage="Microsoft.Office.Interop.InfoPath.WebServiceAdapter.WSDLURL" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

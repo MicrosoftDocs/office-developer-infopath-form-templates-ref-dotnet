@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.InfoPathEditorObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface InfoPathEditorObject&#xA;Implements InfoPathEditor" />
   <TypeSignature Language="C++ CLI" Value="public interface class InfoPathEditorObject : Microsoft::Office::Interop::InfoPath::InfoPathEditor" />
+  <TypeSignature Language="F#" Value="type InfoPathEditorObject = interface&#xA;    interface InfoPathEditor" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

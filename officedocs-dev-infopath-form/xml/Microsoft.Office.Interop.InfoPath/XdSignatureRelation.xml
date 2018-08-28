@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XdSignatureRelation" />
   <TypeSignature Language="VB.NET" Value="Public Enum XdSignatureRelation" />
   <TypeSignature Language="C++ CLI" Value="public enum class XdSignatureRelation" />
+  <TypeSignature Language="F#" Value="type XdSignatureRelation = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdSignatureRelation.xdSignatureRelationCoSign" />
       <MemberSignature Language="VB.NET" Value="xdSignatureRelationCoSign" />
       <MemberSignature Language="C++ CLI" Value="xdSignatureRelationCoSign" />
+      <MemberSignature Language="F#" Value="xdSignatureRelationCoSign = 2" Usage="Microsoft.Office.Interop.InfoPath.XdSignatureRelation.xdSignatureRelationCoSign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdSignatureRelation.xdSignatureRelationCounterSign" />
       <MemberSignature Language="VB.NET" Value="xdSignatureRelationCounterSign" />
       <MemberSignature Language="C++ CLI" Value="xdSignatureRelationCounterSign" />
+      <MemberSignature Language="F#" Value="xdSignatureRelationCounterSign = 3" Usage="Microsoft.Office.Interop.InfoPath.XdSignatureRelation.xdSignatureRelationCounterSign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdSignatureRelation.xdSignatureRelationSingle" />
       <MemberSignature Language="VB.NET" Value="xdSignatureRelationSingle" />
       <MemberSignature Language="C++ CLI" Value="xdSignatureRelationSingle" />
+      <MemberSignature Language="F#" Value="xdSignatureRelationSingle = 1" Usage="Microsoft.Office.Interop.InfoPath.XdSignatureRelation.xdSignatureRelationSingle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

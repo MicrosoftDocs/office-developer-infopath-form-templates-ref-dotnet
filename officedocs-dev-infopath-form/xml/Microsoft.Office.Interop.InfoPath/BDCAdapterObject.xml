@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.BDCAdapterObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface BDCAdapterObject&#xA;Implements BDCAdapter" />
   <TypeSignature Language="C++ CLI" Value="public interface class BDCAdapterObject : Microsoft::Office::Interop::InfoPath::BDCAdapter" />
+  <TypeSignature Language="F#" Value="type BDCAdapterObject = interface&#xA;    interface BDCAdapter" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

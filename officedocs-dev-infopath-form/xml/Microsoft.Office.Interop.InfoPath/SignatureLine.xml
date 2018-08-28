@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SignatureLine" />
   <TypeSignature Language="VB.NET" Value="Public Interface SignatureLine" />
   <TypeSignature Language="C++ CLI" Value="public interface class SignatureLine" />
+  <TypeSignature Language="F#" Value="type SignatureLine = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignatureLine.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="Microsoft.Office.Interop.InfoPath.SignatureLine.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.SignatureLine.Sign(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Sign (bstrImageURL As String, bstrSuggestedSigner As String, bstrSuggestedSignerTitle As String, bstrSuggestedSignerEmailAddress As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Sign(System::String ^ bstrImageURL, System::String ^ bstrSuggestedSigner, System::String ^ bstrSuggestedSignerTitle, System::String ^ bstrSuggestedSignerEmailAddress);" />
+      <MemberSignature Language="F#" Value="abstract member Sign : string * string * string * string -&gt; bool" Usage="signatureLine.Sign (bstrImageURL, bstrSuggestedSigner, bstrSuggestedSignerTitle, bstrSuggestedSignerEmailAddress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignatureLine.Signature" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Signature As SignatureObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::SignatureObject ^ Signature { Microsoft::Office::Interop::InfoPath::SignatureObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Signature : Microsoft.Office.Interop.InfoPath.SignatureObject" Usage="Microsoft.Office.Interop.InfoPath.SignatureLine.Signature" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignatureLine.SignatureAppearanceType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignatureAppearanceType As XdSignatureAppearanceType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::XdSignatureAppearanceType SignatureAppearanceType { Microsoft::Office::Interop::InfoPath::XdSignatureAppearanceType get(); };" />
+      <MemberSignature Language="F#" Value="member this.SignatureAppearanceType : Microsoft.Office.Interop.InfoPath.XdSignatureAppearanceType" Usage="Microsoft.Office.Interop.InfoPath.SignatureLine.SignatureAppearanceType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignatureLine.SuggestedSigner" />
       <MemberSignature Language="VB.NET" Value="Public Property SuggestedSigner As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SuggestedSigner { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SuggestedSigner : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.SignatureLine.SuggestedSigner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignatureLine.SuggestedSignerEmailAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property SuggestedSignerEmailAddress As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SuggestedSignerEmailAddress { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SuggestedSignerEmailAddress : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.SignatureLine.SuggestedSignerEmailAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -209,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignatureLine.SuggestedSignerTitle" />
       <MemberSignature Language="VB.NET" Value="Public Property SuggestedSignerTitle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SuggestedSignerTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SuggestedSignerTitle : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.SignatureLine.SuggestedSignerTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

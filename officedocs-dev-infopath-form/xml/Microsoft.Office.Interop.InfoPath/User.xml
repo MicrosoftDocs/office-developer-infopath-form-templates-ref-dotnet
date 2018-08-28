@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.User" />
   <TypeSignature Language="VB.NET" Value="Public Interface User" />
   <TypeSignature Language="C++ CLI" Value="public interface class User" />
+  <TypeSignature Language="F#" Value="type User = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.User.IsCurrentUser(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsCurrentUser (bstrUsername As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsCurrentUser(System::String ^ bstrUsername);" />
+      <MemberSignature Language="F#" Value="abstract member IsCurrentUser : string -&gt; bool" Usage="user.IsCurrentUser bstrUsername" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.User.IsUserMemberOf(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsUserMemberOf (bstrGroupname As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsUserMemberOf(System::String ^ bstrGroupname);" />
+      <MemberSignature Language="F#" Value="abstract member IsUserMemberOf : string -&gt; bool" Usage="user.IsUserMemberOf bstrGroupname" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

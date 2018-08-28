@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields" />
   <TypeSignature Language="VB.NET" Value="Public Interface IInfoPathDataImporterFields" />
   <TypeSignature Language="C++ CLI" Value="public interface class IInfoPathDataImporterFields" />
+  <TypeSignature Language="F#" Value="type IInfoPathDataImporterFields = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields.GetControls(mshtml.IEnumUnknown@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetControls (ByRef ppEnumUnkControls As IEnumUnknown)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetControls([Runtime::InteropServices::Out] mshtml::IEnumUnknown ^ % ppEnumUnkControls);" />
+      <MemberSignature Language="F#" Value="abstract member GetControls :  -&gt; unit" Usage="iInfoPathDataImporterFields.GetControls ppEnumUnkControls" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -40,7 +42,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppEnumUnkControls" Type="mshtml.IEnumUnknown&amp;" RefType="out" />
+        <Parameter Name="ppEnumUnkControls" Type="mshtml.IEnumUnknown" RefType="out" />
       </Parameters>
       <Docs>
         <param name="ppEnumUnkControls">To be added.</param>

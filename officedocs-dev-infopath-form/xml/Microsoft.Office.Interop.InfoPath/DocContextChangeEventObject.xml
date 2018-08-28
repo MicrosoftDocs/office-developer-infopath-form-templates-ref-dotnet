@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DocContextChangeEventObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface DocContextChangeEventObject&#xA;Implements DocContextChangeEvent" />
   <TypeSignature Language="C++ CLI" Value="public interface class DocContextChangeEventObject : Microsoft::Office::Interop::InfoPath::DocContextChangeEvent" />
+  <TypeSignature Language="F#" Value="type DocContextChangeEventObject = interface&#xA;    interface DocContextChangeEvent" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

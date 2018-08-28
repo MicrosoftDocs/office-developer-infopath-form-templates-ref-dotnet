@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._XDocumentEventSink" />
   <TypeSignature Language="VB.NET" Value="Public Interface _XDocumentEventSink" />
   <TypeSignature Language="C++ CLI" Value="public interface class _XDocumentEventSink" />
+  <TypeSignature Language="F#" Value="type _XDocumentEventSink = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink.OnAfterImport(Microsoft.Office.Interop.InfoPath.DocEvent)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnAfterImport (pEvent As DocEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnAfterImport(Microsoft::Office::Interop::InfoPath::DocEvent ^ pEvent);" />
+      <MemberSignature Language="F#" Value="abstract member OnAfterImport : Microsoft.Office.Interop.InfoPath.DocEvent -&gt; unit" Usage="_XDocumentEventSink.OnAfterImport pEvent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink.OnLoad(Microsoft.Office.Interop.InfoPath.DocReturnEvent)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnLoad (pEvent As DocReturnEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnLoad(Microsoft::Office::Interop::InfoPath::DocReturnEvent ^ pEvent);" />
+      <MemberSignature Language="F#" Value="abstract member OnLoad : Microsoft.Office.Interop.InfoPath.DocReturnEvent -&gt; unit" Usage="_XDocumentEventSink.OnLoad pEvent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink.OnSubmitRequest(Microsoft.Office.Interop.InfoPath.DocReturnEvent)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnSubmitRequest (pEvent As DocReturnEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnSubmitRequest(Microsoft::Office::Interop::InfoPath::DocReturnEvent ^ pEvent);" />
+      <MemberSignature Language="F#" Value="abstract member OnSubmitRequest : Microsoft.Office.Interop.InfoPath.DocReturnEvent -&gt; unit" Usage="_XDocumentEventSink.OnSubmitRequest pEvent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink.OnSwitchView(Microsoft.Office.Interop.InfoPath.DocEvent)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnSwitchView (pEvent As DocEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnSwitchView(Microsoft::Office::Interop::InfoPath::DocEvent ^ pEvent);" />
+      <MemberSignature Language="F#" Value="abstract member OnSwitchView : Microsoft.Office.Interop.InfoPath.DocEvent -&gt; unit" Usage="_XDocumentEventSink.OnSwitchView pEvent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink.OnVersionUpgrade(Microsoft.Office.Interop.InfoPath.VersionUpgradeEventObject)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnVersionUpgrade (pEvent As VersionUpgradeEventObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnVersionUpgrade(Microsoft::Office::Interop::InfoPath::VersionUpgradeEventObject ^ pEvent);" />
+      <MemberSignature Language="F#" Value="abstract member OnVersionUpgrade : Microsoft.Office.Interop.InfoPath.VersionUpgradeEventObject -&gt; unit" Usage="_XDocumentEventSink.OnVersionUpgrade pEvent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

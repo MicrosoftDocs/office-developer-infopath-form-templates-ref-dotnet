@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._IXDOverride" />
   <TypeSignature Language="VB.NET" Value="Public Interface _IXDOverride" />
   <TypeSignature Language="C++ CLI" Value="public interface class _IXDOverride" />
+  <TypeSignature Language="F#" Value="type _IXDOverride = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.Alert" />
       <MemberSignature Language="VB.NET" Value="Public Sub Alert ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Alert();" />
+      <MemberSignature Language="F#" Value="abstract member Alert : unit -&gt; unit" Usage="_IXDOverride.Alert " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -51,6 +53,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit" Usage="_IXDOverride.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -71,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.Count" />
       <MemberSignature Language="VB.NET" Value="Public Sub Count ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Count();" />
+      <MemberSignature Language="F#" Value="abstract member Count : unit -&gt; unit" Usage="_IXDOverride.Count " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.ErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public Sub ErrorCode ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ErrorCode();" />
+      <MemberSignature Language="F#" Value="abstract member ErrorCode : unit -&gt; unit" Usage="_IXDOverride.ErrorCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -111,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.Execute" />
       <MemberSignature Language="VB.NET" Value="Public Sub Execute ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Execute();" />
+      <MemberSignature Language="F#" Value="abstract member Execute : unit -&gt; unit" Usage="_IXDOverride.Execute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -131,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.Extension" />
       <MemberSignature Language="VB.NET" Value="Public Sub Extension ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Extension();" />
+      <MemberSignature Language="F#" Value="abstract member Extension : unit -&gt; unit" Usage="_IXDOverride.Extension " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -151,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.GetAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetAttribute ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetAttribute();" />
+      <MemberSignature Language="F#" Value="abstract member GetAttribute : unit -&gt; unit" Usage="_IXDOverride.GetAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -171,6 +179,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.InsertBefore" />
       <MemberSignature Language="VB.NET" Value="Public Sub InsertBefore ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertBefore();" />
+      <MemberSignature Language="F#" Value="abstract member InsertBefore : unit -&gt; unit" Usage="_IXDOverride.InsertBefore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -191,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.Item" />
       <MemberSignature Language="VB.NET" Value="Public Sub Item ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Item();" />
+      <MemberSignature Language="F#" Value="abstract member Item : unit -&gt; unit" Usage="_IXDOverride.Item " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -211,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.Name" />
       <MemberSignature Language="VB.NET" Value="Public Sub Name ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Name();" />
+      <MemberSignature Language="F#" Value="abstract member Name : unit -&gt; unit" Usage="_IXDOverride.Name " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -231,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.Navigate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Navigate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Navigate();" />
+      <MemberSignature Language="F#" Value="abstract member Navigate : unit -&gt; unit" Usage="_IXDOverride.Navigate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -251,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.Node" />
       <MemberSignature Language="VB.NET" Value="Public Sub Node ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Node();" />
+      <MemberSignature Language="F#" Value="abstract member Node : unit -&gt; unit" Usage="_IXDOverride.Node " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -271,6 +284,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.Offset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Offset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Offset();" />
+      <MemberSignature Language="F#" Value="abstract member Offset : unit -&gt; unit" Usage="_IXDOverride.Offset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -291,6 +305,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.Open" />
       <MemberSignature Language="VB.NET" Value="Public Sub Open ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Open();" />
+      <MemberSignature Language="F#" Value="abstract member Open : unit -&gt; unit" Usage="_IXDOverride.Open " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -311,6 +326,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.Parent" />
       <MemberSignature Language="VB.NET" Value="Public Sub Parent ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Parent();" />
+      <MemberSignature Language="F#" Value="abstract member Parent : unit -&gt; unit" Usage="_IXDOverride.Parent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -331,6 +347,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.Refresh" />
       <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
+      <MemberSignature Language="F#" Value="abstract member Refresh : unit -&gt; unit" Usage="_IXDOverride.Refresh " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -351,6 +368,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.Save" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save();" />
+      <MemberSignature Language="F#" Value="abstract member Save : unit -&gt; unit" Usage="_IXDOverride.Save " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -371,6 +389,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.SetAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAttribute ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAttribute();" />
+      <MemberSignature Language="F#" Value="abstract member SetAttribute : unit -&gt; unit" Usage="_IXDOverride.SetAttribute " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -391,6 +410,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.Source" />
       <MemberSignature Language="VB.NET" Value="Public Sub Source ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Source();" />
+      <MemberSignature Language="F#" Value="abstract member Source : unit -&gt; unit" Usage="_IXDOverride.Source " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -411,6 +431,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.Type" />
       <MemberSignature Language="VB.NET" Value="Public Sub Type ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Type();" />
+      <MemberSignature Language="F#" Value="abstract member Type : unit -&gt; unit" Usage="_IXDOverride.Type " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -431,6 +452,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.URI" />
       <MemberSignature Language="VB.NET" Value="Public Sub URI ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void URI();" />
+      <MemberSignature Language="F#" Value="abstract member URI : unit -&gt; unit" Usage="_IXDOverride.URI " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -451,6 +473,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.Version" />
       <MemberSignature Language="VB.NET" Value="Public Sub Version ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Version();" />
+      <MemberSignature Language="F#" Value="abstract member Version : unit -&gt; unit" Usage="_IXDOverride.Version " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -471,6 +494,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Sub Visible ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Visible();" />
+      <MemberSignature Language="F#" Value="abstract member Visible : unit -&gt; unit" Usage="_IXDOverride.Visible " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -491,6 +515,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IXDOverride.Window" />
       <MemberSignature Language="VB.NET" Value="Public Sub Window ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Window();" />
+      <MemberSignature Language="F#" Value="abstract member Window : unit -&gt; unit" Usage="_IXDOverride.Window " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

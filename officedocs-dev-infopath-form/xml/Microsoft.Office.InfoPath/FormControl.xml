@@ -1,0 +1,603 @@
+﻿<Type Name="FormControl" FullName="Microsoft.Office.InfoPath.FormControl">
+  <TypeSignature Language="C#" Value="public class FormControl : System.Windows.Forms.AxHost" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FormControl extends System.Windows.Forms.AxHost" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.InfoPath.FormControl" />
+  <TypeSignature Language="VB.NET" Value="Public Class FormControl&#xA;Inherits AxHost" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FormControl : System::Windows::Forms::AxHost" />
+  <TypeSignature Language="F#" Value="type FormControl = class&#xA;    inherit AxHost" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.AxHost</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Description("Microsoft Office InfoPath")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignTimeVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Forms.AxHost/Clsid("{80757399-5146-11d5-a672-00b0d022e945}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FormControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FormControl();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttachInterfaces">
+      <MemberSignature Language="C#" Value="protected override void AttachInterfaces ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AttachInterfaces() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.AttachInterfaces" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AttachInterfaces ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AttachInterfaces();" />
+      <MemberSignature Language="F#" Value="override this.AttachInterfaces : unit -&gt; unit" Usage="formControl.AttachInterfaces " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public virtual void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="formControl.Close " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataConnectionBaseUrl">
+      <MemberSignature Language="C#" Value="public virtual string DataConnectionBaseUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataConnectionBaseUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.InfoPath.FormControl.DataConnectionBaseUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DataConnectionBaseUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataConnectionBaseUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataConnectionBaseUrl : string with get, set" Usage="Microsoft.Office.InfoPath.FormControl.DataConnectionBaseUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public override bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.InfoPath.FormControl.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="Microsoft.Office.InfoPath.FormControl.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EventManager">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Office.InfoPath.EventManager EventManager { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.InfoPath.EventManager EventManager" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.InfoPath.FormControl.EventManager" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EventManager As EventManager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::InfoPath::EventManager ^ EventManager { Microsoft::Office::InfoPath::EventManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventManager : Microsoft.Office.InfoPath.EventManager" Usage="Microsoft.Office.InfoPath.FormControl.EventManager" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.InfoPath.EventManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Host">
+      <MemberSignature Language="C#" Value="public virtual object Host { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Host" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.InfoPath.FormControl.Host" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Host As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Host { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Host : obj with get, set" Usage="Microsoft.Office.InfoPath.FormControl.Host" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostName">
+      <MemberSignature Language="C#" Value="public virtual string HostName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HostName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.InfoPath.FormControl.HostName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property HostName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HostName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HostName : string with get, set" Usage="Microsoft.Office.InfoPath.FormControl.HostName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostTranslatesAcceleratorsFirst">
+      <MemberSignature Language="C#" Value="public bool HostTranslatesAcceleratorsFirst { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HostTranslatesAcceleratorsFirst" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.InfoPath.FormControl.HostTranslatesAcceleratorsFirst" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostTranslatesAcceleratorsFirst As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HostTranslatesAcceleratorsFirst { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HostTranslatesAcceleratorsFirst : bool with get, set" Usage="Microsoft.Office.InfoPath.FormControl.HostTranslatesAcceleratorsFirst" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalStartup">
+      <MemberSignature Language="C#" Value="public event Microsoft.Office.InfoPath.FormControl.EventHandler&lt;EventArgs&gt; InternalStartup;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.InfoPath.FormControl/EventHandler`1&lt;class System.EventArgs&gt; InternalStartup" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.InfoPath.FormControl.InternalStartup" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event InternalStartup As FormControl.EventHandler(Of EventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::InfoPath::FormControl::EventHandler&lt;EventArgs ^&gt; ^ InternalStartup;" />
+      <MemberSignature Language="F#" Value="member this.InternalStartup : Microsoft.Office.InfoPath.FormControl.EventHandler&lt;EventArgs&gt; " Usage="member this.InternalStartup : Microsoft.Office.InfoPath.FormControl.EventHandler&lt;System.EventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.InfoPath.FormControl+EventHandler&lt;System.EventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewFromFormTemplate">
+      <MemberSignature Language="C#" Value="public virtual void NewFromFormTemplate (string formTemplateLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NewFromFormTemplate(string formTemplateLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.NewFromFormTemplate(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub NewFromFormTemplate (formTemplateLocation As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void NewFromFormTemplate(System::String ^ formTemplateLocation);" />
+      <MemberSignature Language="F#" Value="abstract member NewFromFormTemplate : string -&gt; unit&#xA;override this.NewFromFormTemplate : string -&gt; unit" Usage="formControl.NewFromFormTemplate formTemplateLocation" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formTemplateLocation" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formTemplateLocation">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewFromFormTemplate">
+      <MemberSignature Language="C#" Value="public virtual void NewFromFormTemplate (string formTemplateLocation, AppDomain customAppDomain, string userInputParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NewFromFormTemplate(string formTemplateLocation, class System.AppDomain customAppDomain, string userInputParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.NewFromFormTemplate(System.String,System.AppDomain,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub NewFromFormTemplate (formTemplateLocation As String, customAppDomain As AppDomain, userInputParameters As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void NewFromFormTemplate(System::String ^ formTemplateLocation, AppDomain ^ customAppDomain, System::String ^ userInputParameters);" />
+      <MemberSignature Language="F#" Value="abstract member NewFromFormTemplate : string * AppDomain * string -&gt; unit&#xA;override this.NewFromFormTemplate : string * AppDomain * string -&gt; unit" Usage="formControl.NewFromFormTemplate (formTemplateLocation, customAppDomain, userInputParameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formTemplateLocation" Type="System.String" />
+        <Parameter Name="customAppDomain" Type="System.AppDomain" />
+        <Parameter Name="userInputParameters" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formTemplateLocation">To be added.</param>
+        <param name="customAppDomain">To be added.</param>
+        <param name="userInputParameters">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewFromFormTemplate">
+      <MemberSignature Language="C#" Value="public virtual void NewFromFormTemplate (string formTemplateLocation, System.IO.Stream xmlDataStream, Microsoft.Office.InfoPath.XmlFormOpenMode behavior);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NewFromFormTemplate(string formTemplateLocation, class System.IO.Stream xmlDataStream, valuetype Microsoft.Office.InfoPath.XmlFormOpenMode behavior) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.NewFromFormTemplate(System.String,System.IO.Stream,Microsoft.Office.InfoPath.XmlFormOpenMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub NewFromFormTemplate (formTemplateLocation As String, xmlDataStream As Stream, behavior As XmlFormOpenMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void NewFromFormTemplate(System::String ^ formTemplateLocation, System::IO::Stream ^ xmlDataStream, Microsoft::Office::InfoPath::XmlFormOpenMode behavior);" />
+      <MemberSignature Language="F#" Value="abstract member NewFromFormTemplate : string * System.IO.Stream * Microsoft.Office.InfoPath.XmlFormOpenMode -&gt; unit&#xA;override this.NewFromFormTemplate : string * System.IO.Stream * Microsoft.Office.InfoPath.XmlFormOpenMode -&gt; unit" Usage="formControl.NewFromFormTemplate (formTemplateLocation, xmlDataStream, behavior)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formTemplateLocation" Type="System.String" />
+        <Parameter Name="xmlDataStream" Type="System.IO.Stream" />
+        <Parameter Name="behavior" Type="Microsoft.Office.InfoPath.XmlFormOpenMode" />
+      </Parameters>
+      <Docs>
+        <param name="formTemplateLocation">To be added.</param>
+        <param name="xmlDataStream">To be added.</param>
+        <param name="behavior">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewFromFormTemplate">
+      <MemberSignature Language="C#" Value="public virtual void NewFromFormTemplate (string formTemplateLocation, System.IO.Stream xmlDataStream, Microsoft.Office.InfoPath.XmlFormOpenMode behavior, AppDomain customAppDomain, string inputParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NewFromFormTemplate(string formTemplateLocation, class System.IO.Stream xmlDataStream, valuetype Microsoft.Office.InfoPath.XmlFormOpenMode behavior, class System.AppDomain customAppDomain, string inputParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.NewFromFormTemplate(System.String,System.IO.Stream,Microsoft.Office.InfoPath.XmlFormOpenMode,System.AppDomain,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub NewFromFormTemplate (formTemplateLocation As String, xmlDataStream As Stream, behavior As XmlFormOpenMode, customAppDomain As AppDomain, inputParameters As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void NewFromFormTemplate(System::String ^ formTemplateLocation, System::IO::Stream ^ xmlDataStream, Microsoft::Office::InfoPath::XmlFormOpenMode behavior, AppDomain ^ customAppDomain, System::String ^ inputParameters);" />
+      <MemberSignature Language="F#" Value="abstract member NewFromFormTemplate : string * System.IO.Stream * Microsoft.Office.InfoPath.XmlFormOpenMode * AppDomain * string -&gt; unit&#xA;override this.NewFromFormTemplate : string * System.IO.Stream * Microsoft.Office.InfoPath.XmlFormOpenMode * AppDomain * string -&gt; unit" Usage="formControl.NewFromFormTemplate (formTemplateLocation, xmlDataStream, behavior, customAppDomain, inputParameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formTemplateLocation" Type="System.String" />
+        <Parameter Name="xmlDataStream" Type="System.IO.Stream" />
+        <Parameter Name="behavior" Type="Microsoft.Office.InfoPath.XmlFormOpenMode" />
+        <Parameter Name="customAppDomain" Type="System.AppDomain" />
+        <Parameter Name="inputParameters" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formTemplateLocation">To be added.</param>
+        <param name="xmlDataStream">To be added.</param>
+        <param name="behavior">To be added.</param>
+        <param name="customAppDomain">To be added.</param>
+        <param name="inputParameters">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public virtual void Open (System.IO.Stream xmlDataStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open(class System.IO.Stream xmlDataStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.Open(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Open (xmlDataStream As Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Open(System::IO::Stream ^ xmlDataStream);" />
+      <MemberSignature Language="F#" Value="abstract member Open : System.IO.Stream -&gt; unit&#xA;override this.Open : System.IO.Stream -&gt; unit" Usage="formControl.Open xmlDataStream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlDataStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="xmlDataStream">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public virtual void Open (string formLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open(string formLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.Open(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Open (formLocation As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Open(System::String ^ formLocation);" />
+      <MemberSignature Language="F#" Value="abstract member Open : string -&gt; unit&#xA;override this.Open : string -&gt; unit" Usage="formControl.Open formLocation" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formLocation" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formLocation">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public virtual void Open (System.IO.Stream xmlDataStream, AppDomain customAppDomain, string inputParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open(class System.IO.Stream xmlDataStream, class System.AppDomain customAppDomain, string inputParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.Open(System.IO.Stream,System.AppDomain,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Open (xmlDataStream As Stream, customAppDomain As AppDomain, inputParameters As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Open(System::IO::Stream ^ xmlDataStream, AppDomain ^ customAppDomain, System::String ^ inputParameters);" />
+      <MemberSignature Language="F#" Value="abstract member Open : System.IO.Stream * AppDomain * string -&gt; unit&#xA;override this.Open : System.IO.Stream * AppDomain * string -&gt; unit" Usage="formControl.Open (xmlDataStream, customAppDomain, inputParameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlDataStream" Type="System.IO.Stream" />
+        <Parameter Name="customAppDomain" Type="System.AppDomain" />
+        <Parameter Name="inputParameters" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xmlDataStream">To be added.</param>
+        <param name="customAppDomain">To be added.</param>
+        <param name="inputParameters">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public virtual void Open (string formLocation, AppDomain customAppDomain, string inputParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open(string formLocation, class System.AppDomain customAppDomain, string inputParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.Open(System.String,System.AppDomain,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Open (formLocation As String, customAppDomain As AppDomain, inputParameters As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Open(System::String ^ formLocation, AppDomain ^ customAppDomain, System::String ^ inputParameters);" />
+      <MemberSignature Language="F#" Value="abstract member Open : string * AppDomain * string -&gt; unit&#xA;override this.Open : string * AppDomain * string -&gt; unit" Usage="formControl.Open (formLocation, customAppDomain, inputParameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formLocation" Type="System.String" />
+        <Parameter Name="customAppDomain" Type="System.AppDomain" />
+        <Parameter Name="inputParameters" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formLocation">To be added.</param>
+        <param name="customAppDomain">To be added.</param>
+        <param name="inputParameters">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetInitEventHandler">
+      <MemberSignature Language="C#" Value="public virtual void SetInitEventHandler (Microsoft.Office.InfoPath.IInitEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetInitEventHandler(class Microsoft.Office.InfoPath.IInitEventHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.SetInitEventHandler(Microsoft.Office.InfoPath.IInitEventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetInitEventHandler (handler As IInitEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetInitEventHandler(Microsoft::Office::InfoPath::IInitEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="abstract member SetInitEventHandler : Microsoft.Office.InfoPath.IInitEventHandler -&gt; unit&#xA;override this.SetInitEventHandler : Microsoft.Office.InfoPath.IInitEventHandler -&gt; unit" Usage="formControl.SetInitEventHandler handler" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="Microsoft.Office.InfoPath.IInitEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetNotifyHostEventHandler">
+      <MemberSignature Language="C#" Value="public virtual void SetNotifyHostEventHandler (Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetNotifyHostEventHandler(class Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.SetNotifyHostEventHandler(Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetNotifyHostEventHandler (handler As INotifyHostEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetNotifyHostEventHandler(Microsoft::Office::Interop::InfoPath::INotifyHostEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="abstract member SetNotifyHostEventHandler : Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler -&gt; unit&#xA;override this.SetNotifyHostEventHandler : Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler -&gt; unit" Usage="formControl.SetNotifyHostEventHandler handler" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSubmitToHostEventHandler">
+      <MemberSignature Language="C#" Value="public virtual void SetSubmitToHostEventHandler (Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSubmitToHostEventHandler(class Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.SetSubmitToHostEventHandler(Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSubmitToHostEventHandler (handler As ISubmitToHostEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSubmitToHostEventHandler(Microsoft::Office::Interop::InfoPath::ISubmitToHostEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="abstract member SetSubmitToHostEventHandler : Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler -&gt; unit&#xA;override this.SetSubmitToHostEventHandler : Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler -&gt; unit" Usage="formControl.SetSubmitToHostEventHandler handler" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="handler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncLastChange">
+      <MemberSignature Language="C#" Value="public virtual void SyncLastChange ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SyncLastChange() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.SyncLastChange" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SyncLastChange ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SyncLastChange();" />
+      <MemberSignature Language="F#" Value="abstract member SyncLastChange : unit -&gt; unit&#xA;override this.SyncLastChange : unit -&gt; unit" Usage="formControl.SyncLastChange " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlForm">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Office.InfoPath.XmlForm XmlForm { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.InfoPath.XmlForm XmlForm" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.InfoPath.FormControl.XmlForm" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property XmlForm As XmlForm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::InfoPath::XmlForm ^ XmlForm { Microsoft::Office::InfoPath::XmlForm ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XmlForm : Microsoft.Office.InfoPath.XmlForm" Usage="Microsoft.Office.InfoPath.FormControl.XmlForm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.InfoPath.XmlForm</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface WebServiceAdapterObject&#xA;Implements WebServiceAdapter2" />
   <TypeSignature Language="C++ CLI" Value="public interface class WebServiceAdapterObject : Microsoft::Office::Interop::InfoPath::WebServiceAdapter2" />
+  <TypeSignature Language="F#" Value="type WebServiceAdapterObject = interface&#xA;    interface WebServiceAdapter2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

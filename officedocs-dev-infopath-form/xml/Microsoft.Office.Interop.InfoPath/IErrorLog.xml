@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.IErrorLog" />
   <TypeSignature Language="VB.NET" Value="Public Interface IErrorLog" />
   <TypeSignature Language="C++ CLI" Value="public interface class IErrorLog" />
+  <TypeSignature Language="F#" Value="type IErrorLog = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IErrorLog.AddError(System.String,stdole.EXCEPINFO@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddError (pszPropName As String, ByRef pExcepInfo As EXCEPINFO)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddError(System::String ^ pszPropName, stdole::EXCEPINFO % pExcepInfo);" />
+      <MemberSignature Language="F#" Value="abstract member AddError : string *  -&gt; unit" Usage="iErrorLog.AddError (pszPropName, pExcepInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -38,7 +40,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="pszPropName" Type="System.String" />
-        <Parameter Name="pExcepInfo" Type="stdole.EXCEPINFO&amp;" RefType="ref" />
+        <Parameter Name="pExcepInfo" Type="stdole.EXCEPINFO" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="pszPropName">To be added.</param>

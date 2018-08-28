@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub _ApplicationEvents_XDocumentBeforeCloseEventHandler(pDocument As _XDocument, ByRef pfCancel As Boolean)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void _ApplicationEvents_XDocumentBeforeCloseEventHandler(_XDocument ^ pDocument, [Runtime::InteropServices::Out] bool % pfCancel);" />
+  <TypeSignature Language="F#" Value="type _ApplicationEvents_XDocumentBeforeCloseEventHandler = delegate of _XDocument *  -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -21,7 +22,7 @@
   </Attributes>
   <Parameters>
     <Parameter Name="pDocument" Type="Microsoft.Office.Interop.InfoPath._XDocument" />
-    <Parameter Name="pfCancel" Type="System.Boolean&amp;" RefType="out" />
+    <Parameter Name="pfCancel" Type="System.Boolean" RefType="out" />
   </Parameters>
   <ReturnValue>
     <ReturnType>System.Void</ReturnType>

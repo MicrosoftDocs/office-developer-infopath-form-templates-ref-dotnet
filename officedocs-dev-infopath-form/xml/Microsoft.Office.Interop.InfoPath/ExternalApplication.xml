@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ExternalApplication" />
   <TypeSignature Language="VB.NET" Value="Public Interface ExternalApplication&#xA;Implements _ExternalApplication2" />
   <TypeSignature Language="C++ CLI" Value="public interface class ExternalApplication : Microsoft::Office::Interop::InfoPath::_ExternalApplication2" />
+  <TypeSignature Language="F#" Value="type ExternalApplication = interface&#xA;    interface _ExternalApplication2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

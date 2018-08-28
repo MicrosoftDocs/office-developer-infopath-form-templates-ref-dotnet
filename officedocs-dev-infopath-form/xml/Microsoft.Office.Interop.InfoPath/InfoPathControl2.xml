@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.InfoPathControl2" />
   <TypeSignature Language="VB.NET" Value="Public Interface InfoPathControl2&#xA;Implements InfoPathControl" />
   <TypeSignature Language="C++ CLI" Value="public interface class InfoPathControl2 : Microsoft::Office::Interop::InfoPath::InfoPathControl" />
+  <TypeSignature Language="F#" Value="type InfoPathControl2 = interface&#xA;    interface InfoPathControl" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathControl2.Enable(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Enable (vfEnabled As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Enable(bool vfEnabled);" />
+      <MemberSignature Language="F#" Value="abstract member Enable : bool -&gt; unit" Usage="infoPathControl2.Enable vfEnabled" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.InfoPathControl.Enable(System.Boolean)</InterfaceMember>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathControl2.Init(Microsoft.Office.Interop.InfoPath.InfoPathControlSite)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Init (pControlSite As InfoPathControlSite)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Init(Microsoft::Office::Interop::InfoPath::InfoPathControlSite ^ pControlSite);" />
+      <MemberSignature Language="F#" Value="abstract member Init : Microsoft.Office.Interop.InfoPath.InfoPathControlSite -&gt; unit" Usage="infoPathControl2.Init pControlSite" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.InfoPathControl.Init(Microsoft.Office.Interop.InfoPath.InfoPathControlSite)</InterfaceMember>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathControl2.RefreshState" />
       <MemberSignature Language="VB.NET" Value="Public Sub RefreshState ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshState();" />
+      <MemberSignature Language="F#" Value="abstract member RefreshState : unit -&gt; unit" Usage="infoPathControl2.RefreshState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -104,6 +108,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathControl2.SaveState" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveState ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveState();" />
+      <MemberSignature Language="F#" Value="abstract member SaveState : unit -&gt; unit" Usage="infoPathControl2.SaveState " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.InfoPathControl.SaveState</InterfaceMember>
@@ -127,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathControl2.Uninit" />
       <MemberSignature Language="VB.NET" Value="Public Sub Uninit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Uninit();" />
+      <MemberSignature Language="F#" Value="abstract member Uninit : unit -&gt; unit" Usage="infoPathControl2.Uninit " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.InfoPathControl.Uninit</InterfaceMember>

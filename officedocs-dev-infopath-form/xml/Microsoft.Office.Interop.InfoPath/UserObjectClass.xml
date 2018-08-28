@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.UserObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class UserObjectClass&#xA;Implements User2, UserObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class UserObjectClass : Microsoft::Office::Interop::InfoPath::User2, Microsoft::Office::Interop::InfoPath::UserObject" />
+  <TypeSignature Language="F#" Value="type UserObjectClass = class&#xA;    interface User&#xA;    interface UserObject&#xA;    interface User2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UserObjectClass.IsCurrentUser(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsCurrentUser (bstrUsername As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsCurrentUser(System::String ^ bstrUsername) = Microsoft::Office::Interop::InfoPath::User::IsCurrentUser;" />
+      <MemberSignature Language="F#" Value="abstract member IsCurrentUser : string -&gt; bool&#xA;override this.IsCurrentUser : string -&gt; bool" Usage="userObjectClass.IsCurrentUser bstrUsername" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.User.IsCurrentUser(System.String)</InterfaceMember>
@@ -70,6 +72,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UserObjectClass.IsUserMemberOf(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsUserMemberOf (bstrGroupname As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUserMemberOf(System::String ^ bstrGroupname) = Microsoft::Office::Interop::InfoPath::User::IsUserMemberOf;" />
+      <MemberSignature Language="F#" Value="abstract member IsUserMemberOf : string -&gt; bool&#xA;override this.IsUserMemberOf : string -&gt; bool" Usage="userObjectClass.IsUserMemberOf bstrGroupname" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.User.IsUserMemberOf(System.String)</InterfaceMember>
@@ -102,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.UserObjectClass.LoginName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LoginName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ LoginName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LoginName : string" Usage="LoginName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.User2.LoginName</InterfaceMember>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UserObjectClass.User2_IsCurrentUser(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function User2_IsCurrentUser (bstrUsername As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool User2_IsCurrentUser(System::String ^ bstrUsername) = Microsoft::Office::Interop::InfoPath::User2::IsCurrentUser;" />
+      <MemberSignature Language="F#" Value="abstract member User2_IsCurrentUser : string -&gt; bool&#xA;override this.User2_IsCurrentUser : string -&gt; bool" Usage="userObjectClass.User2_IsCurrentUser bstrUsername" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UserObjectClass.User2_IsUserMemberOf(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function User2_IsUserMemberOf (bstrGroupname As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool User2_IsUserMemberOf(System::String ^ bstrGroupname) = Microsoft::Office::Interop::InfoPath::User2::IsUserMemberOf;" />
+      <MemberSignature Language="F#" Value="abstract member User2_IsUserMemberOf : string -&gt; bool&#xA;override this.User2_IsUserMemberOf : string -&gt; bool" Usage="userObjectClass.User2_IsUserMemberOf bstrGroupname" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -173,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.UserObjectClass.UserName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UserName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UserName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserName : string" Usage="UserName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.User2.UserName</InterfaceMember>

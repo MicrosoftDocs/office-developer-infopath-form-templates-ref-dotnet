@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.InfoPathEditorWithAppDomain" />
   <TypeSignature Language="VB.NET" Value="Public Interface InfoPathEditorWithAppDomain" />
   <TypeSignature Language="C++ CLI" Value="public interface class InfoPathEditorWithAppDomain" />
+  <TypeSignature Language="F#" Value="type InfoPathEditorWithAppDomain = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditorWithAppDomain.Load(System.String,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load (bstrURL As String, punkAppDomain As Object, bstrInputParameters As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::String ^ bstrURL, System::Object ^ punkAppDomain, System::String ^ bstrInputParameters);" />
+      <MemberSignature Language="F#" Value="abstract member Load : string * obj * string -&gt; unit" Usage="infoPathEditorWithAppDomain.Load (bstrURL, punkAppDomain, bstrInputParameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditorWithAppDomain.LoadFromStream(System.Object,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadFromStream (punkStream As Object, punkAppDomain As Object, bstrInputParameters As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadFromStream(System::Object ^ punkStream, System::Object ^ punkAppDomain, System::String ^ bstrInputParameters);" />
+      <MemberSignature Language="F#" Value="abstract member LoadFromStream : obj * obj * string -&gt; unit" Usage="infoPathEditorWithAppDomain.LoadFromStream (punkStream, punkAppDomain, bstrInputParameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -95,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditorWithAppDomain.NewFromSolution(System.String,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub NewFromSolution (bstrSolutionURI As String, punkAppDomain As Object, bstrInputParameters As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void NewFromSolution(System::String ^ bstrSolutionURI, System::Object ^ punkAppDomain, System::String ^ bstrInputParameters);" />
+      <MemberSignature Language="F#" Value="abstract member NewFromSolution : string * obj * string -&gt; unit" Usage="infoPathEditorWithAppDomain.NewFromSolution (bstrSolutionURI, punkAppDomain, bstrInputParameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditorWithAppDomain.NewFromSolutionWithData(System.String,System.Object,System.Int32,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub NewFromSolutionWithData (bstrURLXSN As String, punkStream As Object, dwBehavior As Integer, punkAppDomain As Object, bstrInputParameters As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void NewFromSolutionWithData(System::String ^ bstrURLXSN, System::Object ^ punkStream, int dwBehavior, System::Object ^ punkAppDomain, System::String ^ bstrInputParameters);" />
+      <MemberSignature Language="F#" Value="abstract member NewFromSolutionWithData : string * obj * int * obj * string -&gt; unit" Usage="infoPathEditorWithAppDomain.NewFromSolutionWithData (bstrURLXSN, punkStream, dwBehavior, punkAppDomain, bstrInputParameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SignedDataBlockObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class SignedDataBlockObjectClass&#xA;Implements SignedDataBlockObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class SignedDataBlockObjectClass : Microsoft::Office::Interop::InfoPath::SignedDataBlockObject" />
+  <TypeSignature Language="F#" Value="type SignedDataBlockObjectClass = class&#xA;    interface SignedDataBlock&#xA;    interface SignedDataBlockObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignedDataBlockObjectClass.Caption" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Caption As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Caption { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Caption : string" Usage="Caption" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.SignedDataBlock.Caption</InterfaceMember>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignedDataBlockObjectClass.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Name" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.SignedDataBlock.Name</InterfaceMember>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.SignedDataBlockObjectClass.Sign" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Sign ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Sign() = Microsoft::Office::Interop::InfoPath::SignedDataBlock::Sign;" />
+      <MemberSignature Language="F#" Value="abstract member Sign : unit -&gt; unit&#xA;override this.Sign : unit -&gt; unit" Usage="signedDataBlockObjectClass.Sign " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.SignedDataBlock.Sign</InterfaceMember>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignedDataBlockObjectClass.SignatureContainer" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SignatureContainer As IXMLDOMNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ SignatureContainer { Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SignatureContainer : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="SignatureContainer" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.SignedDataBlock.SignatureContainer</InterfaceMember>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignedDataBlockObjectClass.SignatureRelation" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SignatureRelation As XdSignatureRelation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XdSignatureRelation SignatureRelation { Microsoft::Office::Interop::InfoPath::XdSignatureRelation get(); };" />
+      <MemberSignature Language="F#" Value="member this.SignatureRelation : Microsoft.Office.Interop.InfoPath.XdSignatureRelation" Usage="SignatureRelation" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.SignedDataBlock.SignatureRelation</InterfaceMember>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignedDataBlockObjectClass.Signatures" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Signatures As SignaturesCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::SignaturesCollection ^ Signatures { Microsoft::Office::Interop::InfoPath::SignaturesCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Signatures : Microsoft.Office.Interop.InfoPath.SignaturesCollection" Usage="Signatures" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.SignedDataBlock.Signatures</InterfaceMember>
@@ -218,6 +225,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignedDataBlockObjectClass.XPath" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property XPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ XPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XPath : string" Usage="XPath" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.SignedDataBlock.XPath</InterfaceMember>
@@ -249,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignedDataBlockObjectClass.XPathNamespaceDeclarations" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property XPathNamespaceDeclarations As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ XPathNamespaceDeclarations { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XPathNamespaceDeclarations : string" Usage="XPathNamespaceDeclarations" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.SignedDataBlock.XPathNamespaceDeclarations</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ViewInfosCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface ViewInfosCollection&#xA;Implements ViewInfos" />
   <TypeSignature Language="C++ CLI" Value="public interface class ViewInfosCollection : Microsoft::Office::Interop::InfoPath::ViewInfos" />
+  <TypeSignature Language="F#" Value="type ViewInfosCollection = interface&#xA;    interface ViewInfos" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

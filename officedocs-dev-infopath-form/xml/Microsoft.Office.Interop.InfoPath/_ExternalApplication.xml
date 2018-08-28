@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._ExternalApplication" />
   <TypeSignature Language="VB.NET" Value="Public Interface _ExternalApplication" />
   <TypeSignature Language="C++ CLI" Value="public interface class _ExternalApplication" />
+  <TypeSignature Language="F#" Value="type _ExternalApplication = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ExternalApplication.CacheSolution(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CacheSolution (bstrSolutionURI As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CacheSolution(System::String ^ bstrSolutionURI);" />
+      <MemberSignature Language="F#" Value="abstract member CacheSolution : string -&gt; unit" Usage="_ExternalApplication.CacheSolution bstrSolutionURI" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ExternalApplication.Close(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close (bstrDocumentURI As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close(System::String ^ bstrDocumentURI);" />
+      <MemberSignature Language="F#" Value="abstract member Close : string -&gt; unit" Usage="_ExternalApplication.Close bstrDocumentURI" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -83,6 +86,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void New([in]string bstrDocumentURI, [in]int32 dwBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ExternalApplication.New(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (bstrDocumentURI As String, Optional dwBehavior As Integer = 1)" />
+      <MemberSignature Language="F#" Value="abstract member New : string * int -&gt; unit" Usage="_ExternalApplication.New (bstrDocumentURI, dwBehavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -113,6 +117,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ExternalApplication.NewFromSolution(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub NewFromSolution (bstrSolutionURI As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void NewFromSolution(System::String ^ bstrSolutionURI);" />
+      <MemberSignature Language="F#" Value="abstract member NewFromSolution : string -&gt; unit" Usage="_ExternalApplication.NewFromSolution bstrSolutionURI" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -140,6 +145,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open([in]string bstrDocumentURI, [in]int32 dwBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ExternalApplication.Open(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Open (bstrDocumentURI As String, Optional dwBehavior As Integer = 1)" />
+      <MemberSignature Language="F#" Value="abstract member Open : string * int -&gt; unit" Usage="_ExternalApplication.Open (bstrDocumentURI, dwBehavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -170,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ExternalApplication.Quit" />
       <MemberSignature Language="VB.NET" Value="Public Sub Quit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Quit();" />
+      <MemberSignature Language="F#" Value="abstract member Quit : unit -&gt; unit" Usage="_ExternalApplication.Quit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -194,6 +201,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterSolution([in]string bstrSolutionURL, [in]string bstrBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ExternalApplication.RegisterSolution(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterSolution (bstrSolutionURL As String, Optional bstrBehavior As String = &quot;overwrite&quot;)" />
+      <MemberSignature Language="F#" Value="abstract member RegisterSolution : string * string -&gt; unit" Usage="_ExternalApplication.RegisterSolution (bstrSolutionURL, bstrBehavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -224,6 +232,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ExternalApplication.UnregisterSolution(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnregisterSolution (bstrSolutionURI As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnregisterSolution(System::String ^ bstrSolutionURI);" />
+      <MemberSignature Language="F#" Value="abstract member UnregisterSolution : string -&gt; unit" Usage="_ExternalApplication.UnregisterSolution bstrSolutionURI" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

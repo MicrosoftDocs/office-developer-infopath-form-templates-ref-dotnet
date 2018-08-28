@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XDocumentsCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface XDocumentsCollection&#xA;Implements XDocuments2" />
   <TypeSignature Language="C++ CLI" Value="public interface class XDocumentsCollection : Microsoft::Office::Interop::InfoPath::XDocuments2" />
+  <TypeSignature Language="F#" Value="type XDocumentsCollection = interface&#xA;    interface XDocuments2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub _XDocumentEventSink2_OnLoadEventHandler(pEvent As DocReturnEvent)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void _XDocumentEventSink2_OnLoadEventHandler(DocReturnEvent ^ pEvent);" />
+  <TypeSignature Language="F#" Value="type _XDocumentEventSink2_OnLoadEventHandler = delegate of DocReturnEvent -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

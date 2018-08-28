@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DataDOMEventObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface DataDOMEventObject&#xA;Implements DataDOMEvent" />
   <TypeSignature Language="C++ CLI" Value="public interface class DataDOMEventObject : Microsoft::Office::Interop::InfoPath::DataDOMEvent" />
+  <TypeSignature Language="F#" Value="type DataDOMEventObject = interface&#xA;    interface DataDOMEvent" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

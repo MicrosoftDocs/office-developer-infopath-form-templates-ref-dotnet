@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DAVAdapterObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class DAVAdapterObjectClass&#xA;Implements DAVAdapterObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class DAVAdapterObjectClass : Microsoft::Office::Interop::InfoPath::DAVAdapterObject" />
+  <TypeSignature Language="F#" Value="type DAVAdapterObjectClass = class&#xA;    interface DAVAdapter&#xA;    interface DAVAdapterObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DAVAdapterObjectClass.FileName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property FileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FileName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FileName : string with get, set" Usage="FileName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DAVAdapter.FileName</InterfaceMember>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DAVAdapterObjectClass.FolderURL" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property FolderURL As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FolderURL { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FolderURL : string with get, set" Usage="FolderURL" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DAVAdapter.FolderURL</InterfaceMember>
@@ -103,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DAVAdapterObjectClass.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Name" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DAVAdapter.Name</InterfaceMember>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.DAVAdapterObjectClass.Query" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Query ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Query() = Microsoft::Office::Interop::InfoPath::DAVAdapter::Query;" />
+      <MemberSignature Language="F#" Value="abstract member Query : unit -&gt; unit&#xA;override this.Query : unit -&gt; unit" Usage="dAVAdapterObjectClass.Query " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.DAVAdapter.Query</InterfaceMember>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DAVAdapterObjectClass.QueryAllowed" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property QueryAllowed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool QueryAllowed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueryAllowed : bool" Usage="QueryAllowed" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DAVAdapter.QueryAllowed</InterfaceMember>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.DAVAdapterObjectClass.Submit" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Submit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Submit() = Microsoft::Office::Interop::InfoPath::DAVAdapter::Submit;" />
+      <MemberSignature Language="F#" Value="abstract member Submit : unit -&gt; unit&#xA;override this.Submit : unit -&gt; unit" Usage="dAVAdapterObjectClass.Submit " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.DAVAdapter.Submit</InterfaceMember>
@@ -221,6 +228,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DAVAdapterObjectClass.SubmitAllowed" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SubmitAllowed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SubmitAllowed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubmitAllowed : bool" Usage="SubmitAllowed" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DAVAdapter.SubmitAllowed</InterfaceMember>
@@ -252,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.DAVAdapterObjectClass.SubmitData(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SubmitData (pData As IXMLDOMNode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SubmitData(Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ pData) = Microsoft::Office::Interop::InfoPath::DAVAdapter::SubmitData;" />
+      <MemberSignature Language="F#" Value="abstract member SubmitData : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode -&gt; unit&#xA;override this.SubmitData : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode -&gt; unit" Usage="dAVAdapterObjectClass.SubmitData pData" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.DAVAdapter.SubmitData(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode)</InterfaceMember>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ApplicationEvents" />
   <TypeSignature Language="VB.NET" Value="Public Interface ApplicationEvents&#xA;Implements _ApplicationEvents_Event, ApplicationEventsEmpty" />
   <TypeSignature Language="C++ CLI" Value="public interface class ApplicationEvents : Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event, Microsoft::Office::Interop::InfoPath::ApplicationEventsEmpty" />
+  <TypeSignature Language="F#" Value="type ApplicationEvents = interface&#xA;    interface ApplicationEventsEmpty&#xA;    interface _ApplicationEvents_Event" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

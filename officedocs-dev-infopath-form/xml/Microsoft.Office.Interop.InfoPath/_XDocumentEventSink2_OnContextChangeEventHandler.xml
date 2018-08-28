@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub _XDocumentEventSink2_OnContextChangeEventHandler(pEvent As DocContextChangeEventObject)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void _XDocumentEventSink2_OnContextChangeEventHandler(DocContextChangeEventObject ^ pEvent);" />
+  <TypeSignature Language="F#" Value="type _XDocumentEventSink2_OnContextChangeEventHandler = delegate of DocContextChangeEventObject -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SignatureLineObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface SignatureLineObject&#xA;Implements SignatureLine" />
   <TypeSignature Language="C++ CLI" Value="public interface class SignatureLineObject : Microsoft::Office::Interop::InfoPath::SignatureLine" />
+  <TypeSignature Language="F#" Value="type SignatureLineObject = interface&#xA;    interface SignatureLine" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

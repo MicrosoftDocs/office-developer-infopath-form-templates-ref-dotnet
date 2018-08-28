@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SolutionObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface SolutionObject&#xA;Implements Solution" />
   <TypeSignature Language="C++ CLI" Value="public interface class SolutionObject : Microsoft::Office::Interop::InfoPath::Solution" />
+  <TypeSignature Language="F#" Value="type SolutionObject = interface&#xA;    interface Solution" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

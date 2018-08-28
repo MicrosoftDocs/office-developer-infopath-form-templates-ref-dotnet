@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XMLFileAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLFileAdapter" />
   <TypeSignature Language="C++ CLI" Value="public interface class XMLFileAdapter" />
+  <TypeSignature Language="F#" Value="type XMLFileAdapter = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.XMLFileAdapter.FileURL" />
       <MemberSignature Language="VB.NET" Value="Public Property FileURL As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileURL { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FileURL : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.XMLFileAdapter.FileURL" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

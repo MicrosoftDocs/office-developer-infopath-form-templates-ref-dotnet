@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DataAdaptersCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface DataAdaptersCollection&#xA;Implements DataAdapters" />
   <TypeSignature Language="C++ CLI" Value="public interface class DataAdaptersCollection : Microsoft::Office::Interop::InfoPath::DataAdapters" />
+  <TypeSignature Language="F#" Value="type DataAdaptersCollection = interface&#xA;    interface DataAdapters" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ServerInfoObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface ServerInfoObject&#xA;Implements ServerInfo" />
   <TypeSignature Language="C++ CLI" Value="public interface class ServerInfoObject : Microsoft::Office::Interop::InfoPath::ServerInfo" />
+  <TypeSignature Language="F#" Value="type ServerInfoObject = interface&#xA;    interface ServerInfo" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

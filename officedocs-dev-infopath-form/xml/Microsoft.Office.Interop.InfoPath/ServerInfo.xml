@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ServerInfo" />
   <TypeSignature Language="VB.NET" Value="Public Interface ServerInfo" />
   <TypeSignature Language="C++ CLI" Value="public interface class ServerInfo" />
+  <TypeSignature Language="F#" Value="type ServerInfo = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ServerInfo.SharePointListUrl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SharePointListUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SharePointListUrl { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SharePointListUrl : string" Usage="Microsoft.Office.Interop.InfoPath.ServerInfo.SharePointListUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ServerInfo.SharePointServerRootUrl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SharePointServerRootUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SharePointServerRootUrl { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SharePointServerRootUrl : string" Usage="Microsoft.Office.Interop.InfoPath.ServerInfo.SharePointServerRootUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ServerInfo.SharePointSiteCollectionUrl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SharePointSiteCollectionUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SharePointSiteCollectionUrl { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SharePointSiteCollectionUrl : string" Usage="Microsoft.Office.Interop.InfoPath.ServerInfo.SharePointSiteCollectionUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ServerInfo.SharePointSiteUrl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SharePointSiteUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SharePointSiteUrl { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SharePointSiteUrl : string" Usage="Microsoft.Office.Interop.InfoPath.ServerInfo.SharePointSiteUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SharepointListAdapterObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface SharepointListAdapterObject&#xA;Implements SharepointListAdapter" />
   <TypeSignature Language="C++ CLI" Value="public interface class SharepointListAdapterObject : Microsoft::Office::Interop::InfoPath::SharepointListAdapter" />
+  <TypeSignature Language="F#" Value="type SharepointListAdapterObject = interface&#xA;    interface SharepointListAdapter" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

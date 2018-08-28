@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DateObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface DateObject&#xA;Implements Date" />
   <TypeSignature Language="C++ CLI" Value="public interface class DateObject : Microsoft::Office::Interop::InfoPath::Date" />
+  <TypeSignature Language="F#" Value="type DateObject = interface&#xA;    interface Date" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

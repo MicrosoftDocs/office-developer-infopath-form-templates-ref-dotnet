@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XdTaskPaneType" />
   <TypeSignature Language="VB.NET" Value="Public Enum XdTaskPaneType" />
   <TypeSignature Language="C++ CLI" Value="public enum class XdTaskPaneType" />
+  <TypeSignature Language="F#" Value="type XdTaskPaneType = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -27,6 +28,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneBulletsNumbering" />
       <MemberSignature Language="VB.NET" Value="xdTaskPaneBulletsNumbering" />
       <MemberSignature Language="C++ CLI" Value="xdTaskPaneBulletsNumbering" />
+      <MemberSignature Language="F#" Value="xdTaskPaneBulletsNumbering = 9" Usage="Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneBulletsNumbering" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -46,6 +48,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneClipArt" />
       <MemberSignature Language="VB.NET" Value="xdTaskPaneClipArt" />
       <MemberSignature Language="C++ CLI" Value="xdTaskPaneClipArt" />
+      <MemberSignature Language="F#" Value="xdTaskPaneClipArt = 5" Usage="Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneClipArt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -65,6 +68,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneDesignerNew" />
       <MemberSignature Language="VB.NET" Value="xdTaskPaneDesignerNew" />
       <MemberSignature Language="C++ CLI" Value="xdTaskPaneDesignerNew" />
+      <MemberSignature Language="F#" Value="xdTaskPaneDesignerNew = 2" Usage="Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneDesignerNew" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -84,6 +88,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneFillOutAForm" />
       <MemberSignature Language="VB.NET" Value="xdTaskPaneFillOutAForm" />
       <MemberSignature Language="C++ CLI" Value="xdTaskPaneFillOutAForm" />
+      <MemberSignature Language="F#" Value="xdTaskPaneFillOutAForm = 1" Usage="Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneFillOutAForm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -103,6 +108,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneFind" />
       <MemberSignature Language="VB.NET" Value="xdTaskPaneFind" />
       <MemberSignature Language="C++ CLI" Value="xdTaskPaneFind" />
+      <MemberSignature Language="F#" Value="xdTaskPaneFind = 6" Usage="Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneFind" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -122,6 +128,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneFormatting" />
       <MemberSignature Language="VB.NET" Value="xdTaskPaneFormatting" />
       <MemberSignature Language="C++ CLI" Value="xdTaskPaneFormatting" />
+      <MemberSignature Language="F#" Value="xdTaskPaneFormatting = 8" Usage="Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneFormatting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -141,6 +148,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneHelp" />
       <MemberSignature Language="VB.NET" Value="xdTaskPaneHelp" />
       <MemberSignature Language="C++ CLI" Value="xdTaskPaneHelp" />
+      <MemberSignature Language="F#" Value="xdTaskPaneHelp = 4" Usage="Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneHelp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -160,6 +168,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneHTML" />
       <MemberSignature Language="VB.NET" Value="xdTaskPaneHTML" />
       <MemberSignature Language="C++ CLI" Value="xdTaskPaneHTML" />
+      <MemberSignature Language="F#" Value="xdTaskPaneHTML = 0" Usage="Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneHTML" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -179,6 +188,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneHWSWorkflow" />
       <MemberSignature Language="VB.NET" Value="xdTaskPaneHWSWorkflow" />
       <MemberSignature Language="C++ CLI" Value="xdTaskPaneHWSWorkflow" />
+      <MemberSignature Language="F#" Value="xdTaskPaneHWSWorkflow = 12" Usage="Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneHWSWorkflow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -198,6 +208,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneParaFormatting" />
       <MemberSignature Language="VB.NET" Value="xdTaskPaneParaFormatting" />
       <MemberSignature Language="C++ CLI" Value="xdTaskPaneParaFormatting" />
+      <MemberSignature Language="F#" Value="xdTaskPaneParaFormatting = 11" Usage="Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneParaFormatting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -217,6 +228,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneReplace" />
       <MemberSignature Language="VB.NET" Value="xdTaskPaneReplace" />
       <MemberSignature Language="C++ CLI" Value="xdTaskPaneReplace" />
+      <MemberSignature Language="F#" Value="xdTaskPaneReplace = 7" Usage="Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneReplace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -236,6 +248,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneSearchResults" />
       <MemberSignature Language="VB.NET" Value="xdTaskPaneSearchResults" />
       <MemberSignature Language="C++ CLI" Value="xdTaskPaneSearchResults" />
+      <MemberSignature Language="F#" Value="xdTaskPaneSearchResults = 3" Usage="Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneSearchResults" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -255,6 +268,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneSpelling" />
       <MemberSignature Language="VB.NET" Value="xdTaskPaneSpelling" />
       <MemberSignature Language="C++ CLI" Value="xdTaskPaneSpelling" />
+      <MemberSignature Language="F#" Value="xdTaskPaneSpelling = 10" Usage="Microsoft.Office.Interop.InfoPath.XdTaskPaneType.xdTaskPaneSpelling" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DAVAdapterObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface DAVAdapterObject&#xA;Implements DAVAdapter" />
   <TypeSignature Language="C++ CLI" Value="public interface class DAVAdapterObject : Microsoft::Office::Interop::InfoPath::DAVAdapter" />
+  <TypeSignature Language="F#" Value="type DAVAdapterObject = interface&#xA;    interface DAVAdapter" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>

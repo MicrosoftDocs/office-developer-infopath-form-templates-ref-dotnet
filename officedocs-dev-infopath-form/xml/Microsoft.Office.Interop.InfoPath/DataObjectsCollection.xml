@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DataObjectsCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface DataObjectsCollection&#xA;Implements DataObjects" />
   <TypeSignature Language="C++ CLI" Value="public interface class DataObjectsCollection : Microsoft::Office::Interop::InfoPath::DataObjects" />
+  <TypeSignature Language="F#" Value="type DataObjectsCollection = interface&#xA;    interface DataObjects" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
