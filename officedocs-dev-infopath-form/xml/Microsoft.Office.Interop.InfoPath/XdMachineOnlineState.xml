@@ -18,8 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <b>XdMachineOnlineState</b> enumeration is used to determine the state of the connection for the client computer.</summary>
+    <remarks>
+      <para>These enumerated values are returned by the <see cref="P:Microsoft.Office.Interop.InfoPath._Application2.MachineOnlineState" /> property.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="xdIEIsInOfflineMode">
@@ -39,7 +42,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Microsoft Internet Explorer is in offline mode. </summary>
       </Docs>
     </Member>
     <Member MemberName="xdOffline">
@@ -59,7 +62,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The client computer is not connected to the network.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdOnline">
@@ -79,7 +82,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The client computer is connected to the network.</summary>
       </Docs>
     </Member>
   </Members>

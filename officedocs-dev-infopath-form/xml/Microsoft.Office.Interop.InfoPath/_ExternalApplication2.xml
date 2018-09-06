@@ -181,10 +181,26 @@
         <Parameter Name="bstrInputParameters" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bstrSolutionURI">To be added.</param>
-        <param name="bstrInputParameters">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bstrSolutionURI">The Uniform Resource Identifier (URI) of the form template on which to base the new form.</param>
+        <param name="bstrInputParameters">One or more name/value pairs separated by the ampersand (&amp;) character.</param>
+        <summary>Creates a new form using the specified form template with the specified form template and input parameters.</summary>
+        <remarks>
+          <para>To use the input parameters passed to the <paramref name="inputParameters" /> parameter, the form specified in the <paramref name="formTemplateLocation" /> parameter must contain a <see cref="E:Microsoft.Office.InfoPath.FormEvents.Loading" /> event handler that uses the <see cref="P:Microsoft.Office.InfoPath.LoadingEventArgs.InputParameters" /> property of the <see cref="T:Microsoft.Office.InfoPath.LoadingEventArgs" /> class to retrieve the input parameter values, and then do something with those values. For an example of how to do this, see the <see cref="P:Microsoft.Office.InfoPath.LoadingEventArgs.InputParameters" /> property of the <see cref="T:Microsoft.Office.InfoPath.LoadingEventArgs" /> class.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>
+            <b>Note</b>: The following example assumes that the <see cref="N:Microsoft.Office.Interop.InfoPath" /> namespace is being used and that the Microsoft InfoPath 3.0 Type Library is referenced.</para>
+          <para>The following example shows how to create a new form by passing in the URI of a form template that contains an appropriate <see cref="E:Microsoft.Office.InfoPath.FormEvents.Loading" /> event handler and two input parameters. </para>
+          <code>private void CreateFormWithInputParameters()
+{
+ExternalApplication infoPath = new ExternalApplicationClass();
+
+// Create an InfoPath form passing in input parameters.
+infoPath. &lt;span class="label"&gt;NewFromSolutionWithInputParameters&lt;/span&gt;(
+   @"C:\User Forms\DeptReport.xsn","Dept=Accounting&amp;amp;Acct=Contoso");
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Open">

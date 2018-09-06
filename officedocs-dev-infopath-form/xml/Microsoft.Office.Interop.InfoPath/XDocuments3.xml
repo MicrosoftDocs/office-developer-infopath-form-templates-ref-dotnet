@@ -87,7 +87,7 @@
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
-        <value>To be added.</value>
+        <value>Returns <see cref="T:System.Int32" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,7 +120,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <returns>Returns <see cref="T:System.Collections.IEnumerator" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,7 +156,7 @@
       <Docs>
         <param name="varIndex">To be added.</param>
         <summary>To be added.</summary>
-        <value>To be added.</value>
+        <value>Returns <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,7 +190,7 @@
         <param name="varURI">To be added.</param>
         <param name="dwBehavior">To be added.</param>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <returns>Returns <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,7 +223,7 @@
       <Docs>
         <param name="varURI">To be added.</param>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <returns>Returns <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -259,7 +259,7 @@
         <param name="varSolutionURI">To be added.</param>
         <param name="dwBehavior">To be added.</param>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <returns>Returns <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -288,11 +288,25 @@
         <Parameter Name="varInputParams" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varSolutionURI">To be added.</param>
-        <param name="varInputParams">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="varSolutionURI">The Uniform Resource Identifier (URI) of the form template on which to base the new form.</param>
+        <param name="varInputParams">One or more name/value pairs separated by the ampersand (&amp;) character.</param>
+        <summary>Creates a new form using the specified form template with the specified form template and input parameters</summary>
+        <returns>An object that represents the new form.</returns>
+        <remarks>
+          <para>To use the input parameters passed to the <paramref name="inputParameters" /> parameter, the form specified in the <paramref name="formTemplateLocation" /> parameter must contain a <see cref="E:Microsoft.Office.InfoPath.FormEvents.Loading" /> event handler that uses the <see cref="P:Microsoft.Office.InfoPath.LoadingEventArgs.InputParameters" /> property of the <see cref="T:Microsoft.Office.InfoPath.LoadingEventArgs" /> class to retrieve the input parameter values, and then do something with those values. For an example of how to do this, see the <see cref="P:Microsoft.Office.InfoPath.LoadingEventArgs.InputParameters" /> property of the <see cref="T:Microsoft.Office.InfoPath.LoadingEventArgs" /> class.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>
+            <b>Note</b>: The following example assumes that the <see cref="N:Microsoft.Office.Interop.InfoPath" /> namespace is being used and that the Microsoft InfoPath 3.0 Type Library is referenced.</para>
+          <para>The following example shows how to create a new form by passing in the URI of a form template that contains an appropriate <see cref="E:Microsoft.Office.InfoPath.FormEvents.Loading" /> event handler and two input parameters. </para>
+          <code>XDocument newDocument;
+
+// Create an InfoPath form passing in input parameters.
+newDocument = thisApplication.XDocuments.&lt;span class="label"&gt;NewFromSolutionWithInputParameters&lt;/span&gt;(
+   @"C:\User Forms\DeptReport.xsn","Dept=Accounting&amp;amp;Acct=Contoso");
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -325,7 +339,7 @@
         <param name="varURI">To be added.</param>
         <param name="dwBehavior">To be added.</param>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <returns>Returns <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.ADOAdapterObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -54,10 +54,67 @@
         <Parameter Name="pXmlNode" Type="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" />
       </Parameters>
       <Docs>
-        <param name="pXmlNode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="pXmlNode">The XML node to be converted to an SQL fragment.</param>
+        <summary>Returns a SQL command text fragment using the specified XML node.</summary>
+        <returns>A SQL command text fragment.</returns>
+        <remarks>
+          <para>The fragment of SQL that the <b>BuildSQLFromXMLNodes</b> method generates is an SQL WHERE clause in the form of field = value. The XML node that you use for the <paramref name="pXmlNode" /> argument should be a descendant of the <paramref name="dfs:queryFields" /> node; when you have the SQL command text fragment, you can add it to the existing SQL command string of the <see cref="T:Microsoft.Office.Interop.InfoPath.ADOAdapterObject" /> object using the <see cref="P:Microsoft.Office.Interop.InfoPath.ADOAdapter2.Command" /> property.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>BuildSQLFromXMLNodes</b> method is used to query the Orders table of the Northwind database. The data returned is filtered for items greater than or equal to the value of the <paramref name="queryFieldNode" />:</para>
+          <code>private void QueryGreaterThan()
+{    
+ string oldCommand;
+ string whereClause;
+ IXMLDOMNode queryFieldNode;
+ IXMLDOMNode curQueryFieldAttribute;
+ IXMLDOMNamedNodeMap queryFieldAttributes;
+ ADOAdapter adapter = (ADOAdapter)thisXDocument.QueryAdapter;
+
+ // Build the WHERE clause from the QueryFields in the form's
+ // underlying XML DOM.
+ queryFieldNode = thisXDocument.DOM.selectSingleNode("dfs:myFields/dfs:queryFields/q:Orders");
+ whereClause = adapter.&lt;span class="label"&gt;BuildSQLFromXMLNodes&lt;/span&gt;(queryFieldNode);
+
+// The QueryFields are empty.
+ if (whereClause == null)
+ {
+  whereClause = String.Empty;
+ }
+ // Replace the '=' signs with '&amp;gt;=', and append the clause to 
+ // the SQL command text.
+ whereClause = whereClause.Replace(@"=", @"&amp;gt;=");
+ oldCommand = adapter.Command;
+ 
+ if (whereClause != "")
+ {
+  adapter.Command = oldCommand + " where " + whereClause;
+ }
+ 
+ // Clear the QueryFields so the WHERE clause isn't 
+ // automatically generated.
+ queryFieldAttributes = queryFieldNode.attributes;
+ while ((curQueryFieldAttribute = queryFieldAttributes.nextNode()) != null)
+ {
+  curQueryFieldAttribute.text = "";
+ }
+
+  // Perform the query.
+ try
+ {
+  thisXDocument.Query();
+ }
+ catch (Exception ex)
+ {
+  thisXDocument.UI.Alert("Failed to query.\n\n" + ex.Message);
+ }
+
+ // Reset the command so that subsequent queries are based on 
+ // the correct SQL command text string.
+ adapter.Command = oldCommand;
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Command">
@@ -90,9 +147,28 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the SQL command string text for an <see cref="T:Microsoft.Office.Interop.InfoPath.ADOAdapterObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>Command</b> property of the <b>ADOAdapter</b> object contains the SQL command text that is used by the ADO data adapter to submit data to and retrieve data from an ActiveX Data Objects/OLEDB external data source.</para>
+          <para>
+            <b>Note</b>: The <b>ADOAdapter</b> object is limited to work only with Microsoft SQL Server and Microsoft Access databases.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>Command</b> property of the <b>ADOAdapter</b> object is used to query the Employees table of the Northwind database through the secondary data source "Employees." The <paramref name="EmployeeID" /> of the record returned matches the value of the <paramref name="my:field2" /> node. This example requires <paramref name="my:field2" /> in the main data source and bound to a text box in a view that contains a button to invoke the following code:</para>
+          <code>// retrieve the Employees Adapter from the DataAdapters collection
+ADOAdapter employeesDA = (ADOAdapter)thisXDocument.DataAdapters["Employees"];
+// get employee’s ID from the main DOM
+string employeeID = thisXDocument.DOM.selectSingleNode("//my:field2").text;
+// Change the ADOAdapter’s command to retrieve the record of the Employee’s ID entered
+// by the user
+employeesDA.&lt;span class="label"&gt;Command &lt;/span&gt;= "select * from Employees where EmployeeID = " + employeeID;
+// get DataObject from the DataObjects collection and call Query to refresh
+// the data object
+DataObject employeesDO = thisXDocument.DataObjects["Employees"];
+employeesDO.Query();</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Connection">
@@ -125,9 +201,28 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the connection string used for an <see cref="T:Microsoft.Office.Interop.InfoPath.ADOAdapterObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>Connection</b> property of the <b>ADOAdapter</b> object contains the connection string that is used by the ADO data adapter to connect to an ActiveX Data Objects/OLEDB external data source.</para>
+          <para>
+            <b>Note</b>: The <b>ADOAdapter</b> object is limited to work only with Microsoft SQL Server and Microsoft Access databases. </para>
+          <para />
+        </remarks>
+        <example>
+          <code>// retrieve the Employees Adapter from the DataAdapters collection
+ADOAdapter employeesDA = (ADOAdapter)thisXDocument.DataAdapters["Employees"];
+// Get new server name from the main DOM
+string newServer = thisXDocument.DOM.selectSingleNode("//my:serverName").text;
+// build new connection string
+string connectionString = "Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=True;";
+connectionString += "Initial Catalog=SalesDB;Data Source=" + newServer;
+// set new connection string
+employeesDA.&lt;span class="label"&gt;Connection &lt;/span&gt;= connectionString;
+// query the data source again
+DataObject employeesDO = thisXDocument.DataObjects["Employees"];
+employeesDO.Query();</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -154,7 +249,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the name of an <see cref="T:Microsoft.Office.Interop.InfoPath.ADOAdapterObject" /> object.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -181,8 +276,25 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Reads data from the associated data adapter.</summary>
+        <remarks>
+          <para>The query fails if <see cref="P:Microsoft.Office.Interop.InfoPath.ADOAdapter2.QueryAllowed" /> is <b>false</b>.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>Query</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ADOAdapterObject" /> object is used to query the Employees table of the Northwind database through the secondary data source "Employees." The <paramref name="EmployeeID" /> of the record returned matches the value of the <paramref name="my:field2" /> node. This sample requires <paramref name="my:field2" /> in the main data source and bound to a text box in a view that contains the button to invoke the following code:</para>
+          <code>// retrieve the Employees Adapter from the DataAdapters collection
+ADOAdapter employeesDA = (ADOAdapter)thisXDocument.DataAdapters["Employees"];
+// get employee’s ID from the main DOM
+string employeeID = thisXDocument.DOM.selectSingleNode("//my:field2").text;
+// Change the ADOAdapter’s command to retrieve the record of the Employee’s ID entered
+// by the user
+employeesDA.Command = "select * from Employees where EmployeeID=" + employeeID;
+// get DataObject from the DataObjects collection and call Query to refresh
+// the data object
+DataObject employeesDO = thisXDocument.DataObjects["Employees"];
+employeesDO.&lt;span class="label"&gt;Query&lt;/span&gt;();</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="QueryAllowed">
@@ -209,7 +321,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns <b>true</b>, corresponding to the <b>queryAllowed</b> attribute in the form definition file (.xsf).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -236,8 +348,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Executes the submit operation on the associated data adapter.</summary>
+        <remarks>
+          <para>The submit fails if the <see cref="P:Microsoft.Office.Interop.InfoPath.ADOAdapter2.SubmitAllowed" /> property is <b>false</b>.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SubmitAllowed">
@@ -264,9 +379,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns a value corresponding to the <b>submitAllowed</b> attribute in the form definition file (.xsf).</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The default value of the <b>SubmitAllowed</b> property is <b>false</b>, as is the default value for the <b>submitAllowed</b> attribute. If the <b>submitAllowed</b> attribute is set to <b>true</b>, the ADO connection supports submitting data as well as querying.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -299,9 +417,20 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the timeout value for an <see cref="T:Microsoft.Office.Interop.InfoPath.ADOAdapterObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The Timeout property of the <b>ADOAdapter</b> object contains the timeout value that is used by the ADO data adapter to regulate the time used to submit and retrieve data from an ActiveX Data Objects/OLEDB external data source.</para>
+          <para>
+            <b>Note</b>: The <b>ADOAdapter</b> object is limited to work only with Microsoft SQL Server and Microsoft Access databases.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>Timeout</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.ADOAdapterObject" /> object is used to display the timeout value of the ADO data adapter in a message box:</para>
+          <code>ADOAdapter adapter;
+adapter = (ADOAdapter) thisXDocument.DataObjects["Customers"].QueryAdapter;
+thisXDocument.UI.Alert("SQL command text: " + adapter.&lt;span class="label"&gt;Timeout&lt;/span&gt;);</code>
+        </example>
       </Docs>
     </Member>
   </Members>

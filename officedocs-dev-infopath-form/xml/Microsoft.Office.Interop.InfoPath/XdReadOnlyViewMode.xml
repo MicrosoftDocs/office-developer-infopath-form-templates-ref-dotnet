@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Specifies the state of a view in the implementation of the <see cref="T:Microsoft.Office.Interop.InfoPath._IInitEventHandler" /> interface.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,7 +39,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Leaves the form's read-only settings at their default.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdFrozen">
@@ -59,7 +59,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Overrides the form's read-only settings to make all views read-only, and disables all buttons so that rules or code associated with them will not run.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdNonEditable">
@@ -79,7 +79,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Overrides the form's read-only settings to make all views read-only.</summary>
       </Docs>
     </Member>
   </Members>

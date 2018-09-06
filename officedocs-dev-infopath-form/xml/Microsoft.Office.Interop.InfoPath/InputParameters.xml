@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.InputParameterCollection" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -51,9 +51,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a count of the number of <see cref="T:Microsoft.Office.Interop.InfoPath.InputParameter" /> objects contained in the <see cref="T:Microsoft.Office.Interop.InfoPath.InputParameters" /> collection.</summary>
+        <value>The number of <see cref="T:Microsoft.Office.Interop.InfoPath.InputParameter" /> objects contained in the <see cref="T:Microsoft.Office.Interop.InfoPath.InputParameters" /> collection.</value>
+        <remarks>
+          <para>
+            <b>Note</b>: If the form template is published to Microsoft SharePoint Server 2010 with InfoPath Forms Services, there may be other name/value pairs that are automatically inserted by the server when input parameters are used with a URL. Specific input parameters may have different index values when using a URL than when using the /InputParameters command-line option.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -84,8 +88,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an <b>IEnumerator</b> that can be used to iterate over all entries in the <see cref="T:Microsoft.Office.Interop.InfoPath.InputParameters" /> collection.</summary>
+        <returns>An <b>IEnumerator</b> that can be used to iterate over all entries in the <see cref="T:Microsoft.Office.Interop.InfoPath.InputParameters" /> collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,10 +120,15 @@
         <Parameter Name="varIndex" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="varIndex">The specified index or name of the <b>InputParameter</b> object.</param>
+        <summary>Gets a reference to the specified <see cref="T:Microsoft.Office.Interop.InfoPath.InputParameter" /> object from the <see cref="T:Microsoft.Office.Interop.InfoPath.InputParameters" /> collection. </summary>
+        <value>The specified <see cref="T:Microsoft.Office.Interop.InfoPath.InputParameter" /> object.</value>
+        <remarks>
+          <para>An <b>InputParameter</b> object can be referenced by name, if known, or by index value.</para>
+          <para>
+            <b>Note</b>: If the form template is published to Microsoft SharePoint Server 2010 with InfoPath Forms Services, there may be other name/value pairs that are automatically inserted by the server when input parameters are used with a URL. Specific input parameters may have different index values when using a URL than when using the /InputParameters command-line option.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
   </Members>

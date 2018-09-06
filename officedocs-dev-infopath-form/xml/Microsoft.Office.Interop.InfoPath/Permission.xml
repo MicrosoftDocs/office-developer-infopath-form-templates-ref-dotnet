@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.PermissionObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -52,12 +52,34 @@
         <Parameter Name="varExpirationDate" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="bstrUserId">To be added.</param>
-        <param name="varPermission">To be added.</param>
-        <param name="varExpirationDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bstrUserId">The e-mail address in the format user@domain.com of the user to whom permissions on the current form are being granted. Required.</param>
+        <param name="varPermission">The permissions on the current form that are being granted to the specified user as a combination of one or more <see cref="T:Microsoft.Office.Core.MsoPermission" /> values. Optional.</param>
+        <param name="varExpirationDate">The expiration date for the permissions that are being granted as a <b>System.DateTime</b> value. Optional.</param>
+        <summary>Creates a new set of permissions on the current form for the specified user with the specified permissions and an expiration date.</summary>
+        <returns>A <see cref="T:Microsoft.Office.Interop.InfoPath.UserPermissionObject" /> that represents the specified user.</returns>
+        <remarks>
+          <para>To access the <see cref="T:Microsoft.Office.Core.MsoPermission" /> enumeration values for setting the <paramref name="varPermission" /> parameter, you must set a reference to the Microsoft Office 14.0 Object Library using <b>COM</b> tab of the Add Reference dialog box in Visual Studio 2012 or Visual Studio. This will establish a reference to the members of the <b>Microsoft.Office.Core</b> namespace.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>Add</b> method is used to add a new user to the form, assign that user to the Full Control access level, and set an expiration date of two days from the current date.</para>
+          <para>This example requires a <b>using</b> or <b>Imports</b> directive for the <b>Microsoft.Office.Core</b> namespace in the declarations section of the form module.</para>
+          <code>_XDocument3 thisDoc = (_XDocument3)thisXDocument;
+
+string strExpirationDate = DateTime.Today.AddDays(2).ToString();
+DateTime dtExpirationDate = DateTime.Parse(strExpirationDate);
+
+thisDoc.Permission.Add("someone@example.com",
+   msoPermission.msoPermissionFullControl, dtExpirationDate);</code>
+          <code>Dim thisDoc As _XDocument3 = DirectCast(thisXDocument, _XDocument3)
+
+Dim strExpirationDate As String = _
+   DateTime.Today.AddDays(2).ToString()
+dtExpirationDate As DateTime = DateTime.Parse(strExpirationDate)
+
+thisDoc.Permission.UserPermissions.Add("someone@example.com", _
+   msoPermission.msoPermissionFullControl, dtExpirationDate)</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="ApplyPolicy">
@@ -84,9 +106,21 @@
         <Parameter Name="bstrFileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bstrFileName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bstrFileName">The path and file name of an Extensible Rights Markup Language (XRML) file that defines users and groups and permissions to apply to the form template.</param>
+        <summary>Applies a policy to the form using a policy template file.</summary>
+        <remarks>
+          <para>To view an example of the format of an XRML file that is used as a policy template file, see <a href="http://go.microsoft.com/fwlink/?LinkId=64814">Sample End-User License</a></para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the ApplyPolicy method is used to apply a policy template file that allows the user to edit, but not copy the current form.</para>
+          <code>_XDocument3 thisDoc = (_XDocument3)thisXDocument;
+thisDoc.Permission.ApplyPolicy(
+   "\\\\MyShare\\Templates\\Edit_but_not_copy.xml");</code>
+          <code>Dim thisDoc As _XDocument3 = DirectCast(thisXDocument, _XDocument3)
+thisDoc.Permission.ApplyPolicy( _
+   "\\MyShare\Templates\Edit_but_not_copy.xml")</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -113,9 +147,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of <see cref="T:Microsoft.Office.Interop.InfoPath.UserPermissionObject" /> objects associated with the form.</summary>
+        <value>The number of <see cref="T:Microsoft.Office.Interop.InfoPath.UserPermissionObject" /> objects associated with the form.</value>
         <remarks>To be added.</remarks>
+        <example>
+          <para>In the following example, the <b>Count</b> property is used to display the count of users associated with the form.</para>
+          <code>_XDocument3 thisDoc = (_XDocument3)thisXDocument;
+thisXDocument.UI.Alert(thisDoc.Permission.Count.ToString());</code>
+          <code>Dim thisDoc As _XDocument3 = DirectCast(thisXDocument, _XDocument3)
+thisXDocument.UI.Alert(thisDoc.Permission.Count.ToString())</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="DocumentAuthor">
@@ -145,9 +186,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the author of the current form as an e-mail address.</summary>
+        <value>The e-mail address of the author of the form.</value>
+        <remarks>
+          <para>The author of the form always has non-expiring owner rights to the form, whether the owner permission is granted explicitly through a <see cref="T:Microsoft.Office.Interop.InfoPath.UserPermission" /> object or not.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>DocumentAuthor</b> property is used to display the e-mail address of the document author.</para>
+          <code>_XDocument3 thisDoc = (_XDocument3)thisXDocument;
+thisXDocument.UI.Alert(thisDoc.Permission.DocumentAuthor);</code>
+          <code>Dim thisDoc As _XDocument3 = DirectCast(thisXDocument, _XDocument3)
+thisXDocument.UI.Alert(thisDoc.Permission.DocumentAuthor)</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -177,9 +228,22 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets whether the permission settings represented by the <b>Permission</b> object are enabled for the current form.</summary>
+        <value>
+          <b>true</b> if the permission settings are enabled; otherwise <b>false</b>.</value>
+        <remarks>
+          <para>Use the <b>Enabled</b> property to determine whether permissions are restricted on the active form, and to enable or disable permissions. Set <b>Enabled</b> to <b>false</b> to disable permissions and to remove all users, other than the form author, and their permissions.</para>
+          <para>
+            <b>Note</b>: In preview mode, the <b>Enabled</b> property will always return <b>false</b>, and if code attempts to change this setting, a <b>System.Runtime.InteropServices.COMException</b> is raised and the message "The property/method is not available in preview mode" is returned.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>Enabled</b> property is used to display whether permission settings are enabled for the current form.</para>
+          <code>_XDocument3 thisDoc = (_XDocument3)thisXDocument;
+thisXDocument.UI.Alert(thisDoc.Permission.Enabled.ToString());</code>
+          <code>Dim thisDoc As _XDocument3 = DirectCast(thisXDocument, _XDocument3)
+thisXDocument.UI.Alert(thisDoc.Permission..Enabled.ToString())</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -210,8 +274,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an <b>IEnumerator</b> for iterating over the collection.</summary>
+        <returns>A <b>System.IEnumerator</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,10 +306,21 @@
         <Parameter Name="varIndex" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="varIndex">The numeric index of the <b>UserPermission</b> object in the <b>Permission</b> collection, or the email address of the user whose set of permissions on the current form is to be returned.</param>
+        <summary>Gets the <see cref="T:Microsoft.Office.Interop.InfoPath.UserPermission" /> object at the specified index. </summary>
+        <value>A <see cref="T:Microsoft.Office.Interop.InfoPath.UserPermission" /> object that represents the specified user. Returns a null reference (Nothing in Visual Basic) if the specified <paramref name="varIndex" /> does not exist.</value>
         <remarks>To be added.</remarks>
+        <example>
+          <para>In the following example, the <b>Item</b> property is used to get the <b>UserPermission</b> object for the user associated with the e-mail address "someone@example.com", and then uses the <see cref="P:Microsoft.Office.Interop.InfoPath.UserPermission.Permission" /> property of the <b>UserPermission</b> object to set that user's permissions to the Change access level.</para>
+          <para>To access the <see cref="T:Microsoft.Office.Core.MsoPermission" /> enumeration values for setting permissions, you must set a reference to the Microsoft Office 14.0 Object Library using <b>COM</b> tab of the Add Reference dialog box in Visual Studio 2012 or Visual Studio. This will establish a reference to the members of the <b>Microsoft.Office.Core</b> namespace.</para>
+          <para>This example requires a <b>using</b> or <b>Imports</b> directive for the <b>Microsoft.Office.Core</b> namespace in the declarations section of the form module.</para>
+          <code>_XDocument3 thisDoc = (_XDocument3)thisXDocument;
+thisDoc.Permission["someone@example.com"].Permission = 
+   (int)MsoPermission.msoPermissionChange;</code>
+          <code>Dim thisDoc As _XDocument3 = DirectCast(thisXDocument, _XDocument3)
+thisDoc.Permission["someone@example.com"].Permission = _
+   DirectCast(MsoPermission.msoPermissionChange, Integer)</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="PermissionFromPolicy">
@@ -272,9 +347,23 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets whether a permission policy has been applied to the current form.</summary>
+        <value>
+          <b>true</b> if the permission policy was applied; otherwise, <b>false</b>.</value>
+        <remarks>
+          <para>InfoPath supports the use of administrative permission policies which list users and groups and their form permissions. The <b>PermissionFromPolicy</b> property indicates whether a permission policy was applied the last time permissions were enabled on the form.</para>
+          <para>The <b>PermissionFromPolicy</b> property always returns <b>false</b> when checked by a non-owner of the form, even when the user has object model permissions.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>PermissionFromPolicy</b> property is used to display whether a permission policy has been applied to the current form.</para>
+          <code>_XDocument3 thisDoc = (_XDocument3)thisXDocument;
+thisXDocument.UI.Alert(
+   thisDoc.Permission.PermissionFromPolicy.ToString());</code>
+          <code>Dim thisDoc As _XDocument3 = DirectCast(thisXDocument, _XDocument3)
+thisXDocument.UI.Alert( _
+   thisDoc.Permission.PermissionFromPolicy.ToString())</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="PolicyDescription">
@@ -301,9 +390,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a description of the policy that was applied to the current form.</summary>
+        <value>The description of the policy applied to the active form or a default value if no policy was applied.</value>
+        <remarks>
+          <para>InfoPath supports the use of administrative permission policies which list users and groups and their form permissions.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>PolicyDescription</b> property is used to display the description of the policy that was applied to the current form.</para>
+          <code>_XDocument3 thisDoc = (_XDocument3)thisXDocument;
+thisXDocument.UI.Alert(thisDoc.Permission.PolicyDescription);</code>
+          <code>Dim thisDoc As _XDocument3 = DirectCast(thisXDocument, _XDocument3)
+thisXDocument.UI.Alert(thisDoc.Permission.PolicyDescription)</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="PolicyName">
@@ -330,9 +429,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the policy that was applied to the current form.</summary>
+        <value>The name of the policy or a default value if no policy was applied.</value>
+        <remarks>
+          <para>InfoPath supports the use of administrative permission policies which list users and groups and their form permissions.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>PolicyName</b> property is used to display the description of the policy that was applied to the current form.</para>
+          <code>_XDocument3 thisDoc = (_XDocument3)thisXDocument;
+thisXDocument.UI.Alert(thisDoc.Permission.PolicyName);</code>
+          <code>Dim thisDoc As _XDocument3 = DirectCast(thisXDocument, _XDocument3)
+thisXDocument.UI.Alert(thisDoc.Permission.PolicyName)</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="RemoveAll">
@@ -357,8 +466,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all <see cref="T:Microsoft.Office.Interop.InfoPath.UserPermission" /> objects associated with the form.</summary>
         <remarks>To be added.</remarks>
+        <example>
+          <para>In the following example, the <b>RemoveAll</b> method is used to remove all users from the form.</para>
+          <code>_XDocument3 thisDoc = (_XDocument3)thisXDocument;
+thisDoc.Permission.RemoveAll();</code>
+          <code>Dim thisDoc As _XDocument3 = DirectCast(thisXDocument, _XDocument3)
+thisDoc.Permission.RemoveAll()</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="RequestPermissionURL">
@@ -388,9 +504,30 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the file, URL, or e-mail address to contact for users who need additional permissions on the current form. </summary>
+        <value>The string specified in the Users can request additional permissions from text box of the Permission dialog box in InfoPath design mode, or the value set from code using this property.</value>
+        <remarks>
+          <para>The <b>RequestPermissionUrl</b> property corresponds to the value specified in the Users can request additional permissions from text box in the Design mode user interface. Use the <b>RequestPermissionUrl</b> property to specify a file, a Web site, or an e-mail contact from which users can request, or learn how to request, additional permissions on the active form. For example:</para>
+          <list type="bullet">
+            <item>
+              <description>A web address: http://companyserver/request_permissions.asp</description>
+            </item>
+            <item>
+              <description>A file: \\companyserver\share\requesting_permissions.txt</description>
+            </item>
+            <item>
+              <description>An e-mail address: mailto:permissionsmrg@example.com?Subject=Request%20permissions</description>
+            </item>
+          </list>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>RequestPermissionURL</b> property is used to display the URL or e-mail address to contact for additional permissions..</para>
+          <code>_XDocument3 thisDoc = (_XDocument3)thisXDocument;
+thisXDocument.UI.Alert(thisDoc.Permission.RequestPermissionURL);</code>
+          <code>Dim thisDoc As _XDocument3 = DirectCast(thisXDocument, _XDocument3)
+thisXDocument.UI.Alert(thisDoc.Permission.RequestPermissionURL)</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="StoreLicenses">
@@ -420,9 +557,22 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets whether the user's license to view the current form should be cached to allow offline viewing when the user cannot connect to a rights management server.</summary>
+        <value>
+          <b>true</b> if the user's license will be cached for offline viewing; otherwise <b>false</b>.</value>
+        <remarks>
+          <para>Corresponds to the setting of the Require a connection to verify a user's permission check box in the Permission dialog box. If the setting of the <b>StoreLicences</b> property is <b>true</b>, the check box is cleared and a user's license is cached locally. If the setting is <b>false</b>, the check box is selected and users other than the form owner must connect to the rights management server and acquire the license to work with the form each time they open it.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>StoreLicenses</b> property is set to <b>false</b>, and then current value of the property is displayed.</para>
+          <code>_XDocument3 thisDoc = (_XDocument3)thisXDocument;
+thisDoc.Permission.StoreLicenses = false;
+thisXDocument.UI.Alert(this.Permission.StoreLicenses.ToString());</code>
+          <code>Dim thisDoc As _XDocument3 = DirectCast(thisXDocument, _XDocument3)
+thisDoc.Permission.StoreLicenses = False
+thisXDocument.UI.Alert(Me.Permission.StoreLicenses.ToString())</code>
+        </example>
       </Docs>
     </Member>
   </Members>

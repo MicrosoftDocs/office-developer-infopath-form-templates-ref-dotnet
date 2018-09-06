@@ -26,8 +26,65 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A collection of event objects representing InfoPath application events.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event" />.</para>
+      <para>The <b>ApplicationEvents</b> collection contains event objects used primarily with COM Add-ins to capture application-wide events. These events include:</para>
+      <list type="table">
+        <item>
+          <term>
+            <see cref="E:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument" /> Event</term>
+          <description>Occurs when a new form is created.</description>
+        </item>
+        <item>
+          <term>
+            <see cref="E:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.Quit" /> Event</term>
+          <description>Occurs when the user quits InfoPath.</description>
+        </item>
+        <item>
+          <term>
+            <see cref="E:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowActivate" /> Event</term>
+          <description>Occurs when any document window is activated.</description>
+        </item>
+        <item>
+          <term>
+            <see cref="E:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowDeactivate" /> Event</term>
+          <description>Occurs when any document window is deactivated.</description>
+        </item>
+        <item>
+          <term>
+            <see cref="E:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowSize" /> Event</term>
+          <description>Occurs when any document window is resized or moved.</description>
+        </item>
+        <item>
+          <term>
+            <see cref="E:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeClose" /> Event</term>
+          <description>Occurs immediately before any open document closes.</description>
+        </item>
+        <item>
+          <term>
+            <see cref="E:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforePrint" /> Event</term>
+          <description>Occurs immediately before any open document is printed.</description>
+        </item>
+        <item>
+          <term>
+            <see cref="E:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeSave" /> Event</term>
+          <description>Occurs immediately before any open document is saved.</description>
+        </item>
+        <item>
+          <term>
+            <see cref="E:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentChange" /> Event</term>
+          <description>Occurs when a new form is created, when an existing form is opened, or when another form is made the active form.</description>
+        </item>
+        <item>
+          <term>
+            <see cref="E:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen" /> Event</term>
+          <description>Occurs when a document is opened.</description>
+        </item>
+      </list>
+      <para>Microsoft InfoPath supports COM Add-ins for extending the form editing user experience. COM Add-in support in InfoPath is available in the form editing environment. The form design environment is not able to be extended through the use of COM Add-ins. For more information about using the <b>ApplicationEvents</b> collection and creating a COM Add-in for InfoPath, see How To: Create a COM Add-in to Add Custom Features to InfoPath.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members />
 </Type>

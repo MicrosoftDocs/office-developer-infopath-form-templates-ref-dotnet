@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.DataDOMEventObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -51,9 +51,24 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a value indicating whether the data validation event occurs during an undo operation or a redo operation.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>When an undo or a redo operation takes place, the form's underlying XML document is placed in a read-only state and cannot be modified. This can sometimes occur during an <see cref="E:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event.OnAfterChange" /> event; when it does, the <b>IsUndoRedo</b> property is used to bypass the data validation that it contains.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>IsUndoRedo</b> property is used to determine whether the event is occurring during an undo or redo operation. If it is, the event handler is exited using the <b>return</b> statement, otherwise the custom function <b>Calculate</b> is called:</para>
+          <code>public void field1_OnAfterChange(DataDOMEvent e)
+{
+ if (e.&lt;span class="label"&gt;IsUndoRedo&lt;/span&gt;)
+ {
+  // An undo or redo operation has occurred and the DOM is read-only.
+  return;
+ }
+ Calculate();
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="MatchExpression">
@@ -80,9 +95,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the XPath expression for the XML Document Object Model (DOM) node for which the event is currently being processed.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The XPath expression that the <b>MatchExpression</b> property contains points to an XML DOM node in the form's underlying XML document. This is the node that is currently being validated by the data validation event handler.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>MatchExpression</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataDOMEventObject" /> object is used to display the XPath expression of the XML DOM node that is currently being validated:</para>
+          <code>thisXDocument.UI.Alert("Match expression: " + e.&lt;span class="label"&gt;MatchExpression&lt;/span&gt;);</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="NewValue">
@@ -109,9 +131,33 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the value of an XML Document Object Model (DOM) node that is being updated or inserted during a data validation event.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>NewValue</b> property contains the value of the XML DOM node that will replace the existing value. To get the original value of the XML DOM node, use the <see cref="P:Microsoft.Office.Interop.InfoPath.DataDOMEvent.OldValue" /> property.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <see cref="P:Microsoft.Office.Interop.InfoPath.DataDOMEvent.OldValue" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataDOMEventObject" /> object is used to display the original value of an XML DOM node, along with its <b>NewValue</b>:</para>
+          <code>thisXDocument.UI.Alert("Original value: " + e.OldValue.ToString() + "\nNew value: " + e.&lt;span class="label"&gt;NewValue&lt;/span&gt;.ToString());</code>
+          <para>In the following example, the <b>NewValue</b> property of the <b>DataDOMEvent</b> is checked for a blank value.  If not blank, the "FirstName" and "Lastname" fields are cleared.</para>
+          <code> if (e.IsUndoRedo)
+ {
+  // An undo or redo operation has occurred and the DOM is read-only.
+  return;
+ }
+
+ // A field change has occurred and the DOM is writable. Write code here to respond
+ // to the changes.
+ if (e.&lt;span class="label"&gt;NewValue&lt;/span&gt;.ToString() == "")
+ return;
+
+ if (thisXDocument.DOM.selectSingleNode("/dfs:myFields/dfs:queryFields/q:Employees/@FirstName").text != "")
+thisXDocument.DOM.selectSingleNode("/dfs:myFields/dfs:queryFields/q:Employees/@FirstName").text = "";
+
+ if (thisXDocument.DOM.selectSingleNode("/dfs:myFields/dfs:queryFields/q:Employees/@LastName").text != "")
+thisXDocument.DOM.selectSingleNode("/dfs:myFields/dfs:queryFields/q:Employees/@LastName").text = "";</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="OldValue">
@@ -138,9 +184,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the original value of an XML Document Object Model (DOM) node that is being updated or deleted during a data validation event.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>OldValue</b> property contains the original value of the XML DOM node that will be replaced with a new value or deleted. To get the new value of the XML DOM node, use the <see cref="P:Microsoft.Office.Interop.InfoPath.DataDOMEvent.NewValue" /> property.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>OldValue</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataDOMEventObject" /> object is used to display the original value of an XML DOM node, along with its <see cref="P:Microsoft.Office.Interop.InfoPath.DataDOMEvent.NewValue" />:</para>
+          <code>thisXDocument.UI.Alert("Original value: " + e.&lt;span class="label"&gt;OldValue&lt;/span&gt;.ToString() + "\nNew value: " + e.NewValue.ToString());</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Operation">
@@ -167,9 +220,24 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the type of action that is applied to an XML Document Object Model (DOM) node during a data validation event.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The values that the <b>Operation</b> property returns include <b>Insert</b>, <b>Update</b>, and <b>Delete</b>.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>Operation</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataDOMEventObject" /> object is used to check the type of action that is occurring to avoid multiple notifications for updates made to node values:</para>
+          <code>public void item_OnAfterChange(DataDOMEvent e)
+{
+ if (!e.IsUndoRedo &amp;amp;&amp;amp; e.&lt;span class="label"&gt;Operation&lt;/span&gt; == "Delete"
+  &amp;amp;&amp;amp; e.Site.nodeName == "item" &amp;amp;&amp;amp; 
+  e.Source.nodeName == "item")
+ {
+  Calculate();
+ }
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -196,9 +264,24 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the XML Document Object Model (DOM) node of the parent of the XML DOM node being changed during a data validation event.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>After you have set a reference to the XML DOM node that the <b>Parent</b> property returns, you can use any of the properties and methods that are supported by the XML DOM. This can be especially useful during delete operations, because the <b>Parent</b> property maps to the location of the XML DOM node that was removed.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following partial example, the <b>Parent</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataDOMEventObject" /> object is used to check the name of the parent node; if it matches certain criteria, an error message is displayed:</para>
+          <code>public void shippingDate_OnBeforeChange(DataDOMEvent e)
+{
+ if (e.&lt;span class="label"&gt;Parent&lt;/span&gt;.nodeName == "orderDate")
+ {
+  e.ReturnMessage = "You must delete the Ship Date before deleting the Order Date.";
+  e.ReturnStatus = false;
+  return;
+ }
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="ReportError">
@@ -229,15 +312,50 @@
         <Parameter Name="bstrType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="varNode">To be added.</param>
-        <param name="bstrShortErrorMessage">To be added.</param>
-        <param name="fSiteIndependent">To be added.</param>
-        <param name="bstrDetailedErrorMessage">To be added.</param>
-        <param name="lErrorCode">To be added.</param>
-        <param name="bstrType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="varNode">The XML Document Object Model (DOM) node that the error is associated with.</param>
+        <param name="bstrShortErrorMessage">The text to be used for the short error message.</param>
+        <param name="fSiteIndependent">Sets the condition for automatic deletion of the <b>Error</b> object. If <b>true</b>, the <b>Error</b> object will be deleted on change for any nodes that matched the XPath expression corresponding to the <b>Error</b> object. If <b>false</b>, the <b>Error</b> object will be deleted when the node returned by the <see cref="P:Microsoft.Office.Interop.InfoPath.DataDOMEvent.Site" /> property of a given event object has been changed.</param>
+        <param name="bstrDetailedErrorMessage">The text to be used for the detailed error message.</param>
+        <param name="lErrorCode">The number to be used as the error code.</param>
+        <param name="bstrType">Default value is "modeless". Determines whether the change in value will be automatically rejected or whether the user will be prompted to accept or reject the change. The other value is "modal".</param>
+        <summary>Creates an <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorObject" /> object and adds it to the <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorsCollection" /> collection.</summary>
+        <returns>The <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorObject" /> object representing the newly created <b>Error</b>.</returns>
+        <remarks>
+          <para>When the <b>ReportError</b> method is called, Microsoft Office InfoPath 2003 creates an <b>Error</b> object and adds it to the <b>Errors</b> collection. Errors are removed from the collection when the validation constraint is no longer invalid.  In certain cases they can be explicitly removed using the <see cref="M:Microsoft.Office.Interop.InfoPath.Errors.Delete(System.Object,System.String)" /> or <see cref="M:Microsoft.Office.Interop.InfoPath.Errors.DeleteAll" /> methods.</para>
+          <para>Errors can also be created using the <see cref="M:Microsoft.Office.Interop.InfoPath.Errors.Add(System.Object,System.String,System.String,System.String,System.Int32,System.String)" /> method.</para>
+          <para>
+            <b>Note</b>: Site-independent errors should be used when you want the errors to apply to all XML DOM nodes of the same type. If you want the error to apply to a specific XML DOM node, use site-dependent errors.</para>
+          <para>
+            <b>Note</b>: The <b>ReportError</b> method can only be used during the <see cref="E:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event.OnValidate" /> event.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <see cref="P:Microsoft.Office.Interop.InfoPath.DataDOMEvent.Site" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataDOMEventObject" /> object is used to check the value of the node. If the data validation fails, the <b>ReportError</b> method is used to create a custom error.</para>
+          <code>public void field1_OnValidate(DataDOMEvent e)
+{
+ if (int.Parse(e.Site.text) &amp;gt; 50)
+ {
+  e.&lt;span class="label"&gt;ReportError&lt;/span&gt;(
+   e.Site, 
+   "Invalid quantity. The total number of each type of block cannot exceed 50.", 
+   false,
+   "",
+   2,
+   "modeless");
+ }
+
+ if (int.Parse(e.Site.text) &amp;lt; 0)
+ {
+  e.ReportError(
+   e.Site, 
+   "Invalid quantity. The total number of each type of block cannot be less than 0.", 
+   false,
+   "",
+   2,
+   "modeless");
+ }
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="ReturnMessage">
@@ -267,9 +385,24 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the error message that will be returned if the data validation event is not successful.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>Used in conjunction with the <see cref="P:Microsoft.Office.Interop.InfoPath.DataDOMEvent.ReturnStatus" /> property, the <b>ReturnMessage</b> property displays a message box to the user with the specified text message.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>ReturnMessage</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataDOMEventObject" /> object is used to display a message to the user if the data validation for the XML DOM node fails:</para>
+          <code>public void qtty_OnBeforeChange(DataDOMEvent e)
+ {
+  if (e.NewValue.ToString() == "")
+  {
+   e.&lt;span class="label"&gt;ReturnMessage&lt;/span&gt; = "You must supply a value for this field.";
+   e.ReturnStatus = false;
+   return;
+  }
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="ReturnStatus">
@@ -302,9 +435,23 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets a value indicating the return status of the data validation event.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>For the <see cref="E:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event.OnBeforeChange" /> event, if the <b>ReturnStatus</b> property is set to <b>false</b>, the changes to the XML Document Object Model (DOM) node are not accepted and the data validation event fails. If set to <b>true</b>, no data validation error has occurred and the data validation event is successful.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>ReturnStatus</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataDOMEventObject" /> object is used to indicate that the data validation event was not successful. The code also uses the <see cref="P:Microsoft.Office.Interop.InfoPath.DataDOMEvent.ReturnMessage" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataDOMEventObject" /> object to display a message to the user.</para>
+          <code>public void RepVisitDt_OnBeforeChange(DataDOMEvent e)
+{
+ if (e.NewValue.ToString() == "")
+ {
+  e.ReturnMessage = "You must supply a value for this field.";
+  e.&lt;span class="label"&gt;ReturnStatus&lt;/span&gt; = false;
+ }
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Site">
@@ -331,9 +478,31 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the XML Document Object Model (DOM) node where the data validation event is currently being processed.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>After you have set a reference to the XML DOM node that the <b>Site</b> property returns, you can use any of the properties and methods that are supported by the XML DOM.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <see cref="T:Microsoft.Office.Interop.InfoPath.DataDOMEventObject" /> object is used to check the value of the node using the <b>Site</b> property. If the data validation fails, the <see cref="M:Microsoft.Office.Interop.InfoPath.DataDOMEvent.ReportError(System.Object,System.String,System.Boolean,System.String,System.Int32,System.String)" /> method is used to create a custom error.</para>
+          <code>public void field1_OnValidate(DataDOMEvent e)
+{
+if(e.Site.text != "")
+ {
+  int quantity = int.Parse(e.Site.text.ToString());
+  if(quantity &amp;gt; 50)
+  {
+   e.ReportError(e.Site, "Invalid quantity. The total number of each type of block cannot exceed 50.", false, "", 2,"modeless");
+  }
+
+  if(quantity &amp;lt; 0)
+  {
+   e.ReportError(e.Site, "Invalid quantity. The total number of each type of block cannot be less than 0.", false,"", 2,"modeless");    
+  }
+ }
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -363,9 +532,22 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the XML Document Object Model (DOM) where the data validation event is occurring.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>After you have set a reference to the XML DOM node that the <b>Source</b> property returns, you can use any of the properties and methods that are supported by the XML DOM.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>Source</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataDOMEventObject" /> object is used to return a reference to the XML DOM node that caused the initial change. If the node name matches certain criteria, a custom function is called.</para>
+          <code>public void item_OnAfterChange(DataDOMEvent e)
+{
+ if (!e.IsUndoRedo &amp;amp;&amp;amp; e.&lt;span class="label"&gt;Source&lt;/span&gt;.nodeName != "item")
+ {
+  Calculate(e.Site.parentNode);
+ }
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="XDocument">
@@ -395,9 +577,20 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.XDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object that is associated with the <see cref="T:Microsoft.Office.Interop.InfoPath.DataDOMEventObject" /> object during a data validation event.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>After you have set a reference to the <b>XDocument</b> object that is returned, you can use any of the properties and methods that it provides.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>XDocument</b> property of the <b>DataDOMEvent</b> object is used to set a reference to the <b>XDocument</b> object:</para>
+          <code>public void qtty_OnBeforeChange(DataDOMEvent e)
+ {
+   
+   XDocument doc = e.&lt;span class="label"&gt;XDocument&lt;/span&gt;;
+ }</code>
+        </example>
       </Docs>
     </Member>
   </Members>

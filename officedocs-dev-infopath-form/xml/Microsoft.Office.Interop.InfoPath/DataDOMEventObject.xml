@@ -23,8 +23,36 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An event object that is used during Microsoft InfoPath data validation events.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.DataDOMEvent" />.</para>
+      <para>The <b>DataDOMEvent</b> object provides a number of properties and a method that can be used within a data validation event to programmatically interact with the data that is being validated and to provide a response if the data is not valid.</para>
+      <para>The <b>DataDOMEvent</b> object is passed as a parameter to the <see cref="E:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event.OnBeforeChange" />, the <see cref="E:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event.OnValidate" />, and the <see cref="E:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event.OnAfterChange" /> events</para>
+      <para>
+        <b>Note</b>: The <b>OnValidate</b> event can occur without a change in the form's underlying XML document.</para>
+      <para>The <b>DataDOMEvent</b> object is used to get information about the XML Document Object Model (DOM) node that is being changed, and it also provides a property for getting a reference to a form's underlying XML document. In addition, it provides properties for handling the change in data, including rejecting the change and creating an error message.</para>
+      <para>
+        <b>Note</b>: The <b>DataDOMEvent</b> object is passed as an argument to one of the data validation event handlers. Its properties and method are only available during the event that it is passed to.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>In the following example, the <b>DataDOMEvent</b> object is used to check the value of the node using the <see cref="P:Microsoft.Office.Interop.InfoPath.DataDOMEvent.Site" /> property. If the data validation fails, the <see cref="M:Microsoft.Office.Interop.InfoPath.DataDOMEvent.ReportError(System.Object,System.String,System.Boolean,System.String,System.Int32,System.String)" /> method is used to create a custom error.</para>
+      <code>public void field1_OnValidate(&lt;span class="label"&gt;DataDOMEvent&lt;/span&gt; e)
+{
+ if(e.Site.text != "")
+ {
+  int quantity = int.Parse(e.Site.text.ToString());
+  if(quantity &amp;gt; 50)
+  {
+   e.ReportError(e.Site, "Invalid quantity. The total number of each type of block cannot exceed 50.", false, "", 2,"modeless");
+  }
+  if(quantity &amp;lt; 0)
+  {
+   e.ReportError(e.Site, "Invalid quantity. The total number of each type of block cannot be less than 0.", false,"", 2,"modeless");
+  }
+ }
+}</code>
+    </example>
   </Docs>
   <Members />
 </Type>

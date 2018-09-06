@@ -30,7 +30,7 @@
   <Docs>
     <param name="pDocument">To be added.</param>
     <param name="pfCancel">To be added.</param>
-    <summary>To be added.</summary>
+    <summary>Reserved for internal use.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

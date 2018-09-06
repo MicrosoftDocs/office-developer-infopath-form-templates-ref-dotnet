@@ -23,8 +23,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a Signature Line control in a view.</summary>
+    <remarks>
+      <para>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.SignatureLine" /></para>
+      <para>The <see cref="T:Microsoft.Office.Interop.InfoPath.SignatureLineObject" /> class provides programmatic access to a Signature Line control in a view. To access an instance of the <see cref="T:Microsoft.Office.Interop.InfoPath.SignatureLineObject" /> class associated with a Signature Line control, use the <see cref="T:Microsoft.Office.Interop.InfoPath.SignatureLinesCollection" /> that is associated with the view that contains the control.</para>
+      <para>Only a subset of the properties of the Signature Line control are exposed through the <see cref="T:Microsoft.Office.Interop.InfoPath.SignatureLineObject" /> class and its associated members of the object model. For example, the properties for specifying the size and tab index of the control can be set only by using the InfoPath designer. However, properties, such as the <see cref="P:Microsoft.Office.Interop.InfoPath.SignatureLine.SuggestedSigner" />, <see cref="P:Microsoft.Office.Interop.InfoPath.SignatureLine.SuggestedSignerTitle" />, and <see cref="P:Microsoft.Office.Interop.InfoPath.SignatureLine.SuggestedSignerEmailAddress" /> properties, can be used to get or set the name, title, and e-mail address of the suggested signer for the control. Use the <see cref="P:Microsoft.Office.Interop.InfoPath.SignatureLine.Signature" /> property to return a <see cref="T:Microsoft.Office.Interop.InfoPath.SignatureLineObject" /> object associated with the control, which you can then use to access the digital signature associated with the control. The <see cref="M:Microsoft.Office.Interop.InfoPath.SignatureLine.Sign(System.String,System.String,System.String,System.String)" /> method can be used programmatically display the Sign dialog box to initiate signing.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members />
 </Type>

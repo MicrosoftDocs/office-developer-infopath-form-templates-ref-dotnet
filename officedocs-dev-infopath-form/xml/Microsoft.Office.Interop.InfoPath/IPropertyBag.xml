@@ -19,8 +19,40 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Implemented to create a read-only object to contain printer settings for passing to the Import method of a custom data importer. </summary>
+    <remarks>
+      <para>An implementation of the <b>IPropertyBag</b> interface should expose the following values.</para>
+      <list type="table">
+        <item>
+          <term>PageSize</term>
+          <description>Returns an unparsed string corresponding to the current page size, such as "A4", "B4", "Letter", and so on.</description>
+        </item>
+        <item>
+          <term>TopMargin</term>
+          <description>The size of the top margin.</description>
+        </item>
+        <item>
+          <term>BottomMargin</term>
+          <description>The size of the bottom margin.</description>
+        </item>
+        <item>
+          <term>LeftMargin</term>
+          <description>The size of the left margin.</description>
+        </item>
+        <item>
+          <term>RightMargin</term>
+          <description>The size of the right margin.</description>
+        </item>
+        <item>
+          <term>MarginUnitsType</term>
+          <description>The type of unit used for measuring margins.</description>
+        </item>
+      </list>
+      <para>
+        <b>Note</b>: These values will not be available if the user has no installed printers.</para>
+      <para>A custom data importer is created by implementing the <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter" /> interface. For more information about programmatically importing data into an InfoPath form, see the <a href="http://go.microsoft.com/fwlink?LinkID=11689">InfoPath Developer Portal</a></para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="RemoteRead">
@@ -48,11 +80,14 @@
       <Docs>
         <param name="pszPropName">To be added.</param>
         <param name="pVar">To be added.</param>
-        <param name="pErrorLog">To be added.</param>
+        <param name="pErrorLog">A pointer to an <see cref="T:Microsoft.Office.Interop.InfoPath.IErrorLog" /> object.</param>
         <param name="varType">To be added.</param>
         <param name="pUnkObj">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Used to read printer settings for populating an <see cref="T:Microsoft.Office.Interop.InfoPath.IPropertyBag" /> object in a custom data importer.</summary>
+        <remarks>
+          <para>A custom data importer is created by implementing the <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter" /> interface. For more information about programmatically importing data into an InfoPath form, see the <a href="http://go.microsoft.com/fwlink?LinkID=11689">InfoPath Developer Portal</a></para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -75,10 +110,13 @@
         <Parameter Name="pVar" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="pszPropName">To be added.</param>
-        <param name="pVar">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pszPropName">N/A</param>
+        <param name="pVar">N/A</param>
+        <summary>Available to the implementation of the <see cref="T:Microsoft.Office.Interop.InfoPath.IPropertyBag" /> interface of a custom data importer, but always returns E_ACCESSDENIED.</summary>
+        <remarks>
+          <para>A custom data importer is created by implementing the <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter" /> interface. For more information about programmatically importing data into an InfoPath form, see the <a href="http://go.microsoft.com/fwlink?LinkID=11689">InfoPath Developer Portal</a></para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
   </Members>

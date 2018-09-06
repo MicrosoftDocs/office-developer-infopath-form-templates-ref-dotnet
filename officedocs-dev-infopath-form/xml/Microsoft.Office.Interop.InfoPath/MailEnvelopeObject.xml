@@ -23,8 +23,22 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a custom e-mail message in a Microsoft InfoPath form.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.MailEnvelope2" />.</para>
+      <para>The <b>MailEnvelope</b> object provides a number of properties that can be used to programmatically create a custom e-mail message within the default e-mail editor, and it attaches the currently open InfoPath form to the message.</para>
+      <para>After the e-mail message is created, the default e-mail editor will display the e-mail message; users can then inspect and edit the e-mail message before sending it.</para>
+      <para>
+        <b>Note</b>: The <b>MailEnvelope</b> object cannot be used to send the e-mail messages it creates; users must manually send the e-mail messages.</para>
+      <para>You can also use the <see cref="M:Microsoft.Office.Interop.InfoPath.UI2.ShowMailItem(System.String,System.String,System.String,System.String,System.String)" /> method to programmatically create e-mail messages; users must manually send the e-mail messages.</para>
+      <para>You can also use the <see cref="M:Microsoft.Office.Interop.InfoPath.UI2.ShowMailItem(System.String,System.String,System.String,System.String,System.String)" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.UIObject" /> object to programmatically create e-mail messages.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>In the following example, the <see cref="P:Microsoft.Office.Interop.InfoPath.Window2.MailEnvelope" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object is used to set a reference to the <b>MailEnvelope</b> object.</para>
+      <code>&lt;span class="label"&gt;MailEnvelopeObject&lt;/span&gt; myEnv = thisApplication.ActiveWindow.&lt;span class="label"&gt;MailEnvelope&lt;/span&gt;;
+myEnv.Visible = true;</code>
+    </example>
   </Docs>
   <Members />
 </Type>

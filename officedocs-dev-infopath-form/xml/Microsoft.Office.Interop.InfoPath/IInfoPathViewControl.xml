@@ -25,8 +25,67 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a control present in the view.</summary>
+    <remarks>
+      <para>The <b>IInfoPathViewControl</b> interface, used in conjunction with the <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter" /> interface, allows developers to get specific information about the controls in the view, such as the <see cref="P:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.ControlType" /> and the <see cref="P:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.DataType" />, the <see cref="P:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.Top" /> and <see cref="P:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.Left" /> positions, the XML <see cref="P:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.NodeName" /> associated with the control, and the <see cref="M:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.InputScopes(System.IntPtr,System.UInt32@,Microsoft.Office.Interop.InfoPath.IEnumString@,System.String@)" />. The <see cref="P:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.Value" /> property is the only property that can be set.</para>
+      <para>For a list of controls that are enumerated if present in the view, see the <see cref="M:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields.GetControls(mshtml.IEnumUnknown@)" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields" /> interface. For a list of acceptable data types that can be used with specific controls, see the <see cref="P:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.Value" /> property of the <b>IInfoPathViewControl</b> interface.</para>
+      <para>For more information about programmatically importing data into an InfoPath form, see the <a href="http://go.microsoft.com/fwlink/?LinkID=11689">InfoPath Developer Portal</a>Microsoft Office Developer Center.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>In the following example, the <b>Import</b> method of the <b>IInfoPathDataImporter</b> interface is used to iterate through the <b>mshtml.IEnumUnknown</b> collection of <b>IInfoPathViewControl</b> controls in the view of the active form.</para>
+      <para>The <b>Import</b> routine is the main part of a solution used to build a custom data importer. The Visual Studio project requires a reference to the Microsoft Office InfoPath 2.0 Type Library and <b>System.Windows.Forms</b>, with <b>Imports</b> statements for each as well as <b>mshtml.Implements</b> statements are required to generate the signatures for the methods provided by the custom data importer interfaces, including <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter" />, <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields" />, <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl" />, and <see cref="T:Microsoft.Office.Interop.InfoPath.IPropertyBag" />.</para>
+      <para>
+        <b>Note</b>: To build a custom data importer using a .NET class library, check the Register for COM interop check box on the Compile tab of the class properties editor.</para>
+      <para>
+        <b>Note</b>: To debug a custom data importer, set a Start Action in Visual Studio to <b>Start an external program</b>, and browse to INFOPATH.EXE located at &lt;drive&gt;:\Program Files\Microsoft Office\Office12\. This option is available on the Debug tab of the class properties editor.</para>
+      <code>Imports Microsoft.Office.Interop.InfoPath
+Imports System.Windows.Forms
+Imports mshtml
+
+&amp;lt;ComClass(Class1.ClassId, Class1.InterfaceId, Class1.EventsId)&amp;gt; Public Class Class1
+   Implements Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter
+   Implements Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields
+   Implements Microsoft.Office.Interop.InfoPath.IInfoPathViewControl
+   Implements Microsoft.Office.Interop.InfoPath.IPropertyBag
+
+   Public Const ClassId As String = _
+      "1FEB0DF8-E7F1-4b21-A9EE-B06D5FECC572"
+   Public Const InterfaceId As String = _
+      "9F9F685C-71A0-46ec-A7F9-A86AF8CBC2A8"
+   Public Const EventsId As String = _
+      "ED7C0C49-3F89-40a2-A50E-C59E8F682B08" 
+
+Public Sub Import(
+   _ByVal pPrintSettings As Microsoft.Office.Interop.InfoPath.IPropertyBag, _
+   ByVal punkViewControls As mshtml.IEnumUnknown) _
+   Implements Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter.Import
+
+   Dim pControl As IInfoPathViewControl
+   Dim pUnk As Object
+   Dim pcelt As UInt16 = 1
+   Dim pceltFetched As UInt16 = 0
+
+   Try
+      'Gets first control in the view
+      punkViewControls.RemoteNext(pcelt, pUnk, pceltFetched)
+
+      Do While pUnk.ToString() &amp;lt;&amp;gt; "Nothing"
+         pControl = pUnk
+         MessageBox.Show(pControl.ControlType)
+         'Gets next control in the view
+         punkViewControls.RemoteNext(pcelt, pUnk, pceltFetched)
+      Loop
+   Catch e As Exception
+      If e.Message = _
+         "Object reference not set to an instance of an object." Then
+         ' Signals the end of the enumeration/controls in the view
+      Else
+         MessageBox.Show("Error: " &amp;amp; e.ToString &amp;amp; " " &amp;amp; e.Message)
+      End If
+   End Try
+End Sub</code>
+    </example>
   </Docs>
   <Members>
     <Member MemberName="ControlType">
@@ -50,9 +109,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the control type of the current control in the enumeration.</summary>
+        <value>The control type of the current control.</value>
+        <remarks>
+          <para>For a list of controls that are enumerated in the view, if present, see the <see cref="M:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields.GetControls(mshtml.IEnumUnknown@)" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields" /> interface.</para>
+          <para>For more information about programmatically importing data into an InfoPath form, see the <a href="http://go.microsoft.com/fwlink/?LinkID=11689">InfoPath Developer Portal</a>Microsoft Office Developer Center.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataType">
@@ -76,9 +139,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the data type of a control in the view.</summary>
+        <value>The data type of the control.</value>
+        <remarks>
+          <para>For a list of controls that are enumerated in the view, if present, see the <see cref="M:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields.GetControls(mshtml.IEnumUnknown@)" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields" /> interface.</para>
+          <para>For more information about programmatically importing data into an InfoPath form, see the <a href="http://go.microsoft.com/fwlink/?LinkID=11689">InfoPath Developer Portal</a>Microsoft Office Developer Center.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -102,9 +169,14 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the height of the current control in the enumeration. </summary>
+        <value>The height of the control, in pixels.</value>
+        <remarks>
+          <para>Pixel coordinates are calculated using <b>screenCoordinate</b> values from the MSHTML.DLL document service, which are roughly equivalent to standard CSS values.</para>
+          <para>For a list of controls that are enumerated in the view, if present, see the <see cref="M:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields.GetControls(mshtml.IEnumUnknown@)" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields" /> interface.</para>
+          <para>For more information about programmatically importing data into an InfoPath form, see the <a href="http://go.microsoft.com/fwlink/?LinkID=11689">InfoPath Developer Portal</a>Microsoft Office Developer Center.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InputScopes">
@@ -129,12 +201,17 @@
         <Parameter Name="pbstrRegExp" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="ppInputScopes">To be added.</param>
-        <param name="pcInputScopes">To be added.</param>
-        <param name="ppenumPhraseList">To be added.</param>
-        <param name="pbstrRegExp">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="ppInputScopes">Pointer to an array of input scopes.</param>
+        <param name="pcInputScopes">The number of input scopes in the array pointed to by <paramref name="ppInputScopes" />.</param>
+        <param name="ppenumPhraseList">Pointer to an implementation of the <see cref="T:Microsoft.Office.Interop.InfoPath.IEnumString" /> interface containing the phrase list.</param>
+        <param name="pbstrRegExp">Pointer to a string containing the regular expression to be recognized.</param>
+        <summary>Gets the input scope of the current control in the enumeration.</summary>
+        <remarks>
+          <para>For information about how input scopes are defined for controls in InfoPath forms, search InfoPath help for "Input scopes for InfoPath controls".</para>
+          <para>For a list of controls that are enumerated in the view, if present, see the <see cref="M:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields.GetControls(mshtml.IEnumUnknown@)" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields" /> interface.</para>
+          <para>For more information about programmatically importing data into an InfoPath form, see the <a href="http://go.microsoft.com/fwlink/?LinkID=11689">InfoPath Developer Portal</a>Microsoft Office Developer Center.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -158,9 +235,14 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the offset, from the left side of the view, of the current control in the enumeration.</summary>
+        <value>The number of pixels the control is from the left side of the view.</value>
+        <remarks>
+          <para>Pixel coordinates are calculated using <b>screenCoordinate</b> values from the MSHTML.DLL document service, which are roughly equivalent to standard CSS values.</para>
+          <para>For a list of controls that are enumerated in the view, if present, see the <see cref="M:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields.GetControls(mshtml.IEnumUnknown@)" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields" /> interface.</para>
+          <para>For more information about programmatically importing data into an InfoPath form, see the <a href="http://go.microsoft.com/fwlink/?LinkID=11689">InfoPath Developer Portal</a>Microsoft Office Developer Center.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NodeName">
@@ -184,9 +266,14 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the node associated with the current control in the enumeration.</summary>
+        <value>The name of the XML node to which the control is bound.</value>
+        <remarks>
+          <para>Pixel coordinates are calculated using <b>screenCoordinate</b> values from the MSHTML.DLL document service, which are roughly equivalent to standard CSS values.</para>
+          <para>For a list of controls that are enumerated in the view, if present, see the <see cref="M:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields.GetControls(mshtml.IEnumUnknown@)" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields" /> interface.</para>
+          <para>For more information about programmatically importing data into an InfoPath form, see the <a href="http://go.microsoft.com/fwlink/?LinkID=11689">InfoPath Developer Portal</a>Microsoft Office Developer Center.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -210,9 +297,14 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the offset, from the top of the view, of the current control in the enumeration.</summary>
+        <value>The number of pixels the control is from the top of the view.</value>
+        <remarks>
+          <para>Pixel coordinates are calculated using <b>screenCoordinate</b> values from the MSHTML.DLL document service, which are roughly equivalent to standard CSS values.</para>
+          <para>For a list of controls that are enumerated in the view, if present, see the <see cref="M:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields.GetControls(mshtml.IEnumUnknown@)" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields" /> interface.</para>
+          <para>For more information about programmatically importing data into an InfoPath form, see the <a href="http://go.microsoft.com/fwlink/?LinkID=11689">InfoPath Developer Portal</a>Microsoft Office Developer Center.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -236,9 +328,52 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the value of the current control in the enumeration. </summary>
+        <value>The value of the control.</value>
+        <remarks>
+          <para>The following controls are limited to certain types of data.</para>
+          <list type="table">
+            <item>
+              <term>Textbox</term>
+              <description>Any <b>xsd:string</b> value</description>
+            </item>
+            <item>
+              <term>Rich Text Box</term>
+              <description>XHTML tree with XHTML namespaces on top level elements. XHTML tree will be inserted into XML DOM without parsing.</description>
+            </item>
+            <item>
+              <term>Drop-Down List Box</term>
+              <description>Any <b>xsd:string</b> value</description>
+            </item>
+            <item>
+              <term>List Box</term>
+              <description>Any <b>xsd:string</b> value</description>
+            </item>
+            <item>
+              <term>Date Picker</term>
+              <description>Any <b>xsd:string</b> value</description>
+            </item>
+            <item>
+              <term>Check Box</term>
+              <description>"CHECKED" or "UNCHECKED"</description>
+            </item>
+            <item>
+              <term>Option Button</term>
+              <description>"SELECTED"</description>
+            </item>
+            <item>
+              <term>Bulleted, Numbered and Plain Lists</term>
+              <description>Any <b>xsd:string</b> value</description>
+            </item>
+            <item>
+              <term>Picture and Ink Picture</term>
+              <description>Any <b>xsd:base64Binary</b> data</description>
+            </item>
+          </list>
+          <para>For a list of controls that are enumerated in the view, if present, see the <see cref="M:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields.GetControls(mshtml.IEnumUnknown@)" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields" /> interface.</para>
+          <para>For more information about programmatically importing data into an InfoPath form, see the <a href="http://go.microsoft.com/fwlink/?LinkID=11689">InfoPath Developer Portal</a>Microsoft Office Developer Center.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -262,9 +397,14 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the width of the current control in the enumeration.</summary>
+        <value>The width of the control, in pixels.</value>
+        <remarks>
+          <para>Pixel coordinates are calculated using <b>screenCoordinate</b> values from the MSHTML.DLL document service, which are roughly equivalent to standard CSS values.</para>
+          <para>For a list of controls that are enumerated in the view, if present, see the <see cref="M:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields.GetControls(mshtml.IEnumUnknown@)" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields" /> interface.</para>
+          <para>For more information about programmatically importing data into an InfoPath form, see the <a href="http://go.microsoft.com/fwlink/?LinkID=11689">InfoPath Developer Portal</a>Microsoft Office Developer Center.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
   </Members>

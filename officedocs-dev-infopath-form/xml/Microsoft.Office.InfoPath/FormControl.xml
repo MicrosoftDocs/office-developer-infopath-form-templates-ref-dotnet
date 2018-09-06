@@ -28,8 +28,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A hostable object that is used to integrate the InfoPath form editing environment into a .NET-based custom application.</summary>
+    <remarks>
+      <para>The <b>FormControl</b> editor object provides various properties and methods to open and close form templates, as well as to communicate with the host environment for .NET-based custom applications. The Microsoft.Office.InfoPath.Server assembly provides the hostable <b>XmlFormView</b> control for use in custom Web pages (.aspx).</para>
+      <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a><b>XmlFormView</b> control in custom Web pages, see <a href="http://go.microsoft.com/fwlink/?LinkId=73331">Hosting the InfoPath  Form Editing Environment in a Custom Web Form</a></para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,7 +71,10 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -87,8 +94,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Closes the active form in the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</summary>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataConnectionBaseUrl">
@@ -115,9 +125,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the base URL to be used with data connection files (.UDCX).</summary>
+        <value>The base URL to be used with data connection files (.UDCX).</value>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -136,8 +149,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value indicating whether the control represented by the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object can respond to user interaction.</summary>
+        <value>
+          <b>true</b> if the control can respond to user interaction; otherwise, <b>false</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,9 +171,12 @@
         <ReturnType>Microsoft.Office.InfoPath.EventManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an <see cref="T:Microsoft.Office.InfoPath.EventManager" /> object which is used to bind event handlers in the <see cref="E:Microsoft.Office.InfoPath.FormControl.InternalStartup" /> event.</summary>
+        <value>An <see cref="T:Microsoft.Office.InfoPath.EventManager" /> object.</value>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Host">
@@ -186,9 +203,13 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the object used to access the object model of the host application.</summary>
+        <value>The object used to access the object model of the host application.</value>
+        <remarks>
+          <para>Using the <b>Host</b> property, custom form code can call into methods in the host application.</para>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HostName">
@@ -215,9 +236,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the host application.</summary>
+        <value>The name of the host application.</value>
+        <remarks>
+          <para>The value of the <b>HostName</b> property is used in dialog boxes and error messages in place of the InfoPath product name.</para>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HostTranslatesAcceleratorsFirst">
@@ -236,9 +261,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets a value that indicates the order in which keystrokes are sent to the control represented by the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object or to the application hosting the control.</summary>
+        <value>
+          <b>true</b> to send keystrokes to the host application first; <b>false</b> to send keystrokes to the control first. The default setting is <b>false</b>.</value>
+        <remarks>
+          <para>When the <see cref="P:Microsoft.Office.InfoPath.FormControl.HostTranslatesAcceleratorsFirst" /> property is set to <b>false</b>, if the control handles the keystrokes, the host application will not have an opportunity to process the keystrokes. And vice versa, when <see cref="P:Microsoft.Office.InfoPath.FormControl.HostTranslatesAcceleratorsFirst" /> is set to <b>true</b>, if the host application handles the keystrokes, the control will not have an opportunity to process the keystrokes. </para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InternalStartup">
@@ -257,8 +286,11 @@
         <ReturnType>Microsoft.Office.InfoPath.FormControl+EventHandler&lt;System.EventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Occurs when the hosted form is started.</summary>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NewFromFormTemplate">
@@ -280,9 +312,12 @@
         <Parameter Name="formTemplateLocation" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="formTemplateLocation">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="formTemplateLocation">The path or URL to the form template (.xsn) file.</param>
+        <summary>Creates a new form based on a form template (.xsn) file.</summary>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NewFromFormTemplate">
@@ -306,11 +341,14 @@
         <Parameter Name="userInputParameters" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="formTemplateLocation">To be added.</param>
-        <param name="customAppDomain">To be added.</param>
-        <param name="userInputParameters">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="formTemplateLocation">The path or URL to the form template (.xsn) file.</param>
+        <param name="customAppDomain">The <a href="frlrfSystemAppDomainClassTopic">AppDomain</a></param>
+        <param name="userInputParameters">One or more name/value pairs separated by the ampersand (&amp;) character.</param>
+        <summary>Creates a new form based on a form template (.xsn) file.</summary>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NewFromFormTemplate">
@@ -334,11 +372,14 @@
         <Parameter Name="behavior" Type="Microsoft.Office.InfoPath.XmlFormOpenMode" />
       </Parameters>
       <Docs>
-        <param name="formTemplateLocation">To be added.</param>
-        <param name="xmlDataStream">To be added.</param>
-        <param name="behavior">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="formTemplateLocation">The path or URL to the form template file (.xsn).</param>
+        <param name="xmlDataStream">The file stream (<a href="frlrfSystemIOStreamClassTopic">Stream</a></param>
+        <param name="behavior">An <see cref="T:Microsoft.Office.InfoPath.XmlFormOpenMode" /> value that specifies how the form should be opened.</param>
+        <summary>Creates a new form based on the specified form template (.xsn) and the data contained in an XML stream.</summary>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NewFromFormTemplate">
@@ -364,13 +405,16 @@
         <Parameter Name="inputParameters" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="formTemplateLocation">To be added.</param>
-        <param name="xmlDataStream">To be added.</param>
-        <param name="behavior">To be added.</param>
-        <param name="customAppDomain">To be added.</param>
-        <param name="inputParameters">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="formTemplateLocation">The path or URL to the form template file (.xsn).</param>
+        <param name="xmlDataStream">The file stream (<a href="frlrfSystemIOStreamClassTopic">Stream</a></param>
+        <param name="behavior">A <see cref="T:Microsoft.Office.InfoPath.XmlFormOpenMode" /> value that specifies how the form should be opened.</param>
+        <param name="customAppDomain">The <a href="frlrfSystemAppDomainClassTopic">AppDomain</a></param>
+        <param name="inputParameters">One or more name/value pairs separated by the ampersand (&amp;) character.</param>
+        <summary>Creates a new form based on the specified form template and the data contained in an XML stream.</summary>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -392,9 +436,12 @@
         <Parameter Name="xmlDataStream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="xmlDataStream">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="xmlDataStream">The file stream (<b>System.IO.Stream</b>) containing the form file (.xml).</param>
+        <summary>Opens a form file (.xml) from a file stream (<a href="frlrfSystemIOStreamClassTopic">Stream</a><see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</summary>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -416,9 +463,13 @@
         <Parameter Name="formLocation" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="formLocation">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="formLocation">The path or URL to the form file (.xml).</param>
+        <summary>Opens a form file (.xml) and loads it into the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</summary>
+        <remarks>
+          <para>The <b>Open(System.String)</b> method does not allow you to specify a form template file (.xsn). The form file must contain processing instructions (<b>href</b> and <b>name</b> attributes) that reference a valid form template file for the <b>Load</b> method to succeed. If this is not possible, the <see cref="Overload:Microsoft.Office.InfoPath.FormControl.NewFromFormTemplate" /> method can be used if you have a .xsn file and a suitably structured XML file, but the XML file does not have processing instruction references that specify the .xsn file. Or you can use the <see cref="M:Microsoft.Office.InfoPath.FormControl.Open(System.IO.Stream)" /> method to load XML from a <a href="frlrfSystemIOStreamClassTopic">Stream</a></para>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -442,11 +493,14 @@
         <Parameter Name="inputParameters" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="xmlDataStream">To be added.</param>
-        <param name="customAppDomain">To be added.</param>
-        <param name="inputParameters">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="xmlDataStream">The file stream (<a href="frlrfSystemIOStreamClassTopic">Stream</a></param>
+        <param name="customAppDomain">The <a href="frlrfSystemAppDomainClassTopic">AppDomain</a></param>
+        <param name="inputParameters">One or more name/value pairs separated by the ampersand (&amp;) character.</param>
+        <summary>Opens a form file (.xml) from a file stream and loads it into the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</summary>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -470,11 +524,14 @@
         <Parameter Name="inputParameters" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="formLocation">To be added.</param>
-        <param name="customAppDomain">To be added.</param>
-        <param name="inputParameters">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="formLocation">The path or URL to the form template file (.xsn).</param>
+        <param name="customAppDomain">The <a href="frlrfSystemAppDomainClassTopic">AppDomain</a></param>
+        <param name="inputParameters">One or more name/value pairs separated by the ampersand (&amp;) character.</param>
+        <summary>Opens a form template file (.xsn) and loads it into the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</summary>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetInitEventHandler">
@@ -496,9 +553,13 @@
         <Parameter Name="handler" Type="Microsoft.Office.InfoPath.IInitEventHandler" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="handler">The interface that must be implemented in the custom application to handle the event from the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</param>
+        <summary>Sets the event handler in the host application for handling the event that occurs when the form is loaded in the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</summary>
+        <remarks>
+          <para>Sets the function in the host application that is used as a callback function for the <b>Initialize</b> event, which is called before the InfoPath <b>OnLoad</b> event.</para>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetNotifyHostEventHandler">
@@ -520,9 +581,12 @@
         <Parameter Name="handler" Type="Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="handler">The interface that must be implemented in the custom application to handle the event from the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</param>
+        <summary>Sets the event handler in the host application for handling the event that occurs when the <see cref="M:Microsoft.Office.Interop.InfoPath._XDocument3.NotifyHost(System.String)" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to notify the host application.</summary>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSubmitToHostEventHandler">
@@ -544,9 +608,13 @@
         <Parameter Name="handler" Type="Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler" />
       </Parameters>
       <Docs>
-        <param name="handler">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="handler">The interface that must be implemented in the custom application to handle the event from the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</param>
+        <summary>Sets the event handler in the host application for handling the <see cref="M:Microsoft.Office.Interop.InfoPath.SubmitToHostAdapter.Submit" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.SubmitToHostAdapter" /> object.</summary>
+        <remarks>
+          <para>Sets the function in the host application that is used as the callback function when submitting data back to the host application. To configure the data connection for submitting to the host application, open the form template in InfoPath design mode, click Submit Options on the Tools menu, select the Allow users to submit this form check box, select Hosting environment in the drop-down list, and then click Add.</para>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncLastChange">
@@ -566,8 +634,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Synchronizes the underlying data of the form with changes in the view.</summary>
+        <remarks>
+          <para>Use this method when a user clicks outside the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object to the host application after making a change to a field without tabbing or otherwise committing that change to the underlying XML document of the form.</para>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlForm">
@@ -594,9 +666,13 @@
         <ReturnType>Microsoft.Office.InfoPath.XmlForm</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an <see cref="T:Microsoft.Office.InfoPath.XmlForm" /> object associated with the hosted <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</summary>
+        <value>An <see cref="T:Microsoft.Office.InfoPath.XmlForm" /> object associated with the hosted <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</value>
+        <remarks>
+          <para>The <b>XmlForm</b> object returned can be used to access and work with members of the InfoPath object model.</para>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
   </Members>

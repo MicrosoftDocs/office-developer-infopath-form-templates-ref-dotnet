@@ -23,8 +23,46 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a task pane in a Microsoft Office InfoPath form that is associated with a window.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.TaskPane" />.</para>
+      <para>The <b>TaskPaneObject</b> object provides properties for working with the InfoPath built-in task panes. The <see cref="T:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneObject" /> object inherits those properties for working with a custom task pane.</para>
+      <para>The properties available for an InfoPath task pane are determined by the type of task pane that you are working with. If the <see cref="P:Microsoft.Office.Interop.InfoPath.TaskPane.TaskPaneType" /> property returns 0, the task pane is a custom task pane and the properties and methods available are provided by the <b>HTMLTaskPane</b> object. If the <b>TaskPaneType</b> property returns any other value, the task pane is a built-in task pane and the properties are provided by the <b>TaskPaneObject</b> object.</para>
+      <para>
+        <b>Note</b>: <b>TaskPaneType</b> is based on <see cref="T:Microsoft.Office.Interop.InfoPath.XdTaskPaneType" /> enumeration. These enumerated values are also used as arguments to the property <see cref="P:Microsoft.Office.Interop.InfoPath.TaskPanes.Item(System.Object)" /> of the <see cref="T:Microsoft.Office.Interop.InfoPath.TaskPanesCollection" /> collection for returning a reference to a specified type of task pane.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>In the following example, the <see cref="P:Microsoft.Office.Interop.InfoPath.TaskPanes.Item(System.Object)" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.TaskPanesCollection" /> collection is used to get a reference to the <b>TaskPane</b> object that represents the custom task pane. The code then calls a scripting function defined in the HTML code of the custom task pane using the <see cref="P:Microsoft.Office.Interop.InfoPath.HTMLTaskPane.HTMLDocument" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneObject" /> object, which is inherited by the <b>TaskPane</b> object.</para>
+      <code>// Ensure View has loaded before trying to access the task pane.
+if (thisXDocument.View != null)
+{
+ // Get a reference to the custom task pane.  It is always the 0-th
+ // task pane in the TaskPanes collection.
+ HTMLTaskPane custom = (HTMLTaskPane) thisXDocument.View.Window.TaskPanes[0];
+
+ // Ensure that the task pane is completely loaded.
+ if (custom != null &amp;amp;&amp;amp; custom.HTMLDocument.readyState == "complete")
+ {
+  mshtml.IHTMLWindow2 window = custom.HTMLDocument.parentWindow;
+
+  object[] args =  new object[] {"ViewID"};
+
+  // call into script through CLR late binding mechanism
+  window.GetType().InvokeMember(
+   "SelectView",      // late bound method      
+   System.Reflection.BindingFlags.InvokeMethod |   // binding flags
+   System.Reflection.BindingFlags.DeclaredOnly | 
+   System.Reflection.BindingFlags.Public | 
+   System.Reflection.BindingFlags.Instance,     
+   null,        // binder object
+   window,        // target object
+   args);
+ }
+}</code>
+      <para>
+        <b>Note</b>: The above example requires a reference to the Microsoft.mshtml.dll assembly.</para>
+    </example>
   </Docs>
   <Members />
 </Type>

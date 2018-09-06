@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.DataAdaptersCollection" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -51,7 +51,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the number of data adapters in <see cref="T:Microsoft.Office.Interop.InfoPath.DataAdaptersCollection" /> collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,8 +84,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an <b>IEnumerator</b> that iterates over all entries in the <see cref="T:Microsoft.Office.Interop.InfoPath.DataAdapters" /> collection.</summary>
+        <returns>An <b>IEnumerator</b> that iterates over all entries in the <see cref="T:Microsoft.Office.Interop.InfoPath.DataAdapters" /> collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,10 +116,18 @@
         <Parameter Name="varIndex" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="varIndex">An expression that specifies the position of a member of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataAdaptersCollection" /> collection. If the argument is a numeric expression, it must be a number from 0 to the value of the <see cref="P:Microsoft.Office.Interop.InfoPath.DataAdapters.Count" /> property minus 1. If the argument is a string expression, it must be the name of a member of the collection.</param>
+        <summary>Gets a reference to the specified data adapter object from the <see cref="T:Microsoft.Office.Interop.InfoPath.DataAdaptersCollection" /> collection, based on position or name.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>If the value provided for the <paramref name="varIndex" /> argument does not match any existing member of the collection, an error occurs.</para>
+          <para>After you have set a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.DataSourceObject" /> object that the <b>Item</b> property returns, you can access any of its properties or methods after the object has been cast to the appropriate <b>DataObject</b> object.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>Because the <b>Item</b> property is the default property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataAdaptersCollection" /> collection, it can be used after casting to the appropriate data adapter as follows: </para>
+          <code>EmailAdapterObject myEmailAdapter = ((EmailAdapterObject)thisXDocument.DataAdapters[3]);</code>
+        </example>
       </Docs>
     </Member>
   </Members>

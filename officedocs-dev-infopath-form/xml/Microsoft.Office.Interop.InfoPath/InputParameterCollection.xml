@@ -23,8 +23,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a collection of <see cref="T:Microsoft.Office.Interop.InfoPath.InputParameter" /> objects.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.InputParameters" />.</para>
+      <para>The <b>InputParameters</b> collection can be used to access the <see cref="P:Microsoft.Office.Interop.InfoPath.InputParameter.Name" /> and <see cref="P:Microsoft.Office.Interop.InfoPath.InputParameter.Value" /> properties of each <b>InputParameter</b> object. It is not possible to add new <b>InputParameter</b> objects using the InfoPath object model.</para>
+      <para>This collection is populated when a form template is opened from the command line with the /InputParameters option and one or more name/value pairs, separated by the ampersand (&amp;) character, or from a URL string that specifies input parameters.</para>
+      <para>
+        <b>Note</b>: If the form template is published to Microsoft SharePoint Server 2010 with InfoPath Forms Services, there may be other name/value pairs that are automatically inserted by the server when input parameters are used with a URL. Specific input parameters may have different index values when using a URL than when using the /InputParameters command-line option.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members />
 </Type>

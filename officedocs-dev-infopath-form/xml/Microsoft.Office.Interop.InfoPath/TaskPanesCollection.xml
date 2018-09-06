@@ -23,8 +23,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains a collection of <see cref="T:Microsoft.Office.Interop.InfoPath.TaskPaneObject" /> objects that represent the task panes associated with a window in Microsoft Office InfoPath 2003.</summary>
+    <remarks>
+      <para>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.TaskPanes" />.</para>
+      <para>The <b>TaskPanesCollection</b> collection provides properties that can be used to access a collection of task pane objects, and it is accessed through the <see cref="P:Microsoft.Office.Interop.InfoPath.Window2.TaskPanes" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object.</para>
+      <para>
+        <b>Note</b>: The <b>TaskPanesCollection</b> collection can be used only to get the count of the <b>TaskPaneObject</b> objects that it contains and to return a reference to a specified <b>TaskPaneObject</b> object. It cannot be used to add or remove <b>TaskPaneObject</b> objects.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>In the following example, the <see cref="P:Microsoft.Office.Interop.InfoPath.Window2.TaskPanes" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object is used to set a reference to the <b>TaskPanes</b> collection:</para>
+      <code>&lt;span class="label"&gt;TaskPanes&lt;/span&gt; taskPanes = thisApplication.ActiveWindow.&lt;span class="label"&gt;TaskPanes&lt;/span&gt;;</code>
+    </example>
   </Docs>
   <Members />
 </Type>

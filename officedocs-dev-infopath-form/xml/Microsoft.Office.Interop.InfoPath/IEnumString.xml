@@ -19,8 +19,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Used to enumerate strings. </summary>
+    <remarks>
+      <para>Call the methods of IEnumString to enumerate through a set of strings.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Clone">
@@ -42,9 +45,13 @@
         <Parameter Name="ppenum" Type="Microsoft.Office.Interop.InfoPath.IEnumString" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="ppenum">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="ppenum">Address of <b>IEnumString*</b> pointer variable that receives the interface pointer to the enumeration object. If the method is unsuccessful, the value of this output variable is undefined.</param>
+        <summary>Creates another enumerator that contains the same enumeration state as the current one. </summary>
+        <remarks>
+          <para>This method supports the standard return values E_INVALIDARG, E_OUTOFMEMORY, and E_UNEXPECTED.</para>
+          <para>Using this method, a client can record a particular point in the enumeration sequence and then return to that point at a later time. The new enumerator supports the same interface as the original one.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoteNext">
@@ -68,11 +75,14 @@
         <Parameter Name="pceltFetched" Type="System.UInt32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="celt">To be added.</param>
-        <param name="rgelt">To be added.</param>
-        <param name="pceltFetched">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="celt">The number of string values being requested. </param>
+        <param name="rgelt">An array of size <paramref name="celt" /> (or larger) of the string values.</param>
+        <param name="pceltFetched">A pointer to the number of elements actually supplied in <paramref name="rgelt" />. Caller can pass in <b>NULL</b> if <paramref name="celt" /> is one. </param>
+        <summary>Retrieves a specified number of items in the enumeration sequence.</summary>
+        <remarks>
+          <para>Returns S_OK if the number of elements supplied is <paramref name="celt" />; S_FALSE otherwise.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -92,8 +102,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Resets the enumeration sequence to the beginning. </summary>
+        <remarks>
+          <para>Returns S_OK.</para>
+          <para>A call to this method, resetting the sequence, does not guarantee that the same set of objects will be enumerated after the reset, because it depends on the collection being enumerated. A static collection is reset to the beginning, but it can be too expensive for some collections, such as files in a directory, to guarantee this condition.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Skip">
@@ -115,9 +129,12 @@
         <Parameter Name="celt" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="celt">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="celt">The number of elements to be skipped.</param>
+        <summary>Skips over a specified number of items in the enumeration sequence.</summary>
+        <remarks>
+          <para>Returns S_OK if the number of elements skipped is <paramref name="celt" />; otherwise, S_FALSE. </para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
   </Members>

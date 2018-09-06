@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.SubmitToHostAdapterObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,8 +47,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the data adapter that the <see cref="T:Microsoft.Office.Interop.InfoPath.SubmitToHostAdapter" /> object represents.</summary>
+        <value>The name of the data adapter that the <b>SubmitToHostAdapter</b> object represents</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,7 +74,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <b>Query</b> method is available for the <see cref="T:Microsoft.Office.Interop.InfoPath.SubmitToHostAdapter" /> object but, because the <b>SubmitToHostAdapter</b> object is available for submitting data only, the method will always generate a run-time error when it is called on that object. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,8 +102,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <b>QueryAllowed</b> property is available for the <see cref="T:Microsoft.Office.Interop.InfoPath.SubmitToHostAdapter" /> object but, because the <b>SubmitToHostAdapter</b> object is available for submitting data only, the property always returns <b>false</b>. </summary>
+        <value>Because the <b>SubmitToHostAdapter</b> object is available for submitting data only, the property always returns <b>false</b>. </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,8 +129,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Executes the submit operation on the <see cref="T:Microsoft.Office.Interop.InfoPath.SubmitToHostAdapter" /> object.</summary>
+        <remarks>
+          <para>The <b>Submit</b> method of the <b>SubmitToHostAdapte</b>r object submits the form's entire underlying XML document to the hosting environment.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SubmitAllowed">
@@ -157,8 +160,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>The <b>SubmitAllowed</b> property is available for the <see cref="T:Microsoft.Office.Interop.InfoPath.SubmitToHostAdapter" />r object but, because the <b>SubmitToHostAdapter</b> object is available for submitting data only, the property always returns <b>true</b>. </summary>
+        <value>Because the <b>SubmitToHostAdapter</b> object is available for submitting data only, the property always returns <b>true</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -23,8 +23,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a member of the current form's <see cref="T:Microsoft.Office.Interop.InfoPath.Permission" /> collection.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.UserPermission" />.</para>
+      <para>The <b>UserPermissionObject</b> object associates a set of permissions for the current form with a single user and an optional expiration date.</para>
+      <para>Define a user and the permissions associated with that user with the properties of the <b>UserPermission</b> class, and then use the <see cref="M:Microsoft.Office.Interop.InfoPath.SemiTrust.Permission.Add(System.String,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.SemiTrust.Permission" /> object to add and grant that user permissions on the current form. Use the<see cref="M:Microsoft.Office.Interop.InfoPath.SemiTrust.UserPermission.Remove" /> method of the <b>UserPermission</b> object to remove a user and the user's permissions.</para>
+      <para>While some permissions granted through the user interface apply to all users, such as printing and expiration date, you can use the <b>UserPermission</b> object to assign them on a per-user basis with per-user expiration dates.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members />
 </Type>

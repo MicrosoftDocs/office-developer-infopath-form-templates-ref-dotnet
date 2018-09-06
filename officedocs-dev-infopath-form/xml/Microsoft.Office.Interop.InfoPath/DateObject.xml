@@ -23,8 +23,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides several date-related methods that can be used in Microsoft InfoPath forms.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.Date" />.</para>
+      <para>Use the <b>Date</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.UtilObject" /> object to return a <b>Date</b> object.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members />
 </Type>

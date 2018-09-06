@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.DataSourceObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,9 +47,16 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to an XML Document Object Model (DOM) that is associated with a <see cref="T:Microsoft.Office.Interop.InfoPath.DataSourceObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>DOM</b> property allows you to programmatically access and manipulate the stored XML data of a secondary data source represented by the <b>DataObject</b> object. After you have set a reference to the XML DOM, which contains the stored XML data, you can use any of the properties and methods that are supported by the XML DOM.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>DOM</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataSourceObject" /> object is used to return all of the contents of a form's secondary data source using the xml property of the XML DOM:</para>
+          <code>string xml = thisXDocument.DataObjects["CityList"].&lt;span class="label"&gt;DOM&lt;/span&gt;.xml;</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -76,9 +83,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the name of the associated <see cref="T:Microsoft.Office.Interop.InfoPath.DataSourceObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The name of the <b>DataObject</b> object is the same as the name of the secondary data source that it represents. The name of the <b>DataObject</b> object can also be used as the argument to the <see cref="P:Microsoft.Office.Interop.InfoPath.DataObjects.Item(System.Object)" /> property.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>Name</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataSourceObject" /> object is used to display the name of the <b>DataObject</b> object in a message box:</para>
+          <code>string strName = thisXDocument.DataObjects[0].&lt;span class="label"&gt;Name&lt;/span&gt;;
+thisXDocument.UI.Alert("Data Object name: " + strName);</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Query">
@@ -103,8 +118,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Executes the query operation on the data adapter associated with the <see cref="T:Microsoft.Office.Interop.InfoPath.DataSourceObject" /> object, and inserts the returned XML in the associated data source (XML DOM).</summary>
+        <remarks>
+          <para>The <b>Query</b> method can be used to refresh the data contained in the XML DOM that is associated with a <b>DataObject</b> object.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="QueryAdapter">
@@ -131,9 +149,18 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the data adapter object that is used for a secondary data source.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>After you have set a reference to the data adapter object that the <b>QueryAdapter</b> property returns, you can use the properties and methods that the particular data adapter object contains.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>QueryAdapter</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataSourceObject" /> object is used to return a reference to the data adapter that is associated with the <see cref="T:Microsoft.Office.Interop.InfoPath.DataSourceObject" /> object, which, in this case, is an <b>ADOAdapter</b> data adapter object. The code then uses the Command property of the <see cref="T:Microsoft.Office.Interop.InfoPath.ADOAdapterObject" /> object to display the SQL command text in a message box:</para>
+          <code>ADOAdapter adapter;
+adapter = (ADOAdapter) thisXDocument.DataObjects["CityList"].&lt;span class="label"&gt;QueryAdapter&lt;/span&gt;;
+thisXDocument.UI.Alert("SQL command text: " + adapter.Command);</code>
+        </example>
       </Docs>
     </Member>
   </Members>

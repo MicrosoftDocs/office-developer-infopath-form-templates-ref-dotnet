@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.ViewInfosCollection" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -51,9 +51,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a count of the number of <see cref="T:Microsoft.Office.Interop.InfoPath.ViewInfoObject" /> object contained in the <see cref="T:Microsoft.Office.Interop.InfoPath.ViewInfosCollection" /> collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <example>
+          <para>In the following example, the <b>Count</b> property is used within a for loop to iterate through the collection of <b>ViewInfo</b> objects and display a message box indicating the name of each view implemented in the form:</para>
+          <code>for (int i=0; i &amp;lt; thisXDocument.ViewInfos.&lt;span class="label"&gt;Count&lt;/span&gt;; i++)
+{
+ thisXDocument.UI.Alert("View name: " + thisXDocument.ViewInfos[i].Name);
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -84,8 +91,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an <b>IEnumerator</b> that iterates over all entries in the <see cref="T:Microsoft.Office.Interop.InfoPath.ViewInfosCollection" /> object.</summary>
+        <returns>An <b>IEnumerator</b> that iterates over all entries in the <see cref="T:Microsoft.Office.Interop.InfoPath.ViewInfosCollection" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,10 +123,22 @@
         <Parameter Name="varIndex" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="varIndex">An expression that specifies the position of a member of the <b>ViewInfosCollection</b> collection. If a numeric expression, the argument must be a number from 0 to the value of the collection's <b>Count</b> property minus 1. If a string expression, the argument must be the name of a member of the collection.</param>
+        <summary>Gets the specified <see cref="T:Microsoft.Office.Interop.InfoPath.ViewInfoObject" /> object from the <see cref="T:Microsoft.Office.Interop.InfoPath.ViewInfosCollection" /> collection.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>If the value provided for the <paramref name="varIndex" /> argument does not match any existing member of the collection, an error occurs.</para>
+          <para>After you have set a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.ViewInfoObject" /> object that the <b>Item</b> property returns, you can access any of its properties.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>Because the <b>Item</b> property is the default property of the <see cref="T:Microsoft.Office.Interop.InfoPath.ViewInfosCollection" /> collection, it can be used as follows:</para>
+          <code>ViewInfo firstViewInfo;
+firstViewInfo = thisXDocument.ViewInfos[0];</code>
+          <para>You can also use the name of the <see cref="T:Microsoft.Office.Interop.InfoPath.ViewInfoObject" /> object, which is the name of a view, as the argument to the <b>Item</b> method, as shown in the following example:</para>
+          <code>ViewInfo myViewInfo;
+myViewInfo = thisXDocument.ViewInfos["MyView"];</code>
+        </example>
       </Docs>
     </Member>
   </Members>

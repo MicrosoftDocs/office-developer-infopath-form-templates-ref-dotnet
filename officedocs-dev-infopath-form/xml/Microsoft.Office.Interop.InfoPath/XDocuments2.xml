@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.XDocumentsCollection" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -54,9 +54,15 @@
         <Parameter Name="varIndex" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="varIndex">An expression that specifies the position of a member of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocumentsCollection" />. If a numeric expression, the argument must be a number from 0 to the value of the <see cref="P:Microsoft.Office.Interop.InfoPath.XDocuments2.Count" /> minus 1. If a string expression, the argument must be the Uniform Resource Locator (URL) path of a member of the collection.</param>
+        <summary>Closes the specified Microsoft Office InfoPath form.</summary>
+        <remarks>
+          <para>The <b>Close</b> method closes the currently open form without quitting the InfoPath application. The form is closed unconditionally, meaning that any changes made to the data in the form are not saved.</para>
+          <para />
+        </remarks>
+        <example>
+          <code>thisApplication.XDocuments.&lt;span class="label"&gt;Close&lt;/span&gt;(0);</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -86,9 +92,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a count of the number of <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> objects contained in the collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <example>
+          <para>In the following example, the <b>Count</b> property of the <b>XDocuments</b> collection is used within a for loop to iterate through the collection of <b>XDocument</b> objects and display a message box indicating the Uniform Resource Identifier (URI) location for each currently open form:</para>
+          <code>for (int i=0; i &amp;lt; thisApplication.XDocuments.&lt;span class="label"&gt;Count&lt;/span&gt;; i++)
+{
+   thisXDocument.UI.Alert("XDocument URI: " + thisApplication.XDocuments[i].URI);
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -119,8 +132,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an <b>IEnumerator</b> that iterates over all entries in the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocumentsCollection" /> object.</summary>
+        <returns>An <b>IEnumerator</b> that iterates over all entries in the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocumentsCollection" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,10 +167,22 @@
         <Parameter Name="varIndex" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="varIndex">An expression that specifies the position of a member of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocumentsCollection" />. If a numeric expression, the argument must be a number from 0 to the value of the <see cref="P:Microsoft.Office.Interop.InfoPath.XDocuments2.Count" /> minus 1. If a string expression, the argument must be the Uniform Resource Locator (URL) path of a member of the collection.</param>
+        <summary>Gets a reference to the specified <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object from the collection.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>If the value provided for the <paramref name="varIndex" /> argument does not match any existing member of the collection, an error occurs.</para>
+          <para>After you have set a reference to the <b>XDocument</b> object that the <b>Item</b> property returns, you can access any of its properties or methods.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>Because the <b>Item</b> property is the default property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocumentsCollection" /> collection, it can be used as follows:</para>
+          <code>XDocument firstDocument;
+firstDocument = thisApplication.XDocuments[0];</code>
+          <para>You can use the name of the <b>XDocument</b> as the argument to the <b>Item</b> method, as shown in the following example:</para>
+          <code>XDocument myFormDocument;
+myFormDocument = thisApplication.XDocuments[@"C:\MyForm.xml"];</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="New">
@@ -187,11 +212,20 @@
         <Parameter Name="dwBehavior" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="varURI">To be added.</param>
-        <param name="dwBehavior">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="varURI">Specifies the Uniform Resource Identifier (URI) of a form.</param>
+        <param name="dwBehavior">Default value is 1. A value that specifies how the form should be opened. The values are based on the <see cref="T:Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode" /> enumeration.</param>
+        <summary>Creates a new Microsoft Office InfoPath form based on the specified form.</summary>
+        <returns>An <see cref="T:Microsoft.Office.Interop.InfoPath._XDocument" /> object.</returns>
+        <remarks>
+          <para>The <b>New</b> method can only be used to create a new form based on an existing form; it cannot be used to create a new form based on a form template. To create a form from a form template, use the <see cref="M:Microsoft.Office.Interop.InfoPath.XDocuments2.NewFromSolution(System.Object)" /> method.</para>
+          <para>When you use the <b>New</b> method, the new form opens in InfoPath and is ready to be filled out.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>New</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocumentsCollection" /> collection is passed the URI of an existing form, and a new form is created and its associated <see cref="T:Microsoft.Office.Interop.InfoPath._XDocument" /> object returned:</para>
+          <code>XDocument newDocument;
+newDocument = thisApplication.XDocuments.&lt;span class="label"&gt;New&lt;/span&gt;(@"C:\MyForm.xml", 1);</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="NewFromSolution">
@@ -221,10 +255,20 @@
         <Parameter Name="varURI" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varURI">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="varURI">Specifies the Uniform Resource Identifier (URI) of a form.</param>
+        <summary>Creates a new Microsoft Office InfoPath form based on the specified form template.</summary>
+        <returns>An <see cref="T:Microsoft.Office.Interop.InfoPath._XDocument" /> object.</returns>
+        <remarks>
+          <para>The <b>NewFromSolution</b> method can only be used to create a new form based on an existing form template; it cannot be used to create a new form based on a form. To create a form from an existing form, use the <see cref="M:Microsoft.Office.Interop.InfoPath.XDocuments2.New(System.Object,System.Int32)" /> method.</para>
+          <para>When you use the <b>NewFromSolution</b> method, the new form opens in InfoPath and is ready to be filled out.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>NewFromSolution</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocumentsCollection" /> collection is passed the URI of an existing form template, and a new form is created and its associated <see cref="T:Microsoft.Office.Interop.InfoPath._XDocument" /> object returned:</para>
+          <code>XDocument newDocument;
+
+newDocument = thisApplication.XDocuments. &lt;span class="label"&gt;NewFromSolution&lt;/span&gt; (@"C:\MyForm.xsn");</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="NewFromSolutionWithData">
@@ -252,12 +296,39 @@
         <Parameter Name="dwBehavior" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="varXMLData">To be added.</param>
-        <param name="varSolutionURI">To be added.</param>
-        <param name="dwBehavior">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="varXMLData">Provides the XML data to be used as a template for the form. Can be a string that specifies the Uniform Resource Identifier (URI) of an XML document, or an <b>XMLDOMNode</b> that contains the XML to be used as the XML document (template).</param>
+        <param name="varSolutionURI">Specifies the Uniform Resource Identifier (URI) of a form template file (an .xsf or .xsn file).</param>
+        <param name="dwBehavior">Reserved for future use. This value should be set to 1.</param>
+        <summary>Creates a new Microsoft Office InfoPath form using the specified XML data and form template.</summary>
+        <returns>An <see cref="T:Microsoft.Office.Interop.InfoPath._XDocument" /> object.</returns>
+        <remarks>
+          <para>The following related methods of the XDocuments collection are also available:</para>
+          <list type="bullet">
+            <item>
+              <description>The <see cref="M:Microsoft.Office.Interop.InfoPath.XDocuments2.New(System.Object,System.Int32)" /> method enables creating a new instance of InfoPath by using a specified XML document. The XML document must correspond to an InfoPath form. A new form is opened in InfoPath, using the supplied XML document as initial data, and its associated form template as specified in the processing instructions in the header of the document.</description>
+            </item>
+            <item>
+              <description>The <see cref="M:Microsoft.Office.Interop.InfoPath.XDocuments2.NewFromSolution(System.Object)" /> method enables creating a new instance of InfoPath using a specified form template, and its associated XML form (the initial template data). </description>
+            </item>
+          </list>
+          <para>The <b>NewFromSolutionWithData</b> method supports a scenario that is not provided by the foregoing two methods: specifying both the XML document used as initial data and the form template. The XML document does not need to have been created by InfoPath. It can be supplied either as a URI or as an <b>XMLDOMNode</b>.</para>
+          <para>When you use the <b>NewFromSolutionWithData</b> method, the new form opens in InfoPath and is ready to be filled out.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>Example 1:</para>
+          <code>// open a solution from an XML DOM
+// Create a new DOM 
+IXMLDOMDocument newDoc=thisXDocument.CreateDOM();
+//Load DOM with some XML
+string myXml="&amp;lt;person&amp;gt;&amp;lt;firstName/&amp;gt;&amp;lt;lastName/&amp;gt;&amp;lt;address/&amp;gt;&amp;lt;city/&amp;gt;&amp;lt;country/&amp;gt;&amp;lt;/person&amp;gt;”;
+newDoc.loadXML(myXml);
+// Call NewSolutionWithData to open a new Form and load the XML
+// the solution to edit the xml was published on SharePoint thisApplication.XDocuments.&lt;span class="label"&gt;NewFromSolutionWithData&lt;/span&gt;(newDoc.documentElement,"http://localhost/Sample/forms/template.xsn",(int)XdDocumentVersionMode.xdFailOnVersionOlder);</code>
+          <para>Example 2:</para>
+          <code>// Open a solution from an xml file on disc
+// the solution to edit the xml was published on SharePoint thisApplication.XDocuments.&lt;span class="label"&gt;NewFromSolutionWithData&lt;/span&gt;(“c:\\myXmlFiles\\Sample.xml”,"http://localhost/Sample/forms/template.xsn",(int)XdDocumentVersionMode.xdFailOnVersionOlder);</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -287,11 +358,20 @@
         <Parameter Name="dwBehavior" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="varURI">To be added.</param>
-        <param name="dwBehavior">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="varURI">Specifies the Uniform Resource Identifier (URI) of a form.</param>
+        <param name="dwBehavior">Default value is 1. A value that specifies how the form should be opened. The values are based on the <see cref="T:Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode" /> enumeration.</param>
+        <summary>Opens the specified Microsoft Office InfoPath form.</summary>
+        <returns>An <see cref="T:Microsoft.Office.Interop.InfoPath._XDocument" /> object.</returns>
+        <remarks>
+          <para>The <b>Open</b> method can only be used to open a form; it cannot be used to open a form template. To create a form from a form template, use the <see cref="M:Microsoft.Office.Interop.InfoPath.XDocuments2.NewFromSolution(System.Object)" /> method. To create a form based on an existing form, use the <see cref="M:Microsoft.Office.Interop.InfoPath.XDocuments2.New(System.Object,System.Int32)" /> method.</para>
+          <para>When you use the <b>Open</b> method, the specified form opens in InfoPath and is ready to be filled out.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>Open</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocumentsCollection" /> collection is passed the URI of an existing form, and the form is opened and its associated <see cref="T:Microsoft.Office.Interop.InfoPath._XDocument" /> object returned:</para>
+          <code>XDocument document;
+document = thisApplication.XDocuments.&lt;span class="label"&gt;Open&lt;/span&gt;(@"C:\MyForm.xml", 1);</code>
+        </example>
       </Docs>
     </Member>
   </Members>

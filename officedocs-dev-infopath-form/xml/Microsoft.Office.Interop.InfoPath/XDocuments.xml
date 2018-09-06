@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about the later version of this interface, including usage remarks and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.XDocuments2" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -52,7 +52,7 @@
       </Parameters>
       <Docs>
         <param name="varIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="M:Microsoft.Office.Interop.InfoPath.XDocuments2.Close(System.Object)" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,7 +80,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="P:Microsoft.Office.Interop.InfoPath.XDocuments2.Count" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,7 +113,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="M:Microsoft.Office.Interop.InfoPath.XDocuments2.GetEnumerator" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,7 +146,7 @@
       </Parameters>
       <Docs>
         <param name="varIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="P:Microsoft.Office.Interop.InfoPath.XDocuments2.Item(System.Object)" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -177,7 +177,7 @@
       <Docs>
         <param name="varURI">To be added.</param>
         <param name="dwBehavior">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="M:Microsoft.Office.Interop.InfoPath.XDocuments2.New(System.Object,System.Int32)" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -207,7 +207,7 @@
       </Parameters>
       <Docs>
         <param name="varURI">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="M:Microsoft.Office.Interop.InfoPath.XDocuments2.NewFromSolution(System.Object)" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -238,7 +238,7 @@
       <Docs>
         <param name="varURI">To be added.</param>
         <param name="dwBehavior">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="M:Microsoft.Office.Interop.InfoPath.XDocuments2.Open(System.Object,System.Int32)" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

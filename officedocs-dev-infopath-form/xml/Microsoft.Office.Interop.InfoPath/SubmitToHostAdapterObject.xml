@@ -23,8 +23,45 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a connection for submitting data to a hosting environment.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.SubmitToHostAdapter" />.</para>
+      <para>This type of connection is used in a form template that is opened by an application that is hosting the InfoPath form editing environment as a control. For information about hosting InfoPath as a control, including information on how to create a method to handle the event for submitting a form in your host application’s code, see the MSDN article <a href="http://go.microsoft.com/fwlink/?LinkId=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+      <para>To create a data connection for submitting data to a hosting environment that can be referenced from business logic in a form template, use the Data Connections command on the Tools menu. For information on how to create an event handler that will run when the <see cref="E:Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnSubmitRequest" /> event is raised, see How to: Add an Event Handler Using the InfoPath 2003 Object Model.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>The following example shows a pattern for writing code that will perform custom actions in a form template's business logic before the form is submitted.</para>
+      <code>[InfoPathEventHandler(EventType = InfoPathEventType.OnSubmitRequest]
+public void FormEvents_OnSubmitRequest(DocReturnEvent e)
+{
+   // Get the data adapter defined in the form template from the 
+   // DataAdapters collection and cast to the SubmitToHostAdapter
+   // type.
+   SubmitToHostAdapter submitAdapter = 
+      (SubmitToHostAdapter)(DataAdapters["MyHostAdapter"]);
+
+   // Write code here to do custom actions that are not 
+   // supported by rules or other declarative settings.  
+
+   // Execute the submit operation against the adapter.
+   submitAdapter.Submit();</code>
+      <code>&amp;lt;InfoPathEventHandler(EventType := InfoPathEventType.OnSubmitRequest)&amp;gt;
+Public Sub FormEvents_OnSubmitRequest(ByVal e As DocReturnEvent)
+   ' Get the data connection defined in the form template from the
+   ' DataAdapters collection and cast to the SubmitToHostAdapter
+   ' type.
+   Dim submitAdapter As SubmitToHostAdapter = _
+      DirectCast(DataAdapters("MyHostAdapter"), _
+      SubmitToHostAdapter)
+
+   ' Write code here to do custom actions that are not 
+   ' supported by rules or other declarative settings.
+
+   ' Execute the submit operation against the connection.
+   submitAdapter.Submit()
+End Sub</code>
+    </example>
   </Docs>
   <Members />
 </Type>

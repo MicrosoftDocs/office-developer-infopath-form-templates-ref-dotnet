@@ -23,8 +23,24 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The collection of <see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" /> objects in the form template as defined in the form definition file (.xsf).</summary>
+    <remarks>
+      <para>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlocks" />.</para>
+      <para>The <b>SignedDataBlocksCollection</b> collection implements properties that can be used to access the <b>SignedDataBlock</b> objects associated with a form. The <b>SignedDataBlocksCollection</b> is accessible through the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument2.SignedDataBlocks" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>The following example returns every set of data in the form which can be signed, and displays a message box with the name and number of signatures in each set of data:</para>
+      <code>public void DisplaySDBProperties()
+{
+ &lt;span class="label"&gt;SignedDataBlocks&lt;/span&gt; mySignedDataBlocks = thisXDocument.&lt;span class="label"&gt;SignedDataBlocks&lt;/span&gt;;
+ thisXDocument.UI.Alert("Sets of data which can be signed = " + mySignedDataBlocks.Count.ToString());
+ for(int i=0; i&amp;lt; mySignedDataBlocks.Count; i++)
+ {
+  thisXDocument.UI.Alert("SDB #" + i.ToString() + " name is " + mySignedDataBlocks[i].Name + " and has " + mySignedDataBlocks[i].Signatures.Count.ToString() + " signatures.");
+ }
+}</code>
+    </example>
   </Docs>
   <Members />
 </Type>

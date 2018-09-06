@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about the later version of this interface, including usage remarks and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath._Application3" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.WindowObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="P:Microsoft.Office.Interop.InfoPath._Application3.ActiveWindow" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -81,7 +81,7 @@
         <param name="varInput">To be added.</param>
         <param name="bstrCategory">To be added.</param>
         <param name="bstrOptions">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="M:Microsoft.Office.Interop.InfoPath._Application3.FormatString(System.Object,System.String,System.String)" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -110,7 +110,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="P:Microsoft.Office.Interop.InfoPath._Application3.LanguageSettings" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -139,7 +139,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="P:Microsoft.Office.Interop.InfoPath._Application3.Name" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -166,7 +166,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="M:Microsoft.Office.Interop.InfoPath._Application3.NewADODBConnection" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -193,7 +193,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="M:Microsoft.Office.Interop.InfoPath._Application3.NewADODBRecordset" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -222,7 +222,7 @@
       </Parameters>
       <Docs>
         <param name="bForce">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="M:Microsoft.Office.Interop.InfoPath._Application3.Quit(System.Boolean)" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,7 +250,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="P:Microsoft.Office.Interop.InfoPath._Application3.Version" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -279,7 +279,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.WindowsCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="P:Microsoft.Office.Interop.InfoPath._Application3.Windows" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -308,7 +308,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.XDocumentsCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="P:Microsoft.Office.Interop.InfoPath._Application3.XDocuments" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

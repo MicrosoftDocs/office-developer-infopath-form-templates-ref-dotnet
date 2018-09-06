@@ -23,8 +23,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a data connection for retrieving data from a SharePoint list or document library.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.SharePointListAdapterRW" /></para>
+      <para>
+        <b>Note</b>: Code written with the members implemented by the <see cref="T:Microsoft.Office.Interop.InfoPath.SharePointListAdapterRWObject" /> class is not compatible with a data connection to a SharePoint list or document library created in InfoPath 2003 or InfoPath 2007, with a data connection in a new form template created in InfoPath with one of the InfoPath 2007 Form Templates, or with a data connection converted with the Convert to Previous Version button in the Data Connections dialog box. If you do not need to maintain compatibility with an earlier version of InfoPath and want to write code with members implemented by the <see cref="T:Microsoft.Office.Interop.InfoPath.SharePointListAdapterRWObject" /> class, you can convert the data connection with the Convert to Current Version button in the Data Connections dialog box.</para>
+      <para>The <see cref="T:Microsoft.Office.Interop.InfoPath.SharePointListAdapterRW" /> object represents a Microsoft InfoPath data connection for retrieving from a SharePoint list or document library.</para>
+      <para>For a secondary data source, the <see cref="T:Microsoft.Office.Interop.InfoPath.SharePointListAdapterRW" /> object is accessible through the <see cref="P:Microsoft.Office.Interop.InfoPath.DataObject.QueryAdapter" /> property of <see cref="T:Microsoft.Office.Interop.InfoPath.DataSourceObject" /> object. Data adapter objects are accessible through the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument2.DataAdapters" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members />
 </Type>

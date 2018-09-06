@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.MailEnvelopeObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -54,9 +54,26 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.XdAttachmentType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the type of file to be attached to the e-mail message.</summary>
+        <value>An <see cref="T:Microsoft.Office.Interop.InfoPath.XdAttachmentType" /> that specifies the type of file that is attached to the e-mail message.</value>
+        <remarks>
+          <para>Set to <b>XdAttachmentType.xdXml</b> to send only the form file (.xml). Set to <b>XdAttachmentType.xdXmlXsn</b> to send the form file (.xml) along with its associated form template file (.xsn).</para>
+          <para />
+        </remarks>
+        <example>
+          <para>The following example sets a reference to the <b>MailEnvelope2</b> object, sets envelope properties, and then displays the e-mail envelope.</para>
+          <code>MailEnvelope2 myEnv = 
+   (MailEnvelope2)thisApplication.ActiveWindow.MailEnvelope;
+myEnv.To = "someone@example.com";
+myEnv.&lt;span class="label"&gt;CC&lt;/span&gt; = "someone@example.com";
+myEnv.BCC = "someone@example.com";
+myEnv.Subject = "Test e-mail message";
+myEnv.Intro = "This is the InfoPath form you requested.";
+myEnv.&lt;span class="label"&gt;AttachmentType&lt;/span&gt; = XdAttachmentType.xdXmlXsn;
+
+// Display form with e-mail envelope.
+myEnv.Visible = true;</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Available">
@@ -83,9 +100,35 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets whether the other properties of the <see cref="T:Microsoft.Office.Interop.InfoPath.MailEnvelope2" /> object are available to code running in the form.</summary>
+        <value>
+          <b>true</b> if the other properties of the <see cref="T:Microsoft.Office.Interop.InfoPath.MailEnvelope2" /> object are available to code running in the form; otherwise <b>false</b>.</value>
+        <remarks>
+          <para>The <b>Available</b> property is use to test whether the form is open in Microsoft Outlook 2010. If a form is sent as an e-mail attachment to a user running Microsoft Outlook 2010, the form will open within Outlook. In this context, it is not appropriate to programmatically create an e-mail message for attaching and sending the currently open InfoPath form because the form and e-mail message to which it is attached are already open in Outlook, and the <b>Available</b> property will return <b>false</b>. If the form is opened in InfoPath, the <b>Available</b> property will return <b>true</b> and form code can use the properties of the <b>MailEnvelope2</b> object.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>The following example sets a reference to the <b>MailEnvelopeObject</b> object, uses the <b>Available</b> property to determine if the form is open Microsoft Outlook 2010, and if so, in sets envelope properties, and then displays the e-mail envelope.</para>
+          <code>// Set a reference to the MailEnvelope2 object.
+MailEnvelope2 myEnv = 
+   (MailEnvelope2)thisApplication.ActiveWindow.MailEnvelope;
+if (myEnv.&lt;span class="label"&gt;Available)&lt;/span&gt;
+{
+   // Specify addresses and subject.
+   myEnv.To = "someone@example.com";
+   myEnv.CC = "someone@example.com";
+   myEnv.BCC = "someone@example.com";
+   myEnv.Subject = "Open this form";
+
+   // Display form with e-mail envelope.
+   myEnv.Visible = true;
+}
+else
+{
+   // The form is open in Outlook, and code will not run.
+   thisXDocument.UI.Alert("This form is open in Outlook.");
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="BCC">
@@ -118,9 +161,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the blind carbon copy (BCC) value used in <see cref="T:Microsoft.Office.Interop.InfoPath.MailEnvelopeObject" /> that is associated with a <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object.</summary>
+        <value>The blind carbon copy (BCC) addresses.</value>
+        <remarks>
+          <para>The values set for the <b>BCC</b> property should be a string of valid e-mail addresses. You can specify multiple e-mail addresses by using a semi-colon (";") between each of them.</para>
+          <para />
+        </remarks>
+        <example>
+          <code>MailEnvelopeObject myEnv = thisApplication.ActiveWindow.MailEnvelope;
+myEnv.To = "someone@example.com";
+myEnv.CC = "someone@example.com";
+myEnv.&lt;span class="label"&gt;BCC&lt;/span&gt; = "someone@example.com";
+myEnv.Subject = "Test e-mail message";</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="CC">
@@ -153,9 +206,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the carbon copy (CC) value used in the <see cref="T:Microsoft.Office.Interop.InfoPath.MailEnvelopeObject" /> object that is associated with a <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object.</summary>
+        <value>The carbon copy (CC) addresses.</value>
+        <remarks>
+          <para>The values set for the <b>CC</b> property should be a string of valid e-mail addresses. You can specify multiple e-mail addresses by using a semi-colon (";") between each of them.</para>
+          <para />
+        </remarks>
+        <example>
+          <code>MailEnvelopeObject myEnv = thisApplication.ActiveWindow.MailEnvelope;
+myEnv.To = "someone@example.com";
+myEnv.&lt;span class="label"&gt;CC&lt;/span&gt; = "someone@example.com";
+myEnv.BCC = "someone@example.com";
+myEnv.Subject = "Test e-mail message";</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Intro">
@@ -185,9 +248,22 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the introduction in the body of the e-mail message.</summary>
+        <value>The introduction in the body of the e-mail message.</value>
         <remarks>To be added.</remarks>
+        <example>
+          <para>The following example sets a reference to the <b>MailEnvelope2</b> object, sets envelope properties, and then displays the e-mail envelope.</para>
+          <code>MailEnvelope2 myEnv = 
+   (MailEnvelope2)thisApplication.ActiveWindow.MailEnvelope;
+myEnv.To = "someone@example.com";
+myEnv.&lt;span class="label"&gt;CC&lt;/span&gt; = "someone@example.com";
+myEnv.BCC = "someone@example.com";
+myEnv.Subject = "Test e-mail message";
+myEnv.&lt;span class="label"&gt;Intro&lt;/span&gt; = "This is the InfoPath form you requested.";
+
+// Display form with e-mail envelope.
+myEnv.Visible = true;</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Subject">
@@ -220,9 +296,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the subject value used in the <see cref="T:Microsoft.Office.Interop.InfoPath.MailEnvelopeObject" /> object that is associated with a <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object.</summary>
+        <value>The subject line.</value>
+        <remarks>
+          <para>The <b>MailEnvelope</b> object does not support the programmatic creation of the body of an e-mail message. Users enter the body text after the e-mail message is displayed in Microsoft Outlook.</para>
+          <para />
+        </remarks>
+        <example>
+          <code>MailEnvelopeObject myEnv = thisApplication.ActiveWindow.MailEnvelope;
+myEnv.To = "someone@example.com";
+myEnv.CC = "someone@example.com";
+myEnv.BCC = "someone@example.com";
+myEnv.&lt;span class="label"&gt;Subject&lt;/span&gt; = "Test e-mail message";</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="To">
@@ -255,9 +341,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the send-to value used in the <see cref="T:Microsoft.Office.Interop.InfoPath.MailEnvelopeObject" /> object that is associated with a <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object.</summary>
+        <value>The recipient (To) addresses.</value>
+        <remarks>
+          <para>The values set for the <b>To</b> property should be a string of valid e-mail addresses. You can specify multiple e-mail addresses by using a semi-colon (";") between each of them.</para>
+          <para />
+        </remarks>
+        <example>
+          <code>MailEnvelopeObject myEnv = thisApplication.ActiveWindow.MailEnvelope;
+myEnv.&lt;span class="label"&gt;To&lt;/span&gt; = "someone@example.com";
+myEnv.CC = "someone@example.com";
+myEnv.BCC = "someone@example.com";
+myEnv.Subject = "Test e-mail message";</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -290,9 +386,18 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the visibility of the custom e-mail message created with a <see cref="T:Microsoft.Office.Interop.InfoPath.MailEnvelopeObject" /> object that is associated with a <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object.</summary>
+        <value>
+          <b>true</b> if the envelope is visible; otherwise <b>false</b>.</value>
+        <remarks>
+          <para>When the <b>Visible</b> property of the <b>MailEnvelope</b> object is set to <b>true</b>, the custom e-mail message will be displayed using Microsoft Office Outlook 2003. If there is no default e-mail editor configured, the <b>Visible</b> property will return an error.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>Visible</b> property of the <b>MailEnvelope</b> object is used to display an e-mail message in Microsoft Office Outlook 2003:</para>
+          <code>MailEnvelopeObject myEnv = thisApplication.ActiveWindow.MailEnvelope;
+myEnv.&lt;span class="label"&gt;Visible&lt;/span&gt; = true;</code>
+        </example>
       </Docs>
     </Member>
   </Members>

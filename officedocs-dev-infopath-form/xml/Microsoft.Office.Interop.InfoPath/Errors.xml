@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.ErrorsCollection" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -55,15 +55,36 @@
         <Parameter Name="bstrType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="varNode">To be added.</param>
-        <param name="bstrConditionName">To be added.</param>
-        <param name="bstrShortErrorMessage">To be added.</param>
-        <param name="bstrDetailedErrorMessage">To be added.</param>
-        <param name="lErrorCode">To be added.</param>
-        <param name="bstrType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="varNode">The XML node that the error will be associated with.</param>
+        <param name="bstrConditionName">The name of the error.</param>
+        <param name="bstrShortErrorMessage">The short message for the error.</param>
+        <param name="bstrDetailedErrorMessage">The detailed message for the error.</param>
+        <param name="lErrorCode">The error code of the error.</param>
+        <param name="bstrType">Default value is "modeless". The type of error processing. The other supported value is "modal".</param>
+        <summary>Adds an <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorObject" /> to <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorsCollection" /> and returns a reference to the new <b>Error</b> object.</summary>
+        <returns>An <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorObject" /> object which represents the newly created <b>Error</b>.</returns>
+        <remarks>
+          <para>The <b>Add</b> method is used to create custom error messages in a Microsoft InfoPath form. There are two types of errors that can be created using the <b>Add</b> method:</para>
+          <list type="table">
+            <item>
+              <term>modeless</term>
+              <description>The user is notified of the error with an inline alert and can choose to return to the previous value with an undo operation</description>
+            </item>
+            <item>
+              <term>modal</term>
+              <description>The user is notified of the error with a dialog box alert. After clicking OK in the dialog box alert, the error will appear as an inline alert and the user can choose to return to the previous value with an undo operation</description>
+            </item>
+          </list>
+          <para>
+            <b>Note</b>: Custom errors can also be created using the <see cref="M:Microsoft.Office.Interop.InfoPath.DataDOMEvent.ReportError(System.Object,System.String,System.Boolean,System.String,System.Int32,System.String)" /> method.</para>
+          <para />
+        </remarks>
+        <example>
+          <code>//Add an error to the node
+IXMLDOMDocument myDOM = thisXDocument.DOM;
+IXMLDOMNode myNode = myDOM.selectSingleNode("my:myFields/my:aGroup/my:field1");
+thisXDocument.Errors.&lt;span class="label"&gt;Add&lt;/span&gt;(myNode,"condition","short","detail",102057,"modeless");</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -90,9 +111,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a count of the number of <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorObject" /> objects contained in the collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <example>
+          <para>In the following example, the <b>Count</b> property is used to iterate through the collection of <b>Error</b> objects and display a message box indicating the short error message of each error:</para>
+          <code>for (int i=0; i &amp;lt; thisXDocument.Errors.&lt;span class="label"&gt;Count&lt;/span&gt;; i++)
+{
+ thisXDocument.UI.Alert("Error message: " + thisXDocument.Errors[i].ShortErrorMessage);
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -120,10 +148,21 @@
         <Parameter Name="bstrConditionName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="varNode">To be added.</param>
-        <param name="bstrConditionName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="varNode">The XML Document Object Model (DOM) node associated with the error.</param>
+        <param name="bstrConditionName">The name of the error.</param>
+        <summary>Deletes the specified <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorObject" /> object from the <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorsCollection" /> collection.</summary>
+        <remarks>
+          <para>The <b>Delete</b> method deletes all the <b>Error</b> objects in the <b>Errors</b> collection that are associated with the specified XML node and that have the same name. To delete all of the <b>Error</b> objects contained in the <b>Errors</b> collection, use the <see cref="M:Microsoft.Office.Interop.InfoPath.Errors.DeleteAll" /> method.</para>
+          <para>
+            <b>Note</b>: The <b>Delete</b> method will only delete errors that were created using the <see cref="M:Microsoft.Office.Interop.InfoPath.Errors.Add(System.Object,System.String,System.String,System.String,System.Int32,System.String)" /> method. It cannot be used to delete errors that occur because of schema or data validation constraints, or errors that were created using the <see cref="M:Microsoft.Office.Interop.InfoPath.DataDOMEvent.ReportError(System.Object,System.String,System.Boolean,System.String,System.Int32,System.String)" /> method.</para>
+          <para />
+        </remarks>
+        <example>
+          <code>//Delete the errors associated with a specific node
+IXMLDOMDocument myDOM = thisXDocument.DOM;
+IXMLDOMNode myNode = myDOM.selectSingleNode("my:myFields/my:aGroup/my:field1");
+thisXDocument.Errors.&lt;span class="label"&gt;Delete&lt;/span&gt;(myNode,thisXDocument.Errors[0].ConditionName.ToString());</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="DeleteAll">
@@ -148,8 +187,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Deletes all of the <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorObject" /> objects contained in the <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorsCollection" /> collection.</summary>
+        <remarks>
+          <para>To delete a specific <b>Error</b> object from the <b>Errors</b> collection, use the <b>Delete</b> method.</para>
+          <para>
+            <b>Note</b>: Unlike the <see cref="M:Microsoft.Office.Interop.InfoPath.Errors.Delete(System.Object,System.String)" /> method that will only delete errors that were created using the <see cref="M:Microsoft.Office.Interop.InfoPath.Errors.Add(System.Object,System.String,System.String,System.String,System.Int32,System.String)" /> method, the <b>DeleteAll</b> method will delete all errors in the collection, regardless of how they were created.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>DeleteAll</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorsCollection" /> collection is used to delete all the errors that it contains:</para>
+          <code>thisXDocument.Errors.&lt;span class="label"&gt;DeleteAll&lt;/span&gt;();</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -180,8 +228,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an <b>IEnumerator</b> that iterates over all entries in the  <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorsCollection" /> object.</summary>
+        <returns>An IEnumerator that iterates over all entries in the <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorsCollection" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,10 +260,18 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">An expression that specifies the position of a member of the <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorsCollection" /> collection The argument must be a number from 0 to the value of the <see cref="P:Microsoft.Office.Interop.InfoPath.Errors.Count" /> property minus 1.</param>
+        <summary>Gets a reference to the specified <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorObject" /> object from the collection.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>If the value provided for the <paramref name="index" /> argument does not match any existing member of the collection, an error occurs.</para>
+          <para>After you have set a reference to the <b>Error</b> object that the <b>Item</b> method returns, you can access any of its properties or methods.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>Because the <b>Item</b> property is the default property of the <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorsCollection" /> collection, it can be used as follows:</para>
+          <code>Error nextError = thisXDocument.Errors[i];</code>
+        </example>
       </Docs>
     </Member>
   </Members>

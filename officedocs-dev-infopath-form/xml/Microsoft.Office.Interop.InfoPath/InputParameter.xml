@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.InputParameterObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,9 +47,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the name of the input parameter that the <see cref="T:Microsoft.Office.Interop.InfoPath.InputParameter" /> object represents.</summary>
+        <value>The name of the input parameter.</value>
+        <remarks>
+          <para>The <b>Name</b> property returns the name of the name/value pair specified in the command-line or URL.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -76,9 +79,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the value of the input parameter that the <see cref="T:Microsoft.Office.Interop.InfoPath.InputParameter" /> object represents.</summary>
+        <value>The value of the input parameter.</value>
+        <remarks>
+          <para>The <b>Value</b> property returns the value of the name/value pair specified in the command-line or URL.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
   </Members>

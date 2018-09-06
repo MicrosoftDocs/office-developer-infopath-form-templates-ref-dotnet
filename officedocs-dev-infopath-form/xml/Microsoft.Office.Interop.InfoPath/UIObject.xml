@@ -23,8 +23,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents various user interface components that can be used in a Microsoft Office InfoPath form.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.UI2" />.</para>
+      <para>The <b>UIObject</b> (user interface) object provides a number of methods for displaying custom and built-in dialog boxes. </para>
+      <para>The <b>UIObject</b> object is used to programmatically display various types of dialog boxes to users as they fill out a form. It is not used for modifying the InfoPath user interface.</para>
+      <para>The <b>UIObject</b> object is accessed through the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument2.UI" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object.</para>
+      <para>The <b>UIObject</b> object provides the <see cref="M:Microsoft.Office.Interop.InfoPath.UI.Alert(System.String)" /> method, which is used to display a simple message box with some custom text, as shown in the following example:</para>
+      <code>thisXDocument.UI.Alert("Custom message text goes here.");
+</code>
+      <para>One of the built-in InfoPath dialog boxes that the UI object can display is the Digital Signatures dialog box; this dialog box can be displayed to the user by using the <see cref="M:Microsoft.Office.Interop.InfoPath.UI.ShowSignatureDialog" /> method, as follows:</para>
+      <code>thisXDocument.UI.ShowSignatureDialog();
+</code>
+      <para>
+        <b>Note</b>: The <b>ShowSignatureDialog</b> method can be used only in forms that have been enabled for digital signing. The method will return an error if used in a form that is not enabled for digital signing.</para>
+      <para>For more information about using the <b>UIObject</b> object, see How to: Display Alerts and Dialog Boxes.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members />
 </Type>

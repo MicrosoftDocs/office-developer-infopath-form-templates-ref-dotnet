@@ -23,8 +23,22 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents values that can be passed to a new instance of a form through command-line or Uniform Resource Locator (URL) name/value pairs.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.InputParameter" />.</para>
+      <para>The <b>InputParameter</b> object contains a name/value pair for each parameter passed to InfoPath through a command-line, using the /InputParameters option, or through a URL string. The following syntax will open a new InfoPath form based on the form template specified and with two name/value input parameter pairs:</para>
+      <list type="bullet">
+        <item>
+          <description>Command-line:</description>
+        </item>
+        <item>
+          <description>URL:</description>
+        </item>
+      </list>
+      <para>
+        <b>Note</b>: If the form template is published to Microsoft SharePoint Server 2010 with InfoPath Forms Services, there may be other name/value pairs that are automatically inserted by the server when input parameters are used with a URL. Specific input parameters may have different index values when using a URL than when using the /InputParameters command-line option.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members />
 </Type>

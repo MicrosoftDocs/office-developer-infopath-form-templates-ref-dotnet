@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.XMLNodesCollection" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -51,9 +51,18 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a count of the number of XML Document Object Model (DOM) node objects contained in the <see cref="T:Microsoft.Office.Interop.InfoPath.XMLNodesCollection" /> collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <example>
+          <para>In the following example, the <b>Count</b> property is used within a <b>for</b> loop to iterate through the collection of XML DOM node objects returned by the <see cref="M:Microsoft.Office.Interop.InfoPath.View.GetSelectedNodes" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ViewObject" /> object and display a message box indicating the name of each XML DOM node that is contained in the <b>XMLNodes</b> collection:</para>
+          <code>XMLNodes selectedNodes;
+selectedNodes = thisXDocument.View.GetSelectedNodes();
+for (int i=0; i &amp;lt; selectedNodes.&lt;span class="label"&gt;Count&lt;/span&gt;; i++)
+{
+ thisXDocument.UI.Alert("XML DOM node name: " + selectedNodes[i].nodeName);
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -84,8 +93,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an <b>IEnumerator</b> that iterates over all entries in the <see cref="T:Microsoft.Office.Interop.InfoPath.XMLNodesCollection" /> object.</summary>
+        <returns>An <b>IEnumerator</b> that iterates over all entries in the <see cref="T:Microsoft.Office.Interop.InfoPath.XMLNodesCollection" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,10 +125,21 @@
         <Parameter Name="varIndex" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="varIndex">A numeric expression that specifies the position of a member of the <b>XMLNodesCollection</b> collection. The argument must be a number from 0 to the value of the collection's <see cref="P:Microsoft.Office.Interop.InfoPath.XMLNodes.Count" /> property minus 1.</param>
+        <summary>Gets a reference to the specified XML Document Object Model (DOM) node from the <see cref="T:Microsoft.Office.Interop.InfoPath.XMLNodesCollection" /> collection.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>If the value provided for the <paramref name="varIndex" /> argument does not match any existing member of the collection, an error occurs.</para>
+          <para>After you have set a reference to the XML DOM node object that <b>Item</b> property returns, you can access any of its properties and methods.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>Because the <b>Item</b> property is the default property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XMLNodesCollection" /> collection, it can be used as follows:</para>
+          <code>XMLNodes contextNodes;
+IXMLDOMNode contextNode;
+contextNodes = thisXDocument.View.GetContextNodes(Type.Missing, Type.Missing);
+contextNode = contextNodes[0];</code>
+        </example>
       </Docs>
     </Member>
   </Members>

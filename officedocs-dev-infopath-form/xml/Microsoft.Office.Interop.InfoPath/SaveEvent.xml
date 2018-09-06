@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.SaveEventObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -51,9 +51,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the file name to be used in the <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnSaveRequest" /> event.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>If the <see cref="P:Microsoft.Office.Interop.InfoPath.SaveEvent.IsSaveAs" /> property of the <b>SaveEvent</b> object is <b>true</b>, and a save operation has not yet occurred, the <b>FileName</b> property returns an empty string. If the <b>IsSaveAs</b> property is <b>true</b> and a save operation has already occurred, the value returned by the <b>FileName</b> property is the file name under which the form was saved. If the <b>SaveEvent</b> object represents a save operation (that is, the <b>IsSaveAs</b> property is <b>false</b>), the <b>FileName</b> property returns the same value as the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument2.URI" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>FileName</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.SaveEventObject" /> object is used in a notification to the user before a save operation:</para>
+          <code>public void OnSaveRequest(SaveEvent e)
+{
+ thisXDocument.UI.Alert("You are about to save this file: " + e.&lt;span class="label"&gt;FileName&lt;/span&gt;);
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="IsCancelled">
@@ -83,9 +93,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets a value that provides additional information for use in <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnSaveRequest" /> event in conjunction with the <see cref="P:Microsoft.Office.Interop.InfoPath.SaveEvent.ReturnStatus" /> property.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>When closing InfoPath, the user is prompted to save the document if the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument2.IsDirty" /> property is <b>true</b>. If the <see cref="P:Microsoft.Office.Interop.InfoPath.SaveEvent.IsCancelled" /> property is <b>true</b>, InfoPath will be prevented from closing if the save operation fails (that is, the <see cref="P:Microsoft.Office.Interop.InfoPath.SaveEvent.ReturnStatus" /> property is <b>false</b>).</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>IsCancelled</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.SaveEventObject" /> object is used to ensure that the document does not close if the save operation was cancelled:</para>
+          <code>e.&lt;span class="label"&gt;IsCancelled&lt;/span&gt; = e.PerformSaveOperation();
+if(e.&lt;span class="label"&gt;IsCancelled&lt;/span&gt;)
+    return;
+e.ReturnStatus = true;</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="IsSaveAs">
@@ -112,9 +132,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets whether the <see cref="M:Microsoft.Office.Interop.InfoPath.SaveEvent.PerformSaveOperation" /> method will be performed as a "save" operation or as a "save as" operation.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>IsSaveAs</b> property returns <b>true</b> when the event was triggered by a call to the <see cref="M:Microsoft.Office.Interop.InfoPath._XDocument2.SaveAs(System.String)" /> method, or by a call to the <see cref="M:Microsoft.Office.Interop.InfoPath._XDocument2.Save" /> method when the document is new, or by a call to either method when the document is read-only. Otherwise, the <b>IsSaveAs</b> property returns <b>false</b>.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PerformSaveOperation">
@@ -139,9 +162,17 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Performs the save operation requested by the user.</summary>
+        <returns>
+          <b>true</b> if the save operation is successful; otherwise <b>false</b>.</returns>
+        <remarks>
+          <para>The <b>PerformSaveOperation</b> method performs a "save" or "save as" operation depending on the value of the <see cref="P:Microsoft.Office.Interop.InfoPath.SaveEvent.IsSaveAs" /> property. If the operation is successful, the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument2.IsDirty" /> property is set to <b>false</b> and the <b>PerformSaveOperation</b> method returns <b>true</b>.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>PerformSaveOperation</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.SaveEventObject" /> object is used to save the form using the internal definition of save.</para>
+          <code>e.&lt;span class="label"&gt;PerformSaveOperation&lt;/span&gt;();</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="ReturnStatus">
@@ -174,9 +205,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the return status of the <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnSaveRequest" /> event.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>For the <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnSaveRequest" /> event, if the <b>ReturnStatus</b> property is set to <b>false</b>, the document is not saved. If set to <b>true</b>, the save operation is successful.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="XDocument">
@@ -206,7 +240,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.XDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object that is associated with the <see cref="T:Microsoft.Office.Interop.InfoPath.SaveEventObject" /> object in an <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnSaveRequest" /> event.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -23,8 +23,34 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Corresponds to a Microsoft Office InfoPath form template.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.Solution2" />.</para>
+      <para>The <b>SolutionObject</b> object implements properties for getting information about a form template, including its version number, the Uniform Resource Locator (URL) of its extracted form files, the URL it was loaded from, and an XML Document Object Model (DOM) containing its form definition (.xsf) file. </para>
+      <para>The <b>SolutionObject</b> object is accessed through the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument2.Solution" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>In the following example, a reference is set to the <b>Solution</b> object, then the code gets the name of the person who authored the form from the .xsf using the <see cref="P:Microsoft.Office.Interop.InfoPath.Solution2.DOM" /> property of the <b>Solution</b> object. A test is then made to determine if there is an author value, and the results are displayed in a message box.</para>
+      <code>public void SolutionInfo_OnClick(DocActionEvent e)
+{
+ &lt;span class="label"&gt;Solution&lt;/span&gt; solution = thisXDocument.&lt;span class="label"&gt;Solution&lt;/span&gt;;
+ string solutionVersion = solution.Version;
+ string authorText;
+ IXMLDOMNode author = solution.DOM.selectSingleNode("xsf:xDocumentClass/@author");
+  
+ if (author != null)
+ {
+  authorText = author.text;
+ }
+ else
+ {
+  authorText = "Author not available.";
+ }
+
+ thisXDocument.UI.Alert("Version: " + solutionVersion + "\nAuthor: " + authorText);
+}</code>
+    </example>
   </Docs>
   <Members />
 </Type>

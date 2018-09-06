@@ -23,8 +23,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a connection to a Microsoft ActiveX Data Objects/OLEDB data source.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.ADOAdapter2" />.</para>
+      <para>The <b>ADOAdapter</b> object is a type of Microsoft InfoPath data adapter that contains all the information necessary for retrieving and submitting data to an external data source.</para>
+      <para>The <b>ADOAdapter</b> object provides properties that can be used to get and set information about the data adapter's connection string, SQL command text, and timeout value. It also provides a method for creating a SQL command text fragment based on a specified XML node's attributes.</para>
+      <para>If an ADO/OLEDB data source is used as the primary data source for a form, the <b>ADOAdapter</b> object is accessible through the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument.QueryAdapter" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object.</para>
+      <para />
+    </remarks>
+    <example>
+      <code>// retrieve the Employees Adapter from the DataAdapters collection
+&lt;span class="label"&gt;ADOAdapter&lt;/span&gt; employeesDA=(&lt;span class="label"&gt;ADOAdapter&lt;/span&gt;)thisXDocument.DataAdapters["Employees"];
+// get employee’s ID from the main DOM
+string employeeID=thisXDocument.DOM.selectSingleNode("//my:field2").text;
+// Change the ADOAdapter’s command to retrieve the record of the Employee’s ID entered
+// by the user
+employeesDA.Command="select * from Employees where EmployeeID="+employeeID;
+// get DataObject from the DataObjects collection and call Query to refresh
+// the data object
+DataObject employeesDO=thisXDocument.DataObjects["Employees"];
+employeesDO.Query();</code>
+    </example>
   </Docs>
   <Members />
 </Type>

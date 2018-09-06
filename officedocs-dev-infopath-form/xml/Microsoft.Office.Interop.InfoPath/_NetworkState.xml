@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.XDNetworkState" /></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,10 +47,14 @@
         <Parameter Name="bstrDestination" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bstrDestination">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bstrDestination">Specifies the location to check for network connectivity as a Uniform Resource Locator (URL), universal naming convention (UNC) path, or IP address.</param>
+        <summary>Gets a value that indicates whether a connection can be made to the specified network destination.</summary>
+        <returns>
+          <b>true</b> if a connection can be made to the specified RL, UNC path, or IP address; otherwise, <b>false</b>.</returns>
+        <remarks>
+          <para>The value specified for <paramref name="bstrDestination" /> must be either a UNC path that includes a server name and a share name, such as @"\\MyServer\MyShare", or a URL that begins with one of the following protocol identifiers: http, https, or file.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MachineOnlineState">
@@ -77,8 +81,8 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.XdMachineOnlineState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the current connection state of the client computer.</summary>
+        <value>One of the enumeration values.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

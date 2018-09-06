@@ -23,8 +23,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains a collection of XML Document Object Model (DOM) nodes.</summary>
+    <remarks>
+      <para>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.XMLNodes" />.</para>
+      <para>The <b>XMLNodesCollection</b> collection is a general-purpose collection that is used by a number of Microsoft Office InfoPath 2003 methods.</para>
+      <para>The <b>XMLNodesCollection</b> collection provides properties that can be used to access a collection of XML DOM nodes, and it is returned by both <see cref="M:Microsoft.Office.Interop.InfoPath.View.GetSelectedNodes" /> and <see cref="M:Microsoft.Office.Interop.InfoPath.View.GetContextNodes(System.Object,System.Object)" /> methods.</para>
+      <para>After you have set a reference to one of the XML DOM node objects that the <b>XMLNodesCollection</b> collection contains, you can use any of the properties and methods that the XML DOM provides for interacting with an XML node object.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>In the following example, a reference is set to a collection of XML DOM nodes returned by the <b>GetSelectedNodes</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ViewObject" /> object. Then the code displays the name and source XML of the first node found in the collection using a message box:</para>
+      <code>&lt;span class="label"&gt;XMLNodes&lt;/span&gt; selectedNodes;
+
+selectedNodes = thisXDocument.View.GetSelectedNodes();
+
+if (selectedNodes.Count &amp;gt; 0)
+{
+ thisXDocument.UI.Alert(selectedNodes[0].nodeName + "\n\n" + selectedNodes[0].text);
+}</code>
+    </example>
   </Docs>
   <Members />
 </Type>

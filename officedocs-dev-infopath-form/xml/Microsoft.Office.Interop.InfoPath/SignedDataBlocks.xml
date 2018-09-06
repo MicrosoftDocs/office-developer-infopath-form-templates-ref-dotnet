@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlocksCollection" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -51,7 +51,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the number of <see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" /> objects in the form template.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,8 +84,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an <b>IEnumerator</b> that iterates over all entries in the <see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlocksCollection" /> object.</summary>
+        <returns>An <b>IEnumerator</b> that iterates over all entries in the <see cref="T:Microsoft.Office.Interop.InfoPath.DataObjectsCollection" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,8 +116,8 @@
         <Parameter Name="varIndex" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="varIndex">An expression that specifies the position of a member of the <b>SignedDataBlocksCollection</b> collection. If this argument is a numeric expression, it must be a number from 0 to the value of the collection's Count property minus 1. If this argument is a string expression, it must be the name of a member of the collection.</param>
+        <summary>Gets a reference to the specified <see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" /> object from the <see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlocksCollection" /> collection, based on position or name.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

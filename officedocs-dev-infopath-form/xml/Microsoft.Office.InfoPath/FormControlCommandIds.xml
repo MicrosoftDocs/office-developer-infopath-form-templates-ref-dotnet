@@ -14,8 +14,11 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The container class for the <see cref="T:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds" /> enumeration values that are used to send commands to the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</summary>
+    <remarks>
+      <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a>What's New for InfoPath Developers.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,8 +54,11 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>The globally unique identifier for the group of <see cref="T:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds" /> that are defined for an instance of the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</summary>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a>What's New for InfoPath Developers.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
   </Members>

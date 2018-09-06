@@ -23,8 +23,23 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a connection to a SharePoint list or document library.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.SharepointListAdapter2" />.</para>
+      <para>The <b>SharePointListAdapter</b> object represents the Office InfoPath data adapter for retrieving data from a SharePoint list or document library.</para>
+      <para>For a secondary data source, the <b>SharePointListAdapter</b> object is accessible through the <see cref="P:Microsoft.Office.Interop.InfoPath.DataObject.QueryAdapter" /> property of <see cref="T:Microsoft.Office.Interop.InfoPath.DataSourceObject" /> object. Data adapter objects are accessible through the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument3.DataAdapters" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object.</para>
+      <para />
+    </remarks>
+    <example>
+      <code>&lt;span class="label"&gt;SharepointListAdapter&lt;/span&gt; SPList = ((&lt;span class="label"&gt;SharepointListAdapter&lt;/span&gt;)thisXDocument.DataAdapters[“SharePoint list”]);
+thisXDocument.UI.Alert(SPList.SiteUrl);
+SPList.Query();</code>
+      <para>In the following example, a reference to the <b>SharePointListAdapter</b> object is accessed through the <see cref="P:Microsoft.Office.Interop.InfoPath.DataObject.QueryAdapter" /> property of a data adapter object by passing the name of the data adapter object to the <see cref="P:Microsoft.Office.Interop.InfoPath.DataAdapters.Item(System.Object)" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataAdaptersCollection" /> collection:</para>
+      <code>&lt;span class="label"&gt;SharepointListAdapter&lt;/span&gt; adapter;
+adapter = (&lt;span class="label"&gt;SharepointListAdapter&lt;/span&gt;) thisXDocument.DataAdapters["Announcements"];</code>
+      <para>After the reference has been set, you can use the methods of the <b>SharePointListAdapter</b> object as shown in the following example, which re-queries the SharePoint list or library to update the <see cref="P:Microsoft.Office.Interop.InfoPath.DataObject.DOM" /> property of the data adapter object:</para>
+      <code>adapter.Query();</code>
+    </example>
   </Docs>
   <Members />
 </Type>

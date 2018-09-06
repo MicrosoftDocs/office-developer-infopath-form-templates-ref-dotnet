@@ -19,8 +19,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The interface that must be implemented in the host application to handle the <see cref="M:Microsoft.Office.Interop.InfoPath.SubmitToHostAdapter.Submit" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.SubmitToHostAdapterObject" /> object when the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> object is hosted in a custom application.</summary>
+    <remarks>
+      <para>The <b>ISubmitToHostEventHandler</b> interface is available for use when the <b>InfoPathEditor</b> object is hosted in a custom application. For more information, see the "The InfoPath Editor Hosted As a Control" section of What's New for InfoPath Developers and the MSDN article <a href="http://go.microsoft.com/fwlink/?LinkId=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="SubmitToHostEventHandler">
@@ -44,12 +47,15 @@
         <Parameter Name="errorMessage" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <param name="adapterName">To be added.</param>
-        <param name="errorMessage">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="sender">The object sending the notification to the host.</param>
+        <param name="adapterName">The name of the <b>SubmitToHostAdapter</b> object. </param>
+        <param name="errorMessage">The message returned to the <b>InfoPathEditor</b> object.</param>
+        <summary>Handles the event from the <see cref="M:Microsoft.Office.Interop.InfoPath.SubmitToHostAdapter.Submit" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.SubmitToHostAdapterObject" /> object when the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> object is hosted in a custom application.</summary>
+        <returns>HRESULT</returns>
+        <remarks>
+          <para>The <b>SubmitToHostEventHandler</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler" /> interface is available for use when the <b>InfoPathEditor</b> object is hosted in a custom application. For more information, see the "The InfoPath Editor Hosted As a Control" section of What's New for InfoPath Developers and the MSDN article <a href="http://go.microsoft.com/fwlink/?LinkId=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
   </Members>

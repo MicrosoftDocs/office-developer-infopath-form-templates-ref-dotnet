@@ -23,8 +23,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An event that is used during <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnSaveRequest" />.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.SaveEvent" />.</para>
+      <para>The <b>SaveEventObject</b> object provides a number of properties and methods that can be used during a save operation from the <b>OnSaveRequest</b> event handler to programmatically interact with a form's underlying XML document, determine save properties, and perform the save operation.</para>
+      <para>The <b>SaveEventObject</b> object is passed as a parameter to the <b>OnSaveRequest</b> event. The properties that it provides are available only during this event. This object expires when the form's save event expires so it may not be stored and used outside of the scope of the save event.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>In the following example, the <see cref="P:Microsoft.Office.Interop.InfoPath.SaveEvent.ReturnStatus" /> property and the <see cref="M:Microsoft.Office.Interop.InfoPath.SaveEvent.PerformSaveOperation" /> method of the <b>SaveEvent</b> object are used to perform a standard Microsoft InfoPath save operation:</para>
+      <code>public void OnSaveRequest(&lt;span class="label"&gt;SaveEvent&lt;/span&gt; e)
+{
+ e.PerformSaveOperation();
+ e.ReturnStatus = true;
+}</code>
+    </example>
   </Docs>
   <Members />
 </Type>

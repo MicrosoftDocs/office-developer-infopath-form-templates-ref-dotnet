@@ -18,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>The <b>CommandIds</b> enumeration is used to send commands to the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> object.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,7 +39,7 @@
       </ReturnValue>
       <MemberValue>131</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Adds a word to the dictionary</summary>
       </Docs>
     </Member>
     <Member MemberName="AlignTextCenter">
@@ -59,7 +59,7 @@
       </ReturnValue>
       <MemberValue>33</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Aligns selected text in the center</summary>
       </Docs>
     </Member>
     <Member MemberName="AlignTextJustify">
@@ -79,7 +79,7 @@
       </ReturnValue>
       <MemberValue>35</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Justifies selected text</summary>
       </Docs>
     </Member>
     <Member MemberName="AlignTextLeft">
@@ -99,7 +99,7 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Aligns selected text on the left</summary>
       </Docs>
     </Member>
     <Member MemberName="AlignTextRight">
@@ -119,7 +119,7 @@
       </ReturnValue>
       <MemberValue>34</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Aligns selected text on the right</summary>
       </Docs>
     </Member>
     <Member MemberName="ClearAutoSpace">
@@ -139,7 +139,7 @@
       </ReturnValue>
       <MemberValue>85</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes all auto spacing of selected text</summary>
       </Docs>
     </Member>
     <Member MemberName="ClearBulletedList">
@@ -159,7 +159,7 @@
       </ReturnValue>
       <MemberValue>59</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes bullets from selected items that have been bulleted</summary>
       </Docs>
     </Member>
     <Member MemberName="ClearFontFormatting">
@@ -179,7 +179,7 @@
       </ReturnValue>
       <MemberValue>109</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Clears all font formatting of selected text</summary>
       </Docs>
     </Member>
     <Member MemberName="ClearNumberedList">
@@ -199,7 +199,7 @@
       </ReturnValue>
       <MemberValue>58</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes numbers from selected items that have been numbered</summary>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -219,7 +219,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Closes the application</summary>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -239,7 +239,7 @@
       </ReturnValue>
       <MemberValue>53</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Copies selected items</summary>
       </Docs>
     </Member>
     <Member MemberName="CorrectAllOfMisspelledWord">
@@ -259,7 +259,7 @@
       </ReturnValue>
       <MemberValue>134</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Corrects all misspelled words</summary>
       </Docs>
     </Member>
     <Member MemberName="CorrectMisspelledWord">
@@ -279,7 +279,7 @@
       </ReturnValue>
       <MemberValue>133</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Corrects selected misspelled words</summary>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -299,7 +299,7 @@
       </ReturnValue>
       <MemberValue>52</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Cuts selected items</summary>
       </Docs>
     </Member>
     <Member MemberName="DecreaseFontSizeBy2">
@@ -319,7 +319,7 @@
       </ReturnValue>
       <MemberValue>117</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Decreases selected text font size by two points</summary>
       </Docs>
     </Member>
     <Member MemberName="DecreaseIndent">
@@ -339,7 +339,7 @@
       </ReturnValue>
       <MemberValue>60</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Decreases indents of selected lines</summary>
       </Docs>
     </Member>
     <Member MemberName="DeleteMisspelledWord">
@@ -359,7 +359,7 @@
       </ReturnValue>
       <MemberValue>135</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Deletes selected misspelled words</summary>
       </Docs>
     </Member>
     <Member MemberName="DeleteSelectedColumns">
@@ -379,7 +379,7 @@
       </ReturnValue>
       <MemberValue>68</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Deletes selected columns</summary>
       </Docs>
     </Member>
     <Member MemberName="DeleteSelectedRows">
@@ -399,7 +399,7 @@
       </ReturnValue>
       <MemberValue>67</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Deletes selected row</summary>
       </Docs>
     </Member>
     <Member MemberName="DeleteSelectedTable">
@@ -419,7 +419,7 @@
       </ReturnValue>
       <MemberValue>66</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Deletes selected tables</summary>
       </Docs>
     </Member>
     <Member MemberName="DrawTable">
@@ -439,7 +439,7 @@
       </ReturnValue>
       <MemberValue>50</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Draws a table</summary>
       </Docs>
     </Member>
     <Member MemberName="EraseTable">
@@ -459,7 +459,7 @@
       </ReturnValue>
       <MemberValue>51</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Erases a table and retains table contents</summary>
       </Docs>
     </Member>
     <Member MemberName="FindNextMisspelledWord">
@@ -479,7 +479,7 @@
       </ReturnValue>
       <MemberValue>132</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Finds the next misspelled word</summary>
       </Docs>
     </Member>
     <Member MemberName="FindReplaceFindNext">
@@ -499,7 +499,7 @@
       </ReturnValue>
       <MemberValue>119</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Finds the next matching text.</summary>
       </Docs>
     </Member>
     <Member MemberName="FormatPainterApplyFormatting">
@@ -519,7 +519,7 @@
       </ReturnValue>
       <MemberValue>23</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Applies formatting from the Format Painter</summary>
       </Docs>
     </Member>
     <Member MemberName="FormatPainterApplyFormattingPersistent">
@@ -539,7 +539,7 @@
       </ReturnValue>
       <MemberValue>25</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Applies formatting from the Format Painter in double-click mode (multiple-selection)</summary>
       </Docs>
     </Member>
     <Member MemberName="FormatPainterCopyFormatting">
@@ -559,7 +559,7 @@
       </ReturnValue>
       <MemberValue>24</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Copies formatting of selected items to the Format Painter</summary>
       </Docs>
     </Member>
     <Member MemberName="FormatPainterCopyFormattingPersistent">
@@ -579,7 +579,7 @@
       </ReturnValue>
       <MemberValue>172</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Copies formatting of selected items to the Format Painter in double-click mode (multiple-selection)</summary>
       </Docs>
     </Member>
     <Member MemberName="GetCurrentMisspelledWord">
@@ -599,7 +599,7 @@
       </ReturnValue>
       <MemberValue>139</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the current misspelled word</summary>
       </Docs>
     </Member>
     <Member MemberName="GetDefaultFontColor">
@@ -619,7 +619,7 @@
       </ReturnValue>
       <MemberValue>98</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the default font color</summary>
       </Docs>
     </Member>
     <Member MemberName="GetDefaultHighlightColor">
@@ -639,7 +639,7 @@
       </ReturnValue>
       <MemberValue>97</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the default highlight color</summary>
       </Docs>
     </Member>
     <Member MemberName="GetFindReplaceOptionSearchDirection">
@@ -659,7 +659,7 @@
       </ReturnValue>
       <MemberValue>94</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the direction in which a find or replace operation will search</summary>
       </Docs>
     </Member>
     <Member MemberName="GetFindReplaceState">
@@ -679,7 +679,7 @@
       </ReturnValue>
       <MemberValue>171</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the state of the find or replace operation</summary>
       </Docs>
     </Member>
     <Member MemberName="GetFindString">
@@ -699,7 +699,7 @@
       </ReturnValue>
       <MemberValue>87</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the string that will be used in a find operation</summary>
       </Docs>
     </Member>
     <Member MemberName="GetFontAvailableByIndex">
@@ -719,7 +719,7 @@
       </ReturnValue>
       <MemberValue>102</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the available fonts by index</summary>
       </Docs>
     </Member>
     <Member MemberName="GetFontsAvailableCount">
@@ -739,7 +739,7 @@
       </ReturnValue>
       <MemberValue>101</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the count of available fonts</summary>
       </Docs>
     </Member>
     <Member MemberName="GetFontSizeAvailableByIndex">
@@ -759,7 +759,7 @@
       </ReturnValue>
       <MemberValue>104</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the available font sizes by index</summary>
       </Docs>
     </Member>
     <Member MemberName="GetFontSizesAvailableCount">
@@ -779,7 +779,7 @@
       </ReturnValue>
       <MemberValue>103</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a count of the available font sizes</summary>
       </Docs>
     </Member>
     <Member MemberName="GetHyperlinkAddress">
@@ -799,7 +799,7 @@
       </ReturnValue>
       <MemberValue>159</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the address of a hyperlink</summary>
       </Docs>
     </Member>
     <Member MemberName="GetHyperlinkDisplayText">
@@ -819,7 +819,7 @@
       </ReturnValue>
       <MemberValue>158</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the display text of a hyperlink</summary>
       </Docs>
     </Member>
     <Member MemberName="GetPictureAlternativeText">
@@ -839,7 +839,7 @@
       </ReturnValue>
       <MemberValue>169</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the alternative text (alt text) of a picture</summary>
       </Docs>
     </Member>
     <Member MemberName="GetPictureHeight">
@@ -859,7 +859,7 @@
       </ReturnValue>
       <MemberValue>167</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the height of a picture</summary>
       </Docs>
     </Member>
     <Member MemberName="GetPictureTextWrapping">
@@ -879,7 +879,7 @@
       </ReturnValue>
       <MemberValue>170</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the text wrapping value of a picture</summary>
       </Docs>
     </Member>
     <Member MemberName="GetPictureWidth">
@@ -899,7 +899,7 @@
       </ReturnValue>
       <MemberValue>168</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the width of a picture</summary>
       </Docs>
     </Member>
     <Member MemberName="GetReplaceWithString">
@@ -919,7 +919,7 @@
       </ReturnValue>
       <MemberValue>89</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the string that will be used in a replace operation</summary>
       </Docs>
     </Member>
     <Member MemberName="GetSelectedCellBottomPadding">
@@ -939,7 +939,7 @@
       </ReturnValue>
       <MemberValue>151</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the bottom cell padding of the selected cell</summary>
       </Docs>
     </Member>
     <Member MemberName="GetSelectedCellLeftPadding">
@@ -959,7 +959,7 @@
       </ReturnValue>
       <MemberValue>150</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the left cell padding of the selected cell</summary>
       </Docs>
     </Member>
     <Member MemberName="GetSelectedCellRightPadding">
@@ -979,7 +979,7 @@
       </ReturnValue>
       <MemberValue>152</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the right cell padding of the selected cell</summary>
       </Docs>
     </Member>
     <Member MemberName="GetSelectedCellTopPadding">
@@ -999,7 +999,7 @@
       </ReturnValue>
       <MemberValue>149</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the top cell padding of the selected cell</summary>
       </Docs>
     </Member>
     <Member MemberName="GetSelectedCellVerticalAlignment">
@@ -1019,7 +1019,7 @@
       </ReturnValue>
       <MemberValue>148</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the vertical cell alignment of the selected cell</summary>
       </Docs>
     </Member>
     <Member MemberName="GetSelectedColumnWidth">
@@ -1039,7 +1039,7 @@
       </ReturnValue>
       <MemberValue>142</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the column width of the selected cell</summary>
       </Docs>
     </Member>
     <Member MemberName="GetSelectedRowHeight">
@@ -1059,7 +1059,7 @@
       </ReturnValue>
       <MemberValue>140</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the row height of the selected row</summary>
       </Docs>
     </Member>
     <Member MemberName="GetSelectedTextBackgroundColor">
@@ -1079,7 +1079,7 @@
       </ReturnValue>
       <MemberValue>127</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the background color of the selected text</summary>
       </Docs>
     </Member>
     <Member MemberName="GetSelectedTextFont">
@@ -1099,7 +1099,7 @@
       </ReturnValue>
       <MemberValue>124</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the font of the selected text</summary>
       </Docs>
     </Member>
     <Member MemberName="GetSelectedTextFontColor">
@@ -1119,7 +1119,7 @@
       </ReturnValue>
       <MemberValue>125</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the font color of the selected text</summary>
       </Docs>
     </Member>
     <Member MemberName="GetSelectedTextFontSize">
@@ -1139,7 +1139,7 @@
       </ReturnValue>
       <MemberValue>123</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the font size of the selected text</summary>
       </Docs>
     </Member>
     <Member MemberName="GetSelectedTextHighlightColor">
@@ -1159,7 +1159,7 @@
       </ReturnValue>
       <MemberValue>126</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the highlight color of the selected text</summary>
       </Docs>
     </Member>
     <Member MemberName="GetSpellingSuggestion">
@@ -1179,7 +1179,7 @@
       </ReturnValue>
       <MemberValue>138</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the spelling suggestion of the selected text</summary>
       </Docs>
     </Member>
     <Member MemberName="GetSpellingSuggestionsCount">
@@ -1199,7 +1199,7 @@
       </ReturnValue>
       <MemberValue>137</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a count of the spelling suggestions of the selected text</summary>
       </Docs>
     </Member>
     <Member MemberName="GetSubmitButtonCaption">
@@ -1219,7 +1219,7 @@
       </ReturnValue>
       <MemberValue>9</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the caption of the submit button</summary>
       </Docs>
     </Member>
     <Member MemberName="GetTableDirection">
@@ -1239,7 +1239,7 @@
       </ReturnValue>
       <MemberValue>77</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the direction of a table</summary>
       </Docs>
     </Member>
     <Member MemberName="GetTableHorizontalAlignment">
@@ -1259,7 +1259,7 @@
       </ReturnValue>
       <MemberValue>75</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the horizontal alignment of a table</summary>
       </Docs>
     </Member>
     <Member MemberName="GotoFirstErrorOnView">
@@ -1279,7 +1279,7 @@
       </ReturnValue>
       <MemberValue>107</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Repositions the focus to the first error in the current view</summary>
       </Docs>
     </Member>
     <Member MemberName="GotoNextErrorOnView">
@@ -1299,7 +1299,7 @@
       </ReturnValue>
       <MemberValue>10</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Repositions the focus to the next error in the current view</summary>
       </Docs>
     </Member>
     <Member MemberName="IgnoreAllOfMisspelledWord">
@@ -1319,7 +1319,7 @@
       </ReturnValue>
       <MemberValue>130</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Ignores all misspelled words</summary>
       </Docs>
     </Member>
     <Member MemberName="IgnoreMisspelledWord">
@@ -1339,7 +1339,7 @@
       </ReturnValue>
       <MemberValue>129</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Ignores the current misspelled word</summary>
       </Docs>
     </Member>
     <Member MemberName="IncreaseFontSizeBy2">
@@ -1359,7 +1359,7 @@
       </ReturnValue>
       <MemberValue>118</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Increases the font size by two points</summary>
       </Docs>
     </Member>
     <Member MemberName="IncreaseIndent">
@@ -1379,7 +1379,7 @@
       </ReturnValue>
       <MemberValue>61</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Increases the indentation of selected lines</summary>
       </Docs>
     </Member>
     <Member MemberName="InsertBulletedList">
@@ -1399,7 +1399,7 @@
       </ReturnValue>
       <MemberValue>22</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Inserts a bulleted list on selected text using the default bullet</summary>
       </Docs>
     </Member>
     <Member MemberName="InsertBulletedListEmptyCircle">
@@ -1419,7 +1419,7 @@
       </ReturnValue>
       <MemberValue>48</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Inserts a bulleted list on selected text using the empty circle bullet</summary>
       </Docs>
     </Member>
     <Member MemberName="InsertBulletedListSolidCircle">
@@ -1439,7 +1439,7 @@
       </ReturnValue>
       <MemberValue>47</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Inserts a bulleted list on selected text using the solid circle bullet</summary>
       </Docs>
     </Member>
     <Member MemberName="InsertBulletedListSolidSquare">
@@ -1459,7 +1459,7 @@
       </ReturnValue>
       <MemberValue>49</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Inserts a bulleted list on selected text using the solid square bullet</summary>
       </Docs>
     </Member>
     <Member MemberName="InsertColumnLeft">
@@ -1479,7 +1479,7 @@
       </ReturnValue>
       <MemberValue>64</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Inserts a column to the left of the selected column</summary>
       </Docs>
     </Member>
     <Member MemberName="InsertColumnRight">
@@ -1499,7 +1499,7 @@
       </ReturnValue>
       <MemberValue>65</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Inserts a column to the right of the selected column</summary>
       </Docs>
     </Member>
     <Member MemberName="InsertHorizontalLine">
@@ -1519,7 +1519,7 @@
       </ReturnValue>
       <MemberValue>78</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Inserts a horizontal line</summary>
       </Docs>
     </Member>
     <Member MemberName="InsertHyperlink">
@@ -1539,7 +1539,7 @@
       </ReturnValue>
       <MemberValue>81</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Inserts a hyperlink</summary>
       </Docs>
     </Member>
     <Member MemberName="InsertImage">
@@ -1559,7 +1559,7 @@
       </ReturnValue>
       <MemberValue>80</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Inserts an image</summary>
       </Docs>
     </Member>
     <Member MemberName="InsertNumberedList">
@@ -1579,7 +1579,7 @@
       </ReturnValue>
       <MemberValue>21</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Inserts a numbered list on selected text using the default numbering</summary>
       </Docs>
     </Member>
     <Member MemberName="InsertNumberedListAlphaLowercase">
@@ -1599,7 +1599,7 @@
       </ReturnValue>
       <MemberValue>43</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Inserts a numbered list on selected text using the lowercase letters</summary>
       </Docs>
     </Member>
     <Member MemberName="InsertNumberedListAlphaUppercase">
@@ -1619,7 +1619,7 @@
       </ReturnValue>
       <MemberValue>44</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Inserts a numbered list on selected text using the uppercase letters</summary>
       </Docs>
     </Member>
     <Member MemberName="InsertNumberedListDecimal">
@@ -1639,7 +1639,7 @@
       </ReturnValue>
       <MemberValue>42</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Inserts a numbered list on selected text using decimals</summary>
       </Docs>
     </Member>
     <Member MemberName="InsertNumberedListRomanLowercase">
@@ -1659,7 +1659,7 @@
       </ReturnValue>
       <MemberValue>45</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Inserts a numbered list on selected text using the lowercase Roman numerals</summary>
       </Docs>
     </Member>
     <Member MemberName="InsertNumberedListRomanUppercase">
@@ -1679,7 +1679,7 @@
       </ReturnValue>
       <MemberValue>46</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Inserts a numbered list on selected text using the uppercase Roman numeral</summary>
       </Docs>
     </Member>
     <Member MemberName="InsertPictureFromFile">
@@ -1699,7 +1699,7 @@
       </ReturnValue>
       <MemberValue>13</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Inserts a picture from a file</summary>
       </Docs>
     </Member>
     <Member MemberName="InsertRowAbove">
@@ -1719,7 +1719,7 @@
       </ReturnValue>
       <MemberValue>62</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Inserts a row above the selected row</summary>
       </Docs>
     </Member>
     <Member MemberName="InsertRowBelow">
@@ -1739,7 +1739,7 @@
       </ReturnValue>
       <MemberValue>63</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Inserts a row below the selected row</summary>
       </Docs>
     </Member>
     <Member MemberName="InsertTable">
@@ -1759,7 +1759,7 @@
       </ReturnValue>
       <MemberValue>128</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Inserts a table</summary>
       </Docs>
     </Member>
     <Member MemberName="IsFormDirectionLeftToRight">
@@ -1779,7 +1779,7 @@
       </ReturnValue>
       <MemberValue>175</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets whether selected text is formatted left to right</summary>
       </Docs>
     </Member>
     <Member MemberName="IsFormDirectionRightToLeft">
@@ -1799,7 +1799,7 @@
       </ReturnValue>
       <MemberValue>174</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets whether selected text is formatted right to left</summary>
       </Docs>
     </Member>
     <Member MemberName="MergeCells">
@@ -1819,7 +1819,7 @@
       </ReturnValue>
       <MemberValue>73</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Merges selected cells</summary>
       </Docs>
     </Member>
     <Member MemberName="Paste">
@@ -1839,7 +1839,7 @@
       </ReturnValue>
       <MemberValue>54</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pastes items from the clipboard</summary>
       </Docs>
     </Member>
     <Member MemberName="PasteAsText">
@@ -1859,7 +1859,7 @@
       </ReturnValue>
       <MemberValue>178</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pastes copied text as unformatted text.</summary>
       </Docs>
     </Member>
     <Member MemberName="PasteKeepSourceFormatting">
@@ -1879,7 +1879,7 @@
       </ReturnValue>
       <MemberValue>176</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pastes copied text with the same formatting as source it was copied from.</summary>
       </Docs>
     </Member>
     <Member MemberName="PasteMatchDestination">
@@ -1899,7 +1899,7 @@
       </ReturnValue>
       <MemberValue>177</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Pastes copied text matching its formatting to the destination where it is inserted.</summary>
       </Docs>
     </Member>
     <Member MemberName="Redo">
@@ -1919,7 +1919,7 @@
       </ReturnValue>
       <MemberValue>57</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Performs a redo operation</summary>
       </Docs>
     </Member>
     <Member MemberName="RemoveHyperlink">
@@ -1939,7 +1939,7 @@
       </ReturnValue>
       <MemberValue>160</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes a hyperlink</summary>
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -1959,7 +1959,7 @@
       </ReturnValue>
       <MemberValue>95</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Performs a replace operation</summary>
       </Docs>
     </Member>
     <Member MemberName="ReplaceAll">
@@ -1979,7 +1979,7 @@
       </ReturnValue>
       <MemberValue>96</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Performs a replace all operation</summary>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -1999,7 +1999,7 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Performs a save operation</summary>
       </Docs>
     </Member>
     <Member MemberName="SaveAs">
@@ -2019,7 +2019,7 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Performas a save as operation</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectAll">
@@ -2039,7 +2039,7 @@
       </ReturnValue>
       <MemberValue>55</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Selects all items in the view</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectCell">
@@ -2059,7 +2059,7 @@
       </ReturnValue>
       <MemberValue>72</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Selects the current cell</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectColumns">
@@ -2079,7 +2079,7 @@
       </ReturnValue>
       <MemberValue>71</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Selects the current column</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectHyperlink">
@@ -2099,7 +2099,7 @@
       </ReturnValue>
       <MemberValue>82</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Selects the current hyperlink</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectNextColumn">
@@ -2119,7 +2119,7 @@
       </ReturnValue>
       <MemberValue>146</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Selects the next column</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectNextRow">
@@ -2139,7 +2139,7 @@
       </ReturnValue>
       <MemberValue>144</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Selects the next row</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectPreviousColumn">
@@ -2159,7 +2159,7 @@
       </ReturnValue>
       <MemberValue>147</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Selects the previous column</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectPreviousRow">
@@ -2179,7 +2179,7 @@
       </ReturnValue>
       <MemberValue>145</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Selects the previous row</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectRows">
@@ -2199,7 +2199,7 @@
       </ReturnValue>
       <MemberValue>70</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Selects all rows</summary>
       </Docs>
     </Member>
     <Member MemberName="SelectTable">
@@ -2219,7 +2219,7 @@
       </ReturnValue>
       <MemberValue>69</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Selects the table</summary>
       </Docs>
     </Member>
     <Member MemberName="Set15LineSpacing">
@@ -2239,7 +2239,7 @@
       </ReturnValue>
       <MemberValue>40</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets paragraph spacing to 1.5 lines</summary>
       </Docs>
     </Member>
     <Member MemberName="SetAutoSpaceBetweenAsianAndLatinText">
@@ -2259,7 +2259,7 @@
       </ReturnValue>
       <MemberValue>83</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the automatic spacing between Asian and Latin text</summary>
       </Docs>
     </Member>
     <Member MemberName="SetAutoSpaceBetweenAsianTextAndNumbers">
@@ -2279,7 +2279,7 @@
       </ReturnValue>
       <MemberValue>84</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the automatic spacing between Asian and Latin numbers</summary>
       </Docs>
     </Member>
     <Member MemberName="SetDoubleLineSpacing">
@@ -2299,7 +2299,7 @@
       </ReturnValue>
       <MemberValue>41</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets line spacing to double</summary>
       </Docs>
     </Member>
     <Member MemberName="SetFindReplaceOptionMatchCase">
@@ -2319,7 +2319,7 @@
       </ReturnValue>
       <MemberValue>91</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the option to match case on find or replace operations</summary>
       </Docs>
     </Member>
     <Member MemberName="SetFindReplaceOptionSearchDirection">
@@ -2339,7 +2339,7 @@
       </ReturnValue>
       <MemberValue>93</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the search direction on find or replace operations</summary>
       </Docs>
     </Member>
     <Member MemberName="SetFindReplaceOptionUseWildcards">
@@ -2359,7 +2359,7 @@
       </ReturnValue>
       <MemberValue>92</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the option to use wildcards on find or replace operations</summary>
       </Docs>
     </Member>
     <Member MemberName="SetFindReplaceOptionWholeWordOnly">
@@ -2379,7 +2379,7 @@
       </ReturnValue>
       <MemberValue>90</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the option to match entire words only on find or replace operations</summary>
       </Docs>
     </Member>
     <Member MemberName="SetFindString">
@@ -2399,7 +2399,7 @@
       </ReturnValue>
       <MemberValue>86</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the string to use in a find operation</summary>
       </Docs>
     </Member>
     <Member MemberName="SetFontFormattingBold">
@@ -2419,7 +2419,7 @@
       </ReturnValue>
       <MemberValue>26</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the font formatting of the selected text to bold</summary>
       </Docs>
     </Member>
     <Member MemberName="SetFontFormattingHeading1">
@@ -2439,7 +2439,7 @@
       </ReturnValue>
       <MemberValue>110</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the font formatting of the selected text to Heading 1</summary>
       </Docs>
     </Member>
     <Member MemberName="SetFontFormattingHeading2">
@@ -2459,7 +2459,7 @@
       </ReturnValue>
       <MemberValue>111</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the font formatting of the selected text to Heading 2</summary>
       </Docs>
     </Member>
     <Member MemberName="SetFontFormattingHeading3">
@@ -2479,7 +2479,7 @@
       </ReturnValue>
       <MemberValue>112</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the font formatting of the selected text to Heading 3</summary>
       </Docs>
     </Member>
     <Member MemberName="SetFontFormattingHeading4">
@@ -2499,7 +2499,7 @@
       </ReturnValue>
       <MemberValue>113</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the font formatting of the selected text to Heading 4</summary>
       </Docs>
     </Member>
     <Member MemberName="SetFontFormattingHeading5">
@@ -2519,7 +2519,7 @@
       </ReturnValue>
       <MemberValue>114</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the font formatting of the selected text to Heading 5</summary>
       </Docs>
     </Member>
     <Member MemberName="SetFontFormattingHeading6">
@@ -2539,7 +2539,7 @@
       </ReturnValue>
       <MemberValue>115</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the font formatting of the selected text to Heading 6</summary>
       </Docs>
     </Member>
     <Member MemberName="SetFontFormattingItalic">
@@ -2559,7 +2559,7 @@
       </ReturnValue>
       <MemberValue>27</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the font formatting of the selected text to italic</summary>
       </Docs>
     </Member>
     <Member MemberName="SetFontFormattingNormal">
@@ -2579,7 +2579,7 @@
       </ReturnValue>
       <MemberValue>116</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the font formatting of the selected text to normal</summary>
       </Docs>
     </Member>
     <Member MemberName="SetFontFormattingStrikethrough">
@@ -2599,7 +2599,7 @@
       </ReturnValue>
       <MemberValue>31</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the font formatting of the selected text to strikethrough</summary>
       </Docs>
     </Member>
     <Member MemberName="SetFontFormattingSubscript">
@@ -2619,7 +2619,7 @@
       </ReturnValue>
       <MemberValue>30</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the font formatting of the selected text to subscript</summary>
       </Docs>
     </Member>
     <Member MemberName="SetFontFormattingSuperscript">
@@ -2639,7 +2639,7 @@
       </ReturnValue>
       <MemberValue>29</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the font formatting of the selected text to superscript</summary>
       </Docs>
     </Member>
     <Member MemberName="SetFontFormattingUnderline">
@@ -2659,7 +2659,7 @@
       </ReturnValue>
       <MemberValue>28</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the font formatting of the selected text to underline</summary>
       </Docs>
     </Member>
     <Member MemberName="SetParaSpaceAfter">
@@ -2679,7 +2679,7 @@
       </ReturnValue>
       <MemberValue>180</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary />
       </Docs>
     </Member>
     <Member MemberName="SetParaSpaceBefore">
@@ -2699,7 +2699,7 @@
       </ReturnValue>
       <MemberValue>179</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary />
       </Docs>
     </Member>
     <Member MemberName="SetPictureAlternativeText">
@@ -2719,7 +2719,7 @@
       </ReturnValue>
       <MemberValue>166</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the alternative text (alt text) of a picture</summary>
       </Docs>
     </Member>
     <Member MemberName="SetPictureHeight">
@@ -2739,7 +2739,7 @@
       </ReturnValue>
       <MemberValue>164</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the height of a picture</summary>
       </Docs>
     </Member>
     <Member MemberName="SetPictureInlineWithText">
@@ -2759,7 +2759,7 @@
       </ReturnValue>
       <MemberValue>161</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the text wrapping of a picture to be inline with surrounding text</summary>
       </Docs>
     </Member>
     <Member MemberName="SetPictureToLeftOfText">
@@ -2779,7 +2779,7 @@
       </ReturnValue>
       <MemberValue>162</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the text wrapping of a picture to be left of surrounding text</summary>
       </Docs>
     </Member>
     <Member MemberName="SetPictureToRightOfText">
@@ -2799,7 +2799,7 @@
       </ReturnValue>
       <MemberValue>163</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the text wrapping of a picture to be right of surrounding text</summary>
       </Docs>
     </Member>
     <Member MemberName="SetPictureWidth">
@@ -2819,7 +2819,7 @@
       </ReturnValue>
       <MemberValue>165</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the width of a picture</summary>
       </Docs>
     </Member>
     <Member MemberName="SetReplaceWithString">
@@ -2839,7 +2839,7 @@
       </ReturnValue>
       <MemberValue>88</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the string used in a replace operation</summary>
       </Docs>
     </Member>
     <Member MemberName="SetSelectedCellAlignmentBottom">
@@ -2859,7 +2859,7 @@
       </ReturnValue>
       <MemberValue>156</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the selected cell(s) to bottom alignment</summary>
       </Docs>
     </Member>
     <Member MemberName="SetSelectedCellAlignmentMiddle">
@@ -2879,7 +2879,7 @@
       </ReturnValue>
       <MemberValue>154</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the selected cell(s) to middle alignment</summary>
       </Docs>
     </Member>
     <Member MemberName="SetSelectedCellAlignmentTop">
@@ -2899,7 +2899,7 @@
       </ReturnValue>
       <MemberValue>155</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the selected cell(s) to top alignment</summary>
       </Docs>
     </Member>
     <Member MemberName="SetSelectedCellPadding">
@@ -2919,7 +2919,7 @@
       </ReturnValue>
       <MemberValue>153</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the padding of selected cell(s)</summary>
       </Docs>
     </Member>
     <Member MemberName="SetSelectedColumnWidth">
@@ -2939,7 +2939,7 @@
       </ReturnValue>
       <MemberValue>143</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the width of selected column(s)</summary>
       </Docs>
     </Member>
     <Member MemberName="SetSelectedRowHeight">
@@ -2959,7 +2959,7 @@
       </ReturnValue>
       <MemberValue>141</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the height of selected row(s)</summary>
       </Docs>
     </Member>
     <Member MemberName="SetSelectedTextBackgroundColor">
@@ -2979,7 +2979,7 @@
       </ReturnValue>
       <MemberValue>122</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the background color of selected text</summary>
       </Docs>
     </Member>
     <Member MemberName="SetSelectedTextFont">
@@ -2999,7 +2999,7 @@
       </ReturnValue>
       <MemberValue>106</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the font of selected text</summary>
       </Docs>
     </Member>
     <Member MemberName="SetSelectedTextFontColor">
@@ -3019,7 +3019,7 @@
       </ReturnValue>
       <MemberValue>121</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the font color of selected text</summary>
       </Docs>
     </Member>
     <Member MemberName="SetSelectedTextFontSize">
@@ -3039,7 +3039,7 @@
       </ReturnValue>
       <MemberValue>105</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the font size of selected text</summary>
       </Docs>
     </Member>
     <Member MemberName="SetSelectedTextHighlightColor">
@@ -3059,7 +3059,7 @@
       </ReturnValue>
       <MemberValue>120</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the highlight color of selected text</summary>
       </Docs>
     </Member>
     <Member MemberName="SetSingleLineSpacing">
@@ -3079,7 +3079,7 @@
       </ReturnValue>
       <MemberValue>39</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets line spacing to single</summary>
       </Docs>
     </Member>
     <Member MemberName="SetSpellingOptionCheckAsYouType">
@@ -3099,7 +3099,7 @@
       </ReturnValue>
       <MemberValue>136</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the option to check spelling automatically</summary>
       </Docs>
     </Member>
     <Member MemberName="SetTableDirection">
@@ -3119,7 +3119,7 @@
       </ReturnValue>
       <MemberValue>76</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the table direction</summary>
       </Docs>
     </Member>
     <Member MemberName="SetTableHorizontalAlignment">
@@ -3139,7 +3139,7 @@
       </ReturnValue>
       <MemberValue>74</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the table horizontal alignment</summary>
       </Docs>
     </Member>
     <Member MemberName="SetTextDirectionDefault">
@@ -3159,7 +3159,7 @@
       </ReturnValue>
       <MemberValue>36</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the text direction to the default text direction</summary>
       </Docs>
     </Member>
     <Member MemberName="SetTextDirectionLeftToRight">
@@ -3179,7 +3179,7 @@
       </ReturnValue>
       <MemberValue>37</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the text direction to left to right</summary>
       </Docs>
     </Member>
     <Member MemberName="SetTextDirectionRightToLeft">
@@ -3199,7 +3199,7 @@
       </ReturnValue>
       <MemberValue>38</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the text direction to right to left</summary>
       </Docs>
     </Member>
     <Member MemberName="ShowBordersShadingDialog">
@@ -3219,7 +3219,7 @@
       </ReturnValue>
       <MemberValue>18</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the Borders and Shading dialog box</summary>
       </Docs>
     </Member>
     <Member MemberName="ShowCurrentErrorMessage">
@@ -3239,7 +3239,7 @@
       </ReturnValue>
       <MemberValue>11</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the current error message</summary>
       </Docs>
     </Member>
     <Member MemberName="ShowDigitalSignaturesDialog">
@@ -3259,7 +3259,7 @@
       </ReturnValue>
       <MemberValue>108</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the Digital Signatures dialog box</summary>
       </Docs>
     </Member>
     <Member MemberName="ShowEditHyperlinkDialog">
@@ -3279,7 +3279,7 @@
       </ReturnValue>
       <MemberValue>20</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the Edit Hyperlink dialog box</summary>
       </Docs>
     </Member>
     <Member MemberName="ShowExportToExcelDialog">
@@ -3299,7 +3299,7 @@
       </ReturnValue>
       <MemberValue>7</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the Export to Excel Wizard dialog box</summary>
       </Docs>
     </Member>
     <Member MemberName="ShowExportToPDFXPSDialog">
@@ -3319,7 +3319,7 @@
       </ReturnValue>
       <MemberValue>173</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the Publish as PDF or XPS dialog box</summary>
       </Docs>
     </Member>
     <Member MemberName="ShowExportToWebDialog">
@@ -3339,7 +3339,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the Export to Web dialog box</summary>
       </Docs>
     </Member>
     <Member MemberName="ShowFormatPictureDialog">
@@ -3359,7 +3359,7 @@
       </ReturnValue>
       <MemberValue>17</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the Format Picture dialog box</summary>
       </Docs>
     </Member>
     <Member MemberName="ShowImportFormDataDialog">
@@ -3379,7 +3379,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the Merge Forms dialog box</summary>
       </Docs>
     </Member>
     <Member MemberName="ShowInsertHyperlinkDialog">
@@ -3399,7 +3399,7 @@
       </ReturnValue>
       <MemberValue>19</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the Insert Hyperlink dialog box</summary>
       </Docs>
     </Member>
     <Member MemberName="ShowInsertSymbolDialog">
@@ -3419,7 +3419,7 @@
       </ReturnValue>
       <MemberValue>79</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the Insert Symbol dialog box</summary>
       </Docs>
     </Member>
     <Member MemberName="ShowInsertTableDialog">
@@ -3439,7 +3439,7 @@
       </ReturnValue>
       <MemberValue>14</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the Insert Table dialog box</summary>
       </Docs>
     </Member>
     <Member MemberName="ShowMergeFormDialog">
@@ -3459,7 +3459,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the Merge Forms dialog box</summary>
       </Docs>
     </Member>
     <Member MemberName="ShowSetLanguageDialog">
@@ -3479,7 +3479,7 @@
       </ReturnValue>
       <MemberValue>12</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the Language dialog box</summary>
       </Docs>
     </Member>
     <Member MemberName="ShowSetSelectedTextFontColorDialog">
@@ -3499,7 +3499,7 @@
       </ReturnValue>
       <MemberValue>99</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the Color dialog box for setting font color</summary>
       </Docs>
     </Member>
     <Member MemberName="ShowSetSelectedTextHighlightColorDialog">
@@ -3519,7 +3519,7 @@
       </ReturnValue>
       <MemberValue>100</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the Color dialog box for setting highlight color</summary>
       </Docs>
     </Member>
     <Member MemberName="ShowSplitCellsDialog">
@@ -3539,7 +3539,7 @@
       </ReturnValue>
       <MemberValue>15</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the Split Cells dialog box</summary>
       </Docs>
     </Member>
     <Member MemberName="ShowTablePropertiesDialog">
@@ -3559,7 +3559,7 @@
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Displays the Table Properties dialog box</summary>
       </Docs>
     </Member>
     <Member MemberName="SplitCells">
@@ -3579,7 +3579,7 @@
       </ReturnValue>
       <MemberValue>157</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Splits the selected cell</summary>
       </Docs>
     </Member>
     <Member MemberName="Submit">
@@ -3599,7 +3599,7 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Submits the form</summary>
       </Docs>
     </Member>
     <Member MemberName="Undo">
@@ -3619,7 +3619,7 @@
       </ReturnValue>
       <MemberValue>56</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Performs an undo operation</summary>
       </Docs>
     </Member>
     <Member MemberName="WorkOffline">
@@ -3639,7 +3639,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the application to work offline</summary>
       </Docs>
     </Member>
   </Members>

@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.DocContextChangeEventObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -51,9 +51,21 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the XML Document Object Model (DOM) node that is the new context node provided by <see cref="T:Microsoft.Office.Interop.InfoPath.DocContextChangeEventObject" /> object.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <example>
+          <para>In the following example, a node named <paramref name="lastChanged" /> is updated in response to context changes:</para>
+          <code>public void OnContextChange(DocContextChangeEvent e)
+{
+ if ( e.Type == "ContextNode" &amp;amp;&amp;amp; !e.IsUndoRedo )
+ {
+  IXMLDOMNode contextNode = e.&lt;span class="label"&gt;Context&lt;/span&gt;;
+  IXMLDOMNode lastChangedNode = thisXDocument.DOM.selectSingleNode("my:lastChanged");
+  lastChangedNode.text = contextNode.nodeName;
+ }
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="IsUndoRedo">
@@ -80,9 +92,21 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a value indicating whether the context change event occurred in response to undoing an operation or redoing an operation.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <example>
+          <para>In the following example, a node named <paramref name="lastChanged" /> is updated in response to context changes not related to undo and redo:</para>
+          <code>public void OnContextChange(DocContextChangeEvent e)
+{
+ if ( e.Type == "ContextNode" &amp;amp;&amp;amp; !e.&lt;span class="label"&gt;IsUndoRedo&lt;/span&gt; )
+ {
+  IXMLDOMNode contextNode = e.Context;
+  IXMLDOMNode lastChangedNode = thisXDocument.DOM.selectSingleNode("/my:root/my:lastChanged");
+  lastChangedNode.text = contextNode.nodeName;
+ }
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -109,9 +133,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the type of context change event that occurred when the <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnContextChange" /> event was triggered.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>Type</b> property returns only the value "ContextNode" for context changes in Microsoft InfoPath 2003 Service Pack 1. Nevertheless, if code in an event handler performs actions that depend on current functionality, that code should still be designed to check the value of the Type property, because future versions of InfoPath may use different values for different context changes.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="XDocument">
@@ -141,7 +168,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.XDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object that is associated with the <see cref="T:Microsoft.Office.Interop.InfoPath.DocContextChangeEventObject" /> object in an <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnContextChange" /> event.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.DocReturnEventObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -54,9 +54,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets a value indicating the return status of the <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnLoad" /> event and the <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnSubmitRequest" /> event.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>If the <b>ReturnStatus</b> property is set to <b>false</b>, the <b>OnLoad</b> and <b>OnSubmitRequest</b> events fail. If set to <b>true</b>, the <b>OnLoad</b> and <b>OnSubmitRequest</b> events are successful. The default value for the <b>OnLoad</b> event is <b>true</b>, and the default value for the OnSubmitRequest event is <b>false</b>.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>ReturnStatus</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DocReturnEventObject" /> object is used to indicate that the <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnLoad" /> event was not successful:</para>
+          <code>public void OnLoad(DocReturnEvent e)
+{ 
+ // Cancel the event.
+ e.&lt;span class="label"&gt;ReturnStatus&lt;/span&gt; = false;
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="XDocument">
@@ -86,9 +97,20 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.XDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object that is associated with the <see cref="T:Microsoft.Office.Interop.InfoPath.DocReturnEventObject" /> object during an <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnLoad" /> or <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnSubmitRequest" /> event.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>After you have set a reference to the <b>XDocument</b> object that is returned, you can use any of the properties and methods that it provides.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>XDocument</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DocReturnEventObject" /> object is used to display the source XML of a form's underlying XML document using the DOM property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object:</para>
+          <code>public void OnLoad(DocReturnEvent e)
+{
+ thisXDocument.UI.Alert("The source XML: " + e.&lt;span class="label"&gt;XDocument&lt;/span&gt;.DOM.xml);
+ e.ReturnStatus = true;
+}</code>
+        </example>
       </Docs>
     </Member>
   </Members>

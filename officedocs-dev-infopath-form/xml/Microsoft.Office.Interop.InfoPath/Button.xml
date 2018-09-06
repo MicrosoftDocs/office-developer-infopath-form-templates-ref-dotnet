@@ -26,8 +26,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <b>Button</b> object is the Microsoft InfoPath object that is used to implement the <see cref="T:Microsoft.Office.Interop.InfoPath._ButtonEventSink" /> event that is associated with a button on an InfoPath form. </summary>
+    <remarks>
+      <para>The <b>Button</b> object cannot be used directly in code.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members />
 </Type>

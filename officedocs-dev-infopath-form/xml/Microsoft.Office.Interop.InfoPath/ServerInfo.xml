@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.ServerInfoObject" /></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,8 +47,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the URL of the SharePoint list where the form is located.</summary>
+        <value>The URL of the SharePoint list.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,8 +76,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the root URL of the SharePoint server where the form is located.</summary>
+        <value>The root URL of the SharePoint server where the form is located.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,8 +105,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the URL of the SharePoint site collection where the form is located.</summary>
+        <value>The URL of the SharePoint site collection where the form is located</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,8 +134,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the URL of the SharePoint site where the form is located.</summary>
+        <value>The URL of the SharePoint site where the form is located.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

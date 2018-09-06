@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.ViewObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,8 +45,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Disables automatic synchronization between a form's underlying XML document and the associated view.</summary>
+        <remarks>
+          <para>The views in a Microsoft Office InfoPath form are automatically synchronized with the data that is contained in a form's underlying XML document. You can override this by using the <b>DisableAutoUpdate</b> method. You may need to do this for performance reasons, such as when you are programmatically making many changes to a form's underlying XML document and you do not want the view to be refreshed until the changes are complete.</para>
+          <para>By default, views will be updated automatically when the application is idle. View synchronization can be re-enabled using the <see cref="M:Microsoft.Office.Interop.InfoPath.View.EnableAutoUpdate" /> method.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the DisableAutoUpdate method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ViewObject" /> object is used to disable synchronization between a form's underlying XML document and the view that it is associated with:</para>
+          <code>thisXDocument.View.&lt;span class="label"&gt;DisableAutoUpdate&lt;/span&gt;();</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="EnableAutoUpdate">
@@ -71,8 +79,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Enables automatic synchronization between a form's underlying XML document and the associated view.</summary>
+        <remarks>
+          <para>The views in a Microsoft Office InfoPath form are automatically synchronized with the data that is contained in a form's underlying XML document. However, this can be overridden using the <see cref="M:Microsoft.Office.Interop.InfoPath.View.DisableAutoUpdate" /> method. To re-enable synchronization, use the <b>EnableAutoUpdate</b> method.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>EnableAutoUpdate</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ViewObject" /> object is used to enable synchronization between a form's underlying XML document and the view that it is associated with:</para>
+          <code>thisXDocument.View.EnableAutoUpdate();</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="ExecuteAction">
@@ -99,10 +114,90 @@
         <Parameter Name="varXmlToEdit" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="bstrAction">To be added.</param>
-        <param name="varXmlToEdit">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bstrAction">The name of the editing action to perform.</param>
+        <param name="varXmlToEdit">The name of the field or group to which to apply the editing action. This is equivalent to the value of the name attribute in the <b>xmlToEdit</b> element of the form definition (.xsf) file.</param>
+        <summary>Executes a Microsoft Office InfoPath 2003 editing command against a form's underlying XML document, based on the data selected in the view.</summary>
+        <remarks>
+          <para>The <b>ExecuteAction</b> method is used to programmatically perform built-in InfoPath editing actions against a form's underlying XML document, based on the selected context in a view.</para>
+          <para>The action that is executed will be the same action that would be used when clicking on an equivalent menu or toolbar button; namely one for which the button element in the .xsf file has corresponding <b>xmlToEdit</b> and <b>action</b> attributes. As with using a button, the action will be based on current selection: it will act on the selected context (and in the case where the selection would lead the button to be disabled, then the <b>ExecuteAction</b> method will have no effect).</para>
+          <para>It is possible to first set the selection context by using the <see cref="M:Microsoft.Office.Interop.InfoPath.View.SelectNodes(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode,System.Object,System.Object)" /> method or <see cref="M:Microsoft.Office.Interop.InfoPath.View.SelectText(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode,System.Object)" /> method, then call the <b>ExecuteAction</b> method to act on that context.</para>
+          <para>The <b>ExecuteAction</b> method will return an error for the following reasons:</para>
+          <list type="bullet">
+            <item>
+              <description>The <paramref name="bstrAction" /> parameter does not contain a valid editing component name.</description>
+            </item>
+            <item>
+              <description>The <paramref name="varXmlToEdit" /> parameter does not match an editing component that is defined in the view.</description>
+            </item>
+            <item>
+              <description>The <paramref name="varXmlToEdit" /> parameter is required for a specific editing action.</description>
+            </item>
+            <item>
+              <description>The editing action is not applicable to the selected context.</description>
+            </item>
+            <item>
+              <description>The following is a table of parameter combinations that can be used with the <b>ExecuteAction</b> method.</description>
+            </item>
+          </list>
+          <list type="table">
+            <item>
+              <term>"Copy"</term>
+              <description>Copies the selected data to the clipboard.</description>
+            </item>
+            <item>
+              <term>"Paste"</term>
+              <description>Copies data from the clipboard to the insertion point.</description>
+            </item>
+            <item>
+              <term>"Cut"</term>
+              <description>Removes the selected data and copies it to the clipboard.</description>
+            </item>
+            <item>
+              <term>"Delete"</term>
+              <description>Deletes the selected data.</description>
+            </item>
+            <item>
+              <term>"xCollection::insert", "<paramref name="xmlToEdit" />"</term>
+              <description>Inserts data based on the selected context using the xCollection editing component. If current selection is within a container of the xCollection, specified by its <b>xmlToEdit</b> element in the .xsf, then the <b>fragmentToInsert</b> element data is appended within that container.</description>
+            </item>
+            <item>
+              <term>"xCollection::insertBefore", "<paramref name="xmlToEdit" />"</term>
+              <description>Inserts data before the selected context using the xCollection editing component. If current selection is within an item of the xCollection, as specified by its <b>xmlToEdit</b> element in the .xsf, then the <b>fragmentToInsert</b> element data is inserted before that item.</description>
+            </item>
+            <item>
+              <term>"xCollection::insertAfter", "<paramref name="xmlToEdit" />"</term>
+              <description>Inserts data after the selected context using the xCollection editing component. If current selection is within an item of the xCollection, as specified by its <b>xmlToEdit</b> element in the .xsf, then the <b>fragmentToInsert</b> element data is inserted after that item.</description>
+            </item>
+            <item>
+              <term>"xCollection::remove", "<paramref name="xmlToEdit" />"</term>
+              <description>Deletes data from the selected context using the xCollection editing component. If current selection is within an item of the xCollection, as specified by its <b>xmlToEdit</b> element in the .xsf, then that item is deleted.</description>
+            </item>
+            <item>
+              <term>"xCollection::removeAll", "<paramref name="xmlToEdit" />"</term>
+              <description>Deletes all data contained within the selected context using the xCollection editing component. If current selection is within a container of the xCollection, as specified by the <b>xmlToEdit</b> element in the .xsf, then this action deletes all the items within that container.</description>
+            </item>
+            <item>
+              <term>"xReplace::replace", "<paramref name="xmlToEdit" />"</term>
+              <description>Replaces the data in the selected context using the <b>xReplace</b> editing component. If current selection is within an item of the <b>xReplace</b>, as specified by its <b>xmlToEdit</b> element in the .xsf, then that item is replaced by the <b>fragmentToInsert</b> element data.</description>
+            </item>
+            <item>
+              <term>"xOptional::insert", "<paramref name="xmlToEdit" />"</term>
+              <description>Inserts data based on the selected context using the xOptional editing component. If current selection is within an container of the xOptional, as specified by its <b>xmlToEdit</b> element in the .xsf, then the <b>fragmentToInsert</b> element data is appended within that container.</description>
+            </item>
+            <item>
+              <term>"xOptional::remove", "<paramref name="xmlToEdit" />"</term>
+              <description>Deletes data from the selected context using the xOptional editing component. If current selection is within an item of the xOptional, as specified by its <b>xmlToEdit</b> element in the .xsf, then that item is deleted.</description>
+            </item>
+          </list>
+          <para>Note   In some cases, calling the <b>ExecuteAction</b> method from the <see cref="E:Microsoft.Office.Interop.InfoPath._ButtonEventSink_Event.OnClick" /> for a button in a view may cause an error. This is because the selected context changes to the button when the button is clicked. In this case, it is better to use a button (or link) on a custom task pane, toolbar, or menu to call the <b>ExecuteAction</b> method.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>ExecuteAction</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ViewObject" /> object is used to delete selected data and place it on the clipboard:</para>
+          <code>thisXDocument.View.&lt;span class="label"&gt;ExecuteAction&lt;/span&gt;("Cut", Type.Missing);</code>
+          <para>In the following example, the <b>ExecuteAction</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ViewObject" /> object is used to insert data using the xCollection editing component, based on the selected context:</para>
+          <code>thisXDocument.View.&lt;span class="label"&gt;ExecuteAction&lt;/span&gt;("xCollection::insert", "group1_1");</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Export">
@@ -130,10 +225,17 @@
         <Parameter Name="bstrFormat" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bstrURL">To be added.</param>
-        <param name="bstrFormat">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bstrURL">The directory location that the exported view file will be written to.</param>
+        <param name="bstrFormat">The type of file format to export to. Only the "MHT" value is supported.</param>
+        <summary>Exports the view to a file of the specified format.</summary>
+        <remarks>
+          <para>If used in a form that is not fully trusted, the <b>Export</b> method will return a "permission denied" error.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>Export</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ViewObject" /> object is used to export the current view:</para>
+          <code>thisXDocument.View.&lt;span class="label"&gt;Export&lt;/span&gt;(@"C:\MyView.mht", "MHT");</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="ForceUpdate">
@@ -158,8 +260,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Forces synchronization between a form's underlying XML document and the associated view.</summary>
+        <remarks>
+          <para>The views in a Microsoft Office InfoPath form are automatically synchronized with the data that is contained in a form's underlying XML document. However, you can force synchronization to occur using the <b>ForceUpdate</b> method. This is also useful when data in a secondary data source has changed and needs to be refreshed in the view.</para>
+          <para>Automatic synchronization can be disabled using the <see cref="M:Microsoft.Office.Interop.InfoPath.View.DisableAutoUpdate" /> method and enabled using the <see cref="M:Microsoft.Office.Interop.InfoPath.View.EnableAutoUpdate" /> method.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>ForceUpdate</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ViewObject" /> object is used to force synchronization between a form's underlying XML document and the view that it is associated with:</para>
+          <code>thisXDocument.View.&lt;span class="label"&gt;ForceUpdate&lt;/span&gt;();</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="GetContextNodes">
@@ -186,11 +296,31 @@
         <Parameter Name="varViewContext" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varNode">To be added.</param>
-        <param name="varViewContext">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="varNode">An XML DOM node. </param>
+        <param name="varViewContext">The ID of the control that is used for the context.</param>
+        <summary>Gets a reference to an <see cref="T:Microsoft.Office.Interop.InfoPath.XMLNodesCollection" /> collection that is populated with XML Document Object Model (DOM) nodes based on the current context.</summary>
+        <returns>A reference to the <b>XMLNodesCollection</b> collection.</returns>
+        <remarks>
+          <para>The collection returned by the <b>GetContextNodes</b> method consists of the sequence of XML DOM nodes that are mapped from the view, corresponding to the current XSL Transformation (XSLT) node, starting at the current selection and walking up through the view ancestors to the BODY tag. </para>
+          <para>If no parameters are used, the context nodes are based on the current selection. If parameters are used, then the context nodes returned are those that would be returned based on the selection that would be obtained from calling the <see cref="M:Microsoft.Office.Interop.InfoPath.View.SelectNodes(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode,System.Object,System.Object)" /> method.</para>
+          <para>
+            <b>Note</b>: The <b>GetContextNodes</b> method will not return nodes based on the current selection if used in the <see cref="E:Microsoft.Office.Interop.InfoPath._ButtonEventSink_Event.OnClick" /> event of a button in the view, since the focus is lost from the control that is intended to be in context.  To avoid this behavior, use the <b>GetContextNodes</b> method from a custom task pane, menu or toolbar.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>GetContextNodes</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ViewObject" /> object is used to return a collection of XML DOM nodes based on the current context. The code then loops through the collection of XML DOM nodes looking for a particular node. When it is found, the text of <paramref name="field1" /> is updated. This example requires a structure of a repeating section named <paramref name="group1" /> containing a field named <paramref name="field1" />.</para>
+          <code>XMLNodesCollection contextNodes = thisXDocument.View.&lt;span class="label"&gt;GetContextNodes&lt;/span&gt;(Type.Missing, Type.Missing);
+// Scan the list of context nodes for an field1 node and if one is found
+// update its text.
+ foreach (IXMLDOMNode contextNode in contextNodes)
+ {
+  if (contextNode.nodeName == "my:group1")
+  {
+   contextNode.selectSingleNode("my:field1").text = "found node";
+   break;
+  }
+ }</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="GetSelectedNodes">
@@ -215,9 +345,23 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets a reference to an <see cref="T:Microsoft.Office.Interop.InfoPath.XMLNodesCollection" /> collection that is populated with XML Document Object Model (DOM) nodes based on the current selection of items in a view.</summary>
+        <returns>A reference to the <b>XMLNodesCollection</b> collection.</returns>
+        <remarks>
+          <para>If no items are selected in a view, or if only text is selected, then the <b>GetSelectedNodes</b> method returns an empty collection.</para>
+          <para>
+            <b>Note</b>: The <b>GetSelectedNodes</b> method will not return nodes based on the current selection if used in the <see cref="E:Microsoft.Office.Interop.InfoPath._ButtonEventSink_Event.OnClick" /> event of a button in the view, since the focus is lost from the control that is intended to be in context.  To avoid this behavior, use the <b>GetSelectedNodes</b> method from a custom task pane, menu or toolbar.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>GetSelectedNodes</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ViewObject" /> object is used to set a reference to a collection of XML DOM nodes based on what is currently selected in the view. Then the code determines whether nodes were returned and, if they were, displays information about the first node found in the <see cref="T:Microsoft.Office.Interop.InfoPath.XMLNodesCollection" /> collection in a message box.</para>
+          <code>XMLNodesCollection selectedNodes = thisXDocument.View.&lt;span class="label"&gt;GetSelectedNodes&lt;/span&gt;();
+
+if (selectedNodes.Count &amp;gt; 0)
+{
+ thisXDocument.UI.Alert(selectedNodes[0].nodeName + "\n\n" + selectedNodes[0].text);
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -244,9 +388,23 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the name of the view.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>To determine the default view use the <see cref="P:Microsoft.Office.Interop.InfoPath.ViewInfo.IsDefault" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.ViewInfoObject" /> object.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example the <b>Name</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.ViewObject" /> object is used to determine which view the user has switched to. If the view is the "Archive Customer" view, a note value is added to the form's underlying XML document:</para>
+          <code>if (thisXDocument.View.&lt;span class="label"&gt;Name&lt;/span&gt; == @"Archive Customer")
+{
+ IXMLDOMNode notes = thisXDocument.DOM.selectSingleNode(@"/Customers/CustomerInfo/Notes");
+ IXMLDOMNode div = thisXDocument.DOM.createNode(1, "div", @"http://www.w3.org/1999/xhtml");
+
+ div.text = "Note recorded " + thisXDocument.Util.Date.Now().ToString();
+ notes.appendChild(div);
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="SelectNodes">
@@ -274,11 +432,29 @@
         <Parameter Name="varViewContext" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="pxnStartNode">To be added.</param>
-        <param name="varEndNode">To be added.</param>
-        <param name="varViewContext">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pxnStartNode">The XML DOM node that begins the range.</param>
+        <param name="varEndNode">The XML DOM node that ends the range. If not specified, only the starting XML DOM node will be used.</param>
+        <param name="varViewContext">The ID of the control that is used for the context, which is an element with the specified view context of <b>xd:CtrlId</b>.</param>
+        <summary>Selects a range of nodes in a view based on the specified starting XML Document Object Model (DOM) node, the ending XML DOM node, and the view context.</summary>
+        <remarks>
+          <para>If a view context is specified, all of the XML DOM nodes that are to be selected must be within that context.</para>
+          <para>If any of the arguments to the <b>SelectNodes</b> method are null or are not exposed in the view, the <b>SelectNodes</b> method will return an error. In addition, if there are more than one set of view elements which map to the same specified XML DOM nodes, within the specified view context, then the <b>SelectNodes</b> method will also return an error.</para>
+          <para>
+            <b>Note</b>: The <b>SelectNodes</b> method requires that the nodes be structurally selectable in the view.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>SelectNodes</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ViewObject" /> object is used to set selection on a single item in the view, corresponding to the specified XML DOM node. Using the <see cref="M:Microsoft.Office.Interop.InfoPath.View.GetSelectedNodes" /> method of the <b>View</b> object, the code then determines whether the selection has been successful by displaying information about the XML DOM node in a message box. This example requires a repeating table named <paramref name="group1" />. The first occurrence is selected:</para>
+          <code>XMLNodesCollection selectedNodes;
+IXMLDOMNode group1;
+group1 = thisXDocument.DOM.selectSingleNode(@"//my:group1");
+thisXDocument.View.&lt;span class="label"&gt;SelectNodes&lt;/span&gt;(group1, Type.Missing, Type.Missing);
+selectedNodes = thisXDocument.View.GetSelectedNodes();
+if (selectedNodes.Count &amp;gt; 0)
+ {
+  thisXDocument.UI.Alert(selectedNodes[0].nodeName + "\n\n" + selectedNodes[0].text);
+ }</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="SelectText">
@@ -305,10 +481,20 @@
         <Parameter Name="varViewContext" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="pxnField">To be added.</param>
-        <param name="varViewContext">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pxnField">The XML DOM node.</param>
+        <param name="varViewContext">The ID of the control that is used for the context, which is an element with the specified view context of <b>xd:CtrlId</b>.</param>
+        <summary>Selects the text contained in an editable field that is bound to the specified XML Document Object Model (DOM) node.</summary>
+        <remarks>
+          <para>If a view context is specified, then the editable field that is to be selected must be within that context.</para>
+          <para>If there are more than one set of view elements which map to the same specified XML DOM node, within the given view context, then the <b>SelectText</b> method will return an error. In addition, if any of the arguments to the <b>SelectText</b> method are a null reference (Nothing in Visual Basic) or are not exposed in the view, then the <b>SelectText</b> method will also return an error.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>SelectText</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ViewObject" /> object is used to select text inside a field that is bound to an XML DOM node:</para>
+          <code>IXMLDOMNode field1;
+field1 = thisXDocument.DOM.selectSingleNode(@"/my:myFields/my:field1");
+thisXDocument.View.&lt;span class="label"&gt;SelectText&lt;/span&gt;(field1, Type.Missing);</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="SwitchView">
@@ -335,9 +521,16 @@
         <Parameter Name="bstrName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bstrName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bstrName">The name of the view to switch to. If an empty string is used, the default view is displayed.</param>
+        <summary>Changes the active view of a Microsoft Office InfoPath form to a specified view.</summary>
+        <remarks>
+          <para>If an empty string is used as the <paramref name="bstrName" /> parameter, the view is changed to the default view of the form.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>SwitchView</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ViewObject" /> object is used to change the current view to the default view:</para>
+          <code>thisXDocument.View.&lt;span class="label"&gt;SwitchView&lt;/span&gt;("");</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Window">
@@ -364,9 +557,18 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.WindowObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the window associated with the view.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object returned represents the currently active Microsoft Office InfoPath 2003 window. It can also be accessed through the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowsCollection" /> collection.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the Window property of the View object is used to set a reference to the first task pane contained in the TaskPanes collection:</para>
+          <para>[C#]</para>
+          <code>TaskPane taskPane;
+taskPane = thisXDocument.View.&lt;span class="label"&gt;Window&lt;/span&gt;.TaskPanes[0];</code>
+        </example>
       </Docs>
     </Member>
   </Members>

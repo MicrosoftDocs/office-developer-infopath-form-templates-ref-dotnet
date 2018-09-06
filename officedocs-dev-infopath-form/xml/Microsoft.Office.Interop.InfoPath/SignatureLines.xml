@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.SignatureLinesCollection" /></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -51,8 +51,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of <see cref="T:Microsoft.Office.Interop.InfoPath.SignatureLineObject" /> objects in the <see cref="T:Microsoft.Office.Interop.InfoPath.SignatureLinesCollection" /> collection.</summary>
+        <value>The number of objects in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,9 +84,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Gets a <see cref="T:System.Collections.IEnumerator" /> object that iterates over all entries in the <see cref="T:Microsoft.Office.Interop.InfoPath.SignatureLinesCollection" /></summary>
+        <returns>An enumerator for iterating over the entries in the collection.</returns>
+        <remarks>
+          <para>The order of the <see cref="T:Microsoft.Office.Interop.InfoPath.SignatureLineObject" /> objects in the collection corresponds to the value of the Tab index property assigned to each control when you add it to the view.</para>
+          <para>This member can be accessed only by forms running in the same domain as the currently open form, or by forms that have been granted cross-domain permissions.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -116,10 +120,14 @@
         <Parameter Name="varIndex" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <param name="varIndex">The zero-based index for the <see cref="T:Microsoft.Office.Interop.InfoPath.SignatureLineObject" /> object to return. The value specified must be a number from 0 to the value of the collection's <see cref="P:Microsoft.Office.Interop.InfoPath.SignatureLines.Count" /> property minus 1.</param>
+        <summary>Gets a reference to the specified <see cref="T:Microsoft.Office.Interop.InfoPath.SignatureLineObject" /> object from the <see cref="T:Microsoft.Office.Interop.InfoPath.SignatureLinesCollection" /></summary>
+        <value>An object that represents a Signature Line control in the collection.</value>
+        <remarks>
+          <para>The order of the <see cref="T:Microsoft.Office.InfoPath.SignatureLine" /> objects in the collection corresponds to the value of the Tab index property assigned to each control when you add it to the view.</para>
+          <para>This member can be accessed only by forms running in the same domain as the currently open form, or by forms that have been granted cross-domain permissions.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
   </Members>

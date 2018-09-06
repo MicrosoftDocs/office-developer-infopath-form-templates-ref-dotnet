@@ -23,8 +23,35 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An event object that is used during the <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnSign" />event.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.SignEvent" />.</para>
+      <para>Use the <see cref="P:Microsoft.Office.Interop.InfoPath.SignEvent.SignedDataBlock" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" /> object to determine which set of data, which can be signed, is triggering the <b>OnSign</b> event. The <b>OnSign</b> event can be customized for a fully trusted form template only.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>In the following example, the <b>SignEvent</b> object is used to add a signature and timestamp to a <see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" /> object:</para>
+      <code>public void OnSign(&lt;span class="label"&gt;SignEvent&lt;/span&gt; e)
+{
+    Signature signature = e.SignedDataBlock.Signatures.Create();
+    signature.Sign();
+    // Countersign the signature with a trusted timestamp.
+    // Get the XML node storing the signature block.
+    IXMLDOMNode oNodeSig = signature.SignatureBlockXmlNode;
+    IXMLDOMNode oNodeSigValue = oNodeSig.selectSingleNode(".//*[local-name(.)=’signatureValue’]");
+    // Get time stamp from timestamp service (fictitious).
+    MyTrustedTimeStampingService s = new MyTrustedTimeStampingService();
+    string strVerifiedTimeStamp = s.AddTimeStamp(oNodeSigValue.text);
+ 
+    //Add the value returned from the timestamping service to the 
+    //unsigned part of the signature block.
+    IXMLDOMNode oNodeObj = oNodeSig.selectSingleNode(".//*[local-name(.)=’Object’]");
+    IXMLDOMNode oNode = oNodeObj.cloneNode(false);
+    oNode.text = strVerifiedTimeStamp;
+    oNodeObj.parentNode.appendChild(oNode);
+    e.ReturnStatus = true;
+}</code>
+    </example>
   </Docs>
   <Members />
 </Type>

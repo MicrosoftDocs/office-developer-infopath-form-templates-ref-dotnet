@@ -18,8 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <b>XdTaskPaneType</b> enumeration is used to determine the type of Microsoft Office InfoPath 2003 task pane that is currently displayed.</summary>
+    <remarks>
+      <para>These enumerated values are returned by the <see cref="P:Microsoft.Office.Interop.InfoPath.TaskPane.TaskPaneType" /> property. These values are also used as the positional argument to the <see cref="P:Microsoft.Office.Interop.InfoPath.TaskPanes.Item(System.Object)" /> property.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="xdTaskPaneBulletsNumbering">
@@ -39,7 +42,7 @@
       </ReturnValue>
       <MemberValue>9</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Bullets and Numbering task pane. Used for applying bullet and numbering styles to a form.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdTaskPaneClipArt">
@@ -59,7 +62,7 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Clip Art task pane. Used for inserting clip art into a form.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdTaskPaneDesignerNew">
@@ -79,7 +82,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Design a Form task pane. Used to design a new form, open a form in design mode, or select a form to fill out. Note: This task pane and its corresponding enumeration have been deprecated in InfoPath.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdTaskPaneFillOutAForm">
@@ -99,7 +102,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Fill Out a Form task pane. Used to open a form to fill out or design. Note: This task pane and its corresponding enumeration have been deprecated in InfoPath.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdTaskPaneFind">
@@ -119,7 +122,7 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Find task pane. Used to search for text in a form. Note: This task pane and its corresponding enumeration have been deprecated in InfoPath.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdTaskPaneFormatting">
@@ -139,7 +142,7 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Font task pane. Used to format text.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdTaskPaneHelp">
@@ -159,7 +162,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Help task pane. Used to display the InfoPath Help system. Note: This task pane and its corresponding enumeration have been deprecated in InfoPath.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdTaskPaneHTML">
@@ -179,7 +182,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The InfoPath custom task pane. Used by form developers to provide extra form functionality.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdTaskPaneHWSWorkflow">
@@ -199,7 +202,7 @@
       </ReturnValue>
       <MemberValue>12</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Microsoft BizTalk Server 2004 Human Workflow Services (HWS) Workflow task pane. Note: This task pane and its corresponding enumeration have been deprecated in InfoPath.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdTaskPaneParaFormatting">
@@ -219,7 +222,7 @@
       </ReturnValue>
       <MemberValue>11</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Paragraph task pane. Used to configure properties of paragraphs including alignment and spacing.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdTaskPaneReplace">
@@ -239,7 +242,7 @@
       </ReturnValue>
       <MemberValue>7</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Replace task pane. Used to find and replace text in a form. Note: This task pane and its corresponding enumeration have been deprecated in InfoPath.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdTaskPaneSearchResults">
@@ -259,7 +262,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Search Results task pane. Used to display the results of a search. Note: This task pane and its corresponding enumeration have been deprecated in InfoPath.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdTaskPaneSpelling">
@@ -279,7 +282,7 @@
       </ReturnValue>
       <MemberValue>10</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Spelling task pane. Used to check the spelling in a form. Note: This task pane and its corresponding enumeration have been deprecated in InfoPath.</summary>
       </Docs>
     </Member>
   </Members>

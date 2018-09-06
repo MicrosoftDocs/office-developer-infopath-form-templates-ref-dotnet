@@ -23,8 +23,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the InfoPath application.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath._Application3" />.</para>
+      <para>The <b>Application</b> object includes properties and methods that return references to the high-level objects of the InfoPath object model. For example, the <see cref="P:Microsoft.Office.Interop.InfoPath._Application3.XDocuments" /> property returns a reference to a collection of <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> objects.</para>
+      <para>The <b>Application</b> object is the top-level object in the InfoPath object model, and it provides a number of properties and methods that can be used to access lower-level collections and objects in the object model, and to perform a variety of general purpose functions.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members />
 </Type>

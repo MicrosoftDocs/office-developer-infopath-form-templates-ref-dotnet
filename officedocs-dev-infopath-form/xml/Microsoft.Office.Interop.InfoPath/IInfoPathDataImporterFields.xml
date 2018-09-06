@@ -22,8 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A collection of fields in the view.</summary>
+    <remarks>
+      <para>Use the <see cref="M:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields.GetControls(mshtml.IEnumUnknown@)" /> method of the <b>IInfoPathDataImporterFields</b> interface to return a collection of <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl" /> objects. Each object in the collection corresponds to a control in the view of the form. Each control has various properties you can evaluate or set, like the read-only <see cref="P:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.DataType" /> and <see cref="M:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.InputScopes(System.IntPtr,System.UInt32@,Microsoft.Office.Interop.InfoPath.IEnumString@,System.String@)" /> properties, and the read/write <see cref="P:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.Value" /> property. Use these properties in conjunction with the data from the import source to import data into an InfoPath form.</para>
+      <para>For more information about programmatically importing data into an InfoPath form, see the <a href="http://go.microsoft.com/fwlink/?LinkID=11689">InfoPath Developer Portal</a>Microsoft Office Developer Center.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="GetControls">
@@ -45,9 +49,126 @@
         <Parameter Name="ppEnumUnkControls" Type="mshtml.IEnumUnknown" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="ppEnumUnkControls">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="ppEnumUnkControls">An <b>mshtml.IEnumUnknown</b> collection of controls in the view.</param>
+        <summary>Gets a collection of <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl" /> objects for each control in the view.</summary>
+        <remarks>
+          <para>Use the <b>GetControls</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields" /> interface to return a collection of <b>IInfoPathViewControl</b> objects. Each object in the collection corresponds to a control in the view of the form. Each control has various properties you can evaluate or set, like the read-only <see cref="P:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.DataType" /> and <see cref="M:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.InputScopes(System.IntPtr,System.UInt32@,Microsoft.Office.Interop.InfoPath.IEnumString@,System.String@)" /> properties, and the read/write <see cref="P:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.Value" /> property.</para>
+          <para>Use these properties in conjunction with the data from the import source to import data into an InfoPath form. The following controls in the view are enumerated (if present):</para>
+          <list type="table">
+            <item>
+              <term>Text Box</term>
+              <description>PlainText</description>
+            </item>
+            <item>
+              <term>Rich Text Box</term>
+              <description>RichText</description>
+            </item>
+            <item>
+              <term>Drop-Down List Box</term>
+              <description>DropDown</description>
+            </item>
+            <item>
+              <term>Combo Box</term>
+              <description>ComboBox</description>
+            </item>
+            <item>
+              <term>List Box</term>
+              <description>ListBox</description>
+            </item>
+            <item>
+              <term>Date Picker</term>
+              <description>DTPicker_DTText</description>
+            </item>
+            <item>
+              <term>Check Box</term>
+              <description>CheckBox</description>
+            </item>
+            <item>
+              <term>Option Button</term>
+              <description>OptionButton</description>
+            </item>
+            <item>
+              <term>Bulleted List</term>
+              <description>ListItem_Plain or ListItem_formatted</description>
+            </item>
+            <item>
+              <term>Numbered List</term>
+              <description>ListItem_Plain or ListItem_formatted</description>
+            </item>
+            <item>
+              <term>Plain List</term>
+              <description>ListItem_Plain or ListItem_formatted</description>
+            </item>
+            <item>
+              <term>Picture</term>
+              <description>InlineImage or LinkedImage</description>
+            </item>
+            <item>
+              <term>Ink Picture</term>
+              <description>InkPicture</description>
+            </item>
+            <item>
+              <term>File Attachment</term>
+              <description>FileAttachment</description>
+            </item>
+          </list>
+          <para>The following controls are not enumerated (excluded from the enumeration): </para>
+          <list type="table">
+            <item>
+              <term>Section</term>
+            </item>
+            <item>
+              <term>Optional Section</term>
+            </item>
+            <item>
+              <term>Repeating Section</term>
+            </item>
+            <item>
+              <term>Repeating Table</term>
+            </item>
+            <item>
+              <term>Horizontal Repeating Table</term>
+            </item>
+            <item>
+              <term>Master/Detail</term>
+            </item>
+            <item>
+              <term>Expression Box</term>
+            </item>
+            <item>
+              <term>Vertical Label</term>
+            </item>
+            <item>
+              <term>Button</term>
+            </item>
+            <item>
+              <term>Hyperlink</term>
+            </item>
+            <item>
+              <term>Scrolling Region</term>
+            </item>
+            <item>
+              <term>Choice Group</term>
+            </item>
+            <item>
+              <term>Repeating Choice Group</term>
+            </item>
+            <item>
+              <term>Choice Section</term>
+            </item>
+            <item>
+              <term>Repeating Recursive Section</term>
+            </item>
+            <item>
+              <term>Custom Controls (ActiveX)</term>
+            </item>
+            <item>
+              <term>Multiple-Selection List Box</term>
+            </item>
+          </list>
+          <para>For more information about programmatically importing data into an InfoPath form, see the <a href="http://go.microsoft.com/fwlink/?LinkID=11689">InfoPath Developer Portal</a>Microsoft Office Developer Center.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
   </Members>

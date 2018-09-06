@@ -19,8 +19,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The interface that must be implemented in the host application to handle the <see cref="M:Microsoft.Office.Interop.InfoPath._XDocument3.NotifyHost(System.String)" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object when the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> object is hosted in a custom application.</summary>
+    <remarks>
+      <para>The <b>INotifyHostEventHandler</b> interface is used to send data to the host application at any point using custom form code, particularly if the host cannot be accessed by using the <see cref="P:Microsoft.Office.Interop.InfoPath.InfoPathEditor.Host" /> property of the <b>InfoPathEditor</b> object.</para>
+      <para>For more information about the <b>InfoPathEditor</b> and the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> objects , see the MSDN article <a href="http://go.microsoft.com/fwlink/?LinkId=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a>What's New for InfoPath Developers.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="NotifyHostEventHandler">
@@ -43,10 +47,13 @@
         <Parameter Name="notification" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="sender">To be added.</param>
-        <param name="notification">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="sender">The object sending the notification to the host.</param>
+        <param name="notification">The contents of the message sent from the <b>NotifyHost</b> method.</param>
+        <summary>Handles the event from the <see cref="M:Microsoft.Office.Interop.InfoPath._XDocument3.NotifyHost(System.String)" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object when the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> object is hosted in a custom application.</summary>
+        <remarks>
+          <para>For more information about the <b>InfoPathEditor</b> and the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> objects , see the MSDN article <a href="http://go.microsoft.com/fwlink/?LinkId=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a>What's New for InfoPath Developers.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
   </Members>

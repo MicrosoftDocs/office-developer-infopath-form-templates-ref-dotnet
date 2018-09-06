@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -52,8 +52,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Activates the window that is represented by the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object.</summary>
+        <remarks>
+          <para>The <b>Activate</b> method can be used only with the editing window types; if used with a designing window type, it will return an error.</para>
+          <para>To determine whether a window is the active window, use the <see cref="P:Microsoft.Office.Interop.InfoPath.Window2.Active" /> property.</para>
+          <para />
+        </remarks>
+        <example>
+          <code>thisApplication.ActiveWindow.&lt;span class="label"&gt;Activate&lt;/span&gt;();</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Active">
@@ -83,9 +90,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a value that indicates whether the window associated with the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object is the active window.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>To designate a window as the active window, use the <see cref="M:Microsoft.Office.Interop.InfoPath.Window2.Activate" /> method.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Caption">
@@ -115,9 +125,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the caption text for the window represented by the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The caption text that is returned or set by this property corresponds to the text preceding "- Microsoft InfoPath" on the title bar of the window</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>Caption</b> property is used to set the caption text of the active window.</para>
+          <code>string caption = "mycaption";
+thisApplication.ActiveWindow.&lt;span class="label"&gt;Caption&lt;/span&gt; = caption;</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -146,9 +164,19 @@
         <Parameter Name="fForce" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="fForce">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="fForce">Determines whether open documents will be saved. The default value is <b>false</b>.</param>
+        <summary>Closes the window that is represented by the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object.</summary>
+        <remarks>
+          <para>The <b>Close</b> method will close the associated window and the forms that it contains. If the <paramref name="bForce" /> parameter is set to <b>true</b>, all forms will be closed without saving, even if they contain changes since they were last saved. If set to <b>false</b>, users will be prompted to save their changes.</para>
+          <para>The <b>Close</b> method can be used only with the editing window types; if used with a designing window type, it will return an error. In addition, the <b>Close</b> method can only be used with the <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnSubmitRequest" /> and <see cref="E:Microsoft.Office.Interop.InfoPath._ButtonEventSink_Event.OnClick" /> event handlers. If used with any other type of event handler, it will return an error.</para>
+          <para>
+            <b>Note</b>: If the window being closed is the only window open in Microsoft Office InfoPath 2003, the InfoPath application will also be closed.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>Close</b> method of the <b>Window</b> object is used to close the currently active window, forcing a save if changes in the form have occurred:</para>
+          <code>thisApplication.ActiveWindow.&lt;span class="label"&gt;Close&lt;/span&gt;(false);</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="CommandBars">
@@ -178,9 +206,54 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the Microsoft Office <b>CommandBars</b> collection contained in the window that is associated with the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>CommandBars</b> collection can be used only by fully trusted forms. If used by a form that is not fully trusted, the <b>CommandBars</b> collection will return a "permission denied" error.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>
+            <b>Note</b>: The following example requires a reference to the <b>System.Reflection</b> namespace.</para>
+          <code>BindingFlags flags = BindingFlags.GetProperty | BindingFlags.DeclaredOnly | BindingFlags.Public | BindingFlags.Instance;
+
+// The CommandBars collection returns only one of the objects 
+// that implements an IDispatch interface.
+// To perform checks and allow COM-like calls,
+// you must create a wrapper by casting to the ObjectWrapper class.
+ObjectWrapper commandBars = (ObjectWrapper)thisApplication.ActiveWindow.&lt;span class="label"&gt;CommandBars&lt;/span&gt;;
+
+int commandBarsCount = (int)commandBars.InvokeByName(
+           "Count",    // prop
+           flags,
+           null,      // arguments
+           null);     // Culture
+
+thisXDocument.UI.Alert("There are " + commandBarsCount.ToString() + " Command Bars");
+
+// Either of the following two lines will work
+object[] args =  new object[] {1};  
+// object[] args =  new object[] {"Standard"};
+
+// This object is outside the wrapper - this gets a .NET object
+
+object commandBarItem = commandBars.InvokeByName(
+           "Item",         
+           flags,
+           args,      // arguments
+           null);     // Culture
+
+thisXDocument.UI.Alert("Got the 'Standard' command bar");
+
+string commandBarName = (string)commandBarItem.GetType().InvokeMember(
+           "name",
+           flags,
+           null, 
+           commandBarItem, 
+           null);
+
+thisXDocument.UI.Alert(commandBarName);</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -210,9 +283,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the height of the window represented by the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object, measured in points.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>Height</b> property will return an error if it is set on a window that is minimized or maximized.</para>
+          <para>The <b>Height</b> property can't be set to a value that is larger than the value returned by <see cref="P:Microsoft.Office.Interop.InfoPath._Application2.UsableHeight" />.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -242,9 +319,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the horizontal position of the window represented by the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object, measured in points.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>Left</b> property will return an error if it is set on a window that is minimized or maximized.</para>
+          <para>Setting the <b>Left</b> property to a position that is off the screen will cause the window to be displayed on the screen.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MailEnvelope">
@@ -274,9 +355,16 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.MailEnvelopeObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.MailEnvelopeObject" /> object associated with the window that is represented by the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>MailEnvelope</b> object can be used only with the editing window types; if used with a designing window type, it will return an error. It will also return an error if no form is open in the form area.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>MailEnvelope</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object is used to set a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.MailEnvelopeObject" /> object.</para>
+          <code>&lt;span class="label"&gt;MailEnvelope&lt;/span&gt; myEnv = thisApplication.ActiveWindow.&lt;span class="label"&gt;MailEnvelope&lt;/span&gt;;</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="TaskPanes">
@@ -306,9 +394,26 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.TaskPanesCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.TaskPanesCollection" /> collection that is associated with the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>TaskPanesCollection</b> collection can be used only with the editing window types; if used with a designing window type, it will return an error.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>TaskPanes</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object is used to set a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.TaskPanesCollection" /> collection:</para>
+          <code>TaskPanes taskPanes; 
+taskPanes = thisXDocument.View.Window.&lt;span class="label"&gt;TaskPanes&lt;/span&gt;;</code>
+          <para>In the following example, the <see cref="P:Microsoft.Office.Interop.InfoPath.TaskPanes.Item(System.Object)" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.TaskPanesCollection" /> collection is used to set a reference to a specified <see cref="T:Microsoft.Office.Interop.InfoPath.TaskPaneObject" /> object. Then the code uses the <see cref="P:Microsoft.Office.Interop.InfoPath.TaskPane.Visible" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.TaskPaneObject" /> object to make the task pane visible.</para>
+          <code>TaskPane taskPane;
+
+// Show the built-in Help task pane.      
+taskPane = thisXDocument.View.Window.&lt;span class="label"&gt;TaskPanes&lt;/span&gt;[4];
+taskPane.Visible = true;
+</code>
+          <para>
+            <b>Note</b>: The <see cref="P:Microsoft.Office.Interop.InfoPath.TaskPanes.Item(System.Object)" /> property argument is the type of task pane to return, based on the <see cref="P:Microsoft.Office.Interop.InfoPath.TaskPane.TaskPaneType" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.TaskPaneObject" /> object, not the position of the <see cref="T:Microsoft.Office.Interop.InfoPath.TaskPaneObject" /> object in the <see cref="T:Microsoft.Office.Interop.InfoPath.TaskPanesCollection" /> collection.</para>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -338,9 +443,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the vertical position of the window represented by the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object, measured in points.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>Top</b> property will return an error if it is set on a window that is minimized or maximized.</para>
+          <para>Setting the <b>Top</b> property to a position that is off the screen will cause the entire window to be displayed on the screen.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -370,9 +479,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the width of the window represented by the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object, measured in points.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>Width</b> property will return an error if it is set on a window that is minimized or maximized.</para>
+          <para>The <b>Width</b> property can't be set to a value that is larger than the value returned by the <see cref="P:Microsoft.Office.Interop.InfoPath._Application2.UsableWidth" /> property.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowState">
@@ -402,9 +515,13 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.XdWindowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the state of the window represented by the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>WindowState</b> property values are based on the <see cref="T:Microsoft.Office.Interop.InfoPath.XdWindowState" /> enumeration.</para>
+          <para>The state of an inactive window cannot be set. Use the <see cref="M:Microsoft.Office.Interop.InfoPath.Window2.Activate" /> method to activate a window prior to setting the window state. </para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowType">
@@ -434,9 +551,19 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.XdWindowType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets an <see cref="T:Microsoft.Office.Interop.InfoPath.XdWindowType" /> value that indicates the type of window that is represented by the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>WindowObject</b> objects represents the two types of windows that are used in the InfoPath application: the editing window that is used as the form area when a user fills out a form, and the designing window that is used as the design mode when a user designs a form.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>WindowType</b> property of the <b>Window</b> object is used to determine the type of window that is the currently active window:</para>
+          <code>if (thisApplication.ActiveWindow.WindowType == 0)
+ thisXDocument.UI.Alert("The active window is an editing window.");
+else
+ thisXDocument.UI.Alert("The active window is a designing window.");</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="XDocument">
@@ -466,9 +593,16 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.XDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object that is associated with the window that is represented by the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>XDocument</b> property can be used only with the editing window types; if used with a designing window type, it will return an error. It will also return an error if no form is open in the form area.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>XDocument</b> property of the <b>Window</b> object is used to set a reference to the form's underlying XML document that is associated with the currently active window:</para>
+          <code>XDocument xDoc = thisApplication.ActiveWindow.&lt;span class="label"&gt;XDocument&lt;/span&gt;;</code>
+        </example>
       </Docs>
     </Member>
   </Members>

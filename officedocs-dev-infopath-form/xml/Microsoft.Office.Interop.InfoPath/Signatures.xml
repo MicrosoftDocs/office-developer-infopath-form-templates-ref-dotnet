@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.SignaturesCollection" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -51,7 +51,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the number of <see cref="T:Microsoft.Office.Interop.InfoPath.SignatureObject" /> objects in the collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -78,9 +78,20 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new <see cref="T:Microsoft.Office.Interop.InfoPath.SignatureObject" /> object.</summary>
+        <returns>A <b>SignatureObject</b> object.</returns>
+        <remarks>
+          <para>This method can be called only from the <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnSign" />event.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, a <b>Signature</b> object is added to <see cref="T:Microsoft.Office.Interop.InfoPath.SignaturesCollection" /> collection of the form </para>
+          <code>public void OnSign(SignEvent e)
+ {
+  Signature signature = e.SignedDataBlock.Signatures.&lt;span class="label"&gt;Create&lt;/span&gt;();
+  signature.Sign();
+ }</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -111,8 +122,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets an <b>IEnumerator</b> that iterates over all entries in the <see cref="T:Microsoft.Office.Interop.InfoPath.SignaturesCollection" /> object.</summary>
+        <returns>An <b>IEnumerator</b> that iterates over all entries in the <see cref="T:Microsoft.Office.Interop.InfoPath.SignaturesCollection" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,10 +154,14 @@
         <Parameter Name="varIndex" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="varIndex">A numeric expression that specifies the position of a member of the <b>SignaturesCollection</b> collection. The argument must be a number from 0 to the value of the collection's <see cref="P:Microsoft.Office.Interop.InfoPath.Signatures.Count" /> property minus 1.</param>
+        <summary>Gets a reference to the specified digital signature from the <see cref="T:Microsoft.Office.Interop.InfoPath.SignaturesCollection" /> collection.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <example>
+          <para>The following example returns the first <see cref="T:Microsoft.Office.Interop.InfoPath.SignatureObject" /> object in the <b>SignaturesCollection</b> collection of the form:</para>
+          <code>Signature firstSignature = thisXDocument.SignedDataBlocks[0].Signatures[0];</code>
+        </example>
       </Docs>
     </Member>
   </Members>

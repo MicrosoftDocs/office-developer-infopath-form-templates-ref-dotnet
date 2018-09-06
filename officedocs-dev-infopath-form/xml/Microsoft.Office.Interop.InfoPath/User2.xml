@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.UserObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -54,10 +54,21 @@
         <Parameter Name="bstrUsername" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bstrUsername">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bstrUsername">The user name in the format of "domain\username."</param>
+        <summary>Returns <b>true</b> if the current user matches the specified user name.</summary>
+        <returns>
+          <b>true</b> if the current user matches the specified name; otherwise <b>false</b>.</returns>
+        <remarks>
+          <para>Even though the <b>IsCurrentUser</b> method is marked as security level 0, it is not always accessible. When a call is made to the <b>IsCurrentUser</b> method, InfoPath first performs a security check to determine if access to this method is allowed. The security check confirms whether the calling code is trusted or not and it determines the location of the calling code.</para>
+          <para>If the calling code is trusted (as it is when, for example, the <b>IsCurrentUser</b> method is called from an installed or signed InfoPath form template, or from trusted external code, such as an executable file on the local computer), InfoPath will allow full access to the <b>IsCurrentUser</b> method.</para>
+          <para>If the calling code is not trusted (as in the circumstance of a call coming from a domain-based InfoPath form template or from script executing in Microsoft Internet Explorer), InfoPath first checks where the call is being made from. If the call is from code that is not trusted in an InfoPath form template at a URL such as "http://www.contoso.com/example.xsn", then the call is from the Internet zone. InfoPath denies access to the <b>IsCurrentUser</b> method for all calls that are not trusted coming from the Internet zone. If the call is from a URL such as "http://contoso/example.xsn", then the call is from the Intranet zone. For a call that is not trusted from the Intranet zone, InfoPath checks whether the Internet Explorer user authentication settings allow automatic logon (in the Intranet zone only or for every logon). If Internet Explorer is configured for automatic logon, then InfoPath allows full access to the <b>IsCurrentUser</b> method. Otherwise, access to the <b>IsCurrentUser</b> method is denied.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>IsCurrentUser</b> method of the User object is used to determine if the current user equals "UserDomain\NancyDavilio".</para>
+          <code>bool userMatched;
+userMatched = thisApplication.User.&lt;span class="label"&gt;IsCurrentUser&lt;/span&gt;(@"UserDomain\NancyDavolio");</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="IsUserMemberOf">
@@ -87,10 +98,23 @@
         <Parameter Name="bstrGroupname" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bstrGroupname">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bstrGroupname">The group name in the format of "domain\groupname."</param>
+        <summary>Returns a value that indicates whether the current user is a member of the specified group.</summary>
+        <returns>
+          <b>true</b> if the current user is a member of the specified group; otherwise <b>false</b>.</returns>
+        <remarks>
+          <para>Even though the <b>IsUserMemberOf</b> method is marked as security level 0, it is not always accessible. When a call is made to the <b>IsUserMemberOf</b> method, InfoPath first performs a security check to determine if access to this method is allowed. The security check confirms whether the calling code is trusted or not and it determines the location of the calling code.</para>
+          <para>If the calling code is trusted (as it is when, for example, the <b>IsUserMemberOf</b> method is called from an installed or signed InfoPath form template, or from trusted external code, such as an executable file on the local computer), InfoPath will allow full access to the <b>IsUserMemberOf</b> method.</para>
+          <para>If the calling code is not trusted (as in the circumstance of a call coming from a domain-based InfoPath form template or from script executing in Microsoft Internet Explorer), InfoPath first checks where the call is being made from. If the call is from code that is not trusted in an InfoPath form template at a URL such as "http://www.contoso.com/example.xsn", then the call is from the Internet zone. InfoPath will deny access to the <b>IsUserMemberOf</b> method for all calls that are not trusted coming from the Internet zone. If the call is from a URL such as "http://contoso/example.xsn", then the call is from the Intranet zone. For a call that is not trusted from the Intranet zone, InfoPath checks whether the Internet Explorer user authentication settings allow automatic logon (in the Intranet zone only or for every logon). If Internet Explorer is configured for automatic logon, then InfoPath checks the user's group membership. If the group membership is public, InfoPath allows full access to the <b>IsUserMemberOf</b> method. If the group membership is not fully public, InfoPath hides the result. That is, InfoPath treats the group membership as if it were not visible. The return value in this case is always <b>False</b> because the group membership is not public. InfoPath does not report that access is denied.</para>
+          <para>
+            <b>Note</b>: Group membership information is fully public if access to it is allowed and the information is visible by all non-anonymous users. If even a single non-anonymous user has been specifically denied access to membership information, then the group membership information is not fully public.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>IsUserMemberOf</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.UserObject" /> object is used to determine if the current user is a member of the "GroupDomain\Administrators" group.</para>
+          <code>bool groupMatched;
+groupMatched = thisApplication.User.&lt;span class="label"&gt;IsUserMemberOf&lt;/span&gt;(@"GroupDomain\Administrators");</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="LoginName">
@@ -117,9 +141,20 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the user's full credentials.</summary>
+        <value>The user's credentials as domain\username. </value>
+        <remarks>
+          <para>The <b>LoginName</b> property returns a user's credentials as domain\username. If the user's account does not belong to a domain, the property returns only username.</para>
+          <para>This is equivalent to calling System.Environment.UserDomainName+"\\"+System.Environment.UserName.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>LoginName</b> property is used to display the current user's login credentials.</para>
+          <code>User2 thisUser = thisApplication.User;
+thisXDocument.UI.Alert(thisUser.LoginName);</code>
+          <code>Dim thisUser As User2  = thisApplication.User
+thisXDocument.UI.Alert(thisUser.LoginName)</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -146,9 +181,19 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets only the user's username.</summary>
+        <value>The user's username.</value>
+        <remarks>
+          <para>Calling the UserName property is equivalent to calling System.Environment.UserName. </para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>UserName</b> property is used to display the current user's login credentials.</para>
+          <code>User2 thisUser = thisApplication.User;
+thisXDocument.UI.Alert(thisUser.UserName);</code>
+          <code>Dim thisUser As User2  = thisApplication.User
+thisXDocument.UI.Alert(thisUser.UserName)</code>
+        </example>
       </Docs>
     </Member>
   </Members>

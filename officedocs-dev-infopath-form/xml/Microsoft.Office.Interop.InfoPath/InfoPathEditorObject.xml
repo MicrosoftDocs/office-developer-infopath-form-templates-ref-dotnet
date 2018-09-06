@@ -23,8 +23,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>A hostable object that is used to integrate the Microsoft InfoPath form editing environment into a .NET-based custom application.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" />.</para>
+      <para>The <b>InfoPathEditor</b> editor object provides various properties and methods to open and close form templates, as well as to communicate with the host environment. The Microsoft.Office.InfoPath.FormControl assembly provides similar functionality for .NET-based custom applications, and the Microsoft.Office.InfoPath.Server assembly provides the hostable <b>XmlFormView</b> control for use in custom Web pages (.aspx).</para>
+      <para>For more information about the <b>InfoPathEditor</b> and the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> objects , see the MSDN article <a href="http://go.microsoft.com/fwlink/?LinkId=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a>What's New for InfoPath Developers. For more information about using the <b>XmlFormView</b> control in custom Web pages, see <a href="http://go.microsoft.com/fwlink/?LinkId=73331">Hosting the InfoPath  Form Editing Environment in a Custom Web Form</a></para>
+      <para />
+    </remarks>
   </Docs>
   <Members />
 </Type>

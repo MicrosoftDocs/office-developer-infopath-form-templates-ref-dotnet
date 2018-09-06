@@ -23,8 +23,46 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains a <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object for each Microsoft Office InfoPath 2003 window that is currently open.</summary>
+    <remarks>
+      <para>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.Windows" />.</para>
+      <para>
+        <b>WindowObject</b> objects represent the two types of windows that are used in the InfoPath application: the editing window that is used as the form area when a user fills out a form, and the designing window that is used as the design mode when a user designs a form.</para>
+      <para>The <b>WindowsCollection</b> collection implements properties that can be used to access a form's associated Window objects, and it is accessible through the <see cref="P:Microsoft.Office.Interop.InfoPath._Application2.Windows" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.Application" /> object.</para>
+      <para>
+        <b>Note</b>: The <b>WindowsCollection</b> collection can be used only to get the count of <b>WindowObject</b> objects that it contains or to return a reference to a specified <b>WindowObject</b> object. It cannot be used to create, add, or remove <b>WindowObject</b> objects.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>In the following example, implemented as an <see cref="E:Microsoft.Office.Interop.InfoPath._ButtonEventSink_Event.OnClick" /> event handler for a button on a form, the <see cref="P:Microsoft.Office.Interop.InfoPath._Application2.Windows" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.Application" /> object is used to set a reference to the <b>WindowsCollection</b> collection. The code then loops through the collection and displays the type of each Window object that it contains.</para>
+      <code>public void ShowWindowTypes_OnClick(DocActionEvent e)
+{
+// Set a reference to the Windows collection.
+&lt;span class="label"&gt;WindowsCollection&lt;/span&gt; windows = thisApplication.Windows;
+
+// Loop through the collection and display the type
+// of each Window object that it contains.
+for (int i=0; i &amp;lt; windows.Count; i++)
+ {
+string windowType = "";
+
+switch (windows[i].WindowType)
+    {
+    case XdWindowType.xdEditorWindow:
+    windowType = "Editing window";
+    break;
+
+    case XdWindowType.xdDesignerWindow:
+    windowType = "Designing window";
+    break;
+    }
+
+thisXDocument.UI.Alert("Window type " + i + ": " + windowType);
+ }
+}
+</code>
+      <para>For code examples, see How to: Work with Form Windows.</para>
+    </example>
   </Docs>
   <Members />
 </Type>

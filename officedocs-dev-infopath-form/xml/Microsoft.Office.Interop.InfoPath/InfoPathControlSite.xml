@@ -19,8 +19,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the object that InfoPath passes to an ActiveX control when it is initialized in an InfoPath view.</summary>
+    <remarks>
+      <para>The <b>InfoPathControlSite</b> object defines the <see cref="P:Microsoft.Office.Interop.InfoPath.InfoPathControlSite.XDocument" /> property for accessing the <see cref="T:Microsoft.Office.Interop.InfoPath.SemiTrust.XDocument" /> object associated with a form, and the <see cref="P:Microsoft.Office.Interop.InfoPath.InfoPathControlSite.Node" /> property for accessing the XML node to which the control is bound.</para>
+      <para>The <b>InfoPathControlSite</b> object should not be implemented by the developer of an ActiveX control. It represents an interface that is implemented by InfoPath itself.</para>
+      <para>The <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathControl" /> and <b>InfoPathControlSite</b> objects and their methods and properties are designed to be used only from the implementation of an ActiveX control. These objects and their members are not supported in InfoPath form code. For more information on how to create ActiveX controls that work with InfoPath, see the InfoPath Developer Center (http://msdn.microsoft.com/infopath).</para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Node">
@@ -47,9 +52,12 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a reference to the XML node to which the ActiveX control is bound.</summary>
+        <value>An <see cref="T:Microsoft.Office.Interop.InfoPath.SemiTrust.IXMLDOMNode" /> object.</value>
+        <remarks>
+          <para>The <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathControl" /> and <b>InfoPathControlSite</b> objects and their methods and properties are designed to be used only from the implementation of an ActiveX control. These objects and their members are not supported in InfoPath form code. For more information on how to create ActiveX controls that work with InfoPath, see the InfoPath Developer Center (http://msdn.microsoft.com/infopath).</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="XDocument">
@@ -76,9 +84,12 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath._XDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object associated with the view that contains the control.</summary>
+        <value>An <b>XDocument</b> object</value>
+        <remarks>
+          <para>The <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathControl" /> and <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathControlSite" /> objects and their methods and properties are designed to be used only from the implementation of an ActiveX control. These objects and their members are not supported in InfoPath form code. For more information on how to create ActiveX controls that work with InfoPath, see the InfoPath Developer Center (http://msdn.microsoft.com/infopath).</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
   </Members>

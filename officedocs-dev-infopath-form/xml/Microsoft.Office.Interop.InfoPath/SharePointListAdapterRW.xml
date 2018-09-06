@@ -19,8 +19,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.SharePointListAdapterRWObject" /></summary>
+    <remarks>
+      <para>
+        <b>Note</b>: Code written with the members implemented by the <see cref="T:Microsoft.Office.Interop.InfoPath.SharePointListAdapterRWObject" /> class is not compatible with a data connection to a SharePoint list or document library created in InfoPath 2003 or InfoPath 2007, with a data connection in a new form template created in InfoPath with one of the InfoPath 2007 Form Templates, or with a data connection converted with the Convert to InfoPath 2003/2007 button in the Data Connections dialog box. If you do not need to maintain compatibility with an earlier version of InfoPath and want to write code with members implemented by the <see cref="T:Microsoft.Office.Interop.InfoPath.SharePointListAdapterRWObject" /> class, you can convert the data connection with the Upgrade to InfoPath 2010 button in the Data Connections dialog box.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="ContentTypeId">
@@ -50,9 +54,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the content type ID of the SharePoint list associated with the <see cref="T:Microsoft.Office.Interop.InfoPath.SharePointListAdapterRWObject" /> object. </summary>
+        <value>Returns <see cref="F:System.String.Empty" />..</value>
+        <remarks>
+          <para>This property always returns <see cref="F:System.String.Empty" /> for a secondary data connection to a SharePoint list. </para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ListId">
@@ -82,8 +89,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the list ID of the SharePoint list associated with the <see cref="T:Microsoft.Office.Interop.InfoPath.SharePointListAdapterRWObject" /> object.</summary>
+        <value>The GUID that identifies the SharePoint list.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,8 +118,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of a <see cref="T:Microsoft.Office.Interop.InfoPath.SharepointListAdapterRWObject" /> object.</summary>
+        <value>The name of the data connection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,8 +145,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Reads data from the associated data connection.</summary>
+        <remarks>
+          <para>The <see cref="M:Microsoft.Office.Interop.InfoPath.SharePointListAdapterRW.Query" /> method fails if the <see cref="P:Microsoft.Office.Interop.InfoPath.SharepointListAdapterRW.QueryAllowed" /> property is <b>false</b>.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="QueryAllowed">
@@ -166,8 +176,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that always returns <b>true</b>, which corresponds to the value of the <b>queryAllowed</b> attribute in the form definition file (.xsf).</summary>
+        <value>
+          <b>true</b> if the a query is allowed otherwise <b>false</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,8 +209,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the Uniform Resource Locator (URL) of the SharePoint Foundation site that the data connection represented by the <see cref="T:Microsoft.Office.Interop.InfoPath.SharepointListAdapterRWObject" /> object will query.</summary>
+        <value>The URL of the site.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,8 +236,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Submits data to the associated data connection.</summary>
+        <remarks>
+          <para>The <see cref="M:Microsoft.Office.Interop.InfoPath.SharePointListAdapterRW.Submit" /> method fails if the <see cref="P:Microsoft.Office.Interop.InfoPath.SharepointListAdapterRW.SubmitAllowed" /> property is <b>false</b>.</para>
+          <para>This member can be accessed only by forms running in the same domain as the currently open form, or by forms that have been granted cross-domain permissions.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SubmitAllowed">
@@ -253,8 +268,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that specifies whether a submit operation is allowed, which corresponds to the value of the <b>submitAllowed</b> attribute in the form definition file (.xsf).</summary>
+        <value>
+          <b>true</b> if the a submit operation is allowed otherwise <b>false</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -23,8 +23,22 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An event object that is used during a Microsoft Office InfoPath 2003 version upgrade event.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.VersionUpgradeEvent" />.</para>
+      <para>The <b>VersionUpgradeEvent</b> object provides a number of properties that can be used within a version upgrade event to programmatically interact with a form's underlying XML document, determine the version numbers of the form and form template, and provide a response indicating the success of the version upgrade process.</para>
+      <para>The <b>VersionUpgradeEvent</b> object is passed as a parameter to <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnVersionUpgrade" /> of an InfoPath form. The properties that it provides are available only during this event.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>In the following example, the <see cref="P:Microsoft.Office.Interop.InfoPath.VersionUpgradeEvent.DocumentVersion" /> and <see cref="P:Microsoft.Office.Interop.InfoPath.VersionUpgradeEvent.SolutionVersion" /> properties of the <b>VersionUpgradeEvent</b> object are used to display the version numbers of the form and form template:</para>
+      <code>public void OnVersionUpgrade(&lt;span class="label"&gt;VersionUpgradeEvent&lt;/span&gt; e)
+{
+ thisXDocument.UI.Alert("The form version: " + e.DocumentVersion + 
+  "\nThe form template version: " + e.SolutionVersion);
+ e.ReturnStatus = true;   
+}</code>
+    </example>
   </Docs>
   <Members />
 </Type>

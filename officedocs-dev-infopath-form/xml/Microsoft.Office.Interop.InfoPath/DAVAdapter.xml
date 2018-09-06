@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.DAVAdapterObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -50,9 +50,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the file name that the current Microsoft Office InfoPath form will be given when the form is submitted by the <see cref="T:Microsoft.Office.Interop.InfoPath.DAVAdapterObject" />.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The ".xml" file name extension will be appended to the string if it is not already included. If the <b>FileName</b> property is set to null, the form is given the name "Form.xml" when it is submitted.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FolderURL">
@@ -82,9 +85,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the Uniform Resource Locator (URL) to which the form will be submitted by the <see cref="T:Microsoft.Office.Interop.InfoPath.DAVAdapterObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>Submit</b> method of the <b>DAVAdapter</b> object will fail if the value of the <b>FolderURL</b> property does not begin with either the "http:" or the "https:" prefix. The <b>Submit</b> method will also fail if the site specified by the <b>FolderURL</b> property is not available, or if the URL is not in the same security domain as the form template.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>This example shows how to use the <b>FolderURL</b> property of an instance of the <see cref="T:Microsoft.Office.Interop.InfoPath.DAVAdapterObject" /> object to change the folder to which the form data will be submitted:</para>
+          <code>davAdapter.FolderURL = davAdapter.&lt;span class="label"&gt;FolderURL&lt;/span&gt; + @"data\";</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -111,7 +121,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the name of a <see cref="T:Microsoft.Office.Interop.InfoPath.DAVAdapterObject" /> object.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -138,7 +148,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <b>Query</b> method is available for the <see cref="T:Microsoft.Office.Interop.InfoPath.DAVAdapterObject" /> object but, because the <b>DAVAdapter</b> object is available for submitting data only, the method will always generate a run-time error when it is called on that object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,7 +176,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns <b>false</b>, corresponding to the <b>queryAllowed</b> attribute in the form definition file (.xsf).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -193,8 +203,36 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Executes the submit operation on the associated adapter.</summary>
         <remarks>To be added.</remarks>
+        <example>
+          <para>In the following example, the <b>Submit</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.DAVAdapterObject" /> object is used to submit an XML document to a Windows SharePoint Server document library. This code requires a SharePoint form library Data Connection named "Submit".</para>
+          <code>// Get the first data adapter; a "SharePoint Library" submit adapter
+DAVAdapter davAdapter = thisXDocument.DataAdapters["Submit"] as DAVAdapter;
+if (davAdapter == null)
+{
+ thisXDocument.UI.Alert("SharePoint submit list adapter called 'Submit' was not found.");
+ return;
+}
+// Set the file name to be the today's date (as an .xml file)
+davAdapter.FileName = DateTime.Today.ToShortDateString() + ".xml";
+if (davAdapter.SubmitAllowed)
+{
+ try
+ {
+  davAdapter.&lt;span class="label"&gt;Submit&lt;/span&gt;();
+ }
+ catch (Exception ex)
+ {
+  // The save failed
+  thisXDocument.UI.Alert("Saving to " + davAdapter.FolderURL + " as " + davAdapter.FileName + " failed." + Environment.NewLine + "Reason: " + ex.Message);
+ }
+}
+else
+{
+ thisXDocument.UI.Alert("Submit is not allowed on adapter " + davAdapter.Name + ".");
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="SubmitAllowed">
@@ -221,7 +259,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Returns <b>true</b>, corresponding to the <b>submitAllowed</b> attribute in the form definition file (.xsf).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -250,9 +288,48 @@
         <Parameter Name="pData" Type="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" />
       </Parameters>
       <Docs>
-        <param name="pData">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="pData">The XML data that is to be submitted.</param>
+        <summary>Submits the specified DOM element or DOM document to a data adapter.</summary>
         <remarks>To be added.</remarks>
+        <example>
+          <para>In the following example, the <b>SubmitData</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.DAVAdapterObject" /> object is used to submit an XML document containing a DOM element, <paramref name="my:group1" />, to a Windows SharePoint Server document library. This code requires a SharePoint form library Data Connection named "Submit" and that <paramref name="my:group1" /> exists in the data source under the document element, for example, <paramref name="my:myFields" />.</para>
+          <code>// Get the first data adapter; a "SharePoint Library" submit adapter
+DAVAdapter davAdapter = thisXDocument.DataAdapters["Submit"] as DAVAdapter;
+if (davAdapter == null)
+{
+ thisXDocument.UI.Alert("SharePoint submit list adapter called 'Submit' was not found.");
+ return;
+}
+// Set the file name to be the today's date (as an .xml file)
+davAdapter.FileName = DateTime.Today.ToShortDateString() + ".xml";
+// Get my:group1 from the data source
+IXMLDOMNode group1Node = thisXDocument.DOM.selectSingleNode("/my:myFields/my:group1");
+// Check if group1 exists
+if (group1Node != null)
+{
+ if (davAdapter.SubmitAllowed)
+ {
+  try
+  {
+   davAdapter.&lt;span class="label"&gt;SubmitData&lt;/span&gt;(group1Node);
+  }
+  catch (Exception ex)
+  {
+   // The save failed
+   thisXDocument.UI.Alert("Saving to " + davAdapter.FolderURL + " as " + davAdapter.FileName + " failed." + Environment.NewLine + "Reason: " + ex.Message);
+  }
+ }
+ else
+ {
+  thisXDocument.UI.Alert("Submit is not allowed on adapter " + davAdapter.Name + ".");
+ }
+}
+else
+{
+ // my:group1 does not exist
+ thisXDocument.UI.Alert("my:group1 does not exist in the form.");
+}</code>
+        </example>
       </Docs>
     </Member>
   </Members>

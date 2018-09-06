@@ -25,7 +25,10 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the method that will handle the <see cref="E:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.Quit" /> event.</summary>
+    <remarks>
+      <para>When you create an <see cref="T:Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler" /> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information, see Events and Delegates.</para>
+      <para />
+    </remarks>
   </Docs>
 </Type>

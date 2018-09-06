@@ -18,8 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <b>XdConfirmChoice</b> enumeration is used to determine which button is clicked in a message box.</summary>
+    <remarks>
+      <para>These enumerated values are used by the <see cref="M:Microsoft.Office.Interop.InfoPath.UI2.Confirm(System.String,Microsoft.Office.Interop.InfoPath.XdConfirmButtons)" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.UIObject" /> object.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="xdCancel">
@@ -39,7 +42,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Cancel button was clicked.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdNo">
@@ -59,7 +62,7 @@
       </ReturnValue>
       <MemberValue>7</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The No button was clicked.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdOK">
@@ -79,7 +82,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OK button was clicked.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdYes">
@@ -99,7 +102,7 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Yes button was clicked.</summary>
       </Docs>
     </Member>
   </Members>

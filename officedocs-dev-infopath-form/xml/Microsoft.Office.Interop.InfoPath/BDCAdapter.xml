@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.BDCAdapterObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,8 +47,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the external content type that defines connectivity information for the data source accessed from the external list.</summary>
+        <value>The name of the external content type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,8 +76,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the namespace of the external content type that defines connectivity information for the data source accessed from the external list.</summary>
+        <value>The namespace of the external content type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,8 +105,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the system instance to which the external content type connects to provide data to the external list.</summary>
+        <value>The name of the connected system instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,8 +134,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the data connection represented by the <see cref="T:Microsoft.Office.Interop.InfoPath.BDCAdapterObject" /> object.</summary>
+        <value>The name of the data connection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,8 +161,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Retrieves data from the associated data connection.</summary>
+        <remarks>
+          <para>The <see cref="M:Microsoft.Office.Interop.InfoPath.BDCAdapter.Query" /> method fails if the <see cref="P:Microsoft.Office.Interop.InfoPath.BDCAdapter.QueryAllowed" /> property is <b>false</b>. </para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="QueryAllowed">
@@ -189,8 +192,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether a query can be performed on the data connection.</summary>
+        <value>
+          <b>true</b> if the a query is allowed otherwise <b>false</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,8 +222,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the operation defined in the external content type for querying the data source that contains the items displayed in the external list.</summary>
+        <value>The name of the query operation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,8 +249,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Submits data to the associated data adapter.</summary>
+        <remarks>
+          <para>The <see cref="M:Microsoft.Office.Interop.InfoPath.BDCAdapter.Submit" /> method fails if the <see cref="P:Microsoft.Office.Interop.InfoPath.BDCAdapter.SubmitAllowed" /> property is <b>false</b>.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SubmitAdapterName">
@@ -273,8 +280,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the name of the data connection for submitting data represented by the <see cref="T:Microsoft.Office.Interop.InfoPath.BDCAdapterObject" /> object.</summary>
+        <value>The name of the data connection for submitting data.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -302,8 +309,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether data can be submitted to the data connection.</summary>
+        <value>
+          <b>true</b> if the a query is allowed otherwise <b>false</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

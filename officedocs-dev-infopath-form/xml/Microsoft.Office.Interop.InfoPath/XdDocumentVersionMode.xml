@@ -18,8 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <b>XdDocumentVersionMode</b> enumeration is used to determine how a Microsoft Office InfoPath form will be opened.</summary>
+    <remarks>
+      <para>These enumerated values are used as arguments to the <b>New</b> and <b>Open</b> methods of the <see cref="T:Microsoft.Office.Interop.InfoPath.ExternalApplication" /> object and <see cref="T:Microsoft.Office.Interop.InfoPath.XDocumentsCollection" /> collection.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="xdCanOpenInReadOnlyMode">
@@ -39,7 +42,7 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The form is opened in read-only mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdCanTransformSigned">
@@ -59,7 +62,7 @@
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The form is opened and its transform applied, even though it has a digital signature.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdDoNotInstallActiveXCabs">
@@ -79,7 +82,7 @@
       </ReturnValue>
       <MemberValue>128</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The form is opened but ActiveX controls are not installed from the cab files.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdFailOnVersionMismatch">
@@ -99,7 +102,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The form is created or opened only if it is accessible and its version number matches the version number of the form template.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdFailOnVersionOlder">
@@ -119,7 +122,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The form is created or opened only if it is accessible and its version number is not older than the version number of the form template.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdIgnoreDataAdaptersQueryFailure">
@@ -139,7 +142,7 @@
       </ReturnValue>
       <MemberValue>64</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The form is opened even if the query associated with its data adapter fails to return data.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdPromptTransformSigned">
@@ -159,7 +162,7 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The form is opened and the Digital Signatures dialog box is displayed before the form's transform is applied.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdUseExistingVersion">
@@ -179,7 +182,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The form is created or opened using the existing version number of the form template.</summary>
       </Docs>
     </Member>
   </Members>

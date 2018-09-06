@@ -23,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -57,9 +57,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the Uniform Resource Locator (URL) of the XML file that is associated with the <see cref="T:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObject" /> object.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <example>
+          <code>XMLFileAdapter myAdapter = (XMLFileAdapter)thisXDocument.DataObjects[0].QueryAdapter;
+thisXDocument.UI.Alert("The FileURL is: " + myAdapter.&lt;span class="label"&gt;FileURL&lt;/span&gt;);</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -86,7 +90,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the name of an <see cref="T:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObject" /> object.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,8 +117,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Reads data from the associated data adapter.</summary>
+        <remarks>
+          <para>The <b>Query</b> method fails if <see cref="P:Microsoft.Office.Interop.InfoPath.XMLFileAdapter2.QueryAllowed" /> is <b>false</b>.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="QueryAllowed">
@@ -141,7 +148,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Always returns <b>true</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -168,7 +175,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <b>Submit</b> method is available for the <see cref="T:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObject" /> object but, because the <b>XMLFileAdapter</b> object is available for receiving data only, the method will always generate a run-time error when it is called on that object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,7 +203,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Always returns <b>false</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
