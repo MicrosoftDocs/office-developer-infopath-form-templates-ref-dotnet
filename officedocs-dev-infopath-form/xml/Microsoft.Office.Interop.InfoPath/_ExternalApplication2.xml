@@ -201,6 +201,19 @@ infoPath. &lt;span class="label"&gt;NewFromSolutionWithInputParameters&lt;/span&
    @"C:\User Forms\DeptReport.xsn","Dept=Accounting&amp;amp;Acct=Contoso");
 }</code>
         </example>
+        <example>
+          <para>
+            <b>Note</b>: The following example assumes that the <see cref="N:Microsoft.Office.Interop.InfoPath" /> namespace is being used and that the Microsoft InfoPath 3.0 Type Library is referenced.</para>
+          <para>The following example shows how to create a new form by passing in the URI of a form template that contains an appropriate <see cref="E:Microsoft.Office.InfoPath.FormEvents.Loading" /> event handler and two input parameters. </para>
+          <code>private void CreateFormWithInputParameters()
+{
+ExternalApplication infoPath = new ExternalApplicationClass();
+
+// Create an InfoPath form passing in input parameters.
+infoPath. &lt;span class="label"&gt;NewFromSolutionWithInputParameters&lt;/span&gt;(
+   @"C:\User Forms\DeptReport.xsn","Dept=Accounting&amp;amp;Acct=Contoso");
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Open">

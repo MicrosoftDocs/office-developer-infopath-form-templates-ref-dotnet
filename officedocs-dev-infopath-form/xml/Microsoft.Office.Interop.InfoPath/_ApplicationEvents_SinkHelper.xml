@@ -320,7 +320,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocument" />
+        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath.Window" />
         <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath.Window" />
       </Parameters>
       <Docs>
@@ -378,7 +378,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocument" />
+        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath.Window" />
         <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath.Window" />
       </Parameters>
       <Docs>
@@ -436,7 +436,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocument" />
+        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath.Window" />
         <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath.Window" />
       </Parameters>
       <Docs>
@@ -494,7 +494,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocument" />
+        <Parameter Name="" Type="System.Boolean" />
         <Parameter Name="" Type="System.Boolean" RefType="ref" />
       </Parameters>
       <Docs>
@@ -552,7 +552,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocument" />
+        <Parameter Name="" Type="System.Boolean" />
         <Parameter Name="" Type="System.Boolean" RefType="ref" />
       </Parameters>
       <Docs>
@@ -610,7 +610,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocument" />
+        <Parameter Name="" Type="System.Boolean" />
         <Parameter Name="" Type="System.Boolean" RefType="ref" />
       </Parameters>
       <Docs>
