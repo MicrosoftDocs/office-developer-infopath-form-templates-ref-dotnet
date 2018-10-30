@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._ButtonEventSink_SinkHelper" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class _ButtonEventSink_SinkHelper&#xA;Implements _ButtonEventSink" />
   <TypeSignature Language="C++ CLI" Value="public ref class _ButtonEventSink_SinkHelper sealed : Microsoft::Office::Interop::InfoPath::_ButtonEventSink" />
+  <TypeSignature Language="F#" Value="type _ButtonEventSink_SinkHelper = class&#xA;    interface _ButtonEventSink" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -25,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This member is reserved for internal use and is not intended to be used directly from your code.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._ButtonEventSink_SinkHelper.m_dwCookie" />
       <MemberSignature Language="VB.NET" Value="Public m_dwCookie As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int m_dwCookie;" />
+      <MemberSignature Language="F#" Value="val mutable m_dwCookie : int" Usage="Microsoft.Office.Interop.InfoPath._ButtonEventSink_SinkHelper.m_dwCookie" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -44,7 +46,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member is reserved for internal use and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._ButtonEventSink_SinkHelper.m_OnClickDelegate" />
       <MemberSignature Language="VB.NET" Value="Public m_OnClickDelegate As _ButtonEventSink_OnClickEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::Office::Interop::InfoPath::_ButtonEventSink_OnClickEventHandler ^ m_OnClickDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_OnClickDelegate : Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler" Usage="Microsoft.Office.Interop.InfoPath._ButtonEventSink_SinkHelper.m_OnClickDelegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -63,7 +66,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member is reserved for internal use and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ButtonEventSink_SinkHelper.OnClick(Microsoft.Office.Interop.InfoPath.DocActionEventObject)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnClick ( As DocActionEventObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnClick(Microsoft::Office::Interop::InfoPath::DocActionEventObject ^ );" />
+      <MemberSignature Language="F#" Value="abstract member OnClick : Microsoft.Office.Interop.InfoPath.DocActionEventObject -&gt; unit&#xA;override this.OnClick : Microsoft.Office.Interop.InfoPath.DocActionEventObject -&gt; unit" Usage="_ButtonEventSink_SinkHelper.OnClick " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ButtonEventSink.OnClick(Microsoft.Office.Interop.InfoPath.DocActionEventObject)</InterfaceMember>
@@ -89,7 +93,7 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is reserved for internal use and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

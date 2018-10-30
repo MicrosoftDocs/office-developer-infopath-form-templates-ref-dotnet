@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DataSourceObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface DataSourceObject&#xA;Implements DataObject" />
   <TypeSignature Language="C++ CLI" Value="public interface class DataSourceObject : Microsoft::Office::Interop::InfoPath::DataObject" />
+  <TypeSignature Language="F#" Value="type DataSourceObject = interface&#xA;    interface DataObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,28 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a secondary data source.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.DataObject" />.</para>
+      <para>The <b>DataObject</b> object corresponds to stored data, obtained from some external source of data, using an associated data adapter. It provides properties and methods that can be used to programmatically interact the stored data, as well as providing access to the associated data adapter object. The <b>DataObject</b> object is accessible through the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument2.DataObjects" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object.</para>
+      <para>The <b>DataObject</b> object acts as an intermediary between a Microsoft InfoPath form and the data adapter object that is used to obtain data from an external connection, such as a connection to a Microsoft Access or Microsoft SQL Server database, an .xml file, or an XML Web service. The type of data adapter object used depends on the type of external data connection. The <b>DataObject</b> object provides a common set of properties and a method that can be used for all types of data adapter objects, and each of the data adapter objects provides its own set of properties and methods.</para>
+      <para>Microsoft InfoPath supports four types of data adapters:</para>
+      <list type="bullet">
+        <item>
+          <description>ActiveX Data Objects   Represented by the <see cref="T:Microsoft.Office.Interop.InfoPath.ADOAdapterObject" /> object.</description>
+        </item>
+        <item>
+          <description>SharePoint list   Represented by the <see cref="T:Microsoft.Office.Interop.InfoPath.SharepointListAdapterObject" /> object.</description>
+        </item>
+        <item>
+          <description>Web services   Represented by <see cref="T:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObject" /> object.</description>
+        </item>
+        <item>
+          <description>XML file   Represented by <see cref="T:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObject" /> object.</description>
+        </item>
+      </list>
+      <para />
+    </remarks>
   </Docs>
   <Members />
 </Type>

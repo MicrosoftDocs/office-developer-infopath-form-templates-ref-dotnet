@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2" />
   <TypeSignature Language="VB.NET" Value="Public Interface WebServiceAdapter2&#xA;Implements WebServiceAdapter" />
   <TypeSignature Language="C++ CLI" Value="public interface class WebServiceAdapter2 : Microsoft::Office::Interop::InfoPath::WebServiceAdapter" />
+  <TypeSignature Language="F#" Value="type WebServiceAdapter2 = interface&#xA;    interface WebServiceAdapter" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.ErrorsLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorsLocation As IXMLDOMNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ ErrorsLocation { Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorsLocation : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.ErrorsLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -49,9 +51,12 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the XML Document Object Model (DOM) node under which the adapter will copy returned errors as XML.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The initial value of the <b>ErrorsLocation</b> property is a null reference (Nothing in Visual Basic).</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateDataSetDiffGram">
@@ -60,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.GenerateDataSetDiffGram(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode)" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateDataSetDiffGram (pNode As IXMLDOMNode) As IXMLDOMNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ GenerateDataSetDiffGram(Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ pNode);" />
+      <MemberSignature Language="F#" Value="abstract member GenerateDataSetDiffGram : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode -&gt; Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="webServiceAdapter2.GenerateDataSetDiffGram pNode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -77,10 +83,40 @@
         <Parameter Name="pNode" Type="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" />
       </Parameters>
       <Docs>
-        <param name="pNode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="pNode">An XML Document Object Model (DOM) node that contains the XML data of the DataSet whose DataSet DiffGram will be created.</param>
+        <summary>Gets a serialized ADO.NET DataSet, containing an inline schema describing the data and the DataSet's DiffGram.</summary>
+        <returns>An XML DOM node that contains the XML DataSet.</returns>
+        <remarks>
+          <para>The DataSet DiffGram for the input <paramref name="pNode" /> is generated using the sibling node <paramref name="originalData" /> to compute the difference between the <paramref name="originalData" /> and the input <paramref name="pNode" />.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>GenerateDataSetDiffGram</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObject" /> is used to display the DiffGram XML of the DataSet "i0:dataset" in a message box:</para>
+          <code>// Get the DataSet node from the main data source
+const string DataSetNodeName = "i0:dataset";
+IXMLDOMNode datasetNode = thisXDocument.DOM.selectSingleNode("//" + DataSetNodeName);
+if (datasetNode == null)
+{
+ thisXDocument.UI.Alert("Could not find the DataSet node to generate a DiffGram: " + DataSetNodeName + ".");
+ return;
+}
+// Get the Main Data Source WebServiceAdapter object
+WebServiceAdapter2 mainAdapter = thisXDocument.QueryAdapter as WebServiceAdapter2;
+if (mainAdapter == null)
+{
+ thisXDocument.UI.Alert("Main WebServiceAdapter does not exist.");
+ return;
+}
+// Create the DataSet DiffGram
+IXMLDOMNode datasetDiffgramNode = mainAdapter.&lt;span class="label"&gt;GenerateDataSetDiffGram&lt;/span&gt;(datasetNode);
+if (datasetDiffgramNode == null)
+{
+ thisXDocument.UI.Alert("Failed to convert " + DataSetNodeName + " to a DataSet DiffGram.");
+ return;
+}
+// Show the xml for the DiffGram
+thisXDocument.UI.Alert(datasetDiffgramNode.xml);</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Input">
@@ -89,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.Input" />
       <MemberSignature Language="VB.NET" Value="Public Property Input As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Input { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Input : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.Input" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter.Input</InterfaceMember>
@@ -112,9 +149,52 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the XML string ('outer XML') corresponding to the <b>input</b> element in the form definition (.xsf) file.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>In the case of a Web service adapter used to submit data, the <b>input</b> element of the form definition (.xsf) file contains information about the parts of the secondary data source, specified by the <b>partFragment</b> elements, that will be provided as parameters to the Web method that is invoked for the <see cref="M:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.Submit" /> method operation.</para>
+          <para>
+            <b>Note</b>: The <b>Input</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObject" /> is available for secondary data sources. The <b>Input</b> property for a main data source always returns an empty string since the <b>queryFields</b> group serves as the input for the <b>WebServiceAdapter</b> when querying the Web service.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>Input</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObject" /> is loaded into a temporary XML DOM, then displayed in a message box. A new XML node is then loaded into the temporary DOM from a resource file, "NewSource.xml", which is part of the form template. The <b>Input</b> property is then set to the updated temporary DOM, which changes how the <b>WebServiceAdapter</b> will submit data to the Web service:</para>
+          <code>const string newSourceXmlFileName = "NewSource.xml";
+
+// Get the Main Data Source WebServiceAdapter object
+WebServiceAdapter2 webServiceAdapter = thisXDocument.DataAdapters[0] as WebServiceAdapter2;
+if (webServiceAdapter == null)
+{
+ thisXDocument.UI.Alert("A secondary WebServiceAdapter does not exist.");
+ return;
+}
+
+// Load the xsf:input element into an XML DOM
+IXMLDOMDocument2 tempDom = thisXDocument.CreateDOM() as IXMLDOMDocument2;
+if (tempDom == null)
+{
+ thisXDocument.UI.Alert("Could not create a temporary DOM.");
+ return;
+}
+tempDom.validateOnParse = false;
+tempDom.preserveWhiteSpace = false;
+tempDom.loadXML(webServiceAdapter.&lt;span class="label"&gt;Input&lt;/span&gt;);
+
+// Get the source attribute from the xsf:Input element
+IXMLDOMNode sourceAttribute = tempDom.documentElement.attributes.getNamedItem("source");
+
+// Show the source attribute value of the xsf:input element before the change
+thisXDocument.UI.Alert(sourceAttribute.text);
+
+// Change the source file name
+sourceAttribute.text = newSourceXmlFileName;
+
+// Show the source after the change
+thisXDocument.UI.Alert(sourceAttribute.text);
+
+// Save the changes from the tempDom back to the Input property
+webServiceAdapter.Input = tempDom.xml;</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -123,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -140,7 +221,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the name of a <see cref="T:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObject" /> object.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -151,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.Operation" />
       <MemberSignature Language="VB.NET" Value="Public Property Operation As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Operation { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Operation : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.Operation" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter.Operation</InterfaceMember>
@@ -174,9 +256,58 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the XML string ('outer XML') corresponding to the <b>operation</b> element contained in the form definition (.xsf) file for the <see cref="T:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>operation</b> element of the .xsf file contains information about the Web service, including the name of the Web method, the method used for retrieving and submitting data, and its Uniform Resource Locator (URL).</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>Operation</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObject" /> object is used to retrieve the properties of the <b>operation</b> element in the .xsf file. The <b>serviceUrl</b> of the <b>WebServiceAdapter</b> is updated, and then the <see cref="M:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.Query" /> method of the <b>WebServiceAdapter</b> is invoked:</para>
+          <code>const string newServiceUrl = "NewOperationName";
+
+// Get the Main Data Source WebServiceAdapter object
+WebServiceAdapter2 webServiceAdapter = thisXDocument.DataAdapters[0] as WebServiceAdapter2;
+if (webServiceAdapter == null)
+{
+ thisXDocument.UI.Alert("A secondary WebServiceAdapter does not exist.");
+ return;
+}
+
+// Load the xsf:input element into an XML DOM
+IXMLDOMDocument2 tempDom = thisXDocument.CreateDOM() as IXMLDOMDocument2;
+if (tempDom == null)
+{
+ thisXDocument.UI.Alert("Could not create a temporary DOM.");
+ return;
+}
+tempDom.validateOnParse = false;
+tempDom.preserveWhiteSpace = false;
+tempDom.loadXML(webServiceAdapter.Operation);
+
+// All available properties on the operation element: name, soapAction, serviceUrl
+IXMLDOMNode nameAttribute = 
+ tempDom.documentElement.attributes.getNamedItem("name");
+IXMLDOMNode soapActionAttribute =
+ tempDom.documentElement.attributes.getNamedItem("soapAction");
+IXMLDOMNode serviceUrlAttribute =
+ tempDom.documentElement.attributes.getNamedItem("serviceUrl");
+
+// Show the serviceUrl attribute value of the xsf:operation element before the change
+thisXDocument.UI.Alert(serviceUrlAttribute.text);
+
+// Change the serviceUrl
+serviceUrlAttribute.text = newServiceUrl;
+
+// Show the serviceUrl after the change
+thisXDocument.UI.Alert(serviceUrlAttribute.text);
+
+// Save the changes from the tempDom back to the Operation property
+webServiceAdapter.&lt;span class="label"&gt;Operation&lt;/span&gt; = tempDom.xml;
+
+// Run a query with the changed serviceUrl
+webServiceAdapter.Query();</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="OutputLocation">
@@ -185,6 +316,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.OutputLocation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputLocation As IXMLDOMNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ OutputLocation { Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutputLocation : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.OutputLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -202,9 +334,14 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the XML Document Object Model (DOM) node under which the adapter will copy the XML returned by the XML Web service.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>For data connections used for receiving data, the <b>OutputLocation</b> property corresponds to the <b>dataFields</b> element in the data source.</para>
+          <para>
+            <b>Note</b>: The <b>OutputLocation</b> property is a null reference (Nothing in Visual Basic) if the data connection is used only for submitting data.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Query">
@@ -213,6 +350,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.Query" />
       <MemberSignature Language="VB.NET" Value="Public Sub Query ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Query();" />
+      <MemberSignature Language="F#" Value="abstract member Query : unit -&gt; unit" Usage="webServiceAdapter2.Query " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -228,8 +366,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Executes the query operation on the adapter, by invoking the specified Web method on the Web service, and inserting the returned XML under the <b>dataFields</b> node of the associated data source.</summary>
+        <remarks>
+          <para>The <b>Query</b> method fails if the <see cref="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.QueryAllowed" /> property of the <b>WebServiceAdapterObject</b> object is <b>false</b>.</para>
+          <para>
+            <b>Note</b>: An ADO.NET DataSet cannot be used as a query parameter for the <see cref="T:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObject" /> object or any other data adapter.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="QueryAllowed">
@@ -238,6 +381,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.QueryAllowed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueryAllowed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool QueryAllowed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueryAllowed : bool" Usage="Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.QueryAllowed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -255,9 +399,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Corresponds to the <b>queryAllowed</b> attribute in the form definition file (.xsf).</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The default value for the <b>QueryAllowed</b> property is <b>false</b>.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Submit">
@@ -266,6 +413,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.Submit" />
       <MemberSignature Language="VB.NET" Value="Public Sub Submit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Submit();" />
+      <MemberSignature Language="F#" Value="abstract member Submit : unit -&gt; unit" Usage="webServiceAdapter2.Submit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -281,8 +429,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Executes the submit operation on the associated adapter.</summary>
+        <remarks>
+          <para>Fails if <see cref="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.SubmitAllowed" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObject" /> object is <b>false</b>.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SubmitAllowed">
@@ -291,6 +442,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.SubmitAllowed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubmitAllowed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SubmitAllowed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubmitAllowed : bool" Usage="Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.SubmitAllowed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -308,9 +460,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Corresponds to the <b>submitAllowed</b> attribute in the form definition file (.xsf).</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The default value for the <b>SubmitAllowed</b> property is <b>false</b>.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -319,6 +474,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Property Timeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Timeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Timeout : int with get, set" Usage="Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.Timeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -339,9 +495,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the time-out value in seconds for a <see cref="T:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The default value of the <b>Timeout</b> property is 30 seconds.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WSDLURL">
@@ -350,6 +509,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.WSDLURL" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WSDLURL As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WSDLURL { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WSDLURL : string" Usage="Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.WSDLURL" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter.WSDLURL</InterfaceMember>
@@ -370,9 +530,21 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the Uniform Resource Locator (URL) of the Web Services Description Language (WSDL) file for the Web service associated with the <see cref="T:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The WSDL file is an XML document that defines the format of messages an XML Web service understands. The service description serves as an agreement that defines the behavior of an XML Web service and instructs potential clients in how to interact with it. The behavior of an XML Web service is determined by messaging patterns that the service defines and supports. These patterns conceptually dictate what the service consumer can expect to happen when a properly formatted message is submitted to the XML Web service.</para>
+          <para>
+            <b>Note</b>: The <b>WSDLURL</b> property corresponds to the WSDL file location when using the Data Connection Wizard. The <b>serviceUrl</b> of the <see cref="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.Operation" /> property contains the URL that is used to invoke the Web service.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>WSDLURL</b> property of the <b>WebServiceAdapter</b> object is used to display the URL of the WSDL file that is used for the Web service:</para>
+          <code>WebServiceAdapter2 wsAdapter2;
+
+wsAdapter2 = (WebServiceAdapter2) thisXDocument.DataObjects["WebCityList"].QueryAdapter;
+thisXDocument.UI.Alert("WSDL file URL: " + wsAdapter2.&lt;span class="label"&gt;WSDLURL&lt;/span&gt;);</code>
+        </example>
       </Docs>
     </Member>
   </Members>

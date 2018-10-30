@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ADOAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Interface ADOAdapter" />
   <TypeSignature Language="C++ CLI" Value="public interface class ADOAdapter" />
+  <TypeSignature Language="F#" Value="type ADOAdapter = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about the later version of this interface, including usage remarks and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.ADOAdapter2" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ADOAdapter.BuildSQLFromXMLNodes(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode)" />
       <MemberSignature Language="VB.NET" Value="Public Function BuildSQLFromXMLNodes (pXmlNode As IXMLDOMNode) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ BuildSQLFromXMLNodes(Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ pXmlNode);" />
+      <MemberSignature Language="F#" Value="abstract member BuildSQLFromXMLNodes : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode -&gt; string" Usage="aDOAdapter.BuildSQLFromXMLNodes pXmlNode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -46,7 +48,7 @@
       </Parameters>
       <Docs>
         <param name="pXmlNode">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="M:Microsoft.Office.Interop.InfoPath.ADOAdapter2.BuildSQLFromXMLNodes(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode)" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ADOAdapter.Command" />
       <MemberSignature Language="VB.NET" Value="Public Property Command As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Command { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Command : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.ADOAdapter.Command" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -77,7 +80,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="P:Microsoft.Office.Interop.InfoPath.ADOAdapter2.Command" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ADOAdapter.Connection" />
       <MemberSignature Language="VB.NET" Value="Public Property Connection As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Connection { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Connection : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.ADOAdapter.Connection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -108,7 +112,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="P:Microsoft.Office.Interop.InfoPath.ADOAdapter2.Connection" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ADOAdapter.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Property Timeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Timeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Timeout : int with get, set" Usage="Microsoft.Office.Interop.InfoPath.ADOAdapter.Timeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -139,7 +144,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="P:Microsoft.Office.Interop.InfoPath.ADOAdapter2.Timeout" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

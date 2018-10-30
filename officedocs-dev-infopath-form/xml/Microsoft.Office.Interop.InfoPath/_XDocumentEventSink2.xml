@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2" />
   <TypeSignature Language="VB.NET" Value="Public Interface _XDocumentEventSink2&#xA;Implements _XDocumentEventSink" />
   <TypeSignature Language="C++ CLI" Value="public interface class _XDocumentEventSink2 : Microsoft::Office::Interop::InfoPath::_XDocumentEventSink" />
+  <TypeSignature Language="F#" Value="type _XDocumentEventSink2 = interface&#xA;    interface _XDocumentEventSink" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This member is reserved for internal use and is not intended to be used directly from your code.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2.OnAfterImport(Microsoft.Office.Interop.InfoPath.DocEvent)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnAfterImport (pEvent As DocEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnAfterImport(Microsoft::Office::Interop::InfoPath::DocEvent ^ pEvent);" />
+      <MemberSignature Language="F#" Value="abstract member OnAfterImport : Microsoft.Office.Interop.InfoPath.DocEvent -&gt; unit" Usage="_XDocumentEventSink2.OnAfterImport pEvent" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink.OnAfterImport(Microsoft.Office.Interop.InfoPath.DocEvent)</InterfaceMember>
@@ -53,7 +55,7 @@
       </Parameters>
       <Docs>
         <param name="pEvent">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is reserved for internal use and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2.OnContextChange(Microsoft.Office.Interop.InfoPath.DocContextChangeEventObject)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnContextChange (pEvent As DocContextChangeEventObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnContextChange(Microsoft::Office::Interop::InfoPath::DocContextChangeEventObject ^ pEvent);" />
+      <MemberSignature Language="F#" Value="abstract member OnContextChange : Microsoft.Office.Interop.InfoPath.DocContextChangeEventObject -&gt; unit" Usage="_XDocumentEventSink2.OnContextChange pEvent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -81,7 +84,7 @@
       </Parameters>
       <Docs>
         <param name="pEvent">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is reserved for internal use and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2.OnLoad(Microsoft.Office.Interop.InfoPath.DocReturnEvent)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnLoad (pEvent As DocReturnEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnLoad(Microsoft::Office::Interop::InfoPath::DocReturnEvent ^ pEvent);" />
+      <MemberSignature Language="F#" Value="abstract member OnLoad : Microsoft.Office.Interop.InfoPath.DocReturnEvent -&gt; unit" Usage="_XDocumentEventSink2.OnLoad pEvent" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink.OnLoad(Microsoft.Office.Interop.InfoPath.DocReturnEvent)</InterfaceMember>
@@ -112,7 +116,7 @@
       </Parameters>
       <Docs>
         <param name="pEvent">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is reserved for internal use and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2.OnMergeRequest(Microsoft.Office.Interop.InfoPath.MergeEventObject)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnMergeRequest (pEvent As MergeEventObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnMergeRequest(Microsoft::Office::Interop::InfoPath::MergeEventObject ^ pEvent);" />
+      <MemberSignature Language="F#" Value="abstract member OnMergeRequest : Microsoft.Office.Interop.InfoPath.MergeEventObject -&gt; unit" Usage="_XDocumentEventSink2.OnMergeRequest pEvent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -140,7 +145,7 @@
       </Parameters>
       <Docs>
         <param name="pEvent">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is reserved for internal use and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2.OnSaveRequest(Microsoft.Office.Interop.InfoPath.SaveEventObject)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnSaveRequest (pEvent As SaveEventObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnSaveRequest(Microsoft::Office::Interop::InfoPath::SaveEventObject ^ pEvent);" />
+      <MemberSignature Language="F#" Value="abstract member OnSaveRequest : Microsoft.Office.Interop.InfoPath.SaveEventObject -&gt; unit" Usage="_XDocumentEventSink2.OnSaveRequest pEvent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -168,7 +174,7 @@
       </Parameters>
       <Docs>
         <param name="pEvent">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is reserved for internal use and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2.OnSign(Microsoft.Office.Interop.InfoPath.SignEventObject)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnSign (pEvent As SignEventObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnSign(Microsoft::Office::Interop::InfoPath::SignEventObject ^ pEvent);" />
+      <MemberSignature Language="F#" Value="abstract member OnSign : Microsoft.Office.Interop.InfoPath.SignEventObject -&gt; unit" Usage="_XDocumentEventSink2.OnSign pEvent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -196,7 +203,7 @@
       </Parameters>
       <Docs>
         <param name="pEvent">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is reserved for internal use and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2.OnSubmitRequest(Microsoft.Office.Interop.InfoPath.DocReturnEvent)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnSubmitRequest (pEvent As DocReturnEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnSubmitRequest(Microsoft::Office::Interop::InfoPath::DocReturnEvent ^ pEvent);" />
+      <MemberSignature Language="F#" Value="abstract member OnSubmitRequest : Microsoft.Office.Interop.InfoPath.DocReturnEvent -&gt; unit" Usage="_XDocumentEventSink2.OnSubmitRequest pEvent" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink.OnSubmitRequest(Microsoft.Office.Interop.InfoPath.DocReturnEvent)</InterfaceMember>
@@ -227,7 +235,7 @@
       </Parameters>
       <Docs>
         <param name="pEvent">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is reserved for internal use and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,6 +245,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2.OnSwitchView(Microsoft.Office.Interop.InfoPath.DocEvent)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnSwitchView (pEvent As DocEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnSwitchView(Microsoft::Office::Interop::InfoPath::DocEvent ^ pEvent);" />
+      <MemberSignature Language="F#" Value="abstract member OnSwitchView : Microsoft.Office.Interop.InfoPath.DocEvent -&gt; unit" Usage="_XDocumentEventSink2.OnSwitchView pEvent" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink.OnSwitchView(Microsoft.Office.Interop.InfoPath.DocEvent)</InterfaceMember>
@@ -258,7 +267,7 @@
       </Parameters>
       <Docs>
         <param name="pEvent">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is reserved for internal use and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -268,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2.OnVersionUpgrade(Microsoft.Office.Interop.InfoPath.VersionUpgradeEventObject)" />
       <MemberSignature Language="VB.NET" Value="Public Sub OnVersionUpgrade (pEvent As VersionUpgradeEventObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnVersionUpgrade(Microsoft::Office::Interop::InfoPath::VersionUpgradeEventObject ^ pEvent);" />
+      <MemberSignature Language="F#" Value="abstract member OnVersionUpgrade : Microsoft.Office.Interop.InfoPath.VersionUpgradeEventObject -&gt; unit" Usage="_XDocumentEventSink2.OnVersionUpgrade pEvent" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink.OnVersionUpgrade(Microsoft.Office.Interop.InfoPath.VersionUpgradeEventObject)</InterfaceMember>
@@ -289,7 +299,7 @@
       </Parameters>
       <Docs>
         <param name="pEvent">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is reserved for internal use and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

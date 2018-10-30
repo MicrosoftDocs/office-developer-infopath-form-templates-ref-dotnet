@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneExternal" />
   <TypeSignature Language="VB.NET" Value="Public Interface HTMLTaskPaneExternal" />
   <TypeSignature Language="C++ CLI" Value="public interface class HTMLTaskPaneExternal" />
+  <TypeSignature Language="F#" Value="type HTMLTaskPaneExternal = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,8 +19,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a link to the Microsoft Office InfoPath 2003 object model.</summary>
+    <remarks>
+      <para>The <b>HTMLTaskPaneExternal</b> object is used to expose the InfoPath object model to the Dynamic HTML (DHTML) scripting code in a custom task pane. It provides a number of properties for accessing certain parts of the InfoPath object model, including the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object and the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object.</para>
+      <para>
+        <b>HTMLTaskPaneExternal</b> facilitates using the InfoPath object model within the scripting code that is part of a custom task pane. The object is exposed through the external property of the DHTML window object.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Window">
@@ -28,6 +34,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneExternal.Window" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Window As Window" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::Window ^ Window { Microsoft::Office::Interop::InfoPath::Window ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Window : Microsoft.Office.Interop.InfoPath.Window" Usage="Microsoft.Office.Interop.InfoPath.HTMLTaskPaneExternal.Window" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -45,9 +52,21 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.Window</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object associated with a custom task pane.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>Window</b> object returned represents the currently active Microsoft Office InfoPath 2003 window that is associated with the custom task pane.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <see cref="T:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneExternal" /> object is used through the external property of the Dynamic HTML (DHTML) <b>window</b> object that is part of the DHTML object model, to set a reference to the <b>WindowObject</b> object that is part of the InfoPath object model:</para>
+          <para>
+            <b>Note</b>: The following code resides in the HTML file that represents the external task pane.</para>
+          <code>var objWindow;
+
+objWindow  = window.external.&lt;span class="label"&gt;Window&lt;/span&gt;;
+objWindow.MailEnvelope.Visible = true;</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="XDocument">
@@ -56,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneExternal.XDocument" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XDocument As _XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::_XDocument ^ XDocument { Microsoft::Office::Interop::InfoPath::_XDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XDocument : Microsoft.Office.Interop.InfoPath._XDocument" Usage="Microsoft.Office.Interop.InfoPath.HTMLTaskPaneExternal.XDocument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -73,9 +93,19 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath._XDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> associated with a custom task pane.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>XDocument</b> object returned represents the form's underlying XML document that is associated with the custom task pane.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <see cref="T:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneExternal" /> object is used through the external property of the Dynamic HTML (DHTML) <b>window</b> object to set a reference to the <b>XDocument</b> object that is part of the InfoPath object model:</para>
+          <code>var objXDoc;
+
+objXDoc  = window.external.&lt;span class="label"&gt;XDocument&lt;/span&gt;;
+objXDoc.View.SwitchView("View2");</code>
+        </example>
       </Docs>
     </Member>
   </Members>

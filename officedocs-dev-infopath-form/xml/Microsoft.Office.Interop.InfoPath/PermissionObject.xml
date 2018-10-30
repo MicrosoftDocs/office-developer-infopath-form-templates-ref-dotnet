@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.PermissionObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface PermissionObject&#xA;Implements Permission" />
   <TypeSignature Language="C++ CLI" Value="public interface class PermissionObject : Microsoft::Office::Interop::InfoPath::Permission" />
+  <TypeSignature Language="F#" Value="type PermissionObject = interface&#xA;    interface Permission" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,25 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides access to <see cref="T:Microsoft.Office.Interop.InfoPath.UserPermissionObject" /> objects and permission settings that can be applied to a form.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.Permission" />.</para>
+      <para>Use the <b>PermissionObject</b> class and its members to restrict permissions to the active form and to get or set specific permissions settings.</para>
+      <para>An instance of the <b>Permission</b> class associated with a form template is returned by the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument3.Permission" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath._XDocument3" /> class.</para>
+      <para>The returned <b>PermissionObject</b> object provides access to the <b>UserPermissionObject</b> objects associated with the form template and each form instance created with that template. Each <b>UserPermissionObject</b> object is used to define a specific set of rights for an individual user. While some permissions granted through the user interface apply to all users, you can use the <b>UserPermissionObject</b> object to assign permission on a per-user basis with per-user expiration dates.</para>
+      <para>The <b>PermissionObject</b> object and its properties and methods are available whether permissions are restricted on the active form template or not. Use the <see cref="P:Microsoft.Office.Interop.InfoPath.Permission.Enabled" /> property to determine whether a form has restricted permissions.</para>
+      <para>If the Windows Rights Management client is not installed on a user's computer, using the <b>PermissionObject</b> object raises an exception.</para>
+      <para>Permissions on a form are enabled in one of the following ways by using properties and methods of the <b>PermissionObject</b> object:</para>
+      <para>The <b>Enabled</b> property is set to <b>true</b>.</para>
+      <para>The <see cref="P:Microsoft.Office.Interop.InfoPath.Permission.DocumentAuthor" /> property is set.</para>
+      <para>The <see cref="P:Microsoft.Office.Interop.InfoPath.Permission.RequestPermissionURL" /> property is set.</para>
+      <para>The <see cref="P:Microsoft.Office.Interop.InfoPath.Permission.StoreLicenses" /> property is set to <b>true</b> or <b>false</b>.</para>
+      <para>The <see cref="M:Microsoft.Office.Interop.InfoPath.Permission.ApplyPolicy(System.String)" /> method is called.</para>
+      <para>Permissions on a form can also be enabled by using the <see cref="M:Microsoft.Office.Interop.InfoPath.Permission.Add(System.String,System.Object,System.Object)" /> method of the <see cref="P:Microsoft.Office.Interop.InfoPath.UserPermission.Permission" /> object to add a user to the form.</para>
+      <para>
+        <b>Note</b>: Permissions cannot be applied when a form is in preview mode. For this reason, all of the properties of the <b>PermissionObject</b> object are read-only when a form is being previewed. In preview mode, the <b>Enabled</b> property will always return <b>false</b>, and if code attempts to change this setting, a <b>System.Runtime.InteropServices.COMException</b> is raised and the error "The property/method is not available in preview mode" is returned. Similarly, the methods associated with the <b>PermissionObject</b> and <b>UserPermissionObject</b> objects will also return this error message when used in preview mode.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members />
 </Type>

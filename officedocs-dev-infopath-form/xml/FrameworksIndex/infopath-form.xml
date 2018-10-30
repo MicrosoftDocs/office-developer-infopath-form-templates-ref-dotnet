@@ -1,5 +1,223 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="infopath-form">
+  <Namespace Name="Microsoft.Office.InfoPath">
+    <Type Name="Microsoft.Office.InfoPath.FormControl" Id="T:Microsoft.Office.InfoPath.FormControl">
+      <Member Id="E:Microsoft.Office.InfoPath.FormControl.InternalStartup" />
+      <Member Id="M:Microsoft.Office.InfoPath.FormControl.#ctor" />
+      <Member Id="M:Microsoft.Office.InfoPath.FormControl.AttachInterfaces" />
+      <Member Id="M:Microsoft.Office.InfoPath.FormControl.Close" />
+      <Member Id="M:Microsoft.Office.InfoPath.FormControl.NewFromFormTemplate(System.String)" />
+      <Member Id="M:Microsoft.Office.InfoPath.FormControl.NewFromFormTemplate(System.String,System.AppDomain,System.String)" />
+      <Member Id="M:Microsoft.Office.InfoPath.FormControl.NewFromFormTemplate(System.String,System.IO.Stream,Microsoft.Office.InfoPath.XmlFormOpenMode)" />
+      <Member Id="M:Microsoft.Office.InfoPath.FormControl.NewFromFormTemplate(System.String,System.IO.Stream,Microsoft.Office.InfoPath.XmlFormOpenMode,System.AppDomain,System.String)" />
+      <Member Id="M:Microsoft.Office.InfoPath.FormControl.Open(System.IO.Stream)" />
+      <Member Id="M:Microsoft.Office.InfoPath.FormControl.Open(System.IO.Stream,System.AppDomain,System.String)" />
+      <Member Id="M:Microsoft.Office.InfoPath.FormControl.Open(System.String)" />
+      <Member Id="M:Microsoft.Office.InfoPath.FormControl.Open(System.String,System.AppDomain,System.String)" />
+      <Member Id="M:Microsoft.Office.InfoPath.FormControl.SetInitEventHandler(Microsoft.Office.InfoPath.IInitEventHandler)" />
+      <Member Id="M:Microsoft.Office.InfoPath.FormControl.SetNotifyHostEventHandler(Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler)" />
+      <Member Id="M:Microsoft.Office.InfoPath.FormControl.SetSubmitToHostEventHandler(Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler)" />
+      <Member Id="M:Microsoft.Office.InfoPath.FormControl.SyncLastChange" />
+      <Member Id="P:Microsoft.Office.InfoPath.FormControl.DataConnectionBaseUrl" />
+      <Member Id="P:Microsoft.Office.InfoPath.FormControl.Enabled" />
+      <Member Id="P:Microsoft.Office.InfoPath.FormControl.EventManager" />
+      <Member Id="P:Microsoft.Office.InfoPath.FormControl.Host" />
+      <Member Id="P:Microsoft.Office.InfoPath.FormControl.HostName" />
+      <Member Id="P:Microsoft.Office.InfoPath.FormControl.HostTranslatesAcceleratorsFirst" />
+      <Member Id="P:Microsoft.Office.InfoPath.FormControl.XmlForm" />
+    </Type>
+    <Type Name="Microsoft.Office.InfoPath.FormControl/EventHandler`1" Id="T:Microsoft.Office.InfoPath.FormControl.EventHandler`1" />
+    <Type Name="Microsoft.Office.InfoPath.FormControlCommandIds" Id="T:Microsoft.Office.InfoPath.FormControlCommandIds">
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandGroup" />
+      <Member Id="M:Microsoft.Office.InfoPath.FormControlCommandIds.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Office.InfoPath.FormControlCommandIds/CommandIds" Id="T:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds">
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.AddWordToDictionary" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.AlignTextCenter" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.AlignTextJustify" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.AlignTextLeft" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.AlignTextRight" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.ClearAutoSpace" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.ClearBulletedList" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.ClearFontFormatting" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.ClearNumberedList" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.Close" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.Copy" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.CorrectAllOfMisspelledWord" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.CorrectMisspelledWord" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.Cut" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.DecreaseFontSizeBy2" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.DecreaseIndent" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.DeleteMisspelledWord" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.DeleteSelectedColumns" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.DeleteSelectedRows" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.DeleteSelectedTable" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.DrawTable" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.EraseTable" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.FindNextMisspelledWord" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.FindReplaceFindNext" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.FormatPainterApplyFormatting" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.FormatPainterApplyFormattingPersistent" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.FormatPainterCopyFormatting" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.FormatPainterCopyFormattingPersistent" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetCurrentMisspelledWord" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetDefaultFontColor" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetDefaultHighlightColor" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetFindReplaceOptionSearchDirection" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetFindReplaceState" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetFindString" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetFontAvailableByIndex" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetFontsAvailableCount" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetFontSizeAvailableByIndex" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetFontSizesAvailableCount" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetHyperlinkAddress" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetHyperlinkDisplayText" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetPictureAlternativeText" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetPictureHeight" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetPictureTextWrapping" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetPictureWidth" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetReplaceWithString" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetSelectedCellBottomPadding" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetSelectedCellLeftPadding" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetSelectedCellRightPadding" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetSelectedCellTopPadding" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetSelectedCellVerticalAlignment" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetSelectedColumnWidth" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetSelectedRowHeight" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetSelectedTextBackgroundColor" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetSelectedTextFont" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetSelectedTextFontColor" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetSelectedTextFontSize" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetSelectedTextHighlightColor" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetSpellingSuggestion" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetSpellingSuggestionsCount" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetSubmitButtonCaption" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetTableDirection" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GetTableHorizontalAlignment" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GotoFirstErrorOnView" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.GotoNextErrorOnView" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.IgnoreAllOfMisspelledWord" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.IgnoreMisspelledWord" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.IncreaseFontSizeBy2" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.IncreaseIndent" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.InsertBulletedList" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.InsertBulletedListEmptyCircle" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.InsertBulletedListSolidCircle" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.InsertBulletedListSolidSquare" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.InsertColumnLeft" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.InsertColumnRight" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.InsertHorizontalLine" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.InsertHyperlink" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.InsertImage" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.InsertNumberedList" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.InsertNumberedListAlphaLowercase" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.InsertNumberedListAlphaUppercase" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.InsertNumberedListDecimal" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.InsertNumberedListRomanLowercase" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.InsertNumberedListRomanUppercase" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.InsertPictureFromFile" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.InsertRowAbove" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.InsertRowBelow" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.InsertTable" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.IsFormDirectionLeftToRight" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.IsFormDirectionRightToLeft" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.MergeCells" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.Paste" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.PasteAsText" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.PasteKeepSourceFormatting" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.PasteMatchDestination" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.Redo" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.RemoveHyperlink" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.Replace" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.ReplaceAll" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.Save" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SaveAs" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SelectAll" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SelectCell" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SelectColumns" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SelectHyperlink" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SelectNextColumn" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SelectNextRow" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SelectPreviousColumn" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SelectPreviousRow" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SelectRows" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SelectTable" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.Set15LineSpacing" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetAutoSpaceBetweenAsianAndLatinText" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetAutoSpaceBetweenAsianTextAndNumbers" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetDoubleLineSpacing" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetFindReplaceOptionMatchCase" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetFindReplaceOptionSearchDirection" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetFindReplaceOptionUseWildcards" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetFindReplaceOptionWholeWordOnly" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetFindString" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetFontFormattingBold" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetFontFormattingHeading1" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetFontFormattingHeading2" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetFontFormattingHeading3" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetFontFormattingHeading4" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetFontFormattingHeading5" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetFontFormattingHeading6" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetFontFormattingItalic" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetFontFormattingNormal" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetFontFormattingStrikethrough" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetFontFormattingSubscript" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetFontFormattingSuperscript" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetFontFormattingUnderline" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetParaSpaceAfter" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetParaSpaceBefore" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetPictureAlternativeText" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetPictureHeight" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetPictureInlineWithText" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetPictureToLeftOfText" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetPictureToRightOfText" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetPictureWidth" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetReplaceWithString" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetSelectedCellAlignmentBottom" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetSelectedCellAlignmentMiddle" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetSelectedCellAlignmentTop" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetSelectedCellPadding" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetSelectedColumnWidth" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetSelectedRowHeight" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetSelectedTextBackgroundColor" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetSelectedTextFont" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetSelectedTextFontColor" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetSelectedTextFontSize" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetSelectedTextHighlightColor" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetSingleLineSpacing" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetSpellingOptionCheckAsYouType" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetTableDirection" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetTableHorizontalAlignment" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetTextDirectionDefault" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetTextDirectionLeftToRight" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SetTextDirectionRightToLeft" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.ShowBordersShadingDialog" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.ShowCurrentErrorMessage" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.ShowDigitalSignaturesDialog" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.ShowEditHyperlinkDialog" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.ShowExportToExcelDialog" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.ShowExportToPDFXPSDialog" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.ShowExportToWebDialog" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.ShowFormatPictureDialog" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.ShowImportFormDataDialog" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.ShowInsertHyperlinkDialog" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.ShowInsertSymbolDialog" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.ShowInsertTableDialog" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.ShowMergeFormDialog" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.ShowSetLanguageDialog" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.ShowSetSelectedTextFontColorDialog" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.ShowSetSelectedTextHighlightColorDialog" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.ShowSplitCellsDialog" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.ShowTablePropertiesDialog" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.SplitCells" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.Submit" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.Undo" />
+      <Member Id="F:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds.WorkOffline" />
+    </Type>
+    <Type Name="Microsoft.Office.InfoPath.IInitEventHandler" Id="T:Microsoft.Office.InfoPath.IInitEventHandler">
+      <Member Id="M:Microsoft.Office.InfoPath.IInitEventHandler.InitEventHandler(System.Object,Microsoft.Office.InfoPath.XmlForm,Microsoft.Office.Interop.InfoPath.XdReadOnlyViewMode@)" />
+    </Type>
+  </Namespace>
   <Namespace Name="Microsoft.Office.Interop.InfoPath">
     <Type Name="Microsoft.Office.Interop.InfoPath._Application" Id="T:Microsoft.Office.Interop.InfoPath._Application">
       <Member Id="M:Microsoft.Office.Interop.InfoPath._Application.FormatString(System.Object,System.String,System.String)" />
@@ -79,6 +297,26 @@
       <Member Id="E:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeSave" />
       <Member Id="E:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentChange" />
       <Member Id="E:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.add_NewXDocument(Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.add_Quit(Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.add_WindowActivate(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.add_WindowDeactivate(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.add_WindowSize(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.add_XDocumentBeforeClose(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.add_XDocumentBeforePrint(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.add_XDocumentBeforeSave(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.add_XDocumentChange(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.add_XDocumentOpen(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.remove_NewXDocument(Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.remove_Quit(Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.remove_WindowActivate(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.remove_WindowDeactivate(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.remove_WindowSize(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.remove_XDocumentBeforeClose(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.remove_XDocumentBeforePrint(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.remove_XDocumentBeforeSave(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.remove_XDocumentChange(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.remove_XDocumentOpen(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler)" />
     </Type>
     <Type Name="Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler" Id="T:Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler" />
     <Type Name="Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler" Id="T:Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler" />
@@ -118,6 +356,8 @@
     </Type>
     <Type Name="Microsoft.Office.Interop.InfoPath._ButtonEventSink_Event" Id="T:Microsoft.Office.Interop.InfoPath._ButtonEventSink_Event">
       <Member Id="E:Microsoft.Office.Interop.InfoPath._ButtonEventSink_Event.OnClick" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._ButtonEventSink_Event.add_OnClick(Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._ButtonEventSink_Event.remove_OnClick(Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler)" />
     </Type>
     <Type Name="Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler" Id="T:Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler" />
     <Type Name="Microsoft.Office.Interop.InfoPath._ButtonEventSink_SinkHelper" Id="T:Microsoft.Office.Interop.InfoPath._ButtonEventSink_SinkHelper">
@@ -134,6 +374,12 @@
       <Member Id="E:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event.OnAfterChange" />
       <Member Id="E:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event.OnBeforeChange" />
       <Member Id="E:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event.OnValidate" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event.add_OnAfterChange(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event.add_OnBeforeChange(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event.add_OnValidate(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event.remove_OnAfterChange(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event.remove_OnBeforeChange(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event.remove_OnValidate(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler)" />
     </Type>
     <Type Name="Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler" Id="T:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler" />
     <Type Name="Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler" Id="T:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler" />
@@ -388,6 +634,24 @@
       <Member Id="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnSubmitRequest" />
       <Member Id="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnSwitchView" />
       <Member Id="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnVersionUpgrade" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.add_OnAfterImport(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.add_OnContextChange(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.add_OnLoad(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.add_OnMergeRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.add_OnSaveRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.add_OnSign(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.add_OnSubmitRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.add_OnSwitchView(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.add_OnVersionUpgrade(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.remove_OnAfterImport(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.remove_OnContextChange(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.remove_OnLoad(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.remove_OnMergeRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.remove_OnSaveRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.remove_OnSign(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.remove_OnSubmitRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.remove_OnSwitchView(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.remove_OnVersionUpgrade(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler)" />
     </Type>
     <Type Name="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler" Id="T:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler" />
     <Type Name="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler" Id="T:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler" />
@@ -545,6 +809,26 @@
       <Member Id="E:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.XDocumentBeforeSave" />
       <Member Id="E:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.XDocumentChange" />
       <Member Id="E:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.XDocumentOpen" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.add_NewXDocument(Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.add_Quit(Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.add_WindowActivate(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.add_WindowDeactivate(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.add_WindowSize(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.add_XDocumentBeforeClose(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.add_XDocumentBeforePrint(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.add_XDocumentBeforeSave(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.add_XDocumentChange(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.add_XDocumentOpen(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.remove_NewXDocument(Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.remove_Quit(Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.remove_WindowActivate(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.remove_WindowDeactivate(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.remove_WindowSize(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.remove_XDocumentBeforeClose(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.remove_XDocumentBeforePrint(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.remove_XDocumentBeforeSave(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.remove_XDocumentChange(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.remove_XDocumentOpen(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler)" />
     </Type>
     <Type Name="Microsoft.Office.Interop.InfoPath.ApplicationEventsEmpty" Id="T:Microsoft.Office.Interop.InfoPath.ApplicationEventsEmpty" />
     <Type Name="Microsoft.Office.Interop.InfoPath.BDCAdapter" Id="T:Microsoft.Office.Interop.InfoPath.BDCAdapter">
@@ -581,6 +865,8 @@
     <Type Name="Microsoft.Office.Interop.InfoPath.Button" Id="T:Microsoft.Office.Interop.InfoPath.Button" />
     <Type Name="Microsoft.Office.Interop.InfoPath.ButtonClass" Id="T:Microsoft.Office.Interop.InfoPath.ButtonClass">
       <Member Id="E:Microsoft.Office.Interop.InfoPath.ButtonClass.OnClick" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.ButtonClass.add_OnClick(Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.ButtonClass.remove_OnClick(Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler)" />
     </Type>
     <Type Name="Microsoft.Office.Interop.InfoPath.ButtonEmpty" Id="T:Microsoft.Office.Interop.InfoPath.ButtonEmpty" />
     <Type Name="Microsoft.Office.Interop.InfoPath.Certificate" Id="T:Microsoft.Office.Interop.InfoPath.Certificate">
@@ -795,6 +1081,12 @@
       <Member Id="E:Microsoft.Office.Interop.InfoPath.DataDOMClass.OnAfterChange" />
       <Member Id="E:Microsoft.Office.Interop.InfoPath.DataDOMClass.OnBeforeChange" />
       <Member Id="E:Microsoft.Office.Interop.InfoPath.DataDOMClass.OnValidate" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.DataDOMClass.add_OnAfterChange(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.DataDOMClass.add_OnBeforeChange(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.DataDOMClass.add_OnValidate(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.DataDOMClass.remove_OnAfterChange(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.DataDOMClass.remove_OnBeforeChange(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.DataDOMClass.remove_OnValidate(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler)" />
     </Type>
     <Type Name="Microsoft.Office.Interop.InfoPath.DataDOMEmpty" Id="T:Microsoft.Office.Interop.InfoPath.DataDOMEmpty" />
     <Type Name="Microsoft.Office.Interop.InfoPath.DataDOMEvent" Id="T:Microsoft.Office.Interop.InfoPath.DataDOMEvent">
@@ -2085,6 +2377,15 @@
       <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass._XDocument4_SetDirty(System.Boolean)" />
       <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass._XDocument4_SetNamedNodeProperty(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode,System.String,System.String)" />
       <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass._XDocument4_Submit" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.add_OnAfterImport(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.add_OnContextChange(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.add_OnLoad(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.add_OnMergeRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.add_OnSaveRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.add_OnSign(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.add_OnSubmitRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.add_OnSwitchView(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.add_OnVersionUpgrade(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler)" />
       <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.CloseDocument" />
       <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.CreateDOM" />
       <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.GetDataVariable(System.Int32)" />
@@ -2097,6 +2398,15 @@
       <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.NotifyHost(System.String)" />
       <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.PrintOut" />
       <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.Query" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.remove_OnAfterImport(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.remove_OnContextChange(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.remove_OnLoad(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.remove_OnMergeRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.remove_OnSaveRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.remove_OnSign(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.remove_OnSubmitRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.remove_OnSwitchView(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler)" />
+      <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.remove_OnVersionUpgrade(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler)" />
       <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.Save" />
       <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.SaveAs(System.String)" />
       <Member Id="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.SetDataVariable(System.Int32,System.String)" />

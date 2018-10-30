@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.IEnumString" />
   <TypeSignature Language="VB.NET" Value="Public Interface IEnumString" />
   <TypeSignature Language="C++ CLI" Value="public interface class IEnumString" />
+  <TypeSignature Language="F#" Value="type IEnumString = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,8 +19,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Used to enumerate strings. </summary>
+    <remarks>
+      <para>Call the methods of IEnumString to enumerate through a set of strings.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Clone">
@@ -28,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IEnumString.Clone(Microsoft.Office.Interop.InfoPath.IEnumString@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clone (ByRef ppenum As IEnumString)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clone([Runtime::InteropServices::Out] Microsoft::Office::Interop::InfoPath::IEnumString ^ % ppenum);" />
+      <MemberSignature Language="F#" Value="abstract member Clone :  -&gt; unit" Usage="iEnumString.Clone ppenum" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -37,12 +42,16 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ppenum" Type="Microsoft.Office.Interop.InfoPath.IEnumString&amp;" RefType="out" />
+        <Parameter Name="ppenum" Type="Microsoft.Office.Interop.InfoPath.IEnumString" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="ppenum">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="ppenum">Address of <b>IEnumString*</b> pointer variable that receives the interface pointer to the enumeration object. If the method is unsuccessful, the value of this output variable is undefined.</param>
+        <summary>Creates another enumerator that contains the same enumeration state as the current one. </summary>
+        <remarks>
+          <para>This method supports the standard return values E_INVALIDARG, E_OUTOFMEMORY, and E_UNEXPECTED.</para>
+          <para>Using this method, a client can record a particular point in the enumeration sequence and then return to that point at a later time. The new enumerator supports the same interface as the original one.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoteNext">
@@ -51,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IEnumString.RemoteNext(System.UInt32,System.String@,System.UInt32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoteNext (celt As UInteger, ByRef rgelt As String, ByRef pceltFetched As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoteNext(System::UInt32 celt, [Runtime::InteropServices::Out] System::String ^ % rgelt, [Runtime::InteropServices::Out] System::UInt32 % pceltFetched);" />
+      <MemberSignature Language="F#" Value="abstract member RemoteNext : uint32 *  *  -&gt; unit" Usage="iEnumString.RemoteNext (celt, rgelt, pceltFetched)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -61,15 +71,18 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="celt" Type="System.UInt32" />
-        <Parameter Name="rgelt" Type="System.String&amp;" RefType="out" />
-        <Parameter Name="pceltFetched" Type="System.UInt32&amp;" RefType="out" />
+        <Parameter Name="rgelt" Type="System.String" RefType="out" />
+        <Parameter Name="pceltFetched" Type="System.UInt32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="celt">To be added.</param>
-        <param name="rgelt">To be added.</param>
-        <param name="pceltFetched">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="celt">The number of string values being requested. </param>
+        <param name="rgelt">An array of size <paramref name="celt" /> (or larger) of the string values.</param>
+        <param name="pceltFetched">A pointer to the number of elements actually supplied in <paramref name="rgelt" />. Caller can pass in <b>NULL</b> if <paramref name="celt" /> is one. </param>
+        <summary>Retrieves a specified number of items in the enumeration sequence.</summary>
+        <remarks>
+          <para>Returns S_OK if the number of elements supplied is <paramref name="celt" />; S_FALSE otherwise.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -78,6 +91,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IEnumString.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit" Usage="iEnumString.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -88,8 +102,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Resets the enumeration sequence to the beginning. </summary>
+        <remarks>
+          <para>Returns S_OK.</para>
+          <para>A call to this method, resetting the sequence, does not guarantee that the same set of objects will be enumerated after the reset, because it depends on the collection being enumerated. A static collection is reset to the beginning, but it can be too expensive for some collections, such as files in a directory, to guarantee this condition.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Skip">
@@ -98,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IEnumString.Skip(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Skip (celt As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Skip(System::UInt32 celt);" />
+      <MemberSignature Language="F#" Value="abstract member Skip : uint32 -&gt; unit" Usage="iEnumString.Skip celt" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -110,9 +129,12 @@
         <Parameter Name="celt" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="celt">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="celt">The number of elements to be skipped.</param>
+        <summary>Skips over a specified number of items in the enumeration sequence.</summary>
+        <remarks>
+          <para>Returns S_OK if the number of elements skipped is <paramref name="celt" />; otherwise, S_FALSE. </para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
   </Members>

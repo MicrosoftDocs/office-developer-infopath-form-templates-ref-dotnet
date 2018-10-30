@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.User" />
   <TypeSignature Language="VB.NET" Value="Public Interface User" />
   <TypeSignature Language="C++ CLI" Value="public interface class User" />
+  <TypeSignature Language="F#" Value="type User = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about the later version of this interface, including usage remarks and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.User2" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.User.IsCurrentUser(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsCurrentUser (bstrUsername As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsCurrentUser(System::String ^ bstrUsername);" />
+      <MemberSignature Language="F#" Value="abstract member IsCurrentUser : string -&gt; bool" Usage="user.IsCurrentUser bstrUsername" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -46,7 +48,7 @@
       </Parameters>
       <Docs>
         <param name="bstrUsername">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="M:Microsoft.Office.Interop.InfoPath.User2.IsCurrentUser(System.String)" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.User.IsUserMemberOf(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsUserMemberOf (bstrGroupname As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsUserMemberOf(System::String ^ bstrGroupname);" />
+      <MemberSignature Language="F#" Value="abstract member IsUserMemberOf : string -&gt; bool" Usage="user.IsUserMemberOf bstrGroupname" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -75,7 +78,7 @@
       </Parameters>
       <Docs>
         <param name="bstrGroupname">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="M:Microsoft.Office.Interop.InfoPath.User2.IsUserMemberOf(System.String)" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.MergeEvent" />
   <TypeSignature Language="VB.NET" Value="Public Interface MergeEvent&#xA;Implements DocReturnEvent" />
   <TypeSignature Language="C++ CLI" Value="public interface class MergeEvent : Microsoft::Office::Interop::InfoPath::DocReturnEvent" />
+  <TypeSignature Language="F#" Value="type MergeEvent = interface&#xA;    interface DocReturnEvent" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.MergeEventObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MergeEvent.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.InfoPath.MergeEvent.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -49,9 +51,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the count of the number of forms being merged in a merging operation.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The<b> Count</b> property can be used in combination with the <see cref="P:Microsoft.Office.Interop.InfoPath.MergeEvent.Index" /> property of <b>MergeEvent</b> to determine when the last form was merged.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DOM">
@@ -60,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MergeEvent.DOM" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DOM As IXMLDOMDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMDocument ^ DOM { Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DOM : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMDocument" Usage="Microsoft.Office.Interop.InfoPath.MergeEvent.DOM" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -77,9 +83,12 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a form's underlying XML document as an XML Document Object Model (DOM) construction for the current form involved in a merging operation.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>DOM</b> property allows you to access and manipulate the source XML of a form programmatically. After you have set a reference to the XML DOM, which contains the source XML data of a form, you can use any of the properties and methods that are supported by the XML DOM.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="index">
@@ -88,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MergeEvent.index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.index : int" Usage="Microsoft.Office.Interop.InfoPath.MergeEvent.index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -105,9 +115,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the zero-based index of the form that is currently being merged.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The value of the <b>Index </b>property increases from 0 to <see cref="P:Microsoft.Office.Interop.InfoPath.MergeEvent.Count" />-1 for each <see cref="T:Microsoft.Office.Interop.InfoPath.MergeEvent" /> that occurs when forms are merged.</para>
+          <para>When used in combination with the <b>Count</b> property of the <b>MergeEvent</b> object, the <b>Index</b> property can be used to determine when the last form has been merged.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReturnStatus">
@@ -116,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MergeEvent.ReturnStatus" />
       <MemberSignature Language="VB.NET" Value="Public Property ReturnStatus As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReturnStatus { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnStatus : bool with get, set" Usage="Microsoft.Office.Interop.InfoPath.MergeEvent.ReturnStatus" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DocReturnEvent.ReturnStatus</InterfaceMember>
@@ -139,9 +154,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets a value indicating the return status of the <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnMergeRequest" /> event.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The default value of the <b>ReturnStatus</b> property is <b>false</b>. If this property is not set to <b>true</b>, the event handler for the <b>OnMergeRequest</b> event will fail.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RollBack">
@@ -150,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MergeEvent.RollBack" />
       <MemberSignature Language="VB.NET" Value="Public Property RollBack As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RollBack { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RollBack : bool with get, set" Usage="Microsoft.Office.Interop.InfoPath.MergeEvent.RollBack" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -170,9 +189,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets a value that provides additional information to the <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnMergeRequest" /> event along with the <see cref="P:Microsoft.Office.Interop.InfoPath.MergeEvent.ReturnStatus" /> flag, allowing the entire merging operation to be cancelled </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>If <b>ReturnStatus</b> is set to <b>true</b>, this property is ignored.</para>
+          <para>If the <b>ReturnStatus</b> property is <b>false</b> and the <b>RollBack</b> property is <b>true</b>, the entire merging operation will be cancelled and rolled back to the state before the operation was initiated. If the <b>RollBack</b> property is <b>false</b>, merging the current form will fail, but the merging operation will continue with the next form.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="XDocument">
@@ -181,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.MergeEvent.XDocument" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XDocument As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::XDocument ^ XDocument { Microsoft::Office::Interop::InfoPath::XDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XDocument : Microsoft.Office.Interop.InfoPath.XDocument" Usage="Microsoft.Office.Interop.InfoPath.MergeEvent.XDocument" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DocReturnEvent.XDocument</InterfaceMember>
@@ -201,7 +225,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.XDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath._XDocument2" /> object that is associated with the <see cref="T:Microsoft.Office.Interop.InfoPath.MergeEvent" /> object in an <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnMergeRequest" /> event.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

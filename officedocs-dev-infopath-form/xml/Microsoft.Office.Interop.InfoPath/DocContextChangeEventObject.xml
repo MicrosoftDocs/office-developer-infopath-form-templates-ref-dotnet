@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DocContextChangeEventObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface DocContextChangeEventObject&#xA;Implements DocContextChangeEvent" />
   <TypeSignature Language="C++ CLI" Value="public interface class DocContextChangeEventObject : Microsoft::Office::Interop::InfoPath::DocContextChangeEvent" />
+  <TypeSignature Language="F#" Value="type DocContextChangeEventObject = interface&#xA;    interface DocContextChangeEvent" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,28 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An event object that is used during a Microsoft InfoPath context change event.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.DocContextChangeEvent" />.</para>
+      <para>The <b>DocContextChangeEvent</b> object provides a number of properties that can be used within a context change to programmatically interact with the data in a form's underlying XML document, to provide contextual feedback to the user, or to perform actions for the user.</para>
+      <para>The <b>DocContextChangeEvent</b> object is passed as a parameter to the <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnContextChange" /> event.</para>
+      <para>The <b>DocContextChangeEvent</b> object is used to get information about the XML Document Object Model (DOM) node that is the current context of the form's underlying XML document. In addition, it provides information about the type of context change and whether the change happened in response to an undo or redo operation performed by the user.</para>
+      <para>The <see cref="P:Microsoft.Office.Interop.InfoPath.DocContextChangeEvent.Type" /> property returns only the value "ContextNode" for context changes in Microsoft InfoPath 2003 Service Pack 1. Nevertheless, if code in an event handler performs actions that depend on current functionality, that code should still be designed to check the value of the Type property, because future versions of InfoPath may use different values for different context changes.</para>
+      <para>When the <see cref="P:Microsoft.Office.Interop.InfoPath.DocContextChangeEvent.IsUndoRedo" /> property is <b>true</b>, the context change was caused by an undo or redo operation rather than an explicit user context change. Operations performed in an <b>OnContextChange</b> event that modify the XML DOM should be avoided in response to undo or redo actions, because they may interfere with the user's intention to revert data to a previous state.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>In the following example, a node named <paramref name="lastChanged" /> is updated in response to context changes:</para>
+      <code>public void OnContextChange(&lt;span class="label"&gt;DocContextChangeEvent&lt;/span&gt; e)
+{
+ if ( e.Type == "ContextNode" &amp;amp;&amp;amp; !e.IsUndoRedo )
+ {
+  IXMLDOMNode contextNode = e.Context;
+  IXMLDOMNode lastChangedNode = thisXDocument.DOM.selectSingleNode("/my:myRoot/my:lastChanged");
+  lastChangedNode.text = contextNode.nodeName;
+ }
+}</code>
+    </example>
   </Docs>
   <Members />
 </Type>

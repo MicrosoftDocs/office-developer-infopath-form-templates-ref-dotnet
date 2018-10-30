@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.UserPermission" />
   <TypeSignature Language="VB.NET" Value="Public Interface UserPermission" />
   <TypeSignature Language="C++ CLI" Value="public interface class UserPermission" />
+  <TypeSignature Language="F#" Value="type UserPermission = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.UserPermissionObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.UserPermission.ExpirationDate" />
       <MemberSignature Language="VB.NET" Value="Public Property ExpirationDate As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ExpirationDate { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ExpirationDate : obj with get, set" Usage="Microsoft.Office.Interop.InfoPath.UserPermission.ExpirationDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -48,9 +50,23 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the optional expiration date for the permissions on the current form assigned to the user associated with a <see cref="T:Microsoft.Office.Interop.InfoPath.UserPermission" /> object.</summary>
+        <value>A <b>System.DateTime</b> that represents the expiration date for the user associated with the <b>UserPermission</b> object.</value>
+        <remarks>
+          <para>A <b>UserPermission</b> object associates a set of permissions on the current form with a single user and an optional expiration date. The <b>ExpirationDate</b> property gets or sets the optional expiration date of this <b>UserPermission</b> object using the local time zone.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, a <b>UserPermission</b> object retrieved from the <see cref="P:Microsoft.Office.Interop.InfoPath.UserPermission.Permission" /> collection for the current form, and then the <b>ExpirationDate</b> property is used to display that user's expiration date.</para>
+          <code>_XDocument3 thisDoc = (_XDocument3)thisXDocument;
+UserPermission thisUser = 
+   thisDoc.Permission["someone@example.com"];
+thisXDocument.UI.Alert(thisUser.ExpirationDate.ToString());</code>
+          <code>Dim thisDoc As _XDocument3 = DirectCast(thisXDocument, _XDocument3)
+UserPermission thisUser = 
+   Permission.UserPermissions("someone@example.com")
+thisXDocument.UI.Alert(thisUser.ExpirationDate.ToString())</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -59,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.UserPermission.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.InfoPath.UserPermission.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -76,8 +93,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the parent object for the <b>UserPermission</b> object.</summary>
+        <value>The parent object for the <b>UserPermission</b> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.UserPermission.Permission" />
       <MemberSignature Language="VB.NET" Value="Public Property Permission As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Permission { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Permission : int with get, set" Usage="Microsoft.Office.Interop.InfoPath.UserPermission.Permission" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -107,9 +125,27 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value representing the permissions on the current form assigned to the user associated with a <see cref="T:Microsoft.Office.Interop.InfoPath.UserPermission" /> object.</summary>
+        <value>An integer value that corresponds to one of the <see cref="T:Microsoft.Office.Core.MsoPermission" /> enumeration values.</value>
         <remarks>To be added.</remarks>
+        <example>
+          <para>In the following example, the user associated with the e-mail address "someone@example.com" is retrieved from the <see cref="T:Microsoft.Office.Interop.InfoPath.SemiTrust.Permission" /> collection of the form and assigned to a <b>UserPermission</b> object. Then, the <see cref="P:Microsoft.Office.Interop.InfoPath.SemiTrust.UserPermission.Permission" /> property of the <b>UserPermission</b> object is used to set that user's permissions to the Change access level.</para>
+          <para>To access the <see cref="T:Microsoft.Office.Core.MsoPermission" /> enumeration values for setting permissions, you must set a reference to the Microsoft Office 14.0 Object Library using <b>COM</b> tab of the Add Reference dialog box in Visual Studio 2012 or Visual Studio 2005. This will establish a reference to the members of the <b>Microsoft.Office.Core</b> namespace.</para>
+          <para>This example requires a <b>using</b> or <b>Imports</b> directive for the <b>Microsoft.Office.Core</b> namespace in the declarations section of the form module.</para>
+          <code>_XDocument3 thisDoc = (_XDocument3)thisXDocument;
+
+UserPermission thisUser = thisDoc.Permission["someone@example.com"];
+
+thisUser.Permission = 
+   (int)MsoPermission.msoPermissionChange;</code>
+          <code>Dim thisDoc As _XDocument3 = DirectCast(thisXDocument, _XDocument3)
+
+Dim thisUser As UserPermission = _
+   thisDoc.Permission["someone@example.com"];
+
+thisUser.Permission = _
+   DirectCast(MsoPermission.msoPermissionChange, Integer)</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -118,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UserPermission.Remove" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove();" />
+      <MemberSignature Language="F#" Value="abstract member Remove : unit -&gt; unit" Usage="userPermission.Remove " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -133,8 +170,19 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Removes the current <see cref="T:Microsoft.Office.Interop.InfoPath.UserPermission" /> object from the form's permissions.</summary>
         <remarks>To be added.</remarks>
+        <example>
+          <para>In the following example, a <b>UserPermission</b> object retrieved from the <see cref="P:Microsoft.Office.Interop.InfoPath.UserPermission.Permission" /> collection for the current form, and then the <b>Remove</b> method is used to remove the user.</para>
+          <code>_XDocument3 thisDoc = (_XDocument3)thisXDocument;
+UserPermission thisUser = 
+   thisDoc.Permission["someone@example.com"];
+thisUser.Remove();</code>
+          <code>Dim thisDoc As _XDocument3 = DirectCast(thisXDocument, _XDocument3)
+UserPermission thisUser = 
+   Permission.UserPermissions("someone@example.com")
+thisUser.Remove()</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="UserId">
@@ -143,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.UserPermission.UserId" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property UserId As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserId : string" Usage="Microsoft.Office.Interop.InfoPath.UserPermission.UserId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -160,9 +209,23 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the e-mail address of the user whose permissions on the current form are determined by the specified <see cref="T:Microsoft.Office.Interop.InfoPath.UserPermission" /> object.</summary>
+        <value>The user's e-mail address.</value>
+        <remarks>
+          <para>The <b>UserPermission</b> object associates a set of permissions on the current form with a single user and an optional expiration date. The <b>UserId</b> property returns the e-mail address of the user whose permissions are determined by the <b>UserPermission</b> object.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the second <b>UserPermission</b> object retrieved from the <see cref="P:Microsoft.Office.Interop.InfoPath.UserPermission.Permission" /> collection for the current form, and then the <b>UserId</b> property is used to display the user's e-mail address.</para>
+          <code>_XDocument3 thisDoc = (_XDocument3)thisXDocument;
+UserPermission thisUser = 
+   thisDoc.Permission[1];
+thisXDocument.UI.Alert(thisUser.UserId);</code>
+          <code>Dim thisDoc As _XDocument3 = DirectCast(thisXDocument, _XDocument3)
+UserPermission thisUser = 
+   Permission.UserPermissions(1)
+thisXDocument.UI.Alert(thisUser.UserId)</code>
+        </example>
       </Docs>
     </Member>
   </Members>

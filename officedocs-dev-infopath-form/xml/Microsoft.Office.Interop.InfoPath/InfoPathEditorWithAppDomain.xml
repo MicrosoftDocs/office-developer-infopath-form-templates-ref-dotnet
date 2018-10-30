@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.InfoPathEditorWithAppDomain" />
   <TypeSignature Language="VB.NET" Value="Public Interface InfoPathEditorWithAppDomain" />
   <TypeSignature Language="C++ CLI" Value="public interface class InfoPathEditorWithAppDomain" />
+  <TypeSignature Language="F#" Value="type InfoPathEditorWithAppDomain = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -21,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditorObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditorWithAppDomain.Load(System.String,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load (bstrURL As String, punkAppDomain As Object, bstrInputParameters As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::String ^ bstrURL, System::Object ^ punkAppDomain, System::String ^ bstrInputParameters);" />
+      <MemberSignature Language="F#" Value="abstract member Load : string * obj * string -&gt; unit" Usage="infoPathEditorWithAppDomain.Load (bstrURL, punkAppDomain, bstrInputParameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -50,11 +52,15 @@
         <Parameter Name="bstrInputParameters" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bstrURL">To be added.</param>
-        <param name="punkAppDomain">To be added.</param>
-        <param name="bstrInputParameters">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bstrURL">The path or URL to the form file (.xml).</param>
+        <param name="punkAppDomain">An <a href="frlrfSystemAppDomainClassTopic">AppDomain</a></param>
+        <param name="bstrInputParameters">One or more name/value pairs separated by the ampersand (&amp;) character.</param>
+        <summary>Loads a form file (.xml) into the control represented by the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditorWithAppDomain" /> object.</summary>
+        <remarks>
+          <para>The <see cref="M:Microsoft.Office.Interop.InfoPath.InfoPathEditorWithAppDomain.Load(System.String,System.Object,System.String)" /> method does not allow you to specify a form template file (.xsn). The form file must contain processing instructions (<b>href</b> and <b>name</b> attributes) that reference a valid form template file for the <see cref="M:Microsoft.Office.Interop.InfoPath.InfoPathEditorWithAppDomain.Load(System.String,System.Object,System.String)" /> method to succeed. If this is not possible, the <see cref="M:Microsoft.Office.Interop.InfoPath.InfoPathEditorWithAppDomain.NewFromSolution(System.String,System.Object,System.String)" /> method can be used if you have a .xsn file and a suitably structured XML file, but the XML file does not have processing instruction references that specify the .xsn file. Or you can use the <see cref="M:Microsoft.Office.Interop.InfoPath.InfoPathEditorWithAppDomain.LoadFromStream(System.Object,System.Object,System.String)" /> method to load XML from a <b>System.IO.Stream</b> object. </para>
+          <para>To use the input parameters passed to the <paramref name="bstrInputParameters" /> parameter, the form specified in the <paramref name="bstrURL" /> parameter must contain a <b>OnLoad</b> event handler that uses the <b>InputParameters</b> property of the <b>LoadingEventArgs</b> class to retrieve the input parameter values, and then do something with those values. </para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadFromStream">
@@ -63,6 +69,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditorWithAppDomain.LoadFromStream(System.Object,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadFromStream (punkStream As Object, punkAppDomain As Object, bstrInputParameters As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadFromStream(System::Object ^ punkStream, System::Object ^ punkAppDomain, System::String ^ bstrInputParameters);" />
+      <MemberSignature Language="F#" Value="abstract member LoadFromStream : obj * obj * string -&gt; unit" Usage="infoPathEditorWithAppDomain.LoadFromStream (punkStream, punkAppDomain, bstrInputParameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -82,11 +89,14 @@
         <Parameter Name="bstrInputParameters" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="punkStream">To be added.</param>
-        <param name="punkAppDomain">To be added.</param>
-        <param name="bstrInputParameters">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="punkStream">The file stream (<b>System.IO.IStream</b>) containing the form file (.xml).</param>
+        <param name="punkAppDomain">An <a href="frlrfSystemAppDomainClassTopic">AppDomain</a></param>
+        <param name="bstrInputParameters">One or more name/value pairs separated by the ampersand (&amp;) character.</param>
+        <summary>Loads XML from a file stream (<b>System.IO.IStream</b>) into the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditorWithAppDomain" /> object.</summary>
+        <remarks>
+          <para>To use the input parameters passed to the <paramref name="bstrInputParameters" /> parameter, the form specified in the <paramref name="bstrURL" /> parameter must contain a <b>OnLoad</b> event handler that uses the <b>InputParameters</b> property of the <b>LoadingEventArgs</b> class to retrieve the input parameter values, and then do something with those values. </para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NewFromSolution">
@@ -95,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditorWithAppDomain.NewFromSolution(System.String,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub NewFromSolution (bstrSolutionURI As String, punkAppDomain As Object, bstrInputParameters As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void NewFromSolution(System::String ^ bstrSolutionURI, System::Object ^ punkAppDomain, System::String ^ bstrInputParameters);" />
+      <MemberSignature Language="F#" Value="abstract member NewFromSolution : string * obj * string -&gt; unit" Usage="infoPathEditorWithAppDomain.NewFromSolution (bstrSolutionURI, punkAppDomain, bstrInputParameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -114,11 +125,14 @@
         <Parameter Name="bstrInputParameters" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bstrSolutionURI">To be added.</param>
-        <param name="punkAppDomain">To be added.</param>
-        <param name="bstrInputParameters">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bstrSolutionURI">The path or URL to the form template (.xsn) file.</param>
+        <param name="punkAppDomain">An <a href="frlrfSystemAppDomainClassTopic">AppDomain</a></param>
+        <param name="bstrInputParameters">One or more name/value pairs separated by the ampersand (&amp;) character.</param>
+        <summary>Creates a new form based on a form template (.xsn) file.</summary>
+        <remarks>
+          <para>To use the input parameters passed to the <paramref name="bstrInputParameters" /> parameter, the form specified in the <paramref name="bstrURL" /> parameter must contain a <b>OnLoad</b> event handler that uses the <b>InputParameters</b> property of the <b>LoadingEventArgs</b> class to retrieve the input parameter values, and then do something with those values. </para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NewFromSolutionWithData">
@@ -127,6 +141,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditorWithAppDomain.NewFromSolutionWithData(System.String,System.Object,System.Int32,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub NewFromSolutionWithData (bstrURLXSN As String, punkStream As Object, dwBehavior As Integer, punkAppDomain As Object, bstrInputParameters As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void NewFromSolutionWithData(System::String ^ bstrURLXSN, System::Object ^ punkStream, int dwBehavior, System::Object ^ punkAppDomain, System::String ^ bstrInputParameters);" />
+      <MemberSignature Language="F#" Value="abstract member NewFromSolutionWithData : string * obj * int * obj * string -&gt; unit" Usage="infoPathEditorWithAppDomain.NewFromSolutionWithData (bstrURLXSN, punkStream, dwBehavior, punkAppDomain, bstrInputParameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -148,13 +163,17 @@
         <Parameter Name="bstrInputParameters" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bstrURLXSN">To be added.</param>
-        <param name="punkStream">To be added.</param>
-        <param name="dwBehavior">To be added.</param>
-        <param name="punkAppDomain">To be added.</param>
-        <param name="bstrInputParameters">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bstrURLXSN">The path or URL to the form template file (.xsn).</param>
+        <param name="punkStream">The file stream (<b>System.IO.IStream</b>) containing the XML data used to populate the new form.</param>
+        <param name="dwBehavior">A <see cref="T:Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode" /> value that specifies how the form should be opened.</param>
+        <param name="punkAppDomain">An <a href="frlrfSystemAppDomainClassTopic">AppDomain</a></param>
+        <param name="bstrInputParameters">One or more name/value pairs separated by the ampersand (&amp;) character.</param>
+        <summary>Creates a new form based on the specified form template and the data contained in an XML stream.</summary>
+        <remarks>
+          <para>The XML document specified in the <paramref name="punkStream" /> parameter does not need to have been created by InfoPath. It can be supplied either as a URI or as an <b>XmlNode</b>.</para>
+          <para>To use the input parameters passed to the <paramref name="bstrInputParameters" /> parameter, the form specified in the <paramref name="bstrURL" /> parameter must contain a <b>OnLoad</b> event handler that uses the <b>InputParameters</b> property of the <b>LoadingEventArgs</b> class to retrieve the input parameter values, and then do something with those values. </para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
   </Members>

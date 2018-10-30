@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SignEvent" />
   <TypeSignature Language="VB.NET" Value="Public Interface SignEvent&#xA;Implements DocReturnEvent" />
   <TypeSignature Language="C++ CLI" Value="public interface class SignEvent : Microsoft::Office::Interop::InfoPath::DocReturnEvent" />
+  <TypeSignature Language="F#" Value="type SignEvent = interface&#xA;    interface DocReturnEvent" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.SignEventObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignEvent.ReturnStatus" />
       <MemberSignature Language="VB.NET" Value="Public Property ReturnStatus As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReturnStatus { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnStatus : bool with get, set" Usage="Microsoft.Office.Interop.InfoPath.SignEvent.ReturnStatus" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DocReturnEvent.ReturnStatus</InterfaceMember>
@@ -55,9 +57,46 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the return status of the <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnSign" /> event.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>If the <b>ReturnStatus</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.SignEventObject" /> object is set to <b>false</b>, the Digital Signature Wizard dialog will be displayed until the user exits the dialog.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, if the <b>ReturnStatus</b> property is set to <b>false</b> in the <b>OnSign</b> event handler, then the Digital Signatures Wizard will be displayed again to add another signature to the set of data which can be signed. For the first set of data which can be signed, if three signatures already exist, the , the <b>OnSign</b> event handler will exit with the <b>ReturnStatus</b> property set to <b>true</b>, which closes the Digital Signatures Wizard and displays an alert:</para>
+          <code>[InfoPathEventHandler(EventType=InfoPathEventType.OnSign)]
+public void OnSign(SignEvent e)
+{
+ Signature thisSignature = e.SignedDataBlock.Signatures.Create();
+
+ // check if the current signed data block is the first signed data block in list
+ // if it is the first signed data block, then do special handling
+ // else use the default handler (triggered by e.ReturnStatus = false)
+
+ if ( e.SignedDataBlock.Name == thisXDocument.SignedDataBlocks[0].Name )
+ {
+  // check the number of signatures in the first signed data block
+  // if there are three signatures, don’t add another signature  and set ReturnStatus to true)
+  // else add the signature (use the Sign() method to show the wizard) and don’t do anything else (ReturnStatus is true)
+  if ( thisXDocument.SignedDataBlocks[0].Signatures.Count &amp;gt; 3 )
+  {
+   thisXDocument.UI.Alert("Only 3 signatures are allowed on this set of data : " + e.SignedDataBlock.Name );
+   e.&lt;span class="label"&gt;ReturnStatus&lt;/span&gt; = true;
+  }
+  else
+  {
+   thisSignature.Sign();
+   e.&lt;span class="label"&gt;ReturnStatus&lt;/span&gt; = true;
+  }
+ }
+ else
+ {
+  e.&lt;span class="label"&gt;ReturnStatus&lt;/span&gt; = false;
+ }
+}
+</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="SignedDataBlock">
@@ -66,6 +105,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignEvent.SignedDataBlock" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignedDataBlock As SignedDataBlockObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::SignedDataBlockObject ^ SignedDataBlock { Microsoft::Office::Interop::InfoPath::SignedDataBlockObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SignedDataBlock : Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" Usage="Microsoft.Office.Interop.InfoPath.SignEvent.SignedDataBlock" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -83,7 +123,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.SignedDataBlockObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the set of data which can be signed that triggered the <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnSign" /> event.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -94,6 +134,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignEvent.XDocument" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XDocument As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::XDocument ^ XDocument { Microsoft::Office::Interop::InfoPath::XDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XDocument : Microsoft.Office.Interop.InfoPath.XDocument" Usage="Microsoft.Office.Interop.InfoPath.SignEvent.XDocument" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DocReturnEvent.XDocument</InterfaceMember>
@@ -114,9 +155,19 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.XDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object associated with the <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnSign" /> event.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>In the following example, a variable is set to <b>true</b> if the <b>XDocument</b> is signed and <b>false</b> if the <b>XDocument</b> is not signed:</para>
+          <code>public void OnSign(SignEvent e)
+{
+ Signature mySignedData = e.SignedDataBlock.Signatures.Create();
+ mySignedData.Sign();
+ bool IsSignedDoc = e.&lt;span class="label"&gt;XDocument&lt;/span&gt;.IsSigned;
+ e.ReturnStatus = IsSignedDoc;
+}</code>
+          <para />
+        </remarks>
       </Docs>
     </Member>
   </Members>

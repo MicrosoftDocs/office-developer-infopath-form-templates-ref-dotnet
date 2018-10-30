@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum XdDocumentVersionMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class XdDocumentVersionMode" />
+  <TypeSignature Language="F#" Value="type XdDocumentVersionMode = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -17,8 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <b>XdDocumentVersionMode</b> enumeration is used to determine how a Microsoft Office InfoPath form will be opened.</summary>
+    <remarks>
+      <para>These enumerated values are used as arguments to the <b>New</b> and <b>Open</b> methods of the <see cref="T:Microsoft.Office.Interop.InfoPath.ExternalApplication" /> object and <see cref="T:Microsoft.Office.Interop.InfoPath.XDocumentsCollection" /> collection.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="xdCanOpenInReadOnlyMode">
@@ -27,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdCanOpenInReadOnlyMode" />
       <MemberSignature Language="VB.NET" Value="xdCanOpenInReadOnlyMode" />
       <MemberSignature Language="C++ CLI" Value="xdCanOpenInReadOnlyMode" />
+      <MemberSignature Language="F#" Value="xdCanOpenInReadOnlyMode = 8" Usage="Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdCanOpenInReadOnlyMode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -37,7 +42,7 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The form is opened in read-only mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdCanTransformSigned">
@@ -46,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdCanTransformSigned" />
       <MemberSignature Language="VB.NET" Value="xdCanTransformSigned" />
       <MemberSignature Language="C++ CLI" Value="xdCanTransformSigned" />
+      <MemberSignature Language="F#" Value="xdCanTransformSigned = 16" Usage="Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdCanTransformSigned" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -56,7 +62,7 @@
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The form is opened and its transform applied, even though it has a digital signature.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdDoNotInstallActiveXCabs">
@@ -65,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdDoNotInstallActiveXCabs" />
       <MemberSignature Language="VB.NET" Value="xdDoNotInstallActiveXCabs" />
       <MemberSignature Language="C++ CLI" Value="xdDoNotInstallActiveXCabs" />
+      <MemberSignature Language="F#" Value="xdDoNotInstallActiveXCabs = 128" Usage="Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdDoNotInstallActiveXCabs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -75,7 +82,7 @@
       </ReturnValue>
       <MemberValue>128</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The form is opened but ActiveX controls are not installed from the cab files.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdFailOnVersionMismatch">
@@ -84,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdFailOnVersionMismatch" />
       <MemberSignature Language="VB.NET" Value="xdFailOnVersionMismatch" />
       <MemberSignature Language="C++ CLI" Value="xdFailOnVersionMismatch" />
+      <MemberSignature Language="F#" Value="xdFailOnVersionMismatch = 0" Usage="Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdFailOnVersionMismatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -94,7 +102,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The form is created or opened only if it is accessible and its version number matches the version number of the form template.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdFailOnVersionOlder">
@@ -103,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdFailOnVersionOlder" />
       <MemberSignature Language="VB.NET" Value="xdFailOnVersionOlder" />
       <MemberSignature Language="C++ CLI" Value="xdFailOnVersionOlder" />
+      <MemberSignature Language="F#" Value="xdFailOnVersionOlder = 1" Usage="Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdFailOnVersionOlder" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -113,7 +122,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The form is created or opened only if it is accessible and its version number is not older than the version number of the form template.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdIgnoreDataAdaptersQueryFailure">
@@ -122,6 +131,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdIgnoreDataAdaptersQueryFailure" />
       <MemberSignature Language="VB.NET" Value="xdIgnoreDataAdaptersQueryFailure" />
       <MemberSignature Language="C++ CLI" Value="xdIgnoreDataAdaptersQueryFailure" />
+      <MemberSignature Language="F#" Value="xdIgnoreDataAdaptersQueryFailure = 64" Usage="Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdIgnoreDataAdaptersQueryFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -132,7 +142,7 @@
       </ReturnValue>
       <MemberValue>64</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The form is opened even if the query associated with its data adapter fails to return data.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdPromptTransformSigned">
@@ -141,6 +151,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdPromptTransformSigned" />
       <MemberSignature Language="VB.NET" Value="xdPromptTransformSigned" />
       <MemberSignature Language="C++ CLI" Value="xdPromptTransformSigned" />
+      <MemberSignature Language="F#" Value="xdPromptTransformSigned = 32" Usage="Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdPromptTransformSigned" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -151,7 +162,7 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The form is opened and the Digital Signatures dialog box is displayed before the form's transform is applied.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdUseExistingVersion">
@@ -160,6 +171,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdUseExistingVersion" />
       <MemberSignature Language="VB.NET" Value="xdUseExistingVersion" />
       <MemberSignature Language="C++ CLI" Value="xdUseExistingVersion" />
+      <MemberSignature Language="F#" Value="xdUseExistingVersion = 2" Usage="Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode.xdUseExistingVersion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -170,7 +182,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The form is created or opened using the existing version number of the form template.</summary>
       </Docs>
     </Member>
   </Members>

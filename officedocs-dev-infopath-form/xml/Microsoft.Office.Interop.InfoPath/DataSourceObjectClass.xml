@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DataSourceObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class DataSourceObjectClass&#xA;Implements DataSourceObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataSourceObjectClass : Microsoft::Office::Interop::InfoPath::DataSourceObject" />
+  <TypeSignature Language="F#" Value="type DataSourceObjectClass = class&#xA;    interface DataObject&#xA;    interface DataSourceObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -25,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DataSourceObjectClass.DOM" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DOM As IXMLDOMDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMDocument ^ DOM { Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DOM : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMDocument" Usage="DOM" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DataObject.DOM</InterfaceMember>
@@ -55,7 +57,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DataSourceObjectClass.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Name" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DataObject.Name</InterfaceMember>
@@ -86,7 +89,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.DataSourceObjectClass.Query" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Query ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Query() = Microsoft::Office::Interop::InfoPath::DataObject::Query;" />
+      <MemberSignature Language="F#" Value="abstract member Query : unit -&gt; unit&#xA;override this.Query : unit -&gt; unit" Usage="dataSourceObjectClass.Query " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.DataObject.Query</InterfaceMember>
@@ -115,7 +119,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DataSourceObjectClass.QueryAdapter" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property QueryAdapter As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ QueryAdapter { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueryAdapter : obj" Usage="QueryAdapter" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DataObject.QueryAdapter</InterfaceMember>
@@ -145,7 +150,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DataObjectsCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface DataObjectsCollection&#xA;Implements DataObjects" />
   <TypeSignature Language="C++ CLI" Value="public interface class DataObjectsCollection : Microsoft::Office::Interop::InfoPath::DataObjects" />
+  <TypeSignature Language="F#" Value="type DataObjectsCollection = interface&#xA;    interface DataObjects" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains a <see cref="T:Microsoft.Office.Interop.InfoPath.DataSourceObject" /> object for each secondary data source used within a Microsoft InfoPath form.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.DataObjects" />.</para>
+      <para>Each <see cref="T:Microsoft.Office.Interop.InfoPath.DataSourceObject" /> (<b>DataObject</b>) object corresponds to stored data, obtained from some external source of data, using an associated data adapter. The data adapter represents the connection, to a database or web service, for example, and the data source represents the storage of the returned XML data. The <see cref="P:Microsoft.Office.Interop.InfoPath.DataObject.QueryAdapter" /> property.of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataSourceObject" /> provides access to the particular <b>DataSourceObject</b> object that was used to connect to the external data source.</para>
+      <para>The <b>DataObjects</b> collection implements properties that can be used to access a form's associated <b>DataSourceObject</b> objects, and it is accessible through the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument2.DataObjects" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object.</para>
+      <para>
+        <b>Note</b>: The <b>DataObjects</b> collection can be used only to get the count of <b>DataSourceObject</b> objects that it contains or to return a reference to a specified <b>DataSourceObject</b> object. It cannot be used to create, add, or remove <b>DataSourceObject</b> objects.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members />
 </Type>

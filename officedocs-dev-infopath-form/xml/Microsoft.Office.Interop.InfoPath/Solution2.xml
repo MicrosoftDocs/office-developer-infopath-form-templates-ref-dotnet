@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Solution2" />
   <TypeSignature Language="VB.NET" Value="Public Interface Solution2&#xA;Implements Solution" />
   <TypeSignature Language="C++ CLI" Value="public interface class Solution2 : Microsoft::Office::Interop::InfoPath::Solution" />
+  <TypeSignature Language="F#" Value="type Solution2 = interface&#xA;    interface Solution" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.SolutionObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Solution2.CacheID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CacheID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CacheID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CacheID : string" Usage="Microsoft.Office.Interop.InfoPath.Solution2.CacheID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -49,9 +51,14 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the cache ID of a form template.</summary>
+        <value>The cache ID of a form template.</value>
+        <remarks>
+          <para>The cache ID is the folder name from the following location in the file system:</para>
+          <code>%USERPROFILE%\Local Settings\Application Data\Microsoft\InfoPath\FormCache1\&lt;span class="placeholder"&gt;foldername&lt;/span&gt;\&lt;span class="placeholder"&gt;cacheID&lt;/span&gt;</code>
+          <para>Where foldername is a random name assigned in a user's form cache, and cacheID is the cache ID value.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DOM">
@@ -60,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Solution2.DOM" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DOM As IXMLDOMDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMDocument ^ DOM { Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DOM : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMDocument" Usage="Microsoft.Office.Interop.InfoPath.Solution2.DOM" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Solution.DOM</InterfaceMember>
@@ -80,9 +88,16 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a reference to an XML Document Object Model (DOM) that contains the source XML of the form definition (.xsf) file.</summary>
+        <value>A reference to an <b>IXMLDOMDocument</b> object that represents the source XML of the form definition file (.xsf).</value>
+        <remarks>
+          <para>The <b>DOM</b> property allows you to programmatically access and manipulate the source XML of the .xsf file. After you have set a reference to the XML DOM, which contains the source XML data of the .xsf file, you can use any of the properties and methods that are supported by the XML DOM.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>DOM</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.SolutionObject" /> object is used to return all of the contents of a form's .xsf file using the xml property of the XML DOM:</para>
+          <code>string xml = thisXDocument.Solution2.&lt;span class="label"&gt;DOM&lt;/span&gt;.xml;</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="PackageURL">
@@ -91,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Solution2.PackageURL" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PackageURL As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PackageURL { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PackageURL : string" Usage="Microsoft.Office.Interop.InfoPath.Solution2.PackageURL" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Solution.PackageURL</InterfaceMember>
@@ -111,9 +127,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the Uniform Resource Locator (URL) of the cache folder that contains a Microsoft Office InfoPath form's extracted form files.</summary>
+        <value>The Uniform Resource Locator (URL) of the cache folder that contains a Microsoft Office InfoPath form's extracted form files.</value>
+        <remarks>
+          <para>The <b>PackageURL</b> property is set at run time, and the URL it contains points to the folder where the form template's files are cached.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>PackageURL</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.SolutionObject" /> object is used to display the folder's URL in a message box:</para>
+          <code>thisXDocument.UI.Alert("PackageURL: " + 
+   thisXDocument.Solution.&lt;span class="label"&gt;PackageURL&lt;/span&gt;);</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="URI">
@@ -122,6 +146,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Solution2.URI" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property URI As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ URI { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.URI : string" Usage="Microsoft.Office.Interop.InfoPath.Solution2.URI" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Solution.URI</InterfaceMember>
@@ -142,9 +167,16 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the Uniform Resource Identifier (URI) of a Microsoft Office InfoPath form template.</summary>
+        <value>The Uniform Resource Identifier (URI) of a Microsoft Office InfoPath form template.</value>
+        <remarks>
+          <para>The <b>URI</b> property can take the form of a Uniform Resource Locator (URL) or Uniform Resource Name (URN), depending on the location from which the form was opened.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>URI</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.SolutionObject" /> object is used to display a form template's URI in a message box:</para>
+          <code>thisXDocument.UI.Alert("URI: " + thisXDocument.Solution.&lt;span class="label"&gt;URI&lt;/span&gt;);</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -153,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Solution2.Version" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : string" Usage="Microsoft.Office.Interop.InfoPath.Solution2.Version" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Solution.Version</InterfaceMember>
@@ -173,9 +206,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the version number of a Microsoft Office InfoPath form template.</summary>
+        <value>The version number of a Microsoft Office InfoPath form template.</value>
+        <remarks>
+          <para>To obtain the version number of the InfoPath application, use <see cref="P:Microsoft.Office.Interop.InfoPath._Application3.Version" />.</para>
+          <para />
+        </remarks>
+        <example>
+          <code>thisXDocument.UI.Alert("Version: " + thisXDocument.Solution.&lt;span class="label"&gt;Version&lt;/span&gt;);</code>
+        </example>
       </Docs>
     </Member>
   </Members>

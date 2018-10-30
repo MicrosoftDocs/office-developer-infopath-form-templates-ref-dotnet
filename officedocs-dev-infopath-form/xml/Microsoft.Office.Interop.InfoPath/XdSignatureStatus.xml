@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XdSignatureStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum XdSignatureStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class XdSignatureStatus" />
+  <TypeSignature Language="F#" Value="type XdSignatureStatus = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -17,8 +18,33 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <b>XdSignatureRelation</b> enumeration is used to determine how digital signatures can be added to a <see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" /> object.</summary>
+    <remarks>
+      <para>These enumerated values are returned by the <see cref="P:Microsoft.Office.Interop.InfoPath.SignedDataBlock.SignatureRelation" /> property.</para>
+      <para />
+    </remarks>
+    <example>
+      <code>public void DisplaySDBProperties()
+{
+ SignedDataBlock sdb = thisXDocument.SignedDataBlocks[0];
+ string sigRelation = "UNKNOWN";
+ switch(sdb.SignatureRelation)
+  {
+   case &lt;span class="label"&gt;XdSignatureRelation&lt;/span&gt;.xdSignatureRelationSingle :
+    sigRelation = "SINGLE";
+    break;
+   case &lt;span class="label"&gt;XdSignatureRelation&lt;/span&gt;.xdSignatureRelationCoSign :
+    sigRelation = "COSIGN";
+    break;
+   case &lt;span class="label"&gt;XdSignatureRelation&lt;/span&gt;.xdSignatureRelationCounterSign :
+    sigRelation = "COUNTERSIGN";
+    break;
+   default:
+    break;
+  }
+ thisXDocument.UI.Alert("Signatures relation: " + sigRelation );
+}</code>
+    </example>
   </Docs>
   <Members>
     <Member MemberName="xdSignatureStatusError">
@@ -27,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdSignatureStatus.xdSignatureStatusError" />
       <MemberSignature Language="VB.NET" Value="xdSignatureStatusError" />
       <MemberSignature Language="C++ CLI" Value="xdSignatureStatusError" />
+      <MemberSignature Language="F#" Value="xdSignatureStatusError = 0" Usage="Microsoft.Office.Interop.InfoPath.XdSignatureStatus.xdSignatureStatusError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -37,7 +64,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary />
       </Docs>
     </Member>
     <Member MemberName="xdSignatureStatusInvalid">
@@ -46,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdSignatureStatus.xdSignatureStatusInvalid" />
       <MemberSignature Language="VB.NET" Value="xdSignatureStatusInvalid" />
       <MemberSignature Language="C++ CLI" Value="xdSignatureStatusInvalid" />
+      <MemberSignature Language="F#" Value="xdSignatureStatusInvalid = 2" Usage="Microsoft.Office.Interop.InfoPath.XdSignatureStatus.xdSignatureStatusInvalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -56,7 +84,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary />
       </Docs>
     </Member>
     <Member MemberName="xdSignatureStatusUnsupported">
@@ -65,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdSignatureStatus.xdSignatureStatusUnsupported" />
       <MemberSignature Language="VB.NET" Value="xdSignatureStatusUnsupported" />
       <MemberSignature Language="C++ CLI" Value="xdSignatureStatusUnsupported" />
+      <MemberSignature Language="F#" Value="xdSignatureStatusUnsupported = 3" Usage="Microsoft.Office.Interop.InfoPath.XdSignatureStatus.xdSignatureStatusUnsupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -75,7 +104,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary />
       </Docs>
     </Member>
     <Member MemberName="xdSignatureStatusValid">
@@ -84,6 +113,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdSignatureStatus.xdSignatureStatusValid" />
       <MemberSignature Language="VB.NET" Value="xdSignatureStatusValid" />
       <MemberSignature Language="C++ CLI" Value="xdSignatureStatusValid" />
+      <MemberSignature Language="F#" Value="xdSignatureStatusValid = 1" Usage="Microsoft.Office.Interop.InfoPath.XdSignatureStatus.xdSignatureStatusValid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -94,7 +124,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary />
       </Docs>
     </Member>
   </Members>

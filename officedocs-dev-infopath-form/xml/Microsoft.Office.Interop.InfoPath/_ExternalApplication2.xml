@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._ExternalApplication2" />
   <TypeSignature Language="VB.NET" Value="Public Interface _ExternalApplication2&#xA;Implements _ExternalApplication" />
   <TypeSignature Language="C++ CLI" Value="public interface class _ExternalApplication2 : Microsoft::Office::Interop::InfoPath::_ExternalApplication" />
+  <TypeSignature Language="F#" Value="type _ExternalApplication2 = interface&#xA;    interface _ExternalApplication" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ExternalApplication2.CacheSolution(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CacheSolution (bstrSolutionURI As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CacheSolution(System::String ^ bstrSolutionURI);" />
+      <MemberSignature Language="F#" Value="abstract member CacheSolution : string -&gt; unit" Usage="_ExternalApplication2.CacheSolution bstrSolutionURI" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ExternalApplication.CacheSolution(System.String)</InterfaceMember>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ExternalApplication2.Close(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close (bstrDocumentURI As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close(System::String ^ bstrDocumentURI);" />
+      <MemberSignature Language="F#" Value="abstract member Close : string -&gt; unit" Usage="_ExternalApplication2.Close bstrDocumentURI" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ExternalApplication.Close(System.String)</InterfaceMember>
@@ -93,6 +96,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void New([in]string bstrDocumentURI, [in]int32 dwBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ExternalApplication2.New(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (bstrDocumentURI As String, Optional dwBehavior As Integer = 1)" />
+      <MemberSignature Language="F#" Value="abstract member New : string * int -&gt; unit" Usage="_ExternalApplication2.New (bstrDocumentURI, dwBehavior)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ExternalApplication.New(System.String,System.Int32)</InterfaceMember>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ExternalApplication2.NewFromSolution(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub NewFromSolution (bstrSolutionURI As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void NewFromSolution(System::String ^ bstrSolutionURI);" />
+      <MemberSignature Language="F#" Value="abstract member NewFromSolution : string -&gt; unit" Usage="_ExternalApplication2.NewFromSolution bstrSolutionURI" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ExternalApplication.NewFromSolution(System.String)</InterfaceMember>
@@ -157,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ExternalApplication2.NewFromSolutionWithInputParameters(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub NewFromSolutionWithInputParameters (bstrSolutionURI As String, bstrInputParameters As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void NewFromSolutionWithInputParameters(System::String ^ bstrSolutionURI, System::String ^ bstrInputParameters);" />
+      <MemberSignature Language="F#" Value="abstract member NewFromSolutionWithInputParameters : string * string -&gt; unit" Usage="_ExternalApplication2.NewFromSolutionWithInputParameters (bstrSolutionURI, bstrInputParameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -175,10 +181,39 @@
         <Parameter Name="bstrInputParameters" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bstrSolutionURI">To be added.</param>
-        <param name="bstrInputParameters">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bstrSolutionURI">The Uniform Resource Identifier (URI) of the form template on which to base the new form.</param>
+        <param name="bstrInputParameters">One or more name/value pairs separated by the ampersand (&amp;) character.</param>
+        <summary>Creates a new form using the specified form template with the specified form template and input parameters.</summary>
+        <remarks>
+          <para>To use the input parameters passed to the <paramref name="inputParameters" /> parameter, the form specified in the <paramref name="formTemplateLocation" /> parameter must contain a <see cref="E:Microsoft.Office.InfoPath.FormEvents.Loading" /> event handler that uses the <see cref="P:Microsoft.Office.InfoPath.LoadingEventArgs.InputParameters" /> property of the <see cref="T:Microsoft.Office.InfoPath.LoadingEventArgs" /> class to retrieve the input parameter values, and then do something with those values. For an example of how to do this, see the <see cref="P:Microsoft.Office.InfoPath.LoadingEventArgs.InputParameters" /> property of the <see cref="T:Microsoft.Office.InfoPath.LoadingEventArgs" /> class.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>
+            <b>Note</b>: The following example assumes that the <see cref="N:Microsoft.Office.Interop.InfoPath" /> namespace is being used and that the Microsoft InfoPath 3.0 Type Library is referenced.</para>
+          <para>The following example shows how to create a new form by passing in the URI of a form template that contains an appropriate <see cref="E:Microsoft.Office.InfoPath.FormEvents.Loading" /> event handler and two input parameters. </para>
+          <code>private void CreateFormWithInputParameters()
+{
+ExternalApplication infoPath = new ExternalApplicationClass();
+
+// Create an InfoPath form passing in input parameters.
+infoPath. &lt;span class="label"&gt;NewFromSolutionWithInputParameters&lt;/span&gt;(
+   @"C:\User Forms\DeptReport.xsn","Dept=Accounting&amp;amp;Acct=Contoso");
+}</code>
+        </example>
+        <example>
+          <para>
+            <b>Note</b>: The following example assumes that the <see cref="N:Microsoft.Office.Interop.InfoPath" /> namespace is being used and that the Microsoft InfoPath 3.0 Type Library is referenced.</para>
+          <para>The following example shows how to create a new form by passing in the URI of a form template that contains an appropriate <see cref="E:Microsoft.Office.InfoPath.FormEvents.Loading" /> event handler and two input parameters. </para>
+          <code>private void CreateFormWithInputParameters()
+{
+ExternalApplication infoPath = new ExternalApplicationClass();
+
+// Create an InfoPath form passing in input parameters.
+infoPath. &lt;span class="label"&gt;NewFromSolutionWithInputParameters&lt;/span&gt;(
+   @"C:\User Forms\DeptReport.xsn","Dept=Accounting&amp;amp;Acct=Contoso");
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -186,6 +221,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open([in]string bstrDocumentURI, [in]int32 dwBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ExternalApplication2.Open(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Open (bstrDocumentURI As String, Optional dwBehavior As Integer = 1)" />
+      <MemberSignature Language="F#" Value="abstract member Open : string * int -&gt; unit" Usage="_ExternalApplication2.Open (bstrDocumentURI, dwBehavior)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ExternalApplication.Open(System.String,System.Int32)</InterfaceMember>
@@ -219,6 +255,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ExternalApplication2.Quit" />
       <MemberSignature Language="VB.NET" Value="Public Sub Quit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Quit();" />
+      <MemberSignature Language="F#" Value="abstract member Quit : unit -&gt; unit" Usage="_ExternalApplication2.Quit " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ExternalApplication.Quit</InterfaceMember>
@@ -246,6 +283,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterSolution([in]string bstrSolutionURL, [in]string bstrBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ExternalApplication2.RegisterSolution(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterSolution (bstrSolutionURL As String, Optional bstrBehavior As String = &quot;overwrite&quot;)" />
+      <MemberSignature Language="F#" Value="abstract member RegisterSolution : string * string -&gt; unit" Usage="_ExternalApplication2.RegisterSolution (bstrSolutionURL, bstrBehavior)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ExternalApplication.RegisterSolution(System.String,System.String)</InterfaceMember>
@@ -279,6 +317,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ExternalApplication2.UnregisterSolution(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnregisterSolution (bstrSolutionURI As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnregisterSolution(System::String ^ bstrSolutionURI);" />
+      <MemberSignature Language="F#" Value="abstract member UnregisterSolution : string -&gt; unit" Usage="_ExternalApplication2.UnregisterSolution bstrSolutionURI" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ExternalApplication.UnregisterSolution(System.String)</InterfaceMember>

@@ -1,0 +1,679 @@
+﻿<Type Name="FormControl" FullName="Microsoft.Office.InfoPath.FormControl">
+  <TypeSignature Language="C#" Value="public class FormControl : System.Windows.Forms.AxHost" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FormControl extends System.Windows.Forms.AxHost" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.InfoPath.FormControl" />
+  <TypeSignature Language="VB.NET" Value="Public Class FormControl&#xA;Inherits AxHost" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FormControl : System::Windows::Forms::AxHost" />
+  <TypeSignature Language="F#" Value="type FormControl = class&#xA;    inherit AxHost" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.AxHost</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Description("Microsoft Office InfoPath")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignTimeVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Forms.AxHost/Clsid("{80757399-5146-11d5-a672-00b0d022e945}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>A hostable object that is used to integrate the InfoPath form editing environment into a .NET-based custom application.</summary>
+    <remarks>
+      <para>The <b>FormControl</b> editor object provides various properties and methods to open and close form templates, as well as to communicate with the host environment for .NET-based custom applications. The Microsoft.Office.InfoPath.Server assembly provides the hostable <b>XmlFormView</b> control for use in custom Web pages (.aspx).</para>
+      <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a><b>XmlFormView</b> control in custom Web pages, see <a href="http://go.microsoft.com/fwlink/?LinkId=73331">Hosting the InfoPath  Form Editing Environment in a Custom Web Form</a></para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FormControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FormControl();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttachInterfaces">
+      <MemberSignature Language="C#" Value="protected override void AttachInterfaces ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AttachInterfaces() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.AttachInterfaces" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AttachInterfaces ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AttachInterfaces();" />
+      <MemberSignature Language="F#" Value="override this.AttachInterfaces : unit -&gt; unit" Usage="formControl.AttachInterfaces " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public virtual void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="formControl.Close " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Closes the active form in the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</summary>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataConnectionBaseUrl">
+      <MemberSignature Language="C#" Value="public virtual string DataConnectionBaseUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataConnectionBaseUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.InfoPath.FormControl.DataConnectionBaseUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DataConnectionBaseUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataConnectionBaseUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataConnectionBaseUrl : string with get, set" Usage="Microsoft.Office.InfoPath.FormControl.DataConnectionBaseUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the base URL to be used with data connection files (.UDCX).</summary>
+        <value>The base URL to be used with data connection files (.UDCX).</value>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public override bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.InfoPath.FormControl.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="Microsoft.Office.InfoPath.FormControl.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the control represented by the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object can respond to user interaction.</summary>
+        <value>
+          <b>true</b> if the control can respond to user interaction; otherwise, <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EventManager">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Office.InfoPath.EventManager EventManager { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.InfoPath.EventManager EventManager" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.InfoPath.FormControl.EventManager" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EventManager As EventManager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::InfoPath::EventManager ^ EventManager { Microsoft::Office::InfoPath::EventManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventManager : Microsoft.Office.InfoPath.EventManager" Usage="Microsoft.Office.InfoPath.FormControl.EventManager" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.InfoPath.EventManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:Microsoft.Office.InfoPath.EventManager" /> object which is used to bind event handlers in the <see cref="E:Microsoft.Office.InfoPath.FormControl.InternalStartup" /> event.</summary>
+        <value>An <see cref="T:Microsoft.Office.InfoPath.EventManager" /> object.</value>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Host">
+      <MemberSignature Language="C#" Value="public virtual object Host { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Host" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.InfoPath.FormControl.Host" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Host As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Host { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Host : obj with get, set" Usage="Microsoft.Office.InfoPath.FormControl.Host" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the object used to access the object model of the host application.</summary>
+        <value>The object used to access the object model of the host application.</value>
+        <remarks>
+          <para>Using the <b>Host</b> property, custom form code can call into methods in the host application.</para>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostName">
+      <MemberSignature Language="C#" Value="public virtual string HostName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HostName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.InfoPath.FormControl.HostName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property HostName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HostName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HostName : string with get, set" Usage="Microsoft.Office.InfoPath.FormControl.HostName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the host application.</summary>
+        <value>The name of the host application.</value>
+        <remarks>
+          <para>The value of the <b>HostName</b> property is used in dialog boxes and error messages in place of the InfoPath product name.</para>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostTranslatesAcceleratorsFirst">
+      <MemberSignature Language="C#" Value="public bool HostTranslatesAcceleratorsFirst { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HostTranslatesAcceleratorsFirst" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.InfoPath.FormControl.HostTranslatesAcceleratorsFirst" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostTranslatesAcceleratorsFirst As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HostTranslatesAcceleratorsFirst { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HostTranslatesAcceleratorsFirst : bool with get, set" Usage="Microsoft.Office.InfoPath.FormControl.HostTranslatesAcceleratorsFirst" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates the order in which keystrokes are sent to the control represented by the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object or to the application hosting the control.</summary>
+        <value>
+          <b>true</b> to send keystrokes to the host application first; <b>false</b> to send keystrokes to the control first. The default setting is <b>false</b>.</value>
+        <remarks>
+          <para>When the <see cref="P:Microsoft.Office.InfoPath.FormControl.HostTranslatesAcceleratorsFirst" /> property is set to <b>false</b>, if the control handles the keystrokes, the host application will not have an opportunity to process the keystrokes. And vice versa, when <see cref="P:Microsoft.Office.InfoPath.FormControl.HostTranslatesAcceleratorsFirst" /> is set to <b>true</b>, if the host application handles the keystrokes, the control will not have an opportunity to process the keystrokes. </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalStartup">
+      <MemberSignature Language="C#" Value="public event Microsoft.Office.InfoPath.FormControl.EventHandler&lt;EventArgs&gt; InternalStartup;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.Office.InfoPath.FormControl/EventHandler`1&lt;class System.EventArgs&gt; InternalStartup" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Office.InfoPath.FormControl.InternalStartup" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event InternalStartup As FormControl.EventHandler(Of EventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Office::InfoPath::FormControl::EventHandler&lt;EventArgs ^&gt; ^ InternalStartup;" />
+      <MemberSignature Language="F#" Value="member this.InternalStartup : Microsoft.Office.InfoPath.FormControl.EventHandler&lt;EventArgs&gt; " Usage="member this.InternalStartup : Microsoft.Office.InfoPath.FormControl.EventHandler&lt;System.EventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.InfoPath.FormControl+EventHandler&lt;System.EventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the hosted form is started.</summary>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewFromFormTemplate">
+      <MemberSignature Language="C#" Value="public virtual void NewFromFormTemplate (string formTemplateLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NewFromFormTemplate(string formTemplateLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.NewFromFormTemplate(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub NewFromFormTemplate (formTemplateLocation As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void NewFromFormTemplate(System::String ^ formTemplateLocation);" />
+      <MemberSignature Language="F#" Value="abstract member NewFromFormTemplate : string -&gt; unit&#xA;override this.NewFromFormTemplate : string -&gt; unit" Usage="formControl.NewFromFormTemplate formTemplateLocation" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formTemplateLocation" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formTemplateLocation">The path or URL to the form template (.xsn) file.</param>
+        <summary>Creates a new form based on a form template (.xsn) file.</summary>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewFromFormTemplate">
+      <MemberSignature Language="C#" Value="public virtual void NewFromFormTemplate (string formTemplateLocation, AppDomain customAppDomain, string userInputParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NewFromFormTemplate(string formTemplateLocation, class System.AppDomain customAppDomain, string userInputParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.NewFromFormTemplate(System.String,System.AppDomain,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub NewFromFormTemplate (formTemplateLocation As String, customAppDomain As AppDomain, userInputParameters As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void NewFromFormTemplate(System::String ^ formTemplateLocation, AppDomain ^ customAppDomain, System::String ^ userInputParameters);" />
+      <MemberSignature Language="F#" Value="abstract member NewFromFormTemplate : string * AppDomain * string -&gt; unit&#xA;override this.NewFromFormTemplate : string * AppDomain * string -&gt; unit" Usage="formControl.NewFromFormTemplate (formTemplateLocation, customAppDomain, userInputParameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formTemplateLocation" Type="System.String" />
+        <Parameter Name="customAppDomain" Type="System.AppDomain" />
+        <Parameter Name="userInputParameters" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formTemplateLocation">The path or URL to the form template (.xsn) file.</param>
+        <param name="customAppDomain">The <a href="frlrfSystemAppDomainClassTopic">AppDomain</a></param>
+        <param name="userInputParameters">One or more name/value pairs separated by the ampersand (&amp;) character.</param>
+        <summary>Creates a new form based on a form template (.xsn) file.</summary>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewFromFormTemplate">
+      <MemberSignature Language="C#" Value="public virtual void NewFromFormTemplate (string formTemplateLocation, System.IO.Stream xmlDataStream, Microsoft.Office.InfoPath.XmlFormOpenMode behavior);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NewFromFormTemplate(string formTemplateLocation, class System.IO.Stream xmlDataStream, valuetype Microsoft.Office.InfoPath.XmlFormOpenMode behavior) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.NewFromFormTemplate(System.String,System.IO.Stream,Microsoft.Office.InfoPath.XmlFormOpenMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub NewFromFormTemplate (formTemplateLocation As String, xmlDataStream As Stream, behavior As XmlFormOpenMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void NewFromFormTemplate(System::String ^ formTemplateLocation, System::IO::Stream ^ xmlDataStream, Microsoft::Office::InfoPath::XmlFormOpenMode behavior);" />
+      <MemberSignature Language="F#" Value="abstract member NewFromFormTemplate : string * System.IO.Stream * Microsoft.Office.InfoPath.XmlFormOpenMode -&gt; unit&#xA;override this.NewFromFormTemplate : string * System.IO.Stream * Microsoft.Office.InfoPath.XmlFormOpenMode -&gt; unit" Usage="formControl.NewFromFormTemplate (formTemplateLocation, xmlDataStream, behavior)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formTemplateLocation" Type="System.String" />
+        <Parameter Name="xmlDataStream" Type="System.IO.Stream" />
+        <Parameter Name="behavior" Type="Microsoft.Office.InfoPath.XmlFormOpenMode" />
+      </Parameters>
+      <Docs>
+        <param name="formTemplateLocation">The path or URL to the form template file (.xsn).</param>
+        <param name="xmlDataStream">The file stream (<a href="frlrfSystemIOStreamClassTopic">Stream</a></param>
+        <param name="behavior">An <see cref="T:Microsoft.Office.InfoPath.XmlFormOpenMode" /> value that specifies how the form should be opened.</param>
+        <summary>Creates a new form based on the specified form template (.xsn) and the data contained in an XML stream.</summary>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewFromFormTemplate">
+      <MemberSignature Language="C#" Value="public virtual void NewFromFormTemplate (string formTemplateLocation, System.IO.Stream xmlDataStream, Microsoft.Office.InfoPath.XmlFormOpenMode behavior, AppDomain customAppDomain, string inputParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NewFromFormTemplate(string formTemplateLocation, class System.IO.Stream xmlDataStream, valuetype Microsoft.Office.InfoPath.XmlFormOpenMode behavior, class System.AppDomain customAppDomain, string inputParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.NewFromFormTemplate(System.String,System.IO.Stream,Microsoft.Office.InfoPath.XmlFormOpenMode,System.AppDomain,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub NewFromFormTemplate (formTemplateLocation As String, xmlDataStream As Stream, behavior As XmlFormOpenMode, customAppDomain As AppDomain, inputParameters As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void NewFromFormTemplate(System::String ^ formTemplateLocation, System::IO::Stream ^ xmlDataStream, Microsoft::Office::InfoPath::XmlFormOpenMode behavior, AppDomain ^ customAppDomain, System::String ^ inputParameters);" />
+      <MemberSignature Language="F#" Value="abstract member NewFromFormTemplate : string * System.IO.Stream * Microsoft.Office.InfoPath.XmlFormOpenMode * AppDomain * string -&gt; unit&#xA;override this.NewFromFormTemplate : string * System.IO.Stream * Microsoft.Office.InfoPath.XmlFormOpenMode * AppDomain * string -&gt; unit" Usage="formControl.NewFromFormTemplate (formTemplateLocation, xmlDataStream, behavior, customAppDomain, inputParameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formTemplateLocation" Type="System.String" />
+        <Parameter Name="xmlDataStream" Type="System.IO.Stream" />
+        <Parameter Name="behavior" Type="Microsoft.Office.InfoPath.XmlFormOpenMode" />
+        <Parameter Name="customAppDomain" Type="System.AppDomain" />
+        <Parameter Name="inputParameters" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formTemplateLocation">The path or URL to the form template file (.xsn).</param>
+        <param name="xmlDataStream">The file stream (<a href="frlrfSystemIOStreamClassTopic">Stream</a></param>
+        <param name="behavior">A <see cref="T:Microsoft.Office.InfoPath.XmlFormOpenMode" /> value that specifies how the form should be opened.</param>
+        <param name="customAppDomain">The <a href="frlrfSystemAppDomainClassTopic">AppDomain</a></param>
+        <param name="inputParameters">One or more name/value pairs separated by the ampersand (&amp;) character.</param>
+        <summary>Creates a new form based on the specified form template and the data contained in an XML stream.</summary>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public virtual void Open (System.IO.Stream xmlDataStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open(class System.IO.Stream xmlDataStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.Open(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Open (xmlDataStream As Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Open(System::IO::Stream ^ xmlDataStream);" />
+      <MemberSignature Language="F#" Value="abstract member Open : System.IO.Stream -&gt; unit&#xA;override this.Open : System.IO.Stream -&gt; unit" Usage="formControl.Open xmlDataStream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlDataStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="xmlDataStream">The file stream (<b>System.IO.Stream</b>) containing the form file (.xml).</param>
+        <summary>Opens a form file (.xml) from a file stream (<a href="frlrfSystemIOStreamClassTopic">Stream</a><see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</summary>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public virtual void Open (string formLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open(string formLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.Open(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Open (formLocation As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Open(System::String ^ formLocation);" />
+      <MemberSignature Language="F#" Value="abstract member Open : string -&gt; unit&#xA;override this.Open : string -&gt; unit" Usage="formControl.Open formLocation" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formLocation" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formLocation">The path or URL to the form file (.xml).</param>
+        <summary>Opens a form file (.xml) and loads it into the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</summary>
+        <remarks>
+          <para>The <b>Open(System.String)</b> method does not allow you to specify a form template file (.xsn). The form file must contain processing instructions (<b>href</b> and <b>name</b> attributes) that reference a valid form template file for the <b>Load</b> method to succeed. If this is not possible, the <see cref="Overload:Microsoft.Office.InfoPath.FormControl.NewFromFormTemplate" /> method can be used if you have a .xsn file and a suitably structured XML file, but the XML file does not have processing instruction references that specify the .xsn file. Or you can use the <see cref="M:Microsoft.Office.InfoPath.FormControl.Open(System.IO.Stream)" /> method to load XML from a <a href="frlrfSystemIOStreamClassTopic">Stream</a></para>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public virtual void Open (System.IO.Stream xmlDataStream, AppDomain customAppDomain, string inputParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open(class System.IO.Stream xmlDataStream, class System.AppDomain customAppDomain, string inputParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.Open(System.IO.Stream,System.AppDomain,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Open (xmlDataStream As Stream, customAppDomain As AppDomain, inputParameters As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Open(System::IO::Stream ^ xmlDataStream, AppDomain ^ customAppDomain, System::String ^ inputParameters);" />
+      <MemberSignature Language="F#" Value="abstract member Open : System.IO.Stream * AppDomain * string -&gt; unit&#xA;override this.Open : System.IO.Stream * AppDomain * string -&gt; unit" Usage="formControl.Open (xmlDataStream, customAppDomain, inputParameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlDataStream" Type="System.IO.Stream" />
+        <Parameter Name="customAppDomain" Type="System.AppDomain" />
+        <Parameter Name="inputParameters" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xmlDataStream">The file stream (<a href="frlrfSystemIOStreamClassTopic">Stream</a></param>
+        <param name="customAppDomain">The <a href="frlrfSystemAppDomainClassTopic">AppDomain</a></param>
+        <param name="inputParameters">One or more name/value pairs separated by the ampersand (&amp;) character.</param>
+        <summary>Opens a form file (.xml) from a file stream and loads it into the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</summary>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public virtual void Open (string formLocation, AppDomain customAppDomain, string inputParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open(string formLocation, class System.AppDomain customAppDomain, string inputParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.Open(System.String,System.AppDomain,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Open (formLocation As String, customAppDomain As AppDomain, inputParameters As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Open(System::String ^ formLocation, AppDomain ^ customAppDomain, System::String ^ inputParameters);" />
+      <MemberSignature Language="F#" Value="abstract member Open : string * AppDomain * string -&gt; unit&#xA;override this.Open : string * AppDomain * string -&gt; unit" Usage="formControl.Open (formLocation, customAppDomain, inputParameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formLocation" Type="System.String" />
+        <Parameter Name="customAppDomain" Type="System.AppDomain" />
+        <Parameter Name="inputParameters" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="formLocation">The path or URL to the form template file (.xsn).</param>
+        <param name="customAppDomain">The <a href="frlrfSystemAppDomainClassTopic">AppDomain</a></param>
+        <param name="inputParameters">One or more name/value pairs separated by the ampersand (&amp;) character.</param>
+        <summary>Opens a form template file (.xsn) and loads it into the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</summary>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetInitEventHandler">
+      <MemberSignature Language="C#" Value="public virtual void SetInitEventHandler (Microsoft.Office.InfoPath.IInitEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetInitEventHandler(class Microsoft.Office.InfoPath.IInitEventHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.SetInitEventHandler(Microsoft.Office.InfoPath.IInitEventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetInitEventHandler (handler As IInitEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetInitEventHandler(Microsoft::Office::InfoPath::IInitEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="abstract member SetInitEventHandler : Microsoft.Office.InfoPath.IInitEventHandler -&gt; unit&#xA;override this.SetInitEventHandler : Microsoft.Office.InfoPath.IInitEventHandler -&gt; unit" Usage="formControl.SetInitEventHandler handler" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="Microsoft.Office.InfoPath.IInitEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="handler">The interface that must be implemented in the custom application to handle the event from the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</param>
+        <summary>Sets the event handler in the host application for handling the event that occurs when the form is loaded in the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</summary>
+        <remarks>
+          <para>Sets the function in the host application that is used as a callback function for the <b>Initialize</b> event, which is called before the InfoPath <b>OnLoad</b> event.</para>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetNotifyHostEventHandler">
+      <MemberSignature Language="C#" Value="public virtual void SetNotifyHostEventHandler (Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetNotifyHostEventHandler(class Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.SetNotifyHostEventHandler(Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetNotifyHostEventHandler (handler As INotifyHostEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetNotifyHostEventHandler(Microsoft::Office::Interop::InfoPath::INotifyHostEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="abstract member SetNotifyHostEventHandler : Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler -&gt; unit&#xA;override this.SetNotifyHostEventHandler : Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler -&gt; unit" Usage="formControl.SetNotifyHostEventHandler handler" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="handler">The interface that must be implemented in the custom application to handle the event from the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</param>
+        <summary>Sets the event handler in the host application for handling the event that occurs when the <see cref="M:Microsoft.Office.Interop.InfoPath._XDocument3.NotifyHost(System.String)" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to notify the host application.</summary>
+        <remarks>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSubmitToHostEventHandler">
+      <MemberSignature Language="C#" Value="public virtual void SetSubmitToHostEventHandler (Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSubmitToHostEventHandler(class Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.SetSubmitToHostEventHandler(Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSubmitToHostEventHandler (handler As ISubmitToHostEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSubmitToHostEventHandler(Microsoft::Office::Interop::InfoPath::ISubmitToHostEventHandler ^ handler);" />
+      <MemberSignature Language="F#" Value="abstract member SetSubmitToHostEventHandler : Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler -&gt; unit&#xA;override this.SetSubmitToHostEventHandler : Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler -&gt; unit" Usage="formControl.SetSubmitToHostEventHandler handler" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handler" Type="Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="handler">The interface that must be implemented in the custom application to handle the event from the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</param>
+        <summary>Sets the event handler in the host application for handling the <see cref="M:Microsoft.Office.Interop.InfoPath.SubmitToHostAdapter.Submit" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.SubmitToHostAdapter" /> object.</summary>
+        <remarks>
+          <para>Sets the function in the host application that is used as the callback function when submitting data back to the host application. To configure the data connection for submitting to the host application, open the form template in InfoPath design mode, click Submit Options on the Tools menu, select the Allow users to submit this form check box, select Hosting environment in the drop-down list, and then click Add.</para>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncLastChange">
+      <MemberSignature Language="C#" Value="public virtual void SyncLastChange ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SyncLastChange() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.FormControl.SyncLastChange" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SyncLastChange ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SyncLastChange();" />
+      <MemberSignature Language="F#" Value="abstract member SyncLastChange : unit -&gt; unit&#xA;override this.SyncLastChange : unit -&gt; unit" Usage="formControl.SyncLastChange " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Synchronizes the underlying data of the form with changes in the view.</summary>
+        <remarks>
+          <para>Use this method when a user clicks outside the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object to the host application after making a change to a field without tabbing or otherwise committing that change to the underlying XML document of the form.</para>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlForm">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Office.InfoPath.XmlForm XmlForm { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.InfoPath.XmlForm XmlForm" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.InfoPath.FormControl.XmlForm" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property XmlForm As XmlForm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::InfoPath::XmlForm ^ XmlForm { Microsoft::Office::InfoPath::XmlForm ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XmlForm : Microsoft.Office.InfoPath.XmlForm" Usage="Microsoft.Office.InfoPath.FormControl.XmlForm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.InfoPath.XmlForm</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:Microsoft.Office.InfoPath.XmlForm" /> object associated with the hosted <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</summary>
+        <value>An <see cref="T:Microsoft.Office.InfoPath.XmlForm" /> object associated with the hosted <see cref="T:Microsoft.Office.InfoPath.FormControl" /> object.</value>
+        <remarks>
+          <para>The <b>XmlForm</b> object returned can be used to access and work with members of the InfoPath object model.</para>
+          <para>For more information about the <b>FormControl</b> object, see <a href="http://go.microsoft.com/fwlink/?LinkID=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

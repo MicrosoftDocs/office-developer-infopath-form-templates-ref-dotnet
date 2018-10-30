@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XdAttachmentType" />
   <TypeSignature Language="VB.NET" Value="Public Enum XdAttachmentType" />
   <TypeSignature Language="C++ CLI" Value="public enum class XdAttachmentType" />
+  <TypeSignature Language="F#" Value="type XdAttachmentType = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -17,8 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Specifies the type of form files attached to an e-mail message.</summary>
+    <remarks>
+      <para>Use the <b>XdAttachmentType</b> to specify the <see cref="P:Microsoft.Office.Interop.InfoPath.EmailAdapter.AttachmentType" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.EmailAdapter" /> interface and the <see cref="P:Microsoft.Office.Interop.InfoPath.MailEnvelope2.AttachmentType" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.MailEnvelope2" /> interface.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="xdNone">
@@ -27,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdAttachmentType.xdNone" />
       <MemberSignature Language="VB.NET" Value="xdNone" />
       <MemberSignature Language="C++ CLI" Value="xdNone" />
+      <MemberSignature Language="F#" Value="xdNone = 2" Usage="Microsoft.Office.Interop.InfoPath.XdAttachmentType.xdNone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -37,7 +42,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>No file will be attached.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdXml">
@@ -46,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdAttachmentType.xdXml" />
       <MemberSignature Language="VB.NET" Value="xdXml" />
       <MemberSignature Language="C++ CLI" Value="xdXml" />
+      <MemberSignature Language="F#" Value="xdXml = 0" Usage="Microsoft.Office.Interop.InfoPath.XdAttachmentType.xdXml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -56,7 +62,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The attachment is a form file (.xml).</summary>
       </Docs>
     </Member>
     <Member MemberName="xdXmlXsn">
@@ -65,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdAttachmentType.xdXmlXsn" />
       <MemberSignature Language="VB.NET" Value="xdXmlXsn" />
       <MemberSignature Language="C++ CLI" Value="xdXmlXsn" />
+      <MemberSignature Language="F#" Value="xdXmlXsn = 1" Usage="Microsoft.Office.Interop.InfoPath.XdAttachmentType.xdXmlXsn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -75,7 +82,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The attachment is a form file (.xml) along with its associated form template file (.xsn).</summary>
       </Docs>
     </Member>
   </Members>

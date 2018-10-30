@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLFileAdapterObject&#xA;Implements XMLFileAdapter2" />
   <TypeSignature Language="C++ CLI" Value="public interface class XMLFileAdapterObject : Microsoft::Office::Interop::InfoPath::XMLFileAdapter2" />
+  <TypeSignature Language="F#" Value="type XMLFileAdapterObject = interface&#xA;    interface XMLFileAdapter2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,51 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a connection to an XML file.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.XMLFileAdapter2" />.</para>
+      <para>The <b>XMLFileAdapterObject</b> object is a type of Microsoft Office InfoPath 2003 data adapter that contains all the information necessary for retrieving data from an external data source.</para>
+      <para>The <b>XMLFileAdapterObject</b> object provides the <see cref="P:Microsoft.Office.Interop.InfoPath.XMLFileAdapter.FileURL" /> property, which can be used get or set the Uniform Resource Locator (URL) of the XML file that is being used an external data source.</para>
+      <para>For secondary data sources, the <b>XMLFileAdapterObject</b> object is accessible through the <see cref="P:Microsoft.Office.Interop.InfoPath.DataObject.QueryAdapter" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataSourceObject" />, and the <see cref="P:Microsoft.Office.Interop.InfoPath.DataAdapters.Item(System.Object)" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataAdaptersCollection" /> collection.</para>
+      <para>
+        <see cref="T:Microsoft.Office.Interop.InfoPath.DataObject" /> objects are accessible through the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument2.DataObjects" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object.</para>
+      <para />
+    </remarks>
+    <example>
+      <code>DataAdapters dtaAdapters;
+dataAdapters = thisDocument.DataAdapters; 
+&lt;span class="label"&gt;XMLFileAdapterObject&lt;/span&gt; queryXMLFile = dataAdapters["form1"] as &lt;span class="label"&gt;XMLFileAdapterObject&lt;/span&gt;;
+if (queryXMLFile == null)
+{
+ thisXDocument.UI.Alert("The DataAdapter does not exist or is not an XMLFileAdapterObject.");
+}
+else
+{
+ thisDocument.UI.Alert("Query - XML file adapter"); 
+ thisDocument.UI.Alert("Name: " + queryXMLFile.Name);
+ thisDocument.UI.Alert("QueryAllowed: " + queryXMLFile.QueryAllowed);
+ thisDocument.UI.Alert("SubmitAllowed: " + queryXMLFile.SubmitAllowed);
+ thisDocument.UI.Alert("FileURL: " + queryXMLFile.FileURL);
+ // Perform the query.
+ try
+ {
+  queryXMLFile.Query();
+ }
+ catch (Exception ex)
+ {
+  thisXDocument.UI.Alert("Failed to query.\n\n" + ex.Message);
+ }
+ // Perform the submit.
+ try
+ {
+  queryXMLFile.Submit();
+ }
+ catch (Exception ex)
+ {
+  thisXDocument.UI.Alert("Failed to submit.\n\n" + ex.Message);
+ }
+}</code>
+    </example>
   </Docs>
   <Members />
 </Type>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DataDOM" />
   <TypeSignature Language="VB.NET" Value="Public Interface DataDOM&#xA;Implements _DataDOMEventSink_Event, DataDOMEmpty" />
   <TypeSignature Language="C++ CLI" Value="public interface class DataDOM : Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_Event, Microsoft::Office::Interop::InfoPath::DataDOMEmpty" />
+  <TypeSignature Language="F#" Value="type DataDOM = interface&#xA;    interface DataDOMEmpty&#xA;    interface _DataDOMEventSink_Event" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -25,8 +26,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <b>DataDOM</b> object is the Microsoft InfoPath object that is used to implement the data validation events that are associated with the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object. </summary>
+    <remarks>
+      <para>The <b>DataDOM</b> object cannot be used directly in code.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members />
 </Type>

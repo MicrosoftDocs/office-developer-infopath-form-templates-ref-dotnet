@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.EmailAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Interface EmailAdapter" />
   <TypeSignature Language="C++ CLI" Value="public interface class EmailAdapter" />
+  <TypeSignature Language="F#" Value="type EmailAdapter = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.EmailAdapterObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.EmailAdapter.AttachmentFileName" />
       <MemberSignature Language="VB.NET" Value="Public Property AttachmentFileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AttachmentFileName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AttachmentFileName : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.EmailAdapter.AttachmentFileName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -48,9 +50,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the file name to be used for the current form when the form is attached to the e-mail message of an <see cref="T:Microsoft.Office.Interop.InfoPath.EmailAdapterObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The ".xml" file name extension will be appended to the string if it is not already included.</para>
+          <para>If the <b>AttachmentFileName</b> property is set to a null reference (Nothing in Visual Basic), the form will not be attached to the e-mail message.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>This example shows how to use the <b>AttachmentFileName</b> property of an instance of the <see cref="T:Microsoft.Office.Interop.InfoPath.EmailAdapterObject" /> object to change the name of the form when it is attached to the e-mail message before the <see cref="T:Microsoft.Office.Interop.InfoPath.EmailAdapterObject" /> object is submitted. This example requires <paramref name="myEmailAdapter" /> to reference an e-mail message Data Connection established in the design mode window of InfoPath, and two variables, <paramref name="strName" /> and <paramref name="strDate" />, which set the name of the file attachment:</para>
+          <code>myEmailAdapter.&lt;span class="label"&gt;AttachmentFileName&lt;/span&gt; = strName + "–" + strDate + ".xml"; </code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="AttachmentType">
@@ -59,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.EmailAdapter.AttachmentType" />
       <MemberSignature Language="VB.NET" Value="Public Property AttachmentType As XdAttachmentType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::XdAttachmentType AttachmentType { Microsoft::Office::Interop::InfoPath::XdAttachmentType get(); void set(Microsoft::Office::Interop::InfoPath::XdAttachmentType value); };" />
+      <MemberSignature Language="F#" Value="member this.AttachmentType : Microsoft.Office.Interop.InfoPath.XdAttachmentType with get, set" Usage="Microsoft.Office.Interop.InfoPath.EmailAdapter.AttachmentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -90,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.EmailAdapter.BCC" />
       <MemberSignature Language="VB.NET" Value="Public Property BCC As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BCC { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BCC : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.EmailAdapter.BCC" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -110,9 +122,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the BCC recipients of an e-mail message associated with an <see cref="T:Microsoft.Office.Interop.InfoPath.EmailAdapterObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The value must be a semicolon-delimited string that can be resolved into a list of valid e-mail addresses by the user's e-mail client.</para>
+          <para />
+        </remarks>
+        <example>
+          <code>myEmailAdapter.&lt;span class="label"&gt;BCC&lt;/span&gt; = "address@example.com"</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="CC">
@@ -121,6 +139,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.EmailAdapter.CC" />
       <MemberSignature Language="VB.NET" Value="Public Property CC As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CC { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CC : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.EmailAdapter.CC" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -141,9 +160,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the carbon copy (CC) recipients for the e-mail message associated with an <see cref="T:Microsoft.Office.Interop.InfoPath.EmailAdapterObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The value must be a semicolon-delimited string that can be resolved into a list of valid e-mail addresses by the user's e-mail client.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Intro">
@@ -152,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.EmailAdapter.Intro" />
       <MemberSignature Language="VB.NET" Value="Public Property Intro As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Intro { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Intro : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.EmailAdapter.Intro" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -172,9 +195,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the introduction in the body of the e-mail message for an <see cref="T:Microsoft.Office.Interop.InfoPath.EmailAdapterObject" /> object.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <example>
+          <code>myEmailAdapter.&lt;span class="label"&gt;Intro&lt;/span&gt; = "Introduction text";</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -183,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.EmailAdapter.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.InfoPath.EmailAdapter.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -200,7 +227,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the name of the <see cref="T:Microsoft.Office.Interop.InfoPath.EmailAdapterObject" /> object.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -211,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.EmailAdapter.Query" />
       <MemberSignature Language="VB.NET" Value="Public Sub Query ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Query();" />
+      <MemberSignature Language="F#" Value="abstract member Query : unit -&gt; unit" Usage="emailAdapter.Query " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -226,7 +254,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <b>Query</b> method is available for the <see cref="T:Microsoft.Office.Interop.InfoPath.EmailAdapterObject" /> object but, because the <b>EmailAdapter</b> object is available for submitting data only, the method will always generate a run-time error when it is called.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,6 +264,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.EmailAdapter.QueryAllowed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueryAllowed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool QueryAllowed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueryAllowed : bool" Usage="Microsoft.Office.Interop.InfoPath.EmailAdapter.QueryAllowed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -253,7 +282,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a value that always returns <b>false</b>, corresponding to the <b>queryAllowed</b> attribute in the form definition file (.xsf).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -264,6 +293,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.EmailAdapter.Subject" />
       <MemberSignature Language="VB.NET" Value="Public Property Subject As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Subject { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Subject : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.EmailAdapter.Subject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -284,9 +314,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the subject of the e-mail message associated with the specified <see cref="T:Microsoft.Office.Interop.InfoPath.EmailAdapterObject" /> object.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <example>
+          <code>myEmailAdapter.&lt;span class="label"&gt;Subject&lt;/span&gt; = "Weekly Status Report";</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Submit">
@@ -295,6 +328,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.EmailAdapter.Submit" />
       <MemberSignature Language="VB.NET" Value="Public Sub Submit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Submit();" />
+      <MemberSignature Language="F#" Value="abstract member Submit : unit -&gt; unit" Usage="emailAdapter.Submit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -310,8 +344,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Executes the submit operation on the associated adapter.</summary>
+        <remarks>
+          <para>The <b>Submit</b> method submits the form's entire underlying XML document, whereas the <see cref="M:Microsoft.Office.Interop.InfoPath.EmailAdapter.SubmitData(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode)" /> method can submit any XML DOM element or document.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SubmitAllowed">
@@ -320,6 +357,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.EmailAdapter.SubmitAllowed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubmitAllowed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SubmitAllowed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubmitAllowed : bool" Usage="Microsoft.Office.Interop.InfoPath.EmailAdapter.SubmitAllowed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -337,7 +375,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a value that is always <b>true</b>, corresponding to the <b>submitAllowed</b> attribute in the form definition file (.xsf).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -348,6 +386,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.EmailAdapter.SubmitData(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SubmitData (pData As IXMLDOMNode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SubmitData(Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ pData);" />
+      <MemberSignature Language="F#" Value="abstract member SubmitData : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode -&gt; unit" Usage="emailAdapter.SubmitData pData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -365,8 +404,8 @@
         <Parameter Name="pData" Type="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" />
       </Parameters>
       <Docs>
-        <param name="pData">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="pData">The XML data that is to be sent in the e-mail message.</param>
+        <summary>Submits the specified DOM element or DOM document to a data adapter.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -376,6 +415,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.EmailAdapter.To" />
       <MemberSignature Language="VB.NET" Value="Public Property To As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ To { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.To : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.EmailAdapter.To" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -396,9 +436,15 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the recipients for the e-mail message associated with a specified <see cref="T:Microsoft.Office.Interop.InfoPath.EmailAdapterObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The value must be a semicolon-delimited string that can be resolved into a list of valid e-mail addresses by the user's e-mail client.</para>
+          <para />
+        </remarks>
+        <example>
+          <code>myEmailAdapter.&lt;span class="label"&gt;To&lt;/span&gt; = "list@example.com";</code>
+        </example>
       </Docs>
     </Member>
   </Members>

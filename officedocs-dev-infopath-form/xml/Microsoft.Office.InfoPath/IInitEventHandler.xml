@@ -1,0 +1,54 @@
+﻿<Type Name="IInitEventHandler" FullName="Microsoft.Office.InfoPath.IInitEventHandler">
+  <TypeSignature Language="C#" Value="public interface IInitEventHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInitEventHandler" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.InfoPath.IInitEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IInitEventHandler" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IInitEventHandler" />
+  <TypeSignature Language="F#" Value="type IInitEventHandler = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>The interface that must be implemented in the host application to handle the event that occurs when a form is loaded in the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> object, which is hosted in a custom application.</summary>
+    <remarks>
+      <para>The <b>IInitEventHandler</b> interface is available for use when the <b>InfoPathEditor</b> object is hosted in a custom application. For more information about the <b>InfoPathEditor</b> and the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> objects , see the MSDN article <a href="http://go.microsoft.com/fwlink/?LinkId=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a>What's New for InfoPath Developers.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InitEventHandler">
+      <MemberSignature Language="C#" Value="public void InitEventHandler (object sender, Microsoft.Office.InfoPath.XmlForm xmlForm, out Microsoft.Office.Interop.InfoPath.XdReadOnlyViewMode viewsReadOnlyMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitEventHandler(object sender, class Microsoft.Office.InfoPath.XmlForm xmlForm, [out] valuetype Microsoft.Office.Interop.InfoPath.XdReadOnlyViewMode&amp; viewsReadOnlyMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.InfoPath.IInitEventHandler.InitEventHandler(System.Object,Microsoft.Office.InfoPath.XmlForm,Microsoft.Office.Interop.InfoPath.XdReadOnlyViewMode@)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InitEventHandler(System::Object ^ sender, Microsoft::Office::InfoPath::XmlForm ^ xmlForm, [Runtime::InteropServices::Out] Microsoft::Office::Interop::InfoPath::XdReadOnlyViewMode % viewsReadOnlyMode);" />
+      <MemberSignature Language="F#" Value="abstract member InitEventHandler : obj * Microsoft.Office.InfoPath.XmlForm *  -&gt; unit" Usage="iInitEventHandler.InitEventHandler (sender, xmlForm, viewsReadOnlyMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.InfoPath.FormControl</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="xmlForm" Type="Microsoft.Office.InfoPath.XmlForm" />
+        <Parameter Name="viewsReadOnlyMode" Type="Microsoft.Office.Interop.InfoPath.XdReadOnlyViewMode" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="sender">A reference to the object that is the source of the event.</param>
+        <param name="xmlForm">A reference to the <see cref="T:Microsoft.Office.InfoPath.XmlForm" /> object loaded into the <b>InfoPathEditor</b> object.</param>
+        <param name="viewsReadOnlyMode">An <see cref="T:Microsoft.Office.Interop.InfoPath.XdReadOnlyViewMode" /> enumeration that specifies how the view of the form will be presented.</param>
+        <summary>Handles the initialization event when a form is loaded in the hosted <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> object.</summary>
+        <remarks>
+          <para>
+            <b>InitEventHandler</b> method executes after all auxiliary DOMs are loaded but before the <see cref="E:Microsoft.Office.InfoPath.FormEvents.Loading" /> event occurs.</para>
+          <para>The <b>InitEventHandler</b> method is available for use when the <b>InfoPathEditor</b> object is hosted in a custom application. For more information about the <b>InfoPathEditor</b> and the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> objects , see the MSDN article <a href="http://go.microsoft.com/fwlink/?LinkId=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a>What's New for InfoPath Developers.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

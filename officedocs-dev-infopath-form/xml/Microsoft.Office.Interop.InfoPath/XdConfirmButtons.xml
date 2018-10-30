@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XdConfirmButtons" />
   <TypeSignature Language="VB.NET" Value="Public Enum XdConfirmButtons" />
   <TypeSignature Language="C++ CLI" Value="public enum class XdConfirmButtons" />
+  <TypeSignature Language="F#" Value="type XdConfirmButtons = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -17,8 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <b>XdConfirmButtons</b> enumeration is used to determine the type of buttons to be displayed in a message box.</summary>
+    <remarks>
+      <para>These enumerated values are used by <see cref="M:Microsoft.Office.Interop.InfoPath.UI2.Confirm(System.String,Microsoft.Office.Interop.InfoPath.XdConfirmButtons)" /> method.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="xdOKCancel">
@@ -27,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdConfirmButtons.xdOKCancel" />
       <MemberSignature Language="VB.NET" Value="xdOKCancel" />
       <MemberSignature Language="C++ CLI" Value="xdOKCancel" />
+      <MemberSignature Language="F#" Value="xdOKCancel = 1" Usage="Microsoft.Office.Interop.InfoPath.XdConfirmButtons.xdOKCancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -37,7 +42,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>OK and Cancel buttons are displayed.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdYesNo">
@@ -46,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdConfirmButtons.xdYesNo" />
       <MemberSignature Language="VB.NET" Value="xdYesNo" />
       <MemberSignature Language="C++ CLI" Value="xdYesNo" />
+      <MemberSignature Language="F#" Value="xdYesNo = 4" Usage="Microsoft.Office.Interop.InfoPath.XdConfirmButtons.xdYesNo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -56,7 +62,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Yes and No buttons are displayed</summary>
       </Docs>
     </Member>
     <Member MemberName="xdYesNoCancel">
@@ -65,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdConfirmButtons.xdYesNoCancel" />
       <MemberSignature Language="VB.NET" Value="xdYesNoCancel" />
       <MemberSignature Language="C++ CLI" Value="xdYesNoCancel" />
+      <MemberSignature Language="F#" Value="xdYesNoCancel = 3" Usage="Microsoft.Office.Interop.InfoPath.XdConfirmButtons.xdYesNoCancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -75,7 +82,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Yes, No, and Cancel buttons are displayed.</summary>
       </Docs>
     </Member>
   </Members>

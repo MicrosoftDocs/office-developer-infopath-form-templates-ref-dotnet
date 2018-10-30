@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XDocument" />
   <TypeSignature Language="VB.NET" Value="Public Interface XDocument&#xA;Implements _XDocument2, _XDocumentEventSink2_Event" />
   <TypeSignature Language="C++ CLI" Value="public interface class XDocument : Microsoft::Office::Interop::InfoPath::_XDocument2, Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event" />
+  <TypeSignature Language="F#" Value="type XDocument = interface&#xA;    interface _XDocument2&#xA;    interface _XDocumentEventSink2_Event" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -25,8 +26,77 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the underlying XML document of a Microsoft Office InfoPath form.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath._XDocument3" />.</para>
+      <para>The <b>XDocument</b> object is a key object in the InfoPath object model that provides properties, methods, and events that can be used to programmatically interact with and manipulate the source XML data of a form. </para>
+      <para>While the <b>XDocument</b> object can be accessed using the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocumentsCollection" /> collection, in most cases you will access it from the thisXDocument variable that is instantiated in the <b>_Startup</b> method of a managed-code project without going through the collection.</para>
+      <para>The source XML data of a form takes the form of an XML Document Object Model (DOM), which is accessed through the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument3.DOM" /> property. The <b>XDocument</b> object also provides a number of properties that can be used to get information about the form and its underlying XML document. It also provides a number of methods that can be used on the form, such as printing, saving, and submitting. The <b>XDocument</b> object also provides a number of events that can be used to respond to various actions that occur at the form level, such as loading of a form, switching views, or a merge operation.</para>
+      <para />
+      <para />
+      <para>Accessing the XDocument Object</para>
+      <para>The <b>XDocument</b> object can be accessed in a variety places within the InfoPath object model. The following table summarizes the locations where the <b>XDocument</b> object is available.</para>
+      <list type="table">
+        <item>
+          <term>
+            <see cref="T:Microsoft.Office.Interop.InfoPath.XDocumentsCollection" />
+          </term>
+          <description>Accessed from <see cref="T:Microsoft.Office.Interop.InfoPath.Application" />. Provides <see cref="P:Microsoft.Office.Interop.InfoPath.XDocuments2.Item(System.Object)" /> for accessing the <b>XDocument</b> objects that it contains.</description>
+        </item>
+        <item>
+          <term>
+            <see cref="T:Microsoft.Office.Interop.InfoPath.DataDOMEventObject" />
+          </term>
+          <description>Provides <see cref="P:Microsoft.Office.Interop.InfoPath.DataDOMEvent.XDocument" /> for accessing the source XML data during an XML DOM change.</description>
+        </item>
+        <item>
+          <term>
+            <see cref="T:Microsoft.Office.Interop.InfoPath.DocActionEventObject" />
+          </term>
+          <description>Provides <see cref="P:Microsoft.Office.Interop.InfoPath.DocActionEvent.XDocument" /> for accessing the source XML data during a button click in the form area.</description>
+        </item>
+        <item>
+          <term>
+            <see cref="T:Microsoft.Office.Interop.InfoPath.DocEventObject" />
+          </term>
+          <description>Provides <see cref="P:Microsoft.Office.Interop.InfoPath.DocEvent.XDocument" /> for accessing the source XML data during a switch view or form merge operation.</description>
+        </item>
+        <item>
+          <term>
+            <see cref="T:Microsoft.Office.Interop.InfoPath.DocReturnEventObject" />
+          </term>
+          <description>Provides <see cref="P:Microsoft.Office.Interop.InfoPath.DocReturnEvent.XDocument" /> for accessing the source XML during the loading or submission of a form.</description>
+        </item>
+        <item>
+          <term>
+            <see cref="T:Microsoft.Office.Interop.InfoPath.VersionUpgradeEventObject" />
+          </term>
+          <description>Provides <see cref="P:Microsoft.Office.Interop.InfoPath.VersionUpgradeEvent.XDocument" /> for accessing the source XML during the version upgrade operation.</description>
+        </item>
+        <item>
+          <term>
+            <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" />
+          </term>
+          <description>Provides <see cref="P:Microsoft.Office.Interop.InfoPath.Window2.XDocument" /> for accessing the <b>XDocument</b> object associated with the window.</description>
+        </item>
+      </list>
+      <para />
+    </remarks>
+    <example>
+      <para>The source XML data of a form takes the form of an XML Document Object Model (DOM), which is accessed through the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument3.DOM" /> property of the <b>XDocument</b> object. The <b>XDocument</b> object also provides a number of properties that can be used to get information about the form and its underlying XML document. For example, the following code checks to see whether data in the form has been changed by using the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument3.IsDirty" /> property:</para>
+      <code>if (thisXDocument.IsDirty)
+{
+   thisXDocument.UI.Alert("Form has been changed.");
+}
+else
+{
+   thisXDocument.UI.Alert("Form has not been changed.");
+}
+</code>
+      <para>In addition to information about the form and its underlying XML document, the <b>XDocument</b> object provides a number of methods that can be used on the form, such as printing, saving, and submitting. It also provides a number of events that can be used to respond to various actions that occur at the form level, such as loading of a form, switching views, or a merge operation.</para>
+      <para>For another sample that demonstrates working with the <b>XDocument</b> object, see </para>
+      <para>How to: Access Application Data Using the InfoPath 2003 Object Model.</para>
+    </example>
   </Docs>
   <Members />
 </Type>

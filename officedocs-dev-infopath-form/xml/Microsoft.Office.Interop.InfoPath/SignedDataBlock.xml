@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SignedDataBlock" />
   <TypeSignature Language="VB.NET" Value="Public Interface SignedDataBlock" />
   <TypeSignature Language="C++ CLI" Value="public interface class SignedDataBlock" />
+  <TypeSignature Language="F#" Value="type SignedDataBlock = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignedDataBlock.Caption" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Caption As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Caption { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Caption : string" Usage="Microsoft.Office.Interop.InfoPath.SignedDataBlock.Caption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -45,7 +47,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the signature confirmation message of the <see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" /> object.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignedDataBlock.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.InfoPath.SignedDataBlock.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -73,7 +76,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the friendly name of a <see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" /> object.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.SignedDataBlock.Sign" />
       <MemberSignature Language="VB.NET" Value="Public Sub Sign ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sign();" />
+      <MemberSignature Language="F#" Value="abstract member Sign : unit -&gt; unit" Usage="signedDataBlock.Sign " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -99,8 +103,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Invokes the Digital Signatures Wizard to add a digital signature to the currently selected set of data which can be signed in a Microsoft Office InfoPath form.</summary>
+        <remarks>
+          <para>The new signature uses the default signature template, and it is applied to the <see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" /> object. Calling this method advances the Digital Signatures Wizard to the second step in the signing process, selecting a certificate.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>The following example will advance the Digital Signature Wizard dialog to the Select a Certificate step of the wizard:</para>
+          <code>thisXDocument.SignedDataBlocks[0].&lt;span class="label"&gt;Sign&lt;/span&gt;();</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="SignatureContainer">
@@ -109,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignedDataBlock.SignatureContainer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignatureContainer As IXMLDOMNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ SignatureContainer { Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SignatureContainer : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="Microsoft.Office.Interop.InfoPath.SignedDataBlock.SignatureContainer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -126,7 +138,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the root XML node of the subtree containing the signatures in the <see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" /> object.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignedDataBlock.SignatureRelation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignatureRelation As XdSignatureRelation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::XdSignatureRelation SignatureRelation { Microsoft::Office::Interop::InfoPath::XdSignatureRelation get(); };" />
+      <MemberSignature Language="F#" Value="member this.SignatureRelation : Microsoft.Office.Interop.InfoPath.XdSignatureRelation" Usage="Microsoft.Office.Interop.InfoPath.SignedDataBlock.SignatureRelation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -154,7 +167,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.XdSignatureRelation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the relation among multiple signatures of the <see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" /> object, expressed as <see cref="T:Microsoft.Office.Interop.InfoPath.XdSignatureRelation" /> enumerated constants.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -165,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignedDataBlock.Signatures" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Signatures As SignaturesCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::SignaturesCollection ^ Signatures { Microsoft::Office::Interop::InfoPath::SignaturesCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Signatures : Microsoft.Office.Interop.InfoPath.SignaturesCollection" Usage="Microsoft.Office.Interop.InfoPath.SignedDataBlock.Signatures" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -182,7 +196,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.SignaturesCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.SignaturesCollection" /> collection associated with the <see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" /> object.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -193,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignedDataBlock.XPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XPath : string" Usage="Microsoft.Office.Interop.InfoPath.SignedDataBlock.XPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -210,7 +225,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the XPath expression of a <see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" /> object.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -221,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignedDataBlock.XPathNamespaceDeclarations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XPathNamespaceDeclarations As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XPathNamespaceDeclarations { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XPathNamespaceDeclarations : string" Usage="Microsoft.Office.Interop.InfoPath.SignedDataBlock.XPathNamespaceDeclarations" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -238,7 +254,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the namespace declarations for the XPath expression returned by the <see cref="P:Microsoft.Office.Interop.InfoPath.SignedDataBlock.XPath" /> property of a <see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" /> object.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

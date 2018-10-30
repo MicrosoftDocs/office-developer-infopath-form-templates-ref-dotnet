@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface SignedDataBlockObject&#xA;Implements SignedDataBlock" />
   <TypeSignature Language="C++ CLI" Value="public interface class SignedDataBlockObject : Microsoft::Office::Interop::InfoPath::SignedDataBlock" />
+  <TypeSignature Language="F#" Value="type SignedDataBlockObject = interface&#xA;    interface SignedDataBlock" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,16 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a set of data in a Microsoft Office InfoPath form which can be signed.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlock" />.</para>
+      <para>The <b>SignedDataBlockObject</b> object provides a number of properties and one method that can be used to programmatically interact with a set of data which can be signed. It is accessible through the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument2.SignedDataBlocks" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>The following example returns the first set of data in the form which can be signed, or, if only the entire form can be signed, the entire form:</para>
+      <code>&lt;span class="label"&gt;SignedDataBlock&lt;/span&gt; sdb = thisXDocument.SignedDataBlocks[0];</code>
+    </example>
   </Docs>
   <Members />
 </Type>

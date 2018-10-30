@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SharepointListAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Interface SharepointListAdapter" />
   <TypeSignature Language="C++ CLI" Value="public interface class SharepointListAdapter" />
+  <TypeSignature Language="F#" Value="type SharepointListAdapter = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.SharepointListAdapterObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SharepointListAdapter.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.InfoPath.SharepointListAdapter.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -45,7 +47,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the name of a <see cref="T:Microsoft.Office.Interop.InfoPath.SharepointListAdapterObject" /> object.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.SharepointListAdapter.Query" />
       <MemberSignature Language="VB.NET" Value="Public Sub Query ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Query();" />
+      <MemberSignature Language="F#" Value="abstract member Query : unit -&gt; unit" Usage="sharepointListAdapter.Query " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -71,8 +74,23 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Reads data from the associated data adapter.</summary>
+        <remarks>
+          <para>The <b>Query</b> method fails if the <see cref="P:Microsoft.Office.Interop.InfoPath.SharepointListAdapter.QueryAllowed" /> property is <b>false</b>.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>Query</b> method of an existing Data Connection to a SharePoint list, "SharePoint list", is invoked. A message box is displayed if the <b>Query</b> method fails:</para>
+          <code>SharepointListAdapter SPList = ((SharepointListAdapter)thisXDocument.DataAdapters[“SharePoint list”]);
+try
+{
+ SPList.&lt;span class="label"&gt;Query&lt;/span&gt;();
+}
+catch (Exception ex)
+{
+ thisXDocument.UI.Alert("Failed to query.\n\n" + ex.Message);
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="QueryAllowed">
@@ -81,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SharepointListAdapter.QueryAllowed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueryAllowed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool QueryAllowed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueryAllowed : bool" Usage="Microsoft.Office.Interop.InfoPath.SharepointListAdapter.QueryAllowed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -98,7 +117,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a value that always returns <b>true</b>, corresponding to the <b>queryAllowed</b> attribute in the form definition file (.xsf).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -109,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SharepointListAdapter.SiteUrl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SiteUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SiteUrl { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SiteUrl : string" Usage="Microsoft.Office.Interop.InfoPath.SharepointListAdapter.SiteUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -126,9 +146,14 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the Uniform Resource Locator (URL) of the Windows SharePoint Services site that the <see cref="T:Microsoft.Office.Interop.InfoPath.SharepointListAdapterObject" /> object will query.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <example>
+          <para>In the following example, the <b>SiteUrl</b> property of an existing Data Connection to a SharePoint list, "SharePoint list", is displayed in a message box:</para>
+          <code>SharepointListAdapter SPList = ((SharepointListAdapter)thisXDocument.DataAdapters[“SharePoint list”]);
+thisXDocument.UI.Alert(SPList.&lt;span class="label"&gt;SiteUrl&lt;/span&gt;);</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Submit">
@@ -137,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.SharepointListAdapter.Submit" />
       <MemberSignature Language="VB.NET" Value="Public Sub Submit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Submit();" />
+      <MemberSignature Language="F#" Value="abstract member Submit : unit -&gt; unit" Usage="sharepointListAdapter.Submit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -152,8 +178,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Available for the <see cref="T:Microsoft.Office.Interop.InfoPath.SharepointListAdapterObject" />, but, because <b>SharePointListAdapter</b> object is available for receiving data only, the method will always generate a run-time error when it is called on that object.</summary>
+        <remarks>
+          <para>To submit form data to a SharePoint list or library, use the <see cref="M:Microsoft.Office.Interop.InfoPath.DAVAdapter.Submit" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.DAVAdapterObject" /> object.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SubmitAllowed">
@@ -162,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SharepointListAdapter.SubmitAllowed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubmitAllowed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SubmitAllowed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubmitAllowed : bool" Usage="Microsoft.Office.Interop.InfoPath.SharepointListAdapter.SubmitAllowed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -179,9 +209,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a value corresponding to the <b>submitAllowed</b> attribute in the form definition file (.xsf).</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>Always returns <b>false</b> for the <see cref="T:Microsoft.Office.Interop.InfoPath.SharepointListAdapterObject" /> object.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
   </Members>

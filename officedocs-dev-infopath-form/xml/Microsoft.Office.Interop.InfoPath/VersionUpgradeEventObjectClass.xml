@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.VersionUpgradeEventObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class VersionUpgradeEventObjectClass&#xA;Implements VersionUpgradeEventObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class VersionUpgradeEventObjectClass : Microsoft::Office::Interop::InfoPath::VersionUpgradeEventObject" />
+  <TypeSignature Language="F#" Value="type VersionUpgradeEventObjectClass = class&#xA;    interface VersionUpgradeEvent&#xA;    interface VersionUpgradeEventObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -25,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.VersionUpgradeEventObjectClass.DocumentVersion" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DocumentVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DocumentVersion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DocumentVersion : string" Usage="DocumentVersion" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.VersionUpgradeEvent.DocumentVersion</InterfaceMember>
@@ -55,7 +57,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.VersionUpgradeEventObjectClass.ReturnStatus" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ReturnStatus As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ReturnStatus { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnStatus : bool with get, set" Usage="ReturnStatus" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.VersionUpgradeEvent.ReturnStatus</InterfaceMember>
@@ -89,7 +92,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.VersionUpgradeEventObjectClass.SolutionVersion" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SolutionVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SolutionVersion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SolutionVersion : string" Usage="SolutionVersion" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.VersionUpgradeEvent.SolutionVersion</InterfaceMember>
@@ -120,7 +124,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.VersionUpgradeEventObjectClass.XDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property XDocument As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XDocument ^ XDocument { Microsoft::Office::Interop::InfoPath::XDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XDocument : Microsoft.Office.Interop.InfoPath.XDocument" Usage="XDocument" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.VersionUpgradeEvent.XDocument</InterfaceMember>
@@ -151,7 +156,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.XDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

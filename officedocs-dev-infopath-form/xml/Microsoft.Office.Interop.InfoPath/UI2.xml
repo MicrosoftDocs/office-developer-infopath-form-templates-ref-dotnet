@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.UI2" />
   <TypeSignature Language="VB.NET" Value="Public Interface UI2&#xA;Implements UI" />
   <TypeSignature Language="C++ CLI" Value="public interface class UI2 : Microsoft::Office::Interop::InfoPath::UI" />
+  <TypeSignature Language="F#" Value="type UI2 = interface&#xA;    interface UI" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.UIObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UI2.Alert(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Alert (bstrAlertString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Alert(System::String ^ bstrAlertString);" />
+      <MemberSignature Language="F#" Value="abstract member Alert : string -&gt; unit" Usage="uI2.Alert bstrAlertString" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.UI.Alert(System.String)</InterfaceMember>
@@ -52,9 +54,18 @@
         <Parameter Name="bstrAlertString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bstrAlertString">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bstrAlertString">The text to be displayed.</param>
+        <summary>Displays a message box with a custom text message in a Microsoft Office InfoPath form.</summary>
+        <remarks>
+          <para>The <b>Alert</b> method displays a simple message box that uses an information icon and an OK button. Only the text in the message box can be customized.</para>
+          <para>
+            <b>Note</b>: In Visual C# code, carriage returns can be inserted into the text of the custom message by using the standard  characters.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>Alert</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.UIObject" /> object is used to display a message box:</para>
+          <code>thisXDocument.UI.&lt;span class="label"&gt;Alert&lt;/span&gt;("Custom message text goes here.");</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Confirm">
@@ -63,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UI2.Confirm(System.String,Microsoft.Office.Interop.InfoPath.XdConfirmButtons)" />
       <MemberSignature Language="VB.NET" Value="Public Function Confirm (bstrPrompt As String, lButtons As XdConfirmButtons) As XdConfirmChoice" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::InfoPath::XdConfirmChoice Confirm(System::String ^ bstrPrompt, Microsoft::Office::Interop::InfoPath::XdConfirmButtons lButtons);" />
+      <MemberSignature Language="F#" Value="abstract member Confirm : string * Microsoft.Office.Interop.InfoPath.XdConfirmButtons -&gt; Microsoft.Office.Interop.InfoPath.XdConfirmChoice" Usage="uI2.Confirm (bstrPrompt, lButtons)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -81,11 +93,15 @@
         <Parameter Name="lButtons" Type="Microsoft.Office.Interop.InfoPath.XdConfirmButtons" />
       </Parameters>
       <Docs>
-        <param name="bstrPrompt">To be added.</param>
-        <param name="lButtons">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bstrPrompt">The text message to be displayed.</param>
+        <param name="lButtons">Specifies the number and type of buttons to display. You may specify any of the values of the <see cref="T:Microsoft.Office.Interop.InfoPath.XdConfirmButtons" /> enumeration.</param>
+        <summary>Displays a message box with buttons for input from a user.</summary>
+        <returns>An <see cref="T:Microsoft.Office.Interop.InfoPath.XdConfirmChoice" /> enumeration.</returns>
         <remarks>To be added.</remarks>
+        <example>
+          <para>In the following example, the <b>Confirm</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.UIObject" /> object is used to display a dialog box with <b>Yes</b> and <b>No</b> buttons:</para>
+          <code>thisXDocument.UI.&lt;span class="label"&gt;Confirm&lt;/span&gt;("Do you wish to continue?", XdConfirmButtons.xdYesNo);</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="SetSaveAsDialogFileName">
@@ -94,6 +110,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UI2.SetSaveAsDialogFileName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSaveAsDialogFileName (bstrFileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSaveAsDialogFileName(System::String ^ bstrFileName);" />
+      <MemberSignature Language="F#" Value="abstract member SetSaveAsDialogFileName : string -&gt; unit" Usage="uI2.SetSaveAsDialogFileName bstrFileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -111,9 +128,16 @@
         <Parameter Name="bstrFileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bstrFileName">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bstrFileName">The file name of the form supplied to the Save As dialog box.</param>
+        <summary>Sets the default file name for a form in the Save As dialog box.</summary>
+        <remarks>
+          <para>If the <paramref name="bstrFileName" /> argument is a null reference (Nothing in Visual Basic), "Form" is used as the file name. The <b>SetSaveAsDialogFileName</b> method may be used in conjunction with the <see cref="M:Microsoft.Office.Interop.InfoPath.UI2.SetSaveAsDialogLocation(System.String)" /> method.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>SetSaveAsDialogFileName</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.UIObject" /> object is used to set the default file name for the "Save As" dialog box:</para>
+          <code>thisXDocument.UI.&lt;span class="label"&gt;SetSaveAsDialogFileName&lt;/span&gt;("Status Report.xml");</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="SetSaveAsDialogLocation">
@@ -122,6 +146,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UI2.SetSaveAsDialogLocation(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSaveAsDialogLocation (bstrLocation As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSaveAsDialogLocation(System::String ^ bstrLocation);" />
+      <MemberSignature Language="F#" Value="abstract member SetSaveAsDialogLocation : string -&gt; unit" Usage="uI2.SetSaveAsDialogLocation bstrLocation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -139,9 +164,16 @@
         <Parameter Name="bstrLocation" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bstrLocation">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bstrLocation">The location, expressed as a URL, at which the Save As dialog box starts browsing.</param>
+        <summary>Sets the initial location at which the Save As dialog starts to browse when it is opened.</summary>
+        <remarks>
+          <para>The location specified must be an absolute path and it should not include a file name. InfoPath handles invalid paths, however, and no error message is generated if an invalid path is specified for the <paramref name="bstrLocation" /> argument. The <b>SetSaveAsDialogLocation</b> method may be used in conjunction with the <see cref="M:Microsoft.Office.Interop.InfoPath.UI2.SetSaveAsDialogFileName(System.String)" /> method.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>SetSaveAsDialogLocation</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.UIObject" /> object is used to set the initial location for the "Save As" dialog:</para>
+          <code>thisXDocument.UI.&lt;span class="label"&gt;SetSaveAsDialogLocation&lt;/span&gt;(@"\\MyShare\\Forms");</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="ShowMailItem">
@@ -150,6 +182,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UI2.ShowMailItem(System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowMailItem (bstrTo As String, bstrCC As String, bstrBCC As String, bstrSubject As String, bstrBody As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowMailItem(System::String ^ bstrTo, System::String ^ bstrCC, System::String ^ bstrBCC, System::String ^ bstrSubject, System::String ^ bstrBody);" />
+      <MemberSignature Language="F#" Value="abstract member ShowMailItem : string * string * string * string * string -&gt; unit" Usage="uI2.ShowMailItem (bstrTo, bstrCC, bstrBCC, bstrSubject, bstrBody)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.UI.ShowMailItem(System.String,System.String,System.String,System.String,System.String)</InterfaceMember>
@@ -174,13 +207,23 @@
         <Parameter Name="bstrBody" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bstrTo">To be added.</param>
-        <param name="bstrCC">To be added.</param>
-        <param name="bstrBCC">To be added.</param>
-        <param name="bstrSubject">To be added.</param>
-        <param name="bstrBody">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bstrTo">The e-mail address to send the e-mail message to.</param>
+        <param name="bstrCC">The e-mail address to copy the e-mail message to.</param>
+        <param name="bstrBCC">The e-mail address to blind copy the e-mail message to.</param>
+        <param name="bstrSubject">The subject of the e-mail message.</param>
+        <param name="bstrBody">The body text of the e-mail message.</param>
+        <summary>Creates an e-mail message in the default e-mail editor and attaches the currently open Microsoft Office InfoPath form to the message.</summary>
+        <remarks>
+          <para>After the e-mail message is created, the default e-mail editor will display the e-mail message; users can then inspect and edit the e-mail message before sending it. The <b>ShowMailItem</b> method will return an error if no e-mail editing program is available.</para>
+          <para>
+            <b>Note</b>: The <b>ShowMailItem</b> method does not send the e-mail messages it creates; users must manually send the e-mail messages.</para>
+          <para>You can also use the <see cref="T:Microsoft.Office.Interop.InfoPath.MailEnvelopeObject" /> object or <see cref="T:Microsoft.Office.Interop.InfoPath.EmailAdapterObject" /> object to programmatically create e-mail messages.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>ShowMailItem</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.UIObject" /> object is used to create a custom e-mail message:</para>
+          <code>thisXDocument.UI.ShowMailItem("someone@example.com", "", "", "Updated Form", "Here is the updated form that you requested.");</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="ShowModalDialog">
@@ -188,6 +231,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ShowModalDialog([in]string bstrName, [in]object varArguments, [in]object varHeight, [in]object varWidth, [in]object varTop, [in]object varLeft) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UI2.ShowModalDialog(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShowModalDialog (bstrName As String, Optional varArguments As Object, Optional varHeight As Object, Optional varWidth As Object, Optional varTop As Object, Optional varLeft As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member ShowModalDialog : string * obj * obj * obj * obj * obj -&gt; obj" Usage="uI2.ShowModalDialog (bstrName, varArguments, varHeight, varWidth, varTop, varLeft)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.UI.ShowModalDialog(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)</InterfaceMember>
@@ -213,15 +257,55 @@
         <Parameter Name="varLeft" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="bstrName">To be added.</param>
-        <param name="varArguments">To be added.</param>
-        <param name="varHeight">To be added.</param>
-        <param name="varWidth">To be added.</param>
-        <param name="varTop">To be added.</param>
-        <param name="varLeft">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bstrName">The name of the .html file used for the modal dialog box.</param>
+        <param name="varArguments">Specifies the arguments to use when displaying the modal dialog box. Can be any type of value, including an array of values.</param>
+        <param name="varHeight">Sets the height of the modal dialog box.</param>
+        <param name="varWidth">Sets the width of the modal dialog box.</param>
+        <param name="varTop">Sets the top position of the modal dialog box relative to the upper left corner of the desktop.</param>
+        <param name="varLeft">Sets the left position of the modal dialog box relative to the upper left corner of the desktop.</param>
+        <summary>Displays a custom modal dialog box in a Microsoft Office InfoPath form.</summary>
+        <returns>An <b>object</b> that specifies how to display the modal dialog box.</returns>
+        <remarks>
+          <para>The <b>ShowModalDialog</b> method allows you to display custom dialog boxes to users as they fill out a fully trusted form. Custom dialog boxes are implemented as .html files created in any type of HTML editor, such as Microsoft FrontPage. You can use scripting code in a custom dialog box that interacts with the InfoPath object model if you pass objects to the custom dialog box using the <paramref name="varArguments" /> parameter.</para>
+          <para>To use a custom dialog box in an InfoPath form, you must first add the .html file of the custom dialog box to the form's set of resource files by using the Resource Files dialog box. The Resource Files dialog box is available from the Tools menu in design mode. After you have added the custom dialog box file to the form, you can use the <b>ShowModalDialog</b> method to display it.</para>
+          <para>Although the <b>ShowModalDialog</b> method can only be used in fully trusted forms, you can create a custom dialog box in standard forms using the <b>showModalDialog</b> method of the Dynamic HTML (DHTML) object model if you have an HTML task pane specified in your form, or by using a Windows form.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>ShowModalDialog</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.UIObject" /> object is used to display a custom dialog box. Note that the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is passed to the custom dialog box using the <paramref name="varArguments" /> parameter.</para>
+          <code>thisXDocument.UI.&lt;span class="label"&gt;ShowModalDialog&lt;/span&gt;("show.htm",(object)thisXDocument,100,100,10,10);</code>
+          <para>The following example is the HTML code used to implement a simple custom dialog box. Note the use of the <b>dialogArguments</b> property of the DHTML window object to get the values passed to the custom dialog box, which in this case is the <b>XDocument</b> object of the InfoPath object model, from the <b>ShowModalDialog</b> method. When a user clicks the Show Alert button in the custom dialog box, the source XML of the form's underlying XML document appears in a message box.</para>
+          <code>&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;script language="jscript"&amp;gt;
+ var gobjXDocument = null;
+ function Initialize()
+ {
+  // Save a reference to the XDocument object.
+  if (typeof window.dialogArguments == "object")
+  gobjXDocument = window.dialogArguments;
+ }
+&amp;lt;/script&amp;gt;
+
+&amp;lt;title&amp;gt;A Simple Custom Dialog Box&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+
+&amp;lt;body style="BACKGROUND-COLOR: window" onLoad="Initialize()"&amp;gt;
+ &amp;lt;strong&amp;gt;Click one of the following buttons:&amp;lt;/strong&amp;gt;
+ &amp;lt;br/&amp;gt;
+ &amp;lt;br/&amp;gt;
+ &amp;lt;div id="divButtons" tyle="align:center"&amp;gt;
+ &amp;lt;input id="btnShowAlert" style="WIDTH: 106px; HEIGHT: 24px" 
+  onclick='gobjXDocument.UI.Alert(gobjXDocument.DOM.xml);' 
+   type="button" size="21" value="Show Alert"&amp;gt;&amp;lt;/input&amp;gt;
+ &amp;lt;input id="btnCancel" style="WIDTH: 106px; HEIGHT: 24px" 
+  onclick="window.close();" type="button" size="21" 
+  value="Cancel"&amp;gt;&amp;lt;/input&amp;gt;
+ &amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;</code>
+          <para>For information on how to use the <b>ShowModalDialog</b> box method, see How to: Display Alerts and Dialog Boxes.</para>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="ShowSignatureDialog">
@@ -230,6 +314,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UI2.ShowSignatureDialog" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowSignatureDialog ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowSignatureDialog();" />
+      <MemberSignature Language="F#" Value="abstract member ShowSignatureDialog : unit -&gt; unit" Usage="uI2.ShowSignatureDialog " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.UI.ShowSignatureDialog</InterfaceMember>
@@ -248,8 +333,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Displays the Microsoft Office InfoPath 2003 Digital Signatures dialog box.</summary>
+        <remarks>
+          <para>The <b>ShowSignatureDialog</b> method can be used only in forms that have been enabled for digital signing. The method will return an error if used in a form that is not enabled for digital signing.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>ShowSignatureDialog</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.UIObject" /> object is used to display the Microsoft InfoPath Digital Signatures dialog box:</para>
+          <code>thisXDocument.UI.&lt;span class="label"&gt;ShowSignatureDialog&lt;/span&gt;();</code>
+        </example>
       </Docs>
     </Member>
   </Members>

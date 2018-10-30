@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.UtilObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface UtilObject&#xA;Implements Util" />
   <TypeSignature Language="C++ CLI" Value="public interface class UtilObject : Microsoft::Office::Interop::InfoPath::Util" />
+  <TypeSignature Language="F#" Value="type UtilObject = interface&#xA;    interface Util" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides utility methods that can be used with Microsoft Office InfoPath forms.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.Util" />.</para>
+      <para>Use the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument2.Util" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object to create a <b>UtilObject</b> object.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members />
 </Type>

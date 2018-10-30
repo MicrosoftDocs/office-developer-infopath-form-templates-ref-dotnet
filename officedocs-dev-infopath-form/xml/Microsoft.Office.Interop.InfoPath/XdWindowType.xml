@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XdWindowType" />
   <TypeSignature Language="VB.NET" Value="Public Enum XdWindowType" />
   <TypeSignature Language="C++ CLI" Value="public enum class XdWindowType" />
+  <TypeSignature Language="F#" Value="type XdWindowType = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -17,8 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <b>XdWindowType</b> enumeration is used to determine the type of a Microsoft Office InfoPath 2003 window.</summary>
+    <remarks>
+      <para>These enumerated values are returned by the <see cref="P:Microsoft.Office.Interop.InfoPath.Window2.WindowType" /> property.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="xdDesignerWindow">
@@ -27,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdWindowType.xdDesignerWindow" />
       <MemberSignature Language="VB.NET" Value="xdDesignerWindow" />
       <MemberSignature Language="C++ CLI" Value="xdDesignerWindow" />
+      <MemberSignature Language="F#" Value="xdDesignerWindow = 1" Usage="Microsoft.Office.Interop.InfoPath.XdWindowType.xdDesignerWindow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -37,7 +42,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The window is the type of window that is displayed in design mode.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdEditorWindow">
@@ -46,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdWindowType.xdEditorWindow" />
       <MemberSignature Language="VB.NET" Value="xdEditorWindow" />
       <MemberSignature Language="C++ CLI" Value="xdEditorWindow" />
+      <MemberSignature Language="F#" Value="xdEditorWindow = 0" Usage="Microsoft.Office.Interop.InfoPath.XdWindowType.xdEditorWindow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -56,7 +62,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The window is the type of window that is displayed when filling out a form.</summary>
       </Docs>
     </Member>
   </Members>

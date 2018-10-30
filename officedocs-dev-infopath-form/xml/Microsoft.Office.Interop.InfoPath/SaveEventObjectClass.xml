@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SaveEventObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class SaveEventObjectClass&#xA;Implements SaveEventObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class SaveEventObjectClass : Microsoft::Office::Interop::InfoPath::SaveEventObject" />
+  <TypeSignature Language="F#" Value="type SaveEventObjectClass = class&#xA;    interface SaveEvent&#xA;    interface SaveEventObject&#xA;    interface DocEvent&#xA;    interface DocReturnEvent" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -25,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.SaveEventObjectClass.DocEvent_get_XDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function DocEvent_get_XDocument () As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::XDocument ^ DocEvent_get_XDocument() = Microsoft::Office::Interop::InfoPath::DocEvent::get_XDocument;" />
+      <MemberSignature Language="F#" Value="abstract member DocEvent_get_XDocument : unit -&gt; Microsoft.Office.Interop.InfoPath.XDocument&#xA;override this.DocEvent_get_XDocument : unit -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="saveEventObjectClass.DocEvent_get_XDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SaveEventObjectClass.DocEvent_XDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DocEvent_XDocument As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XDocument ^ DocEvent_XDocument { Microsoft::Office::Interop::InfoPath::XDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DocEvent_XDocument : Microsoft.Office.Interop.InfoPath.XDocument" Usage="DocEvent_XDocument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -65,7 +68,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.XDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -76,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.SaveEventObjectClass.DocReturnEvent_get_ReturnStatus" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function DocReturnEvent_get_ReturnStatus () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool DocReturnEvent_get_ReturnStatus() = Microsoft::Office::Interop::InfoPath::DocReturnEvent::get_ReturnStatus;" />
+      <MemberSignature Language="F#" Value="abstract member DocReturnEvent_get_ReturnStatus : unit -&gt; bool&#xA;override this.DocReturnEvent_get_ReturnStatus : unit -&gt; bool" Usage="saveEventObjectClass.DocReturnEvent_get_ReturnStatus " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -97,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.SaveEventObjectClass.DocReturnEvent_get_XDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function DocReturnEvent_get_XDocument () As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::XDocument ^ DocReturnEvent_get_XDocument() = Microsoft::Office::Interop::InfoPath::DocReturnEvent::get_XDocument;" />
+      <MemberSignature Language="F#" Value="abstract member DocReturnEvent_get_XDocument : unit -&gt; Microsoft.Office.Interop.InfoPath.XDocument&#xA;override this.DocReturnEvent_get_XDocument : unit -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="saveEventObjectClass.DocReturnEvent_get_XDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SaveEventObjectClass.DocReturnEvent_ReturnStatus" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DocReturnEvent_ReturnStatus As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool DocReturnEvent_ReturnStatus { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DocReturnEvent_ReturnStatus : bool with get, set" Usage="DocReturnEvent_ReturnStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -127,7 +133,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -138,6 +144,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.SaveEventObjectClass.DocReturnEvent_set_ReturnStatus(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub DocReturnEvent_set_ReturnStatus (pfReturnStatus As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DocReturnEvent_set_ReturnStatus(bool pfReturnStatus) = Microsoft::Office::Interop::InfoPath::DocReturnEvent::set_ReturnStatus;" />
+      <MemberSignature Language="F#" Value="abstract member DocReturnEvent_set_ReturnStatus : bool -&gt; unit&#xA;override this.DocReturnEvent_set_ReturnStatus : bool -&gt; unit" Usage="saveEventObjectClass.DocReturnEvent_set_ReturnStatus pfReturnStatus" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -161,6 +168,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SaveEventObjectClass.DocReturnEvent_XDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DocReturnEvent_XDocument As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XDocument ^ DocReturnEvent_XDocument { Microsoft::Office::Interop::InfoPath::XDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DocReturnEvent_XDocument : Microsoft.Office.Interop.InfoPath.XDocument" Usage="DocReturnEvent_XDocument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -170,7 +178,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.XDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -181,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SaveEventObjectClass.FileName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FileName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FileName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FileName : string" Usage="FileName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.SaveEvent.FileName</InterfaceMember>
@@ -201,7 +210,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -212,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SaveEventObjectClass.IsCancelled" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property IsCancelled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsCancelled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsCancelled : bool with get, set" Usage="IsCancelled" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.SaveEvent.IsCancelled</InterfaceMember>
@@ -235,7 +245,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -246,6 +256,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SaveEventObjectClass.IsSaveAs" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSaveAs As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSaveAs { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSaveAs : bool" Usage="IsSaveAs" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.SaveEvent.IsSaveAs</InterfaceMember>
@@ -266,7 +277,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -277,6 +288,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.SaveEventObjectClass.PerformSaveOperation" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function PerformSaveOperation () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool PerformSaveOperation() = Microsoft::Office::Interop::InfoPath::SaveEvent::PerformSaveOperation;" />
+      <MemberSignature Language="F#" Value="abstract member PerformSaveOperation : unit -&gt; bool&#xA;override this.PerformSaveOperation : unit -&gt; bool" Usage="saveEventObjectClass.PerformSaveOperation " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.SaveEvent.PerformSaveOperation</InterfaceMember>
@@ -295,7 +307,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -306,6 +318,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SaveEventObjectClass.ReturnStatus" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ReturnStatus As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ReturnStatus { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnStatus : bool with get, set" Usage="ReturnStatus" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.SaveEvent.ReturnStatus</InterfaceMember>
@@ -329,7 +342,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -340,6 +353,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SaveEventObjectClass.XDocument" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property XDocument As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XDocument ^ XDocument { Microsoft::Office::Interop::InfoPath::XDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XDocument : Microsoft.Office.Interop.InfoPath.XDocument" Usage="XDocument" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.SaveEvent.XDocument</InterfaceMember>
@@ -360,7 +374,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.XDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

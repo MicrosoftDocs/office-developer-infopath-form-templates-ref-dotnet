@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XDocuments3" />
   <TypeSignature Language="VB.NET" Value="Public Interface XDocuments3&#xA;Implements XDocuments2" />
   <TypeSignature Language="C++ CLI" Value="public interface class XDocuments3 : Microsoft::Office::Interop::InfoPath::XDocuments2" />
+  <TypeSignature Language="F#" Value="type XDocuments3 = interface&#xA;    interface XDocuments2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocuments3.Close(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close (varIndex As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close(System::Object ^ varIndex);" />
+      <MemberSignature Language="F#" Value="abstract member Close : obj -&gt; unit" Usage="xDocuments3.Close varIndex" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.XDocuments2.Close(System.Object)</InterfaceMember>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.XDocuments3.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.InfoPath.XDocuments3.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.XDocuments2.Count</InterfaceMember>
@@ -84,7 +87,7 @@
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
-        <value>To be added.</value>
+        <value>Returns <see cref="T:System.Int32" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocuments3.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="xDocuments3.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.XDocuments2.GetEnumerator</InterfaceMember>
@@ -116,7 +120,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <returns>Returns <see cref="T:System.Collections.IEnumerator" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.XDocuments3.Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(varIndex As Object) As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::XDocument ^ default[System::Object ^] { Microsoft::Office::Interop::InfoPath::XDocument ^ get(System::Object ^ varIndex); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.InfoPath.XDocument" Usage="Microsoft.Office.Interop.InfoPath.XDocuments3.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.XDocuments2.Item(System.Object)</InterfaceMember>
@@ -151,7 +156,7 @@
       <Docs>
         <param name="varIndex">To be added.</param>
         <summary>To be added.</summary>
-        <value>To be added.</value>
+        <value>Returns <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,6 +165,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.XDocument New([in]object varURI, [in]int32 dwBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocuments3.New(System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function New (varURI As Object, Optional dwBehavior As Integer = 1) As XDocument" />
+      <MemberSignature Language="F#" Value="abstract member New : obj * int -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="xDocuments3.New (varURI, dwBehavior)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.XDocuments2.New(System.Object,System.Int32)</InterfaceMember>
@@ -184,7 +190,7 @@
         <param name="varURI">To be added.</param>
         <param name="dwBehavior">To be added.</param>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <returns>Returns <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocuments3.NewFromSolution(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function NewFromSolution (varURI As Object) As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::InfoPath::XDocument ^ NewFromSolution(System::Object ^ varURI);" />
+      <MemberSignature Language="F#" Value="abstract member NewFromSolution : obj -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="xDocuments3.NewFromSolution varURI" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.XDocuments2.NewFromSolution(System.Object)</InterfaceMember>
@@ -216,7 +223,7 @@
       <Docs>
         <param name="varURI">To be added.</param>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <returns>Returns <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,6 +232,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.XDocument NewFromSolutionWithData([in]object varXMLData, [in]object varSolutionURI, [in]int32 dwBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocuments3.NewFromSolutionWithData(System.Object,System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function NewFromSolutionWithData (varXMLData As Object, varSolutionURI As Object, Optional dwBehavior As Integer = 1) As XDocument" />
+      <MemberSignature Language="F#" Value="abstract member NewFromSolutionWithData : obj * obj * int -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="xDocuments3.NewFromSolutionWithData (varXMLData, varSolutionURI, dwBehavior)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.XDocuments2.NewFromSolutionWithData(System.Object,System.Object,System.Int32)</InterfaceMember>
@@ -251,7 +259,7 @@
         <param name="varSolutionURI">To be added.</param>
         <param name="dwBehavior">To be added.</param>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <returns>Returns <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -261,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocuments3.NewFromSolutionWithInputParameters(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function NewFromSolutionWithInputParameters (varSolutionURI As Object, varInputParams As Object) As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::InfoPath::XDocument ^ NewFromSolutionWithInputParameters(System::Object ^ varSolutionURI, System::Object ^ varInputParams);" />
+      <MemberSignature Language="F#" Value="abstract member NewFromSolutionWithInputParameters : obj * obj -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="xDocuments3.NewFromSolutionWithInputParameters (varSolutionURI, varInputParams)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -279,11 +288,25 @@
         <Parameter Name="varInputParams" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="varSolutionURI">To be added.</param>
-        <param name="varInputParams">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="varSolutionURI">The Uniform Resource Identifier (URI) of the form template on which to base the new form.</param>
+        <param name="varInputParams">One or more name/value pairs separated by the ampersand (&amp;) character.</param>
+        <summary>Creates a new form using the specified form template with the specified form template and input parameters</summary>
+        <returns>An object that represents the new form.</returns>
+        <remarks>
+          <para>To use the input parameters passed to the <paramref name="inputParameters" /> parameter, the form specified in the <paramref name="formTemplateLocation" /> parameter must contain a <see cref="E:Microsoft.Office.InfoPath.FormEvents.Loading" /> event handler that uses the <see cref="P:Microsoft.Office.InfoPath.LoadingEventArgs.InputParameters" /> property of the <see cref="T:Microsoft.Office.InfoPath.LoadingEventArgs" /> class to retrieve the input parameter values, and then do something with those values. For an example of how to do this, see the <see cref="P:Microsoft.Office.InfoPath.LoadingEventArgs.InputParameters" /> property of the <see cref="T:Microsoft.Office.InfoPath.LoadingEventArgs" /> class.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>
+            <b>Note</b>: The following example assumes that the <see cref="N:Microsoft.Office.Interop.InfoPath" /> namespace is being used and that the Microsoft InfoPath 3.0 Type Library is referenced.</para>
+          <para>The following example shows how to create a new form by passing in the URI of a form template that contains an appropriate <see cref="E:Microsoft.Office.InfoPath.FormEvents.Loading" /> event handler and two input parameters. </para>
+          <code>XDocument newDocument;
+
+// Create an InfoPath form passing in input parameters.
+newDocument = thisApplication.XDocuments.&lt;span class="label"&gt;NewFromSolutionWithInputParameters&lt;/span&gt;(
+   @"C:\User Forms\DeptReport.xsn","Dept=Accounting&amp;amp;Acct=Contoso");
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -291,6 +314,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.XDocument Open([in]object varURI, [in]int32 dwBehavior) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocuments3.Open(System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Open (varURI As Object, Optional dwBehavior As Integer = 1) As XDocument" />
+      <MemberSignature Language="F#" Value="abstract member Open : obj * int -&gt; Microsoft.Office.Interop.InfoPath.XDocument" Usage="xDocuments3.Open (varURI, dwBehavior)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.XDocuments2.Open(System.Object,System.Int32)</InterfaceMember>
@@ -315,7 +339,7 @@
         <param name="varURI">To be added.</param>
         <param name="dwBehavior">To be added.</param>
         <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <returns>Returns <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

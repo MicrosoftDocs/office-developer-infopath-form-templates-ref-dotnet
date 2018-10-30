@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XdSignatureRelation" />
   <TypeSignature Language="VB.NET" Value="Public Enum XdSignatureRelation" />
   <TypeSignature Language="C++ CLI" Value="public enum class XdSignatureRelation" />
+  <TypeSignature Language="F#" Value="type XdSignatureRelation = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -17,8 +18,33 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <b>XdSignatureRelation</b> enumeration is used to determine how digital signatures can be added to a <see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" /> object.</summary>
+    <remarks>
+      <para>These enumerated values are returned by the <see cref="P:Microsoft.Office.Interop.InfoPath.SignedDataBlock.SignatureRelation" /> property.</para>
+      <para />
+    </remarks>
+    <example>
+      <code>public void DisplaySDBProperties()
+{
+ SignedDataBlock sdb = thisXDocument.SignedDataBlocks[0];
+ string sigRelation = "UNKNOWN";
+ switch(sdb.SignatureRelation)
+  {
+   case &lt;span class="label"&gt;XdSignatureRelation&lt;/span&gt;.xdSignatureRelationSingle :
+    sigRelation = "SINGLE";
+    break;
+   case &lt;span class="label"&gt;XdSignatureRelation&lt;/span&gt;.xdSignatureRelationCoSign :
+    sigRelation = "COSIGN";
+    break;
+   case &lt;span class="label"&gt;XdSignatureRelation&lt;/span&gt;.xdSignatureRelationCounterSign :
+    sigRelation = "COUNTERSIGN";
+    break;
+   default:
+    break;
+  }
+ thisXDocument.UI.Alert("Signatures relation: " + sigRelation );
+}</code>
+    </example>
   </Docs>
   <Members>
     <Member MemberName="xdSignatureRelationCoSign">
@@ -27,6 +53,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdSignatureRelation.xdSignatureRelationCoSign" />
       <MemberSignature Language="VB.NET" Value="xdSignatureRelationCoSign" />
       <MemberSignature Language="C++ CLI" Value="xdSignatureRelationCoSign" />
+      <MemberSignature Language="F#" Value="xdSignatureRelationCoSign = 2" Usage="Microsoft.Office.Interop.InfoPath.XdSignatureRelation.xdSignatureRelationCoSign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -37,7 +64,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that signatures are independent of each other in <b>SignedDataBlock</b>.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdSignatureRelationCounterSign">
@@ -46,6 +73,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdSignatureRelation.xdSignatureRelationCounterSign" />
       <MemberSignature Language="VB.NET" Value="xdSignatureRelationCounterSign" />
       <MemberSignature Language="C++ CLI" Value="xdSignatureRelationCounterSign" />
+      <MemberSignature Language="F#" Value="xdSignatureRelationCounterSign = 3" Usage="Microsoft.Office.Interop.InfoPath.XdSignatureRelation.xdSignatureRelationCounterSign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -56,7 +84,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that each signature signs the preceding signature in the <b>SignedDataBlock</b>.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdSignatureRelationSingle">
@@ -65,6 +93,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdSignatureRelation.xdSignatureRelationSingle" />
       <MemberSignature Language="VB.NET" Value="xdSignatureRelationSingle" />
       <MemberSignature Language="C++ CLI" Value="xdSignatureRelationSingle" />
+      <MemberSignature Language="F#" Value="xdSignatureRelationSingle = 1" Usage="Microsoft.Office.Interop.InfoPath.XdSignatureRelation.xdSignatureRelationSingle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -75,7 +104,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Specifies that only one signature can exist in the <b>SignedDataBlock</b>.</summary>
       </Docs>
     </Member>
   </Members>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DataAdaptersCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface DataAdaptersCollection&#xA;Implements DataAdapters" />
   <TypeSignature Language="C++ CLI" Value="public interface class DataAdaptersCollection : Microsoft::Office::Interop::InfoPath::DataAdapters" />
+  <TypeSignature Language="F#" Value="type DataAdaptersCollection = interface&#xA;    interface DataAdapters" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,108 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains a data adapter object corresponding to each data connection used within a Microsoft InfoPath form.</summary>
+    <remarks>
+      <para>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.DataAdapters" />.</para>
+      <para>Each data connection is used to retrieve data (inserted into the main data source or into a secondary data source) or to submit data.</para>
+      <para>A data connection used to retrieve data for the main data source will correspond to one of the following data adapter object types:</para>
+      <list type="bullet">
+        <item>
+          <description>
+            <see cref="T:Microsoft.Office.Interop.InfoPath.ADOAdapterObject" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="T:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObject" />
+          </description>
+        </item>
+      </list>
+      <para>
+        <b>Note</b>: An <b>ADOAdapter</b> object used to retrieve data for the main data source can also submit data.</para>
+      <para>A data connection used to retrieve data for a secondary data source will correspond to one of the following data adapter object types:</para>
+      <list type="bullet">
+        <item>
+          <description>
+            <see cref="T:Microsoft.Office.Interop.InfoPath.ADOAdapterObject" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="T:Microsoft.Office.Interop.InfoPath.SharepointListAdapterObject" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="T:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObject" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="T:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObject" />
+          </description>
+        </item>
+      </list>
+      <para>A data connection used only for submitting data will correspond to one of the following data adapter object types:</para>
+      <list type="bullet">
+        <item>
+          <description>
+            <see cref="T:Microsoft.Office.Interop.InfoPath.EmailAdapterObject" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="T:Microsoft.Office.Interop.InfoPath.DAVAdapterObject" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="T:Microsoft.Office.Interop.InfoPath.HWSAdapterObject" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="T:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObject" />
+          </description>
+        </item>
+      </list>
+      <para>The <b>DataAdapters</b> collection can be accessed using the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument2.DataAdapters" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object.</para>
+      <para>
+        <b>Note</b>: To use properties or methods of a data adapter object, it is necessary to cast the object returned from the <b>DataAdaptersCollection</b> object to the specific data adapter that it represents before you can access those members. For more information about working with data adapters, see How to: Access External Data Sources</para>
+      <para />
+    </remarks>
+    <example>
+      <para>In the following example, an <b>ADOAdapter</b> object connected to the Employees table of the Northwind database is retrieved from the <b>DataAdapters</b> collection:</para>
+      <code>// retrieve the Employees Adapter from the DataAdapters collection
+ADOAdapter employeesDA = (ADOAdapter)thisXDocument.&lt;span class="label"&gt;DataAdapters&lt;/span&gt;["Employees"];</code>
+      <para>In the following example, an XML document called "form1", available as an XML file data connection, is retrieved from the <b>DataAdapters</b> collection.  Various properties of the connection are displayed in message boxes:</para>
+      <code>&lt;span class="label"&gt;DataAdapters&lt;/span&gt; dataAdapters;
+dataAdapters = thisXDocument.&lt;span class="label"&gt;DataAdapters&lt;/span&gt;; 
+XMLFileAdapterObject queryXMLFile = (XMLFileAdapterObject)dataAdapters["form1"];
+thisXDocument.UI.Alert("Query - XML file adapter"); 
+thisXDocument.UI.Alert("Name: " + queryXMLFile.Name);
+thisXDocument.UI.Alert("QueryAllowed: " + queryXMLFile.QueryAllowed);
+thisXDocument.UI.Alert("SubmitAllowed: " + queryXMLFile.SubmitAllowed);
+thisXDocument.UI.Alert("FileURL: " + queryXMLFile.FileURL);
+// Perform the query.
+try
+ {
+  queryXMLFile.Query();
+ }
+catch (Exception ex)
+ {
+  thisXDocument.UI.Alert("Failed to query.\n\n" + ex.Message);
+ }
+// Perform the submit.
+try
+ {
+  queryXMLFile.Submit();
+ }
+catch (Exception ex)
+ {
+  thisXDocument.UI.Alert("Failed to submit.\n\n" + ex.Message);
+}</code>
+    </example>
   </Docs>
   <Members />
 </Type>

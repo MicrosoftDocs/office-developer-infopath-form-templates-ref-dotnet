@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class WebServiceAdapterObjectClass&#xA;Implements IDataAdapterMOM, WebServiceAdapterObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebServiceAdapterObjectClass : Microsoft::Office::Interop::InfoPath::IDataAdapterMOM, Microsoft::Office::Interop::InfoPath::WebServiceAdapterObject" />
+  <TypeSignature Language="F#" Value="type WebServiceAdapterObjectClass = class&#xA;    interface WebServiceAdapter2&#xA;    interface WebServiceAdapterObject&#xA;    interface WebServiceAdapter&#xA;    interface IDataAdapterMOM" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,7 +29,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.ErrorsLocation" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ErrorsLocation As IXMLDOMNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ ErrorsLocation { Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorsLocation : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="ErrorsLocation" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.ErrorsLocation</InterfaceMember>
@@ -58,7 +60,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.GenerateDataSetDiffGram(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GenerateDataSetDiffGram (pNode As IXMLDOMNode) As IXMLDOMNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ GenerateDataSetDiffGram(Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ pNode) = Microsoft::Office::Interop::InfoPath::WebServiceAdapter2::GenerateDataSetDiffGram;" />
+      <MemberSignature Language="F#" Value="abstract member GenerateDataSetDiffGram : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode -&gt; Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode&#xA;override this.GenerateDataSetDiffGram : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode -&gt; Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="webServiceAdapterObjectClass.GenerateDataSetDiffGram pNode" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.GenerateDataSetDiffGram(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode)</InterfaceMember>
@@ -90,7 +93,7 @@
       </Parameters>
       <Docs>
         <param name="pNode">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -101,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.GenerateDataSetDiffGramInXml" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GenerateDataSetDiffGramInXml () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GenerateDataSetDiffGramInXml() = Microsoft::Office::Interop::InfoPath::IDataAdapterMOM::GenerateDataSetDiffGramInXml;" />
+      <MemberSignature Language="F#" Value="abstract member GenerateDataSetDiffGramInXml : unit -&gt; string&#xA;override this.GenerateDataSetDiffGramInXml : unit -&gt; string" Usage="webServiceAdapterObjectClass.GenerateDataSetDiffGramInXml " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.GenerateDataSetDiffGramInXml</InterfaceMember>
@@ -114,7 +118,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.GetAdoSubmitName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAdoSubmitName () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetAdoSubmitName() = Microsoft::Office::Interop::InfoPath::IDataAdapterMOM::GetAdoSubmitName;" />
+      <MemberSignature Language="F#" Value="abstract member GetAdoSubmitName : unit -&gt; string&#xA;override this.GetAdoSubmitName : unit -&gt; string" Usage="webServiceAdapterObjectClass.GetAdoSubmitName " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.GetAdoSubmitName</InterfaceMember>
@@ -138,7 +143,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.GetErrorXMLForMOM" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetErrorXMLForMOM () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetErrorXMLForMOM() = Microsoft::Office::Interop::InfoPath::IDataAdapterMOM::GetErrorXMLForMOM;" />
+      <MemberSignature Language="F#" Value="abstract member GetErrorXMLForMOM : unit -&gt; string&#xA;override this.GetErrorXMLForMOM : unit -&gt; string" Usage="webServiceAdapterObjectClass.GetErrorXMLForMOM " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.GetErrorXMLForMOM</InterfaceMember>
@@ -162,7 +168,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -173,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.Input" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Input As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Input { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Input : string with get, set" Usage="Input" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.Input</InterfaceMember>
@@ -196,7 +203,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -207,6 +214,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Name" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.Name</InterfaceMember>
@@ -227,7 +235,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -238,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.Operation" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Operation As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Operation { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Operation : string with get, set" Usage="Operation" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.Operation</InterfaceMember>
@@ -261,7 +270,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -272,6 +281,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.OutputLocation" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property OutputLocation As IXMLDOMNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ OutputLocation { Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OutputLocation : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="OutputLocation" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.OutputLocation</InterfaceMember>
@@ -292,7 +302,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -303,6 +313,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.Query" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Query ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Query() = Microsoft::Office::Interop::InfoPath::WebServiceAdapter2::Query;" />
+      <MemberSignature Language="F#" Value="abstract member Query : unit -&gt; unit&#xA;override this.Query : unit -&gt; unit" Usage="webServiceAdapterObjectClass.Query " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.Query</InterfaceMember>
@@ -321,7 +332,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -331,6 +342,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.QueryAllowed" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property QueryAllowed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool QueryAllowed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueryAllowed : bool" Usage="QueryAllowed" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.QueryAllowed</InterfaceMember>
@@ -351,7 +363,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -362,6 +374,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.QueryOrSubmitWithInputOutput(System.Boolean,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function QueryOrSubmitWithInputOutput (fInputIsNull As Boolean, bstrInputXML As String, fOutputIsNull As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ QueryOrSubmitWithInputOutput(bool fInputIsNull, System::String ^ bstrInputXML, bool fOutputIsNull) = Microsoft::Office::Interop::InfoPath::IDataAdapterMOM::QueryOrSubmitWithInputOutput;" />
+      <MemberSignature Language="F#" Value="abstract member QueryOrSubmitWithInputOutput : bool * string * bool -&gt; string&#xA;override this.QueryOrSubmitWithInputOutput : bool * string * bool -&gt; string" Usage="webServiceAdapterObjectClass.QueryOrSubmitWithInputOutput (fInputIsNull, bstrInputXML, fOutputIsNull)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.QueryOrSubmitWithInputOutput(System.Boolean,System.String,System.Boolean)</InterfaceMember>
@@ -382,7 +395,7 @@
         <param name="fInputIsNull">To be added.</param>
         <param name="bstrInputXML">To be added.</param>
         <param name="fOutputIsNull">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -393,6 +406,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.QueryWithOutput" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function QueryWithOutput () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ QueryWithOutput() = Microsoft::Office::Interop::InfoPath::IDataAdapterMOM::QueryWithOutput;" />
+      <MemberSignature Language="F#" Value="abstract member QueryWithOutput : unit -&gt; string&#xA;override this.QueryWithOutput : unit -&gt; string" Usage="webServiceAdapterObjectClass.QueryWithOutput " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.QueryWithOutput</InterfaceMember>
@@ -406,7 +420,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -417,6 +431,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.Submit" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Submit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Submit() = Microsoft::Office::Interop::InfoPath::WebServiceAdapter2::Submit;" />
+      <MemberSignature Language="F#" Value="abstract member Submit : unit -&gt; unit&#xA;override this.Submit : unit -&gt; unit" Usage="webServiceAdapterObjectClass.Submit " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.Submit</InterfaceMember>
@@ -435,7 +450,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -445,6 +460,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.SubmitAllowed" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SubmitAllowed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SubmitAllowed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubmitAllowed : bool" Usage="SubmitAllowed" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.SubmitAllowed</InterfaceMember>
@@ -465,7 +481,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -476,6 +492,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.SubmitWithInput(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SubmitWithInput (bstrInputXML As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SubmitWithInput(System::String ^ bstrInputXML) = Microsoft::Office::Interop::InfoPath::IDataAdapterMOM::SubmitWithInput;" />
+      <MemberSignature Language="F#" Value="abstract member SubmitWithInput : string -&gt; unit&#xA;override this.SubmitWithInput : string -&gt; unit" Usage="webServiceAdapterObjectClass.SubmitWithInput bstrInputXML" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.SubmitWithInput(System.String)</InterfaceMember>
@@ -492,7 +509,7 @@
       </Parameters>
       <Docs>
         <param name="bstrInputXML">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -502,6 +519,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Timeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Timeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Timeout : int with get, set" Usage="Timeout" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.Timeout</InterfaceMember>
@@ -525,7 +543,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -536,6 +554,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.WebServiceAdapter_get_Input" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WebServiceAdapter_get_Input () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ WebServiceAdapter_get_Input() = Microsoft::Office::Interop::InfoPath::WebServiceAdapter::get_Input;" />
+      <MemberSignature Language="F#" Value="abstract member WebServiceAdapter_get_Input : unit -&gt; string&#xA;override this.WebServiceAdapter_get_Input : unit -&gt; string" Usage="webServiceAdapterObjectClass.WebServiceAdapter_get_Input " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -557,6 +576,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.WebServiceAdapter_get_Operation" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WebServiceAdapter_get_Operation () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ WebServiceAdapter_get_Operation() = Microsoft::Office::Interop::InfoPath::WebServiceAdapter::get_Operation;" />
+      <MemberSignature Language="F#" Value="abstract member WebServiceAdapter_get_Operation : unit -&gt; string&#xA;override this.WebServiceAdapter_get_Operation : unit -&gt; string" Usage="webServiceAdapterObjectClass.WebServiceAdapter_get_Operation " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -578,6 +598,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.WebServiceAdapter_get_WSDLURL" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function WebServiceAdapter_get_WSDLURL () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ WebServiceAdapter_get_WSDLURL() = Microsoft::Office::Interop::InfoPath::WebServiceAdapter::get_WSDLURL;" />
+      <MemberSignature Language="F#" Value="abstract member WebServiceAdapter_get_WSDLURL : unit -&gt; string&#xA;override this.WebServiceAdapter_get_WSDLURL : unit -&gt; string" Usage="webServiceAdapterObjectClass.WebServiceAdapter_get_WSDLURL " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -599,6 +620,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.WebServiceAdapter_Input" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property WebServiceAdapter_Input As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ WebServiceAdapter_Input { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WebServiceAdapter_Input : string with get, set" Usage="WebServiceAdapter_Input" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -608,7 +630,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -619,6 +641,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.WebServiceAdapter_Operation" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property WebServiceAdapter_Operation As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ WebServiceAdapter_Operation { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.WebServiceAdapter_Operation : string with get, set" Usage="WebServiceAdapter_Operation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -628,7 +651,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -639,6 +662,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.WebServiceAdapter_set_Input(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WebServiceAdapter_set_Input (pbstrInput As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WebServiceAdapter_set_Input(System::String ^ pbstrInput) = Microsoft::Office::Interop::InfoPath::WebServiceAdapter::set_Input;" />
+      <MemberSignature Language="F#" Value="abstract member WebServiceAdapter_set_Input : string -&gt; unit&#xA;override this.WebServiceAdapter_set_Input : string -&gt; unit" Usage="webServiceAdapterObjectClass.WebServiceAdapter_set_Input pbstrInput" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -662,6 +686,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.WebServiceAdapter_set_Operation(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WebServiceAdapter_set_Operation (pbstrOperation As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WebServiceAdapter_set_Operation(System::String ^ pbstrOperation) = Microsoft::Office::Interop::InfoPath::WebServiceAdapter::set_Operation;" />
+      <MemberSignature Language="F#" Value="abstract member WebServiceAdapter_set_Operation : string -&gt; unit&#xA;override this.WebServiceAdapter_set_Operation : string -&gt; unit" Usage="webServiceAdapterObjectClass.WebServiceAdapter_set_Operation pbstrOperation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -685,6 +710,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.WebServiceAdapter_WSDLURL" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property WebServiceAdapter_WSDLURL As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ WebServiceAdapter_WSDLURL { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebServiceAdapter_WSDLURL : string" Usage="WebServiceAdapter_WSDLURL" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -694,7 +720,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -705,6 +731,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass.WSDLURL" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property WSDLURL As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ WSDLURL { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WSDLURL : string" Usage="WSDLURL" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.WSDLURL</InterfaceMember>
@@ -725,7 +752,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

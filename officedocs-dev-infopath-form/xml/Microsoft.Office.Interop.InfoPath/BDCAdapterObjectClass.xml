@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.BDCAdapterObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class BDCAdapterObjectClass&#xA;Implements BDCAdapterObject, IDataAdapterMOM" />
   <TypeSignature Language="C++ CLI" Value="public ref class BDCAdapterObjectClass : Microsoft::Office::Interop::InfoPath::BDCAdapterObject, Microsoft::Office::Interop::InfoPath::IDataAdapterMOM" />
+  <TypeSignature Language="F#" Value="type BDCAdapterObjectClass = class&#xA;    interface BDCAdapter&#xA;    interface BDCAdapterObject&#xA;    interface IDataAdapterMOM" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,7 +29,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.BDCAdapterObjectClass.EntityName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EntityName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EntityName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EntityName : string" Usage="EntityName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.BDCAdapter.EntityName</InterfaceMember>
@@ -58,8 +60,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.BDCAdapterObjectClass.EntityNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EntityNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EntityNamespace { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EntityNamespace : string" Usage="EntityNamespace" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.BDCAdapter.EntityNamespace</InterfaceMember>
@@ -89,8 +92,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.BDCAdapterObjectClass.GenerateDataSetDiffGramInXml" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GenerateDataSetDiffGramInXml () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GenerateDataSetDiffGramInXml() = Microsoft::Office::Interop::InfoPath::IDataAdapterMOM::GenerateDataSetDiffGramInXml;" />
+      <MemberSignature Language="F#" Value="abstract member GenerateDataSetDiffGramInXml : unit -&gt; string&#xA;override this.GenerateDataSetDiffGramInXml : unit -&gt; string" Usage="bDCAdapterObjectClass.GenerateDataSetDiffGramInXml " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.GenerateDataSetDiffGramInXml</InterfaceMember>
@@ -113,8 +117,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
+        <returns>Returns <see cref="T:System.String" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.BDCAdapterObjectClass.GetAdoSubmitName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetAdoSubmitName () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetAdoSubmitName() = Microsoft::Office::Interop::InfoPath::IDataAdapterMOM::GetAdoSubmitName;" />
+      <MemberSignature Language="F#" Value="abstract member GetAdoSubmitName : unit -&gt; string&#xA;override this.GetAdoSubmitName : unit -&gt; string" Usage="bDCAdapterObjectClass.GetAdoSubmitName " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.GetAdoSubmitName</InterfaceMember>
@@ -137,8 +142,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
+        <returns>Returns <see cref="T:System.String" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.BDCAdapterObjectClass.GetErrorXMLForMOM" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetErrorXMLForMOM () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetErrorXMLForMOM() = Microsoft::Office::Interop::InfoPath::IDataAdapterMOM::GetErrorXMLForMOM;" />
+      <MemberSignature Language="F#" Value="abstract member GetErrorXMLForMOM : unit -&gt; string&#xA;override this.GetErrorXMLForMOM : unit -&gt; string" Usage="bDCAdapterObjectClass.GetErrorXMLForMOM " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.GetErrorXMLForMOM</InterfaceMember>
@@ -161,8 +167,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
+        <returns>Returns <see cref="T:System.String" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.BDCAdapterObjectClass.LOBSystemInstance" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LOBSystemInstance As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ LOBSystemInstance { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LOBSystemInstance : string" Usage="LOBSystemInstance" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.BDCAdapter.LOBSystemInstance</InterfaceMember>
@@ -192,8 +199,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.BDCAdapterObjectClass.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Name" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.BDCAdapter.Name</InterfaceMember>
@@ -223,8 +231,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.BDCAdapterObjectClass.Query" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Query ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Query() = Microsoft::Office::Interop::InfoPath::BDCAdapter::Query;" />
+      <MemberSignature Language="F#" Value="abstract member Query : unit -&gt; unit&#xA;override this.Query : unit -&gt; unit" Usage="bDCAdapterObjectClass.Query " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.BDCAdapter.Query</InterfaceMember>
@@ -252,7 +261,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,6 +271,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.BDCAdapterObjectClass.QueryAllowed" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property QueryAllowed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool QueryAllowed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueryAllowed : bool" Usage="QueryAllowed" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.BDCAdapter.QueryAllowed</InterfaceMember>
@@ -282,8 +292,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
+        <value>Returns <see cref="T:System.Boolean" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.BDCAdapterObjectClass.QueryOrSubmitWithInputOutput(System.Boolean,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function QueryOrSubmitWithInputOutput (fInputIsNull As Boolean, bstrInputXML As String, fOutputIsNull As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ QueryOrSubmitWithInputOutput(bool fInputIsNull, System::String ^ bstrInputXML, bool fOutputIsNull) = Microsoft::Office::Interop::InfoPath::IDataAdapterMOM::QueryOrSubmitWithInputOutput;" />
+      <MemberSignature Language="F#" Value="abstract member QueryOrSubmitWithInputOutput : bool * string * bool -&gt; string&#xA;override this.QueryOrSubmitWithInputOutput : bool * string * bool -&gt; string" Usage="bDCAdapterObjectClass.QueryOrSubmitWithInputOutput (fInputIsNull, bstrInputXML, fOutputIsNull)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.QueryOrSubmitWithInputOutput(System.Boolean,System.String,System.Boolean)</InterfaceMember>
@@ -313,8 +324,8 @@
         <param name="fInputIsNull">To be added.</param>
         <param name="bstrInputXML">To be added.</param>
         <param name="fOutputIsNull">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
+        <returns>Returns <see cref="T:System.String" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,6 +335,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.BDCAdapterObjectClass.QueryWithOutput" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function QueryWithOutput () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ QueryWithOutput() = Microsoft::Office::Interop::InfoPath::IDataAdapterMOM::QueryWithOutput;" />
+      <MemberSignature Language="F#" Value="abstract member QueryWithOutput : unit -&gt; string&#xA;override this.QueryWithOutput : unit -&gt; string" Usage="bDCAdapterObjectClass.QueryWithOutput " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.QueryWithOutput</InterfaceMember>
@@ -337,8 +349,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
+        <returns>Returns <see cref="T:System.String" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -348,6 +360,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.BDCAdapterObjectClass.SpecificFinder" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SpecificFinder As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SpecificFinder { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SpecificFinder : string" Usage="SpecificFinder" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.BDCAdapter.SpecificFinder</InterfaceMember>
@@ -368,8 +381,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -379,6 +392,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.BDCAdapterObjectClass.Submit" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Submit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Submit() = Microsoft::Office::Interop::InfoPath::BDCAdapter::Submit;" />
+      <MemberSignature Language="F#" Value="abstract member Submit : unit -&gt; unit&#xA;override this.Submit : unit -&gt; unit" Usage="bDCAdapterObjectClass.Submit " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.BDCAdapter.Submit</InterfaceMember>
@@ -397,7 +411,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -407,6 +421,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.BDCAdapterObjectClass.SubmitAdapterName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SubmitAdapterName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SubmitAdapterName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubmitAdapterName : string" Usage="SubmitAdapterName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.BDCAdapter.SubmitAdapterName</InterfaceMember>
@@ -427,8 +442,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -438,6 +453,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.BDCAdapterObjectClass.SubmitAllowed" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SubmitAllowed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SubmitAllowed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubmitAllowed : bool" Usage="SubmitAllowed" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.BDCAdapter.SubmitAllowed</InterfaceMember>
@@ -458,8 +474,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
+        <value>Returns <see cref="T:System.Boolean" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -469,6 +485,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.BDCAdapterObjectClass.SubmitWithInput(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SubmitWithInput (bstrInputXML As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SubmitWithInput(System::String ^ bstrInputXML) = Microsoft::Office::Interop::InfoPath::IDataAdapterMOM::SubmitWithInput;" />
+      <MemberSignature Language="F#" Value="abstract member SubmitWithInput : string -&gt; unit&#xA;override this.SubmitWithInput : string -&gt; unit" Usage="bDCAdapterObjectClass.SubmitWithInput bstrInputXML" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM.SubmitWithInput(System.String)</InterfaceMember>
@@ -485,7 +502,7 @@
       </Parameters>
       <Docs>
         <param name="bstrInputXML">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

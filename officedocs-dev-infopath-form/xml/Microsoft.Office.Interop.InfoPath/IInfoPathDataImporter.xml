@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter" />
   <TypeSignature Language="VB.NET" Value="Public Interface IInfoPathDataImporter" />
   <TypeSignature Language="C++ CLI" Value="public interface class IInfoPathDataImporter" />
+  <TypeSignature Language="F#" Value="type IInfoPathDataImporter = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -21,8 +22,46 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The interface developers must implement to provide a custom data importer for InfoPath forms.</summary>
+    <remarks>
+      <para>When a custom data importer is registered for use with InfoPath, it is listed on the Import Form Data dialog box, which is accessed by clicking Import Form Data on the File menu. The following registry keys and values are required for a custom data importer.</para>
+      <list type="table">
+        <item>
+          <term>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\12.0\InfoPath\</term>
+          <description>Data Importers</description>
+          <description>Key</description>
+        </item>
+        <item>
+          <term>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\12.0\InfoPath\Data Importers\</term>
+          <description>ImporterClass.Class1</description>
+          <description>Key</description>
+        </item>
+        <item>
+          <term>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\12.0\InfoPath\Data Importers\ImporterClass.Class1\</term>
+          <description>DefaultLCID</description>
+          <description>REG_SZ</description>
+        </item>
+        <item>
+          <term>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\12.0\InfoPath\Data Importers\ImporterClass.Class1\</term>
+          <description>LCID</description>
+          <description>Key</description>
+        </item>
+        <item>
+          <term>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\12.0\InfoPath\Data Importers\ImporterClass.Class1\LCID</term>
+          <description>Name</description>
+          <description>REG_SZ</description>
+        </item>
+        <item>
+          <term>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\12.0\InfoPath\Data Importers\ImporterClass.Class1\LCID</term>
+          <description>Description</description>
+          <description>REG_SZ</description>
+        </item>
+      </list>
+      <para>ImporterClass.Class1 and LCID should be changed to reflect the COM class name and supported LCIDs of your custom data importer.</para>
+      <para>Each data importer must have a registry key under the <b>Data Importers</b> key, with a value corresponding to the COM class name. Under this key, a string (REG_SZ) value called "DefaultLCID" must be present with a data value of the default Locale ID (LCID), such as "1033" for US English. All languages supported by the data importer, including the default language, must have an LCID key under the COM class name corresponding to the supported LCID. At least one LCID is required, and is the default LCID, but any number of LCID keys can be present depending on the number of locales the custom data importer supports. Each LCID key must contain a string (REG_SZ) value called "Name" and a second but optional string value called "Description" which are shown in the Import Form Data dialog box. If there is no entry for the current language, InfoPath will display the strings provided for the language specified as the <b>DefaultLCID</b> value.</para>
+      <para>For more information about programmatically importing data into an InfoPath form, see the <a href="http://go.microsoft.com/fwlink/?LinkID=11689">InfoPath Developer Portal</a>Microsoft Office Developer Center.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Import">
@@ -31,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter.Import(Microsoft.Office.Interop.InfoPath.IPropertyBag,mshtml.IEnumUnknown)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Import (pPrintSettings As IPropertyBag, punkViewControls As IEnumUnknown)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Import(Microsoft::Office::Interop::InfoPath::IPropertyBag ^ pPrintSettings, mshtml::IEnumUnknown ^ punkViewControls);" />
+      <MemberSignature Language="F#" Value="abstract member Import : Microsoft.Office.Interop.InfoPath.IPropertyBag * mshtml.IEnumUnknown -&gt; unit" Usage="iInfoPathDataImporter.Import (pPrintSettings, punkViewControls)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -44,10 +84,94 @@
         <Parameter Name="punkViewControls" Type="mshtml.IEnumUnknown" />
       </Parameters>
       <Docs>
-        <param name="pPrintSettings">To be added.</param>
-        <param name="punkViewControls">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pPrintSettings">A collection of print settings.</param>
+        <param name="punkViewControls">An <b>mshtml.IEnumUnknown</b> collection of controls in the view.</param>
+        <summary>Imports data into the current form.</summary>
+        <remarks>
+          <para>The following print settings are available through the <see cref="T:Microsoft.Office.Interop.InfoPath.IPropertyBag" /> interface.</para>
+          <list type="table">
+            <item>
+              <term>PageSize</term>
+              <description>The current page size, such as A4, B4, Letter.</description>
+            </item>
+            <item>
+              <term>TopMargin</term>
+              <description>The top margin of the current view.</description>
+            </item>
+            <item>
+              <term>BottomMargin</term>
+              <description>The bottom margin of the current view.</description>
+            </item>
+            <item>
+              <term>LeftMargin</term>
+              <description>The left margin of the current view.</description>
+            </item>
+            <item>
+              <term>RightMargin</term>
+              <description>The right margin of the current view.</description>
+            </item>
+            <item>
+              <term>MarginUnitsType</term>
+              <description>The margin measurement units.</description>
+            </item>
+          </list>
+          <para>For more information about programmatically importing data into an InfoPath form, see the <a href="http://go.microsoft.com/fwlink/?LinkID=11689">InfoPath Developer Portal</a>Microsoft Office Developer Center.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>Import</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter" /> interface is used to iterate through the <b>mshtml.IEnumUnknown</b> collection of <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl" /> controls in the view of the active form.</para>
+          <para>The <b>Import</b> routine is the main part of a solution used to build a custom data importer. The Visual Studio project requires a reference to the Microsoft Office InfoPath 2.0 Type Library and <b>System.Windows.Forms</b>, with <b>Imports</b> statements for each as well as <b>mshtml.Implements</b> statements are required to generate the signatures for the methods provided by the custom data importer interfaces, including <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter" />, <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields" />, <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl" />, and <see cref="T:Microsoft.Office.Interop.InfoPath.IPropertyBag" />.</para>
+          <para>
+            <b>Note</b>: To build a custom data importer using a .NET class library, check the Register for COM interop check box on the Compile tab of the class properties editor.</para>
+          <para>
+            <b>Note</b>: To debug a custom data importer, set a Start Action in Visual Studio to Start an external program, and browse to INFOPATH.EXE located at &lt;drive&gt;:\Program Files\Microsoft Office\Office12\. This option is available on the Debug tab of the class properties editor.</para>
+          <code>Imports Microsoft.Office.Interop.InfoPath
+Imports System.Windows.Forms
+Imports mshtml
+
+&amp;lt;ComClass(Class1.ClassId, Class1.InterfaceId, Class1.EventsId)&amp;gt; Public Class Class1
+   Implements Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter
+   Implements Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields
+   Implements Microsoft.Office.Interop.InfoPath.IInfoPathViewControl
+   Implements Microsoft.Office.Interop.InfoPath.IPropertyBag
+
+   Public Const ClassId As String = _
+      "1FEB0DF8-E7F1-4b21-A9EE-B06D5FECC572"
+   Public Const InterfaceId As String = _
+      "9F9F685C-71A0-46ec-A7F9-A86AF8CBC2A8"
+   Public Const EventsId As String = _
+      "ED7C0C49-3F89-40a2-A50E-C59E8F682B08" 
+
+Public Sub Import( _
+   ByVal pPrintSettings As Microsoft.Office.Interop.InfoPath.IPropertyBag, _
+   ByVal punkViewControls As mshtml.IEnumUnknown) _
+   Implements Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter.Import
+
+   Dim pControl As IInfoPathViewControl
+   Dim pUnk As Object
+   Dim pcelt As UInt16 = 1
+   Dim pceltFetched As UInt16 = 0
+
+   Try
+      'Gets first control in the view
+      punkViewControls.RemoteNext(pcelt, pUnk, pceltFetched)
+
+      Do While pUnk.ToString() &amp;lt;&amp;gt; "Nothing"
+         pControl = pUnk
+         MessageBox.Show(pControl.ControlType)
+         'Gets next control in the view
+         punkViewControls.RemoteNext(pcelt, pUnk, pceltFetched)
+      Loop
+   Catch e As Exception
+      If e.Message = _
+         "Object reference not set to an instance of an object." Then
+         'Signals the end of the enumeration/controls in the view
+      Else
+         MessageBox.Show("Error: " &amp;amp; e.ToString &amp;amp; " " &amp;amp; e.Message)
+      End If
+   End Try
+End Sub</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -56,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter.Initialize(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize (lcid As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize(System::UInt32 lcid);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : uint32 -&gt; unit" Usage="iInfoPathDataImporter.Initialize lcid" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -68,9 +193,13 @@
         <Parameter Name="lcid" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="lcid">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="lcid">The locale ID of the language used to display localized strings.</param>
+        <summary>Initializes the <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter" /> interface.</summary>
+        <remarks>
+          <para>The <b>Initialize</b> method is called automatically before the <see cref="M:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter.Import(Microsoft.Office.Interop.InfoPath.IPropertyBag,mshtml.IEnumUnknown)" /> method. The <see cref="M:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter.Uninitialize" /> method is also called automatically.</para>
+          <para>For more information about programmatically importing data into an InfoPath form, see the <a href="http://go.microsoft.com/fwlink/?LinkID=11689">InfoPath Developer Portal</a>Microsoft Office Developer Center.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Uninitialize">
@@ -79,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter.Uninitialize" />
       <MemberSignature Language="VB.NET" Value="Public Sub Uninitialize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Uninitialize();" />
+      <MemberSignature Language="F#" Value="abstract member Uninitialize : unit -&gt; unit" Usage="iInfoPathDataImporter.Uninitialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -89,8 +219,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Uninitializes the <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter" /> interface.</summary>
+        <remarks>
+          <para>InfoPath calls the <see cref="M:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter.Initialize(System.UInt32)" /> method before calling the <see cref="M:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter.Import(Microsoft.Office.Interop.InfoPath.IPropertyBag,mshtml.IEnumUnknown)" /> method, and then calls the <b>Uninitialize</b> method after importing is complete.</para>
+          <para>For more information about programmatically importing data into an InfoPath form, see the <a href="http://go.microsoft.com/fwlink/?LinkID=11689">InfoPath Developer Portal</a>Microsoft Office Developer Center.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
   </Members>

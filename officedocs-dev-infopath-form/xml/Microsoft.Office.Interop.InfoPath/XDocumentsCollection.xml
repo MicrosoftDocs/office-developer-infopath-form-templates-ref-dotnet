@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XDocumentsCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface XDocumentsCollection&#xA;Implements XDocuments2" />
   <TypeSignature Language="C++ CLI" Value="public interface class XDocumentsCollection : Microsoft::Office::Interop::InfoPath::XDocuments2" />
+  <TypeSignature Language="F#" Value="type XDocumentsCollection = interface&#xA;    interface XDocuments2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains an <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object for each form that is currently open.</summary>
+    <remarks>
+      <para>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.XDocuments2" />.</para>
+      <para>The <b>XDocumentsCollection</b> implements a number of properties and methods that can be used to access a form's associated <b>XDocument</b> object, or to create and open the forms themselves. The <b>XDocumentsCollection</b> is accessed through the <see cref="P:Microsoft.Office.Interop.InfoPath._Application2.XDocuments" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.Application" /> object.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members />
 </Type>

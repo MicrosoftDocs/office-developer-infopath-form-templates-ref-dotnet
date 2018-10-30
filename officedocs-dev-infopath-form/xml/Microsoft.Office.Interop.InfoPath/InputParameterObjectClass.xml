@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.InputParameterObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class InputParameterObjectClass&#xA;Implements InputParameterObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class InputParameterObjectClass : Microsoft::Office::Interop::InfoPath::InputParameterObject" />
+  <TypeSignature Language="F#" Value="type InputParameterObjectClass = class&#xA;    interface InputParameter&#xA;    interface InputParameterObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -25,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.InputParameterObjectClass.Name" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Name" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.InputParameter.Name</InterfaceMember>
@@ -55,7 +57,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.InputParameterObjectClass.Value" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Value { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="Value" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.InputParameter.Value</InterfaceMember>
@@ -86,7 +89,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

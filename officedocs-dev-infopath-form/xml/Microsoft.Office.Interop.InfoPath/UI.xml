@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.UI" />
   <TypeSignature Language="VB.NET" Value="Public Interface UI" />
   <TypeSignature Language="C++ CLI" Value="public interface class UI" />
+  <TypeSignature Language="F#" Value="type UI = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about the later version of this interface, including usage remarks and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.UI2" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UI.Alert(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Alert (bstrAlertString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Alert(System::String ^ bstrAlertString);" />
+      <MemberSignature Language="F#" Value="abstract member Alert : string -&gt; unit" Usage="uI.Alert bstrAlertString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -46,7 +48,7 @@
       </Parameters>
       <Docs>
         <param name="bstrAlertString">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="M:Microsoft.Office.Interop.InfoPath.UI2.Alert(System.String)" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UI.ShowMailItem(System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowMailItem (bstrTo As String, bstrCC As String, bstrBCC As String, bstrSubject As String, bstrBody As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowMailItem(System::String ^ bstrTo, System::String ^ bstrCC, System::String ^ bstrBCC, System::String ^ bstrSubject, System::String ^ bstrBody);" />
+      <MemberSignature Language="F#" Value="abstract member ShowMailItem : string * string * string * string * string -&gt; unit" Usage="uI.ShowMailItem (bstrTo, bstrCC, bstrBCC, bstrSubject, bstrBody)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -82,7 +85,7 @@
         <param name="bstrBCC">To be added.</param>
         <param name="bstrSubject">To be added.</param>
         <param name="bstrBody">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="M:Microsoft.Office.Interop.InfoPath.UI2.ShowMailItem(System.String,System.String,System.String,System.String,System.String)" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,6 +94,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ShowModalDialog([in]string bstrName, [in]object varArguments, [in]object varHeight, [in]object varWidth, [in]object varTop, [in]object varLeft) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UI.ShowModalDialog(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShowModalDialog (bstrName As String, Optional varArguments As Object, Optional varHeight As Object, Optional varWidth As Object, Optional varTop As Object, Optional varLeft As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member ShowModalDialog : string * obj * obj * obj * obj * obj -&gt; obj" Usage="uI.ShowModalDialog (bstrName, varArguments, varHeight, varWidth, varTop, varLeft)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -119,7 +123,7 @@
         <param name="varWidth">To be added.</param>
         <param name="varTop">To be added.</param>
         <param name="varLeft">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="M:Microsoft.Office.Interop.InfoPath.UI2.ShowModalDialog(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -130,6 +134,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.UI.ShowSignatureDialog" />
       <MemberSignature Language="VB.NET" Value="Public Sub ShowSignatureDialog ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowSignatureDialog();" />
+      <MemberSignature Language="F#" Value="abstract member ShowSignatureDialog : unit -&gt; unit" Usage="uI.ShowSignatureDialog " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -145,7 +150,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member is a wrapper for a member of a COM interface that has been superseded by a later version. The later version of this interface implements all members of earlier interfaces and additional new members. For information about this member as it is implemented in the later interface, including usage, remarks, and examples, see<see cref="M:Microsoft.Office.Interop.InfoPath.UI2.ShowSignatureDialog" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
