@@ -620,35 +620,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="XDocumentBeforeSave">
-      <MemberSignature Language="C#" Value="public override void XDocumentBeforeSave (Microsoft.Office.Interop.InfoPath._XDocument , ref bool );" />
-      <MemberSignature Language="ILAsm" Value=".method public virtual instance void XDocumentBeforeSave(class Microsoft.Office.Interop.InfoPath._XDocument , bool&amp; ) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.XDocumentBeforeSave(Microsoft.Office.Interop.InfoPath._XDocument,System.Boolean@)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Sub XDocumentBeforeSave ( As _XDocument, ByRef  As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void XDocumentBeforeSave(Microsoft::Office::Interop::InfoPath::_XDocument ^ , bool % );" />
-      <MemberSignature Language="F#" Value="abstract member XDocumentBeforeSave : Microsoft.Office.Interop.InfoPath._XDocument *  -&gt; unit&#xA;override this.XDocumentBeforeSave : Microsoft.Office.Interop.InfoPath._XDocument *  -&gt; unit" Usage="_ApplicationEvents_SinkHelper.XDocumentBeforeSave (, )" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents.XDocumentBeforeSave(Microsoft.Office.Interop.InfoPath._XDocument,System.Boolean)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
-        <AssemblyVersion>15.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="" Type="System.Boolean" />
-        <Parameter Name="" Type="System.Boolean&amp;" RefType="ref" />
-      </Parameters>
-      <Docs>
-        <param name="">To be added.</param>
-        <param name="">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="XDocumentChange">
       <MemberSignature Language="C#" Value="public override void XDocumentChange ();" />
       <MemberSignature Language="ILAsm" Value=".method public virtual instance void XDocumentChange() cil managed" />
