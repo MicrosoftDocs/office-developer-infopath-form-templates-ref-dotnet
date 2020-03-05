@@ -330,35 +330,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="WindowActivate">
-      <MemberSignature Language="C#" Value="public override void WindowActivate (Microsoft.Office.Interop.InfoPath._XDocument , Microsoft.Office.Interop.InfoPath.Window );" />
-      <MemberSignature Language="ILAsm" Value=".method public virtual instance void WindowActivate(class Microsoft.Office.Interop.InfoPath._XDocument , class Microsoft.Office.Interop.InfoPath.Window ) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.WindowActivate(Microsoft.Office.Interop.InfoPath._XDocument,Microsoft.Office.Interop.InfoPath.Window)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WindowActivate ( As _XDocument,  As Window)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WindowActivate(Microsoft::Office::Interop::InfoPath::_XDocument ^ , Microsoft::Office::Interop::InfoPath::Window ^ );" />
-      <MemberSignature Language="F#" Value="abstract member WindowActivate : Microsoft.Office.Interop.InfoPath._XDocument * Microsoft.Office.Interop.InfoPath.Window -&gt; unit&#xA;override this.WindowActivate : Microsoft.Office.Interop.InfoPath._XDocument * Microsoft.Office.Interop.InfoPath.Window -&gt; unit" Usage="_ApplicationEvents_SinkHelper.WindowActivate (, )" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents.WindowActivate(Microsoft.Office.Interop.InfoPath._XDocument,Microsoft.Office.Interop.InfoPath.Window)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
-        <AssemblyVersion>15.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath.Window" />
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath.Window" />
-      </Parameters>
-      <Docs>
-        <param name="">To be added.</param>
-        <param name="">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="WindowDeactivate">
       <MemberSignature Language="C#" Value="public override void WindowDeactivate (Microsoft.Office.Interop.InfoPath._XDocument , Microsoft.Office.Interop.InfoPath.Window );" />
       <MemberSignature Language="ILAsm" Value=".method public virtual instance void WindowDeactivate(class Microsoft.Office.Interop.InfoPath._XDocument , class Microsoft.Office.Interop.InfoPath.Window ) cil managed" />
@@ -369,64 +340,6 @@
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents.WindowDeactivate(Microsoft.Office.Interop.InfoPath._XDocument,Microsoft.Office.Interop.InfoPath.Window)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
-        <AssemblyVersion>15.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath.Window" />
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath.Window" />
-      </Parameters>
-      <Docs>
-        <param name="">To be added.</param>
-        <param name="">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="WindowDeactivate">
-      <MemberSignature Language="C#" Value="public override void WindowDeactivate (Microsoft.Office.Interop.InfoPath._XDocument , Microsoft.Office.Interop.InfoPath.Window );" />
-      <MemberSignature Language="ILAsm" Value=".method public virtual instance void WindowDeactivate(class Microsoft.Office.Interop.InfoPath._XDocument , class Microsoft.Office.Interop.InfoPath.Window ) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.WindowDeactivate(Microsoft.Office.Interop.InfoPath._XDocument,Microsoft.Office.Interop.InfoPath.Window)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WindowDeactivate ( As _XDocument,  As Window)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WindowDeactivate(Microsoft::Office::Interop::InfoPath::_XDocument ^ , Microsoft::Office::Interop::InfoPath::Window ^ );" />
-      <MemberSignature Language="F#" Value="abstract member WindowDeactivate : Microsoft.Office.Interop.InfoPath._XDocument * Microsoft.Office.Interop.InfoPath.Window -&gt; unit&#xA;override this.WindowDeactivate : Microsoft.Office.Interop.InfoPath._XDocument * Microsoft.Office.Interop.InfoPath.Window -&gt; unit" Usage="_ApplicationEvents_SinkHelper.WindowDeactivate (, )" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents.WindowDeactivate(Microsoft.Office.Interop.InfoPath._XDocument,Microsoft.Office.Interop.InfoPath.Window)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
-        <AssemblyVersion>15.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath.Window" />
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath.Window" />
-      </Parameters>
-      <Docs>
-        <param name="">To be added.</param>
-        <param name="">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="WindowSize">
-      <MemberSignature Language="C#" Value="public override void WindowSize (Microsoft.Office.Interop.InfoPath._XDocument , Microsoft.Office.Interop.InfoPath.Window );" />
-      <MemberSignature Language="ILAsm" Value=".method public virtual instance void WindowSize(class Microsoft.Office.Interop.InfoPath._XDocument , class Microsoft.Office.Interop.InfoPath.Window ) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_SinkHelper.WindowSize(Microsoft.Office.Interop.InfoPath._XDocument,Microsoft.Office.Interop.InfoPath.Window)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WindowSize ( As _XDocument,  As Window)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WindowSize(Microsoft::Office::Interop::InfoPath::_XDocument ^ , Microsoft::Office::Interop::InfoPath::Window ^ );" />
-      <MemberSignature Language="F#" Value="abstract member WindowSize : Microsoft.Office.Interop.InfoPath._XDocument * Microsoft.Office.Interop.InfoPath.Window -&gt; unit&#xA;override this.WindowSize : Microsoft.Office.Interop.InfoPath._XDocument * Microsoft.Office.Interop.InfoPath.Window -&gt; unit" Usage="_ApplicationEvents_SinkHelper.WindowSize (, )" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents.WindowSize(Microsoft.Office.Interop.InfoPath._XDocument,Microsoft.Office.Interop.InfoPath.Window)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
