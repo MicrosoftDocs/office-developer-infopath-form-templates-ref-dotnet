@@ -1,4 +1,4 @@
-﻿<Type Name="SignedDataBlockObject" FullName="Microsoft.Office.Interop.InfoPath.SignedDataBlockObject">
+<Type Name="SignedDataBlockObject" FullName="Microsoft.Office.Interop.InfoPath.SignedDataBlockObject">
   <TypeSignature Language="C#" Value="public interface SignedDataBlockObject : Microsoft.Office.Interop.InfoPath.SignedDataBlock" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SignedDataBlockObject implements class Microsoft.Office.Interop.InfoPath.SignedDataBlock" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" />

@@ -1,4 +1,4 @@
-﻿<Type Name="ErrorObjectClass" FullName="Microsoft.Office.Interop.InfoPath.ErrorObjectClass">
+<Type Name="ErrorObjectClass" FullName="Microsoft.Office.Interop.InfoPath.ErrorObjectClass">
   <TypeSignature Language="C#" Value="public class ErrorObjectClass : Microsoft.Office.Interop.InfoPath.ErrorObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ErrorObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.Error, class Microsoft.Office.Interop.InfoPath.ErrorObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ErrorObjectClass" />
@@ -13,6 +13,9 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.Error</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.ErrorObject</InterfaceName>
     </Interface>

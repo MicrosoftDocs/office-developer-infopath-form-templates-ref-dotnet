@@ -1,4 +1,4 @@
-﻿<Type Name="InputParameterObjectClass" FullName="Microsoft.Office.Interop.InfoPath.InputParameterObjectClass">
+<Type Name="InputParameterObjectClass" FullName="Microsoft.Office.Interop.InfoPath.InputParameterObjectClass">
   <TypeSignature Language="C#" Value="public class InputParameterObjectClass : Microsoft.Office.Interop.InfoPath.InputParameterObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi InputParameterObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.InputParameter, class Microsoft.Office.Interop.InfoPath.InputParameterObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.InputParameterObjectClass" />
@@ -13,6 +13,9 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.InputParameter</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.InputParameterObject</InterfaceName>
     </Interface>

@@ -1,4 +1,4 @@
-﻿<Type Name="SolutionObjectClass" FullName="Microsoft.Office.Interop.InfoPath.SolutionObjectClass">
+<Type Name="SolutionObjectClass" FullName="Microsoft.Office.Interop.InfoPath.SolutionObjectClass">
   <TypeSignature Language="C#" Value="public class SolutionObjectClass : Microsoft.Office.Interop.InfoPath.Solution2, Microsoft.Office.Interop.InfoPath.SolutionObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi SolutionObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.Solution, class Microsoft.Office.Interop.InfoPath.Solution2, class Microsoft.Office.Interop.InfoPath.SolutionObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SolutionObjectClass" />
@@ -13,6 +13,9 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.Solution</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.Solution2</InterfaceName>
     </Interface>

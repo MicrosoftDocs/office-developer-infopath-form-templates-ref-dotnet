@@ -1,4 +1,4 @@
-﻿<Type Name="DateObject" FullName="Microsoft.Office.Interop.InfoPath.DateObject">
+<Type Name="DateObject" FullName="Microsoft.Office.Interop.InfoPath.DateObject">
   <TypeSignature Language="C#" Value="public interface DateObject : Microsoft.Office.Interop.InfoPath.Date" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DateObject implements class Microsoft.Office.Interop.InfoPath.Date" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DateObject" />

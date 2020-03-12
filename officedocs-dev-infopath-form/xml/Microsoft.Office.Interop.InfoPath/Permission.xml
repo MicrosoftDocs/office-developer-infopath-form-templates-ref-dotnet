@@ -1,4 +1,4 @@
-﻿<Type Name="Permission" FullName="Microsoft.Office.Interop.InfoPath.Permission">
+<Type Name="Permission" FullName="Microsoft.Office.Interop.InfoPath.Permission">
   <TypeSignature Language="C#" Value="public interface Permission : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Permission implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Permission" />

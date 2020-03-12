@@ -11,6 +11,9 @@
   </AssemblyInfo>
   <Interfaces>
     <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath._Application</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath._Application2</InterfaceName>
     </Interface>
   </Interfaces>
@@ -60,13 +63,6 @@
           <para>Using the <b>ActiveWindow</b> property, you can gain immediate access to the window that is currently being viewed by the user, and then use the properties and methods of the <b>Window</b> object that it returns.</para>
           <para />
         </remarks>
-        <example>
-          <para>In the following example, the <b>ActiveWindow</b> property is used to gain access to the <see cref="P:Microsoft.Office.Interop.InfoPath.Window2.MailEnvelope" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object that returns a <see cref="T:Microsoft.Office.Interop.InfoPath.MailEnvelopeObject" /> object.</para>
-          <code>MailEnvelope email = thisApplication.&lt;span class="label"&gt;ActiveWindow&lt;/span&gt;.MailEnvelope;
-email.Subject = getNode(@"/mtg:meetingAgenda/mtg:subject").text;
-email.To = aliases + "; ";
-email.Visible = true;</code>
-        </example>
         <example>
           <para>In the following example, the <b>ActiveWindow</b> property is used to gain access to the <see cref="P:Microsoft.Office.Interop.InfoPath.Window2.MailEnvelope" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object that returns a <see cref="T:Microsoft.Office.Interop.InfoPath.MailEnvelopeObject" /> object.</para>
           <code>MailEnvelope email = thisApplication.&lt;span class="label"&gt;ActiveWindow&lt;/span&gt;.MailEnvelope;
@@ -131,28 +127,6 @@ private void CacheFormTemplate(string[] forms)
  }
 }</code>
         </example>
-        <example>
-          <code>private string[] _forms = 
-{ 
-@"\\MyServer\MyForms\MyForm.xsn", 
-@"\\MyServer\MyForms\manifest.xsf" 
-};
-
-private void someFunction()
-{
-…
-CacheFormTemplate(_forms);
-…
-}
-
-private void CacheFormTemplate(string[] forms)
-{ 
- foreach (string form in forms)
- {
-  thisApplication.&lt;span class="label"&gt;CacheSolution&lt;/span&gt;(form);
- }
-}</code>
-        </example>
       </Docs>
     </Member>
     <Member MemberName="COMAddIns">
@@ -186,28 +160,6 @@ private void CacheFormTemplate(string[] forms)
           <para>To use the <b>COMAddIns</b> property to access the <b>Microsoft.Office.Core.COMAddIns</b> object, you must cast the object returned by the InfoPath <b>COMAddIns</b> property to the Office <b>COMAddIns</b> type as shown in the code example.</para>
           <para />
         </remarks>
-        <example>
-          <para>The following example accesses the first item in the <b>COMAddIns</b> collection that is returned by the <b>ComAddIns</b> property.</para>
-          <code>object objectReference = 1;
-
-Microsoft.Office.Interop.InfoPath.Application app = 
-   new Microsoft.Office.Interop.InfoPath.ApplicationClass();
-
-Microsoft.Office.Core.COMAddIns myCOMAddIns = 
-   (Microsoft.Office.Core.COMAddIns)(app.COMAddIns);
-
-Microsoft.Office.Core.COMAddIn myCOMAddIn = 
-   myCOMAddIns.Item(ref objectReference);</code>
-          <code>Dim objectReference As Object = 1
-
-Dim app As New Microsoft.Office.Interop.InfoPath.ApplicationClass
-
-Dim myCOMAddIns As Microsoft.Office.Core.COMAddIns = _
-   DirectCast(app.COMAddIns, Microsoft.Office.Core.COMAddIns)
-
-Dim myCOMAddIn As Microsoft.Office.Core.COMAddIn = _
-   myCOMAddIns.Item(objectReference)</code>
-        </example>
         <example>
           <para>The following example accesses the first item in the <b>COMAddIns</b> collection that is returned by the <b>ComAddIns</b> property.</para>
           <code>object objectReference = 1;
@@ -481,17 +433,6 @@ MessageBox.Show(app.GetFormSolutionURI(
 MessageBox.Show(app.GetFormSolutionURI( _
    "37d5ef02fa44a797$"))</code>
         </example>
-        <example>
-          <para>In the following example, a cache ID value is passed to the <b>GetSolutionURI</b> method to display the published location of the form template.</para>
-          <code>Microsoft.Office.Interop.InfoPath.Application app = 
-   new Microsoft.Office.Interop.InfoPath.ApplicationClass();
-
-MessageBox.Show(app.GetFormSolutionURI(
-   "37d5ef02fa44a797$"));</code>
-          <code>Dim app As New Microsoft.Office.Interop.InfoPath.ApplicationClass
-MessageBox.Show(app.GetFormSolutionURI( _
-   "37d5ef02fa44a797$"))</code>
-        </example>
       </Docs>
     </Member>
     <Member MemberName="IsDestinationReachable">
@@ -564,15 +505,6 @@ MessageBox.Show(app.GetFormSolutionURI( _
           <para>After you establish a reference to the <b>LanguageSettings</b> object, you can access all the properties and methods of the object.</para>
           <para />
         </remarks>
-        <example>
-          <para>The following example uses the <b>LanguageID</b> property of the <b>LanguageSettings</b> object to return the LCID value (a four-digit number) for the language that is currently being used for the Office help system:</para>
-          <code>LanguageSettings languageSettings = (LanguageSettings) thisApplication.LanguageSettings;   
-int lcid = languageSettings.get_LanguageID(MsoAppLanguageID.msoLanguageIDHelp);</code>
-          <para>
-            <b>Note</b>: The above example requires the <b>Microsoft.Office.Core</b> namespace and a reference to the Microsoft Office 14.0 Object Library.</para>
-          <para>
-            <b>Important</b>: The above example requires the form have a Full Trust Security Level.</para>
-        </example>
         <example>
           <para>The following example uses the <b>LanguageID</b> property of the <b>LanguageSettings</b> object to return the LCID value (a four-digit number) for the language that is currently being used for the Office help system:</para>
           <code>LanguageSettings languageSettings = (LanguageSettings) thisApplication.LanguageSettings;   
@@ -815,18 +747,6 @@ int lcid = languageSettings.get_LanguageID(MsoAppLanguageID.msoLanguageIDHelp);<
           <para>
             <b>Note</b>: The above example assumes that the <see cref="N:Microsoft.Office.Interop.InfoPath" /> namespace is being used and that the Microsoft InfoPath 3.0 Type Library is referenced.</para>
         </example>
-        <example>
-          <para>In the following C# example, the <b>RegisterSolution</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.Application" /> object is used to install a form template:</para>
-          <code>public void InstallForm()
-{
-   Microsoft.Office.Interop.InfoPath.Application infoPath = 
-      new Microsoft.Office.Interop.InfoPath.ApplicationClass();
-   infoPath.&lt;span class="label"&gt;RegisterSolution&lt;/span&gt;(@"C:\My Forms\MyFormTemplate.xsn", 
-      "overwrite");
-}</code>
-          <para>
-            <b>Note</b>: The above example assumes that the <see cref="N:Microsoft.Office.Interop.InfoPath" /> namespace is being used and that the Microsoft InfoPath 3.0 Type Library is referenced.</para>
-        </example>
       </Docs>
     </Member>
     <Member MemberName="UnregisterSolution">
@@ -862,16 +782,6 @@ int lcid = languageSettings.get_LanguageID(MsoAppLanguageID.msoLanguageIDHelp);<
           <para>If the form template cannot be unregistered, the <b>UnregisterSolution</b> method will return an error.</para>
           <para />
         </remarks>
-        <example>
-          <code>public void UninstallForm()
-{
-   Microsoft.Office.Interop.InfoPath.Application infoPath = 
-      new Microsoft.Office.Interop.InfoPath.ApplicationClass();
-   infoPath.&lt;span class="label"&gt;UnregisterSolution&lt;/span&gt;(@"C:\My Forms\MyFormTemplate.xsn");
-}</code>
-          <para>
-            <b>Note</b>: The above example assumes that the <see cref="N:Microsoft.Office.Interop.InfoPath" /> namespace is being used and that the Microsoft InfoPath 3.0 Type Library is referenced.</para>
-        </example>
         <example>
           <code>public void UninstallForm()
 {

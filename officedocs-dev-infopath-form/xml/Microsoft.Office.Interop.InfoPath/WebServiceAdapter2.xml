@@ -1,4 +1,4 @@
-﻿<Type Name="WebServiceAdapter2" FullName="Microsoft.Office.Interop.InfoPath.WebServiceAdapter2">
+<Type Name="WebServiceAdapter2" FullName="Microsoft.Office.Interop.InfoPath.WebServiceAdapter2">
   <TypeSignature Language="C#" Value="public interface WebServiceAdapter2 : Microsoft.Office.Interop.InfoPath.WebServiceAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WebServiceAdapter2 implements class Microsoft.Office.Interop.InfoPath.WebServiceAdapter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2" />

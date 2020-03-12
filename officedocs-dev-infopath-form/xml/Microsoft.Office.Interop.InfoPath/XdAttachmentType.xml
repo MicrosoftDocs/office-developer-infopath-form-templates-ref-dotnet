@@ -1,4 +1,4 @@
-﻿<Type Name="XdAttachmentType" FullName="Microsoft.Office.Interop.InfoPath.XdAttachmentType">
+<Type Name="XdAttachmentType" FullName="Microsoft.Office.Interop.InfoPath.XdAttachmentType">
   <TypeSignature Language="C#" Value="public enum XdAttachmentType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XdAttachmentType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XdAttachmentType" />

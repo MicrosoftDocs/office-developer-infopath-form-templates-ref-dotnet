@@ -1,4 +1,4 @@
-﻿<Type Name="ApplicationEventsClass" FullName="Microsoft.Office.Interop.InfoPath.ApplicationEventsClass">
+<Type Name="ApplicationEventsClass" FullName="Microsoft.Office.Interop.InfoPath.ApplicationEventsClass">
   <TypeSignature Language="C#" Value="public class ApplicationEventsClass : Microsoft.Office.Interop.InfoPath.ApplicationEvents" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ApplicationEventsClass extends System.Object implements class Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event, class Microsoft.Office.Interop.InfoPath.ApplicationEvents, class Microsoft.Office.Interop.InfoPath.ApplicationEventsEmpty" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass" />
@@ -14,7 +14,13 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.ApplicationEvents</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.ApplicationEventsEmpty</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>

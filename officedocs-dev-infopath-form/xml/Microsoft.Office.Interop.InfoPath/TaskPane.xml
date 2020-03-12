@@ -1,4 +1,4 @@
-﻿<Type Name="TaskPane" FullName="Microsoft.Office.Interop.InfoPath.TaskPane">
+<Type Name="TaskPane" FullName="Microsoft.Office.Interop.InfoPath.TaskPane">
   <TypeSignature Language="C#" Value="public interface TaskPane" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TaskPane" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.TaskPane" />

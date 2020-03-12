@@ -1,4 +1,4 @@
-﻿<Type Name="View3" FullName="Microsoft.Office.Interop.InfoPath.View3">
+<Type Name="View3" FullName="Microsoft.Office.Interop.InfoPath.View3">
   <TypeSignature Language="C#" Value="public interface View3 : Microsoft.Office.Interop.InfoPath.View2" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract View3 implements class Microsoft.Office.Interop.InfoPath.View2" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.View3" />
@@ -10,6 +10,9 @@
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.View</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.View2</InterfaceName>
     </Interface>

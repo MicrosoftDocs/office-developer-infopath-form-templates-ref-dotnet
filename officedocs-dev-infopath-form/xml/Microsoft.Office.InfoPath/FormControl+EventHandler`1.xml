@@ -1,4 +1,4 @@
-﻿<Type Name="FormControl+EventHandler&lt;EventArgs&gt;" FullName="Microsoft.Office.InfoPath.FormControl+EventHandler&lt;EventArgs&gt;">
+<Type Name="FormControl+EventHandler&lt;EventArgs&gt;" FullName="Microsoft.Office.InfoPath.FormControl+EventHandler&lt;EventArgs&gt;">
   <TypeSignature Language="C#" Value="public delegate void FormControl.EventHandler&lt;EventArgs&gt;(object sender, EventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed FormControl/EventHandler`1&lt;EventArgs&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.InfoPath.FormControl.EventHandler`1" />

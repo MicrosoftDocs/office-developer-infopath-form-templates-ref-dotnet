@@ -1,4 +1,4 @@
-﻿<Type Name="Windows" FullName="Microsoft.Office.Interop.InfoPath.Windows">
+<Type Name="Windows" FullName="Microsoft.Office.Interop.InfoPath.Windows">
   <TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Windows implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Windows" />

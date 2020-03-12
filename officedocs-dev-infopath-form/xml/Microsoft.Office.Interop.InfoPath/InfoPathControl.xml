@@ -1,4 +1,4 @@
-﻿<Type Name="InfoPathControl" FullName="Microsoft.Office.Interop.InfoPath.InfoPathControl">
+<Type Name="InfoPathControl" FullName="Microsoft.Office.Interop.InfoPath.InfoPathControl">
   <TypeSignature Language="C#" Value="public interface InfoPathControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract InfoPathControl" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.InfoPathControl" />

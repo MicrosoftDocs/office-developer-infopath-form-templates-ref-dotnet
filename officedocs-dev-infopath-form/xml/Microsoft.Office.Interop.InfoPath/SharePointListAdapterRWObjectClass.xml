@@ -1,4 +1,4 @@
-﻿<Type Name="SharePointListAdapterRWObjectClass" FullName="Microsoft.Office.Interop.InfoPath.SharePointListAdapterRWObjectClass">
+<Type Name="SharePointListAdapterRWObjectClass" FullName="Microsoft.Office.Interop.InfoPath.SharePointListAdapterRWObjectClass">
   <TypeSignature Language="C#" Value="public class SharePointListAdapterRWObjectClass : Microsoft.Office.Interop.InfoPath.IDataAdapterMOM, Microsoft.Office.Interop.InfoPath.SharePointListAdapterRWObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi SharePointListAdapterRWObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.IDataAdapterMOM, class Microsoft.Office.Interop.InfoPath.SharePointListAdapterRW, class Microsoft.Office.Interop.InfoPath.SharePointListAdapterRWObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SharePointListAdapterRWObjectClass" />
@@ -15,6 +15,9 @@
   <Interfaces>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.IDataAdapterMOM</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.SharePointListAdapterRW</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.SharePointListAdapterRWObject</InterfaceName>

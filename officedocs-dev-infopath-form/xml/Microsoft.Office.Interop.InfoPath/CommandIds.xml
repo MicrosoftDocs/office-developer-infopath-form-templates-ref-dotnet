@@ -1,4 +1,4 @@
-﻿<Type Name="CommandIds" FullName="Microsoft.Office.Interop.InfoPath.CommandIds">
+<Type Name="CommandIds" FullName="Microsoft.Office.Interop.InfoPath.CommandIds">
   <TypeSignature Language="C#" Value="public enum CommandIds" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CommandIds extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.CommandIds" />

@@ -1,4 +1,4 @@
-﻿<Type Name="SaveEventObject" FullName="Microsoft.Office.Interop.InfoPath.SaveEventObject">
+<Type Name="SaveEventObject" FullName="Microsoft.Office.Interop.InfoPath.SaveEventObject">
   <TypeSignature Language="C#" Value="public interface SaveEventObject : Microsoft.Office.Interop.InfoPath.SaveEvent" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SaveEventObject implements class Microsoft.Office.Interop.InfoPath.SaveEvent" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SaveEventObject" />
@@ -10,6 +10,12 @@
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.DocEvent</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.DocReturnEvent</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.SaveEvent</InterfaceName>
     </Interface>

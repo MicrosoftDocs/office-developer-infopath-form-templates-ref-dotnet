@@ -1,4 +1,4 @@
-﻿<Type Name="SignedDataBlocksCollection" FullName="Microsoft.Office.Interop.InfoPath.SignedDataBlocksCollection">
+<Type Name="SignedDataBlocksCollection" FullName="Microsoft.Office.Interop.InfoPath.SignedDataBlocksCollection">
   <TypeSignature Language="C#" Value="public interface SignedDataBlocksCollection : Microsoft.Office.Interop.InfoPath.SignedDataBlocks" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SignedDataBlocksCollection implements class Microsoft.Office.Interop.InfoPath.SignedDataBlocks" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SignedDataBlocksCollection" />
@@ -12,6 +12,9 @@
   <Interfaces>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.SignedDataBlocks</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>

@@ -1,4 +1,4 @@
-﻿<Type Name="IInfoPathDataImporterFields" FullName="Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields">
+<Type Name="IInfoPathDataImporterFields" FullName="Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields">
   <TypeSignature Language="C#" Value="public interface IInfoPathDataImporterFields" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInfoPathDataImporterFields" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields" />
@@ -36,7 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporterFields.GetControls(mshtml.IEnumUnknown@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub GetControls (ByRef ppEnumUnkControls As IEnumUnknown)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetControls([Runtime::InteropServices::Out] mshtml::IEnumUnknown ^ % ppEnumUnkControls);" />
-      <MemberSignature Language="F#" Value="abstract member GetControls :  -&gt; unit" Usage="iInfoPathDataImporterFields.GetControls ppEnumUnkControls" />
+      <MemberSignature Language="F#" Value="abstract member GetControls : IEnumUnknown -&gt; unit" Usage="iInfoPathDataImporterFields.GetControls ppEnumUnkControls" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

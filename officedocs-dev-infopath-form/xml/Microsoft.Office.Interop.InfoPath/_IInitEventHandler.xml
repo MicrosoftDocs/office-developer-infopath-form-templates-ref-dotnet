@@ -33,7 +33,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._IInitEventHandler.InitEventHandler(System.Object,Microsoft.Office.Interop.InfoPath._XDocument,Microsoft.Office.Interop.InfoPath.XdReadOnlyViewMode@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InitEventHandler (punkSender As Object, pDocument As _XDocument, ByRef pROMode As XdReadOnlyViewMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InitEventHandler(System::Object ^ punkSender, Microsoft::Office::Interop::InfoPath::_XDocument ^ pDocument, [Runtime::InteropServices::Out] Microsoft::Office::Interop::InfoPath::XdReadOnlyViewMode % pROMode);" />
-      <MemberSignature Language="F#" Value="abstract member InitEventHandler : obj * Microsoft.Office.Interop.InfoPath._XDocument *  -&gt; unit" Usage="_IInitEventHandler.InitEventHandler (punkSender, pDocument, pROMode)" />
+      <MemberSignature Language="F#" Value="abstract member InitEventHandler : obj * Microsoft.Office.Interop.InfoPath._XDocument * XdReadOnlyViewMode -&gt; unit" Usage="_IInitEventHandler.InitEventHandler (punkSender, pDocument, pROMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

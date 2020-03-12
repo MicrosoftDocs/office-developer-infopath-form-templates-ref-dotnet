@@ -1,4 +1,4 @@
-﻿<Type Name="UIObjectClass" FullName="Microsoft.Office.Interop.InfoPath.UIObjectClass">
+<Type Name="UIObjectClass" FullName="Microsoft.Office.Interop.InfoPath.UIObjectClass">
   <TypeSignature Language="C#" Value="public class UIObjectClass : Microsoft.Office.Interop.InfoPath.UIObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi UIObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.UI, class Microsoft.Office.Interop.InfoPath.UI2, class Microsoft.Office.Interop.InfoPath.UIObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.UIObjectClass" />
@@ -13,6 +13,12 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.UI</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.UI2</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.UIObject</InterfaceName>
     </Interface>

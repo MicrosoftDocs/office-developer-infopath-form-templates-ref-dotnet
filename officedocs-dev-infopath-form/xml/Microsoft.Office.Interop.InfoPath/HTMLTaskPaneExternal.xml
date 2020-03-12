@@ -1,4 +1,4 @@
-﻿<Type Name="HTMLTaskPaneExternal" FullName="Microsoft.Office.Interop.InfoPath.HTMLTaskPaneExternal">
+<Type Name="HTMLTaskPaneExternal" FullName="Microsoft.Office.Interop.InfoPath.HTMLTaskPaneExternal">
   <TypeSignature Language="C#" Value="public interface HTMLTaskPaneExternal" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HTMLTaskPaneExternal" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneExternal" />

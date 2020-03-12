@@ -1,4 +1,4 @@
-﻿<Type Name="XDocumentClass" FullName="Microsoft.Office.Interop.InfoPath.XDocumentClass">
+<Type Name="XDocumentClass" FullName="Microsoft.Office.Interop.InfoPath.XDocumentClass">
   <TypeSignature Language="C#" Value="public class XDocumentClass : Microsoft.Office.Interop.InfoPath._XDocument4, Microsoft.Office.Interop.InfoPath.XDocument" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi XDocumentClass extends System.Object implements class Microsoft.Office.Interop.InfoPath._XDocument, class Microsoft.Office.Interop.InfoPath._XDocument2, class Microsoft.Office.Interop.InfoPath._XDocument3, class Microsoft.Office.Interop.InfoPath._XDocument4, class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event, class Microsoft.Office.Interop.InfoPath.XDocument" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XDocumentClass" />
@@ -14,7 +14,19 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath._XDocument</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath._XDocument2</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath._XDocument3</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath._XDocument4</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.XDocument</InterfaceName>

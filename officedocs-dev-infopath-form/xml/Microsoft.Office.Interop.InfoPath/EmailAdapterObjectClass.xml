@@ -1,4 +1,4 @@
-﻿<Type Name="EmailAdapterObjectClass" FullName="Microsoft.Office.Interop.InfoPath.EmailAdapterObjectClass">
+<Type Name="EmailAdapterObjectClass" FullName="Microsoft.Office.Interop.InfoPath.EmailAdapterObjectClass">
   <TypeSignature Language="C#" Value="public class EmailAdapterObjectClass : Microsoft.Office.Interop.InfoPath.EmailAdapterObject, Microsoft.Office.Interop.InfoPath.IDataAdapterMOM" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi EmailAdapterObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.EmailAdapter, class Microsoft.Office.Interop.InfoPath.EmailAdapterObject, class Microsoft.Office.Interop.InfoPath.IDataAdapterMOM" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.EmailAdapterObjectClass" />
@@ -13,6 +13,9 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.EmailAdapter</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.EmailAdapterObject</InterfaceName>
     </Interface>

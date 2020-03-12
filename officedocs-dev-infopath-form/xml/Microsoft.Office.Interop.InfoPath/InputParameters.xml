@@ -1,4 +1,4 @@
-﻿<Type Name="InputParameters" FullName="Microsoft.Office.Interop.InfoPath.InputParameters">
+<Type Name="InputParameters" FullName="Microsoft.Office.Interop.InfoPath.InputParameters">
   <TypeSignature Language="C#" Value="public interface InputParameters : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract InputParameters implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.InputParameters" />

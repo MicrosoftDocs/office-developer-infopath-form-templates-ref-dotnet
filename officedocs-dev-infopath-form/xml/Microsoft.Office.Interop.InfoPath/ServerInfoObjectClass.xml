@@ -1,4 +1,4 @@
-﻿<Type Name="ServerInfoObjectClass" FullName="Microsoft.Office.Interop.InfoPath.ServerInfoObjectClass">
+<Type Name="ServerInfoObjectClass" FullName="Microsoft.Office.Interop.InfoPath.ServerInfoObjectClass">
   <TypeSignature Language="C#" Value="public class ServerInfoObjectClass : Microsoft.Office.Interop.InfoPath.ServerInfoObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ServerInfoObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.ServerInfo, class Microsoft.Office.Interop.InfoPath.ServerInfoObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ServerInfoObjectClass" />
@@ -13,6 +13,9 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.ServerInfo</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.ServerInfoObject</InterfaceName>
     </Interface>

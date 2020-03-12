@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="infopath-form">
+  <Assemblies>
+    <Assembly Name="Microsoft.Office.InfoPath.FormControl" Version="15.0.0.0" />
+    <Assembly Name="Microsoft.Office.Interop.InfoPath" Version="15.0.0.0" />
+  </Assemblies>
   <Namespace Name="Microsoft.Office.InfoPath">
     <Type Name="Microsoft.Office.InfoPath.FormControl" Id="T:Microsoft.Office.InfoPath.FormControl">
       <Member Id="E:Microsoft.Office.InfoPath.FormControl.InternalStartup" />

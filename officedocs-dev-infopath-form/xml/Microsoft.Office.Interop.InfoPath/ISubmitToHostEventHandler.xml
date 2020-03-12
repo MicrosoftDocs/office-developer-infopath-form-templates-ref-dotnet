@@ -1,4 +1,4 @@
-﻿<Type Name="ISubmitToHostEventHandler" FullName="Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler">
+<Type Name="ISubmitToHostEventHandler" FullName="Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler">
   <TypeSignature Language="C#" Value="public interface ISubmitToHostEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISubmitToHostEventHandler" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler" />
@@ -32,7 +32,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler.SubmitToHostEventHandler(System.Object,System.String,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Function SubmitToHostEventHandler (sender As Object, adapterName As String, ByRef errorMessage As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int SubmitToHostEventHandler(System::Object ^ sender, System::String ^ adapterName, [Runtime::InteropServices::Out] System::String ^ % errorMessage);" />
-      <MemberSignature Language="F#" Value="abstract member SubmitToHostEventHandler : obj * string *  -&gt; int" Usage="iSubmitToHostEventHandler.SubmitToHostEventHandler (sender, adapterName, errorMessage)" />
+      <MemberSignature Language="F#" Value="abstract member SubmitToHostEventHandler : obj * string * string -&gt; int" Usage="iSubmitToHostEventHandler.SubmitToHostEventHandler (sender, adapterName, errorMessage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

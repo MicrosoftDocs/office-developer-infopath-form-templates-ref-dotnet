@@ -1,4 +1,4 @@
-﻿<Type Name="IInfoPathEditorProperties" FullName="Microsoft.Office.Interop.InfoPath.IInfoPathEditorProperties">
+<Type Name="IInfoPathEditorProperties" FullName="Microsoft.Office.Interop.InfoPath.IInfoPathEditorProperties">
   <TypeSignature Language="C#" Value="public interface IInfoPathEditorProperties" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInfoPathEditorProperties" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.IInfoPathEditorProperties" />

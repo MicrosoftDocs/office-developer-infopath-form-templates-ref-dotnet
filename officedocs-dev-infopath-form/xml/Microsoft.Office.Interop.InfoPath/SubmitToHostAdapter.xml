@@ -1,4 +1,4 @@
-﻿<Type Name="SubmitToHostAdapter" FullName="Microsoft.Office.Interop.InfoPath.SubmitToHostAdapter">
+<Type Name="SubmitToHostAdapter" FullName="Microsoft.Office.Interop.InfoPath.SubmitToHostAdapter">
   <TypeSignature Language="C#" Value="public interface SubmitToHostAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SubmitToHostAdapter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SubmitToHostAdapter" />

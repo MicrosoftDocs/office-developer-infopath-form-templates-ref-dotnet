@@ -1,4 +1,4 @@
-﻿<Type Name="XDocumentsCollection" FullName="Microsoft.Office.Interop.InfoPath.XDocumentsCollection">
+<Type Name="XDocumentsCollection" FullName="Microsoft.Office.Interop.InfoPath.XDocumentsCollection">
   <TypeSignature Language="C#" Value="public interface XDocumentsCollection : Microsoft.Office.Interop.InfoPath.XDocuments2" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XDocumentsCollection implements class Microsoft.Office.Interop.InfoPath.XDocuments2" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XDocumentsCollection" />
@@ -11,7 +11,13 @@
   </AssemblyInfo>
   <Interfaces>
     <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.XDocuments</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.XDocuments2</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>

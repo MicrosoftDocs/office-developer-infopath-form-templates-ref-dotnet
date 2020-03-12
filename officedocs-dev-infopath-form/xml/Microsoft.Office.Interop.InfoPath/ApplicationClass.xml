@@ -1,4 +1,4 @@
-﻿<Type Name="ApplicationClass" FullName="Microsoft.Office.Interop.InfoPath.ApplicationClass">
+<Type Name="ApplicationClass" FullName="Microsoft.Office.Interop.InfoPath.ApplicationClass">
   <TypeSignature Language="C#" Value="public class ApplicationClass : Microsoft.Office.Interop.InfoPath._Application3, Microsoft.Office.Interop.InfoPath.Application" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ApplicationClass extends System.Object implements class Microsoft.Office.Interop.InfoPath._Application, class Microsoft.Office.Interop.InfoPath._Application2, class Microsoft.Office.Interop.InfoPath._Application3, class Microsoft.Office.Interop.InfoPath.Application" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ApplicationClass" />
@@ -13,6 +13,12 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath._Application</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath._Application2</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath._Application3</InterfaceName>
     </Interface>

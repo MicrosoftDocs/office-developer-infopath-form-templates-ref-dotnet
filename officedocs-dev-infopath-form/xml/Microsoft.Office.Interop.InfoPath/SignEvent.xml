@@ -1,4 +1,4 @@
-﻿<Type Name="SignEvent" FullName="Microsoft.Office.Interop.InfoPath.SignEvent">
+<Type Name="SignEvent" FullName="Microsoft.Office.Interop.InfoPath.SignEvent">
   <TypeSignature Language="C#" Value="public interface SignEvent : Microsoft.Office.Interop.InfoPath.DocReturnEvent" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SignEvent implements class Microsoft.Office.Interop.InfoPath.DocReturnEvent" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SignEvent" />
@@ -10,6 +10,9 @@
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.DocEvent</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.DocReturnEvent</InterfaceName>
     </Interface>

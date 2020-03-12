@@ -1,4 +1,4 @@
-﻿<Type Name="UserPermission" FullName="Microsoft.Office.Interop.InfoPath.UserPermission">
+<Type Name="UserPermission" FullName="Microsoft.Office.Interop.InfoPath.UserPermission">
   <TypeSignature Language="C#" Value="public interface UserPermission" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UserPermission" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.UserPermission" />

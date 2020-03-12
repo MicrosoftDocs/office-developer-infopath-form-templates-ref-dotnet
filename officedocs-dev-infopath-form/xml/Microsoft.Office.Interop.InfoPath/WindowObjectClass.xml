@@ -1,4 +1,4 @@
-﻿<Type Name="WindowObjectClass" FullName="Microsoft.Office.Interop.InfoPath.WindowObjectClass">
+<Type Name="WindowObjectClass" FullName="Microsoft.Office.Interop.InfoPath.WindowObjectClass">
   <TypeSignature Language="C#" Value="public class WindowObjectClass : Microsoft.Office.Interop.InfoPath.WindowObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi WindowObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.Window, class Microsoft.Office.Interop.InfoPath.Window2, class Microsoft.Office.Interop.InfoPath.WindowObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.WindowObjectClass" />
@@ -13,6 +13,12 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.Window</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.Window2</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.WindowObject</InterfaceName>
     </Interface>

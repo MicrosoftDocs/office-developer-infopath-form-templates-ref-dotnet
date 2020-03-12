@@ -1,4 +1,4 @@
-﻿<Type Name="DataDOMEventObjectClass" FullName="Microsoft.Office.Interop.InfoPath.DataDOMEventObjectClass">
+<Type Name="DataDOMEventObjectClass" FullName="Microsoft.Office.Interop.InfoPath.DataDOMEventObjectClass">
   <TypeSignature Language="C#" Value="public class DataDOMEventObjectClass : Microsoft.Office.Interop.InfoPath.DataDOMEventObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi DataDOMEventObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.DataDOMEvent, class Microsoft.Office.Interop.InfoPath.DataDOMEventObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DataDOMEventObjectClass" />
@@ -14,7 +14,19 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.DataDOMEvent</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.DataDOMEventObject</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.DocActionEvent</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.DocEvent</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.DocReturnEvent</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>

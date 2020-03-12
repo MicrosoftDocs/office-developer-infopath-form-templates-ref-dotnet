@@ -1,4 +1,4 @@
-﻿<Type Name="ErrorsCollection" FullName="Microsoft.Office.Interop.InfoPath.ErrorsCollection">
+<Type Name="ErrorsCollection" FullName="Microsoft.Office.Interop.InfoPath.ErrorsCollection">
   <TypeSignature Language="C#" Value="public interface ErrorsCollection : Microsoft.Office.Interop.InfoPath.Errors" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ErrorsCollection implements class Microsoft.Office.Interop.InfoPath.Errors" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ErrorsCollection" />
@@ -12,6 +12,9 @@
   <Interfaces>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.Errors</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>

@@ -1,4 +1,4 @@
-﻿<Type Name="XMLNodes" FullName="Microsoft.Office.Interop.InfoPath.XMLNodes">
+<Type Name="XMLNodes" FullName="Microsoft.Office.Interop.InfoPath.XMLNodes">
   <TypeSignature Language="C#" Value="public interface XMLNodes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLNodes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XMLNodes" />

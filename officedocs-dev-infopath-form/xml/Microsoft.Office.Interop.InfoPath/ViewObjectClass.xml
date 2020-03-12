@@ -1,4 +1,4 @@
-﻿<Type Name="ViewObjectClass" FullName="Microsoft.Office.Interop.InfoPath.ViewObjectClass">
+<Type Name="ViewObjectClass" FullName="Microsoft.Office.Interop.InfoPath.ViewObjectClass">
   <TypeSignature Language="C#" Value="public class ViewObjectClass : Microsoft.Office.Interop.InfoPath.View3, Microsoft.Office.Interop.InfoPath.ViewObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ViewObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.View, class Microsoft.Office.Interop.InfoPath.View2, class Microsoft.Office.Interop.InfoPath.View3, class Microsoft.Office.Interop.InfoPath.ViewObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ViewObjectClass" />
@@ -13,6 +13,12 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.View</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.View2</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.View3</InterfaceName>
     </Interface>

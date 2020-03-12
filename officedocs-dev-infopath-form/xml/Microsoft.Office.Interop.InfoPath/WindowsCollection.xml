@@ -1,4 +1,4 @@
-﻿<Type Name="WindowsCollection" FullName="Microsoft.Office.Interop.InfoPath.WindowsCollection">
+<Type Name="WindowsCollection" FullName="Microsoft.Office.Interop.InfoPath.WindowsCollection">
   <TypeSignature Language="C#" Value="public interface WindowsCollection : Microsoft.Office.Interop.InfoPath.Windows" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WindowsCollection implements class Microsoft.Office.Interop.InfoPath.Windows" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.WindowsCollection" />
@@ -12,6 +12,9 @@
   <Interfaces>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.Windows</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>

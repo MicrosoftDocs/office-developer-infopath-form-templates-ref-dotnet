@@ -1,4 +1,4 @@
-﻿<Type Name="Window" FullName="Microsoft.Office.Interop.InfoPath.Window">
+<Type Name="Window" FullName="Microsoft.Office.Interop.InfoPath.Window">
   <TypeSignature Language="C#" Value="public interface Window" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Window" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Window" />

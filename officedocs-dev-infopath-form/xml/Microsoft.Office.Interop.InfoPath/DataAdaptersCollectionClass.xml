@@ -1,4 +1,4 @@
-﻿<Type Name="DataAdaptersCollectionClass" FullName="Microsoft.Office.Interop.InfoPath.DataAdaptersCollectionClass">
+<Type Name="DataAdaptersCollectionClass" FullName="Microsoft.Office.Interop.InfoPath.DataAdaptersCollectionClass">
   <TypeSignature Language="C#" Value="public class DataAdaptersCollectionClass : Microsoft.Office.Interop.InfoPath.DataAdaptersCollection, System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi DataAdaptersCollectionClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.DataAdapters, class Microsoft.Office.Interop.InfoPath.DataAdaptersCollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DataAdaptersCollectionClass" />
@@ -13,6 +13,9 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.DataAdapters</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.DataAdaptersCollection</InterfaceName>
     </Interface>

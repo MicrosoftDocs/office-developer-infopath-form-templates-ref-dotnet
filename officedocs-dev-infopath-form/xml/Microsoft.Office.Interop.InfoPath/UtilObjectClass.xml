@@ -1,4 +1,4 @@
-﻿<Type Name="UtilObjectClass" FullName="Microsoft.Office.Interop.InfoPath.UtilObjectClass">
+<Type Name="UtilObjectClass" FullName="Microsoft.Office.Interop.InfoPath.UtilObjectClass">
   <TypeSignature Language="C#" Value="public class UtilObjectClass : Microsoft.Office.Interop.InfoPath.UtilObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi UtilObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.Util, class Microsoft.Office.Interop.InfoPath.UtilObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.UtilObjectClass" />
@@ -13,6 +13,9 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.Util</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.UtilObject</InterfaceName>
     </Interface>

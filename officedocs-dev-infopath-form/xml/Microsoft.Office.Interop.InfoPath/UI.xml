@@ -1,4 +1,4 @@
-﻿<Type Name="UI" FullName="Microsoft.Office.Interop.InfoPath.UI">
+<Type Name="UI" FullName="Microsoft.Office.Interop.InfoPath.UI">
   <TypeSignature Language="C#" Value="public interface UI" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UI" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.UI" />

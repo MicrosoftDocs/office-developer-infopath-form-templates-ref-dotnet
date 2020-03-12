@@ -1,4 +1,4 @@
-﻿<Type Name="WindowObject" FullName="Microsoft.Office.Interop.InfoPath.WindowObject">
+<Type Name="WindowObject" FullName="Microsoft.Office.Interop.InfoPath.WindowObject">
   <TypeSignature Language="C#" Value="public interface WindowObject : Microsoft.Office.Interop.InfoPath.Window2" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WindowObject implements class Microsoft.Office.Interop.InfoPath.Window2" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.WindowObject" />
@@ -10,6 +10,9 @@
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.Window</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.Window2</InterfaceName>
     </Interface>

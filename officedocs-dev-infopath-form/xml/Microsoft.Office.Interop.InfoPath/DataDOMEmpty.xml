@@ -1,4 +1,4 @@
-﻿<Type Name="DataDOMEmpty" FullName="Microsoft.Office.Interop.InfoPath.DataDOMEmpty">
+<Type Name="DataDOMEmpty" FullName="Microsoft.Office.Interop.InfoPath.DataDOMEmpty">
   <TypeSignature Language="C#" Value="public interface DataDOMEmpty" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DataDOMEmpty" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DataDOMEmpty" />

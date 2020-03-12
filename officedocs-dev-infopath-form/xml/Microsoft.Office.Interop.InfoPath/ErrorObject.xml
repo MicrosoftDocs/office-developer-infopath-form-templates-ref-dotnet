@@ -1,4 +1,4 @@
-﻿<Type Name="ErrorObject" FullName="Microsoft.Office.Interop.InfoPath.ErrorObject">
+<Type Name="ErrorObject" FullName="Microsoft.Office.Interop.InfoPath.ErrorObject">
   <TypeSignature Language="C#" Value="public interface ErrorObject : Microsoft.Office.Interop.InfoPath.Error" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ErrorObject implements class Microsoft.Office.Interop.InfoPath.Error" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ErrorObject" />

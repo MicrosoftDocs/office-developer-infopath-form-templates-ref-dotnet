@@ -1,4 +1,4 @@
-﻿<Type Name="IEnumString" FullName="Microsoft.Office.Interop.InfoPath.IEnumString">
+<Type Name="IEnumString" FullName="Microsoft.Office.Interop.InfoPath.IEnumString">
   <TypeSignature Language="C#" Value="public interface IEnumString" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEnumString" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.IEnumString" />
@@ -32,7 +32,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IEnumString.Clone(Microsoft.Office.Interop.InfoPath.IEnumString@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clone (ByRef ppenum As IEnumString)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clone([Runtime::InteropServices::Out] Microsoft::Office::Interop::InfoPath::IEnumString ^ % ppenum);" />
-      <MemberSignature Language="F#" Value="abstract member Clone :  -&gt; unit" Usage="iEnumString.Clone ppenum" />
+      <MemberSignature Language="F#" Value="abstract member Clone : IEnumString -&gt; unit" Usage="iEnumString.Clone ppenum" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -60,7 +60,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IEnumString.RemoteNext(System.UInt32,System.String@,System.UInt32@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoteNext (celt As UInteger, ByRef rgelt As String, ByRef pceltFetched As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoteNext(System::UInt32 celt, [Runtime::InteropServices::Out] System::String ^ % rgelt, [Runtime::InteropServices::Out] System::UInt32 % pceltFetched);" />
-      <MemberSignature Language="F#" Value="abstract member RemoteNext : uint32 *  *  -&gt; unit" Usage="iEnumString.RemoteNext (celt, rgelt, pceltFetched)" />
+      <MemberSignature Language="F#" Value="abstract member RemoteNext : uint32 * string * uint32 -&gt; unit" Usage="iEnumString.RemoteNext (celt, rgelt, pceltFetched)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

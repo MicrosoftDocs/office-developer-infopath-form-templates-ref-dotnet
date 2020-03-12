@@ -1,4 +1,4 @@
-﻿<Type Name="DocActionEventObjectClass" FullName="Microsoft.Office.Interop.InfoPath.DocActionEventObjectClass">
+<Type Name="DocActionEventObjectClass" FullName="Microsoft.Office.Interop.InfoPath.DocActionEventObjectClass">
   <TypeSignature Language="C#" Value="public class DocActionEventObjectClass : Microsoft.Office.Interop.InfoPath.DocActionEventObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi DocActionEventObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.DocActionEvent, class Microsoft.Office.Interop.InfoPath.DocActionEventObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DocActionEventObjectClass" />
@@ -14,7 +14,16 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.DocActionEvent</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.DocActionEventObject</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.DocEvent</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.DocReturnEvent</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>

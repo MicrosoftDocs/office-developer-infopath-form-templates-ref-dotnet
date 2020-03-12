@@ -1,4 +1,4 @@
-﻿<Type Name="Date" FullName="Microsoft.Office.Interop.InfoPath.Date">
+<Type Name="Date" FullName="Microsoft.Office.Interop.InfoPath.Date">
   <TypeSignature Language="C#" Value="public interface Date" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Date" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Date" />

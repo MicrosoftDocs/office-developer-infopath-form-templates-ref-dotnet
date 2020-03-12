@@ -1,4 +1,4 @@
-﻿<Type Name="View2" FullName="Microsoft.Office.Interop.InfoPath.View2">
+<Type Name="View2" FullName="Microsoft.Office.Interop.InfoPath.View2">
   <TypeSignature Language="C#" Value="public interface View2 : Microsoft.Office.Interop.InfoPath.View" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract View2 implements class Microsoft.Office.Interop.InfoPath.View" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.View2" />
@@ -280,9 +280,9 @@
         <Parameter Name="varExporter" Type="System.Object" />
       </Parameters>
       <Docs>
+        <param name="varExporter">To be added.</param>
         <param name="bstrURL">The directory location that the exported view file will be written to.</param>
         <param name="bstrFormat">The type of file format to export to. The supported values are:"MHT" - Web Archive, single file format (.mht)"PDF" - Portable Document Format file (.pdf)"XPS" - XPS Document (.xps)</param>
-        <param name="varExporter">To be added.</param>
         <summary>Exports the view to a file of the specified format, and supports initializing a COM add-in for exporting to a fixed-format file.</summary>
         <remarks>
           <para>The <paramref name="pUnkExporter" /> parameter is used to provide an <b>IUnknown</b> interface pointer to the active document. This is used to initialize a COM add-in for exporting to a fixed-format file. For more information, see the article "Extending the Office Fixed-Format Export Feature" on <a href="http://go.microsoft.com/fwlink?LinkId=61826">Microsoft Developer Network (MSDN)</a></para>

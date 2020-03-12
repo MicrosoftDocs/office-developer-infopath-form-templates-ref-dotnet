@@ -1,4 +1,4 @@
-﻿<Type Name="SignaturesCollection" FullName="Microsoft.Office.Interop.InfoPath.SignaturesCollection">
+<Type Name="SignaturesCollection" FullName="Microsoft.Office.Interop.InfoPath.SignaturesCollection">
   <TypeSignature Language="C#" Value="public interface SignaturesCollection : Microsoft.Office.Interop.InfoPath.Signatures" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SignaturesCollection implements class Microsoft.Office.Interop.InfoPath.Signatures" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SignaturesCollection" />
@@ -12,6 +12,9 @@
   <Interfaces>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.Signatures</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>

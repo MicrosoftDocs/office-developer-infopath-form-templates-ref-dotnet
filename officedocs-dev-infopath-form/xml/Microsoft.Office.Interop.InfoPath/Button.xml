@@ -1,4 +1,4 @@
-﻿<Type Name="Button" FullName="Microsoft.Office.Interop.InfoPath.Button">
+<Type Name="Button" FullName="Microsoft.Office.Interop.InfoPath.Button">
   <TypeSignature Language="C#" Value="public interface Button : Microsoft.Office.Interop.InfoPath._ButtonEventSink_Event, Microsoft.Office.Interop.InfoPath.ButtonEmpty" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Button implements class Microsoft.Office.Interop.InfoPath._ButtonEventSink_Event, class Microsoft.Office.Interop.InfoPath.ButtonEmpty" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Button" />

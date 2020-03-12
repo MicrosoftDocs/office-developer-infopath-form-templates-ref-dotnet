@@ -1,4 +1,4 @@
-﻿<Type Name="DocEvent" FullName="Microsoft.Office.Interop.InfoPath.DocEvent">
+<Type Name="DocEvent" FullName="Microsoft.Office.Interop.InfoPath.DocEvent">
   <TypeSignature Language="C#" Value="public interface DocEvent" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DocEvent" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DocEvent" />

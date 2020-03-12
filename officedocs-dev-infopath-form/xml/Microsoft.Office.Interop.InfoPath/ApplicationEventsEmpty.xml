@@ -1,4 +1,4 @@
-﻿<Type Name="ApplicationEventsEmpty" FullName="Microsoft.Office.Interop.InfoPath.ApplicationEventsEmpty">
+<Type Name="ApplicationEventsEmpty" FullName="Microsoft.Office.Interop.InfoPath.ApplicationEventsEmpty">
   <TypeSignature Language="C#" Value="public interface ApplicationEventsEmpty" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ApplicationEventsEmpty" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ApplicationEventsEmpty" />

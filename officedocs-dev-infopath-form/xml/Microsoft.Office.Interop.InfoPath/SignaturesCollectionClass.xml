@@ -1,4 +1,4 @@
-﻿<Type Name="SignaturesCollectionClass" FullName="Microsoft.Office.Interop.InfoPath.SignaturesCollectionClass">
+<Type Name="SignaturesCollectionClass" FullName="Microsoft.Office.Interop.InfoPath.SignaturesCollectionClass">
   <TypeSignature Language="C#" Value="public class SignaturesCollectionClass : Microsoft.Office.Interop.InfoPath.SignaturesCollection, System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi SignaturesCollectionClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.Signatures, class Microsoft.Office.Interop.InfoPath.SignaturesCollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SignaturesCollectionClass" />
@@ -13,6 +13,9 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.Signatures</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.SignaturesCollection</InterfaceName>
     </Interface>

@@ -1,4 +1,4 @@
-﻿<Type Name="ADOAdapterObject" FullName="Microsoft.Office.Interop.InfoPath.ADOAdapterObject">
+<Type Name="ADOAdapterObject" FullName="Microsoft.Office.Interop.InfoPath.ADOAdapterObject">
   <TypeSignature Language="C#" Value="public interface ADOAdapterObject : Microsoft.Office.Interop.InfoPath.ADOAdapter2" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ADOAdapterObject implements class Microsoft.Office.Interop.InfoPath.ADOAdapter2" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ADOAdapterObject" />
@@ -10,6 +10,9 @@
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.ADOAdapter</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.ADOAdapter2</InterfaceName>
     </Interface>

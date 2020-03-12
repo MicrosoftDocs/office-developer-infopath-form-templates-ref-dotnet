@@ -1,4 +1,4 @@
-﻿<Type Name="TaskPaneObjectClass" FullName="Microsoft.Office.Interop.InfoPath.TaskPaneObjectClass">
+<Type Name="TaskPaneObjectClass" FullName="Microsoft.Office.Interop.InfoPath.TaskPaneObjectClass">
   <TypeSignature Language="C#" Value="public class TaskPaneObjectClass : Microsoft.Office.Interop.InfoPath.TaskPaneObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi TaskPaneObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.TaskPane, class Microsoft.Office.Interop.InfoPath.TaskPaneObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.TaskPaneObjectClass" />
@@ -13,6 +13,9 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.TaskPane</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.TaskPaneObject</InterfaceName>
     </Interface>

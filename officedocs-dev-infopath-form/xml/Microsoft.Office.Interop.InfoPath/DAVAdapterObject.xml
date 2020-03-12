@@ -1,4 +1,4 @@
-﻿<Type Name="DAVAdapterObject" FullName="Microsoft.Office.Interop.InfoPath.DAVAdapterObject">
+<Type Name="DAVAdapterObject" FullName="Microsoft.Office.Interop.InfoPath.DAVAdapterObject">
   <TypeSignature Language="C#" Value="public interface DAVAdapterObject : Microsoft.Office.Interop.InfoPath.DAVAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DAVAdapterObject implements class Microsoft.Office.Interop.InfoPath.DAVAdapter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DAVAdapterObject" />

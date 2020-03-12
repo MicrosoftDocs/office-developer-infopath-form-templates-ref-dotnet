@@ -1,4 +1,4 @@
-﻿<Type Name="ADOAdapter" FullName="Microsoft.Office.Interop.InfoPath.ADOAdapter">
+<Type Name="ADOAdapter" FullName="Microsoft.Office.Interop.InfoPath.ADOAdapter">
   <TypeSignature Language="C#" Value="public interface ADOAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ADOAdapter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ADOAdapter" />

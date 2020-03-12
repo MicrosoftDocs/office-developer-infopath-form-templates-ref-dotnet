@@ -1,4 +1,4 @@
-﻿<Type Name="HTMLTaskPaneObject" FullName="Microsoft.Office.Interop.InfoPath.HTMLTaskPaneObject">
+<Type Name="HTMLTaskPaneObject" FullName="Microsoft.Office.Interop.InfoPath.HTMLTaskPaneObject">
   <TypeSignature Language="C#" Value="public interface HTMLTaskPaneObject : Microsoft.Office.Interop.InfoPath.HTMLTaskPane" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HTMLTaskPaneObject implements class Microsoft.Office.Interop.InfoPath.HTMLTaskPane" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.HTMLTaskPaneObject" />
@@ -12,6 +12,9 @@
   <Interfaces>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.HTMLTaskPane</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.TaskPane</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>

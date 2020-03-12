@@ -1,4 +1,4 @@
-﻿<Type Name="SignatureLines" FullName="Microsoft.Office.Interop.InfoPath.SignatureLines">
+<Type Name="SignatureLines" FullName="Microsoft.Office.Interop.InfoPath.SignatureLines">
   <TypeSignature Language="C#" Value="public interface SignatureLines : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SignatureLines implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SignatureLines" />

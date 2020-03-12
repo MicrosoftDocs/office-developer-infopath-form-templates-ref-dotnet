@@ -1,4 +1,4 @@
-﻿<Type Name="SharepointListAdapter2" FullName="Microsoft.Office.Interop.InfoPath.SharepointListAdapter2">
+<Type Name="SharepointListAdapter2" FullName="Microsoft.Office.Interop.InfoPath.SharepointListAdapter2">
   <TypeSignature Language="C#" Value="public interface SharepointListAdapter2 : Microsoft.Office.Interop.InfoPath.SharepointListAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SharepointListAdapter2 implements class Microsoft.Office.Interop.InfoPath.SharepointListAdapter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SharepointListAdapter2" />

@@ -1,4 +1,4 @@
-﻿<Type Name="ServerInfoObject" FullName="Microsoft.Office.Interop.InfoPath.ServerInfoObject">
+<Type Name="ServerInfoObject" FullName="Microsoft.Office.Interop.InfoPath.ServerInfoObject">
   <TypeSignature Language="C#" Value="public interface ServerInfoObject : Microsoft.Office.Interop.InfoPath.ServerInfo" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ServerInfoObject implements class Microsoft.Office.Interop.InfoPath.ServerInfo" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ServerInfoObject" />

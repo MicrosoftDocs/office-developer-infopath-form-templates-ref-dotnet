@@ -1,4 +1,4 @@
-﻿<Type Name="DataDOMClass" FullName="Microsoft.Office.Interop.InfoPath.DataDOMClass">
+<Type Name="DataDOMClass" FullName="Microsoft.Office.Interop.InfoPath.DataDOMClass">
   <TypeSignature Language="C#" Value="public class DataDOMClass : Microsoft.Office.Interop.InfoPath.DataDOM" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi DataDOMClass extends System.Object implements class Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event, class Microsoft.Office.Interop.InfoPath.DataDOM, class Microsoft.Office.Interop.InfoPath.DataDOMEmpty" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DataDOMClass" />
@@ -14,7 +14,13 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.DataDOM</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.DataDOMEmpty</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>

@@ -1,4 +1,4 @@
-﻿<Type Name="SignatureObject" FullName="Microsoft.Office.Interop.InfoPath.SignatureObject">
+<Type Name="SignatureObject" FullName="Microsoft.Office.Interop.InfoPath.SignatureObject">
   <TypeSignature Language="C#" Value="public interface SignatureObject : Microsoft.Office.Interop.InfoPath.Signature" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SignatureObject implements class Microsoft.Office.Interop.InfoPath.Signature" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SignatureObject" />

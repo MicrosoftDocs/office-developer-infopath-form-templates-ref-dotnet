@@ -1,4 +1,4 @@
-﻿<Type Name="XMLFileAdapterObject" FullName="Microsoft.Office.Interop.InfoPath.XMLFileAdapterObject">
+<Type Name="XMLFileAdapterObject" FullName="Microsoft.Office.Interop.InfoPath.XMLFileAdapterObject">
   <TypeSignature Language="C#" Value="public interface XMLFileAdapterObject : Microsoft.Office.Interop.InfoPath.XMLFileAdapter2" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLFileAdapterObject implements class Microsoft.Office.Interop.InfoPath.XMLFileAdapter2" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObject" />
@@ -10,6 +10,9 @@
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.XMLFileAdapter</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.XMLFileAdapter2</InterfaceName>
     </Interface>

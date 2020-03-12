@@ -1,4 +1,4 @@
-﻿<Type Name="FormControl" FullName="Microsoft.Office.InfoPath.FormControl">
+<Type Name="FormControl" FullName="Microsoft.Office.InfoPath.FormControl">
   <TypeSignature Language="C#" Value="public class FormControl : System.Windows.Forms.AxHost" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FormControl extends System.Windows.Forms.AxHost" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.InfoPath.FormControl" />

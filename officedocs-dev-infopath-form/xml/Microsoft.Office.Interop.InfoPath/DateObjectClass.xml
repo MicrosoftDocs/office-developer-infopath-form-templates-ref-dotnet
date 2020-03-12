@@ -1,4 +1,4 @@
-﻿<Type Name="DateObjectClass" FullName="Microsoft.Office.Interop.InfoPath.DateObjectClass">
+<Type Name="DateObjectClass" FullName="Microsoft.Office.Interop.InfoPath.DateObjectClass">
   <TypeSignature Language="C#" Value="public class DateObjectClass : Microsoft.Office.Interop.InfoPath.DateObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi DateObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.Date, class Microsoft.Office.Interop.InfoPath.DateObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DateObjectClass" />
@@ -13,6 +13,9 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.Date</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.DateObject</InterfaceName>
     </Interface>

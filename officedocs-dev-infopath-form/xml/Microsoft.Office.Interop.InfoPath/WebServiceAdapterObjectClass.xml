@@ -1,4 +1,4 @@
-﻿<Type Name="WebServiceAdapterObjectClass" FullName="Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass">
+<Type Name="WebServiceAdapterObjectClass" FullName="Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass">
   <TypeSignature Language="C#" Value="public class WebServiceAdapterObjectClass : Microsoft.Office.Interop.InfoPath.IDataAdapterMOM, Microsoft.Office.Interop.InfoPath.WebServiceAdapterObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi WebServiceAdapterObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.IDataAdapterMOM, class Microsoft.Office.Interop.InfoPath.WebServiceAdapter, class Microsoft.Office.Interop.InfoPath.WebServiceAdapter2, class Microsoft.Office.Interop.InfoPath.WebServiceAdapterObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObjectClass" />
@@ -15,6 +15,12 @@
   <Interfaces>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.IDataAdapterMOM</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.WebServiceAdapter</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.WebServiceAdapter2</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.WebServiceAdapterObject</InterfaceName>

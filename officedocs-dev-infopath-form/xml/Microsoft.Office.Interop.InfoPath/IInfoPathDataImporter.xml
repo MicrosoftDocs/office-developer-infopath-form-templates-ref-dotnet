@@ -1,4 +1,4 @@
-﻿<Type Name="IInfoPathDataImporter" FullName="Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter">
+<Type Name="IInfoPathDataImporter" FullName="Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter">
   <TypeSignature Language="C#" Value="public interface IInfoPathDataImporter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInfoPathDataImporter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter" />

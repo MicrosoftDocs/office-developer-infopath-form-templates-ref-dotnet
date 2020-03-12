@@ -1,4 +1,4 @@
-﻿<Type Name="IPMath" FullName="Microsoft.Office.Interop.InfoPath.IPMath">
+<Type Name="IPMath" FullName="Microsoft.Office.Interop.InfoPath.IPMath">
   <TypeSignature Language="C#" Value="public interface IPMath" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPMath" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.IPMath" />

@@ -1,4 +1,4 @@
-﻿<Type Name="SignatureLineObjectClass" FullName="Microsoft.Office.Interop.InfoPath.SignatureLineObjectClass">
+<Type Name="SignatureLineObjectClass" FullName="Microsoft.Office.Interop.InfoPath.SignatureLineObjectClass">
   <TypeSignature Language="C#" Value="public class SignatureLineObjectClass : Microsoft.Office.Interop.InfoPath.SignatureLineObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi SignatureLineObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.SignatureLine, class Microsoft.Office.Interop.InfoPath.SignatureLineObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SignatureLineObjectClass" />
@@ -13,6 +13,9 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.SignatureLine</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.SignatureLineObject</InterfaceName>
     </Interface>

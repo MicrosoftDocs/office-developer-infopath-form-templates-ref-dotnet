@@ -1,4 +1,4 @@
-﻿<Type Name="View" FullName="Microsoft.Office.Interop.InfoPath.View">
+<Type Name="View" FullName="Microsoft.Office.Interop.InfoPath.View">
   <TypeSignature Language="C#" Value="public interface View" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract View" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.View" />

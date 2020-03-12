@@ -180,7 +180,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents.XDocumentBeforeClose(Microsoft.Office.Interop.InfoPath._XDocument,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub XDocumentBeforeClose (pDocument As _XDocument, ByRef pfCancel As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void XDocumentBeforeClose(Microsoft::Office::Interop::InfoPath::_XDocument ^ pDocument, [Runtime::InteropServices::Out] bool % pfCancel);" />
-      <MemberSignature Language="F#" Value="abstract member XDocumentBeforeClose : Microsoft.Office.Interop.InfoPath._XDocument *  -&gt; unit" Usage="_ApplicationEvents.XDocumentBeforeClose (pDocument, pfCancel)" />
+      <MemberSignature Language="F#" Value="abstract member XDocumentBeforeClose : Microsoft.Office.Interop.InfoPath._XDocument * bool -&gt; unit" Usage="_ApplicationEvents.XDocumentBeforeClose (pDocument, pfCancel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -211,7 +211,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents.XDocumentBeforePrint(Microsoft.Office.Interop.InfoPath._XDocument,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub XDocumentBeforePrint (pDocument As _XDocument, ByRef pfCancel As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void XDocumentBeforePrint(Microsoft::Office::Interop::InfoPath::_XDocument ^ pDocument, [Runtime::InteropServices::Out] bool % pfCancel);" />
-      <MemberSignature Language="F#" Value="abstract member XDocumentBeforePrint : Microsoft.Office.Interop.InfoPath._XDocument *  -&gt; unit" Usage="_ApplicationEvents.XDocumentBeforePrint (pDocument, pfCancel)" />
+      <MemberSignature Language="F#" Value="abstract member XDocumentBeforePrint : Microsoft.Office.Interop.InfoPath._XDocument * bool -&gt; unit" Usage="_ApplicationEvents.XDocumentBeforePrint (pDocument, pfCancel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -242,7 +242,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ApplicationEvents.XDocumentBeforeSave(Microsoft.Office.Interop.InfoPath._XDocument,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub XDocumentBeforeSave (pDocument As _XDocument, ByRef pfCancel As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void XDocumentBeforeSave(Microsoft::Office::Interop::InfoPath::_XDocument ^ pDocument, [Runtime::InteropServices::Out] bool % pfCancel);" />
-      <MemberSignature Language="F#" Value="abstract member XDocumentBeforeSave : Microsoft.Office.Interop.InfoPath._XDocument *  -&gt; unit" Usage="_ApplicationEvents.XDocumentBeforeSave (pDocument, pfCancel)" />
+      <MemberSignature Language="F#" Value="abstract member XDocumentBeforeSave : Microsoft.Office.Interop.InfoPath._XDocument * bool -&gt; unit" Usage="_ApplicationEvents.XDocumentBeforeSave (pDocument, pfCancel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

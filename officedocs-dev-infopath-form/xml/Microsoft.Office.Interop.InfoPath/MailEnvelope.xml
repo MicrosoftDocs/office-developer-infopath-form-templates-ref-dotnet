@@ -1,4 +1,4 @@
-﻿<Type Name="MailEnvelope" FullName="Microsoft.Office.Interop.InfoPath.MailEnvelope">
+<Type Name="MailEnvelope" FullName="Microsoft.Office.Interop.InfoPath.MailEnvelope">
   <TypeSignature Language="C#" Value="public interface MailEnvelope" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailEnvelope" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.MailEnvelope" />

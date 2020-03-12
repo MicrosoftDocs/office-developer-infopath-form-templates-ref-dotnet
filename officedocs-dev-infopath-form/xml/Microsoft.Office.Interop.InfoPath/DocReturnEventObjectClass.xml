@@ -1,4 +1,4 @@
-﻿<Type Name="DocReturnEventObjectClass" FullName="Microsoft.Office.Interop.InfoPath.DocReturnEventObjectClass">
+<Type Name="DocReturnEventObjectClass" FullName="Microsoft.Office.Interop.InfoPath.DocReturnEventObjectClass">
   <TypeSignature Language="C#" Value="public class DocReturnEventObjectClass : Microsoft.Office.Interop.InfoPath.DocReturnEventObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi DocReturnEventObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.DocReturnEvent, class Microsoft.Office.Interop.InfoPath.DocReturnEventObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DocReturnEventObjectClass" />
@@ -13,6 +13,12 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.DocEvent</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.DocReturnEvent</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.DocReturnEventObject</InterfaceName>
     </Interface>

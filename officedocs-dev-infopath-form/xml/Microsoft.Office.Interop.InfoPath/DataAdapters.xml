@@ -1,4 +1,4 @@
-﻿<Type Name="DataAdapters" FullName="Microsoft.Office.Interop.InfoPath.DataAdapters">
+<Type Name="DataAdapters" FullName="Microsoft.Office.Interop.InfoPath.DataAdapters">
   <TypeSignature Language="C#" Value="public interface DataAdapters : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DataAdapters implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DataAdapters" />

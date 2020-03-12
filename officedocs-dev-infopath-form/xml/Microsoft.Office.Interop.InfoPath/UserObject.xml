@@ -1,4 +1,4 @@
-﻿<Type Name="UserObject" FullName="Microsoft.Office.Interop.InfoPath.UserObject">
+<Type Name="UserObject" FullName="Microsoft.Office.Interop.InfoPath.UserObject">
   <TypeSignature Language="C#" Value="public interface UserObject : Microsoft.Office.Interop.InfoPath.User" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UserObject implements class Microsoft.Office.Interop.InfoPath.User" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.UserObject" />

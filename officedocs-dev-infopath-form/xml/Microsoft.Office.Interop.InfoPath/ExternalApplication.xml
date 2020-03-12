@@ -1,4 +1,4 @@
-﻿<Type Name="ExternalApplication" FullName="Microsoft.Office.Interop.InfoPath.ExternalApplication">
+<Type Name="ExternalApplication" FullName="Microsoft.Office.Interop.InfoPath.ExternalApplication">
   <TypeSignature Language="C#" Value="public interface ExternalApplication : Microsoft.Office.Interop.InfoPath._ExternalApplication2" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ExternalApplication implements class Microsoft.Office.Interop.InfoPath._ExternalApplication2" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ExternalApplication" />
@@ -10,6 +10,9 @@
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath._ExternalApplication</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath._ExternalApplication2</InterfaceName>
     </Interface>

@@ -1,4 +1,4 @@
-﻿<Type Name="IErrorLog" FullName="Microsoft.Office.Interop.InfoPath.IErrorLog">
+<Type Name="IErrorLog" FullName="Microsoft.Office.Interop.InfoPath.IErrorLog">
   <TypeSignature Language="C#" Value="public interface IErrorLog" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IErrorLog" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.IErrorLog" />
@@ -32,7 +32,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IErrorLog.AddError(System.String,stdole.EXCEPINFO@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddError (pszPropName As String, ByRef pExcepInfo As EXCEPINFO)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddError(System::String ^ pszPropName, stdole::EXCEPINFO % pExcepInfo);" />
-      <MemberSignature Language="F#" Value="abstract member AddError : string *  -&gt; unit" Usage="iErrorLog.AddError (pszPropName, pExcepInfo)" />
+      <MemberSignature Language="F#" Value="abstract member AddError : string * EXCEPINFO -&gt; unit" Usage="iErrorLog.AddError (pszPropName, pExcepInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

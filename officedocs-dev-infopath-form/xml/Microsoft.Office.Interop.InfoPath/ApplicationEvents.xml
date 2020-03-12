@@ -1,4 +1,4 @@
-﻿<Type Name="ApplicationEvents" FullName="Microsoft.Office.Interop.InfoPath.ApplicationEvents">
+<Type Name="ApplicationEvents" FullName="Microsoft.Office.Interop.InfoPath.ApplicationEvents">
   <TypeSignature Language="C#" Value="public interface ApplicationEvents : Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event, Microsoft.Office.Interop.InfoPath.ApplicationEventsEmpty" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ApplicationEvents implements class Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event, class Microsoft.Office.Interop.InfoPath.ApplicationEventsEmpty" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ApplicationEvents" />

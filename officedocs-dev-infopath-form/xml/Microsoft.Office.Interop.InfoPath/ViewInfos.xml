@@ -1,4 +1,4 @@
-﻿<Type Name="ViewInfos" FullName="Microsoft.Office.Interop.InfoPath.ViewInfos">
+<Type Name="ViewInfos" FullName="Microsoft.Office.Interop.InfoPath.ViewInfos">
   <TypeSignature Language="C#" Value="public interface ViewInfos : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ViewInfos implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ViewInfos" />

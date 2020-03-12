@@ -1,4 +1,4 @@
-﻿<Type Name="ViewObject" FullName="Microsoft.Office.Interop.InfoPath.ViewObject">
+<Type Name="ViewObject" FullName="Microsoft.Office.Interop.InfoPath.ViewObject">
   <TypeSignature Language="C#" Value="public interface ViewObject : Microsoft.Office.Interop.InfoPath.View" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ViewObject implements class Microsoft.Office.Interop.InfoPath.View" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ViewObject" />

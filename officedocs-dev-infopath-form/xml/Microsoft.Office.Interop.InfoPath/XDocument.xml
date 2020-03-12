@@ -1,4 +1,4 @@
-﻿<Type Name="XDocument" FullName="Microsoft.Office.Interop.InfoPath.XDocument">
+<Type Name="XDocument" FullName="Microsoft.Office.Interop.InfoPath.XDocument">
   <TypeSignature Language="C#" Value="public interface XDocument : Microsoft.Office.Interop.InfoPath._XDocument2, Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XDocument implements class Microsoft.Office.Interop.InfoPath._XDocument2, class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XDocument" />
@@ -10,6 +10,9 @@
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath._XDocument</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath._XDocument2</InterfaceName>
     </Interface>

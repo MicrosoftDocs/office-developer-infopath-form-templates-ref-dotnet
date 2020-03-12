@@ -1,4 +1,4 @@
-﻿<Type Name="HWSAdapterObject" FullName="Microsoft.Office.Interop.InfoPath.HWSAdapterObject">
+<Type Name="HWSAdapterObject" FullName="Microsoft.Office.Interop.InfoPath.HWSAdapterObject">
   <TypeSignature Language="C#" Value="public interface HWSAdapterObject : Microsoft.Office.Interop.InfoPath.HWSAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HWSAdapterObject implements class Microsoft.Office.Interop.InfoPath.HWSAdapter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.HWSAdapterObject" />

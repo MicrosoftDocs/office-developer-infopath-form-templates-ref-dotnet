@@ -1,4 +1,4 @@
-﻿<Type Name="Util" FullName="Microsoft.Office.Interop.InfoPath.Util">
+<Type Name="Util" FullName="Microsoft.Office.Interop.InfoPath.Util">
   <TypeSignature Language="C#" Value="public interface Util" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Util" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Util" />

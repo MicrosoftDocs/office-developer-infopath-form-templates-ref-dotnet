@@ -1,4 +1,4 @@
-﻿<Type Name="IPropertyBag" FullName="Microsoft.Office.Interop.InfoPath.IPropertyBag">
+<Type Name="IPropertyBag" FullName="Microsoft.Office.Interop.InfoPath.IPropertyBag">
   <TypeSignature Language="C#" Value="public interface IPropertyBag" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPropertyBag" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.IPropertyBag" />
@@ -61,7 +61,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IPropertyBag.RemoteRead(System.String,System.Object@,Microsoft.Office.Interop.InfoPath.IErrorLog,System.UInt32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoteRead (pszPropName As String, ByRef pVar As Object, pErrorLog As IErrorLog, varType As UInteger, pUnkObj As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoteRead(System::String ^ pszPropName, [Runtime::InteropServices::Out] System::Object ^ % pVar, Microsoft::Office::Interop::InfoPath::IErrorLog ^ pErrorLog, System::UInt32 varType, System::Object ^ pUnkObj);" />
-      <MemberSignature Language="F#" Value="abstract member RemoteRead : string *  * Microsoft.Office.Interop.InfoPath.IErrorLog * uint32 * obj -&gt; unit" Usage="iPropertyBag.RemoteRead (pszPropName, pVar, pErrorLog, varType, pUnkObj)" />
+      <MemberSignature Language="F#" Value="abstract member RemoteRead : string * obj * Microsoft.Office.Interop.InfoPath.IErrorLog * uint32 * obj -&gt; unit" Usage="iPropertyBag.RemoteRead (pszPropName, pVar, pErrorLog, varType, pUnkObj)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -80,9 +80,9 @@
       <Docs>
         <param name="pszPropName">To be added.</param>
         <param name="pVar">To be added.</param>
-        <param name="pErrorLog">A pointer to an <see cref="T:Microsoft.Office.Interop.InfoPath.IErrorLog" /> object.</param>
         <param name="varType">To be added.</param>
         <param name="pUnkObj">To be added.</param>
+        <param name="pErrorLog">A pointer to an <see cref="T:Microsoft.Office.Interop.InfoPath.IErrorLog" /> object.</param>
         <summary>Used to read printer settings for populating an <see cref="T:Microsoft.Office.Interop.InfoPath.IPropertyBag" /> object in a custom data importer.</summary>
         <remarks>
           <para>A custom data importer is created by implementing the <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter" /> interface. For more information about programmatically importing data into an InfoPath form, see the <a href="http://go.microsoft.com/fwlink?LinkID=11689">InfoPath Developer Portal</a></para>
@@ -96,7 +96,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IPropertyBag.Write(System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Write (pszPropName As String, ByRef pVar As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::String ^ pszPropName, System::Object ^ % pVar);" />
-      <MemberSignature Language="F#" Value="abstract member Write : string *  -&gt; unit" Usage="iPropertyBag.Write (pszPropName, pVar)" />
+      <MemberSignature Language="F#" Value="abstract member Write : string * obj -&gt; unit" Usage="iPropertyBag.Write (pszPropName, pVar)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

@@ -1,4 +1,4 @@
-﻿<Type Name="SolutionObject" FullName="Microsoft.Office.Interop.InfoPath.SolutionObject">
+<Type Name="SolutionObject" FullName="Microsoft.Office.Interop.InfoPath.SolutionObject">
   <TypeSignature Language="C#" Value="public interface SolutionObject : Microsoft.Office.Interop.InfoPath.Solution" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SolutionObject implements class Microsoft.Office.Interop.InfoPath.Solution" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SolutionObject" />

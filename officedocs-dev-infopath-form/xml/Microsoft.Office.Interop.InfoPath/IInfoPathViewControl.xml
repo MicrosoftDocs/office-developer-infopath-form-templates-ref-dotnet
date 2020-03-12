@@ -1,4 +1,4 @@
-﻿<Type Name="IInfoPathViewControl" FullName="Microsoft.Office.Interop.InfoPath.IInfoPathViewControl">
+<Type Name="IInfoPathViewControl" FullName="Microsoft.Office.Interop.InfoPath.IInfoPathViewControl">
   <TypeSignature Language="C#" Value="public interface IInfoPathViewControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInfoPathViewControl" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl" />
@@ -185,7 +185,7 @@ End Sub</code>
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.InputScopes(System.IntPtr,System.UInt32@,Microsoft.Office.Interop.InfoPath.IEnumString@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InputScopes (ppInputScopes As IntPtr, ByRef pcInputScopes As UInteger, ByRef ppenumPhraseList As IEnumString, ByRef pbstrRegExp As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InputScopes(IntPtr ppInputScopes, [Runtime::InteropServices::Out] System::UInt32 % pcInputScopes, [Runtime::InteropServices::Out] Microsoft::Office::Interop::InfoPath::IEnumString ^ % ppenumPhraseList, [Runtime::InteropServices::Out] System::String ^ % pbstrRegExp);" />
-      <MemberSignature Language="F#" Value="abstract member InputScopes : nativeint *  *  *  -&gt; unit" Usage="iInfoPathViewControl.InputScopes (ppInputScopes, pcInputScopes, ppenumPhraseList, pbstrRegExp)" />
+      <MemberSignature Language="F#" Value="abstract member InputScopes : nativeint * uint32 * IEnumString * string -&gt; unit" Usage="iInfoPathViewControl.InputScopes (ppInputScopes, pcInputScopes, ppenumPhraseList, pbstrRegExp)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

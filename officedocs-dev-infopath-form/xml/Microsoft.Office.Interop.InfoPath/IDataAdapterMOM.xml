@@ -1,4 +1,4 @@
-﻿<Type Name="IDataAdapterMOM" FullName="Microsoft.Office.Interop.InfoPath.IDataAdapterMOM">
+<Type Name="IDataAdapterMOM" FullName="Microsoft.Office.Interop.InfoPath.IDataAdapterMOM">
   <TypeSignature Language="C#" Value="public interface IDataAdapterMOM" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataAdapterMOM" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.IDataAdapterMOM" />

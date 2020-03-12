@@ -1,4 +1,4 @@
-﻿<Type Name="ViewInfosCollectionClass" FullName="Microsoft.Office.Interop.InfoPath.ViewInfosCollectionClass">
+<Type Name="ViewInfosCollectionClass" FullName="Microsoft.Office.Interop.InfoPath.ViewInfosCollectionClass">
   <TypeSignature Language="C#" Value="public class ViewInfosCollectionClass : Microsoft.Office.Interop.InfoPath.ViewInfosCollection, System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ViewInfosCollectionClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.ViewInfos, class Microsoft.Office.Interop.InfoPath.ViewInfosCollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ViewInfosCollectionClass" />
@@ -13,6 +13,9 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.ViewInfos</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.ViewInfosCollection</InterfaceName>
     </Interface>

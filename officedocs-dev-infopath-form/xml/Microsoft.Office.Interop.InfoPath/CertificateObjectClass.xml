@@ -1,4 +1,4 @@
-﻿<Type Name="CertificateObjectClass" FullName="Microsoft.Office.Interop.InfoPath.CertificateObjectClass">
+<Type Name="CertificateObjectClass" FullName="Microsoft.Office.Interop.InfoPath.CertificateObjectClass">
   <TypeSignature Language="C#" Value="public class CertificateObjectClass : Microsoft.Office.Interop.InfoPath.CertificateObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi CertificateObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.Certificate, class Microsoft.Office.Interop.InfoPath.CertificateObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.CertificateObjectClass" />
@@ -13,6 +13,9 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.Certificate</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.CertificateObject</InterfaceName>
     </Interface>

@@ -1,4 +1,4 @@
-﻿<Type Name="MathObjectClass" FullName="Microsoft.Office.Interop.InfoPath.MathObjectClass">
+<Type Name="MathObjectClass" FullName="Microsoft.Office.Interop.InfoPath.MathObjectClass">
   <TypeSignature Language="C#" Value="public class MathObjectClass : Microsoft.Office.Interop.InfoPath.MathObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi MathObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.IPMath, class Microsoft.Office.Interop.InfoPath.MathObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.MathObjectClass" />
@@ -13,6 +13,9 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.IPMath</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.MathObject</InterfaceName>
     </Interface>

@@ -65,18 +65,6 @@ infoPath.&lt;span class="label"&gt;CacheSolution&lt;/span&gt;(@"\\MyServer\MyFor
           <para>
             <b>Note</b>: The above example assumes that the <see cref="N:Microsoft.Office.Interop.InfoPath" /> namespace is being used and that the Microsoft InfoPath 3.0 Type Library is referenced.</para>
         </example>
-        <example>
-          <para>In the following example, which is written in the C# programming language, the <b>CacheSolution</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ExternalApplication" /> object is used to cache an InfoPath form template</para>
-          <code>private void AutomateInfoPathForm()
-{
-ExternalApplication infoPath = new ExternalApplicationClass();
-
- // Cache an InfoPath form template.
-infoPath.&lt;span class="label"&gt;CacheSolution&lt;/span&gt;(@"\\MyServer\MyForms\MyForm.xsn");
-}</code>
-          <para>
-            <b>Note</b>: The above example assumes that the <see cref="N:Microsoft.Office.Interop.InfoPath" /> namespace is being used and that the Microsoft InfoPath 3.0 Type Library is referenced.</para>
-        </example>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -109,22 +97,6 @@ infoPath.&lt;span class="label"&gt;CacheSolution&lt;/span&gt;(@"\\MyServer\MyFor
           <para>The <b>Close</b> method closes the currently open form without quitting the InfoPath application. When using the <b>Close</b> method, the form is closed unconditionally, meaning that any changes made to the data in the form are not saved.</para>
           <para />
         </remarks>
-        <example>
-          <para>In the following example, which is written in the C# programming language, the <b>Close</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ExternalApplication" /> object is used to close the currently open form:</para>
-          <code>
-private void AutomateInfoPathForm()
-{
- ExternalApplication infoPath = new ExternalApplicationClass();
- // Open an InfoPath form.
- infoPath.Open(@"C:\My Forms\Form1.xml", 1);
- // Close the InfoPath form.
- infoPath.&lt;span class="label"&gt;Close&lt;/span&gt;(@"C:\My Forms\Form1.xml");
- // Quit the InfoPath application.
- infoPath.Quit();
-}</code>
-          <para>
-            <b>Note</b>: The above example assumes that the <see cref="N:Microsoft.Office.Interop.InfoPath" /> namespace is being used and that the Microsoft InfoPath 3.0 Type Library is referenced.</para>
-        </example>
         <example>
           <para>In the following example, which is written in the C# programming language, the <b>Close</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ExternalApplication" /> object is used to close the currently open form:</para>
           <code>
@@ -188,18 +160,6 @@ private void AutomateInfoPathForm()
           <para>
             <b>Note</b>: The above example assumes that the <see cref="N:Microsoft.Office.Interop.InfoPath" /> namespace is being used and that the Microsoft InfoPath 3.0 Type Library is referenced.</para>
         </example>
-        <example>
-          <para>In the following example, which is written in the C# programming language, the <b>New</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ExternalApplication" /> object is used to create a new form based on a specified form:</para>
-          <code>private void CreateFromForm()
-{
- ExternalApplication infoPath = new ExternalApplicationClass();
-
- // Create an InfoPath form.
- infoPath.&lt;span class="label"&gt;New&lt;/span&gt;(@"C:\My Forms\Form1.xml", 1);
-}</code>
-          <para>
-            <b>Note</b>: The above example assumes that the <see cref="N:Microsoft.Office.Interop.InfoPath" /> namespace is being used and that the Microsoft InfoPath 3.0 Type Library is referenced.</para>
-        </example>
       </Docs>
     </Member>
     <Member MemberName="NewFromSolution">
@@ -247,18 +207,6 @@ private void AutomateInfoPathForm()
           <para>
             <b>Note</b>: The above example assumes that the <see cref="N:Microsoft.Office.Interop.InfoPath" /> namespace is being used and that the Microsoft InfoPath 3.0 Type Library is referenced.</para>
         </example>
-        <example>
-          <para>In the following example, which is written in the C# programming language, the <b>NewFromSolution</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ExternalApplication" /> object is used to create a new form based on a specified form template:</para>
-          <code>private void CreateFromFormTemplate()
-{
- ExternalApplication infoPath = new ExternalApplicationClass();
-
- // Create an InfoPath form.
- infoPath.&lt;span class="label"&gt;NewFromSolution&lt;/span&gt;(@"C:\My Forms\MyFormTemplate.xsn", 1);
-}</code>
-          <para>
-            <b>Note</b>: The above example assumes that the <see cref="N:Microsoft.Office.Interop.InfoPath" /> namespace is being used and that the Microsoft InfoPath 3.0 Type Library is referenced.</para>
-        </example>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -292,25 +240,6 @@ private void AutomateInfoPathForm()
           <para>The <b>Open</b> method can be used only to open a form; it cannot be used to open a form template. To create a form from a form template, use the <see cref="M:Microsoft.Office.Interop.InfoPath._ExternalApplication.NewFromSolution(System.String)" /> method. To create a form based on an existing form, use the <see cref="M:Microsoft.Office.Interop.InfoPath._ExternalApplication.New(System.String,System.Int32)" /> method.</para>
           <para />
         </remarks>
-        <example>
-          <para>In the following example, which is written in the C# programming language, the <b>Open</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ExternalApplication" /> object is used to open a form from the file system:</para>
-          <code>private void AutomateInfoPathForm()
-{
- ExternalApplication infoPath = new ExternalApplicationClass();
-
- // Open an InfoPath form.
-
- infoPath.&lt;span class="label"&gt;Open&lt;/span&gt;(@"C:\My Forms\Form1.xml", 1);
-      
- // Close the InfoPath form.
- infoPath.Close(@"C:\My Forms\Form1.xml");
-      
- // Quit the InfoPath application.
- infoPath.Quit();
-}</code>
-          <para>
-            <b>Note</b>: The above example assumes that the <see cref="N:Microsoft.Office.Interop.InfoPath" /> namespace is being used and that the Microsoft InfoPath 3.0 Type Library is referenced.</para>
-        </example>
         <example>
           <para>In the following example, which is written in the C# programming language, the <b>Open</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ExternalApplication" /> object is used to open a form from the file system:</para>
           <code>private void AutomateInfoPathForm()
@@ -376,23 +305,6 @@ private void AutomateInfoPathForm()
           <para>
             <b>Note</b>: The above example assumes that the <see cref="N:Microsoft.Office.Interop.InfoPath" /> namespace is being used and that the Microsoft InfoPath 3.0 Type Library is referenced.</para>
         </example>
-        <example>
-          <para>In the following example, which is written in the C# programming language, the <b>Quit</b>  method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ExternalApplication" /> object is used to close InfoPath:</para>
-          <code>private void AutomateInfoPathForm()
-{
- ExternalApplication infoPath = new ExternalApplicationClass();
- // Open an InfoPath form.
- infoPath.Open(@"C:\My Forms\Form1.xml", 1);
-
- // Close the InfoPath form.
- infoPath.Close(@"C:\My Forms\Form1.xml");
-
- // Quit the InfoPath application.
- infoPath.&lt;span class="label"&gt;Quit&lt;/span&gt;();
-}</code>
-          <para>
-            <b>Note</b>: The above example assumes that the <see cref="N:Microsoft.Office.Interop.InfoPath" /> namespace is being used and that the Microsoft InfoPath 3.0 Type Library is referenced.</para>
-        </example>
       </Docs>
     </Member>
     <Member MemberName="RegisterSolution">
@@ -438,18 +350,6 @@ private void AutomateInfoPathForm()
           <para>
             <b>Note</b>: The above example assumes that the <see cref="N:Microsoft.Office.Interop.InfoPath" /> namespace is being used and that the Microsoft InfoPath 3.0 Type Library is referenced.</para>
         </example>
-        <example>
-          <para>In the following example, which is written in the C# programming language, the <b>RegisterSolution</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ExternalApplication" /> object is used to install a form template:</para>
-          <code>private void InstallForm()
-{
- ExternalApplication infoPath = new ExternalApplicationClass();
-
- // Install the specified InfoPath form.
- infoPath.&lt;span class="label"&gt;RegisterSolution&lt;/span&gt;(@"C:\My Forms\MyFormTemplate.xsn", "overwrite");
-}</code>
-          <para>
-            <b>Note</b>: The above example assumes that the <see cref="N:Microsoft.Office.Interop.InfoPath" /> namespace is being used and that the Microsoft InfoPath 3.0 Type Library is referenced.</para>
-        </example>
       </Docs>
     </Member>
     <Member MemberName="UnregisterSolution">
@@ -482,18 +382,6 @@ private void AutomateInfoPathForm()
           <para>If the form template cannot be unregistered, the <b>UnregisterSolution</b> method will return an error.</para>
           <para />
         </remarks>
-        <example>
-          <para>In the following example, which is written in the C# programming language, the <b>UnregisterSolution</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ExternalApplication" /> object is used to uninstall a form template:</para>
-          <code>private void UninstallForm()
-{
- ExternalApplication infoPath = new ExternalApplicationClass();
-
- infoPath.&lt;span class="label"&gt;UnregisterSolution&lt;/span&gt;(@"C:\My Forms\MyFormTemplate.xsn");
-}
-</code>
-          <para>
-            <b>Note</b>: The above example assumes that the <see cref="N:Microsoft.Office.Interop.InfoPath" /> namespace is being used and that the Microsoft InfoPath 3.0 Type Library is referenced.</para>
-        </example>
         <example>
           <para>In the following example, which is written in the C# programming language, the <b>UnregisterSolution</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.ExternalApplication" /> object is used to uninstall a form template:</para>
           <code>private void UninstallForm()

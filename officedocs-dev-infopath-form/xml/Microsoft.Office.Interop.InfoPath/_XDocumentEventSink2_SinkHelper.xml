@@ -14,6 +14,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath._XDocumentEventSink</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath._XDocumentEventSink2</InterfaceName>
     </Interface>
   </Interfaces>

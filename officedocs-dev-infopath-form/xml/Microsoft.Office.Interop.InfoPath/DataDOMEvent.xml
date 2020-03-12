@@ -1,4 +1,4 @@
-﻿<Type Name="DataDOMEvent" FullName="Microsoft.Office.Interop.InfoPath.DataDOMEvent">
+<Type Name="DataDOMEvent" FullName="Microsoft.Office.Interop.InfoPath.DataDOMEvent">
   <TypeSignature Language="C#" Value="public interface DataDOMEvent : Microsoft.Office.Interop.InfoPath.DocActionEvent" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DataDOMEvent implements class Microsoft.Office.Interop.InfoPath.DocActionEvent" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DataDOMEvent" />
@@ -12,6 +12,12 @@
   <Interfaces>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.DocActionEvent</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.DocEvent</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.DocReturnEvent</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>

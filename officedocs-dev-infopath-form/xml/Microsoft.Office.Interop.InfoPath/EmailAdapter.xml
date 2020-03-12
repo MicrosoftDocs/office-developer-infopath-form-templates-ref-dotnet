@@ -1,4 +1,4 @@
-﻿<Type Name="EmailAdapter" FullName="Microsoft.Office.Interop.InfoPath.EmailAdapter">
+<Type Name="EmailAdapter" FullName="Microsoft.Office.Interop.InfoPath.EmailAdapter">
   <TypeSignature Language="C#" Value="public interface EmailAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract EmailAdapter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.EmailAdapter" />

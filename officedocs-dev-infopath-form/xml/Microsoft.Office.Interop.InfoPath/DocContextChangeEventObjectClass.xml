@@ -1,4 +1,4 @@
-﻿<Type Name="DocContextChangeEventObjectClass" FullName="Microsoft.Office.Interop.InfoPath.DocContextChangeEventObjectClass">
+<Type Name="DocContextChangeEventObjectClass" FullName="Microsoft.Office.Interop.InfoPath.DocContextChangeEventObjectClass">
   <TypeSignature Language="C#" Value="public class DocContextChangeEventObjectClass : Microsoft.Office.Interop.InfoPath.DocContextChangeEventObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi DocContextChangeEventObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.DocContextChangeEvent, class Microsoft.Office.Interop.InfoPath.DocContextChangeEventObject, class Microsoft.Office.Interop.InfoPath.DocEvent" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DocContextChangeEventObjectClass" />
@@ -14,7 +14,13 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.DocContextChangeEvent</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.DocContextChangeEventObject</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.DocEvent</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>

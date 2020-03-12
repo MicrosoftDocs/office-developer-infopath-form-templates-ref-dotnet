@@ -1,4 +1,4 @@
-﻿<Type Name="InfoPathEditorObjectClass" FullName="Microsoft.Office.Interop.InfoPath.InfoPathEditorObjectClass">
+<Type Name="InfoPathEditorObjectClass" FullName="Microsoft.Office.Interop.InfoPath.InfoPathEditorObjectClass">
   <TypeSignature Language="C#" Value="public class InfoPathEditorObjectClass : Microsoft.Office.Interop.InfoPath.IInfoPathEditorProperties, Microsoft.Office.Interop.InfoPath.InfoPathEditorObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi InfoPathEditorObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.IInfoPathEditorProperties, class Microsoft.Office.Interop.InfoPath.InfoPathEditor, class Microsoft.Office.Interop.InfoPath.InfoPathEditorObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.InfoPathEditorObjectClass" />
@@ -15,6 +15,9 @@
   <Interfaces>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.IInfoPathEditorProperties</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.InfoPathEditor</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.InfoPathEditorObject</InterfaceName>

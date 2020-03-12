@@ -1,4 +1,4 @@
-﻿<Type Name="InputParameter" FullName="Microsoft.Office.Interop.InfoPath.InputParameter">
+<Type Name="InputParameter" FullName="Microsoft.Office.Interop.InfoPath.InputParameter">
   <TypeSignature Language="C#" Value="public interface InputParameter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract InputParameter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.InputParameter" />

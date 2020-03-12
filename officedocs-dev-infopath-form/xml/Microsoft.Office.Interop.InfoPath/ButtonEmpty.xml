@@ -1,4 +1,4 @@
-﻿<Type Name="ButtonEmpty" FullName="Microsoft.Office.Interop.InfoPath.ButtonEmpty">
+<Type Name="ButtonEmpty" FullName="Microsoft.Office.Interop.InfoPath.ButtonEmpty">
   <TypeSignature Language="C#" Value="public interface ButtonEmpty" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ButtonEmpty" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ButtonEmpty" />

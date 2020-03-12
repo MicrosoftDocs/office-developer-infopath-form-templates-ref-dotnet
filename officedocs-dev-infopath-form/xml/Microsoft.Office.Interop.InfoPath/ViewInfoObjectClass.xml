@@ -1,4 +1,4 @@
-﻿<Type Name="ViewInfoObjectClass" FullName="Microsoft.Office.Interop.InfoPath.ViewInfoObjectClass">
+<Type Name="ViewInfoObjectClass" FullName="Microsoft.Office.Interop.InfoPath.ViewInfoObjectClass">
   <TypeSignature Language="C#" Value="public class ViewInfoObjectClass : Microsoft.Office.Interop.InfoPath.ViewInfo2, Microsoft.Office.Interop.InfoPath.ViewInfoObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ViewInfoObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.ViewInfo, class Microsoft.Office.Interop.InfoPath.ViewInfo2, class Microsoft.Office.Interop.InfoPath.ViewInfoObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ViewInfoObjectClass" />
@@ -13,6 +13,9 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.ViewInfo</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.ViewInfo2</InterfaceName>
     </Interface>

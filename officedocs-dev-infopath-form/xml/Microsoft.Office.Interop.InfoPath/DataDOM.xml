@@ -1,4 +1,4 @@
-﻿<Type Name="DataDOM" FullName="Microsoft.Office.Interop.InfoPath.DataDOM">
+<Type Name="DataDOM" FullName="Microsoft.Office.Interop.InfoPath.DataDOM">
   <TypeSignature Language="C#" Value="public interface DataDOM : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event, Microsoft.Office.Interop.InfoPath.DataDOMEmpty" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DataDOM implements class Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event, class Microsoft.Office.Interop.InfoPath.DataDOMEmpty" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DataDOM" />

@@ -1,4 +1,4 @@
-﻿<Type Name="SignatureObjectClass" FullName="Microsoft.Office.Interop.InfoPath.SignatureObjectClass">
+<Type Name="SignatureObjectClass" FullName="Microsoft.Office.Interop.InfoPath.SignatureObjectClass">
   <TypeSignature Language="C#" Value="public class SignatureObjectClass : Microsoft.Office.Interop.InfoPath.SignatureObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi SignatureObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.Signature, class Microsoft.Office.Interop.InfoPath.SignatureObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SignatureObjectClass" />
@@ -13,6 +13,9 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.Signature</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.SignatureObject</InterfaceName>
     </Interface>

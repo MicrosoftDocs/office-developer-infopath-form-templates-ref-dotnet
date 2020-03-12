@@ -1,4 +1,4 @@
-﻿<Type Name="UserPermissionObjectClass" FullName="Microsoft.Office.Interop.InfoPath.UserPermissionObjectClass">
+<Type Name="UserPermissionObjectClass" FullName="Microsoft.Office.Interop.InfoPath.UserPermissionObjectClass">
   <TypeSignature Language="C#" Value="public class UserPermissionObjectClass : Microsoft.Office.Interop.InfoPath.UserPermissionObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi UserPermissionObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.UserPermission, class Microsoft.Office.Interop.InfoPath.UserPermissionObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.UserPermissionObjectClass" />
@@ -13,6 +13,9 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.UserPermission</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.UserPermissionObject</InterfaceName>
     </Interface>

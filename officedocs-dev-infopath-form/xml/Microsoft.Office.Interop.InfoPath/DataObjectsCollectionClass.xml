@@ -1,4 +1,4 @@
-﻿<Type Name="DataObjectsCollectionClass" FullName="Microsoft.Office.Interop.InfoPath.DataObjectsCollectionClass">
+<Type Name="DataObjectsCollectionClass" FullName="Microsoft.Office.Interop.InfoPath.DataObjectsCollectionClass">
   <TypeSignature Language="C#" Value="public class DataObjectsCollectionClass : Microsoft.Office.Interop.InfoPath.DataObjectsCollection, System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi DataObjectsCollectionClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.DataObjects, class Microsoft.Office.Interop.InfoPath.DataObjectsCollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DataObjectsCollectionClass" />
@@ -13,6 +13,9 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.DataObjects</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.DataObjectsCollection</InterfaceName>
     </Interface>

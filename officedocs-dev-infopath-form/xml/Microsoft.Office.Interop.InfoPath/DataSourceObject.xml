@@ -1,4 +1,4 @@
-﻿<Type Name="DataSourceObject" FullName="Microsoft.Office.Interop.InfoPath.DataSourceObject">
+<Type Name="DataSourceObject" FullName="Microsoft.Office.Interop.InfoPath.DataSourceObject">
   <TypeSignature Language="C#" Value="public interface DataSourceObject : Microsoft.Office.Interop.InfoPath.DataObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DataSourceObject implements class Microsoft.Office.Interop.InfoPath.DataObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DataSourceObject" />

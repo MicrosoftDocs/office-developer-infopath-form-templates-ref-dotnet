@@ -1,4 +1,4 @@
-﻿<Type Name="UIObject" FullName="Microsoft.Office.Interop.InfoPath.UIObject">
+<Type Name="UIObject" FullName="Microsoft.Office.Interop.InfoPath.UIObject">
   <TypeSignature Language="C#" Value="public interface UIObject : Microsoft.Office.Interop.InfoPath.UI2" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UIObject implements class Microsoft.Office.Interop.InfoPath.UI2" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.UIObject" />
@@ -10,6 +10,9 @@
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.UI</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.UI2</InterfaceName>
     </Interface>
