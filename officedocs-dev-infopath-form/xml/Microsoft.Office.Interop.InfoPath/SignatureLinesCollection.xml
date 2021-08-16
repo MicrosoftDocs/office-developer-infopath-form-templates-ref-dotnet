@@ -1,4 +1,4 @@
-﻿<Type Name="SignatureLinesCollection" FullName="Microsoft.Office.Interop.InfoPath.SignatureLinesCollection">
+<Type Name="SignatureLinesCollection" FullName="Microsoft.Office.Interop.InfoPath.SignatureLinesCollection">
   <TypeSignature Language="C#" Value="public interface SignatureLinesCollection : Microsoft.Office.Interop.InfoPath.SignatureLines" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SignatureLinesCollection implements class Microsoft.Office.Interop.InfoPath.SignatureLines" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SignatureLinesCollection" />
@@ -13,13 +13,18 @@
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.SignatureLines</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.InfoPath.SignatureLinesCollectionClass))</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.InfoPath.SignatureLinesCollectionClass))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.InfoPath.SignatureLinesCollectionClass))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.Guid("096CD767-0786-11D1-95FA-0080C78EE3BB")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.Guid("096CD767-0786-11D1-95FA-0080C78EE3BB")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.Guid("096CD767-0786-11D1-95FA-0080C78EE3BB")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

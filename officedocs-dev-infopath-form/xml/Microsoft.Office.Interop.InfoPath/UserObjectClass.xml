@@ -1,4 +1,4 @@
-﻿<Type Name="UserObjectClass" FullName="Microsoft.Office.Interop.InfoPath.UserObjectClass">
+<Type Name="UserObjectClass" FullName="Microsoft.Office.Interop.InfoPath.UserObjectClass">
   <TypeSignature Language="C#" Value="public class UserObjectClass : Microsoft.Office.Interop.InfoPath.User2, Microsoft.Office.Interop.InfoPath.UserObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi UserObjectClass extends System.Object implements class Microsoft.Office.Interop.InfoPath.User, class Microsoft.Office.Interop.InfoPath.User2, class Microsoft.Office.Interop.InfoPath.UserObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.UserObjectClass" />
@@ -14,6 +14,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.User</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.User2</InterfaceName>
     </Interface>
     <Interface>
@@ -22,10 +25,12 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(0)</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ClassInterface(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ClassInterface(0)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.Guid("8075830D-5146-11D5-A672-00B0D022E945")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.Guid("8075830D-5146-11D5-A672-00B0D022E945")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.Guid("8075830D-5146-11D5-A672-00B0D022E945")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -50,7 +55,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(1)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -83,7 +89,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(2)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

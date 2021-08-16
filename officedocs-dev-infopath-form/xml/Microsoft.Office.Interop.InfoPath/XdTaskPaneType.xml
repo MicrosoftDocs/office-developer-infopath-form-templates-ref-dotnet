@@ -1,4 +1,4 @@
-﻿<Type Name="XdTaskPaneType" FullName="Microsoft.Office.Interop.InfoPath.XdTaskPaneType">
+<Type Name="XdTaskPaneType" FullName="Microsoft.Office.Interop.InfoPath.XdTaskPaneType">
   <TypeSignature Language="C#" Value="public enum XdTaskPaneType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XdTaskPaneType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XdTaskPaneType" />
@@ -14,7 +14,8 @@
   </Base>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.Guid("F3960AA8-0A2E-3D24-A603-5B30981A45C5")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.Guid("F3960AA8-0A2E-3D24-A603-5B30981A45C5")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.Guid("F3960AA8-0A2E-3D24-A603-5B30981A45C5")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

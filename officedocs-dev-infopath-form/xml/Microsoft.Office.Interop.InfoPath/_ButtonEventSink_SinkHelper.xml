@@ -19,10 +19,12 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.None)</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.None)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.None)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.TypeLibType(System.Runtime.InteropServices.TypeLibTypeFlags.FHidden)</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.TypeLibType(System.Runtime.InteropServices.TypeLibTypeFlags.FHidden)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.TypeLibType(System.Runtime.InteropServices.TypeLibTypeFlags.FHidden)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -71,12 +73,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnClick">
-      <MemberSignature Language="C#" Value="public override void OnClick (Microsoft.Office.Interop.InfoPath.DocActionEventObject );" />
-      <MemberSignature Language="ILAsm" Value=".method public virtual instance void OnClick(class Microsoft.Office.Interop.InfoPath.DocActionEventObject ) cil managed" />
+      <MemberSignature Language="C#" Value="public override void OnClick (Microsoft.Office.Interop.InfoPath.DocActionEventObject unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public virtual instance void OnClick(class Microsoft.Office.Interop.InfoPath.DocActionEventObject unnamedParam1) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ButtonEventSink_SinkHelper.OnClick(Microsoft.Office.Interop.InfoPath.DocActionEventObject)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnClick ( As DocActionEventObject)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnClick(Microsoft::Office::Interop::InfoPath::DocActionEventObject ^ );" />
-      <MemberSignature Language="F#" Value="abstract member OnClick : Microsoft.Office.Interop.InfoPath.DocActionEventObject -&gt; unit&#xA;override this.OnClick : Microsoft.Office.Interop.InfoPath.DocActionEventObject -&gt; unit" Usage="_ButtonEventSink_SinkHelper.OnClick " />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnClick (unnamedParam1 As DocActionEventObject)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnClick(Microsoft::Office::Interop::InfoPath::DocActionEventObject ^ unnamedParam1);" />
+      <MemberSignature Language="F#" Value="abstract member OnClick : Microsoft.Office.Interop.InfoPath.DocActionEventObject -&gt; unit&#xA;override this.OnClick : Microsoft.Office.Interop.InfoPath.DocActionEventObject -&gt; unit" Usage="_ButtonEventSink_SinkHelper.OnClick unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ButtonEventSink.OnClick(Microsoft.Office.Interop.InfoPath.DocActionEventObject)</InterfaceMember>
@@ -89,10 +91,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath.DocActionEventObject" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath.DocActionEventObject" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This member is reserved for internal use and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>

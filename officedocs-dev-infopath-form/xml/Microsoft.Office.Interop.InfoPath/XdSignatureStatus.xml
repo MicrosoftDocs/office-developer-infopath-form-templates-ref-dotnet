@@ -1,4 +1,4 @@
-﻿<Type Name="XdSignatureStatus" FullName="Microsoft.Office.Interop.InfoPath.XdSignatureStatus">
+<Type Name="XdSignatureStatus" FullName="Microsoft.Office.Interop.InfoPath.XdSignatureStatus">
   <TypeSignature Language="C#" Value="public enum XdSignatureStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XdSignatureStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XdSignatureStatus" />
@@ -14,7 +14,8 @@
   </Base>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.Guid("E5E3A7C3-B69A-3E65-8019-1D8B1A5779CD")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.Guid("E5E3A7C3-B69A-3E65-8019-1D8B1A5779CD")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.Guid("E5E3A7C3-B69A-3E65-8019-1D8B1A5779CD")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

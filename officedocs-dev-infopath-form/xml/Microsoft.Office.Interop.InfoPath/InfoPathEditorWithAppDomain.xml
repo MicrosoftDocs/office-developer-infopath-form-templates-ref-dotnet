@@ -1,4 +1,4 @@
-﻿<Type Name="InfoPathEditorWithAppDomain" FullName="Microsoft.Office.Interop.InfoPath.InfoPathEditorWithAppDomain">
+<Type Name="InfoPathEditorWithAppDomain" FullName="Microsoft.Office.Interop.InfoPath.InfoPathEditorWithAppDomain">
   <TypeSignature Language="C#" Value="public interface InfoPathEditorWithAppDomain" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract InfoPathEditorWithAppDomain" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.InfoPathEditorWithAppDomain" />
@@ -12,13 +12,16 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.Guid("096CD774-0786-11D1-95FA-0080C78EE3BB")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.Guid("096CD774-0786-11D1-95FA-0080C78EE3BB")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.Guid("096CD774-0786-11D1-95FA-0080C78EE3BB")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(1)</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.InterfaceType(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.InterfaceType(1)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.TypeLibType(192)</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.TypeLibType(192)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.TypeLibType(192)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -40,7 +43,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(1610678274)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(1610678274)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(1610678274)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -77,7 +81,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(1610678275)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(1610678275)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(1610678275)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -113,7 +118,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(1610678272)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(1610678272)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(1610678272)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -149,7 +155,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(1610678273)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(1610678273)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(1610678273)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

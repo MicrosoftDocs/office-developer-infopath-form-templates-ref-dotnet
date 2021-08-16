@@ -1,4 +1,4 @@
-﻿<Type Name="IErrorLog" FullName="Microsoft.Office.Interop.InfoPath.IErrorLog">
+<Type Name="IErrorLog" FullName="Microsoft.Office.Interop.InfoPath.IErrorLog">
   <TypeSignature Language="C#" Value="public interface IErrorLog" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IErrorLog" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.IErrorLog" />
@@ -12,10 +12,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.Guid("3127CA40-446E-11CE-8135-00AA004BB851")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.Guid("3127CA40-446E-11CE-8135-00AA004BB851")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.Guid("3127CA40-446E-11CE-8135-00AA004BB851")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(1)</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.InterfaceType(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.InterfaceType(1)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,7 +34,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IErrorLog.AddError(System.String,stdole.EXCEPINFO@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddError (pszPropName As String, ByRef pExcepInfo As EXCEPINFO)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddError(System::String ^ pszPropName, stdole::EXCEPINFO % pExcepInfo);" />
-      <MemberSignature Language="F#" Value="abstract member AddError : string *  -&gt; unit" Usage="iErrorLog.AddError (pszPropName, pExcepInfo)" />
+      <MemberSignature Language="F#" Value="abstract member AddError : string * EXCEPINFO -&gt; unit" Usage="iErrorLog.AddError (pszPropName, pExcepInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

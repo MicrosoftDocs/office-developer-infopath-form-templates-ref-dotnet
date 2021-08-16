@@ -1,4 +1,4 @@
-﻿<Type Name="DataObjectsCollection" FullName="Microsoft.Office.Interop.InfoPath.DataObjectsCollection">
+<Type Name="DataObjectsCollection" FullName="Microsoft.Office.Interop.InfoPath.DataObjectsCollection">
   <TypeSignature Language="C#" Value="public interface DataObjectsCollection : Microsoft.Office.Interop.InfoPath.DataObjects" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DataObjectsCollection implements class Microsoft.Office.Interop.InfoPath.DataObjects" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DataObjectsCollection" />
@@ -13,13 +13,18 @@
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.DataObjects</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.InfoPath.DataObjectsCollectionClass))</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.InfoPath.DataObjectsCollectionClass))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.InfoPath.DataObjectsCollectionClass))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.Guid("096CD5A4-0786-11D1-95FA-0080C78EE3BB")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.Guid("096CD5A4-0786-11D1-95FA-0080C78EE3BB")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.Guid("096CD5A4-0786-11D1-95FA-0080C78EE3BB")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

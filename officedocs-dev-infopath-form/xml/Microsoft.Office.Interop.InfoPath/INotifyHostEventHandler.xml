@@ -1,4 +1,4 @@
-﻿<Type Name="INotifyHostEventHandler" FullName="Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler">
+<Type Name="INotifyHostEventHandler" FullName="Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler">
   <TypeSignature Language="C#" Value="public interface INotifyHostEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INotifyHostEventHandler" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler" />
@@ -12,10 +12,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.Guid("096CD764-0786-11D1-95FA-0080C78EE3BB")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.Guid("096CD764-0786-11D1-95FA-0080C78EE3BB")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.Guid("096CD764-0786-11D1-95FA-0080C78EE3BB")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(1)</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.InterfaceType(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.InterfaceType(1)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

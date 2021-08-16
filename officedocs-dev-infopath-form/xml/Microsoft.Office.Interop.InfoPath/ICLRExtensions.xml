@@ -1,4 +1,4 @@
-﻿<Type Name="ICLRExtensions" FullName="Microsoft.Office.Interop.InfoPath.ICLRExtensions">
+<Type Name="ICLRExtensions" FullName="Microsoft.Office.Interop.InfoPath.ICLRExtensions">
   <TypeSignature Language="C#" Value="public interface ICLRExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICLRExtensions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ICLRExtensions" />
@@ -12,13 +12,16 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.Guid("096CD6A9-0786-11D1-95FA-0080C78EE3BB")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.Guid("096CD6A9-0786-11D1-95FA-0080C78EE3BB")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.Guid("096CD6A9-0786-11D1-95FA-0080C78EE3BB")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(1)</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.InterfaceType(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.InterfaceType(1)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.TypeLibType(16)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.TypeLibType(16)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -99,7 +102,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ICLRExtensions.GetCachedProperty(System.Int32,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetCachedProperty (propId As Integer, ByRef Value As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetCachedProperty(int propId, [Runtime::InteropServices::Out] System::String ^ % Value);" />
-      <MemberSignature Language="F#" Value="abstract member GetCachedProperty : int *  -&gt; bool" Usage="iCLRExtensions.GetCachedProperty (propId, Value)" />
+      <MemberSignature Language="F#" Value="abstract member GetCachedProperty : int * string -&gt; bool" Usage="iCLRExtensions.GetCachedProperty (propId, Value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>

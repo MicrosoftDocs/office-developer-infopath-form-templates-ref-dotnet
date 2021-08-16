@@ -1,4 +1,4 @@
-﻿<Type Name="FormControlCommandIds" FullName="Microsoft.Office.InfoPath.FormControlCommandIds">
+<Type Name="FormControlCommandIds" FullName="Microsoft.Office.InfoPath.FormControlCommandIds">
   <TypeSignature Language="C#" Value="public class FormControlCommandIds" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FormControlCommandIds extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.InfoPath.FormControlCommandIds" />

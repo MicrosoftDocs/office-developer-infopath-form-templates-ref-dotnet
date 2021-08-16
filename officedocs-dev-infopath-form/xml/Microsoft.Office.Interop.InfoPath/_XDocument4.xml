@@ -11,15 +11,23 @@
   </AssemblyInfo>
   <Interfaces>
     <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath._XDocument</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath._XDocument2</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath._XDocument3</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.Guid("096CD77B-0786-11D1-95FA-0080C78EE3BB")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.Guid("096CD77B-0786-11D1-95FA-0080C78EE3BB")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.Guid("096CD77B-0786-11D1-95FA-0080C78EE3BB")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.TypeLibType(4288)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.TypeLibType(4288)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -44,7 +52,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(56)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(56)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(56)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -57,14 +66,6 @@
           <para>Calling the <b>CloseDocument</b> method is equivalent to calling the <see cref="M:Microsoft.Office.Interop.InfoPath.XDocuments3.Close(System.Object)" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocuments3" /> collection.</para>
           <para />
         </remarks>
-        <example>
-          <para>In the following example, the <b>CloseDocument</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to close the current form.</para>
-          <code>_XDocument3 thisDoc = (_XDocument3)thisXDocument;
-thisDoc.CloseDocument();</code>
-          <code>Dim thisDoc As _XDocument4 = DirectCast(_
-   thisXDocument, _XDocument4)
-thisDoc.CloseDocument()</code>
-        </example>
         <example>
           <para>In the following example, the <b>CloseDocument</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to close the current form.</para>
           <code>_XDocument3 thisDoc = (_XDocument3)thisXDocument;
@@ -92,7 +93,8 @@ thisDoc.CloseDocument()</code>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(48)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(48)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(48)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -111,22 +113,6 @@ thisDoc.CloseDocument()</code>
 myDocument.setProperty("SelectionNameSpaces",namespaceString);</code>
           <para />
         </remarks>
-        <example>
-          <code>// create a new XMLDOMDocument that can be used by InfoPath
-IXMLDOMDocument newDOM = thisXDocument.&lt;span class="label"&gt;CreateDOM&lt;/span&gt;();
-// Get one node from the main DOM and add it to the new DOM
-IXMLDOMNode referenceNode = thisXDocument.DOM.selectSingleNode("//my:group1");
-newDOM.appendChild(referenceNode);
-// create a new node that will be added to the new DOM
-IXMLDOMNode newNode = newDOM.createNode(1,"my:Group2",referenceNode.namespaceURI);
-// Set its value
-newNode.text = "this is a group2 node";
-// Set the SelectionNamespaces attribute with the namespace used in the new DOM
-((IXMLDOMDocument3)newDOM).setProperty("SelectionNamespaces","xmlns:my='" + referenceNode.namespaceURI + "'");
-// Select one mode from the new DOM and add the new Node as its child
-IXMLDOMNode parentNode = newDOM.selectSingleNode("//my:group1");
-parentNode.appendChild(newNode);</code>
-        </example>
         <example>
           <code>// create a new XMLDOMDocument that can be used by InfoPath
 IXMLDOMDocument newDOM = thisXDocument.&lt;span class="label"&gt;CreateDOM&lt;/span&gt;();
@@ -162,10 +148,12 @@ parentNode.appendChild(newNode);</code>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(42)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(42)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(42)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(42)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(42)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(42)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -178,15 +166,6 @@ parentNode.appendChild(newNode);</code>
           <para>To use the object returned by a <b>DataAdaptersCollection</b> object, you must declare and cast to the corresponding type for the kind of data connection that is defined in the form template using the Data Connections command on the Data tab. For example, to work with a data connection to a SharePoint list, you must declare and cast the object returned from the <b>DataAdaptersCollection</b> object to the <see cref="T:Microsoft.Office.Interop.InfoPath.SharepointListAdapterObject" /> type as shown in the code sample.</para>
           <para />
         </remarks>
-        <example>
-          <para>In the following example, the <b>DataAdapters</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to set a reference to a data connection to a SharePoint list called "Contacts".</para>
-          <code>SharepointListAdapterObject myContacts = 
-   (SharepointListAdapterObject)thisXDocument.&lt;span class="label"&gt;DataAdapters&lt;/span&gt;["Contacts"];</code>
-          <code>Dim myContacts As SharepointListAdapterObject = _
-   DirectCast(_
-      thisXDocument.&lt;span class="label"&gt;DataAdapters&lt;/span&gt;["Contacts"], _
-      SharepointListAdapterObject)</code>
-        </example>
         <example>
           <para>In the following example, the <b>DataAdapters</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to set a reference to a data connection to a SharePoint list called "Contacts".</para>
           <code>SharepointListAdapterObject myContacts = 
@@ -215,10 +194,12 @@ parentNode.appendChild(newNode);</code>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(18)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(18)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(18)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(18)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(18)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(18)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -231,28 +212,6 @@ parentNode.appendChild(newNode);</code>
           <para>The <b>DataObjects</b> collection provides programmatic access to a form's secondary data sources. Each secondary data source is contained in a <see cref="T:Microsoft.Office.Interop.InfoPath.DataSourceObject" /> object within the <b>DataObjects</b> collection.</para>
           <para />
         </remarks>
-        <example>
-          <para>In the following example, the <b>DataObjects</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to set a reference to the "CityList" secondary data source:</para>
-          <code>DataSourceObject myDataObject = 
-   (DataSourceObject)thisXDocument.&lt;span class="label"&gt;DataObjects&lt;/span&gt;["CityList"];</code>
-          <code>Dim myDataObject As DataSourceObject = _
-   DirectCast(thisXDocument.&lt;span class="label"&gt;DataObjects&lt;/span&gt;["CityList"], DataSourceObject)</code>
-          <para>In the following example, implemented as an <see cref="E:Microsoft.Office.Interop.InfoPath._ButtonEventSink_Event.OnClick" /> event handler for a button on a form, the <b>DataObjects</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to set a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.DataObjectsCollection" /> collection. The code then loops through the collection and displays the positional index and name of each <see cref="T:Microsoft.Office.Interop.InfoPath.DataSourceObject" /> object that it contains:</para>
-          <code>[InfoPathEventHandler(MatchPath="ShowDataObjectNames", EventType=InfoPathEventType.OnClick)]
-public void ShowDataObjectNames_OnClick(DocActionEvent e)
-{
-   // Set a reference to the DataObjects collection.
-   DataObjectsCollection dataObjects = thisXDocument.&lt;span class="label"&gt;DataObjects&lt;/span&gt;;
-
-   // Loop through the collection and display the name
-   // of each DataObject object that it contains.
-   for (int i=0; i &amp;lt; dataObjects.Count; i++)
-   {
-       thisXDocument.UI.Alert("Data object " + i + ": " + 
-          dataObjects[i].Name);
-   }
-}</code>
-        </example>
         <example>
           <para>In the following example, the <b>DataObjects</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to set a reference to the "CityList" secondary data source:</para>
           <code>DataSourceObject myDataObject = 
@@ -294,10 +253,12 @@ public void ShowDataObjectNames_OnClick(DocActionEvent e)
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(8)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(8)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(8)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(8)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -310,11 +271,6 @@ public void ShowDataObjectNames_OnClick(DocActionEvent e)
           <para>A key property of the <b>XDocument</b> object, the <b>DOM</b> property allows you to programmatically access and manipulate the source XML of a form. After you have set a reference to the XML DOM, which contains the source XML data of a form, you can use any of the properties and methods that are supported by the XML DOM.</para>
           <para />
         </remarks>
-        <example>
-          <code>// Retrieve the Employees Adapter from the DataAdapters collection.ADOAdapter employeesDA =   (ADOAdapter)thisXDocument.DataAdapters["Employees"];// Get employee’s ID from the main DOMstring employeeID =    thisXDocument.
-&lt;span class="label"&gt;DOM&lt;/span&gt;
-.selectSingleNode("//my:field2").text;// Change the ADOAdapter’s command to retrieve the record // of the Employee's ID entered by the useremployeesDA.Command =    "select * from Employees where EmployeeID="+employeeID;// Get DataObject from the DataObjects collection and // call Query to refresh the data object.DataSourceObject employeesDO =   (DataSourceObject)thisXDocument.DataObjects["Employees"];employeesDO.Query();</code>
-        </example>
         <example>
           <code>// Retrieve the Employees Adapter from the DataAdapters collection.ADOAdapter employeesDA =   (ADOAdapter)thisXDocument.DataAdapters["Employees"];// Get employee’s ID from the main DOMstring employeeID =    thisXDocument.
 &lt;span class="label"&gt;DOM&lt;/span&gt;
@@ -339,10 +295,12 @@ public void ShowDataObjectNames_OnClick(DocActionEvent e)
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(10)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(10)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(10)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(10)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(10)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -355,13 +313,6 @@ public void ShowDataObjectNames_OnClick(DocActionEvent e)
           <para>The <b>Errors</b> collection is associated with a form's underlying XML document so that when an error occurs, it occurs within the XML document. After you set a reference to the <b>Errors</b> collection, you can access all of its properties and methods for managing the errors within an InfoPath form.</para>
           <para />
         </remarks>
-        <example>
-          <para>In the following example, the <b>Errors</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to return the count of the number or errors and then display that value in a message box:</para>
-          <code>int errors;
-
-errors = thisXDocument.&lt;span class="label"&gt;Errors&lt;/span&gt;.Count;
-thisXDocument.UI.Alert("Total number of errors: " + errors);</code>
-        </example>
         <example>
           <para>In the following example, the <b>Errors</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to return the count of the number or errors and then display that value in a message box:</para>
           <code>int errors;
@@ -388,10 +339,12 @@ thisXDocument.UI.Alert("Total number of errors: " + errors);</code>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(11)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(11)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(11)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(11)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(11)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -406,24 +359,6 @@ thisXDocument.UI.Alert("Total number of errors: " + errors);</code>
           <code>objXDocument = window.external.XDocument;</code>
           <para />
         </remarks>
-        <example>
-          <para>In the following example, the <b>Extension</b> property is used through the <see cref="T:Microsoft.Office.Interop.InfoPath.ObjectWrapper" /> interface to invoke the custom method called <paramref name="MyMethod" />. This is necessary when using the <b>Extension</b> property in managed code:</para>
-          <code>ObjectWrapper o = (ObjectWrapper)thisApplication.XDocuments[0].&lt;span class="label"&gt;Extension&lt;/span&gt;;
- o.GetType().InvokeMember("MyMethod",
- BindingFlags.InvokeMethod |
- BindingFlags.DeclaredOnly | 
- BindingFlags.Public |  
- BindingFlags.Instance, null, o, null);</code>
-          <para>In the following example, a method called <paramref name="myCustomMethod" /> of the InfoPath project class can be accessed from the custom task pane using the <b>Extension</b> property:</para>
-          <code>//Custom method added to the project
-public string myCustomMethod()
-{
-return "Method value";
-}</code>
-          <para>To access <paramref name="myCustomMethod" /> from the custom task pane, use the DHTML <b>external</b> property of the DHTML <b>window</b> object:</para>
-          <code>objXDocument = window.external.XDocument;
-myString = objXDocument.&lt;span class="label"&gt;Extension&lt;/span&gt;.myCustomMethod();</code>
-        </example>
         <example>
           <para>In the following example, the <b>Extension</b> property is used through the <see cref="T:Microsoft.Office.Interop.InfoPath.ObjectWrapper" /> interface to invoke the custom method called <paramref name="MyMethod" />. This is necessary when using the <b>Extension</b> property in managed code:</para>
           <code>ObjectWrapper o = (ObjectWrapper)thisApplication.XDocuments[0].&lt;span class="label"&gt;Extension&lt;/span&gt;;
@@ -461,7 +396,8 @@ myString = objXDocument.&lt;span class="label"&gt;Extension&lt;/span&gt;.myCusto
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(22)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(22)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(22)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -480,11 +416,6 @@ myString = objXDocument.&lt;span class="label"&gt;Extension&lt;/span&gt;.myCusto
             <b>Note</b>: InfoPath only supports using the <paramref name="initialView" /> variable, which is the variable used to specify the initial view displayed when a form is opened. The number of this variable is always 1, and its value must be the name of a view within the form.</para>
           <para />
         </remarks>
-        <example>
-          <para>In the following example, the <b>GetDataVariable</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to return the value of the first variable:</para>
-          <code>string variable1;
-variable1= thisXDocument.&lt;span class="label"&gt;GetDataVariable&lt;/span&gt;(1);</code>
-        </example>
         <example>
           <para>In the following example, the <b>GetDataVariable</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to return the value of the first variable:</para>
           <code>string variable1;
@@ -509,7 +440,8 @@ variable1= thisXDocument.&lt;span class="label"&gt;GetDataVariable&lt;/span&gt;(
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(24)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(24)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(24)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -550,7 +482,8 @@ variable1= thisXDocument.&lt;span class="label"&gt;GetDataVariable&lt;/span&gt;(
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(43)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(43)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(43)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -581,16 +514,6 @@ test = thisXDocument.GetNamedNodeProperty(item, "cost", "Value not set");</code>
           <para>In the following XSL example, the "cost" named property of the item node is displayed:</para>
           <code>&amp;lt;xsl:value-of select="xdXDocument:&lt;span class="label"&gt;GetNamedNodeProperty&lt;/span&gt;(item, 'cost', 'empty')"/&amp;gt;</code>
         </example>
-        <example>
-          <para>The following example demonstrates setting and getting the value of a named property (with the name "cost") of an XML node (called "item"):</para>
-          <code>IXMLDOMNode item = thisXDocument.DOM.selectSingleNode(@"/items/item");
-string test = thisXDocument.&lt;span class="label"&gt;GetNamedNodeProperty&lt;/span&gt;(item, 'cost', 'Value not set');
-// The value of the "cost" named property is set to 100.
-thisXDocument.SetNamedNodeProperty(item, "cost", "100");
-test = thisXDocument.GetNamedNodeProperty(item, "cost", "Value not set");</code>
-          <para>In the following XSL example, the "cost" named property of the item node is displayed:</para>
-          <code>&amp;lt;xsl:value-of select="xdXDocument:&lt;span class="label"&gt;GetNamedNodeProperty&lt;/span&gt;(item, 'cost', 'empty')"/&amp;gt;</code>
-        </example>
       </Docs>
     </Member>
     <Member MemberName="GetWorkflowTasks">
@@ -610,7 +533,8 @@ test = thisXDocument.GetNamedNodeProperty(item, "cost", "Value not set");</code>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(52)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(52)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(52)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -625,27 +549,6 @@ test = thisXDocument.GetNamedNodeProperty(item, "cost", "Value not set");</code>
             <b>Important</b>: For the <b>GetWorkFlowTasks</b> method to work, you must establish a reference to the Microsoft Office 14.0 Object Library (from the COM tab of the Add Reference dialog box in Visual Studio. This will establish a reference to the <b>Microsoft.Office.Core</b> namespace, which contains the <b>WorkflowTasks</b> class.</para>
           <para />
         </remarks>
-        <example>
-          <para>In the following example, the <b>GetWorkflowTasks</b> method is used to display the count of workflow tasks associated with the current form.</para>
-          <para>This example requires a <b>using</b> or <b>Imports</b> directive for the <b>Microsoft.Office.Core</b> namespace in the declarations section of the form code module.</para>
-          <code>_XDocument4 thisDoc = (_XDocument4)thisXDocument;
-WorkflowTasks myWorkflowTasks = 
-      (WorkflowTasks)thisDoc.GetWorkflowTasks();
-
-int workflowTasksCount = myWorkflowTasks.Count;
-
-thisXDocument.UI.Alert("Get " + workflowTasksCount.ToString() + " 
-   workflow tasks.");</code>
-          <code>Dim thisDoc As _XDocument4 = DirectCast(_
-   thisXDocument, _XDocument4)
-Dim myWorkflowTasks As WorkflowTasks = _
-   DirectCast(thisDoc.GetWorkflowTasks(), WorkflowTasks)
-
-Dim workflowTasksCount As Integer = myWorkflowTasks.Count
-
-thisXDocument.UI.Alert("Get " &amp;amp; workflowTasksCount.ToString() &amp;amp; " _
-      workflow tasks.")</code>
-        </example>
         <example>
           <para>In the following example, the <b>GetWorkflowTasks</b> method is used to display the count of workflow tasks associated with the current form.</para>
           <para>This example requires a <b>using</b> or <b>Imports</b> directive for the <b>Microsoft.Office.Core</b> namespace in the declarations section of the form code module.</para>
@@ -686,7 +589,8 @@ thisXDocument.UI.Alert("Get " &amp;amp; workflowTasksCount.ToString() &amp;amp; 
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(53)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(53)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(53)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -701,27 +605,6 @@ thisXDocument.UI.Alert("Get " &amp;amp; workflowTasksCount.ToString() &amp;amp; 
             <b>Important</b>: For the <b>GetWorkFlowTemplates</b> method to work, you must establish a reference to the Microsoft Office 14.0 Object Library (from the COM tab of the Add Reference dialog box in Visual Studio). This will establish a reference to the <b>Microsoft.Office.Core</b> namespace, which contains the <b>WorkflowTemplates</b> class.</para>
           <para />
         </remarks>
-        <example>
-          <para>In the following example, the <b>GetWorkflowTemplates</b> method is used to display the count of workflow templates associated with the current form.</para>
-          <para>This example requires a <b>using</b> or <b>Imports</b> directive for the <b>Microsoft.Office.Core</b> namespace in the declarations section of the form code module.</para>
-          <code>_XDocument4 thisDoc = (_XDocument4)thisXDocument;
-WorkflowTemplates myWorkflowTemplates = 
-   (WorkflowTemplates)thisDoc.GetWorkflowTemplates();
-
-int workflowTemplatesCount = myWorkflowTemplates.Count;
-
-thisXDocument.UI.Alert("Get " + workflowTemplatesCount.ToString() + " 
-   workflow templates.");</code>
-          <code>Dim thisDoc As _XDocument4 = DirectCast(_
-   thisXDocument, _XDocument4)
-Dim myWorkflowTemplates As WorkflowTemplates = _
-   DirectCast(thisDoc.GetWorkflowTemplates(), WorkflowTemplates)
-
-Dim workflowTemplatesCount As Integer = myWorkflowTemplates.Count
-
-thisXDocument.UI.Alert("Get " &amp;amp; workflowTemplatesCount.ToString() &amp;amp; " _
-   workflow templates.")</code>
-        </example>
         <example>
           <para>In the following example, the <b>GetWorkflowTemplates</b> method is used to display the count of workflow templates associated with the current form.</para>
           <para>This example requires a <b>using</b> or <b>Imports</b> directive for the <b>Microsoft.Office.Core</b> namespace in the declarations section of the form code module.</para>
@@ -762,10 +645,12 @@ thisXDocument.UI.Alert("Get " &amp;amp; workflowTemplatesCount.ToString() &amp;a
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(51)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(51)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(51)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(51)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(51)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(51)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -798,10 +683,12 @@ thisXDocument.UI.Alert("Get " &amp;amp; workflowTemplatesCount.ToString() &amp;a
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(54)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(54)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(54)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(54)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(54)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(54)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -834,7 +721,8 @@ thisXDocument.UI.Alert("Get " &amp;amp; workflowTemplatesCount.ToString() &amp;a
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(45)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(45)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(45)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -850,15 +738,6 @@ thisXDocument.UI.Alert("Get " &amp;amp; workflowTemplatesCount.ToString() &amp;a
           <para>Using the object model to import a form programmatically is equivalent to performing a merge operation in the user interface.</para>
           <para />
         </remarks>
-        <example>
-          <para>In the following example, the <b>ImportDOM</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to import a form from the <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnMergeRequest" /> event:</para>
-          <code>[InfoPathEventHandler(EventType=InfoPathEventType.OnMergeRequest)]
-public void OnMergeRequest(MergeEvent e)
-{ 
- thisXDocument.&lt;span class="label"&gt;ImportDOM&lt;/span&gt;(e.DOM);
- e.ReturnStatus = true;
-}</code>
-        </example>
         <example>
           <para>In the following example, the <b>ImportDOM</b> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to import a form from the <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnMergeRequest" /> event:</para>
           <code>[InfoPathEventHandler(EventType=InfoPathEventType.OnMergeRequest)]
@@ -887,7 +766,8 @@ public void OnMergeRequest(MergeEvent e)
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(20)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(20)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(20)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -926,10 +806,12 @@ public void OnMergeRequest(MergeEvent e)
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(55)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(55)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(55)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(55)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(55)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(55)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -942,13 +824,6 @@ public void OnMergeRequest(MergeEvent e)
           <para>Input parameters consist of one or more name/value pairs separated by the ampersand (&amp;) character that are specified when a form template is opened from the command line or a batch file using the /InputParameters command-line option. Input parameters can also be specified using query parameters when a form template is opened from a URL.</para>
           <para />
         </remarks>
-        <example>
-          <para>In the following example, an InfoPath form template is opened from the command line using the following syntax:</para>
-          <para>infopath.exe "C:\User Forms\DeptReport.xsn" /InputParameters "Dept=Accounting"</para>
-          <code>string vDept = (_XDocument4)thisXDocument.InputParameters["Dept"];</code>
-          <code>Dim vDept As String = 
-   DirectCast(thisXDocument, _XDocument4).InputParameters("Dept")</code>
-        </example>
         <example>
           <para>In the following example, an InfoPath form template is opened from the command line using the following syntax:</para>
           <para>infopath.exe "C:\User Forms\DeptReport.xsn" /InputParameters "Dept=Accounting"</para>
@@ -975,10 +850,12 @@ public void OnMergeRequest(MergeEvent e)
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(5)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(5)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(5)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(5)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -993,17 +870,6 @@ public void OnMergeRequest(MergeEvent e)
             <b>Note</b>: Changes that occur during an <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnLoad" /> event will not result in the <b>IsDirty</b> property being set to <b>true</b>.</para>
           <para />
         </remarks>
-        <example>
-          <para>In the following example, the <b>IsDirty</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to determine whether data in the form has been changed:</para>
-          <code>if (thisXDocument.&lt;span class="label"&gt;IsDirty&lt;/span&gt;)
-{
- thisXDocument.UI.Alert("Data has been changed.");
-}
-else
-{
- thisXDocument.UI.Alert("Data has not been changed.");
-}</code>
-        </example>
         <example>
           <para>In the following example, the <b>IsDirty</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to determine whether data in the form has been changed:</para>
           <code>if (thisXDocument.&lt;span class="label"&gt;IsDirty&lt;/span&gt;)
@@ -1034,10 +900,12 @@ else
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(39)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(39)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(39)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(39)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(39)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(39)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1081,18 +949,6 @@ public void field1_OnAfterChange(DataDOMEvent e)
  // Continue normal processing...
 }</code>
         </example>
-        <example>
-          <para>In the following example, the <b>IsDOMReadOnly</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to determine whether data in the form's underlying XML document has been placed in a read-only state. If it has, a return statement is used to exit the event handler.</para>
-          <code>[InfoPathEventHandler(MatchPath="/my:myFields/my:field1", EventType=InfoPathEventType.OnAfterChange)]
-public void field1_OnAfterChange(DataDOMEvent e)
-{
- // Determine whether the XML DOM is read-only.
- if (thisXDocument.&lt;span class="label"&gt;IsDOMReadOnly&lt;/span&gt;)
-  return;
-
- // Continue normal processing...
-}</code>
-        </example>
       </Docs>
     </Member>
     <Member MemberName="IsHosted">
@@ -1112,10 +968,12 @@ public void field1_OnAfterChange(DataDOMEvent e)
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(57)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(57)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(57)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(57)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(57)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(57)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1149,10 +1007,12 @@ public void field1_OnAfterChange(DataDOMEvent e)
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(6)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(6)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(6)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(6)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1165,13 +1025,6 @@ public void field1_OnAfterChange(DataDOMEvent e)
           <para>If the <b>IsNew</b> property is <b>true</b>, data in the form's underlying XML document has not been saved since the form was initially created. If <b>false</b>, the data in the new form's underlying XML document has been saved.</para>
           <para />
         </remarks>
-        <example>
-          <para>In the following example, the <b>IsNew</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to determine whether the data in a new form has been saved:</para>
-          <code>if (thisXDocument.&lt;span class="label"&gt;IsNew&lt;/span&gt;)
-{
- thisXDocument.UI.Alert("Please save your form.");
-}</code>
-        </example>
         <example>
           <para>In the following example, the <b>IsNew</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to determine whether the data in a new form has been saved:</para>
           <code>if (thisXDocument.&lt;span class="label"&gt;IsNew&lt;/span&gt;)
@@ -1198,10 +1051,12 @@ public void field1_OnAfterChange(DataDOMEvent e)
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(16)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(16)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(16)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(16)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(16)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1215,13 +1070,6 @@ public void field1_OnAfterChange(DataDOMEvent e)
           <para>To determine whether the form's underlying XML document has been placed in a read-only state, use the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument4.IsDOMReadOnly" /> property.</para>
           <para />
         </remarks>
-        <example>
-          <para>In the following example, the <b>IsReadOnly</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to determine whether the form is in a read-only state:</para>
-          <code>if (thisXDocument.&lt;span class="label"&gt;IsReadOnly&lt;/span&gt;)
-{
- thisXDocument.UI.Alert("The form cannot be modified.");
-}</code>
-        </example>
         <example>
           <para>In the following example, the <b>IsReadOnly</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to determine whether the form is in a read-only state:</para>
           <code>if (thisXDocument.&lt;span class="label"&gt;IsReadOnly&lt;/span&gt;)
@@ -1248,10 +1096,12 @@ public void field1_OnAfterChange(DataDOMEvent e)
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(46)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(46)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(46)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(46)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(46)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(46)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1261,14 +1111,6 @@ public void field1_OnAfterChange(DataDOMEvent e)
         <summary>Gets a value that indicates whether a Microsoft InfoPath form was last saved by an AutoRecover save operation.</summary>
         <value>Returns <see cref="T:System.Boolean" />.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>The following example shows how to use the <b>IsRecovered</b> property to indicate, when the form is opened, whether the form was last saved by an AutoRecover save operation:</para>
-          <code>[InfoPathEventHandler(EventType=InfoPathEventType.OnLoad)]
-public void OnLoad(DocReturnEvent e)
-{
- thisXDocument.UI.Alert("Last saved by an AutoRecover save operation: " + thisXDocument.&lt;span class="label"&gt;IsRecovered&lt;/span&gt;);
-}</code>
-        </example>
         <example>
           <para>The following example shows how to use the <b>IsRecovered</b> property to indicate, when the form is opened, whether the form was last saved by an AutoRecover save operation:</para>
           <code>[InfoPathEventHandler(EventType=InfoPathEventType.OnLoad)]
@@ -1296,10 +1138,12 @@ public void OnLoad(DocReturnEvent e)
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(26)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(26)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(26)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(26)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(26)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(26)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1315,13 +1159,6 @@ public void OnLoad(DocReturnEvent e)
             <b>Note</b>: If a form has been digitally signed, its underlying XML document is placed in a read-only state.</para>
           <para />
         </remarks>
-        <example>
-          <para>In the following example, the <b>IsSigned</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to determine whether a form has been digitally signed:</para>
-          <code>if (thisXDocument.&lt;span class="label"&gt;IsSigned&lt;/span&gt;)
-{
- thisXDocument.UI.Alert("This form contains digital signatures.");
-}</code>
-        </example>
         <example>
           <para>In the following example, the <b>IsSigned</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to determine whether a form has been digitally signed:</para>
           <code>if (thisXDocument.&lt;span class="label"&gt;IsSigned&lt;/span&gt;)
@@ -1348,13 +1185,16 @@ public void OnLoad(DocReturnEvent e)
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(19)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(19)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(19)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(19)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(19)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(19)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>set: System.Runtime.InteropServices.DispId(19)</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.InteropServices.DispId(19)]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.InteropServices.DispId(19)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1387,10 +1227,12 @@ public void OnLoad(DocReturnEvent e)
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(61)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(61)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(61)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(61)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(61)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(61)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1419,7 +1261,8 @@ public void OnLoad(DocReturnEvent e)
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(58)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(58)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(58)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1438,30 +1281,6 @@ public void OnLoad(DocReturnEvent e)
           <para>For information about hosting InfoPath as a control in another application, see the article titled "Hosting the InfoPath 2007 Form Editing Environment in a Custom Web Form" on the <a href="http://go.microsoft.com/fwlink?LinkID=11689">InfoPath Developer Portal</a></para>
           <para />
         </remarks>
-        <example>
-          <para>The following example shows what the event handler in the code-behind of an ASPX page would need look like in order to receive the string value provided by the <b>NotifyHost</b> method. In this example, the <b>NotifyHost</b> method would be providing "ActionA" as the <paramref name="bstrNotification" /> parameter, and the event handler would perform a conditional action when the value is received.</para>
-          <code>private void XmlFormView1_NotifyHost(Object sender, 
-   NotifyHostEventArgs e)
-{
-   if (e.Notification == "ActionA")
-   {
-      // Code to perform if 'ActionA' is received.
-   }
-
-   else 
-   {
-      // Code to perform an alternative action.
-   }
-}</code>
-          <code>Private Sub XmlFormView1_NotifyHost(sender As Object, _
-   e As NotifyHostEventArgs)
-   If (e.Notification = "ActionA") Then
-      ' Code to perform if 'ActionA' is received.
-   Else 
-      ' Code to perform an alternative action.
-   End If
-End Sub</code>
-        </example>
         <example>
           <para>The following example shows what the event handler in the code-behind of an ASPX page would need look like in order to receive the string value provided by the <b>NotifyHost</b> method. In this example, the <b>NotifyHost</b> method would be providing "ActionA" as the <paramref name="bstrNotification" /> parameter, and the event handler would perform a conditional action when the value is received.</para>
           <code>private void XmlFormView1_NotifyHost(Object sender, 
@@ -1505,10 +1324,12 @@ End Sub</code>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(50)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(50)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(50)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(50)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(50)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(50)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1521,16 +1342,6 @@ End Sub</code>
           <para>After a reference to the <b>PermissionObject</b> object is returned, it can be used to restrict permissions to the active form and to return or set specific permissions settings, such as whether data in the form can be edited, copied, or printed.</para>
           <para />
         </remarks>
-        <example>
-          <para>In the following example, the <b>Permission</b> property to return a <b>PermissionObject</b> object for the current form, which then uses the <see cref="P:Microsoft.Office.Interop.InfoPath.Permission.Enabled" /> property to display whether permission settings are enabled for the current form.</para>
-          <code>_XDocument4 thisDoc = (_XDocument4)thisXDocument;
-thisXDocument.UI.Alert(
-   thisDoc.Permission.Enabled.ToString());</code>
-          <code>Dim thisDoc As _XDocument4 = _
-   DirectCast(thisXDocument, _XDocument4)
-thisXDocument.UI.Alert(
-   thisDoc.Permission.Enabled.ToString())</code>
-        </example>
         <example>
           <para>In the following example, the <b>Permission</b> property to return a <b>PermissionObject</b> object for the current form, which then uses the <see cref="P:Microsoft.Office.Interop.InfoPath.Permission.Enabled" /> property to display whether permission settings are enabled for the current form.</para>
           <code>_XDocument4 thisDoc = (_XDocument4)thisXDocument;
@@ -1560,7 +1371,8 @@ thisXDocument.UI.Alert(
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(27)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(27)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(27)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1614,7 +1426,8 @@ thisXDocument.UI.Alert(
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(25)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(25)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(25)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1646,10 +1459,12 @@ thisXDocument.UI.Alert(
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(23)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(23)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(23)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(23)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(23)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(23)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1663,13 +1478,6 @@ thisXDocument.UI.Alert(
           <para>The <b>QueryAdapter</b> property allows you to access an InfoPath form's primary data source. To access the data adapter objects used for a form's secondary data sources, use the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument3.DataObjects" /> property.</para>
           <para />
         </remarks>
-        <example>
-          <para>In the following example, the <b>QueryAdapter</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to set a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.ADOAdapterObject" /> object; then the <see cref="P:Microsoft.Office.Interop.InfoPath.ADOAdapter2.Command" /> property of the <b>ADOAdapter</b> object is used to display the SQL command text in a message box:</para>
-          <code>ADOAdapter2 adapter;
-
-adapter = (ADOAdapter2) thisXDocument.&lt;span class="label"&gt;QueryAdapter&lt;/span&gt;;
-thisXDocument.UI.Alert("SQL command text: " + adapter.Command);</code>
-        </example>
         <example>
           <para>In the following example, the <b>QueryAdapter</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to set a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.ADOAdapterObject" /> object; then the <see cref="P:Microsoft.Office.Interop.InfoPath.ADOAdapter2.Command" /> property of the <b>ADOAdapter</b> object is used to display the SQL command text in a message box:</para>
           <code>ADOAdapter2 adapter;
@@ -1696,13 +1504,16 @@ thisXDocument.UI.Alert("SQL command text: " + adapter.Command);</code>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(41)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(41)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(41)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(41)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(41)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(41)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>set: System.Runtime.InteropServices.DispId(41)</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.InteropServices.DispId(41)]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.InteropServices.DispId(41)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1735,7 +1546,8 @@ thisXDocument.UI.Alert("SQL command text: " + adapter.Command);</code>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(1)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1748,11 +1560,6 @@ thisXDocument.UI.Alert("SQL command text: " + adapter.Command);</code>
           <para>The <b>Save</b> method will return an error if called from a form that is not fully trusted.</para>
           <para />
         </remarks>
-        <example>
-          <code>if(thisXDocument.IsNew){thisXDocument.SaveAs("c:\\myforms\\form1.xml");}else{thisXDocument.
-&lt;span class="label"&gt;Save&lt;/span&gt;
-();}</code>
-        </example>
         <example>
           <code>if(thisXDocument.IsNew){thisXDocument.SaveAs("c:\\myforms\\form1.xml");}else{thisXDocument.
 &lt;span class="label"&gt;Save&lt;/span&gt;
@@ -1777,7 +1584,8 @@ thisXDocument.UI.Alert("SQL command text: " + adapter.Command);</code>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(2)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1805,16 +1613,6 @@ else
 thisXDocument.Save();
 }</code>
         </example>
-        <example>
-          <code>if(thisXDocument.IsNew)
-{
-thisXDocument.&lt;span class="label"&gt;SaveAs&lt;/span&gt;("c:\\myforms\\form1.xml");
-}
-else
-{
-thisXDocument.Save();
-}</code>
-        </example>
       </Docs>
     </Member>
     <Member MemberName="ServerInfo">
@@ -1831,10 +1629,12 @@ thisXDocument.Save();
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(59)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(59)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(59)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(59)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(59)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(59)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1863,7 +1663,8 @@ thisXDocument.Save();
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(21)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(21)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(21)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1907,7 +1708,8 @@ thisXDocument.Save();
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(49)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(49)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(49)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1947,7 +1749,8 @@ thisXDocument.Save();
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(44)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(44)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(44)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1986,10 +1789,12 @@ thisXDocument.Save();
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(40)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(40)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(40)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(40)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(40)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(40)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1999,11 +1804,6 @@ thisXDocument.Save();
         <summary>Gets a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlocksCollection" /> collection that is associated with an <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>In the following example, the <b>SignedDataBlocks</b> property of the <b>XDocument</b> object is used to get a reference to the <b>SignedDataBlocksCollection</b> collection. An individual <see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" /> object is then accessed using array indexing:</para>
-          <code>SignedDataBlocksCollection sblocks = thisXDocument.&lt;span class="label"&gt;SignedDataBlocks&lt;/span&gt;;
-SignedDataBlockObject sdblock = sblocks[0];</code>
-        </example>
         <example>
           <para>In the following example, the <b>SignedDataBlocks</b> property of the <b>XDocument</b> object is used to get a reference to the <b>SignedDataBlocksCollection</b> collection. An individual <see cref="T:Microsoft.Office.Interop.InfoPath.SignedDataBlockObject" /> object is then accessed using array indexing:</para>
           <code>SignedDataBlocksCollection sblocks = thisXDocument.&lt;span class="label"&gt;SignedDataBlocks&lt;/span&gt;;
@@ -2028,10 +1828,12 @@ SignedDataBlockObject sdblock = sblocks[0];</code>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(9)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(9)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(9)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(9)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(9)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2044,11 +1846,6 @@ SignedDataBlockObject sdblock = sblocks[0];</code>
           <para>The <b>Solution</b> property provides access to information about a form's associated form definition (.xsf) file, including access to an XML Document Object Model (DOM) that contains all of the source XML of the .xsf file.</para>
           <para />
         </remarks>
-        <example>
-          <para>In the following example, the <b>Solution</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to load a variable with the XML contents of the .xsf file:</para>
-          <code>string xsf;
-xsf = thisXDocument.&lt;span class="label"&gt;Solution&lt;/span&gt;.DOM.xml;</code>
-        </example>
         <example>
           <para>In the following example, the <b>Solution</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to load a variable with the XML contents of the .xsf file:</para>
           <code>string xsf;
@@ -2073,7 +1870,8 @@ xsf = thisXDocument.&lt;span class="label"&gt;Solution&lt;/span&gt;.DOM.xml;</co
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(3)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(3)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2111,10 +1909,12 @@ xsf = thisXDocument.&lt;span class="label"&gt;Solution&lt;/span&gt;.DOM.xml;</co
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(28)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(28)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(28)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(28)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(28)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(28)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2150,10 +1950,12 @@ xsf = thisXDocument.&lt;span class="label"&gt;Solution&lt;/span&gt;.DOM.xml;</co
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(7)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(7)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(7)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(7)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2186,10 +1988,12 @@ xsf = thisXDocument.&lt;span class="label"&gt;Solution&lt;/span&gt;.DOM.xml;</co
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(60)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(60)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(60)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(60)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(60)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(60)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2218,10 +2022,12 @@ xsf = thisXDocument.&lt;span class="label"&gt;Solution&lt;/span&gt;.DOM.xml;</co
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(47)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(47)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(47)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(47)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(47)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(47)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2250,10 +2056,12 @@ xsf = thisXDocument.&lt;span class="label"&gt;Solution&lt;/span&gt;.DOM.xml;</co
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(12)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(12)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(12)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(12)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(12)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2289,10 +2097,12 @@ xsf = thisXDocument.&lt;span class="label"&gt;Solution&lt;/span&gt;.DOM.xml;</co
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(15)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(15)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(15)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(15)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(15)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2305,19 +2115,6 @@ xsf = thisXDocument.&lt;span class="label"&gt;Solution&lt;/span&gt;.DOM.xml;</co
           <para>The <b>ViewInfos</b> collection contains a collection of <see cref="T:Microsoft.Office.Interop.InfoPath.ViewInfoObject" /> object containing information about each of the views implemented in an InfoPath form.</para>
           <para />
         </remarks>
-        <example>
-          <para>In the following example, the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument4.ViewInfos" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to set a reference to the <b>ViewInfosCollection</b> collection; then, using the <see cref="P:Microsoft.Office.Interop.InfoPath.ViewInfos.Count" /> property of the <b>ViewInfosCollection</b> collection, it loops through the collection to determine the default view using the <see cref="P:Microsoft.Office.Interop.InfoPath.ViewInfo.IsDefault" /> property of the <b>ViewInfoObject</b> object. When the default view is found, the code displays the name of the view in a message box.</para>
-          <code>&lt;span class="label"&gt;ViewInfos&lt;/span&gt; viewInfos;
-viewInfos = thisXDocument.&lt;span class="label"&gt;ViewInfos&lt;/span&gt;;
-
-for (int i=0; i &amp;lt; viewInfos.Count; i++)
-{
- if (viewInfos[i].IsDefault)
- {
-  thisXDocument.UI.Alert("The default view is: " + viewInfos[i].Name);
- }
-}</code>
-        </example>
         <example>
           <para>In the following example, the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument4.ViewInfos" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to set a reference to the <b>ViewInfosCollection</b> collection; then, using the <see cref="P:Microsoft.Office.Interop.InfoPath.ViewInfos.Count" /> property of the <b>ViewInfosCollection</b> collection, it loops through the collection to determine the default view using the <see cref="P:Microsoft.Office.Interop.InfoPath.ViewInfo.IsDefault" /> property of the <b>ViewInfoObject</b> object. When the default view is found, the code displays the name of the view in a message box.</para>
           <code>&lt;span class="label"&gt;ViewInfos&lt;/span&gt; viewInfos;

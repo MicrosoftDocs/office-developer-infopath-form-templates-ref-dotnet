@@ -1,4 +1,4 @@
-﻿<Type Name="XMLNodesCollection" FullName="Microsoft.Office.Interop.InfoPath.XMLNodesCollection">
+<Type Name="XMLNodesCollection" FullName="Microsoft.Office.Interop.InfoPath.XMLNodesCollection">
   <TypeSignature Language="C#" Value="public interface XMLNodesCollection : Microsoft.Office.Interop.InfoPath.XMLNodes" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLNodesCollection implements class Microsoft.Office.Interop.InfoPath.XMLNodes" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XMLNodesCollection" />
@@ -13,13 +13,18 @@
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.XMLNodes</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.InfoPath.XMLNodesCollectionClass))</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.InfoPath.XMLNodesCollectionClass))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.InfoPath.XMLNodesCollectionClass))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.Guid("096CD6C1-0786-11D1-95FA-0080C78EE3BB")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.Guid("096CD6C1-0786-11D1-95FA-0080C78EE3BB")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.Guid("096CD6C1-0786-11D1-95FA-0080C78EE3BB")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

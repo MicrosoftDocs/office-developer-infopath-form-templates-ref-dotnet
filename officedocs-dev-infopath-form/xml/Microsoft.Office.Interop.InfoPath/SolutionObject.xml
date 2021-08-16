@@ -1,4 +1,4 @@
-﻿<Type Name="SolutionObject" FullName="Microsoft.Office.Interop.InfoPath.SolutionObject">
+<Type Name="SolutionObject" FullName="Microsoft.Office.Interop.InfoPath.SolutionObject">
   <TypeSignature Language="C#" Value="public interface SolutionObject : Microsoft.Office.Interop.InfoPath.Solution" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SolutionObject implements class Microsoft.Office.Interop.InfoPath.Solution" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SolutionObject" />
@@ -16,10 +16,12 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.InfoPath.SolutionObjectClass))</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.InfoPath.SolutionObjectClass))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.CoClass(typeof(Microsoft.Office.Interop.InfoPath.SolutionObjectClass))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.Guid("096CD557-0786-11D1-95FA-0080C78EE3BB")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.Guid("096CD557-0786-11D1-95FA-0080C78EE3BB")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.Guid("096CD557-0786-11D1-95FA-0080C78EE3BB")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

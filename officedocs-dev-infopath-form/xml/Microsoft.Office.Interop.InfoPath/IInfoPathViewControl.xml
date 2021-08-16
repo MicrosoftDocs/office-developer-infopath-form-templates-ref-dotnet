@@ -1,4 +1,4 @@
-﻿<Type Name="IInfoPathViewControl" FullName="Microsoft.Office.Interop.InfoPath.IInfoPathViewControl">
+<Type Name="IInfoPathViewControl" FullName="Microsoft.Office.Interop.InfoPath.IInfoPathViewControl">
   <TypeSignature Language="C#" Value="public interface IInfoPathViewControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInfoPathViewControl" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl" />
@@ -12,16 +12,20 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ComConversionLoss</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComConversionLoss]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComConversionLoss&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.Guid("096CD6DA-0786-11D1-95FA-0080C78EE3BB")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.Guid("096CD6DA-0786-11D1-95FA-0080C78EE3BB")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.Guid("096CD6DA-0786-11D1-95FA-0080C78EE3BB")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(1)</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.InterfaceType(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.InterfaceType(1)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.TypeLibType(384)</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.TypeLibType(384)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.TypeLibType(384)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -102,7 +106,8 @@ End Sub</code>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(1610678276)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(1610678276)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(1610678276)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -132,7 +137,8 @@ End Sub</code>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(1610678277)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(1610678277)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(1610678277)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -162,7 +168,8 @@ End Sub</code>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(1610678275)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(1610678275)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(1610678275)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -185,7 +192,7 @@ End Sub</code>
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IInfoPathViewControl.InputScopes(System.IntPtr,System.UInt32@,Microsoft.Office.Interop.InfoPath.IEnumString@,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub InputScopes (ppInputScopes As IntPtr, ByRef pcInputScopes As UInteger, ByRef ppenumPhraseList As IEnumString, ByRef pbstrRegExp As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InputScopes(IntPtr ppInputScopes, [Runtime::InteropServices::Out] System::UInt32 % pcInputScopes, [Runtime::InteropServices::Out] Microsoft::Office::Interop::InfoPath::IEnumString ^ % ppenumPhraseList, [Runtime::InteropServices::Out] System::String ^ % pbstrRegExp);" />
-      <MemberSignature Language="F#" Value="abstract member InputScopes : nativeint *  *  *  -&gt; unit" Usage="iInfoPathViewControl.InputScopes (ppInputScopes, pcInputScopes, ppenumPhraseList, pbstrRegExp)" />
+      <MemberSignature Language="F#" Value="abstract member InputScopes : nativeint * uint32 * IEnumString * string -&gt; unit" Usage="iInfoPathViewControl.InputScopes (ppInputScopes, pcInputScopes, ppenumPhraseList, pbstrRegExp)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -228,7 +235,8 @@ End Sub</code>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(1610678272)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(1610678272)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(1610678272)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -259,7 +267,8 @@ End Sub</code>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(1610678278)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(1610678278)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(1610678278)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -290,7 +299,8 @@ End Sub</code>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(1610678273)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(1610678273)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(1610678273)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -321,7 +331,8 @@ End Sub</code>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(1610678279)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(1610678279)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(1610678279)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -390,7 +401,8 @@ End Sub</code>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(1610678274)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(1610678274)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(1610678274)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

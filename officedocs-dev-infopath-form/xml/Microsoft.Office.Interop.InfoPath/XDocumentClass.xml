@@ -1,4 +1,4 @@
-﻿<Type Name="XDocumentClass" FullName="Microsoft.Office.Interop.InfoPath.XDocumentClass">
+<Type Name="XDocumentClass" FullName="Microsoft.Office.Interop.InfoPath.XDocumentClass">
   <TypeSignature Language="C#" Value="public class XDocumentClass : Microsoft.Office.Interop.InfoPath._XDocument4, Microsoft.Office.Interop.InfoPath.XDocument" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi XDocumentClass extends System.Object implements class Microsoft.Office.Interop.InfoPath._XDocument, class Microsoft.Office.Interop.InfoPath._XDocument2, class Microsoft.Office.Interop.InfoPath._XDocument3, class Microsoft.Office.Interop.InfoPath._XDocument4, class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event, class Microsoft.Office.Interop.InfoPath.XDocument" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XDocumentClass" />
@@ -14,7 +14,19 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath._XDocument</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath._XDocument2</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath._XDocument3</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath._XDocument4</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.XDocument</InterfaceName>
@@ -22,13 +34,16 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(0)</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ClassInterface(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ClassInterface(0)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ComSourceInterfaces("Microsoft.Office.Interop.InfoPath._XDocumentEventSink2\0")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComSourceInterfaces("Microsoft.Office.Interop.InfoPath._XDocumentEventSink2\0")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComSourceInterfaces("Microsoft.Office.Interop.InfoPath._XDocumentEventSink2\0")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.Guid("807583C8-5146-11D5-A672-00B0D022E945")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.Guid("807583C8-5146-11D5-A672-00B0D022E945")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.Guid("807583C8-5146-11D5-A672-00B0D022E945")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -3833,12 +3848,12 @@
       </Docs>
     </Member>
     <Member MemberName="add_OnAfterImport">
-      <MemberSignature Language="C#" Value="public virtual void add_OnAfterImport (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnAfterImport(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void add_OnAfterImport (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnAfterImport(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.add_OnAfterImport(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnAfterImport ( As _XDocumentEventSink2_OnAfterImportEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnAfterImport(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnAfterImportEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::add_OnAfterImport;" />
-      <MemberSignature Language="F#" Value="abstract member add_OnAfterImport : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler -&gt; unit&#xA;override this.add_OnAfterImport : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler -&gt; unit" Usage="xDocumentClass.add_OnAfterImport " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnAfterImport (unnamedParam1 As _XDocumentEventSink2_OnAfterImportEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnAfterImport(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnAfterImportEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::add_OnAfterImport;" />
+      <MemberSignature Language="F#" Value="abstract member add_OnAfterImport : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler -&gt; unit&#xA;override this.add_OnAfterImport : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler -&gt; unit" Usage="xDocumentClass.add_OnAfterImport unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.add_OnAfterImport(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler)</InterfaceMember>
@@ -3851,21 +3866,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="add_OnContextChange">
-      <MemberSignature Language="C#" Value="public virtual void add_OnContextChange (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnContextChange(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void add_OnContextChange (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnContextChange(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.add_OnContextChange(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnContextChange ( As _XDocumentEventSink2_OnContextChangeEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnContextChange(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnContextChangeEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::add_OnContextChange;" />
-      <MemberSignature Language="F#" Value="abstract member add_OnContextChange : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler -&gt; unit&#xA;override this.add_OnContextChange : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler -&gt; unit" Usage="xDocumentClass.add_OnContextChange " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnContextChange (unnamedParam1 As _XDocumentEventSink2_OnContextChangeEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnContextChange(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnContextChangeEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::add_OnContextChange;" />
+      <MemberSignature Language="F#" Value="abstract member add_OnContextChange : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler -&gt; unit&#xA;override this.add_OnContextChange : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler -&gt; unit" Usage="xDocumentClass.add_OnContextChange unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.add_OnContextChange(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler)</InterfaceMember>
@@ -3878,21 +3893,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="add_OnLoad">
-      <MemberSignature Language="C#" Value="public virtual void add_OnLoad (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnLoad(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void add_OnLoad (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnLoad(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.add_OnLoad(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnLoad ( As _XDocumentEventSink2_OnLoadEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnLoad(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnLoadEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::add_OnLoad;" />
-      <MemberSignature Language="F#" Value="abstract member add_OnLoad : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler -&gt; unit&#xA;override this.add_OnLoad : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler -&gt; unit" Usage="xDocumentClass.add_OnLoad " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnLoad (unnamedParam1 As _XDocumentEventSink2_OnLoadEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnLoad(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnLoadEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::add_OnLoad;" />
+      <MemberSignature Language="F#" Value="abstract member add_OnLoad : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler -&gt; unit&#xA;override this.add_OnLoad : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler -&gt; unit" Usage="xDocumentClass.add_OnLoad unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.add_OnLoad(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler)</InterfaceMember>
@@ -3905,21 +3920,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="add_OnMergeRequest">
-      <MemberSignature Language="C#" Value="public virtual void add_OnMergeRequest (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnMergeRequest(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void add_OnMergeRequest (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnMergeRequest(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.add_OnMergeRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnMergeRequest ( As _XDocumentEventSink2_OnMergeRequestEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnMergeRequest(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnMergeRequestEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::add_OnMergeRequest;" />
-      <MemberSignature Language="F#" Value="abstract member add_OnMergeRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler -&gt; unit&#xA;override this.add_OnMergeRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler -&gt; unit" Usage="xDocumentClass.add_OnMergeRequest " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnMergeRequest (unnamedParam1 As _XDocumentEventSink2_OnMergeRequestEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnMergeRequest(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnMergeRequestEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::add_OnMergeRequest;" />
+      <MemberSignature Language="F#" Value="abstract member add_OnMergeRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler -&gt; unit&#xA;override this.add_OnMergeRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler -&gt; unit" Usage="xDocumentClass.add_OnMergeRequest unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.add_OnMergeRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler)</InterfaceMember>
@@ -3932,21 +3947,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="add_OnSaveRequest">
-      <MemberSignature Language="C#" Value="public virtual void add_OnSaveRequest (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnSaveRequest(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void add_OnSaveRequest (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnSaveRequest(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.add_OnSaveRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnSaveRequest ( As _XDocumentEventSink2_OnSaveRequestEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnSaveRequest(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnSaveRequestEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::add_OnSaveRequest;" />
-      <MemberSignature Language="F#" Value="abstract member add_OnSaveRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler -&gt; unit&#xA;override this.add_OnSaveRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler -&gt; unit" Usage="xDocumentClass.add_OnSaveRequest " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnSaveRequest (unnamedParam1 As _XDocumentEventSink2_OnSaveRequestEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnSaveRequest(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnSaveRequestEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::add_OnSaveRequest;" />
+      <MemberSignature Language="F#" Value="abstract member add_OnSaveRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler -&gt; unit&#xA;override this.add_OnSaveRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler -&gt; unit" Usage="xDocumentClass.add_OnSaveRequest unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.add_OnSaveRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler)</InterfaceMember>
@@ -3959,21 +3974,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="add_OnSign">
-      <MemberSignature Language="C#" Value="public virtual void add_OnSign (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnSign(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void add_OnSign (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnSign(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.add_OnSign(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnSign ( As _XDocumentEventSink2_OnSignEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnSign(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnSignEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::add_OnSign;" />
-      <MemberSignature Language="F#" Value="abstract member add_OnSign : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler -&gt; unit&#xA;override this.add_OnSign : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler -&gt; unit" Usage="xDocumentClass.add_OnSign " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnSign (unnamedParam1 As _XDocumentEventSink2_OnSignEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnSign(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnSignEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::add_OnSign;" />
+      <MemberSignature Language="F#" Value="abstract member add_OnSign : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler -&gt; unit&#xA;override this.add_OnSign : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler -&gt; unit" Usage="xDocumentClass.add_OnSign unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.add_OnSign(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler)</InterfaceMember>
@@ -3986,21 +4001,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="add_OnSubmitRequest">
-      <MemberSignature Language="C#" Value="public virtual void add_OnSubmitRequest (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnSubmitRequest(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void add_OnSubmitRequest (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnSubmitRequest(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.add_OnSubmitRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnSubmitRequest ( As _XDocumentEventSink2_OnSubmitRequestEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnSubmitRequest(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnSubmitRequestEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::add_OnSubmitRequest;" />
-      <MemberSignature Language="F#" Value="abstract member add_OnSubmitRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler -&gt; unit&#xA;override this.add_OnSubmitRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler -&gt; unit" Usage="xDocumentClass.add_OnSubmitRequest " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnSubmitRequest (unnamedParam1 As _XDocumentEventSink2_OnSubmitRequestEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnSubmitRequest(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnSubmitRequestEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::add_OnSubmitRequest;" />
+      <MemberSignature Language="F#" Value="abstract member add_OnSubmitRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler -&gt; unit&#xA;override this.add_OnSubmitRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler -&gt; unit" Usage="xDocumentClass.add_OnSubmitRequest unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.add_OnSubmitRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler)</InterfaceMember>
@@ -4013,21 +4028,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="add_OnSwitchView">
-      <MemberSignature Language="C#" Value="public virtual void add_OnSwitchView (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnSwitchView(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void add_OnSwitchView (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnSwitchView(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.add_OnSwitchView(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnSwitchView ( As _XDocumentEventSink2_OnSwitchViewEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnSwitchView(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnSwitchViewEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::add_OnSwitchView;" />
-      <MemberSignature Language="F#" Value="abstract member add_OnSwitchView : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler -&gt; unit&#xA;override this.add_OnSwitchView : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler -&gt; unit" Usage="xDocumentClass.add_OnSwitchView " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnSwitchView (unnamedParam1 As _XDocumentEventSink2_OnSwitchViewEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnSwitchView(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnSwitchViewEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::add_OnSwitchView;" />
+      <MemberSignature Language="F#" Value="abstract member add_OnSwitchView : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler -&gt; unit&#xA;override this.add_OnSwitchView : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler -&gt; unit" Usage="xDocumentClass.add_OnSwitchView unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.add_OnSwitchView(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler)</InterfaceMember>
@@ -4040,21 +4055,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="add_OnVersionUpgrade">
-      <MemberSignature Language="C#" Value="public virtual void add_OnVersionUpgrade (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnVersionUpgrade(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void add_OnVersionUpgrade (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnVersionUpgrade(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.add_OnVersionUpgrade(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnVersionUpgrade ( As _XDocumentEventSink2_OnVersionUpgradeEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnVersionUpgrade(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnVersionUpgradeEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::add_OnVersionUpgrade;" />
-      <MemberSignature Language="F#" Value="abstract member add_OnVersionUpgrade : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler -&gt; unit&#xA;override this.add_OnVersionUpgrade : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler -&gt; unit" Usage="xDocumentClass.add_OnVersionUpgrade " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnVersionUpgrade (unnamedParam1 As _XDocumentEventSink2_OnVersionUpgradeEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnVersionUpgrade(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnVersionUpgradeEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::add_OnVersionUpgrade;" />
+      <MemberSignature Language="F#" Value="abstract member add_OnVersionUpgrade : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler -&gt; unit&#xA;override this.add_OnVersionUpgrade : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler -&gt; unit" Usage="xDocumentClass.add_OnVersionUpgrade unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.add_OnVersionUpgrade(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler)</InterfaceMember>
@@ -4067,10 +4082,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4116,7 +4131,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(48)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(48)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(48)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4146,10 +4162,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(42)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(42)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(42)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(42)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(42)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(42)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4178,10 +4196,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(18)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(18)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(18)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(18)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(18)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(18)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4210,10 +4230,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(8)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(8)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(8)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(8)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4242,10 +4264,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(10)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(10)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(10)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(10)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(10)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4274,10 +4298,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(11)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(11)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(11)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(11)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(11)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4306,7 +4332,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(22)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(22)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(22)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4339,7 +4366,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(24)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(24)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(24)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4372,7 +4400,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(43)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(43)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(43)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4507,7 +4536,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(45)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(45)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(45)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4539,7 +4569,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(20)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(20)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(20)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4595,10 +4626,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(5)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(5)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(5)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(5)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4627,10 +4660,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(39)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(39)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(39)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(39)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(39)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(39)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4683,10 +4718,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(6)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(6)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(6)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(6)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4715,10 +4752,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(16)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(16)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(16)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(16)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(16)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4747,10 +4786,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(46)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(46)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(46)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(46)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(46)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(46)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4779,10 +4820,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(26)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(26)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(26)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(26)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(26)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(26)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4811,13 +4854,16 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(19)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(19)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(19)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(19)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(19)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(19)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>set: System.Runtime.InteropServices.DispId(19)</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.InteropServices.DispId(19)]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.InteropServices.DispId(19)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5128,7 +5174,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(27)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(27)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(27)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5157,7 +5204,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(25)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(25)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(25)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5186,10 +5234,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(23)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(23)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(23)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(23)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(23)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(23)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5202,12 +5252,12 @@
       </Docs>
     </Member>
     <Member MemberName="remove_OnAfterImport">
-      <MemberSignature Language="C#" Value="public virtual void remove_OnAfterImport (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnAfterImport(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void remove_OnAfterImport (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnAfterImport(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.remove_OnAfterImport(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnAfterImport ( As _XDocumentEventSink2_OnAfterImportEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnAfterImport(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnAfterImportEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::remove_OnAfterImport;" />
-      <MemberSignature Language="F#" Value="abstract member remove_OnAfterImport : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler -&gt; unit&#xA;override this.remove_OnAfterImport : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler -&gt; unit" Usage="xDocumentClass.remove_OnAfterImport " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnAfterImport (unnamedParam1 As _XDocumentEventSink2_OnAfterImportEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnAfterImport(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnAfterImportEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::remove_OnAfterImport;" />
+      <MemberSignature Language="F#" Value="abstract member remove_OnAfterImport : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler -&gt; unit&#xA;override this.remove_OnAfterImport : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler -&gt; unit" Usage="xDocumentClass.remove_OnAfterImport unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.remove_OnAfterImport(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler)</InterfaceMember>
@@ -5220,21 +5270,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnAfterImportEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="remove_OnContextChange">
-      <MemberSignature Language="C#" Value="public virtual void remove_OnContextChange (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnContextChange(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void remove_OnContextChange (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnContextChange(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.remove_OnContextChange(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnContextChange ( As _XDocumentEventSink2_OnContextChangeEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnContextChange(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnContextChangeEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::remove_OnContextChange;" />
-      <MemberSignature Language="F#" Value="abstract member remove_OnContextChange : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler -&gt; unit&#xA;override this.remove_OnContextChange : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler -&gt; unit" Usage="xDocumentClass.remove_OnContextChange " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnContextChange (unnamedParam1 As _XDocumentEventSink2_OnContextChangeEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnContextChange(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnContextChangeEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::remove_OnContextChange;" />
+      <MemberSignature Language="F#" Value="abstract member remove_OnContextChange : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler -&gt; unit&#xA;override this.remove_OnContextChange : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler -&gt; unit" Usage="xDocumentClass.remove_OnContextChange unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.remove_OnContextChange(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler)</InterfaceMember>
@@ -5247,21 +5297,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnContextChangeEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="remove_OnLoad">
-      <MemberSignature Language="C#" Value="public virtual void remove_OnLoad (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnLoad(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void remove_OnLoad (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnLoad(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.remove_OnLoad(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnLoad ( As _XDocumentEventSink2_OnLoadEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnLoad(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnLoadEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::remove_OnLoad;" />
-      <MemberSignature Language="F#" Value="abstract member remove_OnLoad : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler -&gt; unit&#xA;override this.remove_OnLoad : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler -&gt; unit" Usage="xDocumentClass.remove_OnLoad " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnLoad (unnamedParam1 As _XDocumentEventSink2_OnLoadEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnLoad(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnLoadEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::remove_OnLoad;" />
+      <MemberSignature Language="F#" Value="abstract member remove_OnLoad : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler -&gt; unit&#xA;override this.remove_OnLoad : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler -&gt; unit" Usage="xDocumentClass.remove_OnLoad unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.remove_OnLoad(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler)</InterfaceMember>
@@ -5274,21 +5324,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnLoadEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="remove_OnMergeRequest">
-      <MemberSignature Language="C#" Value="public virtual void remove_OnMergeRequest (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnMergeRequest(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void remove_OnMergeRequest (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnMergeRequest(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.remove_OnMergeRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnMergeRequest ( As _XDocumentEventSink2_OnMergeRequestEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnMergeRequest(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnMergeRequestEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::remove_OnMergeRequest;" />
-      <MemberSignature Language="F#" Value="abstract member remove_OnMergeRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler -&gt; unit&#xA;override this.remove_OnMergeRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler -&gt; unit" Usage="xDocumentClass.remove_OnMergeRequest " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnMergeRequest (unnamedParam1 As _XDocumentEventSink2_OnMergeRequestEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnMergeRequest(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnMergeRequestEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::remove_OnMergeRequest;" />
+      <MemberSignature Language="F#" Value="abstract member remove_OnMergeRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler -&gt; unit&#xA;override this.remove_OnMergeRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler -&gt; unit" Usage="xDocumentClass.remove_OnMergeRequest unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.remove_OnMergeRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler)</InterfaceMember>
@@ -5301,21 +5351,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnMergeRequestEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="remove_OnSaveRequest">
-      <MemberSignature Language="C#" Value="public virtual void remove_OnSaveRequest (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnSaveRequest(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void remove_OnSaveRequest (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnSaveRequest(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.remove_OnSaveRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnSaveRequest ( As _XDocumentEventSink2_OnSaveRequestEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnSaveRequest(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnSaveRequestEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::remove_OnSaveRequest;" />
-      <MemberSignature Language="F#" Value="abstract member remove_OnSaveRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler -&gt; unit&#xA;override this.remove_OnSaveRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler -&gt; unit" Usage="xDocumentClass.remove_OnSaveRequest " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnSaveRequest (unnamedParam1 As _XDocumentEventSink2_OnSaveRequestEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnSaveRequest(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnSaveRequestEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::remove_OnSaveRequest;" />
+      <MemberSignature Language="F#" Value="abstract member remove_OnSaveRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler -&gt; unit&#xA;override this.remove_OnSaveRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler -&gt; unit" Usage="xDocumentClass.remove_OnSaveRequest unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.remove_OnSaveRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler)</InterfaceMember>
@@ -5328,21 +5378,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSaveRequestEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="remove_OnSign">
-      <MemberSignature Language="C#" Value="public virtual void remove_OnSign (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnSign(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void remove_OnSign (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnSign(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.remove_OnSign(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnSign ( As _XDocumentEventSink2_OnSignEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnSign(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnSignEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::remove_OnSign;" />
-      <MemberSignature Language="F#" Value="abstract member remove_OnSign : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler -&gt; unit&#xA;override this.remove_OnSign : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler -&gt; unit" Usage="xDocumentClass.remove_OnSign " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnSign (unnamedParam1 As _XDocumentEventSink2_OnSignEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnSign(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnSignEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::remove_OnSign;" />
+      <MemberSignature Language="F#" Value="abstract member remove_OnSign : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler -&gt; unit&#xA;override this.remove_OnSign : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler -&gt; unit" Usage="xDocumentClass.remove_OnSign unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.remove_OnSign(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler)</InterfaceMember>
@@ -5355,21 +5405,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSignEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="remove_OnSubmitRequest">
-      <MemberSignature Language="C#" Value="public virtual void remove_OnSubmitRequest (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnSubmitRequest(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void remove_OnSubmitRequest (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnSubmitRequest(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.remove_OnSubmitRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnSubmitRequest ( As _XDocumentEventSink2_OnSubmitRequestEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnSubmitRequest(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnSubmitRequestEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::remove_OnSubmitRequest;" />
-      <MemberSignature Language="F#" Value="abstract member remove_OnSubmitRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler -&gt; unit&#xA;override this.remove_OnSubmitRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler -&gt; unit" Usage="xDocumentClass.remove_OnSubmitRequest " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnSubmitRequest (unnamedParam1 As _XDocumentEventSink2_OnSubmitRequestEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnSubmitRequest(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnSubmitRequestEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::remove_OnSubmitRequest;" />
+      <MemberSignature Language="F#" Value="abstract member remove_OnSubmitRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler -&gt; unit&#xA;override this.remove_OnSubmitRequest : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler -&gt; unit" Usage="xDocumentClass.remove_OnSubmitRequest unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.remove_OnSubmitRequest(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler)</InterfaceMember>
@@ -5382,21 +5432,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSubmitRequestEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="remove_OnSwitchView">
-      <MemberSignature Language="C#" Value="public virtual void remove_OnSwitchView (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnSwitchView(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void remove_OnSwitchView (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnSwitchView(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.remove_OnSwitchView(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnSwitchView ( As _XDocumentEventSink2_OnSwitchViewEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnSwitchView(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnSwitchViewEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::remove_OnSwitchView;" />
-      <MemberSignature Language="F#" Value="abstract member remove_OnSwitchView : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler -&gt; unit&#xA;override this.remove_OnSwitchView : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler -&gt; unit" Usage="xDocumentClass.remove_OnSwitchView " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnSwitchView (unnamedParam1 As _XDocumentEventSink2_OnSwitchViewEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnSwitchView(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnSwitchViewEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::remove_OnSwitchView;" />
+      <MemberSignature Language="F#" Value="abstract member remove_OnSwitchView : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler -&gt; unit&#xA;override this.remove_OnSwitchView : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler -&gt; unit" Usage="xDocumentClass.remove_OnSwitchView unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.remove_OnSwitchView(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler)</InterfaceMember>
@@ -5409,21 +5459,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnSwitchViewEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="remove_OnVersionUpgrade">
-      <MemberSignature Language="C#" Value="public virtual void remove_OnVersionUpgrade (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnVersionUpgrade(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void remove_OnVersionUpgrade (Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnVersionUpgrade(class Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.remove_OnVersionUpgrade(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnVersionUpgrade ( As _XDocumentEventSink2_OnVersionUpgradeEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnVersionUpgrade(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnVersionUpgradeEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::remove_OnVersionUpgrade;" />
-      <MemberSignature Language="F#" Value="abstract member remove_OnVersionUpgrade : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler -&gt; unit&#xA;override this.remove_OnVersionUpgrade : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler -&gt; unit" Usage="xDocumentClass.remove_OnVersionUpgrade " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnVersionUpgrade (unnamedParam1 As _XDocumentEventSink2_OnVersionUpgradeEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnVersionUpgrade(Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_OnVersionUpgradeEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_XDocumentEventSink2_Event::remove_OnVersionUpgrade;" />
+      <MemberSignature Language="F#" Value="abstract member remove_OnVersionUpgrade : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler -&gt; unit&#xA;override this.remove_OnVersionUpgrade : Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler -&gt; unit" Usage="xDocumentClass.remove_OnVersionUpgrade unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.remove_OnVersionUpgrade(Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler)</InterfaceMember>
@@ -5436,10 +5486,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_OnVersionUpgradeEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5461,13 +5511,16 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(41)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(41)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(41)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(41)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(41)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(41)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>set: System.Runtime.InteropServices.DispId(41)</AttributeName>
+          <AttributeName Language="C#">[set: System.Runtime.InteropServices.DispId(41)]</AttributeName>
+          <AttributeName Language="F#">[&lt;set: System.Runtime.InteropServices.DispId(41)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5496,7 +5549,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(1)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5525,7 +5579,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(2)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(2)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5581,7 +5636,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(21)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(21)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(21)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5615,7 +5671,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(49)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(49)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(49)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5647,7 +5704,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(44)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(44)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(44)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5683,10 +5741,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(40)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(40)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(40)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(40)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(40)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(40)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5715,10 +5775,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(9)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(9)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(9)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(9)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(9)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5747,7 +5809,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(3)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(3)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5776,10 +5839,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(28)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(28)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(28)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(28)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(28)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(28)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5808,10 +5873,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(7)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(7)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(7)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(7)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5864,10 +5931,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(47)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(47)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(47)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(47)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(47)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(47)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5896,10 +5965,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(12)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(12)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(12)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(12)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(12)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5928,10 +5999,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.InteropServices.DispId(15)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.DispId(15)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>get: System.Runtime.InteropServices.DispId(15)</AttributeName>
+          <AttributeName Language="C#">[get: System.Runtime.InteropServices.DispId(15)]</AttributeName>
+          <AttributeName Language="F#">[&lt;get: System.Runtime.InteropServices.DispId(15)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

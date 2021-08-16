@@ -1,4 +1,4 @@
-﻿<Type Name="XdWindowType" FullName="Microsoft.Office.Interop.InfoPath.XdWindowType">
+<Type Name="XdWindowType" FullName="Microsoft.Office.Interop.InfoPath.XdWindowType">
   <TypeSignature Language="C#" Value="public enum XdWindowType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XdWindowType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XdWindowType" />
@@ -14,7 +14,8 @@
   </Base>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.Guid("BE47E97C-54B4-385D-8BAE-324B6A167680")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.Guid("BE47E97C-54B4-385D-8BAE-324B6A167680")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.Guid("BE47E97C-54B4-385D-8BAE-324B6A167680")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub _ApplicationEvents_XDocumentBeforeSaveEventHandler(pDocument As _XDocument, ByRef pfCancel As Boolean)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void _ApplicationEvents_XDocumentBeforeSaveEventHandler(_XDocument ^ pDocument, [Runtime::InteropServices::Out] bool % pfCancel);" />
-  <TypeSignature Language="F#" Value="type _ApplicationEvents_XDocumentBeforeSaveEventHandler = delegate of _XDocument *  -&gt; unit" />
+  <TypeSignature Language="F#" Value="type _ApplicationEvents_XDocumentBeforeSaveEventHandler = delegate of _XDocument * bool -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -14,10 +14,12 @@
   </Base>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.TypeLibType(16)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.TypeLibType(16)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Parameters>

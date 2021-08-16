@@ -1,4 +1,4 @@
-﻿<Type Name="FormControlCommandIds+CommandIds" FullName="Microsoft.Office.InfoPath.FormControlCommandIds+CommandIds">
+<Type Name="FormControlCommandIds+CommandIds" FullName="Microsoft.Office.InfoPath.FormControlCommandIds+CommandIds">
   <TypeSignature Language="C#" Value="public enum FormControlCommandIds.CommandIds" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed FormControlCommandIds/CommandIds extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.InfoPath.FormControlCommandIds.CommandIds" />

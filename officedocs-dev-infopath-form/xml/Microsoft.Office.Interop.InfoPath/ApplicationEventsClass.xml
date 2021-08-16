@@ -1,4 +1,4 @@
-﻿<Type Name="ApplicationEventsClass" FullName="Microsoft.Office.Interop.InfoPath.ApplicationEventsClass">
+<Type Name="ApplicationEventsClass" FullName="Microsoft.Office.Interop.InfoPath.ApplicationEventsClass">
   <TypeSignature Language="C#" Value="public class ApplicationEventsClass : Microsoft.Office.Interop.InfoPath.ApplicationEvents" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ApplicationEventsClass extends System.Object implements class Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event, class Microsoft.Office.Interop.InfoPath.ApplicationEvents, class Microsoft.Office.Interop.InfoPath.ApplicationEventsEmpty" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass" />
@@ -14,18 +14,27 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.ApplicationEvents</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.ApplicationEventsEmpty</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(0)</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ClassInterface(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ClassInterface(0)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ComSourceInterfaces("Microsoft.Office.Interop.InfoPath._ApplicationEvents\0")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComSourceInterfaces("Microsoft.Office.Interop.InfoPath._ApplicationEvents\0")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComSourceInterfaces("Microsoft.Office.Interop.InfoPath._ApplicationEvents\0")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.Guid("80758412-5146-11D5-A672-00B0D022E945")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.Guid("80758412-5146-11D5-A672-00B0D022E945")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.Guid("80758412-5146-11D5-A672-00B0D022E945")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,12 +43,12 @@
   </Docs>
   <Members>
     <Member MemberName="add_NewXDocument">
-      <MemberSignature Language="C#" Value="public virtual void add_NewXDocument (Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_NewXDocument(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void add_NewXDocument (Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_NewXDocument(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.add_NewXDocument(Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_NewXDocument ( As _ApplicationEvents_NewXDocumentEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_NewXDocument(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_NewXDocumentEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::add_NewXDocument;" />
-      <MemberSignature Language="F#" Value="abstract member add_NewXDocument : Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler -&gt; unit&#xA;override this.add_NewXDocument : Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler -&gt; unit" Usage="applicationEventsClass.add_NewXDocument " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_NewXDocument (unnamedParam1 As _ApplicationEvents_NewXDocumentEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_NewXDocument(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_NewXDocumentEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::add_NewXDocument;" />
+      <MemberSignature Language="F#" Value="abstract member add_NewXDocument : Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler -&gt; unit&#xA;override this.add_NewXDocument : Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler -&gt; unit" Usage="applicationEventsClass.add_NewXDocument unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.add_NewXDocument(Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler)</InterfaceMember>
@@ -52,21 +61,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="add_Quit">
-      <MemberSignature Language="C#" Value="public virtual void add_Quit (Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_Quit(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void add_Quit (Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_Quit(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.add_Quit(Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_Quit ( As _ApplicationEvents_QuitEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_Quit(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_QuitEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::add_Quit;" />
-      <MemberSignature Language="F#" Value="abstract member add_Quit : Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler -&gt; unit&#xA;override this.add_Quit : Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler -&gt; unit" Usage="applicationEventsClass.add_Quit " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_Quit (unnamedParam1 As _ApplicationEvents_QuitEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_Quit(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_QuitEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::add_Quit;" />
+      <MemberSignature Language="F#" Value="abstract member add_Quit : Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler -&gt; unit&#xA;override this.add_Quit : Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler -&gt; unit" Usage="applicationEventsClass.add_Quit unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.add_Quit(Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler)</InterfaceMember>
@@ -79,21 +88,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="add_WindowActivate">
-      <MemberSignature Language="C#" Value="public virtual void add_WindowActivate (Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_WindowActivate(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void add_WindowActivate (Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_WindowActivate(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.add_WindowActivate(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_WindowActivate ( As _ApplicationEvents_WindowActivateEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_WindowActivate(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_WindowActivateEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::add_WindowActivate;" />
-      <MemberSignature Language="F#" Value="abstract member add_WindowActivate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler -&gt; unit&#xA;override this.add_WindowActivate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler -&gt; unit" Usage="applicationEventsClass.add_WindowActivate " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_WindowActivate (unnamedParam1 As _ApplicationEvents_WindowActivateEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_WindowActivate(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_WindowActivateEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::add_WindowActivate;" />
+      <MemberSignature Language="F#" Value="abstract member add_WindowActivate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler -&gt; unit&#xA;override this.add_WindowActivate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler -&gt; unit" Usage="applicationEventsClass.add_WindowActivate unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.add_WindowActivate(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler)</InterfaceMember>
@@ -106,21 +115,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="add_WindowDeactivate">
-      <MemberSignature Language="C#" Value="public virtual void add_WindowDeactivate (Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_WindowDeactivate(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void add_WindowDeactivate (Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_WindowDeactivate(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.add_WindowDeactivate(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_WindowDeactivate ( As _ApplicationEvents_WindowDeactivateEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_WindowDeactivate(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_WindowDeactivateEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::add_WindowDeactivate;" />
-      <MemberSignature Language="F#" Value="abstract member add_WindowDeactivate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler -&gt; unit&#xA;override this.add_WindowDeactivate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler -&gt; unit" Usage="applicationEventsClass.add_WindowDeactivate " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_WindowDeactivate (unnamedParam1 As _ApplicationEvents_WindowDeactivateEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_WindowDeactivate(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_WindowDeactivateEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::add_WindowDeactivate;" />
+      <MemberSignature Language="F#" Value="abstract member add_WindowDeactivate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler -&gt; unit&#xA;override this.add_WindowDeactivate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler -&gt; unit" Usage="applicationEventsClass.add_WindowDeactivate unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.add_WindowDeactivate(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler)</InterfaceMember>
@@ -133,21 +142,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="add_WindowSize">
-      <MemberSignature Language="C#" Value="public virtual void add_WindowSize (Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_WindowSize(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void add_WindowSize (Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_WindowSize(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.add_WindowSize(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_WindowSize ( As _ApplicationEvents_WindowSizeEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_WindowSize(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_WindowSizeEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::add_WindowSize;" />
-      <MemberSignature Language="F#" Value="abstract member add_WindowSize : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler -&gt; unit&#xA;override this.add_WindowSize : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler -&gt; unit" Usage="applicationEventsClass.add_WindowSize " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_WindowSize (unnamedParam1 As _ApplicationEvents_WindowSizeEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_WindowSize(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_WindowSizeEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::add_WindowSize;" />
+      <MemberSignature Language="F#" Value="abstract member add_WindowSize : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler -&gt; unit&#xA;override this.add_WindowSize : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler -&gt; unit" Usage="applicationEventsClass.add_WindowSize unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.add_WindowSize(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler)</InterfaceMember>
@@ -160,21 +169,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="add_XDocumentBeforeClose">
-      <MemberSignature Language="C#" Value="public virtual void add_XDocumentBeforeClose (Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_XDocumentBeforeClose(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void add_XDocumentBeforeClose (Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_XDocumentBeforeClose(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.add_XDocumentBeforeClose(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_XDocumentBeforeClose ( As _ApplicationEvents_XDocumentBeforeCloseEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_XDocumentBeforeClose(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentBeforeCloseEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::add_XDocumentBeforeClose;" />
-      <MemberSignature Language="F#" Value="abstract member add_XDocumentBeforeClose : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler -&gt; unit&#xA;override this.add_XDocumentBeforeClose : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler -&gt; unit" Usage="applicationEventsClass.add_XDocumentBeforeClose " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_XDocumentBeforeClose (unnamedParam1 As _ApplicationEvents_XDocumentBeforeCloseEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_XDocumentBeforeClose(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentBeforeCloseEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::add_XDocumentBeforeClose;" />
+      <MemberSignature Language="F#" Value="abstract member add_XDocumentBeforeClose : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler -&gt; unit&#xA;override this.add_XDocumentBeforeClose : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler -&gt; unit" Usage="applicationEventsClass.add_XDocumentBeforeClose unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.add_XDocumentBeforeClose(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler)</InterfaceMember>
@@ -187,21 +196,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="add_XDocumentBeforePrint">
-      <MemberSignature Language="C#" Value="public virtual void add_XDocumentBeforePrint (Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_XDocumentBeforePrint(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void add_XDocumentBeforePrint (Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_XDocumentBeforePrint(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.add_XDocumentBeforePrint(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_XDocumentBeforePrint ( As _ApplicationEvents_XDocumentBeforePrintEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_XDocumentBeforePrint(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentBeforePrintEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::add_XDocumentBeforePrint;" />
-      <MemberSignature Language="F#" Value="abstract member add_XDocumentBeforePrint : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler -&gt; unit&#xA;override this.add_XDocumentBeforePrint : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler -&gt; unit" Usage="applicationEventsClass.add_XDocumentBeforePrint " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_XDocumentBeforePrint (unnamedParam1 As _ApplicationEvents_XDocumentBeforePrintEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_XDocumentBeforePrint(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentBeforePrintEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::add_XDocumentBeforePrint;" />
+      <MemberSignature Language="F#" Value="abstract member add_XDocumentBeforePrint : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler -&gt; unit&#xA;override this.add_XDocumentBeforePrint : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler -&gt; unit" Usage="applicationEventsClass.add_XDocumentBeforePrint unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.add_XDocumentBeforePrint(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler)</InterfaceMember>
@@ -214,21 +223,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="add_XDocumentBeforeSave">
-      <MemberSignature Language="C#" Value="public virtual void add_XDocumentBeforeSave (Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_XDocumentBeforeSave(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void add_XDocumentBeforeSave (Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_XDocumentBeforeSave(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.add_XDocumentBeforeSave(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_XDocumentBeforeSave ( As _ApplicationEvents_XDocumentBeforeSaveEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_XDocumentBeforeSave(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentBeforeSaveEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::add_XDocumentBeforeSave;" />
-      <MemberSignature Language="F#" Value="abstract member add_XDocumentBeforeSave : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler -&gt; unit&#xA;override this.add_XDocumentBeforeSave : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler -&gt; unit" Usage="applicationEventsClass.add_XDocumentBeforeSave " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_XDocumentBeforeSave (unnamedParam1 As _ApplicationEvents_XDocumentBeforeSaveEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_XDocumentBeforeSave(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentBeforeSaveEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::add_XDocumentBeforeSave;" />
+      <MemberSignature Language="F#" Value="abstract member add_XDocumentBeforeSave : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler -&gt; unit&#xA;override this.add_XDocumentBeforeSave : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler -&gt; unit" Usage="applicationEventsClass.add_XDocumentBeforeSave unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.add_XDocumentBeforeSave(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler)</InterfaceMember>
@@ -241,21 +250,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="add_XDocumentChange">
-      <MemberSignature Language="C#" Value="public virtual void add_XDocumentChange (Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_XDocumentChange(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void add_XDocumentChange (Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_XDocumentChange(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.add_XDocumentChange(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_XDocumentChange ( As _ApplicationEvents_XDocumentChangeEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_XDocumentChange(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentChangeEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::add_XDocumentChange;" />
-      <MemberSignature Language="F#" Value="abstract member add_XDocumentChange : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler -&gt; unit&#xA;override this.add_XDocumentChange : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler -&gt; unit" Usage="applicationEventsClass.add_XDocumentChange " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_XDocumentChange (unnamedParam1 As _ApplicationEvents_XDocumentChangeEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_XDocumentChange(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentChangeEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::add_XDocumentChange;" />
+      <MemberSignature Language="F#" Value="abstract member add_XDocumentChange : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler -&gt; unit&#xA;override this.add_XDocumentChange : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler -&gt; unit" Usage="applicationEventsClass.add_XDocumentChange unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.add_XDocumentChange(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler)</InterfaceMember>
@@ -268,21 +277,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="add_XDocumentOpen">
-      <MemberSignature Language="C#" Value="public virtual void add_XDocumentOpen (Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_XDocumentOpen(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void add_XDocumentOpen (Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_XDocumentOpen(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.add_XDocumentOpen(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_XDocumentOpen ( As _ApplicationEvents_XDocumentOpenEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_XDocumentOpen(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentOpenEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::add_XDocumentOpen;" />
-      <MemberSignature Language="F#" Value="abstract member add_XDocumentOpen : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler -&gt; unit&#xA;override this.add_XDocumentOpen : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler -&gt; unit" Usage="applicationEventsClass.add_XDocumentOpen " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_XDocumentOpen (unnamedParam1 As _ApplicationEvents_XDocumentOpenEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_XDocumentOpen(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentOpenEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::add_XDocumentOpen;" />
+      <MemberSignature Language="F#" Value="abstract member add_XDocumentOpen : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler -&gt; unit&#xA;override this.add_XDocumentOpen : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler -&gt; unit" Usage="applicationEventsClass.add_XDocumentOpen unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.add_XDocumentOpen(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler)</InterfaceMember>
@@ -295,10 +304,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -350,12 +359,12 @@
       </Docs>
     </Member>
     <Member MemberName="remove_NewXDocument">
-      <MemberSignature Language="C#" Value="public virtual void remove_NewXDocument (Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_NewXDocument(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void remove_NewXDocument (Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_NewXDocument(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.remove_NewXDocument(Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_NewXDocument ( As _ApplicationEvents_NewXDocumentEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_NewXDocument(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_NewXDocumentEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::remove_NewXDocument;" />
-      <MemberSignature Language="F#" Value="abstract member remove_NewXDocument : Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler -&gt; unit&#xA;override this.remove_NewXDocument : Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler -&gt; unit" Usage="applicationEventsClass.remove_NewXDocument " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_NewXDocument (unnamedParam1 As _ApplicationEvents_NewXDocumentEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_NewXDocument(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_NewXDocumentEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::remove_NewXDocument;" />
+      <MemberSignature Language="F#" Value="abstract member remove_NewXDocument : Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler -&gt; unit&#xA;override this.remove_NewXDocument : Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler -&gt; unit" Usage="applicationEventsClass.remove_NewXDocument unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.remove_NewXDocument(Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler)</InterfaceMember>
@@ -368,21 +377,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="remove_Quit">
-      <MemberSignature Language="C#" Value="public virtual void remove_Quit (Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_Quit(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void remove_Quit (Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_Quit(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.remove_Quit(Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_Quit ( As _ApplicationEvents_QuitEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_Quit(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_QuitEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::remove_Quit;" />
-      <MemberSignature Language="F#" Value="abstract member remove_Quit : Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler -&gt; unit&#xA;override this.remove_Quit : Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler -&gt; unit" Usage="applicationEventsClass.remove_Quit " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_Quit (unnamedParam1 As _ApplicationEvents_QuitEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_Quit(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_QuitEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::remove_Quit;" />
+      <MemberSignature Language="F#" Value="abstract member remove_Quit : Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler -&gt; unit&#xA;override this.remove_Quit : Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler -&gt; unit" Usage="applicationEventsClass.remove_Quit unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.remove_Quit(Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler)</InterfaceMember>
@@ -395,21 +404,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_QuitEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="remove_WindowActivate">
-      <MemberSignature Language="C#" Value="public virtual void remove_WindowActivate (Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_WindowActivate(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void remove_WindowActivate (Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_WindowActivate(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.remove_WindowActivate(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_WindowActivate ( As _ApplicationEvents_WindowActivateEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_WindowActivate(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_WindowActivateEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::remove_WindowActivate;" />
-      <MemberSignature Language="F#" Value="abstract member remove_WindowActivate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler -&gt; unit&#xA;override this.remove_WindowActivate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler -&gt; unit" Usage="applicationEventsClass.remove_WindowActivate " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_WindowActivate (unnamedParam1 As _ApplicationEvents_WindowActivateEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_WindowActivate(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_WindowActivateEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::remove_WindowActivate;" />
+      <MemberSignature Language="F#" Value="abstract member remove_WindowActivate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler -&gt; unit&#xA;override this.remove_WindowActivate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler -&gt; unit" Usage="applicationEventsClass.remove_WindowActivate unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.remove_WindowActivate(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler)</InterfaceMember>
@@ -422,21 +431,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowActivateEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="remove_WindowDeactivate">
-      <MemberSignature Language="C#" Value="public virtual void remove_WindowDeactivate (Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_WindowDeactivate(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void remove_WindowDeactivate (Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_WindowDeactivate(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.remove_WindowDeactivate(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_WindowDeactivate ( As _ApplicationEvents_WindowDeactivateEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_WindowDeactivate(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_WindowDeactivateEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::remove_WindowDeactivate;" />
-      <MemberSignature Language="F#" Value="abstract member remove_WindowDeactivate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler -&gt; unit&#xA;override this.remove_WindowDeactivate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler -&gt; unit" Usage="applicationEventsClass.remove_WindowDeactivate " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_WindowDeactivate (unnamedParam1 As _ApplicationEvents_WindowDeactivateEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_WindowDeactivate(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_WindowDeactivateEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::remove_WindowDeactivate;" />
+      <MemberSignature Language="F#" Value="abstract member remove_WindowDeactivate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler -&gt; unit&#xA;override this.remove_WindowDeactivate : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler -&gt; unit" Usage="applicationEventsClass.remove_WindowDeactivate unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.remove_WindowDeactivate(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler)</InterfaceMember>
@@ -449,21 +458,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowDeactivateEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="remove_WindowSize">
-      <MemberSignature Language="C#" Value="public virtual void remove_WindowSize (Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_WindowSize(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void remove_WindowSize (Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_WindowSize(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.remove_WindowSize(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_WindowSize ( As _ApplicationEvents_WindowSizeEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_WindowSize(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_WindowSizeEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::remove_WindowSize;" />
-      <MemberSignature Language="F#" Value="abstract member remove_WindowSize : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler -&gt; unit&#xA;override this.remove_WindowSize : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler -&gt; unit" Usage="applicationEventsClass.remove_WindowSize " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_WindowSize (unnamedParam1 As _ApplicationEvents_WindowSizeEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_WindowSize(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_WindowSizeEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::remove_WindowSize;" />
+      <MemberSignature Language="F#" Value="abstract member remove_WindowSize : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler -&gt; unit&#xA;override this.remove_WindowSize : Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler -&gt; unit" Usage="applicationEventsClass.remove_WindowSize unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.remove_WindowSize(Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler)</InterfaceMember>
@@ -476,21 +485,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_WindowSizeEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="remove_XDocumentBeforeClose">
-      <MemberSignature Language="C#" Value="public virtual void remove_XDocumentBeforeClose (Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_XDocumentBeforeClose(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void remove_XDocumentBeforeClose (Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_XDocumentBeforeClose(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.remove_XDocumentBeforeClose(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_XDocumentBeforeClose ( As _ApplicationEvents_XDocumentBeforeCloseEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_XDocumentBeforeClose(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentBeforeCloseEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::remove_XDocumentBeforeClose;" />
-      <MemberSignature Language="F#" Value="abstract member remove_XDocumentBeforeClose : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler -&gt; unit&#xA;override this.remove_XDocumentBeforeClose : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler -&gt; unit" Usage="applicationEventsClass.remove_XDocumentBeforeClose " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_XDocumentBeforeClose (unnamedParam1 As _ApplicationEvents_XDocumentBeforeCloseEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_XDocumentBeforeClose(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentBeforeCloseEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::remove_XDocumentBeforeClose;" />
+      <MemberSignature Language="F#" Value="abstract member remove_XDocumentBeforeClose : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler -&gt; unit&#xA;override this.remove_XDocumentBeforeClose : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler -&gt; unit" Usage="applicationEventsClass.remove_XDocumentBeforeClose unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.remove_XDocumentBeforeClose(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler)</InterfaceMember>
@@ -503,21 +512,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeCloseEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="remove_XDocumentBeforePrint">
-      <MemberSignature Language="C#" Value="public virtual void remove_XDocumentBeforePrint (Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_XDocumentBeforePrint(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void remove_XDocumentBeforePrint (Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_XDocumentBeforePrint(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.remove_XDocumentBeforePrint(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_XDocumentBeforePrint ( As _ApplicationEvents_XDocumentBeforePrintEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_XDocumentBeforePrint(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentBeforePrintEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::remove_XDocumentBeforePrint;" />
-      <MemberSignature Language="F#" Value="abstract member remove_XDocumentBeforePrint : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler -&gt; unit&#xA;override this.remove_XDocumentBeforePrint : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler -&gt; unit" Usage="applicationEventsClass.remove_XDocumentBeforePrint " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_XDocumentBeforePrint (unnamedParam1 As _ApplicationEvents_XDocumentBeforePrintEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_XDocumentBeforePrint(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentBeforePrintEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::remove_XDocumentBeforePrint;" />
+      <MemberSignature Language="F#" Value="abstract member remove_XDocumentBeforePrint : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler -&gt; unit&#xA;override this.remove_XDocumentBeforePrint : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler -&gt; unit" Usage="applicationEventsClass.remove_XDocumentBeforePrint unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.remove_XDocumentBeforePrint(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler)</InterfaceMember>
@@ -530,21 +539,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="remove_XDocumentBeforeSave">
-      <MemberSignature Language="C#" Value="public virtual void remove_XDocumentBeforeSave (Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_XDocumentBeforeSave(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void remove_XDocumentBeforeSave (Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_XDocumentBeforeSave(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.remove_XDocumentBeforeSave(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_XDocumentBeforeSave ( As _ApplicationEvents_XDocumentBeforeSaveEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_XDocumentBeforeSave(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentBeforeSaveEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::remove_XDocumentBeforeSave;" />
-      <MemberSignature Language="F#" Value="abstract member remove_XDocumentBeforeSave : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler -&gt; unit&#xA;override this.remove_XDocumentBeforeSave : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler -&gt; unit" Usage="applicationEventsClass.remove_XDocumentBeforeSave " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_XDocumentBeforeSave (unnamedParam1 As _ApplicationEvents_XDocumentBeforeSaveEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_XDocumentBeforeSave(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentBeforeSaveEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::remove_XDocumentBeforeSave;" />
+      <MemberSignature Language="F#" Value="abstract member remove_XDocumentBeforeSave : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler -&gt; unit&#xA;override this.remove_XDocumentBeforeSave : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler -&gt; unit" Usage="applicationEventsClass.remove_XDocumentBeforeSave unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.remove_XDocumentBeforeSave(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler)</InterfaceMember>
@@ -557,21 +566,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforeSaveEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="remove_XDocumentChange">
-      <MemberSignature Language="C#" Value="public virtual void remove_XDocumentChange (Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_XDocumentChange(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void remove_XDocumentChange (Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_XDocumentChange(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.remove_XDocumentChange(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_XDocumentChange ( As _ApplicationEvents_XDocumentChangeEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_XDocumentChange(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentChangeEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::remove_XDocumentChange;" />
-      <MemberSignature Language="F#" Value="abstract member remove_XDocumentChange : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler -&gt; unit&#xA;override this.remove_XDocumentChange : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler -&gt; unit" Usage="applicationEventsClass.remove_XDocumentChange " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_XDocumentChange (unnamedParam1 As _ApplicationEvents_XDocumentChangeEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_XDocumentChange(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentChangeEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::remove_XDocumentChange;" />
+      <MemberSignature Language="F#" Value="abstract member remove_XDocumentChange : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler -&gt; unit&#xA;override this.remove_XDocumentChange : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler -&gt; unit" Usage="applicationEventsClass.remove_XDocumentChange unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.remove_XDocumentChange(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler)</InterfaceMember>
@@ -584,21 +593,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="remove_XDocumentOpen">
-      <MemberSignature Language="C#" Value="public virtual void remove_XDocumentOpen (Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_XDocumentOpen(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void remove_XDocumentOpen (Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_XDocumentOpen(class Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ApplicationEventsClass.remove_XDocumentOpen(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_XDocumentOpen ( As _ApplicationEvents_XDocumentOpenEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_XDocumentOpen(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentOpenEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::remove_XDocumentOpen;" />
-      <MemberSignature Language="F#" Value="abstract member remove_XDocumentOpen : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler -&gt; unit&#xA;override this.remove_XDocumentOpen : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler -&gt; unit" Usage="applicationEventsClass.remove_XDocumentOpen " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_XDocumentOpen (unnamedParam1 As _ApplicationEvents_XDocumentOpenEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_XDocumentOpen(Microsoft::Office::Interop::InfoPath::_ApplicationEvents_XDocumentOpenEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_ApplicationEvents_Event::remove_XDocumentOpen;" />
+      <MemberSignature Language="F#" Value="abstract member remove_XDocumentOpen : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler -&gt; unit&#xA;override this.remove_XDocumentOpen : Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler -&gt; unit" Usage="applicationEventsClass.remove_XDocumentOpen unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.remove_XDocumentOpen(Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler)</InterfaceMember>
@@ -611,10 +620,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentOpenEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>

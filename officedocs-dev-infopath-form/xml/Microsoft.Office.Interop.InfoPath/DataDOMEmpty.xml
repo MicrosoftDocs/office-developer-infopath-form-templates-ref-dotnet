@@ -1,4 +1,4 @@
-﻿<Type Name="DataDOMEmpty" FullName="Microsoft.Office.Interop.InfoPath.DataDOMEmpty">
+<Type Name="DataDOMEmpty" FullName="Microsoft.Office.Interop.InfoPath.DataDOMEmpty">
   <TypeSignature Language="C#" Value="public interface DataDOMEmpty" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DataDOMEmpty" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DataDOMEmpty" />
@@ -12,13 +12,16 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.Guid("096CD785-0786-11D1-95FA-0080C78EE3BB")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.Guid("096CD785-0786-11D1-95FA-0080C78EE3BB")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.Guid("096CD785-0786-11D1-95FA-0080C78EE3BB")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(1)</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.InterfaceType(1)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.InterfaceType(1)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.TypeLibType(192)</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.TypeLibType(192)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.TypeLibType(192)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

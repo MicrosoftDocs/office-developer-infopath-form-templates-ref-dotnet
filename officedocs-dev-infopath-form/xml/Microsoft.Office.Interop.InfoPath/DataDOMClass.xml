@@ -1,4 +1,4 @@
-﻿<Type Name="DataDOMClass" FullName="Microsoft.Office.Interop.InfoPath.DataDOMClass">
+<Type Name="DataDOMClass" FullName="Microsoft.Office.Interop.InfoPath.DataDOMClass">
   <TypeSignature Language="C#" Value="public class DataDOMClass : Microsoft.Office.Interop.InfoPath.DataDOM" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi DataDOMClass extends System.Object implements class Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event, class Microsoft.Office.Interop.InfoPath.DataDOM, class Microsoft.Office.Interop.InfoPath.DataDOMEmpty" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DataDOMClass" />
@@ -14,18 +14,27 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Microsoft.Office.Interop.InfoPath.DataDOM</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Interop.InfoPath.DataDOMEmpty</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(0)</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ClassInterface(0)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ClassInterface(0)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ComSourceInterfaces("Microsoft.Office.Interop.InfoPath._DataDOMEventSink\0")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComSourceInterfaces("Microsoft.Office.Interop.InfoPath._DataDOMEventSink\0")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComSourceInterfaces("Microsoft.Office.Interop.InfoPath._DataDOMEventSink\0")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.Guid("807583C2-5146-11D5-A672-00B0D022E945")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.Guid("807583C2-5146-11D5-A672-00B0D022E945")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.Guid("807583C2-5146-11D5-A672-00B0D022E945")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,12 +43,12 @@
   </Docs>
   <Members>
     <Member MemberName="add_OnAfterChange">
-      <MemberSignature Language="C#" Value="public virtual void add_OnAfterChange (Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnAfterChange(class Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void add_OnAfterChange (Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnAfterChange(class Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.DataDOMClass.add_OnAfterChange(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnAfterChange ( As _DataDOMEventSink_OnAfterChangeEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnAfterChange(Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_OnAfterChangeEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_Event::add_OnAfterChange;" />
-      <MemberSignature Language="F#" Value="abstract member add_OnAfterChange : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler -&gt; unit&#xA;override this.add_OnAfterChange : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler -&gt; unit" Usage="dataDOMClass.add_OnAfterChange " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnAfterChange (unnamedParam1 As _DataDOMEventSink_OnAfterChangeEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnAfterChange(Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_OnAfterChangeEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_Event::add_OnAfterChange;" />
+      <MemberSignature Language="F#" Value="abstract member add_OnAfterChange : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler -&gt; unit&#xA;override this.add_OnAfterChange : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler -&gt; unit" Usage="dataDOMClass.add_OnAfterChange unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event.add_OnAfterChange(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler)</InterfaceMember>
@@ -52,21 +61,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="add_OnBeforeChange">
-      <MemberSignature Language="C#" Value="public virtual void add_OnBeforeChange (Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnBeforeChange(class Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void add_OnBeforeChange (Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnBeforeChange(class Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.DataDOMClass.add_OnBeforeChange(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnBeforeChange ( As _DataDOMEventSink_OnBeforeChangeEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnBeforeChange(Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_OnBeforeChangeEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_Event::add_OnBeforeChange;" />
-      <MemberSignature Language="F#" Value="abstract member add_OnBeforeChange : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler -&gt; unit&#xA;override this.add_OnBeforeChange : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler -&gt; unit" Usage="dataDOMClass.add_OnBeforeChange " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnBeforeChange (unnamedParam1 As _DataDOMEventSink_OnBeforeChangeEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnBeforeChange(Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_OnBeforeChangeEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_Event::add_OnBeforeChange;" />
+      <MemberSignature Language="F#" Value="abstract member add_OnBeforeChange : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler -&gt; unit&#xA;override this.add_OnBeforeChange : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler -&gt; unit" Usage="dataDOMClass.add_OnBeforeChange unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event.add_OnBeforeChange(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler)</InterfaceMember>
@@ -79,21 +88,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="add_OnValidate">
-      <MemberSignature Language="C#" Value="public virtual void add_OnValidate (Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnValidate(class Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void add_OnValidate (Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnValidate(class Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.DataDOMClass.add_OnValidate(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnValidate ( As _DataDOMEventSink_OnValidateEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnValidate(Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_OnValidateEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_Event::add_OnValidate;" />
-      <MemberSignature Language="F#" Value="abstract member add_OnValidate : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler -&gt; unit&#xA;override this.add_OnValidate : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler -&gt; unit" Usage="dataDOMClass.add_OnValidate " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub add_OnValidate (unnamedParam1 As _DataDOMEventSink_OnValidateEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void add_OnValidate(Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_OnValidateEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_Event::add_OnValidate;" />
+      <MemberSignature Language="F#" Value="abstract member add_OnValidate : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler -&gt; unit&#xA;override this.add_OnValidate : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler -&gt; unit" Usage="dataDOMClass.add_OnValidate unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event.add_OnValidate(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler)</InterfaceMember>
@@ -106,10 +115,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -184,12 +193,12 @@
       </Docs>
     </Member>
     <Member MemberName="remove_OnAfterChange">
-      <MemberSignature Language="C#" Value="public virtual void remove_OnAfterChange (Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnAfterChange(class Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void remove_OnAfterChange (Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnAfterChange(class Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.DataDOMClass.remove_OnAfterChange(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnAfterChange ( As _DataDOMEventSink_OnAfterChangeEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnAfterChange(Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_OnAfterChangeEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_Event::remove_OnAfterChange;" />
-      <MemberSignature Language="F#" Value="abstract member remove_OnAfterChange : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler -&gt; unit&#xA;override this.remove_OnAfterChange : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler -&gt; unit" Usage="dataDOMClass.remove_OnAfterChange " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnAfterChange (unnamedParam1 As _DataDOMEventSink_OnAfterChangeEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnAfterChange(Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_OnAfterChangeEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_Event::remove_OnAfterChange;" />
+      <MemberSignature Language="F#" Value="abstract member remove_OnAfterChange : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler -&gt; unit&#xA;override this.remove_OnAfterChange : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler -&gt; unit" Usage="dataDOMClass.remove_OnAfterChange unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event.remove_OnAfterChange(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler)</InterfaceMember>
@@ -202,21 +211,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="remove_OnBeforeChange">
-      <MemberSignature Language="C#" Value="public virtual void remove_OnBeforeChange (Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnBeforeChange(class Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void remove_OnBeforeChange (Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnBeforeChange(class Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.DataDOMClass.remove_OnBeforeChange(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnBeforeChange ( As _DataDOMEventSink_OnBeforeChangeEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnBeforeChange(Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_OnBeforeChangeEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_Event::remove_OnBeforeChange;" />
-      <MemberSignature Language="F#" Value="abstract member remove_OnBeforeChange : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler -&gt; unit&#xA;override this.remove_OnBeforeChange : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler -&gt; unit" Usage="dataDOMClass.remove_OnBeforeChange " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnBeforeChange (unnamedParam1 As _DataDOMEventSink_OnBeforeChangeEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnBeforeChange(Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_OnBeforeChangeEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_Event::remove_OnBeforeChange;" />
+      <MemberSignature Language="F#" Value="abstract member remove_OnBeforeChange : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler -&gt; unit&#xA;override this.remove_OnBeforeChange : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler -&gt; unit" Usage="dataDOMClass.remove_OnBeforeChange unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event.remove_OnBeforeChange(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler)</InterfaceMember>
@@ -229,21 +238,21 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="remove_OnValidate">
-      <MemberSignature Language="C#" Value="public virtual void remove_OnValidate (Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnValidate(class Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public virtual void remove_OnValidate (Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnValidate(class Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.DataDOMClass.remove_OnValidate(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnValidate ( As _DataDOMEventSink_OnValidateEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnValidate(Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_OnValidateEventHandler ^ ) = Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_Event::remove_OnValidate;" />
-      <MemberSignature Language="F#" Value="abstract member remove_OnValidate : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler -&gt; unit&#xA;override this.remove_OnValidate : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler -&gt; unit" Usage="dataDOMClass.remove_OnValidate " />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub remove_OnValidate (unnamedParam1 As _DataDOMEventSink_OnValidateEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void remove_OnValidate(Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_OnValidateEventHandler ^ unnamedParam1) = Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_Event::remove_OnValidate;" />
+      <MemberSignature Language="F#" Value="abstract member remove_OnValidate : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler -&gt; unit&#xA;override this.remove_OnValidate : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler -&gt; unit" Usage="dataDOMClass.remove_OnValidate unnamedParam1" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_Event.remove_OnValidate(Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler)</InterfaceMember>
@@ -256,10 +265,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>

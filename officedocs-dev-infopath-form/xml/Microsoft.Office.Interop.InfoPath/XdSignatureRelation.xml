@@ -1,4 +1,4 @@
-﻿<Type Name="XdSignatureRelation" FullName="Microsoft.Office.Interop.InfoPath.XdSignatureRelation">
+<Type Name="XdSignatureRelation" FullName="Microsoft.Office.Interop.InfoPath.XdSignatureRelation">
   <TypeSignature Language="C#" Value="public enum XdSignatureRelation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XdSignatureRelation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XdSignatureRelation" />
@@ -14,7 +14,8 @@
   </Base>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.Guid("57C4BDEA-6E4C-39E2-ACD2-AA61226AE895")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.Guid("57C4BDEA-6E4C-39E2-ACD2-AA61226AE895")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.Guid("57C4BDEA-6E4C-39E2-ACD2-AA61226AE895")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

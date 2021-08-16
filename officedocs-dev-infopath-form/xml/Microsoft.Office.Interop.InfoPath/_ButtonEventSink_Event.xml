@@ -12,13 +12,16 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ComEventInterface(typeof(Microsoft.Office.Interop.InfoPath._ButtonEventSink), typeof(Microsoft.Office.Interop.InfoPath._ButtonEventSink_EventProvider))</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComEventInterface(typeof(Microsoft.Office.Interop.InfoPath._ButtonEventSink), typeof(Microsoft.Office.Interop.InfoPath._ButtonEventSink_EventProvider))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComEventInterface(typeof(Microsoft.Office.Interop.InfoPath._ButtonEventSink), typeof(Microsoft.Office.Interop.InfoPath._ButtonEventSink_EventProvider))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(false)&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.TypeLibType(16)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.TypeLibType(16)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -27,12 +30,12 @@
   </Docs>
   <Members>
     <Member MemberName="add_OnClick">
-      <MemberSignature Language="C#" Value="public void add_OnClick (Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnClick(class Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public void add_OnClick (Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void add_OnClick(class Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ButtonEventSink_Event.add_OnClick(Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub add_OnClick ( As _ButtonEventSink_OnClickEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void add_OnClick(Microsoft::Office::Interop::InfoPath::_ButtonEventSink_OnClickEventHandler ^ );" />
-      <MemberSignature Language="F#" Value="abstract member add_OnClick : Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler -&gt; unit" Usage="_ButtonEventSink_Event.add_OnClick " />
+      <MemberSignature Language="VB.NET" Value="Public Sub add_OnClick (unnamedParam1 As _ButtonEventSink_OnClickEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void add_OnClick(Microsoft::Office::Interop::InfoPath::_ButtonEventSink_OnClickEventHandler ^ unnamedParam1);" />
+      <MemberSignature Language="F#" Value="abstract member add_OnClick : Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler -&gt; unit" Usage="_ButtonEventSink_Event.add_OnClick unnamedParam1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -42,10 +45,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -71,12 +74,12 @@
       </Docs>
     </Member>
     <Member MemberName="remove_OnClick">
-      <MemberSignature Language="C#" Value="public void remove_OnClick (Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler );" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnClick(class Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler ) runtime managed" />
+      <MemberSignature Language="C#" Value="public void remove_OnClick (Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler unnamedParam1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove_OnClick(class Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler unnamedParam1) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._ButtonEventSink_Event.remove_OnClick(Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub remove_OnClick ( As _ButtonEventSink_OnClickEventHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void remove_OnClick(Microsoft::Office::Interop::InfoPath::_ButtonEventSink_OnClickEventHandler ^ );" />
-      <MemberSignature Language="F#" Value="abstract member remove_OnClick : Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler -&gt; unit" Usage="_ButtonEventSink_Event.remove_OnClick " />
+      <MemberSignature Language="VB.NET" Value="Public Sub remove_OnClick (unnamedParam1 As _ButtonEventSink_OnClickEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void remove_OnClick(Microsoft::Office::Interop::InfoPath::_ButtonEventSink_OnClickEventHandler ^ unnamedParam1);" />
+      <MemberSignature Language="F#" Value="abstract member remove_OnClick : Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler -&gt; unit" Usage="_ButtonEventSink_Event.remove_OnClick unnamedParam1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -86,10 +89,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="" Type="Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler" />
+        <Parameter Name="unnamedParam1" Type="Microsoft.Office.Interop.InfoPath._ButtonEventSink_OnClickEventHandler" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="unnamedParam1">To be added.</param>
         <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
