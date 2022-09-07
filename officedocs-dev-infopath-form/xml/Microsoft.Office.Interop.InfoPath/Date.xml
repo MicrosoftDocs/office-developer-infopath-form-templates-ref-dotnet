@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Date" />
   <TypeSignature Language="VB.NET" Value="Public Interface Date" />
   <TypeSignature Language="C++ CLI" Value="public interface class Date" />
+  <TypeSignature Language="F#" Value="type Date = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.DateObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Date.Now" />
       <MemberSignature Language="VB.NET" Value="Public Function Now () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Now();" />
+      <MemberSignature Language="F#" Value="abstract member Now : unit -&gt; obj" Usage="date.Now " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -43,9 +45,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the current system date and time in ISO format (YYYY-MM-DDThh:mm:ss).</summary>
+        <returns>An <b>object</b> that represents the current date and time.</returns>
         <remarks>To be added.</remarks>
+        <example>
+          <para>In the following example, the variable <paramref name="currentDateTime" /> is set to the current system date and time:</para>
+          <code>object currentDateTime = thisXDocument.Util.Date.&lt;span class="label"&gt;Now&lt;/span&gt;();
+thisXDocument.UI.Alert(currentDateTime.ToString());</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Today">
@@ -54,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Date.Today" />
       <MemberSignature Language="VB.NET" Value="Public Function Today () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Today();" />
+      <MemberSignature Language="F#" Value="abstract member Today : unit -&gt; obj" Usage="date.Today " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -69,9 +77,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the current system date in ISO format (YYYY-MM-DD).</summary>
+        <returns>An <b>object</b> that represents the current date.</returns>
         <remarks>To be added.</remarks>
+        <example>
+          <para>In the following example, the variable <paramref name="currentDate" /> is set to the current system date.</para>
+          <code>object currentDate = thisXDocument.Util.Date.&lt;span class="label"&gt;Today&lt;/span&gt;();
+thisXDocument.UI.Alert(currentDate.ToString());</code>
+        </example>
       </Docs>
     </Member>
   </Members>

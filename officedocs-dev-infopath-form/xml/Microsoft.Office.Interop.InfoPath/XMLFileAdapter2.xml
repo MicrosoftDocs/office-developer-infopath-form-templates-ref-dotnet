@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XMLFileAdapter2" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLFileAdapter2&#xA;Implements XMLFileAdapter" />
   <TypeSignature Language="C++ CLI" Value="public interface class XMLFileAdapter2 : Microsoft::Office::Interop::InfoPath::XMLFileAdapter" />
+  <TypeSignature Language="F#" Value="type XMLFileAdapter2 = interface&#xA;    interface XMLFileAdapter" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.XMLFileAdapter2.FileURL" />
       <MemberSignature Language="VB.NET" Value="Public Property FileURL As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileURL { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FileURL : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.XMLFileAdapter2.FileURL" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.XMLFileAdapter.FileURL</InterfaceMember>
@@ -55,9 +57,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the Uniform Resource Locator (URL) of the XML file that is associated with the <see cref="T:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObject" /> object.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <example>
+          <code>XMLFileAdapter myAdapter = (XMLFileAdapter)thisXDocument.DataObjects[0].QueryAdapter;
+thisXDocument.UI.Alert("The FileURL is: " + myAdapter.&lt;span class="label"&gt;FileURL&lt;/span&gt;);</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -66,6 +72,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.XMLFileAdapter2.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.InfoPath.XMLFileAdapter2.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -83,7 +90,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the name of an <see cref="T:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObject" /> object.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -94,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XMLFileAdapter2.Query" />
       <MemberSignature Language="VB.NET" Value="Public Sub Query ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Query();" />
+      <MemberSignature Language="F#" Value="abstract member Query : unit -&gt; unit" Usage="xMLFileAdapter2.Query " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -109,8 +117,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Reads data from the associated data adapter.</summary>
+        <remarks>
+          <para>The <b>Query</b> method fails if <see cref="P:Microsoft.Office.Interop.InfoPath.XMLFileAdapter2.QueryAllowed" /> is <b>false</b>.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="QueryAllowed">
@@ -119,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.XMLFileAdapter2.QueryAllowed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueryAllowed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool QueryAllowed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueryAllowed : bool" Usage="Microsoft.Office.Interop.InfoPath.XMLFileAdapter2.QueryAllowed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -136,7 +148,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Always returns <b>true</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,6 +159,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XMLFileAdapter2.Submit" />
       <MemberSignature Language="VB.NET" Value="Public Sub Submit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Submit();" />
+      <MemberSignature Language="F#" Value="abstract member Submit : unit -&gt; unit" Usage="xMLFileAdapter2.Submit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -162,7 +175,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The <b>Submit</b> method is available for the <see cref="T:Microsoft.Office.Interop.InfoPath.XMLFileAdapterObject" /> object but, because the <b>XMLFileAdapter</b> object is available for receiving data only, the method will always generate a run-time error when it is called on that object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,6 +185,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.XMLFileAdapter2.SubmitAllowed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubmitAllowed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SubmitAllowed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubmitAllowed : bool" Usage="Microsoft.Office.Interop.InfoPath.XMLFileAdapter2.SubmitAllowed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -189,7 +203,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Always returns <b>false</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.WebServiceAdapterObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface WebServiceAdapterObject&#xA;Implements WebServiceAdapter2" />
   <TypeSignature Language="C++ CLI" Value="public interface class WebServiceAdapterObject : Microsoft::Office::Interop::InfoPath::WebServiceAdapter2" />
+  <TypeSignature Language="F#" Value="type WebServiceAdapterObject = interface&#xA;    interface WebServiceAdapter2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,26 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a connection to an XML Web service.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2" />.</para>
+      <para>The <b>WebServiceAdapterObject</b> object is a type of Microsoft Office InfoPath 2003 data adapter that contains all the information necessary for retrieving data from and submitting data to an external data source.</para>
+      <para>The <b>WebServiceAdapterObject</b> provides properties that can be used to get and set information about the data adapter's input and operation strings. It also provides a property for getting the Uniform Resource Locator (URL) of the Web Services Description Language (WSDL) file of the XML Web service.</para>
+      <para>For secondary data sources, the <b>WebServiceAdapterObject</b> object is accessible through the <see cref="P:Microsoft.Office.Interop.InfoPath.DataObject.QueryAdapter" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataSourceObject" /> object and the <see cref="P:Microsoft.Office.Interop.InfoPath.DataAdapters.Item(System.Object)" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataAdaptersCollection" />. Data objects are accessible through the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument2.DataObjects" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object.</para>
+      <para>If a Web service is used as the primary data source for a form, the <b>WebServiceAdapterObject</b> object is accessible through <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument2.QueryAdapter" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object</para>
+      <para />
+    </remarks>
+    <example>
+      <para>In the following example, a reference to the <b>WebServiceAdapter</b> object is set by using the <see cref="P:Microsoft.Office.Interop.InfoPath.DataObject.QueryAdapter" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataSourceObject" /> object by passing the name of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataSourceObject" /> object to the <see cref="P:Microsoft.Office.Interop.InfoPath.DataObjects.Item(System.Object)" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataObjectsCollection" /> collection:</para>
+      <code>&lt;span class="label"&gt;WebServiceAdapter2&lt;/span&gt; wsAdapter2;
+
+wsAdapter2 = (WebServiceAdapter2) thisXDocument.DataObjects["WebCityList"].QueryAdapter;</code>
+      <para>After the reference has been set, you can use the properties of the <b>WebServiceAdapter</b> object as shown in the following example, which sets a reference to the string returned by the <see cref="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.Input" /> property:</para>
+      <code>string input;
+input = wsAdapter2.Input;</code>
+      <para>
+        <b>Note</b>: In this case, the <see cref="P:Microsoft.Office.Interop.InfoPath.DataObject.QueryAdapter" /> property was used to access the <see cref="P:Microsoft.Office.Interop.InfoPath.WebServiceAdapter2.Input" /> property of the <b>WebServiceAdapter</b> object.</para>
+    </example>
   </Docs>
   <Members />
 </Type>

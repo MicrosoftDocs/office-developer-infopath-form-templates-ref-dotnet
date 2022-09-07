@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ErrorObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface ErrorObject&#xA;Implements Error" />
   <TypeSignature Language="C++ CLI" Value="public interface class ErrorObject : Microsoft::Office::Interop::InfoPath::Error" />
+  <TypeSignature Language="F#" Value="type ErrorObject = interface&#xA;    interface Error" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,30 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an error in a Microsoft InfoPath form.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.Error" />.</para>
+      <para>Each <b>Error</b> object in InfoPath is each associated with an XML Document Object Model (DOM) node from a form's underlying XML document. When data validation fails for a particular XML DOM node, InfoPath creates an <b>Error</b> object and places it in the <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorsCollection" /> collection.</para>
+      <para>There are three types of data validation errors that can occur in an InfoPath form:</para>
+      <list type="bullet">
+        <item>
+          <description>SCHEMA_VALIDATION   Data validation failed as a result of an XML Schema–defined constraint.</description>
+        </item>
+        <item>
+          <description>SYSTEM_GENERATED   Data validation failed as a result of constraints defined in the form definition (.xsf) file or as a result of form code calling the <see cref="M:Microsoft.Office.Interop.InfoPath.DataDOMEvent.ReportError(System.Object,System.String,System.Boolean,System.String,System.Int32,System.String)" /> method of <see cref="T:Microsoft.Office.Interop.InfoPath.DataDOMEventObject" /> object.</description>
+        </item>
+        <item>
+          <description>USER_SPECIFIED   Data validation failed as a result of a custom scripting error using the <see cref="M:Microsoft.Office.Interop.InfoPath.Errors.Add(System.Object,System.String,System.String,System.String,System.Int32,System.String)" /> method of the <b>Errors</b> collection.</description>
+        </item>
+      </list>
+      <para>
+        <b>Note</b>: The <see cref="P:Microsoft.Office.Interop.InfoPath.Error.ErrorType" /> property can be used to determine the type of data validation error that has occurred.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>In the following example, the <b>Error</b> object is accessed using indexing in the <b>Errors</b> collection.</para>
+      <code>&lt;span class="label"&gt;Error&lt;/span&gt; er = thisXDocument.Errors[0];</code>
+    </example>
   </Docs>
   <Members />
 </Type>

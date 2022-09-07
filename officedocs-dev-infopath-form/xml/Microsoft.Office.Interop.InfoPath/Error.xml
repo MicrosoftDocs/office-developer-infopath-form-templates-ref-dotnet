@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Error" />
   <TypeSignature Language="VB.NET" Value="Public Interface Error" />
   <TypeSignature Language="C++ CLI" Value="public interface class Error" />
+  <TypeSignature Language="F#" Value="type Error = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.ErrorObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Error.ConditionName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConditionName As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ConditionName { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConditionName : obj" Usage="Microsoft.Office.Interop.InfoPath.Error.ConditionName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -45,9 +47,17 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the name of the <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>ConditionName</b> property is used only for custom errors; it is not used for schema validation–generated or system-generated errors. If the type of error is schema validation generated or system generated, the <b>ConditionName</b> property will return a null reference (Nothing in Visual Basic).</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>ConditionName</b> property of an instance of the <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorObject" /> object is used to display the name of a custom error in a message box:</para>
+          <code>Error firstError = thisXDocument.Errors[0];
+thisXDocument.UI.Alert("Error condition name: " + firstError.&lt;span class="label"&gt;ConditionName&lt;/span&gt;);</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="DetailedErrorMessage">
@@ -56,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Error.DetailedErrorMessage" />
       <MemberSignature Language="VB.NET" Value="Public Property DetailedErrorMessage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DetailedErrorMessage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DetailedErrorMessage : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.Error.DetailedErrorMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -76,9 +87,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the detailed error message of an <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The detailed error message is the longer error message that users can choose to view when data validation fails in their forms.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>DetailedErrorMessage</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorObject" /> object is used to display the detailed message of an error in a message box:</para>
+          <code>ErrorObject er = thisXDocument.Errors[0];
+IXMLDOMNode myNode = er.Node;
+thisXDocument.UI.Alert("this is the long: " + er.&lt;span class="label"&gt;DetailedErrorMessage&lt;/span&gt;);</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="ErrorCode">
@@ -87,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Error.ErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public Property ErrorCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ErrorCode { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : int with get, set" Usage="Microsoft.Office.Interop.InfoPath.Error.ErrorCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -107,9 +128,15 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the error code of an <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorObject" /> object.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <example>
+          <para>In the following example, the <b>ErrorCode</b> property of the <b>Error</b> object is used to display the error code number of an error in a message box:</para>
+          <code>ErrorObject er = thisXDocument.Errors[0];
+IXMLDOMNode myNode = er.Node;
+thisXDocument.UI.Alert("this is the error code: " + er.&lt;span class="label"&gt;ErrorCode&lt;/span&gt;);</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="ErrorType">
@@ -118,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Error.ErrorType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorType : string" Usage="Microsoft.Office.Interop.InfoPath.Error.ErrorType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -135,9 +163,30 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the type of an <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>There are three types of data validation errors that can occur in an InfoPath form:</para>
+          <list type="bullet">
+            <item>
+              <description>SCHEMA_VALIDATION   Data validation failed as a result of an XML Schema–defined constraint.</description>
+            </item>
+            <item>
+              <description>SYSTEM_GENERATED   Data validation failed as a result of constraints defined in the form definition (.xsf) file or as a result of form code calling the <see cref="M:Microsoft.Office.Interop.InfoPath.DataDOMEvent.ReportError(System.Object,System.String,System.Boolean,System.String,System.Int32,System.String)" /> method of <see cref="T:Microsoft.Office.Interop.InfoPath.DataDOMEventObject" /> object.</description>
+            </item>
+            <item>
+              <description>USER_SPECIFIED   Data validation failed as a result of a custom scripting error using the <see cref="M:Microsoft.Office.Interop.InfoPath.Errors.Add(System.Object,System.String,System.String,System.String,System.Int32,System.String)" /> method of the <b>Errors</b> collection.</description>
+            </item>
+          </list>
+          <para>
+            <b>Note</b>: The <see cref="P:Microsoft.Office.Interop.InfoPath.Error.ErrorType" /> property can be used to determine the type of data validation error that has occurred.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>ErrorType</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorObject" /> object is used to display the type of an error in a message box:</para>
+          <code>Error objError = XDocument.Errors[0];
+thisXDocument.UI.Alert("Error type: " + objError.&lt;span class="label"&gt;ErrorType&lt;/span&gt;);</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Node">
@@ -146,6 +195,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Error.Node" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Node As IXMLDOMNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ Node { Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Node : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="Microsoft.Office.Interop.InfoPath.Error.Node" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -163,9 +213,17 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the XML Document Object Model (DOM) node of a form's underlying XML document that is associated with an <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>Using the <b>Node</b> property, you can access all of the properties and methods that the XML DOM node object provides.</para>
+          <para />
+        </remarks>
+        <example>
+          <code>ErrorObject er = thisXDocument.Errors[0];
+IXMLDOMNode myNode = er.&lt;span class="label"&gt;Node&lt;/span&gt;;
+thisXDocument.UI.Alert("this is the error node: " + myNode.text);</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="ShortErrorMessage">
@@ -174,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Error.ShortErrorMessage" />
       <MemberSignature Language="VB.NET" Value="Public Property ShortErrorMessage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ShortErrorMessage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ShortErrorMessage : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.Error.ShortErrorMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -194,9 +253,17 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the short error message of an <see cref="T:Microsoft.Office.Interop.InfoPath.ErrorObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The short error message is the ToolTip that users view when data validation fails in their forms.</para>
+          <para />
+        </remarks>
+        <example>
+          <code>ErrorObject er = thisXDocument.Errors[0];
+IXMLDOMNode myNode = er.Node;
+thisXDocument.UI.Alert("this is the short: " + er.&lt;span class="label"&gt;ShortErrorMessage&lt;/span&gt;);</code>
+        </example>
       </Docs>
     </Member>
   </Members>

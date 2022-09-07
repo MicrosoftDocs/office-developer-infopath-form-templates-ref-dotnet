@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XdConfirmChoice" />
   <TypeSignature Language="VB.NET" Value="Public Enum XdConfirmChoice" />
   <TypeSignature Language="C++ CLI" Value="public enum class XdConfirmChoice" />
+  <TypeSignature Language="F#" Value="type XdConfirmChoice = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -17,8 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <b>XdConfirmChoice</b> enumeration is used to determine which button is clicked in a message box.</summary>
+    <remarks>
+      <para>These enumerated values are used by the <see cref="M:Microsoft.Office.Interop.InfoPath.UI2.Confirm(System.String,Microsoft.Office.Interop.InfoPath.XdConfirmButtons)" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.UIObject" /> object.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="xdCancel">
@@ -27,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdConfirmChoice.xdCancel" />
       <MemberSignature Language="VB.NET" Value="xdCancel" />
       <MemberSignature Language="C++ CLI" Value="xdCancel" />
+      <MemberSignature Language="F#" Value="xdCancel = 2" Usage="Microsoft.Office.Interop.InfoPath.XdConfirmChoice.xdCancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -37,7 +42,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Cancel button was clicked.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdNo">
@@ -46,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdConfirmChoice.xdNo" />
       <MemberSignature Language="VB.NET" Value="xdNo" />
       <MemberSignature Language="C++ CLI" Value="xdNo" />
+      <MemberSignature Language="F#" Value="xdNo = 7" Usage="Microsoft.Office.Interop.InfoPath.XdConfirmChoice.xdNo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -56,7 +62,7 @@
       </ReturnValue>
       <MemberValue>7</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The No button was clicked.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdOK">
@@ -65,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdConfirmChoice.xdOK" />
       <MemberSignature Language="VB.NET" Value="xdOK" />
       <MemberSignature Language="C++ CLI" Value="xdOK" />
+      <MemberSignature Language="F#" Value="xdOK = 1" Usage="Microsoft.Office.Interop.InfoPath.XdConfirmChoice.xdOK" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -75,7 +82,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The OK button was clicked.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdYes">
@@ -84,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdConfirmChoice.xdYes" />
       <MemberSignature Language="VB.NET" Value="xdYes" />
       <MemberSignature Language="C++ CLI" Value="xdYes" />
+      <MemberSignature Language="F#" Value="xdYes = 6" Usage="Microsoft.Office.Interop.InfoPath.XdConfirmChoice.xdYes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -94,7 +102,7 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The Yes button was clicked.</summary>
       </Docs>
     </Member>
   </Members>

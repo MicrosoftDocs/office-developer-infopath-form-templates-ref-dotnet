@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.IErrorLog" />
   <TypeSignature Language="VB.NET" Value="Public Interface IErrorLog" />
   <TypeSignature Language="C++ CLI" Value="public interface class IErrorLog" />
+  <TypeSignature Language="F#" Value="type IErrorLog = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,8 +19,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Implemented to contain any errors when retrieving printer settings to populate an <see cref="T:Microsoft.Office.Interop.InfoPath.IPropertyBag" /> object used by a custom data importer.</summary>
+    <remarks>
+      <para>A custom data importer is created by implementing the <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter" /> interface. For more information about programmatically importing data into an InfoPath form, see the <a href="http://go.microsoft.com/fwlink/?LinkID=11689">InfoPath Developer Portal</a>Microsoft Office Developer Center.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddError">
@@ -28,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IErrorLog.AddError(System.String,stdole.EXCEPINFO@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddError (pszPropName As String, ByRef pExcepInfo As EXCEPINFO)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddError(System::String ^ pszPropName, stdole::EXCEPINFO % pExcepInfo);" />
+      <MemberSignature Language="F#" Value="abstract member AddError : string *  -&gt; unit" Usage="iErrorLog.AddError (pszPropName, pExcepInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -38,13 +43,16 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="pszPropName" Type="System.String" />
-        <Parameter Name="pExcepInfo" Type="stdole.EXCEPINFO&amp;" RefType="ref" />
+        <Parameter Name="pExcepInfo" Type="stdole.EXCEPINFO" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="pszPropName">To be added.</param>
-        <param name="pExcepInfo">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pszPropName">The name of the property that raised the error.</param>
+        <param name="pExcepInfo">A pointer to the exception that was raised when the error occurred.</param>
+        <summary>Used to add errors in an implementation of the <see cref="T:Microsoft.Office.Interop.InfoPath.IErrorLog" /> interface used in a custom data importer.</summary>
+        <remarks>
+          <para>A custom data importer is created by implementing the <see cref="T:Microsoft.Office.Interop.InfoPath.IInfoPathDataImporter" /> interface. For more information about programmatically importing data into an InfoPath form, see the <a href="http://go.microsoft.com/fwlink/?LinkID=11689">InfoPath Developer Portal</a>Microsoft Office Developer Center.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
   </Members>

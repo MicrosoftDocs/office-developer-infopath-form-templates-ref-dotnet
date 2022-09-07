@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub _ApplicationEvents_NewXDocumentEventHandler(pDocument As _XDocument)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void _ApplicationEvents_NewXDocumentEventHandler(_XDocument ^ pDocument);" />
+  <TypeSignature Language="F#" Value="type _ApplicationEvents_NewXDocumentEventHandler = delegate of _XDocument -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -26,8 +27,11 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="pDocument">To be added.</param>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <param name="pDocument">The <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object that represents the underlying XML document of the form that was opened.</param>
+    <summary>Represents the method that will handle the <see cref="E:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument" /> event.</summary>
+    <remarks>
+      <para>When you create an <see cref="T:Microsoft.Office.Interop.InfoPath._ApplicationEvents_NewXDocumentEventHandler" /> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information, see Events and Delegates.</para>
+      <para />
+    </remarks>
   </Docs>
 </Type>

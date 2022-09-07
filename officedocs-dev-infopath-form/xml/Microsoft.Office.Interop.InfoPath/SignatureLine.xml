@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SignatureLine" />
   <TypeSignature Language="VB.NET" Value="Public Interface SignatureLine" />
   <TypeSignature Language="C++ CLI" Value="public interface class SignatureLine" />
+  <TypeSignature Language="F#" Value="type SignatureLine = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.SignatureLineObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignatureLine.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="Microsoft.Office.Interop.InfoPath.SignatureLine.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -45,9 +47,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the value of the control's <b>ID</b> property.</summary>
+        <value>The identifier of the control.</value>
+        <remarks>
+          <para>The value of the <b>ID</b> property is set by InfoPath when the Signature Line control is added to the form template. To display this value in the InfoPath designer, right-click the control, click Signature Control Properties, and then click the Advanced tab.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Sign">
@@ -56,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.SignatureLine.Sign(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Sign (bstrImageURL As String, bstrSuggestedSigner As String, bstrSuggestedSignerTitle As String, bstrSuggestedSignerEmailAddress As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Sign(System::String ^ bstrImageURL, System::String ^ bstrSuggestedSigner, System::String ^ bstrSuggestedSignerTitle, System::String ^ bstrSuggestedSignerEmailAddress);" />
+      <MemberSignature Language="F#" Value="abstract member Sign : string * string * string * string -&gt; bool" Usage="signatureLine.Sign (bstrImageURL, bstrSuggestedSigner, bstrSuggestedSignerTitle, bstrSuggestedSignerEmailAddress)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -76,13 +82,17 @@
         <Parameter Name="bstrSuggestedSignerEmailAddress" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bstrImageURL">To be added.</param>
-        <param name="bstrSuggestedSigner">To be added.</param>
-        <param name="bstrSuggestedSignerTitle">To be added.</param>
-        <param name="bstrSuggestedSignerEmailAddress">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bstrImageURL">The path to the signature or stamp image to display in the control.</param>
+        <param name="bstrSuggestedSigner">The name of the suggested signer.</param>
+        <param name="bstrSuggestedSignerTitle">The title of the suggested signer.</param>
+        <param name="bstrSuggestedSignerEmailAddress">The e-mail address of the suggested signer.</param>
+        <summary>Displays the Sign dialog box with the specified signature image or stamp, and the suggested signer's name, title, and e-mail address.</summary>
+        <returns>
+          <b>true</b> if the signing operation succeeds; otherwise, <b>false</b>.</returns>
+        <remarks>
+          <para>The values for all of the parameters of the <see cref="M:Microsoft.Office.Interop.InfoPath.SignatureLine.Sign(System.String,System.String,System.String,System.String)" /> method are optional. To omit any parameter, pass a null reference (Nothing in Visual Basic) for that parameter. You can also pass <b>String.Empty</b> for the <paramref name="bstrSuggestedSigner" />, <paramref name="bstrSuggestedSignerTitle" />, and <paramref name="bstrSuggestedSignerEmail" /> parameters. If you pass a null reference (Nothing in Visual Basic) or <b>String.Empty</b> for a parameter and the value of the corresponding property was previously set programmatically or in the Signature Line control at design time, that value will be used when the form or set of data is signed.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Signature">
@@ -91,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignatureLine.Signature" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Signature As SignatureObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::SignatureObject ^ Signature { Microsoft::Office::Interop::InfoPath::SignatureObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Signature : Microsoft.Office.Interop.InfoPath.SignatureObject" Usage="Microsoft.Office.Interop.InfoPath.SignatureLine.Signature" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -108,8 +119,8 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.SignatureObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:Microsoft.Office.Interop.InfoPath.SignatureObject" /> object associated with the control.</summary>
+        <value>An object that represents digital signature associated with the control when the form or set of signable data is signed.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,6 +130,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignatureLine.SignatureAppearanceType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignatureAppearanceType As XdSignatureAppearanceType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::XdSignatureAppearanceType SignatureAppearanceType { Microsoft::Office::Interop::InfoPath::XdSignatureAppearanceType get(); };" />
+      <MemberSignature Language="F#" Value="member this.SignatureAppearanceType : Microsoft.Office.Interop.InfoPath.XdSignatureAppearanceType" Usage="Microsoft.Office.Interop.InfoPath.SignatureLine.SignatureAppearanceType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -136,8 +148,8 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.XdSignatureAppearanceType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates the appearance of the control.</summary>
+        <value>One of the enumeration values that indicate the appearance of the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignatureLine.SuggestedSigner" />
       <MemberSignature Language="VB.NET" Value="Public Property SuggestedSigner As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SuggestedSigner { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SuggestedSigner : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.SignatureLine.SuggestedSigner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -167,8 +180,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the name of the suggested signer that is displayed in the control.</summary>
+        <value>The name of the suggested signer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignatureLine.SuggestedSignerEmailAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property SuggestedSignerEmailAddress As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SuggestedSignerEmailAddress { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SuggestedSignerEmailAddress : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.SignatureLine.SuggestedSignerEmailAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -198,9 +212,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the e-mail address of the suggested signer for the control.</summary>
+        <value>The e-mail address of the suggested signer.</value>
+        <remarks>
+          <para>Whether it is set at design time or programmatically, the value of the <see cref="P:Microsoft.Office.Interop.InfoPath.SignatureLine.SuggestedSignerEmailAddress" /> property is not displayed in the user interface of the Signature Line control. It is stored as metadata when the form or set of data is signed, and can be accessed programmatically from form code by using this property. </para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SuggestedSignerTitle">
@@ -209,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SignatureLine.SuggestedSignerTitle" />
       <MemberSignature Language="VB.NET" Value="Public Property SuggestedSignerTitle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SuggestedSignerTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SuggestedSignerTitle : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.SignatureLine.SuggestedSignerTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -229,8 +247,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the title of the suggested signer that is displayed in the control.</summary>
+        <value>The title of the suggested signer.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

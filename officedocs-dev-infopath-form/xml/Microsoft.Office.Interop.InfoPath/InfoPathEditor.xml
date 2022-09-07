@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" />
   <TypeSignature Language="VB.NET" Value="Public Interface InfoPathEditor" />
   <TypeSignature Language="C++ CLI" Value="public interface class InfoPathEditor" />
+  <TypeSignature Language="F#" Value="type InfoPathEditor = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditorObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditor.CloseDocument" />
       <MemberSignature Language="VB.NET" Value="Public Sub CloseDocument ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CloseDocument();" />
+      <MemberSignature Language="F#" Value="abstract member CloseDocument : unit -&gt; unit" Usage="infoPathEditor.CloseDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -38,8 +40,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Closes the active form in the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> object.</summary>
+        <remarks>
+          <para>For more information about the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> and the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> objects , see the MSDN article <a href="http://go.microsoft.com/fwlink/?LinkId=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a>What's New for InfoPath Developers.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataConnectionBaseUrl">
@@ -48,6 +53,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.InfoPathEditor.DataConnectionBaseUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property DataConnectionBaseUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataConnectionBaseUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataConnectionBaseUrl : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.InfoPathEditor.DataConnectionBaseUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -62,9 +68,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the base URL to be used with data connection files (.UDCX).</summary>
+        <value>The base URL to be used with data connection files (.UDCX).</value>
+        <remarks>
+          <para>For more information about the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> and the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> objects , see the MSDN article <a href="http://go.microsoft.com/fwlink/?LinkId=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a>What's New for InfoPath Developers.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FlushDocument">
@@ -73,6 +82,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditor.FlushDocument" />
       <MemberSignature Language="VB.NET" Value="Public Sub FlushDocument ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FlushDocument();" />
+      <MemberSignature Language="F#" Value="abstract member FlushDocument : unit -&gt; unit" Usage="infoPathEditor.FlushDocument " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -83,8 +93,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Synchronizes the underlying data of the form with changes in the view.</summary>
+        <remarks>
+          <para>Use this method when a user clicks outside the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> object to the host application after making a change to a field without tabbing or otherwise committing that change to the underlying XML document of the form.</para>
+          <para>For more information about the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> and the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> objects , see the MSDN article <a href="http://go.microsoft.com/fwlink/?LinkId=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a>What's New for InfoPath Developers.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Host">
@@ -93,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.InfoPathEditor.Host" />
       <MemberSignature Language="VB.NET" Value="Public Property Host As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Host { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Host : obj with get, set" Usage="Microsoft.Office.Interop.InfoPath.InfoPathEditor.Host" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -107,9 +122,13 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the object used to access the object model of the host application.</summary>
+        <value>The object used to access the object model of the host application.</value>
+        <remarks>
+          <para>Using the <b>Host</b> property, custom form code can call into methods in the host application.</para>
+          <para>For more information about the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> and the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> objects , see the MSDN article <a href="http://go.microsoft.com/fwlink/?LinkId=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a>What's New for InfoPath Developers.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HostName">
@@ -118,6 +137,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.InfoPathEditor.HostName" />
       <MemberSignature Language="VB.NET" Value="Public Property HostName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HostName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HostName : string with get, set" Usage="Microsoft.Office.Interop.InfoPath.InfoPathEditor.HostName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -132,9 +152,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets or sets the name of the host application.</summary>
+        <value>The name of the host application.</value>
+        <remarks>
+          <para>The value of the <b>HostName</b> property is used in dialog boxes and error messages in place of the InfoPath product name.</para>
+          <para>For more information about the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> and the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> objects , see the MSDN article <a href="http://go.microsoft.com/fwlink/?LinkId=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a>What's New for InfoPath Developers.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -143,6 +167,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditor.Load(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load (bstrURL As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::String ^ bstrURL);" />
+      <MemberSignature Language="F#" Value="abstract member Load : string -&gt; unit" Usage="infoPathEditor.Load bstrURL" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -155,9 +180,13 @@
         <Parameter Name="bstrURL" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bstrURL">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bstrURL">The path or URL to the form file (.xml).</param>
+        <summary>Loads a form file (.xml) into the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> object.</summary>
+        <remarks>
+          <para>The <b>Load</b> method does not allow you to specify a form template file (.xsn). The form file must contain processing instructions (<b>href</b> and <b>name</b> attributes) that reference a valid form template file for the <b>Load</b> method to succeed. If this is not possible, the <see cref="M:Microsoft.Office.Interop.InfoPath.InfoPathEditor.NewFromSolution(System.String)" /> method can be used if you have a .xsn file and a suitably structured XML file, but the XML file does not have processing instruction references that specify the .xsn file. Or you can use the <see cref="M:Microsoft.Office.Interop.InfoPath.InfoPathEditor.LoadFromStream(System.Object)" /> method to load XML from a <b>System.IO.Stream</b> object. </para>
+          <para>For more information about the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> and the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> objects , see the MSDN article <a href="http://go.microsoft.com/fwlink/?LinkId=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a>What's New for InfoPath Developers.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadFromStream">
@@ -166,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditor.LoadFromStream(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadFromStream (punkStream As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadFromStream(System::Object ^ punkStream);" />
+      <MemberSignature Language="F#" Value="abstract member LoadFromStream : obj -&gt; unit" Usage="infoPathEditor.LoadFromStream punkStream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -178,9 +208,12 @@
         <Parameter Name="punkStream" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="punkStream">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="punkStream">The file stream (<b>System.IO.IStream</b>) containing the form file (.xml).</param>
+        <summary>Loads a form file (.xml) from a file stream (<b>System.IO.IStream</b>) into the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> object.</summary>
+        <remarks>
+          <para>For more information about the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> and the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> objects , see the MSDN article <a href="http://go.microsoft.com/fwlink/?LinkId=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a>What's New for InfoPath Developers.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NewFromSolution">
@@ -189,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditor.NewFromSolution(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub NewFromSolution (bstrSolutionURI As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void NewFromSolution(System::String ^ bstrSolutionURI);" />
+      <MemberSignature Language="F#" Value="abstract member NewFromSolution : string -&gt; unit" Usage="infoPathEditor.NewFromSolution bstrSolutionURI" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -201,9 +235,12 @@
         <Parameter Name="bstrSolutionURI" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bstrSolutionURI">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bstrSolutionURI">The path or URL to the form template (.xsn) file.</param>
+        <summary>Creates a new form based on a form template (.xsn) file.</summary>
+        <remarks>
+          <para>For more information about the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> and the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> objects , see the MSDN article <a href="http://go.microsoft.com/fwlink/?LinkId=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a>What's New for InfoPath Developers.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NewFromSolutionWithData">
@@ -212,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditor.NewFromSolutionWithData(System.String,System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub NewFromSolutionWithData (bstrURLXSN As String, punkStream As Object, dwBehavior As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void NewFromSolutionWithData(System::String ^ bstrURLXSN, System::Object ^ punkStream, int dwBehavior);" />
+      <MemberSignature Language="F#" Value="abstract member NewFromSolutionWithData : string * obj * int -&gt; unit" Usage="infoPathEditor.NewFromSolutionWithData (bstrURLXSN, punkStream, dwBehavior)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -226,11 +264,15 @@
         <Parameter Name="dwBehavior" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="bstrURLXSN">To be added.</param>
-        <param name="punkStream">To be added.</param>
-        <param name="dwBehavior">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="bstrURLXSN">The path or URL to the form template file (.xsn).</param>
+        <param name="punkStream">The file stream (<b>System.IO.IStream</b>) containing the XML data used to populate the new form.</param>
+        <param name="dwBehavior">A <see cref="T:Microsoft.Office.Interop.InfoPath.XdDocumentVersionMode" /> value that specifies how the form should be opened.</param>
+        <summary>Creates a new form based on the specified form template and the data contained in an XML stream.</summary>
+        <remarks>
+          <para>The XML document specified in the <paramref name="punkStream" /> parameter does not need to have been created by InfoPath. It can be supplied either as a URI or as an <b>XmlNode</b>.</para>
+          <para>For more information about the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> and the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> objects , see the MSDN article <a href="http://go.microsoft.com/fwlink/?LinkId=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a>What's New for InfoPath Developers.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetInitEventHandler">
@@ -239,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditor.SetInitEventHandler(Microsoft.Office.Interop.InfoPath._IInitEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetInitEventHandler (pHandler As _IInitEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetInitEventHandler(Microsoft::Office::Interop::InfoPath::_IInitEventHandler ^ pHandler);" />
+      <MemberSignature Language="F#" Value="abstract member SetInitEventHandler : Microsoft.Office.Interop.InfoPath._IInitEventHandler -&gt; unit" Usage="infoPathEditor.SetInitEventHandler pHandler" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -251,9 +294,13 @@
         <Parameter Name="pHandler" Type="Microsoft.Office.Interop.InfoPath._IInitEventHandler" />
       </Parameters>
       <Docs>
-        <param name="pHandler">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pHandler">The interface that must be implemented in the custom application to handle the event from the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> object.</param>
+        <summary>Sets the event handler in the host application for handling the event that occurs when the form is loaded in the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> object.</summary>
+        <remarks>
+          <para>Sets the function in the host application that is used as a callback function for the <b>Initialize</b> event, which is called before the InfoPath <b>OnLoad</b> event.</para>
+          <para>For more information about the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> and the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> objects , see the MSDN article <a href="http://go.microsoft.com/fwlink/?LinkId=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a>What's New for InfoPath Developers.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetNotifyHostEventHandler">
@@ -262,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditor.SetNotifyHostEventHandler(Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetNotifyHostEventHandler (pHandler As INotifyHostEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetNotifyHostEventHandler(Microsoft::Office::Interop::InfoPath::INotifyHostEventHandler ^ pHandler);" />
+      <MemberSignature Language="F#" Value="abstract member SetNotifyHostEventHandler : Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler -&gt; unit" Usage="infoPathEditor.SetNotifyHostEventHandler pHandler" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -274,9 +322,12 @@
         <Parameter Name="pHandler" Type="Microsoft.Office.Interop.InfoPath.INotifyHostEventHandler" />
       </Parameters>
       <Docs>
-        <param name="pHandler">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pHandler">The interface that must be implemented in the custom application to handle the event from the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> object.</param>
+        <summary>Sets the event handler in the host application for handling the event that occurs when the <see cref="M:Microsoft.Office.Interop.InfoPath._XDocument3.NotifyHost(System.String)" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object is used to notify the host application.</summary>
+        <remarks>
+          <para>For more information about the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> and the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> objects , see the MSDN article <a href="http://go.microsoft.com/fwlink/?LinkId=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a>What's New for InfoPath Developers.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSubmitToHostEventHandler">
@@ -285,6 +336,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathEditor.SetSubmitToHostEventHandler(Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetSubmitToHostEventHandler (pHandler As ISubmitToHostEventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSubmitToHostEventHandler(Microsoft::Office::Interop::InfoPath::ISubmitToHostEventHandler ^ pHandler);" />
+      <MemberSignature Language="F#" Value="abstract member SetSubmitToHostEventHandler : Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler -&gt; unit" Usage="infoPathEditor.SetSubmitToHostEventHandler pHandler" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -297,9 +349,13 @@
         <Parameter Name="pHandler" Type="Microsoft.Office.Interop.InfoPath.ISubmitToHostEventHandler" />
       </Parameters>
       <Docs>
-        <param name="pHandler">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pHandler">The interface that must be implemented in the custom application to handle the event from the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> object.</param>
+        <summary>Sets the event handler in the host application for handling the <see cref="M:Microsoft.Office.Interop.InfoPath.SubmitToHostAdapter.Submit" /> method of the <see cref="T:Microsoft.Office.Interop.InfoPath.SubmitToHostAdapter" /> object.</summary>
+        <remarks>
+          <para>Sets the function in the host application that is used as the callback function when submitting data back to the host application. To configure the data connection for submitting to the host application, open the form template in InfoPath design mode, click Submit Options on the Tools menu, select the Allow users to submit this form check box, select Hosting environment in the drop-down list, and then click Add.</para>
+          <para>For more information about the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> and the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> objects , see the MSDN article <a href="http://go.microsoft.com/fwlink/?LinkId=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a>What's New for InfoPath Developers.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="XDocument">
@@ -308,6 +364,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.InfoPathEditor.XDocument" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XDocument As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::XDocument ^ XDocument { Microsoft::Office::Interop::InfoPath::XDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XDocument : Microsoft.Office.Interop.InfoPath.XDocument" Usage="Microsoft.Office.Interop.InfoPath.InfoPathEditor.XDocument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -322,9 +379,13 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.XDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets an <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object associated with the hosted <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> object.</summary>
+        <value>An <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object associated with the hosted <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> object.</value>
+        <remarks>
+          <para>The <b>XDocument</b> object returned can be used to access and work with members of the InfoPath object model.</para>
+          <para>For more information about the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathEditor" /> and the <see cref="T:Microsoft.Office.InfoPath.FormControl" /> objects , see the MSDN article <a href="http://go.microsoft.com/fwlink/?LinkId=73195">Hosting the InfoPath  Form Editing Environment in a Custom Windows Form Application</a>What's New for InfoPath Developers.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
   </Members>

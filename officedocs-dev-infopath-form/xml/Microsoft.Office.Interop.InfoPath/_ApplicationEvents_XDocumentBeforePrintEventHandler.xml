@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentBeforePrintEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub _ApplicationEvents_XDocumentBeforePrintEventHandler(pDocument As _XDocument, ByRef pfCancel As Boolean)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void _ApplicationEvents_XDocumentBeforePrintEventHandler(_XDocument ^ pDocument, [Runtime::InteropServices::Out] bool % pfCancel);" />
+  <TypeSignature Language="F#" Value="type _ApplicationEvents_XDocumentBeforePrintEventHandler = delegate of _XDocument *  -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -21,7 +22,7 @@
   </Attributes>
   <Parameters>
     <Parameter Name="pDocument" Type="Microsoft.Office.Interop.InfoPath._XDocument" />
-    <Parameter Name="pfCancel" Type="System.Boolean&amp;" RefType="out" />
+    <Parameter Name="pfCancel" Type="System.Boolean" RefType="out" />
   </Parameters>
   <ReturnValue>
     <ReturnType>System.Void</ReturnType>
@@ -29,7 +30,7 @@
   <Docs>
     <param name="pDocument">To be added.</param>
     <param name="pfCancel">To be added.</param>
-    <summary>To be added.</summary>
+    <summary>Reserved for internal use.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

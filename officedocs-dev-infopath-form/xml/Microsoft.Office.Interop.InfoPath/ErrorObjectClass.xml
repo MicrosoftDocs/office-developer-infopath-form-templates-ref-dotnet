@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ErrorObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class ErrorObjectClass&#xA;Implements ErrorObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class ErrorObjectClass : Microsoft::Office::Interop::InfoPath::ErrorObject" />
+  <TypeSignature Language="F#" Value="type ErrorObjectClass = class&#xA;    interface Error&#xA;    interface ErrorObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -25,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ErrorObjectClass.ConditionName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ConditionName As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ ConditionName { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ConditionName : obj" Usage="ConditionName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Error.ConditionName</InterfaceMember>
@@ -55,7 +57,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ErrorObjectClass.DetailedErrorMessage" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DetailedErrorMessage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DetailedErrorMessage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DetailedErrorMessage : string with get, set" Usage="DetailedErrorMessage" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Error.DetailedErrorMessage</InterfaceMember>
@@ -89,7 +92,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ErrorObjectClass.ErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ErrorCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ErrorCode { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : int with get, set" Usage="ErrorCode" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Error.ErrorCode</InterfaceMember>
@@ -123,7 +127,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -134,6 +138,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ErrorObjectClass.ErrorType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ErrorType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ErrorType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorType : string" Usage="ErrorType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Error.ErrorType</InterfaceMember>
@@ -154,7 +159,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -165,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ErrorObjectClass.Node" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Node As IXMLDOMNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ Node { Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Node : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="Node" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Error.Node</InterfaceMember>
@@ -185,7 +191,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -196,6 +202,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ErrorObjectClass.ShortErrorMessage" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ShortErrorMessage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ShortErrorMessage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ShortErrorMessage : string with get, set" Usage="ShortErrorMessage" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Error.ShortErrorMessage</InterfaceMember>
@@ -219,7 +226,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

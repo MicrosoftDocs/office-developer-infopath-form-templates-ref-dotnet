@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.HWSAdapterObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface HWSAdapterObject&#xA;Implements HWSAdapter" />
   <TypeSignature Language="C++ CLI" Value="public interface class HWSAdapterObject : Microsoft::Office::Interop::InfoPath::HWSAdapter" />
+  <TypeSignature Language="F#" Value="type HWSAdapterObject = interface&#xA;    interface HWSAdapter" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,37 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a connection to submit form information to a Microsoft Biztalk 2004 HWS (Human Workflow Services) server.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.HWSAdapter" />.</para>
+      <para>Use the Item property of the <see cref="T:Microsoft.Office.Interop.InfoPath.DataAdaptersCollection" /> to return an HWSAdapterObject object.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>In the following example, the <see cref="M:Microsoft.Office.Interop.InfoPath.HWSAdapter.Submit" /> method of the <b>HWSAdapterObject</b> is used to start an HWS workflow. This example requires a data connection called "RespondToApproval":</para>
+      <code>&lt;span class="label"&gt;HWSAdapter&lt;/span&gt; hwsAdapter = thisXDocument.DataAdapters["RespondToApproval"] as &lt;span class="label"&gt;HWSAdapter&lt;/span&gt;;
+if (hwsAdapter == null)
+{
+ thisXDocument.UI.Alert("HWSAdapter 'RespondToApproval' does not exist");
+ return;
+}
+if (hwsAdapter.SubmitAllowed)
+{
+ try
+ {
+  hwsAdapter.Submit();
+ }
+ catch (Exception ex)
+ {
+  // The submit failed
+  thisXDocument.UI.Alert("Submitting via adapter " + hwsAdapter.Name + "failed." + Environment.NewLine + "Reason: " + ex.Message);
+ }
+}
+else
+{
+ thisXDocument.UI.Alert("Submit is not allowed on adapter " + hwsAdapter.Name + ".");
+}</code>
+    </example>
   </Docs>
   <Members />
 </Type>

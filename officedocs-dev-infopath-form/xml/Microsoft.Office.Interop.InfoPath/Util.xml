@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.Util" />
   <TypeSignature Language="VB.NET" Value="Public Interface Util" />
   <TypeSignature Language="C++ CLI" Value="public interface class Util" />
+  <TypeSignature Language="F#" Value="type Util = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -21,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.UtilObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Util.Date" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Date As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr Date { IntPtr get(); };" />
+      <MemberSignature Language="F#" Value="member this.Date : nativeint" Usage="Microsoft.Office.Interop.InfoPath.Util.Date" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -48,9 +50,12 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.DateObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>You can access all of the methods that the <b>DateObject</b> object provides by using the <b>Date</b> property.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Match">
@@ -59,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.Util.Match(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Match (bstrValue As String, bstrPattern As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Match(System::String ^ bstrValue, System::String ^ bstrPattern);" />
+      <MemberSignature Language="F#" Value="abstract member Match : string * string -&gt; bool" Usage="util.Match (bstrValue, bstrPattern)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -77,11 +83,22 @@
         <Parameter Name="bstrPattern" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="bstrValue">To be added.</param>
-        <param name="bstrPattern">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bstrValue">The string to test against the pattern.</param>
+        <param name="bstrPattern">The pattern to use.</param>
+        <summary>Gets a value that indicates whether the test matches the specified pattern.</summary>
+        <returns>
+          <b>true</b> if the specified value matches the specified pattern; otherwise <b>false</b>.</returns>
+        <remarks>
+          <para>The <b>Match</b> method can be used to test any string against a regular expression. The regular expression must conform to the W3C's XML Schema specification for regular expressions (http://www.w3.org/TR/xmlschema-2/#regexs).</para>
+          <para>
+            <b>Note</b>:   The XML Schema specification for regular expressions is different from regular expressions in Perl.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the variable <paramref name="isSsnValid " />is set to a value that indicates whether or not the value stored in the <paramref name="my:SSN" /> node is a legal Social Security Number:</para>
+          <code>IXMLDOMNode ssnNode = thisXDocument.DOM.selectSingleNode(@"//my:SSN");
+bool isSsnValid = thisXDocument.Util.&lt;span class="label"&gt;Match&lt;/span&gt;(ssnNode.text, @"\d\d\d-\d\d-\d\d\d\d");</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Math">
@@ -90,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.Util.Math" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Math As MathObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::MathObject ^ Math { Microsoft::Office::Interop::InfoPath::MathObject ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Math : Microsoft.Office.Interop.InfoPath.MathObject" Usage="Microsoft.Office.Interop.InfoPath.Util.Math" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -107,9 +125,12 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.MathObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.MathObject" /> object.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>You can access all of the methods that the <b>MathObject</b> object provides by using the <b>Math</b> property.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
   </Members>

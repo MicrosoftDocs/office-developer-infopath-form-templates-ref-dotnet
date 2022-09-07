@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XdWindowState" />
   <TypeSignature Language="VB.NET" Value="Public Enum XdWindowState" />
   <TypeSignature Language="C++ CLI" Value="public enum class XdWindowState" />
+  <TypeSignature Language="F#" Value="type XdWindowState = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -17,8 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <b>XdWindowState</b> enumeration is used to determine the state of the Microsoft Office InfoPath 2003 window that is represented by the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowObject" /> object.</summary>
+    <remarks>
+      <para>These enumerated values are returned or set by the <see cref="P:Microsoft.Office.Interop.InfoPath.Window2.WindowState" /> property.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="xdWindowStateMaximize">
@@ -27,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdWindowState.xdWindowStateMaximize" />
       <MemberSignature Language="VB.NET" Value="xdWindowStateMaximize" />
       <MemberSignature Language="C++ CLI" Value="xdWindowStateMaximize" />
+      <MemberSignature Language="F#" Value="xdWindowStateMaximize = 1" Usage="Microsoft.Office.Interop.InfoPath.XdWindowState.xdWindowStateMaximize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -37,7 +42,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The window is maximized.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdWindowStateMinimize">
@@ -46,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdWindowState.xdWindowStateMinimize" />
       <MemberSignature Language="VB.NET" Value="xdWindowStateMinimize" />
       <MemberSignature Language="C++ CLI" Value="xdWindowStateMinimize" />
+      <MemberSignature Language="F#" Value="xdWindowStateMinimize = 3" Usage="Microsoft.Office.Interop.InfoPath.XdWindowState.xdWindowStateMinimize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -56,7 +62,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The window is minimized.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdWindowStateNormal">
@@ -65,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdWindowState.xdWindowStateNormal" />
       <MemberSignature Language="VB.NET" Value="xdWindowStateNormal" />
       <MemberSignature Language="C++ CLI" Value="xdWindowStateNormal" />
+      <MemberSignature Language="F#" Value="xdWindowStateNormal = 2" Usage="Microsoft.Office.Interop.InfoPath.XdWindowState.xdWindowStateNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -75,7 +82,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The window is not maximized or minimized.</summary>
       </Docs>
     </Member>
   </Members>

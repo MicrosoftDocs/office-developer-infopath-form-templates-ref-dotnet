@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DocContextChangeEvent" />
   <TypeSignature Language="VB.NET" Value="Public Interface DocContextChangeEvent&#xA;Implements DocEvent" />
   <TypeSignature Language="C++ CLI" Value="public interface class DocContextChangeEvent : Microsoft::Office::Interop::InfoPath::DocEvent" />
+  <TypeSignature Language="F#" Value="type DocContextChangeEvent = interface&#xA;    interface DocEvent" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.DocContextChangeEventObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DocContextChangeEvent.Context" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As IXMLDOMNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ Context { Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Context : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode" Usage="Microsoft.Office.Interop.InfoPath.DocContextChangeEvent.Context" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -49,9 +51,21 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the XML Document Object Model (DOM) node that is the new context node provided by <see cref="T:Microsoft.Office.Interop.InfoPath.DocContextChangeEventObject" /> object.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <example>
+          <para>In the following example, a node named <paramref name="lastChanged" /> is updated in response to context changes:</para>
+          <code>public void OnContextChange(DocContextChangeEvent e)
+{
+ if ( e.Type == "ContextNode" &amp;amp;&amp;amp; !e.IsUndoRedo )
+ {
+  IXMLDOMNode contextNode = e.&lt;span class="label"&gt;Context&lt;/span&gt;;
+  IXMLDOMNode lastChangedNode = thisXDocument.DOM.selectSingleNode("my:lastChanged");
+  lastChangedNode.text = contextNode.nodeName;
+ }
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="IsUndoRedo">
@@ -60,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DocContextChangeEvent.IsUndoRedo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsUndoRedo As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsUndoRedo { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsUndoRedo : bool" Usage="Microsoft.Office.Interop.InfoPath.DocContextChangeEvent.IsUndoRedo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -77,9 +92,21 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a value indicating whether the context change event occurred in response to undoing an operation or redoing an operation.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <example>
+          <para>In the following example, a node named <paramref name="lastChanged" /> is updated in response to context changes not related to undo and redo:</para>
+          <code>public void OnContextChange(DocContextChangeEvent e)
+{
+ if ( e.Type == "ContextNode" &amp;amp;&amp;amp; !e.&lt;span class="label"&gt;IsUndoRedo&lt;/span&gt; )
+ {
+  IXMLDOMNode contextNode = e.Context;
+  IXMLDOMNode lastChangedNode = thisXDocument.DOM.selectSingleNode("/my:root/my:lastChanged");
+  lastChangedNode.text = contextNode.nodeName;
+ }
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -88,6 +115,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DocContextChangeEvent.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : string" Usage="Microsoft.Office.Interop.InfoPath.DocContextChangeEvent.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -105,9 +133,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the type of context change event that occurred when the <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnContextChange" /> event was triggered.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>The <b>Type</b> property returns only the value "ContextNode" for context changes in Microsoft InfoPath 2003 Service Pack 1. Nevertheless, if code in an event handler performs actions that depend on current functionality, that code should still be designed to check the value of the Type property, because future versions of InfoPath may use different values for different context changes.</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="XDocument">
@@ -116,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.DocContextChangeEvent.XDocument" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XDocument As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::XDocument ^ XDocument { Microsoft::Office::Interop::InfoPath::XDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XDocument : Microsoft.Office.Interop.InfoPath.XDocument" Usage="Microsoft.Office.Interop.InfoPath.DocContextChangeEvent.XDocument" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DocEvent.XDocument</InterfaceMember>
@@ -136,7 +168,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.XDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object that is associated with the <see cref="T:Microsoft.Office.Interop.InfoPath.DocContextChangeEventObject" /> object in an <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnContextChange" /> event.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

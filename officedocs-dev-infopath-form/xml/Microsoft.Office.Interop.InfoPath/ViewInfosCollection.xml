@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ViewInfosCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface ViewInfosCollection&#xA;Implements ViewInfos" />
   <TypeSignature Language="C++ CLI" Value="public interface class ViewInfosCollection : Microsoft::Office::Interop::InfoPath::ViewInfos" />
+  <TypeSignature Language="F#" Value="type ViewInfosCollection = interface&#xA;    interface ViewInfos" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,29 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains a <see cref="T:Microsoft.Office.Interop.InfoPath.ViewInfoObject" /> object for each view within a Microsoft Office InfoPath form.</summary>
+    <remarks>
+      <para>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.ViewInfos" />.</para>
+      <para>The <b>ViewInfosCollection</b> collection implements properties that can be used to access a form's associated <b>ViewInfoObject</b> object, and it is accessible through the <see cref="P:Microsoft.Office.Interop.InfoPath._XDocument2.ViewInfos" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object.</para>
+      <para>The <b>ViewInfosCollection</b> collection can be used only to get the count of the <b>ViewInfoObject</b> objects that it contains or to return a reference to a specified <b>ViewInfoObject</b> object. It cannot be used to create, add, or remove <b>ViewInfoObject</b> objects.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>In the following example, implemented as an <b>OnClick</b> event handler for a button on a form, the <b>ViewInfos</b> property of the <b>XDocument</b> object is used to set a reference to the <b>ViewInfos</b> collection. The code then loops through the collection and displays the positional index and name of each <b>ViewInfo</b> object that it contains.</para>
+      <code>public void ShowViewNames_OnClick(DocActionEvent e)
+{
+ // Set a reference to the ViewInfos collection.
+ ViewInfos viewInfos= thisXDocument.&lt;span class="label"&gt;ViewInfos&lt;/span&gt;;
+
+ // Loop through the collection and display the name
+ // of each ViewInfo object that it contains.
+ for (int i=0; i &amp;lt; viewInfos.Count; i++)
+ {
+  thisXDocument.UI.Alert("View name " + i + ": " + 
+   viewInfos[i].Name);
+ }
+}</code>
+    </example>
   </Docs>
   <Members />
 </Type>

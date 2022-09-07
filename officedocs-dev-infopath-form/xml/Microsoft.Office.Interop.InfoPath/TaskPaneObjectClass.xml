@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.TaskPaneObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class TaskPaneObjectClass&#xA;Implements TaskPaneObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class TaskPaneObjectClass : Microsoft::Office::Interop::InfoPath::TaskPaneObject" />
+  <TypeSignature Language="F#" Value="type TaskPaneObjectClass = class&#xA;    interface TaskPane&#xA;    interface TaskPaneObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -25,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.TaskPaneObjectClass.TaskPaneType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TaskPaneType As XdTaskPaneType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XdTaskPaneType TaskPaneType { Microsoft::Office::Interop::InfoPath::XdTaskPaneType get(); };" />
+      <MemberSignature Language="F#" Value="member this.TaskPaneType : Microsoft.Office.Interop.InfoPath.XdTaskPaneType" Usage="TaskPaneType" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.TaskPane.TaskPaneType</InterfaceMember>
@@ -55,7 +57,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.XdTaskPaneType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -66,6 +68,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.TaskPaneObjectClass.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="Visible" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.TaskPane.Visible</InterfaceMember>
@@ -89,7 +92,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

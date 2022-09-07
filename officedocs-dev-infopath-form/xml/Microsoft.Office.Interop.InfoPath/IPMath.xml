@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.IPMath" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPMath" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPMath" />
+  <TypeSignature Language="F#" Value="type IPMath = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.MathObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IPMath.Avg(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList)" />
       <MemberSignature Language="VB.NET" Value="Public Function Avg (pxmllistInput As IXMLDOMNodeList) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Avg(Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNodeList ^ pxmllistInput);" />
+      <MemberSignature Language="F#" Value="abstract member Avg : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList -&gt; obj" Usage="iPMath.Avg pxmllistInput" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -45,10 +47,16 @@
         <Parameter Name="pxmllistInput" Type="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList" />
       </Parameters>
       <Docs>
-        <param name="pxmllistInput">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pxmllistInput">The node set that contains the values to be averaged.</param>
+        <summary>Gets the average value of all numerical elements in a node set.</summary>
+        <returns>An object that represents the average value of all the numerical elements in a node set.</returns>
         <remarks>To be added.</remarks>
+        <example>
+          <para>In the following example, the variable <paramref name="averageAge" /> is set to the average value of all of the numerical elements in the <paramref name="my:ages" /> node set.  <paramref name="my:ages" /> is a simple field inside a repeating section or table.</para>
+          <code>IXMLDOMNodeList ages = thisXDocument.DOM.selectNodes("//my:ages");
+   object averageAge = thisXDocument.Util.Math.&lt;span class="label"&gt;Avg&lt;/span&gt;(ages);
+   thisXDocument.UI.Alert(averageAge.ToString());</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Eval">
@@ -57,6 +65,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IPMath.Eval(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Eval (pxmllistContext As IXMLDOMNodeList, bstrExpression As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Eval(Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNodeList ^ pxmllistContext, System::String ^ bstrExpression);" />
+      <MemberSignature Language="F#" Value="abstract member Eval : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList * string -&gt; obj" Usage="iPMath.Eval (pxmllistContext, bstrExpression)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -75,11 +84,20 @@
         <Parameter Name="bstrExpression" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="pxmllistContext">To be added.</param>
-        <param name="bstrExpression">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="pxmllistContext">The node that sets the context for the expression.</param>
+        <param name="bstrExpression">The expression to be applied to each set of nodes in the specified context.</param>
+        <summary>Gets the sets of results calculated when the expression is applied to each set of elements in the context.</summary>
+        <returns>An object that represents the set of results calculated when the expression is applied to each set of elements in the context.</returns>
+        <remarks>
+          <para>
+            <b>Note</b>: Accessing the object returned by the <b>Eval</b> method by casting it to the <b>IXMLDOMNodeList</b> type in a managed form may result in security exceptions, in which case the form should be given <b>FullTrust</b> permissions.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the variable <paramref name="maxCost" /> is set to the largest cost value, where cost is calculated by multiplying price by quantity.</para>
+          <code>IXMLDOMNodeList items = thisXDocument.DOM.selectNodes(@"/my:items/my:item");
+decimal maxCost = (decimal) thisXDocument.Util.Math.Max((IXMLDOMNodeList) thisXDocument.Util.Math.&lt;span class="label"&gt;Eval&lt;/span&gt;(items, "price * quantity"));</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Max">
@@ -88,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IPMath.Max(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList)" />
       <MemberSignature Language="VB.NET" Value="Public Function Max (pxmllistInput As IXMLDOMNodeList) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Max(Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNodeList ^ pxmllistInput);" />
+      <MemberSignature Language="F#" Value="abstract member Max : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList -&gt; obj" Usage="iPMath.Max pxmllistInput" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -105,10 +124,16 @@
         <Parameter Name="pxmllistInput" Type="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList" />
       </Parameters>
       <Docs>
-        <param name="pxmllistInput">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pxmllistInput">The node set to search for the largest value.</param>
+        <summary>Gets the largest value of all of the numerical elements in a node set.</summary>
+        <returns>An object that represents the largest value of all the numerical elements in a node set.</returns>
         <remarks>To be added.</remarks>
+        <example>
+          <para>In the following example, the variable <paramref name="maxAge" /> is set to the largest age value in <paramref name="my:ages" />, and is returned in a repeating section or table with a field named "ages." An alert is also shown with the largest age value.</para>
+          <code>IXMLDOMNodeList ages = thisXDocument.DOM.selectNodes("//my:ages");
+object maxAge = thisXDocument.Util.Math.&lt;span class="label"&gt;Max&lt;/span&gt;(ages);
+thisXDocument.UI.Alert(maxAge.ToString());</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Min">
@@ -117,6 +142,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IPMath.Min(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList)" />
       <MemberSignature Language="VB.NET" Value="Public Function Min (pxmllistInput As IXMLDOMNodeList) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Min(Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNodeList ^ pxmllistInput);" />
+      <MemberSignature Language="F#" Value="abstract member Min : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList -&gt; obj" Usage="iPMath.Min pxmllistInput" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -134,10 +160,16 @@
         <Parameter Name="pxmllistInput" Type="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList" />
       </Parameters>
       <Docs>
-        <param name="pxmllistInput">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pxmllistInput">The node set to search for the smallest value.</param>
+        <summary>Gets the smallest value of all of the numerical elements in a node set.</summary>
+        <returns>An object that represents the smallest value of all the numerical elements in a node set.</returns>
         <remarks>To be added.</remarks>
+        <example>
+          <para>In the following example, the variable <paramref name="minAge" /> is set to the smallest age value in <paramref name="my:ages" />, and is returned in a repeating section or table with a field named "ages." An alert is also shown with the smallest age value.</para>
+          <code>IXMLDOMNodeList ages = thisXDocument.DOM.selectNodes("//my:ages");
+object minAge = thisXDocument.Util.Math.&lt;span class="label"&gt;Min&lt;/span&gt;(ages);
+thisXDocument.UI.Alert(minAge.ToString());</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="Nz">
@@ -146,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.IPMath.Nz(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList)" />
       <MemberSignature Language="VB.NET" Value="Public Function Nz (pxmllistInput As IXMLDOMNodeList) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Nz(Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMNodeList ^ pxmllistInput);" />
+      <MemberSignature Language="F#" Value="abstract member Nz : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList -&gt; obj" Usage="iPMath.Nz pxmllistInput" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -163,10 +196,21 @@
         <Parameter Name="pxmllistInput" Type="Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNodeList" />
       </Parameters>
       <Docs>
-        <param name="pxmllistInput">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="pxmllistInput">The node set that will have its empty values replaced with zeroes.</param>
+        <summary>Gets the node set passed to the function, except with zeros (0) where empty values existed before.</summary>
+        <returns>An object that represents a node set.</returns>
+        <remarks>
+          <para>An exception occurs if there are no empty values in the node set.</para>
+          <para>
+            <b>Note</b>: Accessing the object returned by the <b>Nz</b> method by casting it to the <b>IXMLDOMNodeList</b> type in a managed form may result in security exceptions, in which case the form should be given <b>FullTrust</b> permissions.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the variable <paramref name="noZero" /> is set to a node set that is identical to the <paramref name="my:ages" /> node set, with all blank values replaced by zeros.  This example is based on a repeating section with a field named "ages." An alert is shown for the XML generated for the first entry in the node list:</para>
+          <code>IXMLDOMNodeList ages = thisXDocument.DOM.selectNodes("//my:ages");
+IXMLDOMNodeList noZero = (IXMLDOMNodeList)thisXDocument.Util.Math.&lt;span class="label"&gt;Nz&lt;/span&gt;(ages);
+thisXDocument.UI.Alert(noZero[0].xml.ToString());</code>
+        </example>
       </Docs>
     </Member>
   </Members>

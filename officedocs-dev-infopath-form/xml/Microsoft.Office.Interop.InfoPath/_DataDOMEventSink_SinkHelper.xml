@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_SinkHelper" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class _DataDOMEventSink_SinkHelper&#xA;Implements _DataDOMEventSink" />
   <TypeSignature Language="C++ CLI" Value="public ref class _DataDOMEventSink_SinkHelper sealed : Microsoft::Office::Interop::InfoPath::_DataDOMEventSink" />
+  <TypeSignature Language="F#" Value="type _DataDOMEventSink_SinkHelper = class&#xA;    interface _DataDOMEventSink" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -25,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This member is reserved for internal use and is not intended to be used directly from your code.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_SinkHelper.m_dwCookie" />
       <MemberSignature Language="VB.NET" Value="Public m_dwCookie As Integer " />
       <MemberSignature Language="C++ CLI" Value="public: int m_dwCookie;" />
+      <MemberSignature Language="F#" Value="val mutable m_dwCookie : int" Usage="Microsoft.Office.Interop.InfoPath._DataDOMEventSink_SinkHelper.m_dwCookie" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -44,7 +46,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member is reserved for internal use and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -54,6 +56,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_SinkHelper.m_OnAfterChangeDelegate" />
       <MemberSignature Language="VB.NET" Value="Public m_OnAfterChangeDelegate As _DataDOMEventSink_OnAfterChangeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_OnAfterChangeEventHandler ^ m_OnAfterChangeDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_OnAfterChangeDelegate : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler" Usage="Microsoft.Office.Interop.InfoPath._DataDOMEventSink_SinkHelper.m_OnAfterChangeDelegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -63,7 +66,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnAfterChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member is reserved for internal use and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,6 +76,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_SinkHelper.m_OnBeforeChangeDelegate" />
       <MemberSignature Language="VB.NET" Value="Public m_OnBeforeChangeDelegate As _DataDOMEventSink_OnBeforeChangeEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_OnBeforeChangeEventHandler ^ m_OnBeforeChangeDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_OnBeforeChangeDelegate : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler" Usage="Microsoft.Office.Interop.InfoPath._DataDOMEventSink_SinkHelper.m_OnBeforeChangeDelegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -82,7 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnBeforeChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member is reserved for internal use and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_SinkHelper.m_OnValidateDelegate" />
       <MemberSignature Language="VB.NET" Value="Public m_OnValidateDelegate As _DataDOMEventSink_OnValidateEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public: Microsoft::Office::Interop::InfoPath::_DataDOMEventSink_OnValidateEventHandler ^ m_OnValidateDelegate;" />
+      <MemberSignature Language="F#" Value="val mutable m_OnValidateDelegate : Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler" Usage="Microsoft.Office.Interop.InfoPath._DataDOMEventSink_SinkHelper.m_OnValidateDelegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -101,7 +106,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath._DataDOMEventSink_OnValidateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This member is reserved for internal use and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,6 +116,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_SinkHelper.OnAfterChange(Microsoft.Office.Interop.InfoPath.DataDOMEventObject)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnAfterChange ( As DataDOMEventObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnAfterChange(Microsoft::Office::Interop::InfoPath::DataDOMEventObject ^ );" />
+      <MemberSignature Language="F#" Value="abstract member OnAfterChange : Microsoft.Office.Interop.InfoPath.DataDOMEventObject -&gt; unit&#xA;override this.OnAfterChange : Microsoft.Office.Interop.InfoPath.DataDOMEventObject -&gt; unit" Usage="_DataDOMEventSink_SinkHelper.OnAfterChange " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._DataDOMEventSink.OnAfterChange(Microsoft.Office.Interop.InfoPath.DataDOMEventObject)</InterfaceMember>
@@ -127,7 +133,7 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is reserved for internal use and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_SinkHelper.OnBeforeChange(Microsoft.Office.Interop.InfoPath.DataDOMEventObject)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnBeforeChange ( As DataDOMEventObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnBeforeChange(Microsoft::Office::Interop::InfoPath::DataDOMEventObject ^ );" />
+      <MemberSignature Language="F#" Value="abstract member OnBeforeChange : Microsoft.Office.Interop.InfoPath.DataDOMEventObject -&gt; unit&#xA;override this.OnBeforeChange : Microsoft.Office.Interop.InfoPath.DataDOMEventObject -&gt; unit" Usage="_DataDOMEventSink_SinkHelper.OnBeforeChange " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._DataDOMEventSink.OnBeforeChange(Microsoft.Office.Interop.InfoPath.DataDOMEventObject)</InterfaceMember>
@@ -153,7 +160,7 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is reserved for internal use and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath._DataDOMEventSink_SinkHelper.OnValidate(Microsoft.Office.Interop.InfoPath.DataDOMEventObject)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnValidate ( As DataDOMEventObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnValidate(Microsoft::Office::Interop::InfoPath::DataDOMEventObject ^ );" />
+      <MemberSignature Language="F#" Value="abstract member OnValidate : Microsoft.Office.Interop.InfoPath.DataDOMEventObject -&gt; unit&#xA;override this.OnValidate : Microsoft.Office.Interop.InfoPath.DataDOMEventObject -&gt; unit" Usage="_DataDOMEventSink_SinkHelper.OnValidate " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._DataDOMEventSink.OnValidate(Microsoft.Office.Interop.InfoPath.DataDOMEventObject)</InterfaceMember>
@@ -179,7 +187,7 @@
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This member is reserved for internal use and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

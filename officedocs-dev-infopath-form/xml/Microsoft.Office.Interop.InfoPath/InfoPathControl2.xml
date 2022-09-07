@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.InfoPathControl2" />
   <TypeSignature Language="VB.NET" Value="Public Interface InfoPathControl2&#xA;Implements InfoPathControl" />
   <TypeSignature Language="C++ CLI" Value="public interface class InfoPathControl2 : Microsoft::Office::Interop::InfoPath::InfoPathControl" />
+  <TypeSignature Language="F#" Value="type InfoPathControl2 = interface&#xA;    interface InfoPathControl" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines methods used from the implementation of an ActiveX control for initializing, uninitializing, enabling, disabling, and saving the state of a control.</summary>
+    <remarks>
+      <para>The <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathControl2" /> and <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathControlSite" /> objects and their methods and properties are designed to be used only from the implementation of an ActiveX control. These objects and their members are not supported in InfoPath form code. For more information on how to create ActiveX controls that work with InfoPath, see the InfoPath Developer Center (http://msdn.microsoft.com/infopath).</para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Enable">
@@ -32,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathControl2.Enable(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Enable (vfEnabled As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Enable(bool vfEnabled);" />
+      <MemberSignature Language="F#" Value="abstract member Enable : bool -&gt; unit" Usage="infoPathControl2.Enable vfEnabled" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.InfoPathControl.Enable(System.Boolean)</InterfaceMember>
@@ -47,9 +52,13 @@
         <Parameter Name="vfEnabled" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="vfEnabled">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="vfEnabled">Specifies whether the control is enabled.</param>
+        <summary>Defines a method that must be provided by the developer for InfoPath to call when it needs to enable or disable an instance of the control in a view.</summary>
+        <remarks>
+          <para>InfoPath will call the <b>Enable</b> method to enable or disable the control, such as when the view is being refreshed or closed, when the document is signed and should not be edited, or when rules are applied to the form that must disable the control.</para>
+          <para>The <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathControl2" /> and <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathControlSite" /> objects and their methods and properties are designed to be used only from the implementation of an ActiveX control. These objects and their members are not supported in InfoPath form code. For more information on how to create ActiveX controls that work with InfoPath, see the InfoPath Developer Center (http://msdn.microsoft.com/infopath).</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -58,6 +67,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathControl2.Init(Microsoft.Office.Interop.InfoPath.InfoPathControlSite)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Init (pControlSite As InfoPathControlSite)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Init(Microsoft::Office::Interop::InfoPath::InfoPathControlSite ^ pControlSite);" />
+      <MemberSignature Language="F#" Value="abstract member Init : Microsoft.Office.Interop.InfoPath.InfoPathControlSite -&gt; unit" Usage="infoPathControl2.Init pControlSite" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.InfoPathControl.Init(Microsoft.Office.Interop.InfoPath.InfoPathControlSite)</InterfaceMember>
@@ -73,9 +83,13 @@
         <Parameter Name="pControlSite" Type="Microsoft.Office.Interop.InfoPath.InfoPathControlSite" />
       </Parameters>
       <Docs>
-        <param name="pControlSite">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="pControlSite">An instance of the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathControlSite" /> object.</param>
+        <summary>Defines a method that must be provided by the developer to perform any initialization routines required when an instance of the control is added to an InfoPath form.</summary>
+        <remarks>
+          <para>InfoPath calls the <see cref="M:Microsoft.Office.Interop.InfoPath.InfoPathControl2.Init(Microsoft.Office.Interop.InfoPath.InfoPathControlSite)" /> method when a user adds an instance of the control to a view. InfoPath passes an instance of the <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathControlSite" /> object to the <see cref="M:Microsoft.Office.Interop.InfoPath.InfoPathControl2.Init(Microsoft.Office.Interop.InfoPath.InfoPathControlSite)" /> method when the control is initialized. The <see cref="M:Microsoft.Office.Interop.InfoPath.InfoPathControl2.Init(Microsoft.Office.Interop.InfoPath.InfoPathControlSite)" /> object provides the <see cref="P:Microsoft.Office.Interop.InfoPath.InfoPathControlSite.Node" /> property that provides access to the XML DOM node to which the control is bound, and the <see cref="P:Microsoft.Office.Interop.InfoPath.InfoPathControlSite.XDocument" /> property for accessing the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object associated with a form, which in turn provides access to the full InfoPath object model.</para>
+          <para>The <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathControl2" /> and <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathControlSite" /> objects and their methods and properties are designed to be used only from the implementation of an ActiveX control. These objects and their members are not supported in InfoPath form code. For more information on how to create ActiveX controls that work with InfoPath, see the InfoPath Developer Center (http://msdn.microsoft.com/infopath).</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshState">
@@ -84,6 +98,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathControl2.RefreshState" />
       <MemberSignature Language="VB.NET" Value="Public Sub RefreshState ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshState();" />
+      <MemberSignature Language="F#" Value="abstract member RefreshState : unit -&gt; unit" Usage="infoPathControl2.RefreshState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -94,8 +109,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Defines a method that InfoPath calls when it must refresh the state of an instance of the control in a view.</summary>
+        <remarks>
+          <para>In InfoPath 2007, when a change occurs to the XML node the control is bound to, InfoPath calls the <see cref="M:Microsoft.Office.Interop.InfoPath.InfoPathControl2.SaveState" /> method  implemented by the control so that InfoPath can destroy the control, and the control can successfully restore its state when it was reconstructed. In InfoPath, changes were made so that ActiveX controls are not always destroyed and reconstructed when a change to the bound XML node occurs. To fully implement this change, InfoPath needs a way to communicate to the control that a change to the bound XML node has occurred, and that the control should refresh its state by reading the updated information in the XML node. To do that, the developer of the control must implement the <see cref="M:Microsoft.Office.Interop.InfoPath.InfoPathControl2.RefreshState" /> method on the control.</para>
+          <para>The <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathControl2" /> and <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathControlSite" /> objects and their methods and properties are designed to be used only from the implementation of an ActiveX control. These objects and their members are not supported in InfoPath form code. For more information on how to create ActiveX controls that work with InfoPath, see the InfoPath Developer Center (http://msdn.microsoft.com/infopath).</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveState">
@@ -104,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathControl2.SaveState" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveState ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveState();" />
+      <MemberSignature Language="F#" Value="abstract member SaveState : unit -&gt; unit" Usage="infoPathControl2.SaveState " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.InfoPathControl.SaveState</InterfaceMember>
@@ -117,8 +137,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Defines a method that InfoPath calls when it needs to save the state of an instance of the control in a view.</summary>
+        <remarks>
+          <para>The <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathControl2" /> and <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathControlSite" /> objects and their methods and properties are designed to be used only from the implementation of an ActiveX control. These objects and their members are not supported in InfoPath form code. For more information on how to create ActiveX controls that work with InfoPath, see the InfoPath Developer Center (http://msdn.microsoft.com/infopath).</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Uninit">
@@ -127,6 +150,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.InfoPathControl2.Uninit" />
       <MemberSignature Language="VB.NET" Value="Public Sub Uninit ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Uninit();" />
+      <MemberSignature Language="F#" Value="abstract member Uninit : unit -&gt; unit" Usage="infoPathControl2.Uninit " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.InfoPathControl.Uninit</InterfaceMember>
@@ -140,8 +164,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Defines a method that must be provided by the developer to perform any clean up routines that are required before an instance of the control is removed from a view.</summary>
+        <remarks>
+          <para>InfoPath calls the <see cref="M:Microsoft.Office.Interop.InfoPath.InfoPathControl2.Uninit" /> method immediately before the control is removed from the view and destroyed. Note that because InfoPath forms make use of XSL transforms to represent views, any changes in the data or explicit calls to the object model can cause InfoPath to automatically synchronize the view with the data that is contained in a form's underlying XML document, which destroys and recreates the view. This means that ActiveX controls are likely to be created and destroyed much more often within a given session than controls in Visual Basic forms or Web forms. ActiveX controls which need to preserve state information independent of the bound data, such as the state of the scroll position, should create routines in the <see cref="M:Microsoft.Office.Interop.InfoPath.InfoPathControl.Init(Microsoft.Office.Interop.InfoPath.InfoPathControlSite)" /> method of the control that use the <see cref="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.SetNamedNodeProperty(Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMNode,System.String,System.String)" /> method to save this information, and use the <see cref="M:Microsoft.Office.Interop.InfoPath.XDocumentClass.GetNamedNodeProperty(System.Object,System.String,System.String)" /> method to restore state information during the <b>Init</b> method call.</para>
+          <para>The <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathControl2" /> and <see cref="T:Microsoft.Office.Interop.InfoPath.InfoPathControlSite" /> objects and their methods and properties are designed to be used only from the implementation of an ActiveX control. These objects and their members are not supported in InfoPath form code. For more information on how to create ActiveX controls that work with InfoPath, see the InfoPath Developer Center (http://msdn.microsoft.com/infopath).</para>
+          <para />
+        </remarks>
       </Docs>
     </Member>
   </Members>

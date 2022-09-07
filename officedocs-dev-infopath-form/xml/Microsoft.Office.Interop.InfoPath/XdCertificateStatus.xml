@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XdCertificateStatus" />
   <TypeSignature Language="VB.NET" Value="Public Enum XdCertificateStatus" />
   <TypeSignature Language="C++ CLI" Value="public enum class XdCertificateStatus" />
+  <TypeSignature Language="F#" Value="type XdCertificateStatus = " />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -17,8 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <b>XdCertificateStatus</b> enumeration is used to determine the status of a digital certificate.</summary>
+    <remarks>
+      <para>These enumerated values are returned by the <see cref="P:Microsoft.Office.Interop.InfoPath.Certificate.Status" /> property.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="xdCertificateStatusError">
@@ -27,6 +31,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdCertificateStatus.xdCertificateStatusError" />
       <MemberSignature Language="VB.NET" Value="xdCertificateStatusError" />
       <MemberSignature Language="C++ CLI" Value="xdCertificateStatusError" />
+      <MemberSignature Language="F#" Value="xdCertificateStatusError = 0" Usage="Microsoft.Office.Interop.InfoPath.XdCertificateStatus.xdCertificateStatusError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -37,7 +42,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The status of the specified digital certificate cannot be determined.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdCertificateStatusExpired">
@@ -46,6 +51,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdCertificateStatus.xdCertificateStatusExpired" />
       <MemberSignature Language="VB.NET" Value="xdCertificateStatusExpired" />
       <MemberSignature Language="C++ CLI" Value="xdCertificateStatusExpired" />
+      <MemberSignature Language="F#" Value="xdCertificateStatusExpired = 2" Usage="Microsoft.Office.Interop.InfoPath.XdCertificateStatus.xdCertificateStatusExpired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -56,7 +62,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The specified digital certificate has expired.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdCertificateStatusNotTrusted">
@@ -65,6 +71,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdCertificateStatus.xdCertificateStatusNotTrusted" />
       <MemberSignature Language="VB.NET" Value="xdCertificateStatusNotTrusted" />
       <MemberSignature Language="C++ CLI" Value="xdCertificateStatusNotTrusted" />
+      <MemberSignature Language="F#" Value="xdCertificateStatusNotTrusted = 3" Usage="Microsoft.Office.Interop.InfoPath.XdCertificateStatus.xdCertificateStatusNotTrusted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -75,7 +82,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The specified digital certificate is not trusted.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdCertificateStatusRevoked">
@@ -84,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdCertificateStatus.xdCertificateStatusRevoked" />
       <MemberSignature Language="VB.NET" Value="xdCertificateStatusRevoked" />
       <MemberSignature Language="C++ CLI" Value="xdCertificateStatusRevoked" />
+      <MemberSignature Language="F#" Value="xdCertificateStatusRevoked = 4" Usage="Microsoft.Office.Interop.InfoPath.XdCertificateStatus.xdCertificateStatusRevoked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -94,7 +102,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The specified digital certificate has been revoked.</summary>
       </Docs>
     </Member>
     <Member MemberName="xdCertificateStatusValid">
@@ -103,6 +111,7 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.InfoPath.XdCertificateStatus.xdCertificateStatusValid" />
       <MemberSignature Language="VB.NET" Value="xdCertificateStatusValid" />
       <MemberSignature Language="C++ CLI" Value="xdCertificateStatusValid" />
+      <MemberSignature Language="F#" Value="xdCertificateStatusValid = 1" Usage="Microsoft.Office.Interop.InfoPath.XdCertificateStatus.xdCertificateStatusValid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -113,7 +122,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The specified digital certificate is valid.</summary>
       </Docs>
     </Member>
   </Members>

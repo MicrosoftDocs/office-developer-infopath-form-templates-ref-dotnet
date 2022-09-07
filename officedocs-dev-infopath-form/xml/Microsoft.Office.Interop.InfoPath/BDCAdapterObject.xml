@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.BDCAdapterObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface BDCAdapterObject&#xA;Implements BDCAdapter" />
   <TypeSignature Language="C++ CLI" Value="public interface class BDCAdapterObject : Microsoft::Office::Interop::InfoPath::BDCAdapter" />
+  <TypeSignature Language="F#" Value="type BDCAdapterObject = interface&#xA;    interface BDCAdapter" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a data connection for retrieving or submitting data to an external list on a server that runs Microsoft SharePoint Foundation 2010 or Microsoft SharePoint Server 2010.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.BDCAdapter" />.</para>
+      <para>An external list is an external data source that is registered in the Business Data Connectivity service (BDC) on a server that runs SharePoint Foundation 2010 or SharePoint Server 2010. An external list is based on an external content type that specifies how to connect to and work with the data from an external business entity, such as a SQL Server database or Web service. After you create an external list, you can generally use its data like any other SharePoint list. For more information about how to create external content types and external lists, see <a href="e51f978f-ae27-43a0-8450-7dfe5d39ab19">Building Solutions Using the Presentation Features of Business Connectivity Services</a></para>
+      <para />
+    </remarks>
   </Docs>
   <Members />
 </Type>

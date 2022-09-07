@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath._ApplicationEvents_XDocumentChangeEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub _ApplicationEvents_XDocumentChangeEventHandler()" />
   <TypeSignature Language="C++ CLI" Value="public delegate void _ApplicationEvents_XDocumentChangeEventHandler();" />
+  <TypeSignature Language="F#" Value="type _ApplicationEvents_XDocumentChangeEventHandler = delegate of unit -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -24,7 +25,7 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Reserved for internal use.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ExternalApplication" />
   <TypeSignature Language="VB.NET" Value="Public Interface ExternalApplication&#xA;Implements _ExternalApplication2" />
   <TypeSignature Language="C++ CLI" Value="public interface class ExternalApplication : Microsoft::Office::Interop::InfoPath::_ExternalApplication2" />
+  <TypeSignature Language="F#" Value="type ExternalApplication = interface&#xA;    interface _ExternalApplication2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents the Microsoft InfoPath application.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath._ExternalApplication" />.</para>
+      <para>The <b>ExternalApplication</b> object is a deprecated type that should no longer be used for automation. The <see cref="T:Microsoft.Office.Interop.InfoPath.Application" /> object and the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object contain the properties and methods needed for external automation of the InfoPath application.</para>
+      <para>For backward compatibility, the <b>ExternalApplication</b> object can be used to perform a limited set of InfoPath operations such as creating, opening, or closing a form; registering or un-registering a form template; or simply quitting the application.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>In the following example, the <b>ExternalApplication</b> object is created and used to open a form:</para>
+      <code>&lt;span class="label"&gt;ExternalApplication&lt;/span&gt; infoPath = new ExternalApplicationClass();
+// Open an InfoPath form.
+infoPath.Open(@"C:\My Forms\Form1.xml", 1);</code>
+      <para>
+        <b>Note</b>: The above example assumes that the <see cref="N:Microsoft.Office.Interop.InfoPath" /> namespace is being used and that the Microsoft InfoPath 3.0 Type Library is referenced.</para>
+    </example>
   </Docs>
   <Members />
 </Type>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.XDNetworkStateClass" />
   <TypeSignature Language="VB.NET" Value="Public Class XDNetworkStateClass&#xA;Implements XDNetworkState" />
   <TypeSignature Language="C++ CLI" Value="public ref class XDNetworkStateClass : Microsoft::Office::Interop::InfoPath::XDNetworkState" />
+  <TypeSignature Language="F#" Value="type XDNetworkStateClass = class&#xA;    interface _NetworkState&#xA;    interface XDNetworkState" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -25,7 +26,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.XDNetworkStateClass.IsDestinationReachable(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsDestinationReachable (bstrDestination As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsDestinationReachable(System::String ^ bstrDestination) = Microsoft::Office::Interop::InfoPath::_NetworkState::IsDestinationReachable;" />
+      <MemberSignature Language="F#" Value="abstract member IsDestinationReachable : string -&gt; bool&#xA;override this.IsDestinationReachable : string -&gt; bool" Usage="xDNetworkStateClass.IsDestinationReachable bstrDestination" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath._NetworkState.IsDestinationReachable(System.String)</InterfaceMember>
@@ -56,8 +58,8 @@
       </Parameters>
       <Docs>
         <param name="bstrDestination">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
+        <returns>Returns <see cref="T:System.Boolean" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.XDNetworkStateClass.MachineOnlineState" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MachineOnlineState As XdMachineOnlineState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::XdMachineOnlineState MachineOnlineState { Microsoft::Office::Interop::InfoPath::XdMachineOnlineState get(); };" />
+      <MemberSignature Language="F#" Value="member this.MachineOnlineState : Microsoft.Office.Interop.InfoPath.XdMachineOnlineState" Usage="MachineOnlineState" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath._NetworkState.MachineOnlineState</InterfaceMember>
@@ -87,8 +90,8 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.XdMachineOnlineState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
+        <value>Returns <see cref="T:Microsoft.Office.Interop.InfoPath.XdMachineOnlineState" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

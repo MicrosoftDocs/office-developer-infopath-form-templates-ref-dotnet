@@ -1,110 +1,213 @@
 <?xml version="1.0" encoding="utf-8"?>
 <filter>
-  <attributeFilter apply="true">
-    <!-- Most attributes in System.ComponentModel control designer behavior. Don't show them. -->
-    <!-- The exceptions are attributes relating to data binding. Do show them. -->
-    <namespaceFilter name="System.ComponentModel">
-      <typeFilter name="BindableAttribute" expose="true" />
-      <typeFilter name="BrowsableAttribute" expose="true" />
-      <typeFilter name="ComplexBindingPropertiesAttribute" expose="true" />
-      <typeFilter name="DataObjectAttribute" expose="true" />
-      <typeFilter name="DefaultBindingPropertyAttribute" expose="true" />
-      <typeFilter name="ListBindableAttribute" expose="true" />
-      <typeFilter name="LookupBindingPropertiesAttribute" expose="true" />
-      <typeFilter name="SettingsBindableAttribute" expose="true" />
-      <typeFilter name="TypeConverterAttribute" expose="true" />
-      <typeFilter name="*" expose="false" />
-    </namespaceFilter>
-    <namespaceFilter name="System.ComponentModel.Design">
-      <typeFilter name="*" expose="false" />
-    </namespaceFilter>
-    <namespaceFilter name="System.ComponentModel.Design.Serialization">
-      <typeFilter name="*" expose="false" />
-    </namespaceFilter>
-    <!-- Most attributes in System.Diagnostics control debugger behavior. Don't show them. -->
-    <namespaceFilter name="System.Diagnostics">
-      <typeFilter name="ConditionalAttribute" expose="true" />
-      <typeFilter name="EventLogPermissionAttribute" expose="true" />
-      <typeFilter name="PerformanceCounterPermissionAttribute" expose="true" />
-      <typeFilter name="*" expose="false" />
-    </namespaceFilter>
-    <!-- Attributes in System.Diagnostics.CodeAnalysis control interaction with FxCop. Don't show them. -->
-    <namespaceFilter name="System.Diagnostics.CodeAnalysis">
-      <typeFilter name="*" expose="false" />
-    </namespaceFilter>
-    <!-- Attributes in System.EnterpriseServices control obscure details of COM+ interop. Don't show them. -->
-    <namespaceFilter name="System.EnterpriseServices">
-      <typeFilter name="*" expose="false" />
-    </namespaceFilter>
-    <!-- The DefaultMember attribute is usually compiler-generated. Users will see it from the member syntax. -->
-    <namespaceFilter name="System.Reflection">
-      <typeFilter name="DefaultMemberAttribute" expose="false" />
-      <typeFilter name="*" expose="true" />
-    </namespaceFilter>
-    <!-- Attributes in System.Runtime.CompilerServices control obscure details of compilation. Don't show them. -->
-    <namespaceFilter name="System.Runtime.CompilerServices">
-      <typeFilter name="ExtensionAttribute" expose="true" />
-      <typeFilter name="*" expose="false" />
-    </namespaceFilter>
-    <!-- Attributes in System.Runtime.ConstrinedExecution control obscure details of compilation. Don't show them. -->
-    <namespaceFilter name="System.Runtime.ConstrainedExecution">
-      <typeFilter name="*" expose="false" />
-    </namespaceFilter>
-    <!-- Most attributes in System.Runtime.InteropServices control obscure details of COM interop. Don't show them. -->
-    <namespaceFilter name="System.Runtime.InteropServices">
-      <typeFilter name="ComVisibleAttribute" expose="true" />
-      <typeFilter name="GuidAttribute" expose="true" />
-      <typeFilter name="ClassInterfaceAttribute" expose="true" />
-      <typeFilter name="InterfaceTypeAttribute" expose="true" />
-      <typeFilter name="*" expose="false" />
-    </namespaceFilter>
-    <!-- Attributes in System.Runtime.Versioning control details of resource loading. Don't show them. -->
-    <namespaceFilter name="System.Runtime.Versioning">
-      <typeFilter name="*" expose="false" />
-    </namespaceFilter>
-    <!-- Attributes in System.Security might hint as security implementation details. Don't show them. -->
-    <namespaceFilter name="System.Security">
-      <typeFilter name="SecurityCriticalAttribute" expose="true" />
-      <typeFilter name="SecurityTreatAsSafeAttribute" expose="true" />
-      <typeFilter name="AllowPartiallyTrustedCallersAttribute" expose="true" />
-      <typeFilter name="*" expose="false" />
-    </namespaceFilter>
-    <!-- Attributes in System.Web.Compilation control interaction with the Expression designer. Don't show them. -->
-    <namespaceFilter name="System.Web.Compilation">
-      <typeFilter name="*" expose="false" />
-    </namespaceFilter>
-    <!-- The ASP.NET team only wants these attributes exposed from their namespace. Their logic ecscapes me, but here it is. -->
-    <namespaceFilter name="System.Web.UI">
-      <typeFilter name="ControlValuePropertyAttribute" expose="true" />
-      <typeFilter name="PersistenceModeAttribute" expose="true" />
-      <typeFilter name="ValidationPropertyAttribute" expose="true" />
-      <typeFilter name="WebResourceAttribute" expose="true" />
-      <typeFilter name="TemplateContainerAttribute" expose="true" />
-      <typeFilter name="ThemeableAttribute" expose="true" />
-      <typeFilter name="TemplateInstanceAttribute" expose="true" />
-      <typeFilter name="*" expose="false" />
-    </namespaceFilter>
-    <!-- Don't show attributes related to XAML serialization details. -->
-    <namespaceFilter name="System.Windows.Markup">
-      <typeFilter name="ConstructorArgumentAttribute" expose="false" />
-      <typeFilter name="DesignerSerializationOptionsAttribute" expose="false" />
-      <typeFilter name="ValueSerializerAttribute" expose="false" />
-      <typeFilter name="XmlnsCompatibleWithAttribute" expose="false" />
-      <typeFilter name="XmlnsDefinitionAttribute" expose="false" />
-      <typeFilter name="XmlnsPrefixAttribute" expose="false" />
-      <typeFilter name="*" expose="true" />
-    </namespaceFilter>
-    <!-- Attributes in System.Xml.Serialization control obscure details of XML serialization. Don't show them.-->
-    <namespaceFilter name="System.Xml.Serialization">
-      <typeFilter name="*" expose="false" />
-    </namespaceFilter>
-    <!-- The GeneratedCodeAttribute is useful only to tools, and should be hidden from end users.-->
-    <namespaceFilter name="System.CodeDom.Compiler">
-      <typeFilter name="GeneratedCodeAttribute" expose="false" />
-      <typeFilter name="*" expose="true" />
-    </namespaceFilter>
-    <namespaceFilter name="*">
-      <typeFilter name="*" expose="true" />
-    </namespaceFilter>
-  </attributeFilter>
+    <apiFilter apply="true">
+        <namespaceFilter name="Microsoft.Office.InfoPath" expose="true">
+            <typeFilter name="AdoQueryConnection" expose="false"/>
+            <typeFilter name="AdoSubmitConnection" expose="false"/>
+            <typeFilter name="Application" expose="false"/>
+            <typeFilter name="BdcQueryConnection" expose="false"/>
+            <typeFilter name="BdcSubmitConnection" expose="false"/>
+            <typeFilter name="ButtonEvent" expose="false"/>
+            <typeFilter name="Certificate" expose="false"/>
+            <typeFilter name="ClickedEventArgs" expose="false"/>
+            <typeFilter name="ContextChangedEventArgs" expose="false"/>
+            <typeFilter name="ControlEvents" expose="false"/>
+            <typeFilter name="DataConnection" expose="false"/>
+            <typeFilter name="DataConnectionCollection" expose="false"/>
+            <typeFilter name="DataSource" expose="false"/>
+            <typeFilter name="DataSourceCollection" expose="false"/>
+            <typeFilter name="EmailSubmitConnection" expose="false"/>
+            <typeFilter name="Environment" expose="false"/>
+            <typeFilter name="EventManager" expose="false"/>
+            <typeFilter name="FileQueryConnection" expose="false"/>
+            <typeFilter name="FileSubmitConnection" expose="false"/>
+            <typeFilter name="FormControl.EventHandler`1" expose="false"/>
+            <typeFilter name="FormError" expose="false"/>
+            <typeFilter name="FormErrorCollection" expose="false"/>
+            <typeFilter name="FormEvents" expose="false"/>
+            <typeFilter name="FormTemplate" expose="false"/>
+            <typeFilter name="HtmlTaskPane" expose="false"/>
+            <typeFilter name="LoadingEventArgs" expose="false"/>
+            <typeFilter name="MailEnvelope" expose="false"/>
+            <typeFilter name="ManagedObjectWrapper" expose="false"/>
+            <typeFilter name="MergeEventArgs" expose="false"/>
+            <typeFilter name="NetworkState" expose="false"/>
+            <typeFilter name="Permission" expose="false"/>
+            <typeFilter name="SaveCancelEventArgs" expose="false"/>
+            <typeFilter name="SaveEventArgs" expose="false"/>
+            <typeFilter name="ServerInfo" expose="false"/>
+            <typeFilter name="SharepointListQueryConnection" expose="false"/>
+            <typeFilter name="SharePointListRWQueryConnection" expose="false"/>
+            <typeFilter name="SharePointListRWSubmitConnection" expose="false"/>
+            <typeFilter name="Signature" expose="false"/>
+            <typeFilter name="SignatureCollection" expose="false"/>
+            <typeFilter name="SignatureLine" expose="false"/>
+            <typeFilter name="SignatureLineCollection" expose="false"/>
+            <typeFilter name="SignedDataBlock" expose="false"/>
+            <typeFilter name="SignedDataBlockCollection" expose="false"/>
+            <typeFilter name="SignEventArgs" expose="false"/>
+            <typeFilter name="SubmitEventArgs" expose="false"/>
+            <typeFilter name="SubmitToHostConnection" expose="false"/>
+            <typeFilter name="TaskPane" expose="false"/>
+            <typeFilter name="TaskPaneCollection" expose="false"/>
+            <typeFilter name="User" expose="false"/>
+            <typeFilter name="UserPermission" expose="false"/>
+            <typeFilter name="UserPermissionCollection" expose="false"/>
+            <typeFilter name="VersionUpgradeEventArgs" expose="false"/>
+            <typeFilter name="View" expose="false"/>
+            <typeFilter name="ViewInfo" expose="false"/>
+            <typeFilter name="ViewInfoCollection" expose="false"/>
+            <typeFilter name="ViewSwitchedEventArgs" expose="false"/>
+            <typeFilter name="WebServiceConnection" expose="false"/>
+            <typeFilter name="Window" expose="false"/>
+            <typeFilter name="WindowCollection" expose="false"/>
+            <typeFilter name="XmlChangingEventArgs" expose="false"/>
+            <typeFilter name="XmlEvent" expose="false"/>
+            <typeFilter name="XmlEventArgs" expose="false"/>
+            <typeFilter name="XmlEvents" expose="false"/>
+            <typeFilter name="XmlForm" expose="false"/>
+            <typeFilter name="XmlFormCancelEventArgs" expose="false"/>
+            <typeFilter name="XmlFormCollection" expose="false"/>
+            <typeFilter name="XmlFormHostItem" expose="false"/>
+            <typeFilter name="XmlValidatingEventArgs" expose="false"/>
+            <typeFilter name="XPathTypedValue" expose="false"/>
+            <typeFilter name="ClickedEventHandler" expose="false"/>
+            <typeFilter name="ContextChangedEventHandler" expose="false"/>
+            <typeFilter name="LoadingEventHandler" expose="false"/>
+            <typeFilter name="MergeEventHandler" expose="false"/>
+            <typeFilter name="SaveEventHandler" expose="false"/>
+            <typeFilter name="SignEventHandler" expose="false"/>
+            <typeFilter name="SubmitEventHandler" expose="false"/>
+            <typeFilter name="VersionUpgradeEventHandler" expose="false"/>
+            <typeFilter name="ViewSwitchedEventHandler" expose="false"/>
+            <typeFilter name="XmlChangedEventHandler" expose="false"/>
+            <typeFilter name="XmlChangingEventHandler" expose="false"/>
+            <typeFilter name="XmlValidatingEventHandler" expose="false"/>
+            <typeFilter name="ActionType" expose="false"/>
+            <typeFilter name="CertificateStatus" expose="false"/>
+            <typeFilter name="EmailAttachmentType" expose="false"/>
+            <typeFilter name="ErrorMode" expose="false"/>
+            <typeFilter name="ExportFormat" expose="false"/>
+            <typeFilter name="FormErrorType" expose="false"/>
+            <typeFilter name="MachineState" expose="false"/>
+            <typeFilter name="PermissionType" expose="false"/>
+            <typeFilter name="SignatureAppearanceType" expose="false"/>
+            <typeFilter name="SignatureRelation" expose="false"/>
+            <typeFilter name="SignatureStatus" expose="false"/>
+            <typeFilter name="TaskPaneType" expose="false"/>
+            <typeFilter name="WindowState" expose="false"/>
+            <typeFilter name="WindowType" expose="false"/>
+            <typeFilter name="XmlFormOpenMode" expose="false"/>
+            <typeFilter name="XmlOperation" expose="false"/>
+        </namespaceFilter>
+    </apiFilter>
+    <!-- Whether to include protected sealed members -->
+    <protectedSealedFilter expose="true" />
+    <attributeFilter apply="true">
+        <!-- Most attributes in System.ComponentModel control designer behavior. Don't show them. -->
+        <!-- The exceptions are attributes relating to data binding. Do show them. -->
+        <namespaceFilter name="System.ComponentModel">
+            <typeFilter name="BindableAttribute" expose="true" />
+            <typeFilter name="BrowsableAttribute" expose="true" />
+            <typeFilter name="ComplexBindingPropertiesAttribute" expose="true" />
+            <typeFilter name="DataObjectAttribute" expose="true" />
+            <typeFilter name="DefaultBindingPropertyAttribute" expose="true" />
+            <typeFilter name="ListBindableAttribute" expose="true" />
+            <typeFilter name="LookupBindingPropertiesAttribute" expose="true" />
+            <typeFilter name="SettingsBindableAttribute" expose="true" />
+            <typeFilter name="TypeConverterAttribute" expose="true" />
+            <typeFilter name="*" expose="false" />
+        </namespaceFilter>
+        <namespaceFilter name="System.ComponentModel.Design">
+            <typeFilter name="*" expose="false" />
+        </namespaceFilter>
+        <namespaceFilter name="System.ComponentModel.Design.Serialization">
+            <typeFilter name="*" expose="false" />
+        </namespaceFilter>
+        <!-- Most attributes in System.Diagnostics control debugger behavior. Don't show them. -->
+        <namespaceFilter name="System.Diagnostics">
+            <typeFilter name="ConditionalAttribute" expose="true" />
+            <typeFilter name="EventLogPermissionAttribute" expose="true" />
+            <typeFilter name="PerformanceCounterPermissionAttribute" expose="true" />
+            <typeFilter name="*" expose="false" />
+        </namespaceFilter>
+        <!-- Attributes in System.Diagnostics.CodeAnalysis control interaction with FxCop. Don't show them. -->
+        <namespaceFilter name="System.Diagnostics.CodeAnalysis">
+            <typeFilter name="*" expose="false" />
+        </namespaceFilter>
+        <!-- Attributes in System.EnterpriseServices control obscure details of COM+ interop. Don't show them. -->
+        <namespaceFilter name="System.EnterpriseServices">
+            <typeFilter name="*" expose="false" />
+        </namespaceFilter>
+        <!-- The DefaultMember attribute is usually compiler-generated. Users will see it from the member syntax. -->
+        <namespaceFilter name="System.Reflection">
+            <typeFilter name="DefaultMemberAttribute" expose="false" />
+            <typeFilter name="*" expose="true" />
+        </namespaceFilter>
+        <!-- Attributes in System.Runtime.CompilerServices control obscure details of compilation. Don't show them. -->
+        <namespaceFilter name="System.Runtime.CompilerServices">
+            <typeFilter name="ExtensionAttribute" expose="true" />
+            <typeFilter name="*" expose="false" />
+        </namespaceFilter>
+        <!-- Attributes in System.Runtime.ConstrinedExecution control obscure details of compilation. Don't show them. -->
+        <namespaceFilter name="System.Runtime.ConstrainedExecution">
+            <typeFilter name="*" expose="false" />
+        </namespaceFilter>
+        <!-- Most attributes in System.Runtime.InteropServices control obscure details of COM interop. Don't show them. -->
+        <namespaceFilter name="System.Runtime.InteropServices">
+            <typeFilter name="ComVisibleAttribute" expose="true" />
+            <typeFilter name="GuidAttribute" expose="true" />
+            <typeFilter name="ClassInterfaceAttribute" expose="true" />
+            <typeFilter name="InterfaceTypeAttribute" expose="true" />
+            <typeFilter name="*" expose="false" />
+        </namespaceFilter>
+        <!-- Attributes in System.Runtime.Versioning control details of resource loading. Don't show them. -->
+        <namespaceFilter name="System.Runtime.Versioning">
+            <typeFilter name="*" expose="false" />
+        </namespaceFilter>
+        <!-- Attributes in System.Security might hint as security implementation details. Don't show them. -->
+        <namespaceFilter name="System.Security">
+            <typeFilter name="SecurityCriticalAttribute" expose="true" />
+            <typeFilter name="SecurityTreatAsSafeAttribute" expose="true" />
+            <typeFilter name="AllowPartiallyTrustedCallersAttribute" expose="true" />
+            <typeFilter name="*" expose="false" />
+        </namespaceFilter>
+        <!-- Attributes in System.Web.Compilation control interaction with the Expression designer. Don't show them. -->
+        <namespaceFilter name="System.Web.Compilation">
+            <typeFilter name="*" expose="false" />
+        </namespaceFilter>
+        <!-- The ASP.NET team only wants these attributes exposed from their namespace. Their logic ecscapes me, but here it is. -->
+        <namespaceFilter name="System.Web.UI">
+            <typeFilter name="ControlValuePropertyAttribute" expose="true" />
+            <typeFilter name="PersistenceModeAttribute" expose="true" />
+            <typeFilter name="ValidationPropertyAttribute" expose="true" />
+            <typeFilter name="WebResourceAttribute" expose="true" />
+            <typeFilter name="TemplateContainerAttribute" expose="true" />
+            <typeFilter name="ThemeableAttribute" expose="true" />
+            <typeFilter name="TemplateInstanceAttribute" expose="true" />
+            <typeFilter name="*" expose="false" />
+        </namespaceFilter>
+        <!-- Don't show attributes related to XAML serialization details. -->
+        <namespaceFilter name="System.Windows.Markup">
+            <typeFilter name="ConstructorArgumentAttribute" expose="false" />
+            <typeFilter name="DesignerSerializationOptionsAttribute" expose="false" />
+            <typeFilter name="ValueSerializerAttribute" expose="false" />
+            <typeFilter name="XmlnsCompatibleWithAttribute" expose="false" />
+            <typeFilter name="XmlnsDefinitionAttribute" expose="false" />
+            <typeFilter name="XmlnsPrefixAttribute" expose="false" />
+            <typeFilter name="*" expose="true" />
+        </namespaceFilter>
+        <!-- Attributes in System.Xml.Serialization control obscure details of XML serialization. Don't show them.-->
+        <namespaceFilter name="System.Xml.Serialization">
+            <typeFilter name="*" expose="false" />
+        </namespaceFilter>
+        <!-- The GeneratedCodeAttribute is useful only to tools, and should be hidden from end users.-->
+        <namespaceFilter name="System.CodeDom.Compiler">
+            <typeFilter name="GeneratedCodeAttribute" expose="false" />
+            <typeFilter name="*" expose="true" />
+        </namespaceFilter>
+        <namespaceFilter name="*">
+            <typeFilter name="*" expose="true" />
+        </namespaceFilter>
+    </attributeFilter>
 </filter>

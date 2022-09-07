@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ErrorsCollectionClass" />
   <TypeSignature Language="VB.NET" Value="Public Class ErrorsCollectionClass&#xA;Implements ErrorsCollection, IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ErrorsCollectionClass : Microsoft::Office::Interop::InfoPath::ErrorsCollection, System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type ErrorsCollectionClass = class&#xA;    interface Errors&#xA;    interface ErrorsCollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,7 +29,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,6 +38,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.InfoPath.ErrorObject Add([in]object varNode, [in]string bstrConditionName, [in]string bstrShortErrorMessage, [in]string bstrDetailedErrorMessage, [in]int32 lErrorCode, [in]string bstrType) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ErrorsCollectionClass.Add(System.Object,System.String,System.String,System.String,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (varNode As Object, bstrConditionName As String, bstrShortErrorMessage As String, Optional bstrDetailedErrorMessage As String = &quot;&quot;, Optional lErrorCode As Integer = 0, Optional bstrType As String = &quot;modeless&quot;) As ErrorObject" />
+      <MemberSignature Language="F#" Value="abstract member Add : obj * string * string * string * int * string -&gt; Microsoft.Office.Interop.InfoPath.ErrorObject&#xA;override this.Add : obj * string * string * string * int * string -&gt; Microsoft.Office.Interop.InfoPath.ErrorObject" Usage="errorsCollectionClass.Add (varNode, bstrConditionName, bstrShortErrorMessage, bstrDetailedErrorMessage, lErrorCode, bstrType)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.Errors.Add(System.Object,System.String,System.String,System.String,System.Int32,System.String)</InterfaceMember>
@@ -68,7 +70,7 @@
         <param name="bstrDetailedErrorMessage">To be added.</param>
         <param name="lErrorCode">To be added.</param>
         <param name="bstrType">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -79,6 +81,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ErrorsCollectionClass.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Errors.Count</InterfaceMember>
@@ -99,7 +102,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -110,6 +113,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ErrorsCollectionClass.Delete(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Delete (varNode As Object, bstrConditionName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Delete(System::Object ^ varNode, System::String ^ bstrConditionName) = Microsoft::Office::Interop::InfoPath::Errors::Delete;" />
+      <MemberSignature Language="F#" Value="abstract member Delete : obj * string -&gt; unit&#xA;override this.Delete : obj * string -&gt; unit" Usage="errorsCollectionClass.Delete (varNode, bstrConditionName)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.Errors.Delete(System.Object,System.String)</InterfaceMember>
@@ -133,7 +137,7 @@
       <Docs>
         <param name="varNode">To be added.</param>
         <param name="bstrConditionName">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,6 +147,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ErrorsCollectionClass.DeleteAll" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub DeleteAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DeleteAll() = Microsoft::Office::Interop::InfoPath::Errors::DeleteAll;" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAll : unit -&gt; unit&#xA;override this.DeleteAll : unit -&gt; unit" Usage="errorsCollectionClass.DeleteAll " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.Errors.DeleteAll</InterfaceMember>
@@ -161,7 +166,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,6 +176,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.ErrorsCollectionClass.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator() = Microsoft::Office::Interop::InfoPath::Errors::GetEnumerator;" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="errorsCollectionClass.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Office.Interop.InfoPath.Errors.GetEnumerator</InterfaceMember>
@@ -192,7 +198,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -203,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ErrorsCollectionClass.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(index As Integer) As ErrorObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::ErrorObject ^ default[int] { Microsoft::Office::Interop::InfoPath::ErrorObject ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.InfoPath.ErrorObject" Usage="Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Errors.Item(System.Int32)</InterfaceMember>
@@ -227,7 +234,7 @@
       </Parameters>
       <Docs>
         <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

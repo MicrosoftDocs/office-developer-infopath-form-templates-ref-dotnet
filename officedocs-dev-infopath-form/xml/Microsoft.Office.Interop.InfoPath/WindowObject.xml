@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.WindowObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface WindowObject&#xA;Implements Window2" />
   <TypeSignature Language="C++ CLI" Value="public interface class WindowObject : Microsoft::Office::Interop::InfoPath::Window2" />
+  <TypeSignature Language="F#" Value="type WindowObject = interface&#xA;    interface Window2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,36 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a window that is used in the Microsoft Office InfoPath 2003 application.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.Window2" />.</para>
+      <para>The <b>WindowObject</b> objects represent the two types of windows that are used in the InfoPath application: the editing window that is used as the form area when a user fills out a form, and the designing window that is used as the design mode when a user designs a form.</para>
+      <para>The <b>WindowObject</b> object provides a number of properties and methods that can be used to programmatically interact with InfoPath windows, including the ability to activate or close a window and the ability to interact with the task panes and command bars that they contain. The <b>WindowObject</b> object also provides a property for accessing the form's underlying XML document that is associated with the window.</para>
+      <para>The <b>WindowObject</b> objects of an InfoPath form are accessed through the <see cref="P:Microsoft.Office.Interop.InfoPath.Windows.Item(System.Object)" /> property. The type of window can be determined by using the <see cref="P:Microsoft.Office.Interop.InfoPath.Window.WindowType" /> property.</para>
+      <para>You can access the currently open window directly by using the <see cref="P:Microsoft.Office.Interop.InfoPath._Application2.ActiveWindow" /> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.Application" /> object, without going through the <see cref="T:Microsoft.Office.Interop.InfoPath.WindowsCollection" /> collection. You can also access the <b>WindowObject</b> object that is associated with a view by using the <see cref="P:Microsoft.Office.Interop.InfoPath.View.Window" /> property.</para>
+      <para>
+        <b>Note</b>: Some properties of the <b>WindowObject</b> object are only available when using the editing window type; they will return an error if used with the designing window type.</para>
+      <para />
+    </remarks>
+    <example>
+      <para>In the following example, implemented as an <b>OnClick</b> event handler for a button control, the <b>ActiveWindow</b> property is used to set a reference to the current window. Then the code checks the window type; if it is the editing window type, it displays the number of task panes contained in the window in a message box.</para>
+      <code>public void WindowObject_OnClick(DocActionEvent e)
+{
+ Window2 activeWindow;
+   
+ // Set a reference to the current window.
+ activeWindow = thisApplication.ActiveWindow;
+ 
+ // Check that the window is an editing window type.
+ if (activeWindow.WindowType == XdWindowType.xdEditorWindow)
+ {
+  // Display the number of task panes in the window.
+  thisXDocument.UI.Alert("Number of task panes: " + 
+   activeWindow.TaskPanes.Count);
+ }
+}</code>
+      <para>For code examples, see How to: Work with Form Windows Using the InfoPath 2003 Object Model.</para>
+    </example>
   </Docs>
   <Members />
 </Type>

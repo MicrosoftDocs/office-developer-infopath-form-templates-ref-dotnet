@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.ServerInfo" />
   <TypeSignature Language="VB.NET" Value="Public Interface ServerInfo" />
   <TypeSignature Language="C++ CLI" Value="public interface class ServerInfo" />
+  <TypeSignature Language="F#" Value="type ServerInfo = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.ServerInfoObject" /></summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,6 +29,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ServerInfo.SharePointListUrl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SharePointListUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SharePointListUrl { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SharePointListUrl : string" Usage="Microsoft.Office.Interop.InfoPath.ServerInfo.SharePointListUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -45,8 +47,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the URL of the SharePoint list where the form is located.</summary>
+        <value>The URL of the SharePoint list.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,6 +58,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ServerInfo.SharePointServerRootUrl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SharePointServerRootUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SharePointServerRootUrl { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SharePointServerRootUrl : string" Usage="Microsoft.Office.Interop.InfoPath.ServerInfo.SharePointServerRootUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -73,8 +76,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the root URL of the SharePoint server where the form is located.</summary>
+        <value>The root URL of the SharePoint server where the form is located.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ServerInfo.SharePointSiteCollectionUrl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SharePointSiteCollectionUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SharePointSiteCollectionUrl { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SharePointSiteCollectionUrl : string" Usage="Microsoft.Office.Interop.InfoPath.ServerInfo.SharePointSiteCollectionUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -101,8 +105,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the URL of the SharePoint site collection where the form is located.</summary>
+        <value>The URL of the SharePoint site collection where the form is located</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,6 +116,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.ServerInfo.SharePointSiteUrl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SharePointSiteUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SharePointSiteUrl { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SharePointSiteUrl : string" Usage="Microsoft.Office.Interop.InfoPath.ServerInfo.SharePointSiteUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -129,8 +134,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the URL of the SharePoint site where the form is located.</summary>
+        <value>The URL of the SharePoint site where the form is located.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

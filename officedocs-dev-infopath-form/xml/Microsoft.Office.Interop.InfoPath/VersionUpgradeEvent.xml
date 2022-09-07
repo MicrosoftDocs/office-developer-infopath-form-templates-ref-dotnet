@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.VersionUpgradeEvent" />
   <TypeSignature Language="VB.NET" Value="Public Interface VersionUpgradeEvent&#xA;Implements DocReturnEvent" />
   <TypeSignature Language="C++ CLI" Value="public interface class VersionUpgradeEvent : Microsoft::Office::Interop::InfoPath::DocReturnEvent" />
+  <TypeSignature Language="F#" Value="type VersionUpgradeEvent = interface&#xA;    interface DocReturnEvent" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,7 +23,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a COM interface implemented by a coclass that is required by managed code for COM interoperability. To access the members specified by this interface, use the type that wraps the coclass that implements this interface. For information about that type, including usage, remarks, and examples, see<see cref="T:Microsoft.Office.Interop.InfoPath.VersionUpgradeEventObject" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.VersionUpgradeEvent.DocumentVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DocumentVersion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DocumentVersion : string" Usage="Microsoft.Office.Interop.InfoPath.VersionUpgradeEvent.DocumentVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -49,9 +51,21 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the version number of a Microsoft Office InfoPath form.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>This property can be used only during the <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnVersionUpgrade" /> event.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>DocumentVersion</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.VersionUpgradeEventObject" /> object is used to display the version number of an InfoPath form in a message box:</para>
+          <code>public void OnVersionUpgrade(VersionUpgradeEvent e)
+{
+ thisXDocument.UI.Alert("The form version: " + e.&lt;span class="label"&gt;DocumentVersion&lt;/span&gt; + 
+  "\nThe form template version: " + e.SolutionVersion);
+ e.ReturnStatus = true;   
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="ReturnStatus">
@@ -60,6 +74,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.VersionUpgradeEvent.ReturnStatus" />
       <MemberSignature Language="VB.NET" Value="Public Property ReturnStatus As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReturnStatus { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnStatus : bool with get, set" Usage="Microsoft.Office.Interop.InfoPath.VersionUpgradeEvent.ReturnStatus" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DocReturnEvent.ReturnStatus</InterfaceMember>
@@ -83,9 +98,19 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the return status of the <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnVersionUpgrade" /> event.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>If the <b>ReturnStatus</b> property is set to <b>false</b>, the <b>OnVersionUpgrade</b> event fails and the form is not opened. If set to <b>true</b>, the <b>OnVersionUpgrade</b> event is successful.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>ReturnStatus</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.VersionUpgradeEventObject" /> object is used to indicate that the <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnVersionUpgrade" /> event was not successful:</para>
+          <code>public void OnVersionUpgrade(VersionUpgradeEvent e)
+{
+ e.&lt;span class="label"&gt;ReturnStatus&lt;/span&gt; = false;   
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="SolutionVersion">
@@ -94,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.VersionUpgradeEvent.SolutionVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SolutionVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SolutionVersion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SolutionVersion : string" Usage="Microsoft.Office.Interop.InfoPath.VersionUpgradeEvent.SolutionVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -111,9 +137,21 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the version number of a Microsoft Office InfoPath form template.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>This property can be used only during the <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnVersionUpgrade" /> event.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>SolutionVersion</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.VersionUpgradeEventObject" /> object is used to display the version number of an InfoPath form template in a message box:</para>
+          <code>public void OnVersionUpgrade(VersionUpgradeEvent e)
+{
+ thisXDocument.UI.Alert("The form version: " + e.DocumentVersion + 
+  "\nThe form template version: " + e.&lt;span class="label"&gt;SolutionVersion&lt;/span&gt;);
+ e.ReturnStatus = true;   
+}</code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="XDocument">
@@ -122,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.VersionUpgradeEvent.XDocument" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XDocument As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::InfoPath::XDocument ^ XDocument { Microsoft::Office::Interop::InfoPath::XDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XDocument : Microsoft.Office.Interop.InfoPath.XDocument" Usage="Microsoft.Office.Interop.InfoPath.VersionUpgradeEvent.XDocument" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.DocReturnEvent.XDocument</InterfaceMember>
@@ -142,9 +181,19 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.XDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object associated with <see cref="T:Microsoft.Office.Interop.InfoPath.VersionUpgradeEventObject" /> object during an <see cref="E:Microsoft.Office.Interop.InfoPath._XDocumentEventSink2_Event.OnVersionUpgrade" /> event.</summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <para>After you have set a reference to the <b>XDocument</b> object that the <b>XDocument</b> property returns, you can use any of the properties and methods that it provides.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>In the following example, the <b>XDocument</b> property of the <see cref="T:Microsoft.Office.Interop.InfoPath.VersionUpgradeEventObject" /> object is used to set a reference to the <see cref="T:Microsoft.Office.Interop.InfoPath.XDocument" /> object:</para>
+          <code>public void OnVersionUpgrade(VersionUpgradeEvent e)
+{
+ XDocument upgradeDocument = e.&lt;span class="label"&gt;XDocument&lt;/span&gt;;
+}</code>
+        </example>
       </Docs>
     </Member>
   </Members>

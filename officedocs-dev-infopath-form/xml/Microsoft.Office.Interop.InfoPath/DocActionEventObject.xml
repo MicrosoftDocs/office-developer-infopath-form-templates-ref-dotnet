@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.DocActionEventObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface DocActionEventObject&#xA;Implements DocActionEvent" />
   <TypeSignature Language="C++ CLI" Value="public interface class DocActionEventObject : Microsoft::Office::Interop::InfoPath::DocActionEvent" />
+  <TypeSignature Language="F#" Value="type DocActionEventObject = interface&#xA;    interface DocActionEvent" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>An event object that is used during a Microsoft InfoPath button click event.</summary>
+    <remarks>
+      <para>This type is a wrapper for a coclass that is required by managed code for COM interoperability. Use this type to access the members of the COM interface implemented by this coclass. For information about the COM interface, including a link to descriptions of its members, see<see cref="T:Microsoft.Office.Interop.InfoPath.DocActionEvent" />.</para>
+      <para>The <b>DocActionEvent</b> object provides a number of properties that can be used within a button click event to programmatically interact with the data in a form's underlying XML document and to control the success or failure of the event.</para>
+      <para>The <b>DocActionEvent</b> object is passed as a parameter to the <see cref="E:Microsoft.Office.Interop.InfoPath._ButtonEventSink_Event.OnClick" /> event of a button that is contained in a view of an InfoPath form. Its properties are available only during the <b>OnClick</b> event.</para>
+      <para />
+    </remarks>
   </Docs>
   <Members />
 </Type>

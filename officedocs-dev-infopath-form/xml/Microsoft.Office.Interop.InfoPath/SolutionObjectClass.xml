@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.InfoPath.SolutionObjectClass" />
   <TypeSignature Language="VB.NET" Value="Public Class SolutionObjectClass&#xA;Implements Solution2, SolutionObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class SolutionObjectClass : Microsoft::Office::Interop::InfoPath::Solution2, Microsoft::Office::Interop::InfoPath::SolutionObject" />
+  <TypeSignature Language="F#" Value="type SolutionObjectClass = class&#xA;    interface Solution&#xA;    interface SolutionObject&#xA;    interface Solution2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,7 +29,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,6 +39,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SolutionObjectClass.CacheID" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CacheID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CacheID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CacheID : string" Usage="CacheID" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Solution2.CacheID</InterfaceMember>
@@ -50,7 +52,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SolutionObjectClass.DOM" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DOM As IXMLDOMDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMDocument ^ DOM { Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DOM : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMDocument" Usage="DOM" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Solution.DOM</InterfaceMember>
@@ -81,7 +84,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SolutionObjectClass.PackageURL" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PackageURL As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PackageURL { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PackageURL : string" Usage="PackageURL" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Solution.PackageURL</InterfaceMember>
@@ -112,7 +116,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SolutionObjectClass.Solution2_DOM" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Solution2_DOM As IXMLDOMDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMDocument ^ Solution2_DOM { Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Solution2_DOM : Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMDocument" Usage="Solution2_DOM" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -132,7 +137,7 @@
         <ReturnType>Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.SolutionObjectClass.Solution2_get_DOM" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Solution2_get_DOM () As IXMLDOMDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Office::Interop::InfoPath::Xml::IXMLDOMDocument ^ Solution2_get_DOM() = Microsoft::Office::Interop::InfoPath::Solution2::get_DOM;" />
+      <MemberSignature Language="F#" Value="abstract member Solution2_get_DOM : unit -&gt; Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMDocument&#xA;override this.Solution2_get_DOM : unit -&gt; Microsoft.Office.Interop.InfoPath.Xml.IXMLDOMDocument" Usage="solutionObjectClass.Solution2_get_DOM " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -164,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.SolutionObjectClass.Solution2_get_PackageURL" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Solution2_get_PackageURL () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ Solution2_get_PackageURL() = Microsoft::Office::Interop::InfoPath::Solution2::get_PackageURL;" />
+      <MemberSignature Language="F#" Value="abstract member Solution2_get_PackageURL : unit -&gt; string&#xA;override this.Solution2_get_PackageURL : unit -&gt; string" Usage="solutionObjectClass.Solution2_get_PackageURL " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -185,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.SolutionObjectClass.Solution2_get_URI" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Solution2_get_URI () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ Solution2_get_URI() = Microsoft::Office::Interop::InfoPath::Solution2::get_URI;" />
+      <MemberSignature Language="F#" Value="abstract member Solution2_get_URI : unit -&gt; string&#xA;override this.Solution2_get_URI : unit -&gt; string" Usage="solutionObjectClass.Solution2_get_URI " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -206,6 +214,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.InfoPath.SolutionObjectClass.Solution2_get_Version" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Solution2_get_Version () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ Solution2_get_Version() = Microsoft::Office::Interop::InfoPath::Solution2::get_Version;" />
+      <MemberSignature Language="F#" Value="abstract member Solution2_get_Version : unit -&gt; string&#xA;override this.Solution2_get_Version : unit -&gt; string" Usage="solutionObjectClass.Solution2_get_Version " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -227,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SolutionObjectClass.Solution2_PackageURL" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Solution2_PackageURL As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Solution2_PackageURL { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Solution2_PackageURL : string" Usage="Solution2_PackageURL" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -236,7 +246,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -247,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SolutionObjectClass.Solution2_URI" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Solution2_URI As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Solution2_URI { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Solution2_URI : string" Usage="Solution2_URI" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -256,7 +267,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -267,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SolutionObjectClass.Solution2_Version" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Solution2_Version As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Solution2_Version { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Solution2_Version : string" Usage="Solution2_Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.InfoPath</AssemblyName>
@@ -276,7 +288,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -287,6 +299,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SolutionObjectClass.URI" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property URI As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ URI { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.URI : string" Usage="URI" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Solution.URI</InterfaceMember>
@@ -307,7 +320,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -318,6 +331,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.InfoPath.SolutionObjectClass.Version" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Version As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Version { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : string" Usage="Version" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Office.Interop.InfoPath.Solution.Version</InterfaceMember>
@@ -338,7 +352,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>This type is a wrapper for a coclass or coclass member that is required by managed code for COM interoperability. This class is not intended to be used in code.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
