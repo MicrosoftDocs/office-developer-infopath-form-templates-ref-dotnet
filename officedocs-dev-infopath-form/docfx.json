@@ -39,6 +39,7 @@
       ]
     },
     "globalMetadata": {
+      "ms.service": "infopath",
       "feedback_system": "Standard",
       "apiPlatform": "dotnet",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
@@ -51,7 +52,6 @@
       "audience": "developer",
       "ms.reviewer": "",
       "ms.suite": "office",
-      "ms.prod": "infopath",
       "ms.technology": "sdk",
       "ms.tgt_pltfrm": "dotnet",
       "apiPlatform": "dotnet"
